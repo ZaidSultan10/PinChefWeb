@@ -1,0 +1,84 @@
+.mainFeed__header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 6%;
+}
+.active2{
+    border-bottom: 3px solid green;
+}
+
+.mainFeed__userData{
+    display: flex;
+}
+.mainFeed__userName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 100px;
+}
+.mainFeed__userName >h3{
+    font-size: 14px !important;
+}
+.mainFeed__userName > p{
+    margin-top: 4%;
+    font-size: 12px;
+}
+
+.post__image{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 3%;
+}
+
+.mainFeed__actions{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainFeed__actions__left{
+    display: flex;
+    justify-content: space-between;
+}
+.like{
+    margin-left: 5%;
+}
+.comment,.share{
+    margin-left: 10%;
+}
+
+.comment >img {
+    width: 23px;
+    height: 23px;
+}
+
+.mainFeed__location{
+    display: flex;
+    margin-left: 8%;
+}
+.location__city,.location__country{
+    margin-top: 4%;
+}
+p{
+    font-size: 12px;
+}
+.mainFeed__time{
+    display: flex;
+}
+.mainFeed__time > p{
+    margin-top: 5%;   
+}
+.mainFeed__paragraph{
+    margin:2% 0 8% 2%;
+}
+hr{
+    width: 80%;
+    color: gray;
+    margin: 0 auto;
+}

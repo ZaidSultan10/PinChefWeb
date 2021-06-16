@@ -1,0 +1,51 @@
+.vipChefHome__container{
+    border: 1px solid gray;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 2px 2px 0px #999,
+                2px 2px 0px #999,
+                1px 1px 0px #999,
+                1px 1px 0px #999,
+                1px 1px 0px #999,
+                1px 1px 0px #999;
+}
+
+.vipChefHome__container__header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 4%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.vipChefHome__container__location{
+    display: flex;
+    align-items: center;
+}
+
+.location__city,.location__country,
+.icon,.text{
+    font-size: 14px;
+}
+.location__country{
+    color: gray;
+}
+
+.vipChefHome__profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vipChefHome__profile >img{
+    width: 98%;
+    height: 30%;
+    border-radius: 16px;
+}
+.vipChefHome__quotes{
+    font-size: 12px;
+    margin-left: 3%;
+    margin-bottom: 4%;
+    margin-top: 2%;
+}

@@ -1,0 +1,10 @@
+.ads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid silver;
+    border-radius: 16px;
+    height: 100px;
+    width: auto;
+    color: silver;
+}

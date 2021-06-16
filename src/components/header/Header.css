@@ -8,6 +8,7 @@
     -webkit-box-shadow: 0 8px 6px -5px grey;
     -moz-box-shadow: 0 8px 6px -5px grey;
     box-shadow: 0 8px 6px -5px grey;
+    position: sticky;
 }
 .header__logo{
     display: flex;
@@ -61,7 +62,7 @@
     width: 70px;
     height: 1.8rem;
     border-radius: 8px;
-    padding-left: 15%;
+    padding-left: 5%;
     color: green;
     font-weight: 600;
     font-size: 16px;

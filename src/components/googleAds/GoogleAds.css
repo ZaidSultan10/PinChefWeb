@@ -1,3 +1,100 @@
+.googleAds{
+  position: sticky;
+}
+.active1{
+  background-color: yellow !important;
+  border-radius: 50% !important;
+}
+
+.googleAds__filter{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid silver;
+  overflow: hidden;
+  border-radius: 0 24px 0 24px;
+  box-shadow:  0 2px 6px 0 gray;
+}
+
+.googleAds__filter__header{
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 5% 6% 5%;
+}
+.googleAds__filter__header > h3{
+  color: green;
+  font-weight: 700 !important;
+}
+.sort__by{
+  margin-bottom: 5%;
+  margin-left: 5%;
+  font-weight: 700 !important;
+}
+.googleAds__filter__options{
+  display: flex;
+  flex-direction: column;
+}
+
+.googleAds__filter__most__commented{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4%;
+}
+.googleAds__filter__most__commented > p{
+  margin-left: 5%;
+}
+
+.googleAds__filter__most__liked,
+.googleAds__filter__vip__chef,
+.googleAds__filter__top__rated{
+  display: flex;
+  margin-left: 4%;
+  margin-top: 5%;
+  align-items: center;
+}
+.googleAds__filter__most__liked > p,
+.googleAds__filter__vip__chef > p,
+.googleAds__filter__top__rated >p{
+  margin-left: 5%;
+}
+
+.googleAds__filter__dates{
+  display: flex;
+  margin-left: 5%;
+  margin-top: 4%;
+}
+.googleAds__filter__dates > img{
+  margin-left: 7%;
+  height: 13px;
+  margin-top: 2%;
+}
+.googleAds__filter__dates > h4{
+  font-size: 16px !important;
+}
+.googleAds__filter__date{
+  margin-top: 4%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+.googleAds__filter__date > p{
+  font-size: 14px;
+}
+
+.googleAds__ads{
+  margin-top: 2rem;
+  margin-right: -3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .Ads-container {
   padding: 15px;
   width: calc(20% - 30px);
