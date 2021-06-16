@@ -36,10 +36,12 @@
 
 .googleAds__filter__most__commented{
   display: flex;
-  justify-content: space-between;
   margin-left: 4%;
+
 }
 .googleAds__filter__most__commented > p{
+  display: flex;
+  align-items: center;
   margin-left: 5%;
 }
 
