@@ -1,0 +1,7 @@
+.signInPage {
+  background: linear-gradient(184deg, white, #464040 92%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

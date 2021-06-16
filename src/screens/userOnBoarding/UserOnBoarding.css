@@ -12,7 +12,7 @@
 .UserOnboarding-Carousel {
   height: 100%;
   padding: 35px 20px 10px;
-  flex-wrap: wrap;
+  flex-direction: column;
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -20,6 +20,7 @@
 
 .rec-dot {
   color: black !important;
+  flex-grow: 1;
   outline: none;
   height: 18px !important;
   width: 18px !important;

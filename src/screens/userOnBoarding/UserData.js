@@ -1,7 +1,7 @@
 import User1 from "../../assets/svg/User-onbaording-1.svg";
 import User2 from "../../assets/svg/User-onbaording-2.svg";
 import User3 from "../../assets/svg/User-onbaording-3.svg";
-import User4 from "../../assets/svg/User-onbaording-4.svg";
+import User4 from "../../assets/svg/User-Onboarding-4-image.svg";
 
 const Users = [
   {

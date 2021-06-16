@@ -1,0 +1,103 @@
+.userSignin {
+  background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
+  height: 70%;
+  width: 30%;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.sign-in-up {
+  margin: 10px;
+  padding: 2em;
+}
+.sign-in-up h2 {
+  margin: 10px;
+}
+
+.form {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.form label {
+  padding: 1em 0;
+}
+
+.form input {
+  width: 90%;
+  padding: 1em;
+  border: none;
+  height: 4em;
+  outline: none;
+  font-size: 1em;
+}
+
+.email-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.email-div label {
+  margin-right: auto;
+  margin-left: 4em;
+}
+.email-div input {
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: 1em;
+  background-position-y: center;
+  padding-left: 5em;
+  border-radius: 30px 0 0 30px;
+}
+
+.password-div {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.password-div label {
+  margin-right: auto;
+  margin-left: 1em;
+}
+.password-div input {
+  background-image: url("../../assets/svg/Password-icon.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: 1em;
+  background-position-y: center;
+  padding-left: 5em;
+  border-radius: 0 30px 30px 0;
+}
+.password-div-pass {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.show {
+  background-image: url("../../assets/svg/Show-password-icon.svg");
+}
+.hide {
+  background-image: url("../../assets/svg/hide\ -password-\ icon.svg");
+}
+
+.tooglePassword {
+  background-repeat: no-repeat;
+  height: 2em;
+  width: 2.3em;
+  z-index: 2;
+  position: absolute;
+  margin-top: 1.3em;
+  margin-left: -4em;
+  cursor: pointer;
+}
