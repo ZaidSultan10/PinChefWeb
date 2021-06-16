@@ -7,15 +7,22 @@ import AvatarIcon from "../../assets/svg/user-icon.svg";
 import HamburgerIcon from "../../assets/svg/hamburger-icon.svg";
 import FilterIcon from "../../assets/svg/Filter-button.svg";
 
-const Header = () => {
+const Header = ({ searchProp }) => {
   return (
     <div className="header">
       <div className="header__logo">
         <img src={Logo} alt="Pinchef-Logo" />
       </div>
       <div className="header__search">
-        <input className="header__search__input" placeholder="Search Here..." />
-        <img src={SearchIcon} alt="Search-Icon" />
+        {searchProp && (
+          <>
+            <input
+              className="header__search__input"
+              placeholder="Search Here..."
+            />
+            <img src={SearchIcon} alt="Search-Icon" />
+          </>
+        )}
       </div>
       <div className="header__right">
         <select className="header__language__options">

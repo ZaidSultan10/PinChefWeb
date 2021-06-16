@@ -15,14 +15,14 @@ const Chefs = [
     title: "Title 2",
     text: "Create your chef profile and then enter all accurate info about yourself and what services you provide.",
     bg: ["#D9D9D9", "#464040"],
-    classNames: "",
+    classNames: "carousel-div-lg",
     image: chef2,
   },
   {
     title: "Title 3",
     text: "Add any pictures to showcase who you are in your profile & daily posts. Add the services & the food you will be selling with all the details and prices. ",
     bg: ["#D9D9D9", "#464040"],
-    classNames: "",
+    classNames: "carousel-div-lg",
     image: chef3,
   },
   {
