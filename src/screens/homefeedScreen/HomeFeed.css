@@ -1,3 +1,48 @@
-.homefeed{
-    height: 100vh;
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation:portrait){
+    .homefeed{
+        padding-bottom:60px;
+        height: 100vh;
+    }
+
+    .homeFeed__footer{
+        position:absolute;
+        left:0;
+        bottom:0;
+        right:0;
+    }
+}
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-height: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation:portrait){
+    .homefeed{
+        padding-bottom:60px;
+        height: 100vh;
+    }
+
+    .homeFeed__footer{
+        position:absolute;
+        left:0;
+        bottom:0;
+        right:0;
+    }
+}
+@media only screen and (max-width:500px){
+    .homefeed{
+        padding-bottom:60px;
+        height: 100vh;
+    }
+
+    .homeFeed__footer{
+        position:absolute;
+        left:0;
+        bottom:0;
+        right:0;
+    }
 }

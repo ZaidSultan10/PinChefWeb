@@ -16,19 +16,19 @@ const GoogleAds = () => {
           <h4 className='sort__by'>Sort by</h4>
           <div className='googleAds__filter__options'>
               <div className='googleAds__filter__most__commented'>
-                <RadioButtonUncheckedIcon className='active1' />
+                <RadioButtonUncheckedIcon className='active1 radio' />
                 <p>Most Commented Posts</p>
               </div>
               <div className='googleAds__filter__most__liked'>
-                <RadioButtonUncheckedIcon  />
+                <RadioButtonUncheckedIcon className='radio' />
                 <p>Most Liked Posts</p>
               </div>
               <div className='googleAds__filter__vip__chef'>
-                <RadioButtonUncheckedIcon  />
+                <RadioButtonUncheckedIcon className='radio'  />
                 <p>VIP Chefs</p>
               </div>
               <div className='googleAds__filter__top__rated'>
-                <RadioButtonUncheckedIcon  />
+                <RadioButtonUncheckedIcon className='radio' />
                 <p>Top Rated Chefs</p>
               </div>
           </div>

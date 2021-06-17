@@ -14,6 +14,12 @@
     width: 25px !important;
 }
 
+@media only screen and (max-width:936px){
+    .chefAds__heading > h3{
+        font-size: 16px;
+    }
+}
+
 .chefAds__profile{
     margin-top: 10%;
 }
