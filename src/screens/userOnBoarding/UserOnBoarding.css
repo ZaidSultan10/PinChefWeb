@@ -5,13 +5,47 @@
 .UserOnboarding-Body {
   height: 80%;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .UserOnboarding-Carousel {
   height: 100%;
-  padding: 35px 20px 0px;
-
-  flex-wrap: wrap;
+  padding: 35px 20px 10px;
+  flex-direction: column;
+  display: flex !important;
   justify-content: center;
+  align-items: center;
+}
+
+.rec-dot {
+  color: black !important;
+  flex-grow: 1;
+  outline: none;
+  height: 18px !important;
+  width: 18px !important;
+}
+
+.rec-dot_active {
+  outline: none !important;
+  color: black !important;
+  background-color: #ffcf54 !important;
+  box-shadow: unset !important;
+  height: 20px !important;
+  width: 20px !important;
+}
+
+.rec-carousel-item {
+  height: 100%;
+}
+.UserOnboarding-NavigationBtn {
+  align-self: flex-end;
+  margin-right: 3%;
+}
+.UserOnboarding-NavigationBtn button {
+  background-color: transparent;
+  color: #3f8f22;
+  font-size: 2em;
+  border: unset;
+  cursor: pointer;
 }

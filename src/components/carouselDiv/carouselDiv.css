@@ -1,0 +1,33 @@
+.carousel-div {
+  height: 65vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid #0370a7;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-top: 20px;
+  /* margin-bottom: px; */
+  width: calc(100% - 60px);
+  padding: 40px 20px 20px 20px;
+  box-shadow: 4px -1px 7px 2px #464040;
+  background-color: white;
+  align-items: center;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-div-content {
+  text-align: center;
+  padding: 20% 10px;
+}
+.carousel-div-img {
+  padding: 20px 10px;
+  height: 60% !important;
+}
+.carousel-div-lg {
+  height: 68vh;
+  margin-top: 10 !important;
+}
