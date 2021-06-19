@@ -1,13 +1,8 @@
 .vipChefHome__container{
-    border: 1px solid gray;
+    border: 1px solid rgb(236, 236, 236);
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 2px 2px 0px #999,
-                2px 2px 0px #999,
-                1px 1px 0px #999,
-                1px 1px 0px #999,
-                1px 1px 0px #999,
-                1px 1px 0px #999;
+    box-shadow: inset 1px 3px 3px 0 grey;
 }
 
 .vipChefHome__container__header{

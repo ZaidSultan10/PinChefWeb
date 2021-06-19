@@ -2,7 +2,7 @@
   position: sticky;
 }
 .active1{
-  background-color: yellow !important;
+  background-color: #ffcf54 !important;
   border-radius: 50% !important;
 }
 
@@ -20,8 +20,12 @@
   justify-content: space-between;
   margin: 5% 5% 6% 5%;
 }
+.googleAds__filter__header > img{
+  width: 30px;
+  height: 30px;
+}
 .googleAds__filter__header > h3{
-  color: green;
+  color: #3f8f22;
   font-weight: 700 !important;
 }
 .sort__by{
@@ -65,8 +69,8 @@
   margin-top: 4%;
 }
 .googleAds__filter__dates > img{
-  margin-left: 7%;
-  height: 13px;
+  margin-left: -5.5rem;
+  height: 11px;
   margin-top: 2%;
 }
 .googleAds__filter__dates > h4{

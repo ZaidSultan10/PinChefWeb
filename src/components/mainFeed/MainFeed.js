@@ -4,7 +4,7 @@ import "./MainFeed.css";
 import MoreHorizOutlinedIcon from "@material-ui/icons/MoreHorizOutlined";
 import FavoriteBorderOutlinedIcon from "@material-ui/icons/FavoriteBorderOutlined";
 import PostImage from "../../assets/chef-images/chef-image1.jpg";
-import CommentIcon from "../../assets/svg/comment.png";
+import CommentIcon from "../../assets/svg/Commentwithborder.svg";
 import { LocationOnOutlined } from "@material-ui/icons";
 import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 import MainFeedFilters from "../mainFeedFilters/MainFeedFilters";

@@ -25,6 +25,20 @@
     .mainFeedFilters > h3{
         font-size: 18px;
     }
+}@media only screen and (max-width:400px){
+    .mainFeedFilters > h3{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:325px){
+    .mainFeedFilters > h3{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:300px){
+    .mainFeedFilters > h3{
+        font-size: 13px;
+    }
 }
 @media only screen 
   and (min-width: 1024px) 

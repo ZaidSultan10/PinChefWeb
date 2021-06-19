@@ -43,6 +43,33 @@
         width: 100%;
     }
 }
+@media only screen and (max-width:425px){
+    .feed{
+        width: 100%;
+    }
+    .feed__center{
+        flex: 1;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media only screen and (max-width:285px){
+    .feed{
+        width: 100%;
+    }
+    .feed__left{
+        flex: 0;
+    }
+    .feed__center{
+        flex: 1;
+        margin-left: -2%;
+        margin-right: -2%;
+        
+    }
+    .feed__right{
+        flex: 0;
+    }
+}
 
 @media only screen 
   and (min-width: 1024px) 

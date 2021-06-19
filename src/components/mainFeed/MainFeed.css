@@ -9,9 +9,10 @@
     border-bottom: 3px solid green;
 }
 
-.share__icon{
-    color:#ffc30a !important;
-    margin-top: 1%;
+.share__icon {
+    width: 20px;
+    height: 20px;
+    margin-top: 4%;
 }
 .avatar{
     box-shadow:  0 2px 6px 0 gray;
@@ -98,11 +99,12 @@
     margin-left: 1.7rem;
 }
 .comment >img {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
+    margin-top: 2.5px;
 }
 .comment>p{
-    margin-top: 1px;
+    margin-top: 0.9px;
     text-align: center;
 }
 
@@ -175,7 +177,7 @@ hr{
         font-size: 20px !important;
     }
     .heart__icon{
-        font-size: 24px !important;
+        font-size: 27px !important;
     }
     .comment >img{
         width: 22px;
@@ -187,6 +189,72 @@ hr{
     }
     .mainFeed__paragraph > p{
         font-size: 16px;
+    }
+}
+@media only screen and (max-width:325px){
+    .mainFeed__userName > h3{
+        font-size: 13px !important;
+        
+    }
+    .mainFeed__container__location >h3{
+        width: 14px;
+        height: 14px;
+    }
+    .mainFeed__container__location >p{
+        font-size: 13px;
+    }
+    .mainFeed__time > {
+        font-size: 13px;
+    }
+    .time{
+        font-size: 16px !important;
+    }
+    .heart__icon{
+        font-size: 22px !important;
+    }
+    .comment >img{
+        width: 18px;
+        height: 18px;
+    }
+    .share__icon {
+        width: 18px;
+        height: 18px;
+    }
+    .mainFeed__paragraph > p{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:285px){
+    .mainFeed__userName > h3{
+        font-size: 12px !important;
+        
+    }
+    .mainFeed__container__location >h3{
+        width: 14px;
+        height: 14px;
+    }
+    .mainFeed__container__location >p{
+        font-size: 12px;
+    }
+    .mainFeed__time > {
+        font-size: 12px;
+    }
+    .time{
+        font-size: 15px !important;
+    }
+    .heart__icon{
+        font-size: 21px !important;
+    }
+    .comment >img{
+        width: 17px;
+        height: 17px;
+    }
+    .share__icon {
+        width: 17px;
+        height: 17px;
+    }
+    .mainFeed__paragraph > p{
+        font-size: 12px;
     }
 }
 
