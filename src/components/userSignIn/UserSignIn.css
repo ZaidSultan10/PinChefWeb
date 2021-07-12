@@ -1,8 +1,10 @@
 .userSignin {
   background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   height: 80%;
   width: 30%;
   border-radius: 60px;
@@ -21,6 +23,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .chef__button > button{
   background-color: #3f8f22 !important;
   margin-top: 5%;
@@ -33,17 +36,38 @@
   font-weight: 700 !important;
 }
 .right__icon{
-  color: #ffcf54;
-  margin-bottom: 0.5px;
+  color: #ffcf54 !important;
+  margin-top: 1px;
 }
 .sign-in-up {
-  margin-top: 5%;
+  margin-top: 3%;
   padding: 2%;
-  margin-left: 5%;
+  margin-left: 7%;
 }
-.sign-in-up h2 {
-  margin: 10px;
-  font-size: 18px;
+.sign-in-up>h2{
+font-size: 14px;
+margin-top: 3%;
+}
+.sign-in-h2{
+  margin-left: 3%;
+}
+.i-am-a-chef-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 2em;
+}
+
+.i-am-a-chef {
+  background-color: #3f8f22;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  padding: 0.8em 1.2em;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 2em;
+  cursor: pointer;
 }
 .user__email{
   width: 40px !important;
@@ -52,12 +76,17 @@
 }
 
 .form {
+
   margin-top: 0;
+
+  margin-top: 1em;
+
   margin-bottom: 1em;
 }
 
 .email-div > label > strong {
-  margin-left: -1.5rem;
+  
+  font-size: 16px;
 }
 
 .form input {
@@ -65,7 +94,7 @@
   padding: 0;
   margin-top: 1%;
   border: none;
-  height: 3em;
+  height: 2.6em;
   outline: none;
   font-size: 1em;
   margin-right: 1px;
@@ -80,12 +109,16 @@
 }
 .email-div label {
   margin-right: auto;
-  margin-left: 4em;
+  margin-left: 2.5em;
 }
 .email-div input {
+
   background-image: url("../../assets/svg/at-sign.png");
+
+  background-image: url("../../assets//svg//Email-icon.svg");
+
   background-repeat: no-repeat;
-  background-size: 26px;
+  background-size: 24px;
   background-position-x: 1em;
   background-position-y: center;
   padding-left: 5em;
@@ -93,7 +126,7 @@
 }
 
 .password-div {
-  margin-top: 2em;
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -124,7 +157,7 @@
 .hide {
   background-image: url("../../assets/svg/hide\ -password-\ icon.svg");
   background-size: 25px !important;
-  margin-top: 1.05rem !important;
+  margin-top: 0.55rem !important;
 }
 
 .signIn__confirm{
@@ -165,12 +198,92 @@
 
 .tooglePassword {
   background-repeat: no-repeat;
-  height: 2em;
-  width: 2.3em;
+  transform: scale(0.7);
+  height: 100%;
+  width: 100%;
   z-index: 2;
   position: absolute;
-  margin-top: 1.3em;
-  margin-left: -4em;
+  margin-top: 3%;
+  margin-left: -24%;
+  cursor: pointer;
+}
+.keep-me-sign-in-and-submit {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1em;
+}
+.keep-me-sign-in {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 1em;
+  margin-right: 5%;
+}
+.keep-me-sign-in input {
+  height: 1.5em;
+  width: 1.5em;
+}
+.keep-me-sign-in span {
+  width: 100%;
+  padding-left: 1em;
+  font-size: 14px;
+  color: white;
+}
+.continue {
+  background-color: #b62414;
+  color: white;
+  font-size: 0.7em;
+  font-family: "Montserrat";
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-right: 2em;
+  cursor: pointer;
+}
+.sign-in-with-google-and-forget-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+  padding: 0 2em;
+}
+.sign-in-with-social-media {
+  width: 50%;
+  display: flex;
+}
+.pd-1 {
+  padding: 0 5px;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+}
+.forgot-password {
+  color: #ffcf54;
+  cursor: pointer;
+}
+.forgot-password > p{
+  font-size: 14px !important;
+  font-weight: 700;
+}
+
+.Privicy-instructions {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1.7em;
+  font-size: 14px;
+}
+
+.fb-blue .b {
+  fill: #475993 !important;
+}
+
+.clickable {
+  text-decoration: underline;
   cursor: pointer;
 }
 .forgot__password{

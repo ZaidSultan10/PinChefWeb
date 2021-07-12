@@ -1,0 +1,89 @@
+.mainAllChef__container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap:2%;
+    margin-top: 3%;
+}
+.mainAllChef__left{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainAllChef__left > h4{
+    color: #464040;
+}
+.mainAllChef__left >.avatar{
+    width: 100px;
+    height: 100px;
+}
+.star,.follow-icon{
+    width: 20px;
+    height: 20px;
+}
+.location-icon{
+    width: 15px;
+    height: 15px;
+    margin-top: -3px;
+}
+.rating{
+    margin-top: 0.5rem;
+}
+.mainAllChef__right{
+    display: flex;
+    flex-direction: column;
+}
+.mainAllchef__name{
+    display: flex;
+    justify-content: space-between;
+}
+.mainAllchef__follow{
+    margin-right: 2%;
+}
+.mainAllchef__follow > h4{
+    text-align: right;
+    color: #3f8f22;
+}
+.mainAllchef__follower{
+    display: flex;
+}
+.mainAllchef__follower >h4{
+    padding-left: 3px;
+}
+.cuisines{
+    margin-top: 1rem;
+}
+.paragraph{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.right__icon{
+    margin-right: 3rem;
+    margin-top: -2%;
+    color: #3f8f22 !important;
+    font-size: 28px !important;
+}
+.location{
+    display: flex;
+    margin-top: 1.1rem;
+}
+.country{
+    padding-left: 2px;
+}
+.area{
+    display: flex;
+    color: #3f8f22;
+    font-size: 15px !important;
+    margin-top: -5px;
+    margin-left: 1%;
+}
+.bottom__line1{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+
+

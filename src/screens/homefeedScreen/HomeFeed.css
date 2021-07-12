@@ -1,3 +1,8 @@
+.homefeed{
+    clear: both;
+    height:17vh;
+}
+
 @media only screen 
   and (min-width: 1024px) 
   and (max-height: 1366px) 

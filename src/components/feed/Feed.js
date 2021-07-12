@@ -14,6 +14,7 @@ const Feed = () => {
             </div>
             <div className='feed__center'>
                 <MainFeed />
+                <MainFeed />
             </div>
             <div className='feed__right'>
                 <ChefAds />

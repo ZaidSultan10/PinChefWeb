@@ -1,18 +1,23 @@
 import React from 'react'
+import ChefAds from '../../components/chefAds/ChefAds'
+import GoogleAds from '../../components/googleAds/GoogleAds'
+import MainFeed from '../../components/mainFeed/MainFeed'
 import './SamplePage.css'
+import MainFeedFilters from "../../components/mainFeedFilters/MainFeedFilters";
 
 const SamplePage = () => {
     return (
         <div className='samplepage'>
             <div className='samplepage__container'>
                 <div className='samplepage__left'>
-                    <p> i am keft sidebar </p>
+                    <GoogleAds />
                 </div>
                 <div className='samplepage__center'>
-                    <p> i am center area </p>
+                    <MainFeedFilters />
+                    <MainFeed />
                 </div>
                 <div className='samplepage__right'>
-                    <p> i am right sidebar </p>
+                    <ChefAds />
                 </div>
             </div>
         </div>

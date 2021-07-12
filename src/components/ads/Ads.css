@@ -1,10 +1,16 @@
 .ads{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh;
     border: 2px solid silver;
     border-radius: 16px;
-    height: 100px;
     width: auto;
     color: silver;
+    margin-bottom: 3rem;
+    margin-top: 1.4rem;
+}
+.ads > h3{
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
 }

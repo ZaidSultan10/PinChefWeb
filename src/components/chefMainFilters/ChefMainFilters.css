@@ -1,0 +1,6 @@
+.chefMainFilters > button{
+    border: 2px solid #d9d9d9;
+    border-radius: 999px;
+    height: 28px;
+    font-weight: 800;
+}

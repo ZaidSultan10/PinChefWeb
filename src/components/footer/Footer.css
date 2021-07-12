@@ -4,7 +4,10 @@
     margin-top: 3%;
     background-color: #464040;
     box-shadow:  5px 1px 5px 3px gray;
-    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 .footer > img{
     margin-top: 1%;

@@ -1,7 +1,7 @@
 import React from 'react'
 import './MainFeedFilters.css'
 
-const MainFeedFilters = () => {
+const MainFeedFilters = ({mainFilterProp}) => {
     return (
         <div className='mainFeedFilters'>
             <h3 className='active2'>Feeds</h3>

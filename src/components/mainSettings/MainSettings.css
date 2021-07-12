@@ -1,0 +1,65 @@
+.mainSettings__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.mainSettings__profile{
+    display: grid;
+    grid-template-columns: 15fr 1fr;
+    align-items: center;
+}
+.mainSettings__profilePicture{
+    display: flex;
+    align-items: center;
+}
+.mainSettings__profilePicture > .mainSettings__avatar{
+    height: 80px;
+    width: 80px;
+}
+.mainSettings__name{
+    margin-left: 2%;
+    width: 100%;
+}
+.mainSettings__name >h4{
+  padding: 1%;
+}
+.mainSettings__rightIcon{
+    font-size: 38px !important;
+    color: #3f8f22;
+}
+.mainSettings__notification{
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    margin-top: 4%;
+   margin-bottom: 2%;
+}
+.mainSettings__notifications{
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.mainSettings__notification >img,
+.mainSettings__notifications>img{
+    width: 30px;
+    height: 30px;
+}
+.mainSettings__notification > h4{
+    margin-left: 3%;
+}
+.mainSettings__notifications > h4{
+    margin-left: 3%;
+}
+.notify__icon, .help__icon,.language__icon,.theme__icon, .sharing__icon{
+    color: #3f8f22 !important;
+}
+.rate__icon{
+    color: #ffcf54 !important;
+}
+.mainSettings__divider{
+    width: 90%;
+    margin: 0 auto;
+}

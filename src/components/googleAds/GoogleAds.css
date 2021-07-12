@@ -7,8 +7,8 @@
 }
 
 .googleAds__filter{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr ;
   border: 2px solid silver;
   overflow: hidden;
   border-radius: 0 24px 0 24px;
@@ -16,30 +16,40 @@
 }
 
 .googleAds__filter__header{
-  display: flex;
-  justify-content: space-between;
-  margin: 5% 5% 6% 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2%;
 }
 .googleAds__filter__header > img{
-  width: 30px;
-  height: 30px;
+  
+  width: 50%;
+  height: 50%;
+  margin-top: 2%;
 }
 .googleAds__filter__header > h3{
+  
   color: #3f8f22;
   font-weight: 700 !important;
 }
-.sort__by{
+.kosher{
+  margin-bottom: 3%;
+}
+.sort__by, .diff__by{
   margin-bottom: 5%;
   margin-left: 5%;
   font-weight: 700 !important;
 }
+.diff__by{
+  margin-top: 4%;
+}
 .googleAds__filter__options{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 4fr;
 }
 
 .googleAds__filter__most__commented{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
   margin-left: 4%;
 
 }
@@ -52,7 +62,8 @@
 .googleAds__filter__most__liked,
 .googleAds__filter__vip__chef,
 .googleAds__filter__top__rated{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
   margin-left: 4%;
   margin-top: 5%;
   align-items: center;
@@ -64,97 +75,58 @@
 }
 
 .googleAds__filter__dates{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   margin-left: 5%;
   margin-top: 4%;
 }
 .googleAds__filter__dates > img{
-  margin-left: -5.5rem;
-  height: 11px;
+  
+  height: 13px;
+  float: left;
+  display: flex;
+  align-items: center;
   margin-top: 2%;
+  margin-left: -35px !important;
 }
 .googleAds__filter__dates > h4{
   font-size: 16px !important;
 }
 .googleAds__filter__date{
+  display: grid;
+  grid-template-columns: 1fr;
   margin-top: 4%;
   margin-left: 5%;
   margin-bottom: 10%;
 }
-.googleAds__filter__date > p{
-  font-size: 14px;
-}
-
 .googleAds__ads{
   margin-top: 2rem;
   margin-right: -3px;
 }
-@media only screen and (max-width:960px){
-  .googleAds__filter{
-    font-size: 14px;
-  }
-  .googleAds__filter__date > p{
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width:775px){
-  .googleAds__filter__header >img{
-    width: 25px;
-    height: 25px;
-  }
-  .googleAds__filter__header >h3{
-    font-size: 14px;
+
+@media only screen and (min-width:1290px) and (max-width:1921px){
+  .googleAds__filter__header > h3{
+    font-size: 30px !important;
   }
   .sort__by{
-    font-size: 12px;
+    font-size: 26px !important;
   }
   .radio{
-    font-size: 16px !important;
+    font-size: 28px !important;
   }
-  .googleAds__filter__most__commented >p,
+  .googleAds__filter__most__commented>p,
   .googleAds__filter__most__liked>p,
-  .googleAds__filter__vip__chef >p,
-  .googleAds__filter__top__rated>p {
-    font-size: 11px;
+  .googleAds__filter__top__rated>p,
+  .googleAds__filter__vip__chef>p{
+    font-size: 18px !important;
   }
   .googleAds__filter__dates >h4{
-    font-size: 12px !important;
+    font-size: 24px !important;
   }
   .googleAds__filter__dates >img{
-    width: 8px;
-    height: 8px;
+    height: 20px;
   }
-  .googleAds__filter__date > p{
-    font-size: 10px;
+  .googleAds__filter__date >p{
+    font-size: 18px !important;
   }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.Ads-container {
-  padding: 15px;
-  width: calc(20% - 30px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.ads-content {
-  height: 100px;
-  width: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #d4d4d4;
-  border-radius: 10px;
-  margin-bottom: 10px;
 }

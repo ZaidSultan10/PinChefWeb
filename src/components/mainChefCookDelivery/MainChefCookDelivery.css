@@ -1,0 +1,143 @@
+.mainChefCookDelivery{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 24%;
+}
+.mainChefCookDelivery__topArea{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+}
+.mainChefCookDelivery__photo > .mainChefCookDelivery__avatar{
+    width: 50px;
+    height: 50px;
+}
+.mainChefCookDelivery__header{
+    margin-top: 2%;
+    display: flex;
+    border: 1px solid;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    background-color: #3d3838;
+}
+.mainChefCookDelivery__item{
+    margin-left: 2%;
+}
+.mainChefCookDelivery__bill{
+    display: flex;
+    align-items: center;
+    margin-right: 15%;
+}
+.cook-delivery{
+    margin-right: 25%;
+}
+.mainChefCookDelivery__info{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    align-items: center;
+}
+.mainChefCookDelivery__itemTitle{
+    margin-left: 2%;
+}
+.mainChefCookDelivery__itemBill{
+    display: flex;
+    align-items: center;
+    margin-right: 17%;
+}
+.cook-delivery3{
+    margin-left:3%;
+}
+.cook-delivery2{
+    margin-right: 28%;
+    margin-left: 4%;
+}
+.cook-delivery1{
+    margin-right: 35%;
+}
+
+.mainChefCookDelivery__subTotal{
+    margin-top: 2%;
+    text-align: right;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5rem;
+}
+.mainChefCookDelivery__subTotal > h5 > span{
+    margin-left: 1.8%;
+}
+.mainChefCookDelivery__subTotal > h5{
+    margin-right: 5.3%;
+}
+.mainChefCookDelivery__day,
+.mainChefCookDelivery__time,
+.mainChefCookDelivery__note,
+.mainChefCookDelivery__method{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3%;
+}
+.mainChefCookDelivery__day > h5,
+.mainChefCookDelivery__time>h5,
+.mainChefCookDelivery__note>h5,
+.mainChefCookDelivery__method>h5{
+    margin-bottom: 1.5%;
+}
+.mainChefCookDelivery__day > select,
+.mainChefCookDelivery__time>select,
+.mainChefCookDelivery__method>select{
+    border: 3px solid #d9d9d9;
+    font-family: 'Montserrat','sans-serif';
+    padding-left: 1%;
+    color: gray;
+    outline: none;
+    padding-right: 2%;
+    border-radius: 8px;
+    width: 100%;
+    height: 7vh;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+    -webkit-appearance: none;
+  appearance: none;
+}
+.mainChefCookDelivery__note > textarea{
+    outline: none;
+    height: auto;
+    resize: none;
+    width: 100%;
+    border-radius: 8px;
+    overflow-y: hidden;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    padding-left: 1%;
+    padding-top: 1%;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+
+.mainChefCookDelivery__button{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: #3f8f22;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 999px 0 999px 999px;
+}
+.mainChefCookDelivery__button > button{
+    font-weight: 800;
+    color: white;
+    width: 100%;
+}

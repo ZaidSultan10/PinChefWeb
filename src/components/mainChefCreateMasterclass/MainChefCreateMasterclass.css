@@ -1,0 +1,196 @@
+.mainChefCreateMasterclass__heading{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-items: center;
+    border: 1px solid;
+    color: white;
+    background-color: #3d3838;
+    height: 7vh;
+    border-radius: 999px 999px 999px 0px;
+}
+.mainChefCreateMasterclass__heading>h5{
+    font-size: 16px;
+}
+.mainChefCreateMasterclass__top{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.mainChefCreateMasterclass__topLeft{
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 3px solid #d9d9d9;
+    border-radius: 16px;
+    width: 100%;
+    height: 40vh;
+    margin-top: 2%;
+    place-items: center;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.mainChefCreateMasterclass__topLeft >img {
+    width: 70px;
+    height: 70px;
+    display: flex;
+}
+.mainChefCreateMasterclass__topRight{
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.mainChefCreateMasterclass__title,
+.mainChefCreateMasterclass__location,
+.mainChefCreateMasterclass__price,
+.mainChefCreateMasterclass__video,
+.mainChefCreateMasterclass__date,
+.mainChefCreateMasterclass__notify{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3%;
+}
+
+.mainChefCreateMasterclass__title > h5,
+.mainChefCreateMasterclass__location>h5,
+.mainChefCreateMasterclass__price>h5,
+.mainChefCreateMasterclass__video>h5,
+.mainChefCreateMasterclass__date>h5,
+.mainChefCreateMasterclass__notify>h5{
+    margin-bottom: 1%;
+}
+.mainChefCreateMasterclass__title>input,
+.mainChefCreateMasterclass__cook>input,
+.mainChefCreateMasterclass__location>input,
+.mainChefCreateMasterclass__price>input{
+    border: 3px solid #d9d9d9;
+    font-family: 'Montserrat','sans-serif';
+    border-radius: 8px;
+    padding-left: 2%;
+    outline: none;
+    width: 100%;
+    height: 7vh;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.mainChefCreateMasterclass__title>input::placeholder{
+    font-family: 'Montserrat', 'sans-serif' !important;
+}
+
+.mainChefCreateMasterclass__instruction>h5>span,
+.mainChefCreateMasterclass__title>h5>span,
+.mainChefCreateReipe__level>h5>span,
+.mainChefCreateMasterclass__ingredients>h5>span,
+.mainChefCreateMasterclass__desc>h5>span,
+.mainChefCreateMasterclass__location>h5>span
+,.mainChefCreateMasterclass__video>h5>span
+,.mainChefCreateMasterclass__date>h5>span,
+.mainChefCreateMasterclass__notify>h5>span{
+    color: red;
+    margin-left: 1%;
+}
+.mainChefCreateMasterclass__cuisine,
+.mainChefCreateMasterclass__diet,
+.mainChefCreateMasterclass__start,
+.mainChefCreateMasterclass__duration,
+.mainChefCreateMasterclass__ticket,
+.mainChefCreateMasterclass__ingredients,
+.mainChefCreateMasterclass__desc{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3%;
+}
+.mainChefCreateMasterclass__cuisine > h5,
+.mainChefCreateMasterclass__diet > h5,
+.mainChefCreateMasterclass__start >h5,
+.mainChefCreateMasterclass__duration>h5,
+.mainChefCreateMasterclass__ticket>h5,
+.mainChefCreateMasterclass__ingredients>h5,
+.mainChefCreateMasterclass__desc>h5{
+    margin-bottom: 1%;
+}
+.mainChefCreateMasterclass__cuisine > select,
+.mainChefCreateMasterclass__diet > select,
+.mainChefCreateMasterclass__start >select,
+.mainChefCreateMasterclass__duration > select,
+.mainChefCreateMasterclass__ticket>select{
+    border: 3px solid #d9d9d9;
+    font-family: 'Montserrat','sans-serif';
+    padding-left: 1%;
+    color: gray;
+    outline: none;
+    padding-right: 2%;
+    border-radius: 8px;
+    width: 100%;
+    height: 7vh;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+    -webkit-appearance: none;
+  appearance: none;
+}
+
+.mainChefCreateMasterclass__ingredients > textarea,
+.mainChefCreateMasterclass__desc>textarea,
+.mainChefCreateMasterclass__tools>textarea{
+    outline: none;
+    height: auto;
+    resize: none;
+    width: 100%;
+    border-radius: 8px;
+    overflow-y: hidden;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    padding-left: 1%;
+    padding-top: 1%;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.optional{
+    color: gray !important;
+}
+.input__video,.input__date,.input__decision{
+    display: flex;
+}
+.input__live , .input__pre,.input__select,
+.input__request ,.input__no,.input__yes{
+    display: flex;
+    align-items: center;
+}
+.input__live,.input__request,.input__yes{
+    margin-left: 5%;
+}
+.mainChefCreateMasterclass__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.mainChefCreateMasterclass__price>input{
+    position: relative;
+    padding-left: 8%;
+}
+.mainChefCreateMasterclass__price >p{
+    position: absolute;
+    border-right: 1px solid;
+    margin-top: 2%;
+    margin-left: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3%;
+    height: 6.1vh;
+    font-size: 18px;
+}
+.mainChefCreateMasterclass__buttons > .mainChefCreateMasterclass__cancel {
+    height: 30px ;
+    background-color:#d9d9d9 ;
+    font-weight: 700;
+    width: 40%;
+    border-radius: 0px 16px 16px 16px;
+}
+.mainChefCreateMasterclass__buttons > .mainChefCreateMasterclass__post{
+    height: 30px ;
+    width: 40%;
+    background-color:#3d3838 ;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 16px 0px 16px 16px;
+}

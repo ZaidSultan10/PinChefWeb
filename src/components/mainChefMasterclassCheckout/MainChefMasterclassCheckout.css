@@ -1,0 +1,240 @@
+.mainChefMasterclassCheckout{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 24%;
+}
+.mainChefMasterclassCheckout__top{
+    display: flex;
+    justify-content: space-between;
+}
+.mainChefMasterclassCheckout__header{
+    margin-top: 3%;
+    display: flex;
+    border: 1px solid;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    background-color: #3d3838;
+}
+.mainChefMasterclassCheckout__item{
+    margin-left: 2%;
+}
+.mainChefMasterclassCheckout__bill{
+    display: flex;
+    align-items: center;
+    margin-right: 15%;
+}
+.class-price{
+    margin-right: 25%;
+}
+.mainChefMasterclassCheckout__info{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    align-items: center;
+}
+.mainChefMasterclassCheckout__itemTitle{
+    margin-left: 2%;
+}
+.mainChefMasterclassCheckout__itemBill{
+    display: flex;
+    align-items: center;
+    margin-right: 17%;
+}
+.class-price3{
+    margin-left:3%;
+}
+.class-price2{
+    margin-right: 28%;
+    margin-left: 4%;
+}
+.class-price1{
+    margin-right: 35%;
+}
+
+.mainChefMasterclassCheckout__sub{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    margin-top: 2%;
+    margin-left: 21.5%;
+}
+.mainChefMasterclassCheckout__subTotal{
+    margin-left: 4.6%;
+
+}
+.mainChefMasterclassCheckout__subTotal > h5{
+    margin-top: 8.6%;
+    color: #3d3838;
+}
+
+.mainChefMasterclassCheckout__subTotalAmount > p{
+    margin-top: 14%;
+}
+.total-amount{
+    color: #4da302;
+    font-weight: 700;
+    font-size: 14px;
+}
+.total-text{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.mainChefMasterclassCheckout__details,
+.mainChefMasterclassCheckout__ingredients{
+    margin-top: 3%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainChefMasterclassCheckout__details > textarea,
+.mainChefMasterclassCheckout__ingredients > textarea{
+    outline: none;
+    height: auto;
+    resize: none;
+    width: 100%;
+    border-radius: 8px;
+    overflow-y: hidden;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    padding-left: 1%;
+    margin-top: 1.5%;
+    padding-top: 1%;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+
+.mainChefMasterclassCheckout__paymentMethods{
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.mainChefMasterclassCheckout__paymentMethods > img{
+    width: 25px;
+    height: 25px;
+    margin-left: 3%;
+}
+.mainChefMasterclassCheckout__cardInfoHeading{
+    margin-top: 3%;
+    display: flex;
+    border: 1px solid;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    background-color: #3d3838;
+}
+.mainChefMasterclassCheckout__cardInfoHeading > h5{
+    margin-left: 2%;
+}
+.mainChefMasterclassCheckout__cardInfo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainChefMasterclassCheckout__cardInfo > input{
+    height: 7vh;
+    border-radius: 999px;
+    padding-left: 4%;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    margin-top: 2%;
+    font-family: 'Montserrat','sans-serif';
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.mainChefMasterclassCheckout__cardInfo >input::-webkit-outer-spin-button,
+.mainChefMasterclassCheckout__cardInfo >input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.year-cvc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.year-cvc > input{
+    font-family: 'Montserrat','sans-serif';
+    height: 7vh;
+    border-radius: 999px;
+    padding-left: 4%;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    margin-top: 2%;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.class-month{
+    width: 60%;
+}
+.class-cvc{
+    width: 38%;
+}
+.mainChefMasterclassCheckout__warning1,
+.mainChefMasterclassCheckout__warning2{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainChefMasterclassCheckout__warning1 >p
+,.mainChefMasterclassCheckout__warning2>p{
+    margin-left: 1%;
+}
+.mainChefMasterclassCheckout__warning1 > img,
+.mainChefMasterclassCheckout__warning2>img{
+    width: 25px;
+    height: 25px;
+}
+.mainChefMasterclassCheckout__option2>img{
+    width: 55px;
+    height: 55px;
+}
+.mainChefMasterclassCheckout__payButton{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.mainChefMasterclassCheckout__payButton > button{
+    background-color: #4da302;
+    color: white;
+    font-weight: 800;
+    width: 25%;
+    font-size: 16px;
+    border-radius: 999px 0 999px 999px;
+    box-shadow: 0 2px 6px 0 grey;
+}
+.mainChefMasterclassCheckout__payButton > p{
+    margin-top: 5%;
+    font-weight: 600;
+}
+.mainChefMasterclassCheckout__option2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+

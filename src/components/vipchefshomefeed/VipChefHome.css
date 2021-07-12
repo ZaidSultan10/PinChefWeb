@@ -3,19 +3,23 @@
     border-radius: 16px;
     overflow: hidden;
     box-shadow: inset 1px 3px 3px 0 grey;
+    display: grid;
+    grid-template-columns: 3fr;
 }
 
 .vipChefHome__container__header{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 4%;
-    margin-top: 3%;
+    margin-top: 5%;
     margin-bottom: 2%;
 }
 
 .vipChefHome__container__location{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
 
@@ -24,75 +28,42 @@
     font-size: 14px;
 }
 .icon{
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
 }
-.text{
-    margin-top: 5%;
-}
-.location__country{
+
+.location__country,.location__city{
     color: gray;
 }
 
 .vipChefHome__profile{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
 }
 
 .vipChefHome__profile >img{
-    width: 98%;
-    height: 30%;
+    width: 100%;
     border-radius: 16px;
+    margin: 0 auto;
 }
 .vipChefHome__quotes{
-    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
     margin-left: 3%;
     margin-bottom: 4%;
     margin-top: 2%;
 }
-@media only screen and (max-width:865px){
-    .text{
-        font-size: 12px;
-    }
-    .vipChefHome__container__location >p {
-        font-size: 12px;
-    }
-    .vipChefHome__container__location >img{
-        width:16px;
-        height: 16px;
-    }
-    .vipChefHome__quotes > p{
-        font-size: 12px;
-    }
+.vipChefHome__quotes > p{
+    display: grid;
+    grid-template-columns: 1fr;
 }
-@media only screen and (max-width:775px){
-    .text{
-        font-size: 10px;
-    }
-    .vipChefHome__container__location >p {
-        font-size: 10px;
-    }
-    .vipChefHome__container__location >img{
-        width:15px;
-        height: 15px;
-    }
-    .vipChefHome__quotes > p{
-        font-size: 10px;
-    }
+@media only screen and (min-width:1290px) and (max-width:1921px){
+    
 }
-@media only screen and (max-width:750px){
-    .text{
-        font-size: 9px;
-    }
-    .vipChefHome__container__location >p {
-        font-size: 9px;
-    }
-    .vipChefHome__container__location >img{
-        width:14px;
-        height: 14px;
-    }
-    .vipChefHome__quotes > p{
-        font-size: 9px;
+@media only screen and (max-width:1040px){
+    .vipChefHome__quotes > p,.text,.location__city,.location__country{
+        font-size: 12px !important;
     }
 }

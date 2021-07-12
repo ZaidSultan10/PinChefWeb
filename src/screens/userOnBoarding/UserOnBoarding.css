@@ -5,6 +5,7 @@
 .UserOnboarding-Body {
   height: 100%;
   display: flex;
+  margin-top: 5.5%;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;

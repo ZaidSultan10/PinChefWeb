@@ -1,0 +1,164 @@
+.mainChefCreateFood__heading{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-items: center;
+    border: 1px solid;
+    color: white;
+    background-color: #3d3838;
+    height: 7vh;
+    border-radius: 999px 999px 999px 0px;
+}
+.mainChefCreateFood__heading>h5{
+    font-size: 16px;
+}
+.mainChefCreateFood__addImage{
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 3px solid #d9d9d9;
+    border-radius: 16px;
+    width: 100%;
+    height: 35vh;
+    place-items: center;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.mainChefCreateFood__addImage >img {
+    width: 70px;
+    height: 70px;
+    display: flex;
+}
+.mainChefCreateFood__name,
+.mainChefCreateFood__serving,
+.mainChefCreateFood__time,
+.mainChefCreateFood__cook,
+.mainChefCreateFood__ingredients,
+.mainChefCreateFood__calory,
+.mainChefCreateFood__level{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3%;
+}
+.mainChefCreateFood__name > h5,
+.mainChefCreateFood__serving > h5,
+.mainChefCreateFood__time>h5,
+.mainChefCreateFood__cook>h5,
+.mainChefCreateFood__ingredients > h5,
+.mainChefCreateFood__instruction > h5,
+.mainChefCreateFood__tools > h5,
+.mainChefCreateFood__level > h5,
+.mainChefCreateFood__calory>h5{
+    margin-bottom: 1%;
+}
+.mainChefCreateFood__name > input, 
+.mainChefCreateFood__serving > input,
+.mainChefCreateFood__time>input,
+.mainChefCreateFood__cook>input,
+.mainChefCreateFood__calory>input{
+    border: 3px solid #d9d9d9;
+    font-family: 'Montserrat','sans-serif';
+    border-radius: 8px;
+    padding-left: 2%;
+    outline: none;
+    width: 100%;
+    height: 7vh;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+
+.mainChefCreateFood__cuisine>h5>span,
+.mainChefCreateFood__level>h5>span{
+    color: red;
+    margin-left: 1%;
+}
+.mainChefCreateFood__cuisine,
+.mainChefCreateFood__diet{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3%;
+}
+.mainChefCreateFood__cuisine > h5,
+.mainChefCreateFood__diet > h5{
+    margin-bottom: 1%;
+}
+.mainChefCreateFood__cuisine > select,
+.mainChefCreateFood__diet > select{
+    border: 3px solid #d9d9d9;
+    font-family: 'Montserrat','sans-serif';
+    padding-left: 1%;
+    color: gray;
+    outline: none;
+    padding-right: 2%;
+    border-radius: 8px;
+    width: 100%;
+    height: 7vh;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+    -webkit-appearance: none;
+  appearance: none;
+}
+
+.mainChefCreateFood__ingredients > textarea
+{
+    outline: none;
+    resize: none;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    overflow-y: hidden;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    padding-left: 1%;
+    padding-top: 1%;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.optional{
+    color: gray !important;
+}
+.input__options__food{
+    display: flex;
+    flex-direction: column;
+}
+.input__easy__food{
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.input__medium__food,.input__hard__food{
+    display: flex;
+    align-items: center;
+}
+.delivery-fee{
+    display: flex;
+    margin-left: 4%;
+    align-items: center;
+}
+.shipping-fee{
+    display: flex;
+    margin-left: 3%;
+    align-items: center;
+}
+.delivery-fee >p ,.shipping-fee>p{
+    font-size: 16px;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+.delivery-fee>h5,.shipping-fee>h5{
+    font-size: 16px;
+    margin-top: 1%;
+}
+.delivery-fee > form,.shipping-fee>form{
+    margin-top: -0.8rem;
+    margin-left: 2%;
+}
+
+select{
+    background: url(../../assets/svg/Down-button-green.svg) no-repeat;
+    background-size: 15px;
+    background-position-x: 98%;
+    background-position-y: center;
+}

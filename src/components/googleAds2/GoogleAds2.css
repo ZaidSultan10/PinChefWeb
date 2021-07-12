@@ -1,0 +1,133 @@
+.googleAds{
+    position: sticky;
+  }
+  .active1{
+    background-color: #ffcf54 !important;
+    border-radius: 50% !important;
+  }
+  
+  .googleAds__filter{
+    display: grid;
+    grid-template-columns: 1fr ;
+    border: 2px solid silver;
+    overflow: hidden;
+    border-radius: 0 24px 0 24px;
+    box-shadow:  0 2px 6px 0 gray;
+  }
+  
+  .googleAds__filter__header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2%;
+  }
+  .googleAds__filter__header > img{
+    
+    width: 50%;
+    height: 50%;
+    margin-top: 2%;
+  }
+  .googleAds__filter__header > h3{
+    
+    color: #3f8f22;
+    font-weight: 700 !important;
+  }
+  .kosher{
+    margin-bottom: 3%;
+  }
+  .sort__by, .diff__by{
+    margin-bottom: 5%;
+    margin-left: 5%;
+    font-weight: 700 !important;
+  }
+  .diff__by{
+    margin-top: 4%;
+  }
+  .googleAds__filter__options{
+    display: grid;
+    grid-template-columns: 4fr;
+  }
+  
+  .googleAds__filter__most__commented{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-left: 4%;
+  
+  }
+  .googleAds__filter__most__commented > p{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+  }
+  
+  .googleAds__filter__most__liked,
+  .googleAds__filter__vip__chef,
+  .googleAds__filter__top__rated{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-left: 4%;
+    margin-top: 5%;
+    align-items: center;
+  }
+  .googleAds__filter__most__liked > p,
+  .googleAds__filter__vip__chef > p,
+  .googleAds__filter__top__rated >p{
+    margin-left: 5%;
+  }
+  
+  .googleAds__filter__dates{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-left: 5%;
+    margin-top: 4%;
+  }
+  .googleAds__filter__dates > img{
+    
+    height: 13px;
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: -35px !important;
+  }
+  .googleAds__filter__dates > h4{
+    font-size: 16px !important;
+  }
+  .googleAds__filter__date{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+  }
+  .googleAds__ads{
+    margin-top: 2rem;
+    margin-right: -3px;
+  }
+  
+  @media only screen and (min-width:1290px) and (max-width:1921px){
+    .googleAds__filter__header > h3{
+      font-size: 30px !important;
+    }
+    .sort__by{
+      font-size: 26px !important;
+    }
+    .radio{
+      font-size: 28px !important;
+    }
+    .googleAds__filter__most__commented>p,
+    .googleAds__filter__most__liked>p,
+    .googleAds__filter__top__rated>p,
+    .googleAds__filter__vip__chef>p{
+      font-size: 18px !important;
+    }
+    .googleAds__filter__dates >h4{
+      font-size: 24px !important;
+    }
+    .googleAds__filter__dates >img{
+      height: 20px;
+    }
+    .googleAds__filter__date >p{
+      font-size: 18px !important;
+    }
+  }
+  

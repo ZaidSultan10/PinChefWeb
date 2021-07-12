@@ -1,0 +1,100 @@
+.mainMyPurchases__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 3px solid white;
+    box-shadow: 0px 2px 4px 1px rgb(214, 214, 214);
+    margin-top: 2%;
+    border-radius: 16px;
+}
+.mainMyPurchases__avatar{
+    box-shadow:  0 2px 6px 0 gray;
+}
+
+.mainMyPurchases__header{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 4fr;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.mainMyPurchases__name{
+    margin-top: 1.3%;
+}
+.mainMyPurchases__headerRight > h4{
+    text-align: right;
+    color: #3f8f22;
+}
+.mainMyPurchases__headerRight > img {
+    float: right;
+}
+
+.mainMyPurchases__name > h4{
+    font-size: 16px !important;
+}
+.repeat-icon{
+    width: 20px;
+    height: 20px;
+}
+.mainMyPurchases__showDetailsRight > img{
+    width: 14px;
+    height: 10px;
+    margin-left: 2%;
+}
+.rate-icon {
+    width: 50px;
+    height: 45px;
+    margin-top: -2%;
+}
+.mainMyPurchases__center{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+.purchase__price{
+    text-align: right;
+}
+.mainMyPurchases__total{
+    margin-top: 3%;
+    text-align: right;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.mainMyPurchases__showDetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4%;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+}
+.mainMyPurchases__showDetailsLeft{
+    display: flex;
+    align-items: center;
+}
+.mainMyPurchases__showDetailsLeft>p{
+    color: #707070;
+    font-weight: 700;
+}
+.mainMyPurchases__showDetailsLeft > h5{
+    border: 1px solid;
+    margin-left: 10%;
+    width: 30%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    color: white;
+    background-color: #3f8f22;
+}
+.mainMyPurchases__showDetailsRight{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.mainMyPurchases__showDetailsRight>p{
+    color: #707070;
+    font-weight: 700;
+}

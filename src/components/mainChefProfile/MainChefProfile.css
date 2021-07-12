@@ -1,0 +1,109 @@
+.mainChefProfile__container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.coverPhoto{
+    height: 220px;
+}
+
+.mainChefProfile__followers > img,
+.mainChefProfile__stars > img {
+    width: 20px;
+    height: 20px;
+}
+.mainChefProfile__rating{
+    display: flex;
+    align-items: center;
+}
+.mainChefProfile__rating > img{
+    width: 72%;
+    margin-left: 1%;
+}
+.mainChefProfile__chefHeader{
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    align-items: center;
+}
+.mainChefProfile__profile>.mainChefProfile__avatar{
+    width: 120px;
+    height: 120px;
+    margin-top: -3rem;
+    box-shadow:  0 2px 6px 0 gray;
+}
+.mainChefProfile__location{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+.mainChefProfile__location > img{
+    width: 16px;
+    height: 16px;
+    margin-top: 2%;
+}
+.mainChefProfile__location > h5{
+    margin-top: 2%;
+    color: #3f8f22;
+    margin-left: 2%;
+}
+.mainChefProfile__name{
+    margin-left: 2%;
+}
+.mainChefProfile__name > p{
+    margin-top: 2.6%;
+}
+.mainChefProfile__followStatus{
+    float: right;
+
+    margin-top: -3.2rem;
+}
+.mainChefProfile__followers{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.mainChefProfile__followers > h5{
+    margin-left: 2%;
+}
+.mainChefProfile__followStatus > h5{
+    text-align: right;
+    color: #3f8f22;
+}
+.mainChefProfile__rating{
+    margin-top: 2%;
+}
+.mainChefProfile__rating > h5{
+    font-size: 16px;
+    color: #707070;
+    font-weight: 800 !important;
+}
+.mainChefProfile__stars{
+    margin-left: 1%;
+}
+.mainChefProfile__container >p {
+    margin-top: 2%;
+}
+.mainChefProfile__picButtons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2%;
+    grid-gap:5%;
+}
+.mainChefProfile__picButtons > button {
+    color: #707070;
+    font-weight: 800;
+}
+.mainChefProfile__picButtons > button:hover{
+    background-color: #d4d4d4;
+    border-radius: 999px;
+    box-shadow:  0 2px 6px 0 gray;
+}
+.mainChefProfile__allPhotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:0.5%;
+    margin-top: 2%;
+}
+.mainChefProfile__allPhotos > img{
+    width: 100%;
+    height: auto;
+}

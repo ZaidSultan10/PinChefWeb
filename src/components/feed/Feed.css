@@ -1,9 +1,5 @@
 .feed{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    width: 70%;
-    margin-top: 3.5%;
+    
 }
 .feed__left{
     flex: 0.29;

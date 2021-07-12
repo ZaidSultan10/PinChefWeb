@@ -5,7 +5,7 @@ import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import Ads from '../ads/Ads';
 import RightArrow from '../../assets/svg/right-arrow-brown.svg'
 
-const GoogleAds = () => {
+const GoogleAds = ({filterSearchProp}) => {
   return (
     <div className="googleAds">
       <div className="googleAds__filter">
@@ -32,13 +32,98 @@ const GoogleAds = () => {
                 <p>Top Rated Chefs</p>
               </div>
           </div>
-          <div className='googleAds__filter__dates'>
-              <h4>Dates</h4>
-              <img src={RightArrow} alt='arrow'/>
+          {filterSearchProp && ( <>
+          <h4 className='diff__by'>Difficulty Level</h4>
+          <div className='googleAds__filter__options'>
+              <div className='googleAds__filter__most__commented'>
+                <RadioButtonUncheckedIcon className='active1 radio' />
+                <p>Easy</p>
+              </div>
+              <div className='googleAds__filter__most__liked'>
+                <RadioButtonUncheckedIcon className='radio' />
+                <p>Medium</p>
+              </div>
+              <div className='googleAds__filter__vip__chef'>
+                <RadioButtonUncheckedIcon className='radio'  />
+                <p>Hard</p>
+              </div>
           </div>
-          <div className='googleAds__filter__date'>
-              <p>25/02/2020 - 27/02/2020</p>
+          <h4 className='diff__by'>Cooking Time</h4>
+          <div className='googleAds__filter__options'>
+              <div className='googleAds__filter__most__commented'>
+                <RadioButtonUncheckedIcon className='active1 radio' />
+                <p>1min - 30min</p>
+              </div>
+              <div className='googleAds__filter__most__liked'>
+                <RadioButtonUncheckedIcon className='radio' />
+                <p>30min - 60min</p>
+              </div>
+              <div className='googleAds__filter__vip__chef'>
+                <RadioButtonUncheckedIcon className='radio'  />
+                <p>60min - 120min</p>
+              </div>
+              <div className='googleAds__filter__top__rated'>
+                <RadioButtonUncheckedIcon className='radio' />
+                <p>120min & more</p>
+              </div>
           </div>
+          <h4 className='diff__by'>Cuisines</h4>
+          <div className='googleAds__filter__options'>
+              <div className='googleAds__filter__most__commented'>
+                <RadioButtonUncheckedIcon className='active1 radio' />
+                <p>European</p>
+              </div>
+              <div className='googleAds__filter__most__liked'>
+                <RadioButtonUncheckedIcon className='radio' />
+                <p>Russian</p>
+              </div>
+              <div className='googleAds__filter__vip__chef'>
+                <RadioButtonUncheckedIcon className='radio'  />
+                <p>Turkish</p>
+              </div>
+              <div className='googleAds__filter__top__rated'>
+                <RadioButtonUncheckedIcon className='radio' />
+                <p>Vegan</p>
+              </div>
+              <div className='googleAds__filter__top__rated'>
+                <RadioButtonUncheckedIcon className='radio' />
+                <p>Vegetarian</p>
+              </div>
+          </div>
+          <h4 className='diff__by'>Diets</h4>
+          <div className='googleAds__filter__options'>
+              <div className='googleAds__filter__most__commented'>
+                <RadioButtonUncheckedIcon className='active1 radio' />
+                <p>Vegan</p>
+              </div>
+              <div className='googleAds__filter__most__liked'>
+                <RadioButtonUncheckedIcon className='radio' />
+                <p>Vegetarian</p>
+              </div>
+              <div className='googleAds__filter__vip__chef'>
+                <RadioButtonUncheckedIcon className='radio'  />
+                <p>Gluten Free</p>
+              </div>
+              <div className='googleAds__filter__top__rated'>
+                <RadioButtonUncheckedIcon className='radio' />
+                <p>Halal</p>
+              </div>
+              <div className='googleAds__filter__top__rated kosher'>
+                <RadioButtonUncheckedIcon className='radio' />
+                <p>Kosher</p>
+              </div>
+          </div> </>)}
+          {!filterSearchProp && (
+            <>
+                <div className='googleAds__filter__dates'>
+                  <h4>Dates</h4>
+                  <img src={RightArrow} alt='arrow'/>
+                </div>
+                <div className='googleAds__filter__date'>
+                  <p>25/02/2020 - 27/02/2020</p>
+                </div>
+            </>
+          )}
       </div>
       <div className='googleAds__ads'>
           <Ads />

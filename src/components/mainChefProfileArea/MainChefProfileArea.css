@@ -1,0 +1,267 @@
+.mainChefProfileArea{
+    padding-bottom: 8rem;
+}
+.mainChefProfileArea__heading{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-items: center;
+    border: 1px solid;
+    color: white;
+    background-color: #3d3838;
+    height: 7vh;
+    border-radius: 999px 999px 999px 0px;
+}
+.mainChefProfileArea__top{
+    display: flex;
+    align-items: center;
+}
+.mainChefProfileArea__top > img{
+    width: 100px;
+    height: 100px;
+}
+.mainChefProfileArea__topLeft{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 2%;
+    width: 80%;
+}
+.mainChefProfileArea__topLeft > h5,
+.mainChefProfileArea__user > h5,
+.mainChefProfileArea__phone >h5,
+.mainChefProfileArea__date>h5,
+.mainChefProfileArea__gender>h5,
+.mainChefProfileArea__position>h5,
+.mainChefProfileArea__language>h5,
+.mainChefProfileArea__cuisine>h5,
+.mainChefProfileArea__ad>h5,
+.mainChefProfileArea__info>h5,
+.mainChefProfileArea__location>h5,
+.mainChefProfileArea__hours>h5,
+.mainChefProfileArea__serve>h5,
+.mainChefProfileArea__min>h5,
+.mainChefProfileArea__range>h5,
+.mainChefProfileArea__hourly>h5,
+.mainChefProfileArea__access>h5{
+    margin-bottom: 1%;
+}
+.mainChefProfileArea__topLeft > h5>span,
+.mainChefProfileArea__user > h5>span,
+.mainChefProfileArea__phone >h5>span,
+.mainChefProfileArea__date>h5>span,
+.mainChefProfileArea__gender>h5>span,
+.mainChefProfileArea__position>h5>span,
+.mainChefProfileArea__language>h5>span,
+.mainChefProfileArea__cuisine>h5>span,
+.mainChefProfileArea__ad>h5>span,
+.mainChefProfileArea__info>h5>span,
+.mainChefProfileArea__location>h5>span,
+.mainChefProfileArea__hours>h5>span,
+.mainChefProfileArea__serve>h5>span,
+.mainChefProfileArea__min>h5>span,
+.mainChefProfileArea__range>h5>span,
+.mainChefProfileArea__hourly>h5>span,
+.mainChefProfileArea__access>h5>span{
+    margin-left: 1%;
+    color: red;
+}
+.mainChefProfileArea__topLeft > input,
+.mainChefProfileArea__user>input,
+.mainChefProfileArea__phone>input,
+.mainChefProfileArea__gender>input,
+.mainChefProfileArea__position>input,
+.mainChefProfileArea__language>input,
+.mainChefProfileArea__location>input,
+.mainChefProfileArea__min>input,
+.mainChefProfileArea__range>input,
+.mainChefProfileArea__hourly>input{
+    border: 3px solid #d9d9d9;
+    font-family: 'Montserrat','sans-serif';
+    border-radius: 8px;
+    padding-left: 2%;
+    outline: none;
+    width: 100%;
+    height: 7vh;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.mainChefProfileArea__date > select,
+.mainChefProfileArea__cuisine>select{
+    border: 3px solid #d9d9d9;
+    font-family: 'Montserrat','sans-serif';
+    padding-left: 2%;
+    color: gray;
+    outline: none;
+    padding-right: 2%;
+    border-radius: 8px;
+    width: 100%;
+    height: 7vh;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.mainChefProfileArea__ad > textarea,
+.mainChefProfileArea__info>textarea,
+.mainChefProfileArea__access>textarea{
+    outline: none;
+    height: auto;
+    resize: none;
+    width: 100%;
+    border-radius: 8px;
+    overflow-y: hidden;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    padding-left: 2%;
+    padding-top: 1%;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.input__selected,.input__allTime,
+.input__easy__serve{
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+.input__easy__serve > label{
+    margin-left: 1%;
+}
+.mainChefProfileArea__user{
+    margin-top: 3%;
+}
+.mainChefProfileArea__phone,
+.mainChefProfileArea__date,
+.mainChefProfileArea__gender,
+.mainChefProfileArea__position,
+.mainChefProfileArea__language,
+.mainChefProfileArea__cuisine,
+.mainChefProfileArea__ad,
+.mainChefProfileArea__info,
+.mainChefProfileArea__location,
+.mainChefProfileArea__hours,
+.mainChefProfileArea__serve,
+.mainChefProfileArea__min,
+.mainChefProfileArea__range,
+.mainChefProfileArea__hourly,
+.mainChefProfileArea__message,
+.mainChefProfileArea__access,
+.mainChefProfileArea__button{
+    margin-top: 2%;
+}
+.mainChefProfileArea__message {
+    display: flex;
+    align-items: center;
+}
+.mainChefProfileArea__button{
+    display: flex;
+    justify-content: center;
+}
+.mainChefProfileArea__button > button{
+    background-color: #3f8f22;
+    color: white;
+    font-weight: 800;
+    width: 40%;
+    border-radius: 999px 0 999px 999px;
+}
+.mainChefProfileArea__button > button:hover{
+    background-color: rgb(7, 211, 7);
+}
+.input__options__service{
+    display: flex;
+}
+.input__allTime{
+    margin-left: 5%;
+}
+.mainChefProfileArea__phone>input::-webkit-outer-spin-button,
+.mainChefProfileArea__phone>input::-webkit-inner-spin-button,
+.inputThePrice>input::-webkit-outer-spin-button,
+.inputThePrice>input::-webkit-inner-spin-button,
+.inputThePrice1>input::-webkit-outer-spin-button,
+.inputThePrice1>input::-webkit-inner-spin-button,
+.inputThePrice2>input::-webkit-outer-spin-button,
+.inputThePrice2>input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.mainChefProfileArea__location >input{
+    background: url(../../assets/svg/Find-my-location.svg);
+    background-position-x: 98%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+}
+.sampleTestDiv,.sampleTestDiv1{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 1%;
+}
+
+.headingsss{
+    border-left: 3px solid #d9d9d9;
+    border-right:1px solid #d9d9d9 ; 
+    font-family: 'Montserrat','sans-serif';
+    border-radius: 8px 0px 0px 8px;
+    outline: none;
+    width: 55px;
+    height: 7vh;
+    font-size: 20px;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headingsss1{
+    border-left: 3px solid #d9d9d9;
+    border-right:1px solid #d9d9d9 ; 
+    font-family: 'Montserrat','sans-serif';
+    border-radius: 8px 0px 0px 8px;
+    outline: none;
+    width: 105px;
+    height: 7vh;
+    font-size: 20px;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputThePrice >input,.inputThePrice2>input{
+    border-right: 3px solid #d9d9d9;
+    border-top:3px solid #d9d9d9 ;
+    border-bottom: 3px solid #d9d9d9;
+    font-family: 'Montserrat','sans-serif';
+    border-radius: 0 8px 8px 0px;
+    padding-left: 2%;
+    outline: none;
+    width: 100%;
+    height: 7vh;
+    border: none;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.inputThePrice2>input{
+    padding-left: 4%;
+}
+.inputThePrice,.inputThePrice1,.inputThePrice2{
+    width: 100%;
+}
+.inputThePrice1>input{
+    border-right: 3px solid #d9d9d9;
+    border-top:3px solid #d9d9d9 ;
+    border-bottom: 3px solid #d9d9d9;
+    font-family: 'Montserrat','sans-serif';
+    border-radius: 0 0px 0px 0px;
+    padding-left: 4%;
+    outline: none;
+    width: 100%;
+    height: 7vh;
+    border: none;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.mainChefProfileArea__message > img{
+    width: 20px;
+    height: 20px;
+}
+.mainChefProfileArea__message > p {
+    margin-left: 1.5%;
+}
