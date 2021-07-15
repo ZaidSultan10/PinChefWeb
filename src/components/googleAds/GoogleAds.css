@@ -1,5 +1,5 @@
 .googleAds{
-  position: sticky;
+  
   cursor: pointer;
 }
 .active1{
@@ -20,11 +20,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 2%;
+  height: 50px;
 }
 .googleAds__filter__header > img{
   
-  width: 50%;
-  height: 50%;
+  width: 30px;
+  height: 30px;
   margin-top: 2%;
 }
 .googleAds__filter__header > h3{

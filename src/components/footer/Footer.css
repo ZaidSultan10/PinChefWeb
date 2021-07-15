@@ -9,7 +9,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 12vh;
+
 }
 .cheficon{
     width: 28px !important;
@@ -26,8 +26,7 @@
     margin-top: 1%;
     margin-bottom: 2%;
     width: 30px;
-    height: 30px;
-    
+    height: 30px; 
 }
 
 @media only screen and (max-width:1000px){
@@ -38,6 +37,7 @@
     .footer > img {
         margin-left: 2%;
     margin-right: 2%;
+    margin-bottom: 5%;
     }
 }
 @media only screen 
@@ -46,7 +46,19 @@ and (max-height: 2388px)
 and (-webkit-min-device-pixel-ratio: 1.5)
 and (orientation:portrait){
  .footer >img{
-    width: 90px;
-    height: 90px;
+    width: 90px ;
+    height: 90px ;
+    margin-bottom: 3%;
  }
+ .cheficon{
+    width: 90px !important;
+    height: 90px !important;
+    margin-top: 1.1% !important;
+}
+.cheficon1{
+    width: 90px !important;
+    height: 90px !important;
+    margin-top: 0.9% !important;
+
+}
 }

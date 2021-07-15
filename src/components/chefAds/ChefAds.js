@@ -20,6 +20,9 @@ const ChefAds = () => {
             <div className='chefAds__profile'>
                 <VipChefHome />
             </div>
+            <div className='chefAds__profile'>
+                <VipChefHome />
+            </div>
         </div>
     )
 }

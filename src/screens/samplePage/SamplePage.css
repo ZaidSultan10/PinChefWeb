@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(1,minmax(0,1fr));
     width: 85%;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
     max-width: 1400px;
     margin-top: 3.5%;
@@ -17,6 +17,11 @@
 }
 .samplepage__left,.samplepage__right,.samplepage__center{
     width: 100%;
+}
+.samplepage__right{
+    
+    display: grid;
+    grid-template-columns: 3fr;
 }
 .samplepage__left > p , .samplepage__center > p , .samplepage__right>p{
     display: flex;
@@ -76,3 +81,4 @@
         display: none;
     }
 }
+

@@ -60,8 +60,10 @@ and (min-width: 768px)
   and (max-height: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:landscape){
-    .mainFeedFilters > h3{
-        font-size:17px !important;
+    .mainFeedFilters > .feedss,
+    .mainFeedFilters > .masterclass,
+    .mainFeedFilters > .recipess{
+        font-size:24px !important;
     }
 }
 @media only screen 

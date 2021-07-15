@@ -1,11 +1,9 @@
-.chefAds__heading{
-    display: grid;
-    justify-content: center;
-}
+
 .chefAds__heading { 
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-gap:1%;
+    height: 40px;
 }
 .chefAds__heading > h3{
     display: flex;
@@ -22,6 +20,8 @@
 
 .chefAds__profile{
     margin-top: 10%;
+    height: auto;
+    
 }
 @media only screen and (min-width:1290px) and (max-width:1921px){
     .chefAds__heading > h3{

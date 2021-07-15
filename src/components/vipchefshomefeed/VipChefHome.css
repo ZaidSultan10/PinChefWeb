@@ -4,7 +4,7 @@
     overflow: hidden;
     box-shadow: inset 1px 3px 3px 0 grey;
     display: grid;
-    grid-template-columns: 3fr;
+    
 }
 
 .vipChefHome__container__header{
@@ -50,6 +50,7 @@
     width: 100%;
     border-radius: 16px;
     margin: 0 auto;
+    height: auto;
 }
 .vipChefHome__quotes{
     display: grid;
