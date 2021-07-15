@@ -11,6 +11,7 @@ import LocationIcon from "../../assets/svg/Location.svg";
 import ShareItIcon from "../../assets/svg/Share-yellow.svg";
 import Modal from 'react-modal'
 import { Button } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 
 const MainFeed = () => {
 
@@ -20,8 +21,8 @@ const MainFeed = () => {
 
   const customStyles={
     content : {
-      top                   : '45%',
-      left                  : '63%',
+      top                   : '42%',
+      left                  : '65%',
       right                 : 'auto',
       bottom                : 'auto',
       marginRight           : '-50%',
@@ -30,7 +31,7 @@ const MainFeed = () => {
       padding:'0',
       width : '20%',
       height:'20%',
-      
+      cursor:'pointer'
     }
   }
   const customStyles1={
@@ -46,6 +47,7 @@ const MainFeed = () => {
       margin:'0px',
       width : '35%',
       height:'35%',
+      cursor:'pointer'
       
     }
   }
@@ -74,7 +76,8 @@ const closeModal2 = () => {
     setIsOpen1(false);
     setIsOpen(false)
     }
-
+    
+    const history=useHistory()
 
   return (
     <>

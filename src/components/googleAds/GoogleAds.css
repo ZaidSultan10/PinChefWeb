@@ -1,5 +1,6 @@
 .googleAds{
   position: sticky;
+  cursor: pointer;
 }
 .active1{
   background-color: #ffcf54 !important;
@@ -29,6 +30,7 @@
 .googleAds__filter__header > h3{
   
   color: #3f8f22;
+  margin-left: 20%;
   font-weight: 700 !important;
 }
 .kosher{

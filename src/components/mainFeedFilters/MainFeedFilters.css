@@ -7,6 +7,18 @@
 }
 .active2{
     border-bottom: 3.5px solid #3f8f22 !important;
+    border-radius: 999px;
+}
+.recipess{
+    margin-left: -1rem;
+}
+.feedss{
+
+    width: 80%;
+    margin-left: 0.7rem;
+}
+.masterclass{
+    margin-left: -1rem !important;
 }
 .mainFeedFilters > h3{
     color: gray;

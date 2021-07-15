@@ -1,9 +1,13 @@
+.ReactModalPortal .ReactModal__Overlay.ReactModal__Overlay--after-open {
+    background-color: unset !important;
+  }
 .mainFeed__header{
     display: flex;
     justify-content: space-between;
     margin-left: 1%;
     margin-right: 2%;
     margin-top: 1.5%;
+    cursor: pointer;
 }
 .modal-options{
     display: flex;
@@ -37,6 +41,7 @@
 .report-options{
     margin-left: 8%;
     margin-top: 5%;
+    cursor: pointer;
 }
 .report-options > h5{
     font-size: 16px;
@@ -125,7 +130,14 @@ input[type='radio']:checked::after {
     width: 25px;
     height: 25px;
     margin-top: 4%;
+    cursor: pointer;
     margin-right: 0.5rem !important;
+    transform: translateZ(5%);
+    transition: 250ms;
+}
+.share__icon:hover{
+    width: 28px;
+    height: 28px;
 }
 .avatar__container {
     margin-top: 1rem;
@@ -212,7 +224,14 @@ input[type='radio']:checked::after {
 }
 .like{
     margin-left: 5%;
+    font-family: 'PT Sans Caption', sans-serif;
     text-align: center;
+    cursor: pointer;
+}
+.like >img:hover{
+    width: 29px;
+    height: 29px;
+
 }
 
 .heart__icon{
@@ -220,14 +239,25 @@ input[type='radio']:checked::after {
     margin-top: 2.5px;
     width: 26px;
     height: 26px;
+    transform: translateZ(5%);
+    transition: 250ms;
 }
 .comment{
     margin-left: 1.7rem;
+    cursor: pointer;
+    font-family: 'PT Sans Caption', sans-serif;
 }
+
 .comment >img {
     width: 23px;
     height: 23px;
     margin-top: 2.5px;
+    transform: translateZ(5%);
+    transition: 250ms;
+}
+.comment >img:hover{
+    width: 25px;
+    height: 25px;
 }
 .comment>p{
     margin-top: 3px;
@@ -361,6 +391,9 @@ p{
     .share__icon {
         width: 18px;
         height: 18px;
+    }
+    .share{
+        margin-top: 2% !important;
     }
     .mainFeed__paragraph > p{
         font-size: 13px;
@@ -684,6 +717,7 @@ p{
   and (max-height: 2388px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:portrait){
+    
     .mainFeed__userName > h3{
         font-size: 42px !important;
         
@@ -738,6 +772,9 @@ p{
     }
     .moreHoriz{
         font-size: 4rem !important;
+    }
+    .comment{
+        margin-left: 3rem !important;
     }
     .mainFeed__paragraph > p{
         font-size: 36px !important;

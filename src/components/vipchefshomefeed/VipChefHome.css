@@ -27,6 +27,9 @@
 .icon,.text{
     font-size: 14px;
 }
+.text{
+    font-weight: 800;
+}
 .icon{
     width: 15px;
     height: 15px;

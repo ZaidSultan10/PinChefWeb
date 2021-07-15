@@ -11,11 +11,11 @@ import StarUnselectedIcon from '../../assets/svg/Star-un-selected.svg'
 const Footer = () => {
     return (
         <div className='footer'>
-            <img src={HomeSelectedIcon} alt='home' />
-            <img src={ChefUnselectedIcon} alt='chef' />
-            <img src={ShopUnselectedIcon} alt='shop' />
+            <img src={HomeSelectedIcon} className='cheficon1' alt='home' />
+            <img src={ChefUnselectedIcon} className='cheficon' alt='chef' />
+            <img src={ShopUnselectedIcon}  alt='shop' />
             <img src={StarUnselectedIcon} alt='star' />
-            <img src={SettingsUnselectedIcon} alt='settings' />
+            <img src={SettingsUnselectedIcon} className='cheficon' alt='settings' />
         </div>
     )
 }
