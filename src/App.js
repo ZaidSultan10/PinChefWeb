@@ -49,6 +49,8 @@ import UserForgotPassword from "./screens/userForgotPassword/UserForgotPassword"
 import UserResetPassword from "./screens/userResetPassword/UserResetPassword";
 import UserProfileSet from "./screens/userProfileSet/UserProfileSet";
 import UserCommentScreen from "./screens/userCommentScreen/UserCommentScreen";
+import CallScreen from "./screens/callScreen/CallScreen";
+import UserRecipeDetails from "./screens/userRecipeDetails/UserRecipeDetails";
 
 
 
@@ -100,6 +102,8 @@ function App() {
         <Route path="/user/reset-password" exact component={UserResetPassword} />
         <Route path="/user/set-profile" exact component={UserProfileSet} />
         <Route path="/user/comments" exact component={UserCommentScreen} />
+        <Route path="/chef/call" exact component={CallScreen} />
+        <Route path="/user/recipe/details" exact component={UserRecipeDetails} />
         <Route path="/usersignin" exact>
           <Signin>
             <UserSignIn />

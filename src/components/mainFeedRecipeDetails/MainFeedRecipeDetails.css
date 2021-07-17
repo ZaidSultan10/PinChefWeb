@@ -1,0 +1,104 @@
+.mainFeedRecipeDetails__header{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+}
+.mainFeedRecipeDetails__header > h5{
+    font-size: 22px;
+    color: #3f8f22;
+}
+.mainFeedRecipeDetails__header > img {
+    width: 25px;
+    height: 25px;
+}
+.mainFeedRecipeDetails__Profile{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+}
+.mainFeedRecipeDetails__Profile > .mainFeedRecipeDetails__avatar{
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 1px 6px 0 grey;
+}
+.mainFeedRecipeDetails__username{
+    display: flex;
+    justify-content: space-between;
+}
+.mainFeedRecipeDetails__username > h5{
+    font-size: 16px;
+}
+.mainFeedRecipeDetails__photo{
+    margin-top: 1%;
+}
+.mainFeedRecipeDetails__actions{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+    align-items: center;
+}
+.mainFeedRecipeDetails__dishName > h5{
+    font-size: 16px;
+}
+.mainFeedRecipeDetails__dishName > h5 > span{
+    margin-left: 1rem;
+}
+.mainFeedRecipeDetails__icons{
+    display: flex;
+}
+.mainFeedRecipeDetails__heart {
+    margin-right: 1rem;
+}
+.mainFeedRecipeDetails__heart > img{
+    width: 20px ;
+    height: 20px;
+}
+.mainFeedRecipeDetails__comment >img{
+    width: 20px ;
+    height: 20px;
+}
+.mainFeedRecipeDetails__time1
+{
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+.mainFeedRecipeDetails__time1 > p,
+.mainFeedRecipeDetails__time2>p,
+.mainFeedRecipeDetails__time3>p{
+    color: silver;
+    margin-left: 0.7rem;
+}
+.recipe-timer{
+    font-size: 18px;
+    color: silver !important;
+}
+
+.mainFeedRecipeDetails__time2,
+.mainFeedRecipeDetails__time3{
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+.mainFeedRecipeDetails__ingredients,
+.mainFeedRecipeDetails__instruction,
+.mainFeedRecipeDetails__tools{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.mainFeedRecipeDetails__ingredients > h5,
+.mainFeedRecipeDetails__instruction>h5,
+.mainFeedRecipeDetails__tools>h5{
+    color: #3f8f22;
+    font-size: 18px;
+}
+.mainFeedRecipeDetails__ingredients > p,
+.mainFeedRecipeDetails__instruction>p,
+.mainFeedRecipeDetails__tools>p{
+    margin-top: 1%;
+}
