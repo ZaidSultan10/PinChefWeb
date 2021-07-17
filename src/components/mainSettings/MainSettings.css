@@ -34,6 +34,7 @@
     margin-left: 3%;
     margin-top: 4%;
    margin-bottom: 2%;
+   font-family: 'Montserrat','sans-serif';
 }
 .mainSettings__notifications{
     display: flex;
@@ -49,9 +50,11 @@
 }
 .mainSettings__notification > h4{
     margin-left: 3%;
+    color: #5b5353;
 }
 .mainSettings__notifications > h4{
     margin-left: 3%;
+    color: #5b5353;
 }
 .notify__icon, .help__icon,.language__icon,.theme__icon, .sharing__icon{
     color: #3f8f22 !important;

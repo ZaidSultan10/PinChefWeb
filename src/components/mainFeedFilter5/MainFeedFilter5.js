@@ -8,7 +8,7 @@ const MainFeedFilter5 = () => {
             <h3>Recipes</h3>
             <h3>Food</h3>
             <h3>Service</h3>
-            <h3>My Purchases</h3>
+            <h3>e-Masterclass</h3>
         </div>
     )
 }

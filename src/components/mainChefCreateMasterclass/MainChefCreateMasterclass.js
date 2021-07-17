@@ -45,11 +45,11 @@ const MainChefCreateMasterclass = () => {
             </div>
             <div className='mainChefCreateMasterclass__desc'>
                 <h5>Description<span>*</span></h5>
-                <textarea rows='7' placeholder='short description' />
+                <textarea rows='7' placeholder='Short description' />
             </div>
             <div className='mainChefCreateMasterclass__ingredients'>
                 <h5>Ingredients List<span>*</span></h5>
-                <textarea rows='6' placeholder='short explanation' />
+                <textarea rows='6' placeholder='Short explanation' />
             </div>
             <div className='mainChefCreateMasterclass__video'>
                 <h5>Class-Video Type<span>*</span></h5>

@@ -1,0 +1,110 @@
+.mainCommentArea__header{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+}
+.mainCommentArea__username{
+    display: flex;
+    justify-content: space-between;
+}
+.mainCommentArea__header > .mainCommentArea__avatar{
+    width: 55px;
+    height: 55px;
+}
+.mainCommentArea__user{
+    margin-left: 1%;
+}
+.mainCommentArea__user > h3{
+    font-size: 17px;
+}
+.mainCommentArea__user>h4{
+    font-size: 14px;
+    color: silver;
+    font-weight: 400 !important;
+}
+.mainCommentArea__horiz{
+    margin-left: 3.5rem;
+}
+.mainCommentArea__timer{
+    display: flex;
+    align-items: center;
+} 
+.query-builder{
+    font-size: 12px !important;
+}
+.mainCommentArea__image{
+    margin-top: 1%;
+}
+.mainCommentArea__actions{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+.mainCommentArea__like > img{
+    width: 22px;
+    height: 22px;
+}
+.mainCommentArea__comment>img,
+.mainCommentArea__share>img{
+    width: 20.7px;
+    height: 20.7px;
+}
+.mainCommentArea__actionLeft{
+    display: flex;
+    margin-left: 1%;
+}
+.mainCommentArea__actionRight{
+    margin-right: 1%;
+}
+.mainCommentArea__comment{
+    margin-left: 1.5rem;
+}
+.mainCommentArea__border {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+.mainCommentArea__commentsArea{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    align-items: center;
+    margin-top: 1%;
+}
+.mainCommentArea__reply > img,
+.heart-container >img{
+    width: 20px;
+    height: 20px;
+}
+.mainCommentArea__commentName > h5{
+    margin-bottom: 5%;
+}
+.mainCommentArea__status{
+    margin-top: 2%;
+}
+.mainCommentArea__commentLikes{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -1rem;
+    margin-top: 0.5rem;
+}
+.mainCommentArea__text{
+    margin-top: 1rem;
+}
+
+.heart-container{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 6px 0px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainCommentArea__input{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    bottom: 69px;
+    width: 100%;
+}

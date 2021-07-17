@@ -10,7 +10,7 @@ const ChefCookShipping = () => {
 
                 </div>
                 <div className='chefCookShipping__center'>
-                    <MainChefCookShip />
+                    <MainChefCookShip shipProp={true} />
                 </div>
                 <div className='chefCookShipping__right'>
                     

@@ -60,7 +60,7 @@ const MainChefProfile = () => {
                     give you time back in your busy life. 
                 </p>
                 <div className='mainChefProfile__picButtons'>
-                    <Button>Photos</Button>
+                    <Button>Menu</Button>
                     <Button>Posts</Button>
                     <Button>Info</Button>
                 </div>

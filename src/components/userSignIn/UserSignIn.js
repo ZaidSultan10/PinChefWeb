@@ -75,7 +75,7 @@ const UserSignIn = () => {
             </span>
           </div>
           <button className="continue"
-          onClick={history.push('/homepage')}>Continue</button>
+          >Continue</button>
         </div>
         <div className="sign-in-with-google-and-forget-password">
           <div className="sign-in-with-social-media">

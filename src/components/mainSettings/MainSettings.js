@@ -31,14 +31,14 @@ const MainSettings = ({settingsProp}) => {
                 </div>
                 <div className='mainSettings__notification'>
                     <img src={NotificationsIcon} className='notify__icon' />
-                    <h4>Notifications</h4>
+                    <h4>NOTIFICATIONS</h4>
                 </div>
                 <div className='mainSettings__divider'>
                     <img src={HorizontalLine} alt='line' />
                 </div>
                 <div className='mainSettings__notifications'>
                     <img src={HelpIcon} className='help__icon' />
-                    <h4>Help</h4>
+                    <h4>HELP</h4>
                 </div>
                 <div className='mainSettings__divider'>
                     <img src={HorizontalLine} alt='line' />
@@ -48,14 +48,14 @@ const MainSettings = ({settingsProp}) => {
                         <>
                             <div className='mainSettings__notifications'>
                                 <img src={PaymentIcon} className='help__icon' />
-                                <h4>Payment Methods</h4>
+                                <h4>PAYMENT METHODS</h4>
                             </div>
                             <div className='mainSettings__divider'>
                                 <img src={HorizontalLine} alt='line' />
                             </div>
                             <div className='mainSettings__notifications'>
                                 <img src={CardMembershipIcon} className='help__icon' />
-                                <h4>Subscriptions</h4>
+                                <h4>SUBSCRIPTIONS</h4>
                             </div>
                             <div className='mainSettings__divider'>
                                 <img src={HorizontalLine} alt='line' />
@@ -65,28 +65,28 @@ const MainSettings = ({settingsProp}) => {
                 }
                 <div className='mainSettings__notifications'>
                     <img src={LanguageIcon} className='language__icon' />
-                    <h4>Languages</h4>
+                    <h4>LANGUAGES</h4>
                 </div>
                 <div className='mainSettings__divider'>
                     <img src={HorizontalLine} alt='line' />
                 </div>
                 <div className='mainSettings__notifications'>
                     <img src={SettingsBrightnessIcon} className='theme__icon' />
-                    <h4>Theme</h4>
+                    <h4>THEME</h4>
                 </div>
                 <div className='mainSettings__divider'>
                     <img src={HorizontalLine} alt='line' />
                 </div>
                 <div className='mainSettings__notifications'>
                     <img src={ShareIcon} className='sharing__icon' />
-                    <h4>Share With Friends</h4>
+                    <h4>SHARE WITH FRIENDS</h4>
                 </div>
                 <div className='mainSettings__divider'>
                     <img src={HorizontalLine} alt='line' />
                 </div>
                 <div className='mainSettings__notifications'>
                     <img src={StarIcon} className='rate__icon' />
-                    <h4>Rate Us</h4>
+                    <h4>RATE US</h4>
                 </div>
                 <div className='mainSettings__divider'>
                     <img src={HorizontalLine} alt='line' />

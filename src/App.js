@@ -45,6 +45,10 @@ import ChefCookTakeout from "./screens/chefCookTakeout/ChefCookTakeout";
 import ChefCookShip from "./screens/chefCookShip/ChefCookShip";
 import ChefCookDelivery from "./screens/chefCookDelivery/ChefCookDelivery";
 import UserOtp from "./screens/userOtp/UserOtp";
+import UserForgotPassword from "./screens/userForgotPassword/UserForgotPassword";
+import UserResetPassword from "./screens/userResetPassword/UserResetPassword";
+import UserProfileSet from "./screens/userProfileSet/UserProfileSet";
+import UserCommentScreen from "./screens/userCommentScreen/UserCommentScreen";
 
 
 
@@ -92,6 +96,10 @@ function App() {
         <Route path="/chef/service/cook-ship" exact component={ChefCookShip} />
         <Route path="/chef/service/cook-delivery" exact component={ChefCookDelivery} />
         <Route path="/user/verification" exact component={UserOtp} />
+        <Route path="/user/forgot-password" exact component={UserForgotPassword} />
+        <Route path="/user/reset-password" exact component={UserResetPassword} />
+        <Route path="/user/set-profile" exact component={UserProfileSet} />
+        <Route path="/user/comments" exact component={UserCommentScreen} />
         <Route path="/usersignin" exact>
           <Signin>
             <UserSignIn />

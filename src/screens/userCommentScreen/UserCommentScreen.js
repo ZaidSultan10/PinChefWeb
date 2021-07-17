@@ -1,17 +1,18 @@
 import React from 'react'
-import FeedShopFood from '../../components/feedShopFood/FeedShopFood'
 import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
+import ChefCommentArea from '../../components/chefCommentArea/ChefCommentArea'
 
-const UserShopFood = () => {
+
+const UserCommentScreen = () => {
     return (
-        <div className='userShopFood'>
+        <div className='userCommentScreen'>
             <Header searchProp={true} />
-            <FeedShopFood />
+            <ChefCommentArea />
             <Footer />
-            
+
         </div>
     )
 }
 
-export default UserShopFood
+export default UserCommentScreen

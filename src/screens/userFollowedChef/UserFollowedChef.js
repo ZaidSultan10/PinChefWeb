@@ -6,7 +6,7 @@ import FeedAllChefs from '../../components/feedAllChefs/FeedAllChefs'
 const UserFollowedChef = () => {
     return (
         <div className='userFollowedChef'>
-            <Header />
+            <Header searchProp={true} />
             <FeedAllChefs />
             <Footer />
         </div>

@@ -6,7 +6,7 @@ import Header from '../../components/header/Header'
 const UserShopService = () => {
     return (
         <div className='userShopFood'>
-            <Header />
+            <Header searchProp={true} />
             <FeedShopFood />
             <Footer />
             
