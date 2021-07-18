@@ -1,0 +1,64 @@
+.mainRateArea__header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+.mainRateArea__header>h5{
+    font-size: 20px;
+}
+.mainRateArea__header > img {
+    width: 25px;
+    height: 25px;
+}
+.mainRateArea__highlight{
+    width: 100%;
+    margin-top: 3%;
+}
+.mainRateArea__highlight > h5{
+    color: gold;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+}
+
+.mainRateArea__rate{
+    margin-top: 3%;
+}
+.mainRateArea__service
+,.mainRateArea__food,
+.mainRateArea__personality,
+.mainRateArea__presentation{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.mainRateArea__service>h5,
+.mainRateArea__food>h5,
+.mainRateArea__personality>h5,
+.mainRateArea__presentation>h5{
+    font-size: 16px;
+}
+.mainRateArea__stars{
+    color: rgb(212, 212, 0) !important;
+}
+.mainRateArea__commentsArea{
+    margin-top: 4%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 8fr 1fr;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.mainRateArea__text{
+    margin-top: 4%;
+}
+.mainRateArea__commentLikes{
+    margin-bottom: 3%; 
+    width: 100%;  
+}
+.mainRateArea__commentLikes > p{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+

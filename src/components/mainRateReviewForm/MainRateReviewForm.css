@@ -1,0 +1,73 @@
+.mainRateReviewForm{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+.mainRateReviewForm__container{
+    border: 1px solid white;
+    width: 50%;
+    display: grid;
+    
+    border-radius: 16px;
+    box-shadow: 0px 2px 5px 0 rgb(214, 214, 214);
+}
+.mainRateReviewform__header{
+    text-align: center;
+    margin-top: 3%;
+    font-weight: 700;
+    color: gray;
+    font-size: 18px;
+}
+.mainRateReviewForm__service,
+.mainRateReviewForm__food,
+.mainRateReviewForm__personality,
+.mainRateReviewForm__presentation{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.mainRateReviewForm__rate{
+    margin-top: 5%;
+}
+.mainRateReviewForm__stars{
+    color: rgb(212, 212, 0) !important;
+}
+.mainRateReviewForm__icon{
+    margin-left: 4%;
+    margin-top: 5%;
+}
+.mainRateReviewForm__icon > img{
+    width: 25px;
+    height: 25px;
+}
+.mainRateReviewForm__input{
+    width: 100%;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+.mainRateReviewForm__input > textarea{
+    width: 90%;
+    resize: none;
+    border: 1px solid rgb(255, 255, 255);
+    font-family: 'Montserrat','sans-serif';
+    padding: 3%;
+    outline: none;
+    border-radius: 16px;
+    box-shadow: 1px 3px 3px 0 rgb(214, 214, 214);
+}
+.mainRateReviewForm__button{
+    display: flex;
+    justify-content: center;
+    margin:4% 0;
+    width: 100%;
+}
+.mainRateReviewForm__button > button{
+    color: white;
+    background-color: gray;
+    width: 40%;
+    border-radius: 999px;
+}
+.mainRateReviewForm__button > button:hover{
+    background-color: rgb(165, 164, 164);
+}

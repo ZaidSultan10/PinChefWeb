@@ -51,6 +51,10 @@ import UserProfileSet from "./screens/userProfileSet/UserProfileSet";
 import UserCommentScreen from "./screens/userCommentScreen/UserCommentScreen";
 import CallScreen from "./screens/callScreen/CallScreen";
 import UserRecipeDetails from "./screens/userRecipeDetails/UserRecipeDetails";
+import RateReviewForm from "./screens/rateReviewForm/RateReviewForm";
+import RateArea from "./components/rateArea/RateArea";
+import RateScreen from "./screens/rateScreen/RateScreen";
+import SettingsProfile from "./screens/settingsProfile/SettingsProfile";
 
 
 
@@ -104,6 +108,9 @@ function App() {
         <Route path="/user/comments" exact component={UserCommentScreen} />
         <Route path="/chef/call" exact component={CallScreen} />
         <Route path="/user/recipe/details" exact component={UserRecipeDetails} />
+        <Route path="/rate/review/form" exact component={RateReviewForm} />
+        <Route path="/rate/area" exact component={RateScreen} />
+        <Route path="/chef/settings/profile" exact component={SettingsProfile} />
         <Route path="/usersignin" exact>
           <Signin>
             <UserSignIn />
