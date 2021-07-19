@@ -1,0 +1,30 @@
+.mainSettingsProfile__heading{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin-left: 3%;
+}
+.mainSettingsProfile__heading>h4{
+    font-size: 20px;
+}
+.mainSettingsProfile__heading >img {
+    width: 25px;
+    height: 25px;
+}
+.mainSettingsProfile__picture{
+    margin-top: 4%;
+}
+.mainSettingsProfile__picture > .mainSettingsProfile__avatar{
+    width: 80px;
+    height: 80px;
+    margin-left: 4%;
+}
+.mainSettingsProfile__name{
+    display: flex;
+    margin-top: 3%;
+    align-items: center;
+    margin-left: 4%;
+}
+.mainSettingsProfile__name >h4{
+    margin-left: 4%;
+}
