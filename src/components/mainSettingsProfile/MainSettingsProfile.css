@@ -28,3 +28,7 @@
 .mainSettingsProfile__name >h4{
     margin-left: 4%;
 }
+.mainSettingsProfile__name > img{
+    width: 25px;
+    height: 25px;
+}
