@@ -1,0 +1,134 @@
+.mainOrderDetails{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 24%;
+}
+.mainOrderDetails__top{
+    display: flex;
+    justify-content: space-between;
+}
+.mainOrderDetails__user{
+    display: flex;
+    align-items: center;
+}
+.mainOrderDetails__user > .user-avatar-order{
+    width: 50px;
+    height: 50px;
+}
+.mainOrderDetails__username{
+    margin-left: 1%;
+}
+.mainOrderDetails__username > h5{
+    color: gray;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 5%;
+}
+.mainOrderDetails__header{
+    margin-top: 3%;
+    display: flex;
+    border: 1px solid;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    background-color: #3d3838;
+}
+.mainOrderDetails__item{
+    margin-left: 2%;
+}
+.mainOrderDetails__bill{
+    display: flex;
+    align-items: center;
+    margin-right: 15%;
+}
+.orders-price{
+    margin-right: 25%;
+}
+.mainOrderDetails__info{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    align-items: center;
+}
+.mainOrderDetails__itemTitle{
+    margin-left: 2%;
+}
+.mainOrderDetails__itemBill{
+    display: flex;
+    align-items: center;
+    margin-right: 17%;
+}
+.orders-price3{
+    margin-left:3%;
+}
+.orders-price2{
+    margin-right: 28%;
+    margin-left: 4%;
+}
+.orders-price1{
+    margin-right: 35%;
+}
+
+.mainOrderDetails__sub{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    margin-top: 2%;
+    margin-left: 21.5%;
+}
+.mainOrderDetails__subTotal{
+    margin-left: 4.6%;
+
+}
+.mainOrderDetails__subTotal > h5{
+    margin-top: 8.6%;
+    color: #3d3838;
+}
+
+.mainOrderDetails__subTotalAmount > p{
+    margin-top: 14%;
+}
+.total-amount{
+    color: #4da302;
+    font-weight: 700;
+    font-size: 14px;
+}
+.total-text{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.mainOrderDetails__details,
+.mainOrderDetails__ingredients{
+    margin-top: 3%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainOrderDetails__details > textarea,
+.mainOrderDetails__ingredients > textarea{
+    outline: none;
+    height: auto;
+    resize: none;
+    width: 100%;
+    border-radius: 8px;
+    overflow-y: hidden;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    padding-left: 1%;
+    margin-top: 1.5%;
+    padding-top: 1%;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}

@@ -1,0 +1,49 @@
+.mainMyChat__header{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+}
+.mainMyChat__header>h4{
+    font-size: 22px;
+    color: #3f8f22;
+}
+.mainMyChat__header >img{
+    width: 25px;
+    height: 25px;
+}
+.mainMyChat__search{
+    width: 100%;
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+}
+.mainMyChat__search>input{
+    width: 80%;
+    height: 6vh;
+    padding-left: 3%;
+    border-radius: 999px;
+    border: 1px solid #d7d7d7;
+    outline: none;
+}
+.mainMyChat__chats{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    margin-top: 5%;
+    
+}
+.mainMyChat__picture{
+    margin-top: 0.5rem;
+}
+.mainMyChat__message > p{
+    margin-top: 3%;
+}
+
+.mainMyChat__right{
+    height: 100%;
+    display: grid;
+    justify-content: space-between;
+}
+.mainMyChat__right > h5{
+    margin-bottom: -1rem;
+    margin-left: 0.2rem;
+}

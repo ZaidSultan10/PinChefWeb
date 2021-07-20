@@ -55,6 +55,8 @@ import RateReviewForm from "./screens/rateReviewForm/RateReviewForm";
 import RateArea from "./components/rateArea/RateArea";
 import RateScreen from "./screens/rateScreen/RateScreen";
 import SettingsProfile from "./screens/settingsProfile/SettingsProfile";
+import MyChatScreen from "./screens/myChatsScreen/MyChatScreen";
+import OrderDetails from "./screens/orderDetails/OrderDetails";
 
 
 
@@ -111,6 +113,8 @@ function App() {
         <Route path="/rate/review/form" exact component={RateReviewForm} />
         <Route path="/rate/area" exact component={RateScreen} />
         <Route path="/chef/settings/profile" exact component={SettingsProfile} />
+        <Route path="/user/chats" exact component={MyChatScreen} />
+        <Route path="/chef/order-details" exact component={OrderDetails} />
         <Route path="/usersignin" exact>
           <Signin>
             <UserSignIn />
