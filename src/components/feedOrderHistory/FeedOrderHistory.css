@@ -1,0 +1,7 @@
+.feedOrderHistory__container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 3%;
+    padding-top: 35px;
+    padding-bottom: 80px;
+}

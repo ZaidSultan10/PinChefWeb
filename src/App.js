@@ -57,6 +57,7 @@ import RateScreen from "./screens/rateScreen/RateScreen";
 import SettingsProfile from "./screens/settingsProfile/SettingsProfile";
 import MyChatScreen from "./screens/myChatsScreen/MyChatScreen";
 import OrderDetails from "./screens/orderDetails/OrderDetails";
+import OrderHistory from "./screens/orderHistory/OrderHistory";
 
 
 
@@ -115,6 +116,7 @@ function App() {
         <Route path="/chef/settings/profile" exact component={SettingsProfile} />
         <Route path="/user/chats" exact component={MyChatScreen} />
         <Route path="/chef/order-details" exact component={OrderDetails} />
+        <Route path="/chef/order-history" exact component={OrderHistory} />
         <Route path="/usersignin" exact>
           <Signin>
             <UserSignIn />
