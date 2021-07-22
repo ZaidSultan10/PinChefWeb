@@ -1,0 +1,94 @@
+.mainContactUs__header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+.mainContactUs__header > img{
+    width: 20px;
+    height: 20px;
+}
+.mainContactUs__contact{
+    display: flex;
+}
+.mainContactUs__contact > h5{
+    color: #3f8f22;
+    font-size: 20px;
+    margin-left: 1%;
+}
+.mainContactUs__contact > img{
+    width: 25px;
+    height: 25px;
+}
+.mainContactUs__top{
+    display: flex;
+    margin-top: 3%;
+}
+.mainContactUs__icon{
+    border: 1px solid #3f8f22;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #3f8f22;
+    color: white;
+}
+.mainContactUs__top > h5{
+    margin-left: 2%;
+}
+.mainContactUs__name,
+.mainContactUs__email,
+.mainContactUs__subject,
+.mainContactUs__message{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3%;
+}
+.mainContactUs__name >h5,
+.mainContactUs__email>h5,
+.mainContactUs__subject>h5,
+.mainContactUs__message>h5{
+    margin-bottom: 1%;
+}
+.mainContactUs__name > input,
+.mainContactUs__subject>input,
+.mainContactUs__email>input{
+    border: 3px solid #d9d9d9;
+    font-family: 'Montserrat','sans-serif';
+    border-radius: 8px;
+    padding-left: 2%;
+    outline: none;
+    width: 100%;
+    height: 7vh;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.mainContactUs__message >textarea{
+    outline: none;
+    height: auto;
+    resize: none;
+    width: 100%;
+    border-radius: 8px;
+    overflow-y: hidden;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    padding-left: 2%;
+    padding-top: 1%;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.mainContactUs__button{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.mainContactUs__button> button{
+    background-color: grey;
+    color: white;
+    font-weight: 600;
+    width: 40%;
+    border-radius: 999px 0px 999px 999px;
+}

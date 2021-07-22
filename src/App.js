@@ -58,6 +58,10 @@ import SettingsProfile from "./screens/settingsProfile/SettingsProfile";
 import MyChatScreen from "./screens/myChatsScreen/MyChatScreen";
 import OrderDetails from "./screens/orderDetails/OrderDetails";
 import OrderHistory from "./screens/orderHistory/OrderHistory";
+import OrderNotifications from "./screens/orderNotifications/OrderNotifications";
+import ContactUs from "./screens/contatcUs/ContactUs";
+import ChefPayments from "./screens/chefPayments/ChefPayments";
+import ChefPaymentMethods from "./screens/chefPaymentMethods/ChefPaymentMethods";
 
 
 
@@ -117,6 +121,10 @@ function App() {
         <Route path="/user/chats" exact component={MyChatScreen} />
         <Route path="/chef/order-details" exact component={OrderDetails} />
         <Route path="/chef/order-history" exact component={OrderHistory} />
+        <Route path="/chef/order-notifications" exact component={OrderNotifications} />
+        <Route path="/contact" exact component={ContactUs} />
+        <Route path="/chef/payments" exact component={ChefPayments} />
+        <Route path="/chef/payment/methods" exact component={ChefPaymentMethods} />
         <Route path="/usersignin" exact>
           <Signin>
             <UserSignIn />

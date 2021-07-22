@@ -1,0 +1,66 @@
+.mainChefPaymentMethods__header{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+}
+.mainChefPaymentMethods__header > img{
+    width: 20px;
+    height: 20px;
+}
+
+.mainChefPaymentMethods__header > h5{
+    color: #3f8f22;
+    font-size: 20px;
+    margin-left: 1%;
+}
+.mainChefPaymentMethods__text{
+    margin-top: 3%;
+    width: 100%;
+    margin-left: 5%;
+    padding-right: 5%;
+}
+.mainChefPaymentMethods__text > p{
+    font-size: 16px !important;
+    font-weight: 600;
+}
+.mainChefPaymentMethods__stripe,
+.mainChefPaymentMethods__paypal{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.mainChefPaymentMethods__stripe > h5,
+.mainChefPaymentMethods__paypal>h5{
+    font-size: 16px;
+}
+.mainChefPaymentMethods__stripe>button,
+.mainChefPaymentMethods__paypal>button{
+    background-color: #3f8f22;
+    color: white;
+    font-weight: 600;
+    width: 25%;
+    border-radius: 999px 0 999px 999px ;
+}
+.mainChefPaymentMethods__warning1,
+.mainChefPaymentMethods__warning2{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.mainChefPaymentMethods__warning1{
+    margin-top: 5%;
+}
+.mainChefPaymentMethods__warning1 >p
+,.mainChefPaymentMethods__warning2>p{
+    margin-left: 1%;
+}
+.mainChefPaymentMethods__warning1 > img,
+.mainChefPaymentMethods__warning2>img{
+    width: 25px;
+    height: 25px;
+}

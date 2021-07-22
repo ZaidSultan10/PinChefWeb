@@ -1,8 +1,7 @@
-.feedOrderHistory__container{
+.createChefPaymentMethods__container{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     margin-top: 3%;
-    padding-top: 35px;
+    padding-top: 65px;
     padding-bottom: 80px;
-    width: 100%;
 }

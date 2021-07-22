@@ -1,0 +1,165 @@
+.mainChefPayments__header{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+}
+.mainChefPayments__header > img{
+    width: 20px;
+    height: 20px;
+}
+
+.mainChefPayments__header > h5{
+    color: #3f8f22;
+    font-size: 20px;
+    margin-left: 1%;
+}
+.mainChefPayments__state{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    width: 100%;
+}
+.mainChefPayments__state> h5{
+    font-size: 20px;
+}
+.mainChefPayments__paymentMethods{
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.mainChefPayments__paymentMethods > img{
+    width: 25px;
+    height: 25px;
+    margin-left: 3%;
+}
+.mainChefPayments__cardInfoHeading{
+    margin-top: 3%;
+    display: flex;
+    border: 1px solid;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    background-color: #3d3838;
+}
+.mainChefPayments__cardInfoHeading > h5{
+    margin-left: 2%;
+}
+.mainChefPayments__cardInfo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainChefPayments__cardInfo > input{
+    height: 7vh;
+    border-radius: 999px;
+    padding-left: 4%;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    margin-top: 2%;
+    font-family: 'Montserrat','sans-serif';
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.mainChefPayments__cardInfo >input::-webkit-outer-spin-button,
+.mainChefPayments__cardInfo >input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.year-cvc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.year-cvc > input{
+    font-family: 'Montserrat','sans-serif';
+    height: 7vh;
+    border-radius: 999px;
+    padding-left: 4%;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    margin-top: 2%;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.class-month{
+    width: 60%;
+}
+.class-cvc{
+    width: 38%;
+}
+.mainChefPayments__warning1,
+.mainChefPayments__warning2{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainChefPayments__warning1 >p
+,.mainChefPayments__warning2>p{
+    margin-left: 1%;
+}
+.mainChefPayments__warning1 > img,
+.mainChefPayments__warning2>img{
+    width: 25px;
+    height: 25px;
+}
+.mainChefPayments__accept{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainChefPayments__accept > p > a{
+    color: black;
+}
+.mainChefPayments__checkbox{
+    border: 1px solid silver;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-right: 3%;
+    border-radius: 50%;
+    background-color: silver;
+}
+.mainChefPayments__option2>img{
+    width: 55px;
+    height: 55px;
+}
+.mainChefPayments__payButton{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.mainChefPayments__payButton > button{
+    background-color: #4da302;
+    color: white;
+    font-weight: 800;
+    width: 25%;
+    font-size: 16px;
+    border-radius: 999px 0 999px 999px;
+    box-shadow: 0 2px 6px 0 grey;
+}
+.mainChefPayments__payButton > p{
+    margin-top: 5%;
+    font-weight: 600;
+}
+.mainChefPayments__option2{
+    display: flex;
+    padding-bottom: 3%;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
