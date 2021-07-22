@@ -1,0 +1,106 @@
+.mainFoodEmergencyHelp__header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+.mainFoodEmergencyHelp__header > h5{
+    font-size: 22px;
+    color: #3f8f22;
+}
+.mainFoodEmergencyHelp__header > img {
+    width: 25px;
+    height: 25px;
+}
+.mainFoodEmergencyHelp__warning2{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.mainFoodEmergencyHelp__warning2 >p{
+    margin-left: 1%;
+}
+.mainFoodEmergencyHelp__warning2 > img{
+    width: 25px;
+    height: 25px;
+}
+.mainFoodEmergencyHelp__text{
+    width: 100%;
+    margin-top: 4%;
+    text-align: center;
+}
+.mainFoodEmergencyHelp__cuisine,
+.mainFoodEmergencyHelp__dietary,
+.mainFoodEmergencyHelp__desc{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3%;
+}
+.mainFoodEmergencyHelp__desc{
+    margin-top: 5rem;
+}
+.mainFoodEmergencyHelp__cuisine > h5,
+.mainFoodEmergencyHelp__dietary>h5,
+.mainFoodEmergencyHelp__desc>h5{
+    margin-bottom: 1%;
+    color: green;
+}
+.mainFoodEmergencyHelp__cuisine > h5 >span,
+.mainFoodEmergencyHelp__dietary>h5>span,
+.mainFoodEmergencyHelp__desc>h5>span{
+    color: red;
+    margin-left: 1%;
+}
+.mainFoodEmergencyHelp__cuisine > select,
+.mainFoodEmergencyHelp__dietary>select{
+    border: 3px solid #d9d9d9;
+    font-family: 'Montserrat','sans-serif';
+    padding-left: 1%;
+    color: gray;
+    outline: none;
+    padding-right: 2%;
+    border-radius: 8px;
+    width: 100%;
+    height: 7vh;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+    -webkit-appearance: none;
+  appearance: none;
+}
+.mainFoodEmergencyHelp__listings{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.mainFoodEmergencyHelp__listings>p>a{
+    color: black;
+    font-weight: 600;
+}
+.mainFoodEmergencyHelp__desc > textarea{
+    outline: none;
+    height: auto;
+    resize: none;
+    width: 100%;
+    border-radius: 8px;
+    overflow-y: hidden;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    padding-left: 1%;
+    padding-top: 1%;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.mainFoodEmergencyHelp__button{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+}
+.mainFoodEmergencyHelp__button>button{
+    background-color: green;
+    color: white;
+    width: 30%;
+    border-radius: 999px 0 999px 999px;
+}
+

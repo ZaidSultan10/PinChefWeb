@@ -62,6 +62,8 @@ import OrderNotifications from "./screens/orderNotifications/OrderNotifications"
 import ContactUs from "./screens/contatcUs/ContactUs";
 import ChefPayments from "./screens/chefPayments/ChefPayments";
 import ChefPaymentMethods from "./screens/chefPaymentMethods/ChefPaymentMethods";
+import FoodEmergencyHelp from "./screens/foodEmergencyHelp/FoodEmergencyHelp";
+import FoodEmergencyOrder from "./screens/foodEmergencyOrder/FoodEmergencyOrder";
 
 
 
@@ -125,6 +127,8 @@ function App() {
         <Route path="/contact" exact component={ContactUs} />
         <Route path="/chef/payments" exact component={ChefPayments} />
         <Route path="/chef/payment/methods" exact component={ChefPaymentMethods} />
+        <Route path="/food/emergency/help" exact component={FoodEmergencyHelp} />
+        <Route path="/food/emergency/order" exact component={FoodEmergencyOrder} />
         <Route path="/usersignin" exact>
           <Signin>
             <UserSignIn />
