@@ -16,6 +16,7 @@
     margin-top: 6%;
     display: flex;
     justify-content: center;
+    padding-bottom: 3%;
 }
 .mainMyChat__search>input{
     width: 80%;
@@ -28,11 +29,17 @@
 .mainMyChat__chats{
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
-    margin-top: 5%;
+    margin-top: 2%;
+    padding-left: 3%;
     
 }
 .mainMyChat__picture{
     margin-top: 0.5rem;
+}
+.mainMyChat__picture > .mainMyChat__avatar{
+    width: 50px;
+    height: 50px;
+
 }
 .mainMyChat__message > p{
     margin-top: 3%;
@@ -46,4 +53,9 @@
 .mainMyChat__right > h5{
     margin-bottom: -1rem;
     margin-left: 0.2rem;
+}
+.mainMyChat__line{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }

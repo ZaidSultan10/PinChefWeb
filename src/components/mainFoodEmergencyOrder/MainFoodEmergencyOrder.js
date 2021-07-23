@@ -16,12 +16,12 @@ const MainFoodEmergencyOrder = () => {
             </div>
             <div className='mainFoodEmergencyOrder__warning2'>
                 <img src={InfoIcon} />
-                <p>To add or delete payment options, go back
-                    to the chef's profile details
+                <p>We will match your needs with the chefs that fit 
+your request and the ones available will contact you.
                 </p>
             </div>
             <div className='mainFoodEmergencyOrder__text'>
-                <h4>Help with cooking</h4>
+                <h4>Order Food ASAP</h4>
             </div>
             <div className='mainFoodEmergencyOrder__cuisine'>
                 <h5>Cuisine Specialities<span>*</span></h5>
@@ -32,9 +32,6 @@ const MainFoodEmergencyOrder = () => {
                     <option>Thursday</option>
                     <option>Friday</option>
                 </select>
-            </div>
-            <div className='mainFoodEmergencyOrder__listings'>
-                <p>Cuisine not in list? <a href='#'>Add Cuisine</a></p>
             </div>
             <div className='mainFoodEmergencyOrder__dietary'>
                 <h5>Dietary<span>*</span></h5>
@@ -61,7 +58,7 @@ const MainFoodEmergencyOrder = () => {
             </div>
             <div className='mainFoodEmergencyOrder__desc'>
                 <h5>Description<span>*</span></h5>
-                <textarea rows='7' />
+                <textarea rows='7' placeholder='Requirment' />
             </div>
             <div className='mainFoodEmergencyOrder__button'>
                 <Button>Send</Button>

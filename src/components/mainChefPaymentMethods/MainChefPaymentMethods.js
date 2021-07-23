@@ -16,7 +16,7 @@ const MainChefPaymentMethods = () => {
                 <p>
                     To activate your online payment options,
                     please sign in to your accounts in each 
-                    platform
+                    platform.
                 </p>
             </div>
             <div className='mainChefPaymentMethods__stripe'>
@@ -33,13 +33,13 @@ const MainChefPaymentMethods = () => {
             <div className='mainChefPaymentMethods__warning1'>
                 <img src={InfoIcon} />
                 <p>Cash and Credit Card on Delivery is not available
-                    for e-Masterclass
+                    for e-Masterclass.
                 </p>
             </div>
             <div className='mainChefPaymentMethods__warning2'>
                 <img src={InfoIcon} />
                 <p>To add or delete payment options, go back
-                    to the chef's profile details
+                    to the chef's profile details.
                 </p>
             </div>
         </div>

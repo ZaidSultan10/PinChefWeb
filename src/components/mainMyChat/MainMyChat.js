@@ -3,6 +3,7 @@ import './MainMyChat.css'
 import LeftIcon from '../../assets/svg/left-green-arrow.svg'
 import { MoreHorizOutlined } from '@material-ui/icons'
 import { Avatar } from '@material-ui/core'
+import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 
 const MainMyChat = () => {
     return (
@@ -15,6 +16,7 @@ const MainMyChat = () => {
                 <input placeholder='search' />
             </div>
             {[...Array(9)].map(() => (
+                <>
                 <div className='mainMyChat__chats'>
                     <div className='mainMyChat__picture'>
                         <Avatar className='mainMyChat__avatar' />
@@ -30,6 +32,10 @@ const MainMyChat = () => {
                         <h5>2h</h5>
                     </div>
                 </div>
+                <div className='mainMyChat__line'>
+                    <img src={HorizontalLine} />
+                </div>
+            </>
             ))}
         </div>
     )

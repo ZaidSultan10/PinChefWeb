@@ -16,8 +16,8 @@ const MainFoodEmergencyHelp = () => {
             </div>
             <div className='mainFoodEmergencyHelp__warning2'>
                 <img src={InfoIcon} />
-                <p>To add or delete payment options, go back
-                    to the chef's profile details
+                <p>We will match your needs with the chefs that fit 
+your request and the ones available will contact you.
                 </p>
             </div>
             <div className='mainFoodEmergencyHelp__text'>
@@ -32,9 +32,6 @@ const MainFoodEmergencyHelp = () => {
                     <option>Thursday</option>
                     <option>Friday</option>
                 </select>
-            </div>
-            <div className='mainFoodEmergencyHelp__listings'>
-                <p>Cuisine not in list? <a href='#'>Add Cuisine</a></p>
             </div>
             <div className='mainFoodEmergencyHelp__dietary'>
                 <h5>Dietary<span>*</span></h5>
