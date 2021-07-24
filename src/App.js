@@ -64,6 +64,7 @@ import ChefPayments from "./screens/chefPayments/ChefPayments";
 import ChefPaymentMethods from "./screens/chefPaymentMethods/ChefPaymentMethods";
 import FoodEmergencyHelp from "./screens/foodEmergencyHelp/FoodEmergencyHelp";
 import FoodEmergencyOrder from "./screens/foodEmergencyOrder/FoodEmergencyOrder";
+import FoodCheckoutTakeaway from "./screens/foodCheckoutTakeaway/FoodCheckoutTakeaway";
 
 
 
@@ -129,6 +130,7 @@ function App() {
         <Route path="/chef/payment/methods" exact component={ChefPaymentMethods} />
         <Route path="/food/emergency/help" exact component={FoodEmergencyHelp} />
         <Route path="/food/emergency/order" exact component={FoodEmergencyOrder} />
+        <Route path="/food/checkout/takeaway" exact component={FoodCheckoutTakeaway} />
         <Route path="/usersignin" exact>
           <Signin>
             <UserSignIn />

@@ -1,0 +1,269 @@
+.mainFoodCheckoutTakeaway__header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+.mainFoodCheckoutTakeaway__header > h5{
+    font-size: 22px;
+    color: #3f8f22;
+}
+.mainFoodCheckoutTakeaway__header > img {
+    width: 25px;
+    height: 25px;
+}
+.mainFoodCheckoutTakeaway__warning2{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.mainFoodCheckoutTakeaway__warning2 >p{
+    margin-left: 1%;
+    padding-right: 5rem;
+}
+.mainFoodCheckoutTakeaway__warning2 > img{
+    width: 25px;
+    height: 25px;
+}
+.mainFoodCheckoutTakeaway__text{
+    width: 100%;
+    margin-top: 4%;
+    text-align: center;
+}
+.mainFoodCheckoutTakeaway__cuisine,
+.mainFoodCheckoutTakeaway__dietary,
+.mainFoodCheckoutTakeaway__desc,
+.mainFoodCheckoutTakeaway__type{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3%;
+}
+
+.mainFoodCheckoutTakeaway__cuisine > h5,
+.mainFoodCheckoutTakeaway__dietary>h5,
+.mainFoodCheckoutTakeaway__desc>h5,
+.mainFoodCheckoutTakeaway__type>h5{
+    margin-bottom: 1%;
+    color: green;
+}
+.mainFoodCheckoutTakeaway__cuisine > h5 >span,
+.mainFoodCheckoutTakeaway__dietary>h5>span,
+.mainFoodCheckoutTakeaway__desc>h5>span,
+.mainFoodCheckoutTakeaway__type>h5>span{
+    color: red;
+    margin-left: 1%;
+}
+.mainFoodCheckoutTakeaway__cuisine > select,
+.mainFoodCheckoutTakeaway__dietary>select{
+    border: 3px solid #d9d9d9;
+    font-family: 'Montserrat','sans-serif';
+    padding-left: 1%;
+    color: gray;
+    outline: none;
+    padding-right: 2%;
+    border-radius: 8px;
+    width: 100%;
+    height: 7vh;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+    -webkit-appearance: none;
+  appearance: none;
+}
+.mainFoodCheckoutTakeaway__listings{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.mainFoodCheckoutTakeaway__listings>p>a{
+    color: black;
+    font-weight: 600;
+}
+.mainFoodCheckoutTakeaway__desc > textarea{
+    outline: none;
+    height: auto;
+    resize: none;
+    width: 100%;
+    border-radius: 8px;
+    overflow-y: hidden;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    padding-left: 2%;
+    padding-top: 2%;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.mainFoodCheckoutTakeaway__desc>textarea::placeholder{
+    color: silver;
+    font-weight: 500;
+    font-size: 14px;
+}
+.mainFoodCheckoutTakeaway__button{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+}
+.mainFoodCheckoutTakeaway__button>button{
+    background-color: #469a09;
+    color: white;
+    width: 30%;
+    border-radius: 999px 0 999px 999px;
+    box-shadow: 1px 1px 6px 0px grey;
+}
+
+.mainFoodCheckoutTakeaway__delivery{
+    display: flex;
+    
+}
+.mainFoodCheckoutTakeaway__del,
+.mainFoodCheckoutTakeaway__pick{
+    display: flex;
+    align-items: center;
+}
+.mainFoodCheckoutTakeaway__del>h5,
+.mainFoodCheckoutTakeaway__pick>h5{
+    margin-left: 0.5rem;
+}
+.mainFoodCheckoutTakeaway__pick{
+    padding-left: 5rem;
+}
+
+.mainFoodCheckoutTakeaway__top{
+    display: flex;
+    justify-content: space-between;
+}
+.mainFoodCheckoutTakeaway__user{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+.mainFoodCheckoutTakeaway__user > .mainFoodCheckoutTakeaway__avatar {
+    width: 50px;
+    height: 50px;
+}
+.mainFoodCheckoutTakeaway__ship{
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+}
+.mainFoodCheckoutTakeaway__ship > h5{
+    margin-left: 1%;
+}
+.mainFoodCheckoutTakeaway__username{
+    margin-left: 1%;
+}
+.mainFoodCheckoutTakeaway__username > h5{
+    color: gray;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 5%;
+}
+.mainFoodCheckoutTakeaway__header{
+    margin-top: 3%;
+    display: flex;
+    border: 1px solid;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    background-color: #3d3838;
+}
+.mainFoodCheckoutTakeaway__item{
+    margin-left: 2%;
+}
+.mainFoodCheckoutTakeaway__bill{
+    display: flex;
+    align-items: center;
+    margin-right: 15%;
+}
+.takeaway-price{
+    margin-right: 25%;
+}
+.mainFoodCheckoutTakeaway__info{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    align-items: center;
+}
+.mainFoodCheckoutTakeaway__itemTitle{
+    margin-left: 2%;
+}
+.mainFoodCheckoutTakeaway__itemBill{
+    display: flex;
+    align-items: center;
+    margin-right: 17%;
+}
+.takeaway-price3{
+    margin-left:3%;
+}
+.takeaway-price2{
+    margin-right: 28%;
+    margin-left: 4%;
+}
+.takeaway-price1{
+    margin-right: 35%;
+}
+
+.mainFoodCheckoutTakeaway__sub{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    margin-top: 2%;
+    margin-left: 21.5%;
+}
+.mainFoodCheckoutTakeaway__subTotal{
+    margin-left: 4.6%;
+
+}
+.mainFoodCheckoutTakeaway__subTotal > h5{
+    margin-top: 8.6%;
+    color: #3d3838;
+}
+
+.mainFoodCheckoutTakeaway__subTotalAmount > p{
+    margin-top: 14%;
+}
+.total-amount{
+    color: #4da302;
+    font-weight: 700;
+    font-size: 14px;
+}
+.total-text{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.mainFoodCheckoutTakeaway__details,
+.mainFoodCheckoutTakeaway__ingredients{
+    margin-top: 3%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainFoodCheckoutTakeaway__details > textarea,
+.mainFoodCheckoutTakeaway__ingredients > textarea{
+    outline: none;
+    height: auto;
+    resize: none;
+    width: 100%;
+    border-radius: 8px;
+    overflow-y: hidden;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    padding-left: 1%;
+    margin-top: 1.5%;
+    padding-top: 1%;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
