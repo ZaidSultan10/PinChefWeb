@@ -8,7 +8,7 @@ import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import AddToCartIcon from '../../assets/svg/Add-to-cart.svg'
 import './MainShopFood.css'
 
-const MainShopFood = () => {
+const MainShopFood = ({cartProp}) => {
     return (
         <div className='mainShopFood'>
             <div className='mainShopFood__header'>
@@ -31,7 +31,12 @@ const MainShopFood = () => {
             </div>
             <div className='mainShopFood__post'>
                 <img src={PostImage2} className='postimage2' alt='postImage' />
-                <img src={AddToCartIcon} className='addCart' />
+                {
+                    cartProp && (
+                        <img src={AddToCartIcon} className='addCart' />
+                    )
+                }
+                
             </div>
             <div className='mainShopFood__Bottom'>
                 <div className='recipe__name'>

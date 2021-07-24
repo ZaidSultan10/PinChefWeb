@@ -6,7 +6,7 @@ const ChefMainFilters = () => {
     return (
         <div className='chefMainFilters'>
             <Button>All</Button>
-            <Button>My Posts</Button>
+            <Button className='filterchef-active'>My Posts</Button>
         </div>
     )
 }

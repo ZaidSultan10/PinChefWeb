@@ -14,8 +14,8 @@ const FeedShopFood = () => {
                 </div>
                 <div className='feedClass__center'>
                     <MainFeedFilter3 />
-                    <MainShopFood />
-                    <MainShopFood />
+                    <MainShopFood cartProp={true} />
+                    <MainShopFood cartProp={true} />
                 </div>
                 <div className='feedClass__right'>
                     <ChefAds />

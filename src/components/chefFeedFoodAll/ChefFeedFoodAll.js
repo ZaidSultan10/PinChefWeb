@@ -5,9 +5,11 @@ import ChefAds from '../chefAds/ChefAds'
 import MainFeedFilter5 from '../mainFeedFilter5/MainFeedFilter5'
 import ChefMainFilters from '../chefMainFilters/ChefMainFilters'
 import './ChefFeedFoodAll.css'
+import AddNewIcon from '../../assets/svg/Creat-new-button.svg'
 
 
-const ChefFeedFoodAll = () => {
+
+const ChefFeedFoodAll = ({myfoodProp,cart1Prop}) => {
     return (
         <div className='chefFoodFeedAll'>
             <div className='chefFoodFeedAll__container'>
@@ -20,7 +22,21 @@ const ChefFeedFoodAll = () => {
                 <div className='chefFoodFeedAll__center'>
                     <ChefMainFilters />
                     <MainFeedFilter5 />
-                    <MainShopFood />
+                    {
+                        cart1Prop ? (
+                            <MainShopFood cartProp={true} />
+                        ):(
+                            <MainShopFood />
+                        )
+                    }
+                    
+                    {
+                        myfoodProp && (
+                            <div className='chefFoodFeedAll__plus'>
+                                <img src={AddNewIcon} />
+                             </div>
+                        )
+                    }
                 </div>
                 <div className='chefFoodFeedAll__right'>
                     <ChefAds />

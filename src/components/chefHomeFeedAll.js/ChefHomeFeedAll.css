@@ -6,8 +6,17 @@
     margin: 0 auto;
     max-width: 1400px;
     margin-top: 3.5%;
-    padding-top: 5%;
-    padding-bottom: 8%;
+    padding-top: 65px;
+    padding-bottom: 80px;
+}
+
+.createHomeFeedAll__plus > img{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: fixed;
+    bottom: 15%;
+    right: 28%;
 }
 .chefHomeFeedAll__container{
     display: grid;

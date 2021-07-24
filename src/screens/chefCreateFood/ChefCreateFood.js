@@ -7,7 +7,7 @@ const ChefCreateFood = () => {
     return (
         <div className='chefCreateFood'>
             <Header searchProp={true} />
-            <ChefFeedFoodAll />
+            <ChefFeedFoodAll cart1Prop={true} />
             <Footer />
         </div>
     )

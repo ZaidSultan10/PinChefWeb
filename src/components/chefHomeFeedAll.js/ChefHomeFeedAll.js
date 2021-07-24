@@ -6,8 +6,9 @@ import MainFeedFilter5 from '../mainFeedFilter5/MainFeedFilter5'
 import ChefMainFilters from '../chefMainFilters/ChefMainFilters'
 import SamplePage from '../../screens/samplePage/SamplePage'
 import MainFeed from '../mainFeed/MainFeed'
+import AddNewIcon from '../../assets/svg/Creat-new-button.svg'
 
-const ChefHomeFeedAll = () => {
+const ChefHomeFeedAll = ({mypostProp}) => {
     return (
         <div className='chefHomeFeedAll'>
             <div className='chefHomeFeedAll__container'>
@@ -21,6 +22,14 @@ const ChefHomeFeedAll = () => {
                     <ChefMainFilters />
                     <MainFeedFilter5 />
                     <MainFeed />
+                    {
+                        mypostProp && (
+                            <div className='createHomeFeedAll__plus'>
+                                <img src={AddNewIcon} />
+                             </div>
+                        )
+                    }
+                    
                 </div>
                 <div className='chefHomeFeedAll__right'>
                     <ChefAds />
