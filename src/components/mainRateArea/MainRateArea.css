@@ -57,8 +57,32 @@
     margin-bottom: 3%; 
     width: 100%;  
 }
+.chefRateAreaMain{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.mainRateArea__highlight1{
+    color: #469a09;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
 .mainRateArea__commentLikes > p{
     padding-bottom: 10px;
     padding-top: 10px;
+}
+.reply-icon{
+    margin-bottom: 1rem;
+}
+.reply-icon > img {
+    width: 18px;
+    height: 18px;
+
+}
+.mainRateArea__rateHeading{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
 }
 

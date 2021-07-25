@@ -4,7 +4,7 @@ import ChefAds from '../chefAds/ChefAds'
 import GoogleAds from '../googleAds/GoogleAds'
 import MainRateArea from '../mainRateArea/MainRateArea'
 
-const RateArea = () => {
+const RateArea = ({rateAreaProp}) => {
     return (
         <div className='rateArea'>
             <div className='rateArea__container'>
@@ -12,7 +12,15 @@ const RateArea = () => {
                     <GoogleAds filterSearchProp={true} />
                 </div>
                 <div className='rateArea__center'>
-                    <MainRateArea />
+                    {
+                        rateAreaProp ? (
+                            <MainRateArea rateReplyProp={true} />
+                        ):
+                        (
+                            <MainRateArea />
+                        )
+                    }
+                    
                 </div>
                 <div className='rateArea__right'>
                     <ChefAds />

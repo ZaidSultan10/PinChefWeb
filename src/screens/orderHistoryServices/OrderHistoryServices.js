@@ -3,9 +3,10 @@ import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
 import FeedOrderHistory from '../../components/feedOrderHistory/FeedOrderHistory'
 
-const OrderHistory = () => {
+
+const OrderHistoryServices = () => {
     return (
-        <div className='orderHistory'>
+        <div>
             <Header searchProp={true} />
             <FeedOrderHistory />
             <Footer footerProp={true} />
@@ -13,4 +14,4 @@ const OrderHistory = () => {
     )
 }
 
-export default OrderHistory
+export default OrderHistoryServices

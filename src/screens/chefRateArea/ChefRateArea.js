@@ -1,16 +1,17 @@
 import React from 'react'
-import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+import Header from '../../components/header/Header'
 import RateArea from '../../components/rateArea/RateArea'
 
-const RateScreen = () => {
+
+const ChefRateArea = () => {
     return (
-        <div className='rateScreen'>
+        <div>
             <Header searchProp={true} />
-            <RateArea />
-            <Footer footerProp={true} />
+            <RateArea rateAreaProp={true} />
+            <Footer footerProp={true} />  
         </div>
     )
 }
 
-export default RateScreen
+export default ChefRateArea

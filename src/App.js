@@ -67,7 +67,13 @@ import FoodEmergencyOrder from "./screens/foodEmergencyOrder/FoodEmergencyOrder"
 import FoodCheckoutTakeaway from "./screens/foodCheckoutTakeaway/FoodCheckoutTakeaway";
 import CreateChefFeedMYPosts from "./screens/createChefFeedMyPosts/CreateChefFeedMYPosts";
 import CreateFoodMyPost from "./screens/createFoodMyPost/CreateFoodMyPost";
-
+import ChefSignIn from "./screens/chefSignIn/ChefSignIn";
+import UserSignUp from "./screens/userSignUp/UserSignUp";
+import ChefSignUp from "./screens/chefSignUp/ChefSignUp";
+import OrderHistoryServices from "./screens/orderHistoryServices/OrderHistoryServices";
+import ChefOrderHistoryMyPurchases from "./screens/chefOrderHistoryMyPurchases/ChefOrderHistoryMyPurchases";
+import OrderHistoryMasterclass from "./screens/orderHistoryMasterclass/OrderHistoryMasterclass";
+import ChefRateArea from "./screens/chefRateArea/ChefRateArea";
 
 
 
@@ -122,10 +128,14 @@ function App() {
         <Route path="/user/recipe/details" exact component={UserRecipeDetails} />
         <Route path="/rate/review/form" exact component={RateReviewForm} />
         <Route path="/rate/area" exact component={RateScreen} />
+        <Route path="/chef/rate/area" exact component={ChefRateArea} />
         <Route path="/chef/settings/profile" exact component={SettingsProfile} />
         <Route path="/user/chats" exact component={MyChatScreen} />
         <Route path="/chef/order-details" exact component={OrderDetails} />
         <Route path="/chef/order-history" exact component={OrderHistory} />
+        <Route path="/chef/order-history/services" exact component={OrderHistoryServices} />
+        <Route path="/chef/order-history/e-masterclass" exact component={OrderHistoryMasterclass} />
+        <Route path="/chef/order-history/my-purchases" exact component={ChefOrderHistoryMyPurchases} />
         <Route path="/chef/order-notifications" exact component={OrderNotifications} />
         <Route path="/contact" exact component={ContactUs} />
         <Route path="/chef/payments" exact component={ChefPayments} />
@@ -135,6 +145,9 @@ function App() {
         <Route path="/food/checkout/takeaway" exact component={FoodCheckoutTakeaway} />
         <Route path="/chef/feed/my-posts" exact component={CreateChefFeedMYPosts} />
         <Route path="/chef/feed/food/my-posts" exact component={CreateFoodMyPost} />
+        <Route path="/chef/signin" exact component={ChefSignIn} />
+        <Route path="/user/signup" exact component={UserSignUp} />
+        <Route path="/chef/signup" exact component={ChefSignUp} />
         <Route path="/usersignin" exact>
           <Signin>
             <UserSignIn />

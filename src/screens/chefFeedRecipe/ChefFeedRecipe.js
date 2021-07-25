@@ -8,8 +8,8 @@ const ChefFeedRecipe = () => {
     return (
         <div className='chefFeedRecipe'>
             <Header searchProp={true} />
-            <ChefRecipeFeedAll />
-            <Footer />
+            <ChefRecipeFeedAll  />
+            <Footer footerProp={true}/>
         </div>
     )
 }

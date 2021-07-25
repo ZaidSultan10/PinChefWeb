@@ -14,7 +14,7 @@ import MainShopFood from '../mainShopFood/MainShopFood'
 
 
 
-const MainChefProfile = () => {
+const MainChefProfile = ({chefProfileProp}) => {
 
     const [menuState,setMenuState] = useState(1)
 
@@ -41,10 +41,20 @@ const MainChefProfile = () => {
                     </div>
                     <div className='mainChefProfile__followStatus'>
                         <div className='mainChefProfile__followers'>
-                            <img src={FollowIcon} alt='follow' />
+                            {
+                                chefProfileProp && (
+                                    <img src={FollowIcon} alt='follow' />                       
+                                )
+                            }
+                            
                             <h5>25 Followers</h5>
                         </div>
-                        <h5>Follow</h5>
+                        {
+                            chefProfileProp &&(
+                                <h5>Follow</h5>
+                            )
+                        }
+                        
                     </div>  
                 </div>
                 <div className='mainChefProfile__rating'>

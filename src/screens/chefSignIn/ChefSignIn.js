@@ -1,4 +1,4 @@
-import "./UserSignIn.css";
+import "./ChefSignIn.css";
 
 import { ReactComponent as Email } from "../../assets/svg/email-icon-big.svg";
 
@@ -16,32 +16,32 @@ import { ReactComponent as Facebook } from "../../assets/svg/Sign-in-with Facebo
 import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-icon.svg";
 import { ReactComponent as Apple } from "../../assets/svg/Sign-in -with-apple-icon.svg";
 
-const UserSignIn = () => {
+const ChefSignIn = () => {
   const [passwordType, setpasswordType] = useState("password");
   const [bgCng, setBgCng] = useState(true);
 
   let history = useHistory()
 
   return (
-    <div className="userSignin">
+    <div className='chefSignIn'>
+<div className="userSignin">
       <div className='chef__button'>
-          <Button onClick={ () =>{
-                    history.push('/chef/signin')
-                }
-            }>I AM A CHEF <ChevronRightIcon className='right__icon' /> </Button>
+          <Button onClick={() =>{
+              history.push('/usersignin')
+          }}>FIND A CHEF <ChevronRightIcon className='right__icon' /> </Button>
       </div>
       <div className="flex sign-in-up">
         <Email className='user__email' />
         <h2 className='active2'>SIGN IN</h2>
         <h2 className='sign-in-h2'
-        onClick={() =>{
-          history.push('/user/signup')
-      }}>SIGN UP</h2>
+        onClick={() => {
+            history.push('/chef/signup')
+        }}>SIGN UP</h2>
       </div>
       <div className="flex-column form">
         <div className="email-div">
           <label>
-            <strong>Email ID</strong>
+            <strong>Email/ID</strong>
           </label>
           <input
             type="text"
@@ -81,7 +81,7 @@ const UserSignIn = () => {
             </span>
           </div>
           <button onClick={ () =>{
-                    history.push('/homepage')
+                    history.push('/chef/home/feed')
                 }
             } className="continue"
           >Continue</button>
@@ -105,7 +105,9 @@ const UserSignIn = () => {
         </div>
       </div>
     </div>
-  );
+
+    </div>
+      );
 };
 
-export default UserSignIn;
+export default ChefSignIn;

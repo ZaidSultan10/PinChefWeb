@@ -1,7 +1,7 @@
-.chefMainFilters{
+.mainFeedFilter7{
     padding-bottom: 1%;
 }
-.chefMainFilters > button{
+.mainFeedFilter7 > button{
     border: 2px solid #3f8f22;
     border-radius: 999px;
     height: 28px;
@@ -14,7 +14,10 @@
     box-shadow: 1px 1px 5px 0px grey;
     box-shadow: inset 1px 1px 5px 0px rgba(182, 182, 182, 0.753);
 }
-.filterchef-active{
+.rating-button{
+    width: 40% !important;
+}
+.filterchef-active2{
     border: 2px solid #3f8f22 !important;
     background-color: #d9d9d9 !important;
     box-shadow: 1px 1px 5px 0px grey;

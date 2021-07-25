@@ -8,7 +8,7 @@ const ChefFeedMasterclass = () => {
         <div className='chefFeedMasterclass'>
             <Header />
             <ChefMasterclassFeedAll />
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }

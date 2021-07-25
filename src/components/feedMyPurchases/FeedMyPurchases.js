@@ -5,8 +5,9 @@ import GoogleAds2 from '../googleAds2/GoogleAds2'
 import MainFeedFilter4 from '../mainFeedFilter4/MainFeedFilter4'
 import MainMyPurchases from '../mainMyPurchases/MainMyPurchases'
 import './FeedMyPurchases.css'
+import ChefMainFilters from '../chefMainFilters/ChefMainFilters'
 
-const FeedMyPurchases = () => {
+const FeedMyPurchases = ({myPurchasesProp}) => {
     return (
         <div className='feedMyPurchases'>
             <div className='feedMyPurchases__container'>
@@ -17,7 +18,14 @@ const FeedMyPurchases = () => {
                     <Ads />
                 </div>
                 <div className='feedMyPurchases__center'>
-                    <MainFeedFilter4 />
+                   {
+                       myPurchasesProp ? (
+                            <ChefMainFilters chefFilterProp={true} />
+                       ):
+                       (
+                            <MainFeedFilter4 />
+                       )
+                   }
                     <MainMyPurchases />
                     <MainMyPurchases />
                 </div>

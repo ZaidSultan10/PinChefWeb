@@ -8,7 +8,7 @@ const OrderDetails = () => {
         <div>
             <Header searchProp={true} />
             <FeedOrderDetails />
-            <Footer />
+            <Footer  />
         </div>
     )
 }

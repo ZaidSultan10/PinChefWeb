@@ -2,7 +2,16 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     margin-top: 3%;
-    padding-top: 35px;
+    padding-top: 45px;
     padding-bottom: 80px;
     width: 100%;
+}
+.feedOrderHistory__heading{
+    text-align: center;
+    padding-bottom: 2%;
+}
+.feedOrderHistory__heading > h5{
+    color: #464040;
+    font-size: 18px;
+    font-weight: 900;
 }

@@ -1,16 +1,16 @@
 import React from 'react'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
-import RateArea from '../../components/rateArea/RateArea'
+import FeedMyPurchases from '../../components/feedMyPurchases/FeedMyPurchases'
 
-const RateScreen = () => {
+const ChefOrderHistoryMyPurchases = () => {
     return (
-        <div className='rateScreen'>
+        <div>
             <Header searchProp={true} />
-            <RateArea />
+            <FeedMyPurchases myPurchasesProp={true} />
             <Footer footerProp={true} />
         </div>
     )
 }
 
-export default RateScreen
+export default ChefOrderHistoryMyPurchases

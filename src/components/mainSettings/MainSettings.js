@@ -11,9 +11,13 @@ import ShareIcon from '../../assets/svg/share-2.svg';
 import StarIcon from '../../assets/svg/Star.svg';
 import CardMembershipIcon from '../../assets/svg/subscription-icon.svg';
 import PaymentIcon from '../../assets/svg/Payment-methods-icon.svg';
+import { useHistory } from 'react-router-dom'
 
 
 const MainSettings = ({settingsProp}) => {
+   
+    const history=useHistory()
+   
     return (
         <div className='mainSettings'>
             <div className='mainSettings__container'>
@@ -26,7 +30,9 @@ const MainSettings = ({settingsProp}) => {
                         </div>
                     </div>
                     <div className='mainSettings__profileDetail'>
-                        <ChevronRight className='mainSettings__rightIcon' />
+                        <ChevronRight onClick={() => {
+                            history.push('/chef/settings/profile')
+                        }} className='mainSettings__rightIcon' />
                     </div>
                 </div>
                 <div className='mainSettings__notification'>

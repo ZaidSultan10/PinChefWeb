@@ -4,11 +4,15 @@ import ProfileAvatar from '../../assets/svg/Profile-image.svg'
 import { Button } from '@material-ui/core'
 import InfoIcon from '../../assets/svg/info-icon-red.svg'
 import CloseIcon from '@material-ui/icons/Close';
+import { useHistory } from 'react-router-dom'
 
 
 
 
 const MainChefProfileArea = () => {
+
+    const history=useHistory()
+
     return (
         <div className='mainChefProfileArea'>
             <div className='mainChefProfileArea__heading'>
@@ -177,7 +181,9 @@ const MainChefProfileArea = () => {
                 <textarea rows='7' placeholder='Service areas you deliver to' />
             </div>
             <div className='mainChefProfileArea__button'>
-                <Button>Save</Button>
+                <Button onClick={() =>{
+                    history.push('/chef/home/feed')
+                }}>Save</Button>
             </div>
         </div>
     )

@@ -8,7 +8,7 @@ const ChefFeedAll = () => {
         <div className='chefFeedAll'>
             <Header searchProp={true} />
             <ChefHomeFeedAll />
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }

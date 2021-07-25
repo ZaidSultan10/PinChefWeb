@@ -9,17 +9,37 @@ import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import ReplyIcon from '../../assets/svg/reply.svg'
 import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import LeftIcon from '../../assets/svg/left-green-arrow.svg'
+import MainFeedFilter7 from '../mainFeedFilter7/MainFeedFilter7';
 
-const MainRateArea = () => {
+const MainRateArea = ({rateReplyProp}) => {
     return (
         <div className='mainRateArea'>
-            <div className='mainRateArea__header'>
-                <img src={LeftIcon} />
-                <h5>Ratings & Reviews</h5>
-            </div>
-            <div className='mainRateArea__highlight'>
-                <h5>Write a Reveiw</h5>
-            </div>
+            
+                {
+                    rateReplyProp ? (
+                        <div className='chefRateAreaMain'>
+                            <MainFeedFilter7 />
+                        </div>
+                    ):(
+                        <div className='mainRateArea__header'>
+                            <img src={LeftIcon} />
+                            <h5>Ratings & Reviews</h5>
+                        </div>
+                    )
+                }
+                
+            
+            {
+                rateReplyProp ? (
+                    <div className='mainRateArea__highlight1'>
+                        <h5>Ratings and Reviews left for you.</h5>
+                    </div>
+                ):(
+                    <div className='mainRateArea__highlight'>
+                        <h5>Write a Reveiw</h5>
+                    </div>
+               )
+            }
             <div className='mainRateArea__rate'>
                 <div className='mainRateArea__service'>
                     <h5>Service</h5>
@@ -80,17 +100,30 @@ const MainRateArea = () => {
                 </div>
                 <div className='mainRateArea__commentLikes'>
                     <p>19 hours ago</p>
+                    {
+                        rateReplyProp && (
+                            <div className='reply-icon'>
+                                <img src={ReplyIcon} />
+                            </div>
+                        )
+                    }
                     <div className='heart-container'>
                         <img src={HeartIcon} />
                    </div>
                    <p>19 Likes</p>
                 </div>
             </div>
+            {
+                rateReplyProp ? (
+                    <div></div>
+                ):(
+                    <div className='mainRateArea__input'>
+                        <input placeholder='Enter a comment' />
+                        <ArrowRightAltIcon className='comment-push' />
+                    </div>
+                )
+            }
             
-            <div className='mainRateArea__input'>
-                <input placeholder='Enter a comment' />
-                <ArrowRightAltIcon className='comment-push' />
-            </div>
         </div>
     )
 }
