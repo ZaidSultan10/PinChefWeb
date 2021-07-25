@@ -11,12 +11,15 @@ import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import { Button } from '@material-ui/core'
 import DownIcon from '../../assets/svg/Down-button-green.svg'
 import MainShopFood from '../mainShopFood/MainShopFood'
+import { useHistory } from 'react-router-dom'
 
 
 
 const MainChefProfile = ({chefProfileProp}) => {
 
     const [menuState,setMenuState] = useState(1)
+
+    const history=useHistory()
 
     return (
         <div className='mainChefProfile'>
@@ -57,7 +60,9 @@ const MainChefProfile = ({chefProfileProp}) => {
                         
                     </div>  
                 </div>
-                <div className='mainChefProfile__rating'>
+                <div onClick={() => {
+                    history.push('/rate/area')
+                }} className='mainChefProfile__rating'>
                     <h5>56/4.5</h5>
                     <div className='mainChefProfile__stars'>
                         <img src={FullStarIcon} />

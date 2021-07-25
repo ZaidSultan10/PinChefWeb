@@ -5,6 +5,7 @@ import Ads from '../ads/Ads'
 import ChefAds from '../chefAds/ChefAds'
 import MainFeedFilter5 from '../mainFeedFilter5/MainFeedFilter5'
 import ChefMainFilters from '../chefMainFilters/ChefMainFilters'
+import GoogleAds from '../googleAds/GoogleAds'
 
 
 const ChefRecipeFeedAll = () => {
@@ -12,7 +13,7 @@ const ChefRecipeFeedAll = () => {
         <div className='chefRecipeFeedAll'>
             <div className='chefRecipeFeedAll__container'>
                 <div className='chefRecipeFeedAll__left'>
-                    <Ads />
+                    <GoogleAds filterSearchProp={true} />
                     <Ads />
                     <Ads />
                     <Ads />

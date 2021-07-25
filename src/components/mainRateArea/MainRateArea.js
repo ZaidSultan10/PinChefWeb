@@ -10,8 +10,12 @@ import ReplyIcon from '../../assets/svg/reply.svg'
 import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import LeftIcon from '../../assets/svg/left-green-arrow.svg'
 import MainFeedFilter7 from '../mainFeedFilter7/MainFeedFilter7';
+import { useHistory } from 'react-router-dom';
 
 const MainRateArea = ({rateReplyProp}) => {
+
+    const history=useHistory()
+
     return (
         <div className='mainRateArea'>
             
@@ -35,8 +39,10 @@ const MainRateArea = ({rateReplyProp}) => {
                         <h5>Ratings and Reviews left for you.</h5>
                     </div>
                 ):(
-                    <div className='mainRateArea__highlight'>
-                        <h5>Write a Reveiw</h5>
+                    <div onClick={() => {
+                        history.push('/rate/review/form')
+                    }} className='mainRateArea__highlight'>
+                        <h5>Write a Review</h5>
                     </div>
                )
             }
@@ -44,46 +50,98 @@ const MainRateArea = ({rateReplyProp}) => {
                 <div className='mainRateArea__service'>
                     <h5>Service</h5>
                     <div className='mainRateArea__stars'>
-                        <StarOutlinedIcon />
-                        <StarOutlinedIcon />
-                        <StarOutlinedIcon />
-                        <StarHalfOutlinedIcon />
-                        <StarBorderOutlinedIcon />
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__score'>
+                            <h5>4.5</h5>
+                        </div>
                     </div>
                 </div>
                 <div className='mainRateArea__food'>
                     <h5>Food</h5>
                     <div className='mainRateArea__stars'>
-                        <StarOutlinedIcon />
-                        <StarOutlinedIcon />
-                        <StarOutlinedIcon />
-                        <StarHalfOutlinedIcon />
-                        <StarBorderOutlinedIcon />
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__score'>
+                            <h5>4.5</h5>
+                        </div>
                     </div>
                 </div>
                 <div className='mainRateArea__personality'>
                     <h5>Personality</h5>
                     <div className='mainRateArea__stars'>
-                        <StarOutlinedIcon />
-                        <StarOutlinedIcon />
-                        <StarOutlinedIcon />
-                        <StarHalfOutlinedIcon />
-                        <StarBorderOutlinedIcon />
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__score'>
+                            <h5>4.5</h5>
+                        </div>
                     </div>
                 </div>
                 <div className='mainRateArea__presentation'>
                     <h5>Presentation</h5>
                     <div className='mainRateArea__stars'>
-                        <StarOutlinedIcon />
-                        <StarOutlinedIcon />
-                        <StarOutlinedIcon />
-                        <StarHalfOutlinedIcon />
-                        <StarBorderOutlinedIcon />
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__star'>
+                            <StarOutlinedIcon className='mainRateArea__star1' />
+                        </div>
+                        <div className='mainRateArea__score'>
+                            <h5>4.5</h5>
+                        </div>
                     </div>
                 </div>
                 <div className='mainRateArea__service'>
                     <h5>Average Rating</h5>
-                    <h5>3.5</h5>
+                    <h5 className='rate-total-num'>3.5</h5>
                 </div>
             </div>
             <div className='mainRateArea__commentsArea'>
@@ -99,7 +157,7 @@ const MainRateArea = ({rateReplyProp}) => {
                     </p>
                 </div>
                 <div className='mainRateArea__commentLikes'>
-                    <p>19 hours ago</p>
+                    <p >19 hrs ago</p>
                     {
                         rateReplyProp && (
                             <div className='reply-icon'>

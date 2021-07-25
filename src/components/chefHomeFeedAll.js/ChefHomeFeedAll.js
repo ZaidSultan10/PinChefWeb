@@ -7,13 +7,15 @@ import ChefMainFilters from '../chefMainFilters/ChefMainFilters'
 import SamplePage from '../../screens/samplePage/SamplePage'
 import MainFeed from '../mainFeed/MainFeed'
 import AddNewIcon from '../../assets/svg/Creat-new-button.svg'
+import GoogleAds from '../googleAds/GoogleAds'
+
 
 const ChefHomeFeedAll = ({mypostProp}) => {
     return (
         <div className='chefHomeFeedAll'>
             <div className='chefHomeFeedAll__container'>
                 <div className='chefHomeFeedAll__left'>
-                    <Ads />
+                    <GoogleAds />
                     <Ads />
                     <Ads />
                     <Ads />

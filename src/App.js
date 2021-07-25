@@ -74,6 +74,7 @@ import OrderHistoryServices from "./screens/orderHistoryServices/OrderHistorySer
 import ChefOrderHistoryMyPurchases from "./screens/chefOrderHistoryMyPurchases/ChefOrderHistoryMyPurchases";
 import OrderHistoryMasterclass from "./screens/orderHistoryMasterclass/OrderHistoryMasterclass";
 import ChefRateArea from "./screens/chefRateArea/ChefRateArea";
+import ChefRateReviewSaved from "./screens/chefRateReviewSaved/ChefRateReviewSaved";
 
 
 
@@ -129,6 +130,7 @@ function App() {
         <Route path="/rate/review/form" exact component={RateReviewForm} />
         <Route path="/rate/area" exact component={RateScreen} />
         <Route path="/chef/rate/area" exact component={ChefRateArea} />
+        <Route path="/chef/rate/review/saved" exact component={ChefRateReviewSaved} />
         <Route path="/chef/settings/profile" exact component={SettingsProfile} />
         <Route path="/user/chats" exact component={MyChatScreen} />
         <Route path="/chef/order-details" exact component={OrderDetails} />

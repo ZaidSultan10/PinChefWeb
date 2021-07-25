@@ -8,14 +8,26 @@ import './MainFeedRecipeDetails.css'
 import LeftIcon from '../../assets/svg/left-green-arrow.svg'
 import MoreHorizOutlined from '@material-ui/icons/MoreHorizOutlined';
 import { Avatar } from '@material-ui/core';
-
+import { useHistory } from 'react-router-dom';
+import ShareIcon from '../../assets/svg/Share-yellow.svg'
 
 
 const MainFeedRecipeDetails = () => {
+
+    const history=useHistory()
+
+    const recipeDetailsBackButton = () =>{
+        history.push('/homerecipe')
+    }
+
+    const recipeCommentRoute = () => {
+        history.push('/user/comments')
+    }
+
     return (
         <div className='mainFeedRecipeDetails'>
             <div className='mainFeedRecipeDetails__header'>
-                <img src={LeftIcon} />
+                <img onClick={recipeDetailsBackButton} src={LeftIcon} />
                 <h5>BEEF TACO</h5>
             </div>
             <div className='mainFeedRecipeDetails__Profile'>
@@ -38,8 +50,12 @@ const MainFeedRecipeDetails = () => {
                         <p>235</p>
                     </div>
                     <div className='mainFeedRecipeDetails__comment'>
-                        <img src={CommentIcon} />
+                        <img onClick={recipeCommentRoute} src={CommentIcon} />
                         <p>110</p>
+                    </div>
+                    <div className='mainFeedRecipeDetails__share'>
+                        <img src={ShareIcon} />
+                        
                     </div>
                 </div>
             </div>

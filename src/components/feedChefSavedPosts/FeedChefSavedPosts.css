@@ -1,4 +1,4 @@
-.chefRecipeFeedAll{
+.feedChefSavedPosts{
     display: grid;
     grid-template-columns: repeat(1,minmax(0,1fr));
     width: 85%;
@@ -6,42 +6,40 @@
     margin: 0 auto;
     max-width: 1400px;
     margin-top: 3.5%;
+    padding-top: 65px;
+    padding-bottom: 55px;
 }
-.chefRecipeFeedAll__container{
+
+.feedChefSavedPosts__container{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     justify-content: center;
     grid-gap:1%;
-    padding-bottom: 80px;
-    padding-top: 65px;
 }
-.chefRecipeFeedAll__left,.chefRecipeFeedAll__right,.chefRecipeFeedAll__center{
+.feedChefSavedPosts__left,.feedChefSavedPosts__right,.feedChefSavedPosts__center{
     width: 100%;
 }
-.chefRecipeFeedAll__left > p , .chefRecipeFeedAll__center > p , .chefRecipeFeedAll__right>p{
+.feedChefSavedPosts__left > p , .feedChefSavedPosts__center > p , .feedChefSavedPosts__right>p{
     display: flex;
     justify-content: center;
     font-size: 16px;
 }
-.chefRecipeFeedAll__center{
-    margin-top: -4.5%;
-}
 @media screen and (max-width:1000px){
-    .chefRecipeFeedAll__container{
+    .feedChefSavedPosts__container{
         display: grid;
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
-    .chefRecipeFeedAll__left,.chefRecipeFeedAll__right{
+    .feedChefSavedPosts__left,.feedChefSavedPosts__right{
         display: none;
     }
 } 
 @media screen and (max-width:604px){
-    .chefRecipeFeedAll{
+    .feedChefSavedPosts{
         width: 100%;
         height: 100%;
         margin: 0 auto;
     }
-    .chefRecipeFeedAll__container{
+    .feedChefSavedPosts__container{
         display: grid;
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
@@ -51,11 +49,11 @@
   and (max-height: 1366px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:portrait){
-    .chefRecipeFeedAll__container{
+    .feedChefSavedPosts__container{
         display: grid;
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
-    .chefRecipeFeedAll__left,.chefRecipeFeedAll__right{
+    .feedChefSavedPosts__left,.feedChefSavedPosts__right{
         display: none;
     }
 }
@@ -64,11 +62,11 @@
   and (max-height: 2388px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:portrait){
-    .chefRecipeFeedAll__container{
+    .feedChefSavedPosts__container{
         display: grid;
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
-    .chefRecipeFeedAll__left,.chefRecipeFeedAll__right{
+    .feedChefSavedPosts__left,.feedChefSavedPosts__right{
         display: none;
     }
 }

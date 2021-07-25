@@ -7,8 +7,16 @@ import CommentIcon from "../../assets/svg/Commentwithborder.svg";
 import HeartIcon from '../../assets/svg/Heart_Outline.svg'
 import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 import { ChevronRight } from "@material-ui/icons";
+import { useHistory } from "react-router-dom";
 
 const MainFeedRecipe = () => {
+
+    const history=useHistory()
+
+    const detailRecipeButton = () => {
+        history.push('/user/recipe/details')
+    }
+
     return (
     <div className="mainFeedRecipe">
       <div className='mainFeedRecipe__container'>
@@ -64,7 +72,7 @@ const MainFeedRecipe = () => {
                 Ground Beef 1Kg, Tortillas 1 Pack, Celery, 1 Onion,
                 Taco Seasoning 
                 </p>
-                <ChevronRight className='rightIcon' />
+                <ChevronRight onClick={detailRecipeButton} className='rightIcon' />
             </div>
         </div>
       </div>
