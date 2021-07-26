@@ -76,6 +76,12 @@ import OrderHistoryMasterclass from "./screens/orderHistoryMasterclass/OrderHist
 import ChefRateArea from "./screens/chefRateArea/ChefRateArea";
 import ChefRateReviewSaved from "./screens/chefRateReviewSaved/ChefRateReviewSaved";
 import PaymentPolicy from "./screens/paymentPolicy/PaymentPolicy";
+import ChefRateReviewSavedRecipe from "./screens/chefRateReviewSavedRecipe/ChefRateReviewSavedRecipe";
+import ChefRateReviewFoodService from "./screens/chefRateReviewFoodService/ChefRateReviewFoodService";
+import ChefRateReviewSavedChefs from "./screens/chefRateReviewSavedChefs/ChefRateReviewSavedChefs";
+import ChefSideAllChefs from "./screens/chefSideAllChefs/ChefSideAllChefs";
+import CreateRecipeMyPost from "./screens/createRecipeMyPost/CreateRecipeMyPost";
+import CreateServiceMyPost from "./screens/createServiceMyPost/CreateServiceMyPost";
 
 
 
@@ -90,7 +96,8 @@ function App() {
         <Route path="/homepage" exact component={HomeFeed} />
         <Route path="/homerecipe" exact component={HomeRecipe} />
         <Route path="/home/masterclass" exact component={HomeFeedMasterclass} />
-        <Route path="/chef/all-chef" exact component={UserAllChef} />
+        <Route path="/user/all-chef" exact component={UserAllChef} />
+        <Route path="/chef/all-chef" exact component={ChefSideAllChefs} />
         <Route path="/chef/followed-chef" exact component={UserFollowedChef} />
         <Route path="/shop/food" exact component={UserShopFood} />
         <Route path="/shop/service" exact component={UserShopService} />
@@ -132,6 +139,9 @@ function App() {
         <Route path="/rate/area" exact component={RateScreen} />
         <Route path="/chef/rate/area" exact component={ChefRateArea} />
         <Route path="/chef/rate/review/saved" exact component={ChefRateReviewSaved} />
+        <Route path="/chef/rate/review/saved/recipe" exact component={ChefRateReviewSavedRecipe} />
+        <Route path="/chef/rate/review/saved/food-service" exact component={ChefRateReviewFoodService} />
+        <Route path="/chef/rate/review/saved/chefs" exact component={ChefRateReviewSavedChefs} />
         <Route path="/chef/settings/profile" exact component={SettingsProfile} />
         <Route path="/user/chats" exact component={MyChatScreen} />
         <Route path="/chef/order-details" exact component={OrderDetails} />
@@ -148,6 +158,8 @@ function App() {
         <Route path="/food/checkout/takeaway" exact component={FoodCheckoutTakeaway} />
         <Route path="/chef/feed/my-posts" exact component={CreateChefFeedMYPosts} />
         <Route path="/chef/feed/food/my-posts" exact component={CreateFoodMyPost} />
+        <Route path="/chef/feed/recipe/my-posts" exact component={CreateRecipeMyPost} />
+        <Route path="/chef/feed/service/my-posts" exact component={CreateServiceMyPost} />
         <Route path="/chef/signin" exact component={ChefSignIn} />
         <Route path="/chef/payment-policy" exact component={PaymentPolicy} />
         <Route path="/user/signup" exact component={UserSignUp} />

@@ -24,9 +24,9 @@ const ChefFeedFoodAll = ({myfoodProp,cart1Prop}) => {
                     <MainFeedFilter5 />
                     {
                         cart1Prop ? (
-                            <MainShopFood cartProp={true} />
+                            <MainShopFood cartProp={true} mileProp={true} />
                         ):(
-                            <MainShopFood />
+                            <MainShopFood mileProp={true} />
                         )
                     }
                     

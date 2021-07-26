@@ -12,7 +12,11 @@ import { Button } from '@material-ui/core'
 import DownIcon from '../../assets/svg/Down-button-green.svg'
 import MainShopFood from '../mainShopFood/MainShopFood'
 import { useHistory } from 'react-router-dom'
-
+import LeftIcon from '../../assets/svg/left-green-arrow.svg'
+import AllChefsIcon from '../../assets/svg/All-Chefs.svg'
+import CallIcon from '../../assets/svg/Call-chef-vip-only.svg'
+import ShareIcon from '../../assets/svg/Share-chef-profile-icon.svg'
+import ChatIcon from '../../assets/svg/Chat.svg'
 
 
 const MainChefProfile = ({chefProfileProp}) => {
@@ -21,9 +25,32 @@ const MainChefProfile = ({chefProfileProp}) => {
 
     const history=useHistory()
 
+    const allChefChefsSideRoute = () =>{
+        history.push('/chef/all-chef')
+    }
+
     return (
         <div className='mainChefProfile'>
             <div className='mainChefProfile__container'>
+                <div className='mainChefProfile__topArea'>
+                    <div className='mainChefProfile__topLeftArea'>
+                        {
+                            chefProfileProp && (
+                                <img src={LeftIcon} />
+                            )
+                        }
+                        <h5>Profile</h5>
+                    </div>
+                    <div onClick={allChefChefsSideRoute} className='mainChefProfile__topCenterArea'>
+                        <img src={AllChefsIcon} />
+                        <h5>All Chefs</h5>
+                    </div>
+                    <div className='mainChefProfile__topRightArea'>
+                        <img src={CallIcon} />
+                        <img src={ChatIcon} />
+                        <img src={ShareIcon} />
+                    </div>
+                </div>
                 <div className='mainChefProfile__cover'>
                    <img src={CoverPhoto} className='coverPhoto' alt='cover' />
                 </div>

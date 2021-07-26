@@ -5,6 +5,47 @@
 .coverPhoto{
     height: 220px;
 }
+.mainChefProfile__topArea{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%;
+}
+.mainChefProfile__topLeftArea >h5,
+.mainChefProfile__topCenterArea>h5{
+    font-size: 16px;
+}
+.mainChefProfile__topLeftArea{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.mainChefProfile__topCenterArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.mainChefProfile__topRightArea{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+.mainChefProfile__topLeftArea > img{
+    width: 25px;
+    height: 25px;
+    margin-right:0.5rem;
+}
+.mainChefProfile__topCenterArea>img{
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5rem;
+}
+.mainChefProfile__topRightArea >img{
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+}
 
 .mainChefProfile__followers > img,
 .mainChefProfile__stars > img {

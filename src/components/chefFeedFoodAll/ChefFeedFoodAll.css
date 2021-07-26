@@ -5,8 +5,11 @@
     height: 100%;
     margin: 0 auto;
     max-width: 1400px;
-    margin-top: 3.5%;
+    margin-top: 1.35%;
+    padding-top: 65px;
+    padding-bottom: 80px;
 }
+
 .chefFoodFeedAll__plus > img{
     width: 45px;
     height: 45px;

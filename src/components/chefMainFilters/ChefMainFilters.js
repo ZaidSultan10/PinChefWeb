@@ -15,6 +15,13 @@ const ChefMainFilters = ({chefFilterProp}) => {
         history.push('/chef/order-history')
     }
     
+    const myPostFeedRoute = () => {
+        history.push('/chef/feed/my-posts')
+    }
+
+    const allFeedRoute = () => {
+        history.push('/chef/home/feed')
+    }
     return (
 
         <div className='chefMainFilters'>
@@ -28,8 +35,8 @@ const ChefMainFilters = ({chefFilterProp}) => {
                     </>
                 ):(
                     <>
-                    <Button>All</Button>
-                    <Button className='filterchef-active'>My Posts</Button>
+                    <Button onClick={allFeedRoute}>All</Button>
+                    <Button onClick={myPostFeedRoute} className='filterchef-active'>My Posts</Button>
                     </>
                 )
             }

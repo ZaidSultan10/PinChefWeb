@@ -8,7 +8,7 @@ import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import AddToCartIcon from '../../assets/svg/Add-to-cart.svg'
 import './MainShopFood.css'
 
-const MainShopFood = ({cartProp}) => {
+const MainShopFood = ({cartProp,mileProp}) => {
     return (
         <div className='mainShopFood'>
             <div className='mainShopFood__header'>
@@ -44,7 +44,12 @@ const MainShopFood = ({cartProp}) => {
                         <h4>Vegan Soft Tacos -</h4>
                         <h4 className='recipe__price'>$25</h4>
                     </div>
-                    <p>2 Miles Away</p>
+                    {
+                        mileProp && (
+                            <p>2 Miles Away</p>
+                        )
+                    }
+                    
                 </div>
                 <div className='mainShopfood__actions'>
                     <div className='like__post'>

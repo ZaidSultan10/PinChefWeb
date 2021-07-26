@@ -1,6 +1,6 @@
 .mainFeedFilter8{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     grid-gap:1%;
     margin-top: 1%;

@@ -1,0 +1,83 @@
+.chefHomeFeedAllMyPost{
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+    margin-top: 3.5%;
+    padding-top: 65px;
+    padding-bottom: 80px;
+}
+
+.createHomeFeedAllMyPost__plus{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: fixed;
+    bottom: 15%;
+    right: 28%;
+}
+.chefHomeFeedAllMyPost__container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: center;
+    grid-gap:1%;
+}
+.chefHomeFeedAllMyPost__left,.chefHomeFeedAllMyPost__right,.chefHomeFeedAllMyPost__center{
+    width: 100%;
+}
+.chefHomeFeedAllMyPost__left > p , .chefHomeFeedAllMyPost__center > p , .chefHomeFeedAllMyPost__right>p{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+.chefHomeFeedAllMyPost__center{
+    margin-top: -4.5%;
+}
+@media screen and (max-width:1000px){
+    .chefHomeFeedAllMyPost__container{
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .chefHomeFeedAllMyPost__left,.chefHomeFeedAllMyPost__right{
+        display: none;
+    }
+} 
+@media screen and (max-width:604px){
+    .chefHomeFeedAllMyPost{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .chefHomeFeedAllMyPost__container{
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+}
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation:portrait){
+    .chefHomeFeedAllMyPost__container{
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .chefHomeFeedAllMyPost__left,.chefHomeFeedAllMyPost__right{
+        display: none;
+    }
+}
+@media only screen 
+  and (min-width: 1668px) 
+  and (max-height: 2388px) 
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation:portrait){
+    .chefHomeFeedAllMyPost__container{
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .chefHomeFeedAllMyPost__left,.chefHomeFeedAllMyPost__right{
+        display: none;
+    }
+}

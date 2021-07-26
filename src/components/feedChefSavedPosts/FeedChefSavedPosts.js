@@ -4,7 +4,7 @@ import GoogleAds from '../googleAds/GoogleAds'
 import MainFeedFilter8 from '../mainFeedFilter8/MainFeedFilter8'
 import './FeedChefSavedPosts.css'
 import MainFeedFilter7 from '../mainFeedFilter7/MainFeedFilter7'
-
+import MainFeed from '../mainFeed/MainFeed'
 
 const FeedChefSavedPosts = () => {
     return (
@@ -16,6 +16,7 @@ const FeedChefSavedPosts = () => {
                 <div className='feedChefSavedPosts__center'>
                     <MainFeedFilter7 className='feedChefSavedPosts__filter7' />
                     <MainFeedFilter8 />
+                    <MainFeed />
                 </div>
                 <div className='feedChefSavedPosts__right'>
                     <ChefAds />

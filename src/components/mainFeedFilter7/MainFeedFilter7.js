@@ -11,10 +11,14 @@ const MainFeedFilter7 = () => {
         history.push('/chef/rate/area')
     }
 
+    const chefRateReviewSavedButton = () =>{
+        history.push('/chef/rate/review/saved')
+    }
+
     return (
         <div className='mainFeedFilter7'>
             <Button onClick={chefRateButton} className='rating-button'>Ratings/Reviews</Button>
-            <Button className='filterchef-active2'>Saved</Button>
+            <Button onClick={chefRateReviewSavedButton} className='filterchef-active2'>Saved</Button>
         </div>
     )
 }

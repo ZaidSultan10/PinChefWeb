@@ -30,7 +30,7 @@ const Footer = ({footerProp}) => {
                             history.push('/chef/order-history')
                         }} src={ShopUnselectedIcon}  alt='shop' />
                         <img onClick={() => {
-                            history.push('/rate/area')
+                            history.push('/chef/rate/area')
                         }} src={StarUnselectedIcon} alt='star' />
                         <img onClick={() => {
                             history.push('/chef/settings')
