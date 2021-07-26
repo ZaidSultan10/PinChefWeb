@@ -75,6 +75,7 @@ import ChefOrderHistoryMyPurchases from "./screens/chefOrderHistoryMyPurchases/C
 import OrderHistoryMasterclass from "./screens/orderHistoryMasterclass/OrderHistoryMasterclass";
 import ChefRateArea from "./screens/chefRateArea/ChefRateArea";
 import ChefRateReviewSaved from "./screens/chefRateReviewSaved/ChefRateReviewSaved";
+import PaymentPolicy from "./screens/paymentPolicy/PaymentPolicy";
 
 
 
@@ -148,6 +149,7 @@ function App() {
         <Route path="/chef/feed/my-posts" exact component={CreateChefFeedMYPosts} />
         <Route path="/chef/feed/food/my-posts" exact component={CreateFoodMyPost} />
         <Route path="/chef/signin" exact component={ChefSignIn} />
+        <Route path="/chef/payment-policy" exact component={PaymentPolicy} />
         <Route path="/user/signup" exact component={UserSignUp} />
         <Route path="/chef/signup" exact component={ChefSignUp} />
         <Route path="/usersignin" exact>
