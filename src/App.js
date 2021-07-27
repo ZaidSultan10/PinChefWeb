@@ -82,6 +82,7 @@ import ChefRateReviewSavedChefs from "./screens/chefRateReviewSavedChefs/ChefRat
 import ChefSideAllChefs from "./screens/chefSideAllChefs/ChefSideAllChefs";
 import CreateRecipeMyPost from "./screens/createRecipeMyPost/CreateRecipeMyPost";
 import CreateServiceMyPost from "./screens/createServiceMyPost/CreateServiceMyPost";
+import CreateMasterclassMyPost from "./screens/CreateMasterclassMyPost/CreateMasterclassMyPost";
 
 
 
@@ -160,6 +161,7 @@ function App() {
         <Route path="/chef/feed/food/my-posts" exact component={CreateFoodMyPost} />
         <Route path="/chef/feed/recipe/my-posts" exact component={CreateRecipeMyPost} />
         <Route path="/chef/feed/service/my-posts" exact component={CreateServiceMyPost} />
+        <Route path="/chef/feed/masterclass/my-posts" exact component={CreateMasterclassMyPost} />
         <Route path="/chef/signin" exact component={ChefSignIn} />
         <Route path="/chef/payment-policy" exact component={PaymentPolicy} />
         <Route path="/user/signup" exact component={UserSignUp} />

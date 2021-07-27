@@ -1,0 +1,108 @@
+.mainFeedMasterclassMyPost__top{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 4%;
+}
+.mainFeedMasterclassMyPost__top >p {
+    font-size: 14px;
+    font-weight: 600;
+    color: grey;
+    margin-left: 3%;
+}
+.mainFeedMasterclassMyPost__top >img{
+    width: 25px;
+    height: 25px;
+}
+.mainFeedMasterclassMyPost__middle{
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    margin-top: 3%;
+}
+
+.mainFeedMasterclassMyPost__leftHeading{
+    width: 90%;
+    height: 100%;
+}
+.mainFeedMasterclassMyPost__leftHeading > h4{
+    text-align: center;
+    font-size: 18px;
+}
+.mainFeedMasterclassMyPost__leftHeading >img{
+    border-radius: 16px;
+    margin-top: 3%;
+    
+}
+.mainFeedMasterclassMyPost__middleCenter{
+    margin-left: 3%;
+}
+.mainFeedMasterclassMyPost__date{
+    display: flex;
+    align-items: center;
+}
+
+.mainFeedMasterclassMyPost__date >p,
+.mainFeedMasterclassMyPost__time>p,
+.mainFeedMasterclassMyPost__duration>p{
+    margin-left: 5%;
+}
+
+.mainFeedMasterclassMyPost__time,
+.mainFeedMasterclassMyPost__duration,
+.mainFeedMasterclassMyPost__cancel,
+.mainFeedMasterclassMyPost__share,
+.mainFeedMasterclassMyPost__price{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+.mainFeedMasterclassMyPost__cancel>h5,
+.mainFeedMasterclassMyPost__share>h5,
+.mainFeedMasterclassMyPost__price>h5{
+    margin-left: 5%;
+}
+
+.mainFeedMasterclassMyPost__date>img,
+.mainFeedMasterclassMyPost__time>img,
+.mainFeedMasterclassMyPost__duration>img,
+.mainFeedMasterclassMyPost__cancel>img,
+.mainFeedMasterclassMyPost__share>img,
+.mainFeedMasterclassMyPost__price>img{
+    width: 20px;
+    height: 20px;
+}
+
+.mainFeedMasterclassMyPost__middleRight >img{
+    width: 35px;
+    height: 35px;
+}
+.mainFeedMasterclassMyPost__bottom{
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+.mainFeedMasterclassMyPost__link{
+    display: flex;
+    align-items: center;
+}
+.mainFeedMasterclassMyPost__link >img{
+    width: 25px;
+    height: 25px;
+}
+.mainFeedMasterclassMyPost__ticket{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: flex-end;
+}
+.mainFeedMasterclassMyPost__ticket >p {
+    color: grey;
+    margin-right: 4%;
+}
+.mainFeedMasterclassMyPost__ticket >img{
+    width: 25px;
+    height: 25px;
+    margin-right: 3%;
+    margin-top: 1%;
+}
+

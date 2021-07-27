@@ -25,7 +25,7 @@ const MainFeedFilter6 = () => {
     }
 
     const chefHomeMasterclassRouteMyPost = () =>{
-        history.push('/chef/home/feed/masterclass')
+        history.push('/chef/feed/masterclass/my-posts')
     }
 
     return (
