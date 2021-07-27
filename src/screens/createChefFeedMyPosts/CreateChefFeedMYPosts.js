@@ -10,7 +10,7 @@ const CreateChefFeedMYPosts = () => {
         <div>
             <Header searchProp={true} />
             <ChefHomeFeedAllMyPost />
-            <Footer />
+            <Footer footerProp={true} />
             
         </div>
     )

@@ -8,7 +8,7 @@ const ChefCookTakeout = () => {
         <div className='chefCookTakeout'>
             <Header searchProp={true} />
             <ChefCookTakeaway/>
-            <Footer />
+            <Footer searchProp={true} />
         </div>
     )
 }

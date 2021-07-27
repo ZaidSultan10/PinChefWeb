@@ -2,6 +2,8 @@ import React from 'react'
 import './MainChefCreateRecipe.css'
 import AddImageIcon from '../../assets/svg/Add-image-video.svg'
 import CloseIcon from '@material-ui/icons/Close';
+import { Button } from '@material-ui/core';
+
 
 
 const MainChefCreateRecipe = () => {
@@ -84,6 +86,10 @@ const MainChefCreateRecipe = () => {
                       </div>
                   </div>
                   
+                </div>
+                <div className='mainChefCreateRecipe__buttons'>
+                    <Button className='the-cancel-button'>Cancel</Button>
+                    <Button className='the-post-button'>Post</Button>
                 </div>
             </div>
         </div>

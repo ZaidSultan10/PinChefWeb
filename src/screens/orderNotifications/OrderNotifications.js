@@ -9,7 +9,7 @@ const OrderNotifications = () => {
         <div className='orderNotification'>
             <Header searchProp={true} />
             <ChefOrderNotifications />
-            <Footer/>
+            <Footer footerProp={true}/>
         </div>
     )
 }

@@ -9,7 +9,7 @@ const ChefPaymentMethods = () => {
         <div>
             <Header searchProp={true} />
             <CreateChefPaymentMethods />
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }

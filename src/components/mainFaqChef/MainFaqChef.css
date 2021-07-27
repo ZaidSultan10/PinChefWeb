@@ -1,0 +1,32 @@
+.mainFaqChef__container{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    margin-left: 3%;
+    margin-right: 3%;
+    align-items: center;
+    margin-top: 4%;
+}
+.mainFaqChef__header{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.mainFaqChef__header >img{
+    width: 20px;
+    height: 20px;
+}
+.mainFaqChef__headerCenter{
+    display: flex;
+    align-items: center;
+}
+.mainFaqChef__count > h5{
+    font-size: 18px;
+}
+.mainFaqChef__headerCenter >h4{
+    margin-left: 1%;
+    color: #469a09;
+    font-size: 18px;
+}
+.mainFaqChef__headerCenter >img {
+    width: 25px;
+    height: 25px;
+}

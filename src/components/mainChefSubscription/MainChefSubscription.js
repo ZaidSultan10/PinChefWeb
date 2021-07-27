@@ -4,11 +4,15 @@ import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import CrownIcon from '../../assets/svg/Crown.svg'
 import './MainChefSubscription.css'
 import VerticalLine from '../../assets/svg/Vertical-spliter-A.svg'
-
+import LeftIcon from '../../assets/svg/left-green-arrow.svg'
 
 const MainChefSubscription = () => {
     return (
         <div className='mainChefSubscription'>
+            <div className='mainChefSubscription__headings'>
+                <img src={LeftIcon} />
+                <h4>SUBSCRIPTIONS</h4>
+            </div>
             <div className='mainChefSubscription__top'>
                 <h3>NO COMMISSIONS!!!</h3>
                 <h5>No Hidden Fees!!!</h5>

@@ -2,6 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     margin-top: 3%;
-    padding-bottom: 8%;
-    padding-top: 7%;
+    padding-bottom: 85px;
+    padding-top: 32px;
 }

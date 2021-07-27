@@ -8,7 +8,7 @@ const ServiceCookLiveCheckout = () => {
         <div className='serviceCookLiveCheckout'>
             <Header searchProp={true} />
             <ChefCookLive />
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }

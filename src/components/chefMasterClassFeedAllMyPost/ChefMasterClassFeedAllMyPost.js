@@ -5,6 +5,7 @@ import ChefAds from '../chefAds/ChefAds'
 import MainFeedFilter6 from '../mainFeedFilter6/MainFeedFilter6'
 import ChefMainFilters from '../chefMainFilters/ChefMainFilters'
 import MainFeedMasterclassMyPost from '../mainFeedMasterclassMyPost/MainFeedMasterclassMyPost'
+import GoogleAds2 from '../googleAds2/GoogleAds2'
 
 
 const ChefMasterClassFeedAllMyPost = () => {
@@ -12,10 +13,7 @@ const ChefMasterClassFeedAllMyPost = () => {
         <div className='chefMasterClassFeedAllMyPost'>
             <div className='chefMasterClassFeedAllMyPost__container'>
                 <div className='chefMasterClassFeedAllMyPost__left'>
-                    <Ads />
-                    <Ads />
-                    <Ads />
-                    <Ads />
+                    <GoogleAds2 adsProp2={true} />
                 </div>
                 <div className='chefMasterClassFeedAllMyPost__center'>
                     <ChefMainFilters />

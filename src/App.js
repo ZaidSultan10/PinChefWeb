@@ -83,6 +83,10 @@ import ChefSideAllChefs from "./screens/chefSideAllChefs/ChefSideAllChefs";
 import CreateRecipeMyPost from "./screens/createRecipeMyPost/CreateRecipeMyPost";
 import CreateServiceMyPost from "./screens/createServiceMyPost/CreateServiceMyPost";
 import CreateMasterclassMyPost from "./screens/CreateMasterclassMyPost/CreateMasterclassMyPost";
+import Faq from "./screens/faq/Faq";
+import ChefFaq from "./screens/chefFaq/ChefFaq";
+import TermsUser from "./screens/termsUser/TermsUser";
+import TermsChef from "./screens/termsChef/TermsChef";
 
 
 
@@ -166,6 +170,10 @@ function App() {
         <Route path="/chef/payment-policy" exact component={PaymentPolicy} />
         <Route path="/user/signup" exact component={UserSignUp} />
         <Route path="/chef/signup" exact component={ChefSignUp} />
+        <Route path="/user/faq" exact component={Faq} />
+        <Route path="/chef/faq" exact component={ChefFaq} />
+        <Route path="/user/terms" exact component={TermsUser} />
+        <Route path="/chef/terms" exact component={TermsChef} />
         <Route path="/usersignin" exact>
           <Signin>
             <UserSignIn />

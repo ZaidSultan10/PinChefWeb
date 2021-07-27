@@ -8,7 +8,7 @@ const ChefCreateRecipe = () => {
         <div className='chefCreateRecipe'>
             <Header searchProp={true} />
             <ChefCreateFeedRecipe />
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }

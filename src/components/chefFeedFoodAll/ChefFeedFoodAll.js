@@ -6,7 +6,7 @@ import MainFeedFilter5 from '../mainFeedFilter5/MainFeedFilter5'
 import ChefMainFilters from '../chefMainFilters/ChefMainFilters'
 import './ChefFeedFoodAll.css'
 import AddNewIcon from '../../assets/svg/Creat-new-button.svg'
-
+import GoogleAds2 from '../googleAds2/GoogleAds2'
 
 
 const ChefFeedFoodAll = ({myfoodProp,cart1Prop}) => {
@@ -14,10 +14,8 @@ const ChefFeedFoodAll = ({myfoodProp,cart1Prop}) => {
         <div className='chefFoodFeedAll'>
             <div className='chefFoodFeedAll__container'>
                 <div className='chefFoodFeedAll__left'>
-                    <Ads />
-                    <Ads />
-                    <Ads />
-                    <Ads />
+                    <GoogleAds2 adsProp2={true} />
+                    
                 </div>
                 <div className='chefFoodFeedAll__center'>
                     <ChefMainFilters />

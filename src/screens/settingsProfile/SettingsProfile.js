@@ -8,7 +8,7 @@ const SettingsProfile = () => {
         <div className='settingsProfile'>
             <Header searchProp={true} />
             <FeedSettingsProfile />
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }

@@ -9,7 +9,7 @@ const ChefCookShip = () => {
         <div className='chefCookShip'>
             <Header searchProp={true} />
             <ChefCookShipping/>
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }

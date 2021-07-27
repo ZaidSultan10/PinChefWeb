@@ -8,7 +8,7 @@ const chefCookOnLocation = () => {
         <div className='chefCookLocation'>
             <Header searchProp={true } />
             <ChefCookGuestLive />
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }

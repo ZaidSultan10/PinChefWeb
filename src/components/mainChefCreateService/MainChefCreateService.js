@@ -2,6 +2,7 @@ import React from 'react'
 import './MainChefCreateService.css'
 import AddImageIcon from '../../assets/svg/Add-image-video.svg'
 import CloseIcon from '@material-ui/icons/Close';
+import { Button } from '@material-ui/core';
 
 
 
@@ -43,7 +44,10 @@ const MainChefCreateService = () => {
                     <h5>Price</h5>
                     <input placeholder='Price..' />
                 </div>
-                
+                <div className='mainChefCreateService__buttons'>
+                    <Button className='service-cancel-button'>Cancel</Button>
+                    <Button className='service-post-button'>Post</Button>
+                </div>
             </div>
         </div>
     )

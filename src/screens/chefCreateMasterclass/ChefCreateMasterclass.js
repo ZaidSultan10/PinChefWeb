@@ -6,9 +6,9 @@ import Header from '../../components/header/Header'
 const ChefCreateMasterclass = () => {
     return (
         <div className='chefCreateMasterclass'>
-            <Header />
+            <Header searchProp={true} />
             <ChefCreateFeedMasterclass />
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }

@@ -8,7 +8,7 @@ const ChefPayments = () => {
         <div>
             <Header searchProp={true} />
             <CreateChefPayments />
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }

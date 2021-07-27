@@ -9,7 +9,7 @@ const CreateFoodMyPost = () => {
         <div>
             <Header searchProp={true} />
             <ChefFeedFoodAllMyPost />
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }

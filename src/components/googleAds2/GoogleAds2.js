@@ -76,6 +76,18 @@ const GoogleAds2 = ({adsProp,adsProp2}) => {
                         <RadioButtonUncheckedIcon className='radio' />
                         <p>Shipping Available</p>
                     </div>
+                    <div className='googleAds__filter__vip__chef'>
+                        <RadioButtonUncheckedIcon className='radio' />
+                        <p>Invite Chef to your location</p>
+                    </div>
+                    <div className='googleAds__filter__vip__chef'>
+                        <RadioButtonUncheckedIcon className='radio' />
+                        <p>Chef hosts at chefs location</p>
+                    </div>
+                    <div className='googleAds__filter__vip__chef'>
+                        <RadioButtonUncheckedIcon className='radio' />
+                        <p>Cook live with chef</p>
+                    </div>
                     <div className='googleAds__filter__most__liked'>
                         <RadioButtonUncheckedIcon className='radio' />
                         <p>Available Now</p>

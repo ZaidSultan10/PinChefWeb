@@ -8,7 +8,7 @@ const ChefMasterclassCheckout = () => {
         <div className='chefMasterclassCheckout'>
             <Header searchProp={true} />
             <ChefCreateMasterclassCheckout />
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }

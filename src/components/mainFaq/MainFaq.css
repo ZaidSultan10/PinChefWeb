@@ -1,0 +1,32 @@
+.mainFaq__container{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    margin-left: 3%;
+    margin-right: 3%;
+    align-items: center;
+    margin-top: 4%;
+}
+.mainFaq__header{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.mainFaq__header >img{
+    width: 20px;
+    height: 20px;
+}
+.mainFaq__headerCenter{
+    display: flex;
+    align-items: center;
+}
+.mainFaq__count > h5{
+    font-size: 18px;
+}
+.mainFaq__headerCenter >h4{
+    margin-left: 1%;
+    color: #469a09;
+    font-size: 18px;
+}
+.mainFaq__headerCenter >img {
+    width: 25px;
+    height: 25px;
+}

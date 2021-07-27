@@ -6,16 +6,16 @@ import MainFeedFilter6 from '../mainFeedFilter6/MainFeedFilter6'
 import ChefMainFilters from '../chefMainFilters/ChefMainFilters'
 import AddNewIcon from '../../assets/svg/Creat-new-button.svg'
 import './ChefFeedFoodAllServiceMyPost.css'
+import GoogleAds2 from '../googleAds2/GoogleAds2'
+
+
 
 const ChefFeedFoodAllServiceMyPost = ({cart1Prop}) => {
     return (
         <div className='chefFeedFoodAllServiceMyPost'>
             <div className='chefFeedFoodAllServiceMyPost__container'>
                 <div className='chefFeedFoodAllServiceMyPost__left'>
-                    <Ads />
-                    <Ads />
-                    <Ads />
-                    <Ads />
+                    <GoogleAds2 adsProp2={true} adsProp={true} />
                 </div>
                 <div className='chefFeedFoodAllServiceMyPost__center'>
                     <ChefMainFilters />

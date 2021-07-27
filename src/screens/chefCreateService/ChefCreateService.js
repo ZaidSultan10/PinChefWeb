@@ -9,7 +9,7 @@ const ChefCreateService = () => {
         <div className='chefCreateService'>
             <Header searchProp={true} />
             <ChefCreateFeedService />
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }

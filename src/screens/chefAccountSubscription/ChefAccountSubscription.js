@@ -7,9 +7,9 @@ import ChefFeedSubscription from '../../components/chefFeedSubscription/ChefFeed
 const ChefAccountSubscription = () => {
     return (
         <div className='chefAccountSubscription'>
-            <Header />
+            <Header searchProp={true} />
             <ChefFeedSubscription />
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }
