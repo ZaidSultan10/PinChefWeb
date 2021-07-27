@@ -5,7 +5,7 @@ import MainFeedFilter3 from '../mainFeedFilter3/MainFeedFilter3'
 import MainShopFood from '../mainShopFood/MainShopFood'
 import './FeedShopFood.css'
 
-const FeedShopFood = () => {
+const FeedShopFood = ({shopFoodProp}) => {
     return (
         <div className='feedClass'>
             <div className='feedClass__container'>
@@ -14,8 +14,20 @@ const FeedShopFood = () => {
                 </div>
                 <div className='feedClass__center'>
                     <MainFeedFilter3 />
-                    <MainShopFood cartProp={true} />
-                    <MainShopFood cartProp={true} />
+                    {
+                        shopFoodProp ? (
+                            <>
+                                <MainShopFood cartProp={true} mileProp={true} />
+                                <MainShopFood cartProp={true} mileProp={true} />
+                            </>
+                        ):(
+                            <>
+                                <MainShopFood cartProp={true}  />
+                                <MainShopFood cartProp={true}  />
+                            </>
+                        )
+                    }
+            
                 </div>
                 <div className='feedClass__right'>
                     <ChefAds />

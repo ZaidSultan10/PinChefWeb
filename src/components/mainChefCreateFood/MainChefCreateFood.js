@@ -4,14 +4,20 @@ import AddImageIcon from '../../assets/svg/Add-image-video.svg'
 import CloseIcon from '@material-ui/icons/Close';
 import { Button, FormControl, Input, InputLabel } from '@material-ui/core';
 import DownIcon from '../../assets/svg/Down-button-green.svg'
+import { useHistory } from 'react-router-dom';
 
 const MainChefCreateFood = () => {
+
+    const history=useHistory()
+
     return (
         <div className='mainChefCreateFood'>
             <div className='mainChefCreateFood__container'>
                 <div className='mainChefCreateFood__heading'>
                     <h5>Create Food</h5>
-                    <CloseIcon className='post-close-icon' />
+                    <CloseIcon onClick={() => {
+                        history.push('/chef/feed/food/my-posts')
+                    }} className='post-close-icon' />
                 </div>
                 <div className='mainChefCreateFood__addImage'>
                     <img src={AddImageIcon} />

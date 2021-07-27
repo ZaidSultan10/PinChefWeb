@@ -7,7 +7,7 @@ const UserShopFood = () => {
     return (
         <div className='userShopFood'>
             <Header searchProp={true} />
-            <FeedShopFood />
+            <FeedShopFood shopFoodProp={true} />
             <Footer />
             
         </div>

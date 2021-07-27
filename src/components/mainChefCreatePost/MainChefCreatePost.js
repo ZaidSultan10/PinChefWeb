@@ -4,16 +4,23 @@ import AddIcon from '../../assets/svg/Add-image-video.svg'
 import AddLocationIcon from '../../assets/svg/Location-post.svg'
 import { Button } from '@material-ui/core'
 import CloseIcon from '@material-ui/icons/Close';
+import { useHistory } from 'react-router-dom'
 
 
 
 const MainChefCreatePost = () => {
+
+
+    const history=useHistory()
+
     return (
         <div className='mainChefCreatePost'>
             <div className='mainChefCreatePost__container'>
                 <div className='mainChefCreatePost__heading'>
                     <h5>Create Post</h5>
-                    <CloseIcon className='post-close-icon' />
+                    <CloseIcon onClick={() => {
+                        history.push('/chef/feed/my-posts')
+                    }} className='post-close-icon' />
                 </div>
                 <div className='mainChefCreatePost__addImage'>
                     <img src={AddIcon} />
@@ -26,7 +33,9 @@ const MainChefCreatePost = () => {
                     <input />
                 </div>
                 <div className='mainChefCreatePost__buttons'>
-                    <Button className='mainChefCreatePost__cancel'>Cancel</Button>
+                    <Button onClick={() => {
+                        history.push('/chef/feed/my-posts')
+                    }} className='mainChefCreatePost__cancel'>Cancel</Button>
                     <Button className='mainChefCreatePost__post'>Post</Button>
                 </div>
             </div>

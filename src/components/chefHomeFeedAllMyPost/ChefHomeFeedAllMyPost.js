@@ -9,9 +9,13 @@ import MainFeed from '../mainFeed/MainFeed'
 import AddNewIcon from '../../assets/svg/Creat-new-button.svg'
 import GoogleAds from '../googleAds/GoogleAds'
 import './ChefHomeFeedAllMyPost.css'
+import { useHistory } from 'react-router-dom'
 
 
 const ChefHomeFeedAllMyPost = () => {
+
+    const history=useHistory()
+
     return (
         <div className='chefHomeFeedAllMyPost'>
             <div className='chefHomeFeedAllMyPost__container'>
@@ -26,7 +30,9 @@ const ChefHomeFeedAllMyPost = () => {
                     <MainFeedFilter6 />
                     <MainFeed />
                     <div className='createHomeFeedAllMyPost__plus'>
-                        <img src={AddNewIcon} />
+                        <img  onClick={() => {
+                            history.push('/chef/home/create-post')
+                        }} src={AddNewIcon} />
                      </div>                
                 </div>
                 <div className='chefHomeFeedAllMyPost__right'>

@@ -171,7 +171,9 @@ const closeModal2 = () => {
             <p>135</p>
           </div>
           <div className="comment">
-            <img src={CommentIcon} alt="comment" />
+            <img onClick={() => {
+              history.push('/user/comments')
+            }} src={CommentIcon} alt="comment" />
             <p>120</p>
           </div>
         </div>

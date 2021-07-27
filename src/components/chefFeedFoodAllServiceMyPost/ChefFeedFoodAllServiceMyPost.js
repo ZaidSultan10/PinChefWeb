@@ -7,10 +7,14 @@ import ChefMainFilters from '../chefMainFilters/ChefMainFilters'
 import AddNewIcon from '../../assets/svg/Creat-new-button.svg'
 import './ChefFeedFoodAllServiceMyPost.css'
 import GoogleAds2 from '../googleAds2/GoogleAds2'
+import { useHistory } from 'react-router-dom'
 
 
 
 const ChefFeedFoodAllServiceMyPost = ({cart1Prop}) => {
+
+    const history=useHistory()
+
     return (
         <div className='chefFeedFoodAllServiceMyPost'>
             <div className='chefFeedFoodAllServiceMyPost__container'>
@@ -29,7 +33,9 @@ const ChefFeedFoodAllServiceMyPost = ({cart1Prop}) => {
                     }
                     
                     <div className='chefFeedFoodAllServiceMyPost__plus'>
-                        <img src={AddNewIcon} />
+                        <img onClick={() => {
+                            history.push('/chef/home/feed/create-service')
+                        }} src={AddNewIcon} />
                     </div>
                      
                 </div>

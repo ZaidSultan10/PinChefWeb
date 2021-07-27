@@ -7,8 +7,13 @@ import HeartIcon from '../../assets/svg/Heart_Outline.svg'
 import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import AddToCartIcon from '../../assets/svg/Add-to-cart.svg'
 import './MainShopFood.css'
+import { useHistory } from 'react-router-dom';
 
 const MainShopFood = ({cartProp,mileProp}) => {
+    
+    const history=useHistory()
+
+    
     return (
         <div className='mainShopFood'>
             <div className='mainShopFood__header'>
@@ -57,7 +62,9 @@ const MainShopFood = ({cartProp,mileProp}) => {
                         <p>236</p>
                     </div>
                     <div className='comment__post'>
-                        <img src={CommentIcon} className='commentIcon' />
+                        <img onClick={() => {
+                            history.push('/user/comments')
+                        }} src={CommentIcon} className='commentIcon' />
                         <p>110</p>
                     </div>
                 </div>

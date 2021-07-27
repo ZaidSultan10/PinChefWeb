@@ -3,14 +3,20 @@ import './MainChefCreateMasterclass.css'
 import AddImageIcon from '../../assets/svg/Add-image-video.svg'
 import { Button } from '@material-ui/core'
 import CloseIcon from '@material-ui/icons/Close';
+import { useHistory } from 'react-router-dom';
 
 
 const MainChefCreateMasterclass = () => {
+    
+    const history = useHistory()
+    
     return (
         <div className='mainChefCreateMasterclass'>
             <div className='mainChefCreateMasterclass__heading'>
                     <h5>Create Masterclass</h5>
-                    <CloseIcon className='post-close-icon' />
+                    <CloseIcon onClick={() => {
+                        history.push('/chef/feed/masterclass/my-posts')
+                    }} className='post-close-icon' />
             </div>
             <div className='mainChefCreateMasterclass__top'>
                 <div className='mainChefCreateMasterclass__topLeft'>
@@ -133,7 +139,9 @@ const MainChefCreateMasterclass = () => {
                   </div>
             </div>
             <div className='mainChefCreateMasterclass__buttons'>
-                <Button className='mainChefCreateMasterclass__cancel'>Cancel</Button>
+                <Button onClick={() => {
+                        history.push('/chef/feed/masterclass/my-posts')
+                    }} className='mainChefCreateMasterclass__cancel'>Cancel</Button>
                 <Button className='mainChefCreateMasterclass__post'>Post</Button>
             </div>
         </div>

@@ -3,16 +3,22 @@ import './MainChefCreateRecipe.css'
 import AddImageIcon from '../../assets/svg/Add-image-video.svg'
 import CloseIcon from '@material-ui/icons/Close';
 import { Button } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
 
 
 
 const MainChefCreateRecipe = () => {
+
+    const history=useHistory()
+
     return (
         <div className='mainChefCreateRecipe'>
             <div className='mainChefCreateRecipe__container'>
                 <div className='mainChefCreateRecipe__heading'>
                     <h5>Create Recipe</h5>
-                    <CloseIcon className='post-close-icon' />
+                    <CloseIcon onClick={() => {
+                        history.push('/chef/feed/recipe/my-posts')
+                    }} className='post-close-icon' />
                 </div>
                 <div className='mainChefCreateRecipe__addImage'>
                     <img src={AddImageIcon} />
@@ -88,7 +94,9 @@ const MainChefCreateRecipe = () => {
                   
                 </div>
                 <div className='mainChefCreateRecipe__buttons'>
-                    <Button className='the-cancel-button'>Cancel</Button>
+                    <Button onClick={() => {
+                        history.push('/chef/feed/recipe/my-posts')
+                    }} className='the-cancel-button'>Cancel</Button>
                     <Button className='the-post-button'>Post</Button>
                 </div>
             </div>

@@ -3,16 +3,22 @@ import './MainChefCreateService.css'
 import AddImageIcon from '../../assets/svg/Add-image-video.svg'
 import CloseIcon from '@material-ui/icons/Close';
 import { Button } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
 
 
 
 const MainChefCreateService = () => {
+
+    const history=useHistory()
+
     return (
         <div className='mainChefCreateService'>
             <div className='mainChefCreateService__container'>
                 <div className='mainChefCreateService__heading'>
                     <h5>Create Service</h5>
-                    <CloseIcon className='post-close-icon' />
+                    <CloseIcon onClick={() => {
+                        history.push('/chef/feed/service/my-posts')
+                    }} className='post-close-icon' />
                 </div>
                 <div className='mainChefCreateService__addImage'>
                     <img src={AddImageIcon} />
@@ -45,7 +51,9 @@ const MainChefCreateService = () => {
                     <input placeholder='Price..' />
                 </div>
                 <div className='mainChefCreateService__buttons'>
-                    <Button className='service-cancel-button'>Cancel</Button>
+                    <Button onClick={() => {
+                        history.push('/chef/feed/service/my-posts')
+                    }} className='service-cancel-button'>Cancel</Button>
                     <Button className='service-post-button'>Post</Button>
                 </div>
             </div>
