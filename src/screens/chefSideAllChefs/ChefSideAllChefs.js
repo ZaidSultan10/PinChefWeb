@@ -7,7 +7,7 @@ const ChefSideAllChefs = () => {
     return (
         <div>
             <Header searchProp={true} />
-            <FeedAllChefsChefSide />
+            <FeedAllChefsChefSide allChefProp={true} />
             <Footer footerProp={true} />
         </div>
     )

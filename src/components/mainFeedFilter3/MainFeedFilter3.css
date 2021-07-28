@@ -21,12 +21,14 @@
     color: white;
     font-weight: 700;
 }
-.active3{
+.activefilter32{
     border-bottom: 3.5px solid #3f8f22 !important;
 }
-.mainFeedFilters3__container > h3{
+.mainFeedFilter3__food,.mainFeedFilter3__service{
     color: gray;
     font-weight: 700 !important;
+    text-decoration: none;
+    font-size: 18px;
     display: flex;
     justify-content: center;
 }

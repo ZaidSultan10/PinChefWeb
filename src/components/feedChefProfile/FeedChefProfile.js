@@ -4,7 +4,7 @@ import Ads from '../ads/Ads'
 import ChefAds from '../chefAds/ChefAds'
 import MainChefProfile from '../mainChefProfile/MainChefProfile'
 
-const FeedChefProfile = () => {
+const FeedChefProfile = ({chefProfileFeedProp}) => {
     return (
         <div className='feedChefProfile'>
             <div className='feedChefProfile__container'>
@@ -15,7 +15,14 @@ const FeedChefProfile = () => {
                     <Ads />
                 </div>
                 <div className='feedChefProfile__center'>
-                    <MainChefProfile />
+                    {
+                        chefProfileFeedProp ? (
+                            <MainChefProfile chefProfileProp={true} />
+                        ):(
+                            <MainChefProfile />
+                        )
+                    }
+                    
                 </div>
                 <div className='feedChefProfile__right'>
                     <ChefAds />

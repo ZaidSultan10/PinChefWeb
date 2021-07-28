@@ -5,13 +5,15 @@
     grid-gap:1%;
     margin-top: 1%;
 }
-.active2{
+.activefilter42{
     border-bottom: 3.5px solid #3f8f22 !important;
 }
-.mainFeedFilter4 > h3{
+.mainFeedFilter4__feed,.mainFeedFilter4__recipe,
+.mainFeedFilter4__foodservice,.mainFeedFilter4__purchases{
     color: gray;
     font-weight: 700 !important;
     display: flex;
+    text-decoration: none;
     justify-content: center;
 }
 

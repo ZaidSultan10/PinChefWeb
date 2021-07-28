@@ -2,17 +2,17 @@ import React from 'react'
 import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
 import FeedAllChefs from '../../components/feedAllChefs/FeedAllChefs'
-import FeedAllChefsChefSide from '../../components/feedAllChefsChefside/FeedAllChefsChefSide'
 
 
-const UserFollowedChef = () => {
+const UserFollowedChefs = () => {
     return (
-        <div className='userFollowedChef'>
+        <div>
             <Header searchProp={true} />
-            <FeedAllChefsChefSide />
+            <FeedAllChefs  />
             <Footer />
+            
         </div>
     )
 }
 
-export default UserFollowedChef
+export default UserFollowedChefs

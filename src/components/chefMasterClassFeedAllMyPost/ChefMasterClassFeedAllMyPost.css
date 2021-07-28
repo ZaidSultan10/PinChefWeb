@@ -26,6 +26,9 @@
 .chefMasterClassFeedAllMyPost__left,.chefMasterClassFeedAllMyPost__right,.chefMasterClassFeedAllMyPost__center{
     width: 100%;
 }
+.chefMasterClassFeedAllMyPost__center{
+    margin-top: -1.65rem;
+}
 .chefMasterClassFeedAllMyPost__left > p , .chefMasterClassFeedAllMyPost__center > p , .chefMasterClassFeedAllMyPost__right>p{
     display: flex;
     justify-content: center;

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import './MainFeedFilter4.css'
+import { NavLink } from 'react-router-dom'
 
 const MainFeedFilter4 = () => {
 
@@ -8,18 +9,11 @@ const MainFeedFilter4 = () => {
 
     return (
         <div className='mainFeedFilter4'>
-            <h3 className='active2' onClick={() => {
-                history.push('/star/feed')
-            }}>Feeds</h3>
-            <h3 onClick={() => {
-                history.push('/star/feed/recipe')
-            }}>Recipes</h3>
-            <h3 onClick={() => {
-                history.push('/star/feed/food-service')
-            }}>Food&Services</h3>
-            <h3 onClick={() => {
-                history.push('/star/my-purchases')
-            }}>My Purchases</h3>
+            <NavLink exact to='/star/feed' activeClassName='activefilter42' className='mainFeedFilter4__feed'>Feeds</NavLink>
+            <NavLink to='/star/feed/recipe' activeClassName='activefilter42' className='mainFeedFilter4__recipe'>Recipes</NavLink>
+            <NavLink to='/star/feed/food-service' activeClassName='activefilter42' className='mainFeedFilter4__foodservice'>Food&Services</NavLink>
+            <NavLink to='/star/my-purchases' activeClassName='activefilter42' className='mainFeedFilter4__purchases'>My Purchases</NavLink>
+            
         </div>
     )
 }

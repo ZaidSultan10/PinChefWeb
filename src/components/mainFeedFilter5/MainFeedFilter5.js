@@ -1,6 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import './MainFeedFilter5.css'
+import { NavLink } from 'react-router-dom'
 
 const MainFeedFilter5 = () => {
 
@@ -28,11 +29,13 @@ const MainFeedFilter5 = () => {
 
     return (
         <div className='mainFeedFilter5'>
-            <h3 onClick={chefHomeFeedRoute} className='active2'>Feeds</h3>
-            <h3 onClick={chefHomeRecipeRoute}>Recipes</h3>
-            <h3 onClick={chefHomeFoodRoute}>Food</h3>
-            <h3 onClick={chefHomeServiceRoute}>Service</h3>
-            <h3 onClick={chefHomeMasterclassRoute}>e-Masterclass</h3>
+
+            <NavLink exact to='/chef/home/feed' activeClassName='activefilter52' className='mainFeedFilter5__feed'>Feeds</NavLink>
+            <NavLink to='/chef/home/feed/recipe' activeClassName='activefilter52' className='mainFeedFilter5__recipe' >Recipes</NavLink>
+            <NavLink to='/chef/home/feed/food' activeClassName='activefilter52' className='mainFeedFilter5__food'>Food</NavLink>
+            <NavLink to='/chef/home/feed/service' activeClassName='activefilter52' className='mainFeedFilter5__service'>Serivce</NavLink>
+            <NavLink to='/chef/home/feed/masterclass' activeClassName='activefilter52' className='mainFeedFilter5__masterclass'>e-Masterclass</NavLink>
+
         </div>
     )
 }

@@ -5,15 +5,21 @@ import './MainChats.css'
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+import { useHistory } from 'react-router-dom';
 
 
 const MainChats = () => {
+
+    const history=useHistory()
+
     return (
         <div className='mainChats'>
             <div className='mainChats__container'>
                 <div className='mainChats__header'>
                     <div className='mainChats__leftIcon'>
-                        <ChevronLeft className='mainChats__chevronLeft' />
+                        <ChevronLeft onClick={() => {
+                            history.push('/user/chef/profile')
+                        }} className='mainChats__chevronLeft' />
                     </div>
                     <div className='mainChats__profile'>
                         <Avatar className='mainChats__avatar' />

@@ -1,20 +1,33 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import './MainFeedFilter2.css'
+import { NavLink } from 'react-router-dom'
+import LeftIcon from '../../assets/svg/left-green-arrow.svg'
 
-const MainFeedFilter2 = () => {
+const MainFeedFilter2 = ({filter2Prop}) => {
 
     const history=useHistory()
 
     return (
-        <div className='mainFeedFilters2'>
-            <h3 className='active2' onClick={
-                () => {history.push('/chef/all-chef')}
-            }>All Chefs</h3>
-            <h3 onClick={() => {
-                history.push('/chef/followed-chef')
-            }}>Following</h3>
-        </div>
+        <>
+            {
+                filter2Prop ? (
+                    <div className='mainFeedFilters21'>
+                        <img src={LeftIcon} onClick={() => {
+                            history.push('/chef/profile')
+                        }} />
+                        <NavLink to='/chef/all-chef' activeClassName='activefilter22' className='mainFeedFilters2__allChef'>All Chefs</NavLink>
+                        <NavLink to='/chef/followed-chef' activeClassName='activefilter22' className='mainFeedFilters2__followed'>Following</NavLink>
+                    </div>
+                )
+                :(
+                    <div className='mainFeedFilters2'>
+                        <NavLink to='/user/all-chef' activeClassName='activefilter22' className='mainFeedFilters2__allChef'>All Chefs</NavLink>
+                        <NavLink to='/user/followed-chef' activeClassName='activefilter22' className='mainFeedFilters2__followed'>Following</NavLink>
+                    </div>
+                )
+            }
+        </>
     )
 }
 

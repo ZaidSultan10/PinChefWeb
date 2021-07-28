@@ -41,14 +41,43 @@ const MainChefProfile = ({chefProfileProp}) => {
                         }
                         <h5>Profile</h5>
                     </div>
-                    <div onClick={allChefChefsSideRoute} className='mainChefProfile__topCenterArea'>
-                        <img src={AllChefsIcon} />
-                        <h5>All Chefs</h5>
-                    </div>
+                    {
+                        chefProfileProp ?(
+                                <div></div>
+                        ):(
+                            <div onClick={allChefChefsSideRoute} className='mainChefProfile__topCenterArea'>
+                                <img src={AllChefsIcon} />
+                                <h5>All Chefs</h5>
+                            </div>
+                        )
+                    }
+                    
                     <div className='mainChefProfile__topRightArea'>
-                        <img src={CallIcon} />
-                        <img src={ChatIcon} />
-                        <img src={ShareIcon} />
+                        <img onClick={() => {
+                            history.push('/chef/call')
+                        }} src={CallIcon} />
+                        {
+                            chefProfileProp ? (
+                                <>
+                                    <img onClick={() => {
+                                        history.push('/chat/newchat')
+                                    }} src={ChatIcon} />
+                                    <img onClick={() => {
+                                        history.push('')
+                                    }} src={ShareIcon} />
+                                </>
+                            ):(
+                                <>
+                                    <img onClick={() => {
+                                        history.push('/chef/chats')
+                                    }} src={ChatIcon} />
+                                    <img onClick={() => {
+                                        history.push('')
+                                    }} src={ShareIcon} />
+                                </>
+                            )
+                        }
+                        
                     </div>
                 </div>
                 <div className='mainChefProfile__cover'>

@@ -5,12 +5,14 @@
     grid-gap:1%;
     margin-top: 1%;
 }
-.active2{
+.activefilter82{
     border-bottom: 3.5px solid #3f8f22 !important;
 }
-.mainFeedFilter8 > h3{
+.mainFeedFilter8 > .mainFeedFilter8__feed,
+.mainFeedfilter8__recipe,.mainFeedFilter8__foodservice{
     color: gray;
     font-weight: 700 !important;
+    text-decoration: none;
     display: flex;
     justify-content: center;
 }

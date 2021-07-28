@@ -1,27 +1,13 @@
 import React from 'react'
 import { Button } from '@material-ui/core'
 import './ChefMainFilters.css'
-import { useHistory } from 'react-router-dom'
+import { NavLink, useHistory } from 'react-router-dom'
+
 
 const ChefMainFilters = ({chefFilterProp}) => {
     
     const history=useHistory()
 
-    const myPurchasesButton = () =>{
-        history.push('/chef/order-history/my-purchases')
-    }
-
-    const mySalesButton = () =>{
-        history.push('/chef/order-history')
-    }
-    
-    const myPostFeedRoute = () => {
-        history.push('/chef/feed/my-posts')
-    }
-
-    const allFeedRoute = () => {
-        history.push('/chef/home/feed')
-    }
     return (
 
         <div className='chefMainFilters'>
@@ -29,14 +15,18 @@ const ChefMainFilters = ({chefFilterProp}) => {
                 chefFilterProp ?
                 (
                     <>
-                    <Button onClick={mySalesButton}>My Sales</Button>
-                    <Button className='filterchef-active'
-                    onClick={myPurchasesButton}>My Purhases</Button>
+                    <NavLink to='/chef/order-history' activeClassName='filterchef-active' >
+                        My Sales
+                    </NavLink>
+                    <NavLink to='/chef/order-history/my-purchases' activeClassName='filterchef-active'>
+                        My Purhases
+                    </NavLink>
                     </>
                 ):(
                     <>
-                    <Button onClick={allFeedRoute}>All</Button>
-                    <Button onClick={myPostFeedRoute} className='filterchef-active'>My Posts</Button>
+                    <NavLink to='/chef/home/feed' activeClassName='cheffilter2' className='chefMainFilters__allposts'>ALL</NavLink>
+                    <NavLink to='/chef/feed/my-posts' activeClassName='cheffilter2' className='chefMainFilters__myposts'>MY POSTS</NavLink>
+                    
                     </>
                 )
             }

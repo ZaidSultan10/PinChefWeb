@@ -12,11 +12,21 @@ import { Avatar } from '@material-ui/core';
 import Image1 from '../../assets/chef-images/chef-image1.jpg'
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import ReplyIcon from '../../assets/svg/reply.svg'
-
+import LeftIcon from '../../assets/svg/left-green-arrow.svg'
+import { useHistory } from 'react-router-dom';
 
 const MainCommentArea = () => {
+
+    const history = useHistory()
+
     return (
         <div className='mainCommentArea'>
+            <div className='mainCommentArea__topArea'>
+                <img onClick={() => {
+                    
+                }} src={LeftIcon} />
+                <h4>COMMENTS</h4>
+            </div>
             <div className='mainCommentArea__header'>
                 <Avatar className='mainCommentArea__avatar' />
                 <div className='mainCommentArea__username'>

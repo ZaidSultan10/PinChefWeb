@@ -5,27 +5,43 @@
     grid-gap:1%;
     margin-top: 3%;
 }
+.feedss1{
+    display: none;
+}
 .active2{
     border-bottom: 3.5px solid #3f8f22 !important;
-    border-radius: 999px;
+    border-radius: 8px;
+}
+.activess3{
+    border-bottom: 3.5px solid #3f8f22 !important;
+    border-radius: 8px;
 }
 .recipess{
     margin-left: -1rem;
-}
-.feedss{
-
-    width: 80%;
-    margin-left: 0.7rem;
-}
-.masterclass{
-    margin-left: -1rem !important;
-}
-.mainFeedFilters > h3{
     color: gray;
     font-weight: 700 !important;
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
+.feedss{
+    color: gray;
+    font-weight: 700 !important;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 80%;
+    margin-left: 0.7rem;
+}
+.masterclass{
+    color: gray;
+    font-weight: 700 !important;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: -1rem !important;
+}
+
 
 @media only screen and (max-width:424px){
     .mainFeedFilters > h3{

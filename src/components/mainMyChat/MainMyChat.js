@@ -4,12 +4,18 @@ import LeftIcon from '../../assets/svg/left-green-arrow.svg'
 import { MoreHorizOutlined } from '@material-ui/icons'
 import { Avatar } from '@material-ui/core'
 import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
+import { useHistory } from 'react-router-dom'
 
 const MainMyChat = () => {
+
+    const history = useHistory()
+
     return (
         <div className='mainMyChat'>
             <div className='mainMyChat__header'>
-                <img src={LeftIcon} />
+                <img onClick={() => {
+                    history.push('/chef/profile')
+                }} src={LeftIcon} />
                 <h4>MY CHATS</h4>
             </div>
             <div className='mainMyChat__search'>

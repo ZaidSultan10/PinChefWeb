@@ -87,6 +87,8 @@ import Faq from "./screens/faq/Faq";
 import ChefFaq from "./screens/chefFaq/ChefFaq";
 import TermsUser from "./screens/termsUser/TermsUser";
 import TermsChef from "./screens/termsChef/TermsChef";
+import ChefProfileUser from "./screens/chefProfileUser/ChefProfileUser";
+import UserFollowedChefs from "./screens/userFollowedChefs/UserFollowedChefs";
 
 
 
@@ -102,6 +104,7 @@ function App() {
         <Route path="/homerecipe" exact component={HomeRecipe} />
         <Route path="/home/masterclass" exact component={HomeFeedMasterclass} />
         <Route path="/user/all-chef" exact component={UserAllChef} />
+        <Route path="/user/followed-chef" exact component={UserFollowedChefs} />
         <Route path="/chef/all-chef" exact component={ChefSideAllChefs} />
         <Route path="/chef/followed-chef" exact component={UserFollowedChef} />
         <Route path="/shop/food" exact component={UserShopFood} />
@@ -112,6 +115,7 @@ function App() {
         <Route path="/star/my-purchases" exact component={UserMyPurchases} />
         <Route path="/user/settings" exact component={Settings} />
         <Route path="/chef/profile" exact component={ChefProfile} />
+        <Route path="/user/chef/profile" exact component={ChefProfileUser} />
         <Route path="/chat/newchat" exact component={UserChatScreen} />
         <Route path="/chef/home/feed" exact component={ChefFeedAll} />
         <Route path="/chef/home/create-post" exact component={ChefCreatePost} />
@@ -148,7 +152,7 @@ function App() {
         <Route path="/chef/rate/review/saved/food-service" exact component={ChefRateReviewFoodService} />
         <Route path="/chef/rate/review/saved/chefs" exact component={ChefRateReviewSavedChefs} />
         <Route path="/chef/settings/profile" exact component={SettingsProfile} />
-        <Route path="/user/chats" exact component={MyChatScreen} />
+        <Route path="/chef/chats" exact component={MyChatScreen} />
         <Route path="/chef/order-details" exact component={OrderDetails} />
         <Route path="/chef/order-history" exact component={OrderHistory} />
         <Route path="/chef/order-history/services" exact component={OrderHistoryServices} />

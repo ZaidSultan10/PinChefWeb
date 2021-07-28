@@ -5,16 +5,34 @@
     grid-gap:1%;
     margin-top: 3%;
 }
-.active2{
+.mainFeedFilters21{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr ;
+    justify-content: center;
+    grid-gap:1%;
+    margin-top: 3%;
+}
+.mainFeedFilters21 >img{
+    width: 25px;
+    height: 25px;
+}
+.activefilter22{
     border-bottom: 3.5px solid #3f8f22 !important;
 }
-.mainFeedFilters2 > h3{
+.mainFeedFilters2__allChef{
     color: gray;
+    text-decoration: none;
     font-weight: 700 !important;
     display: flex;
     justify-content: center;
 }
-
+.mainFeedFilters2__followed{
+    color: gray;
+    text-decoration: none;
+    font-weight: 700 !important;
+    display: flex;
+    justify-content: center;
+}
 @media only screen and (max-width:424px){
     .mainFeedFilters2 > h3{
         font-size: 16px !important;
