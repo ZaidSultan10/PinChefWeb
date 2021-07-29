@@ -5,9 +5,13 @@ import StarOutlinedIcon from '@material-ui/icons/StarOutlined';
 import './MainRateReviewForm.css'
 import WriteIcon from '../../assets/svg/Path-28624.svg'
 import { Button } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
 
 
 const MainRateReviewForm = () => {
+
+    const history = useHistory()
+
     return (
         <div className='mainRateReviewForm'>
             <div className='mainRateReviewForm__container'>
@@ -68,7 +72,9 @@ const MainRateReviewForm = () => {
 
                 </div>
                 <div className='mainRateReviewForm__button'>
-                    <Button>Done</Button>
+                    <Button onClick={() => {
+                        history.push('/rate/area')
+                    }}>Done</Button>
                 </div>
             </div>
         </div>

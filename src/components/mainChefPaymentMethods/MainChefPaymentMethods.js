@@ -3,13 +3,20 @@ import LeftIcon from '../../assets/svg/left-green-arrow.svg'
 import InfoIcon from '../../assets/svg/info-icon-red.svg'
 import './MainChefPaymentMethods.css'
 import { Button } from '@material-ui/core'
+import { useHistory } from 'react-router-dom'
 
 
 const MainChefPaymentMethods = () => {
+
+    const history = useHistory()
+
+
     return (
         <div className='mainChefPaymentMethods'>
             <div className='mainChefPaymentMethods__header'>
-                <img src={LeftIcon} />
+                <img onClick={() => {
+                    history.push('/chef/settings')
+                }} src={LeftIcon} />
                 <h5>PAYMENT METHODS</h5>
             </div>
             <div className='mainChefPaymentMethods__text'>

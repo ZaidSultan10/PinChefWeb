@@ -89,6 +89,7 @@ import TermsUser from "./screens/termsUser/TermsUser";
 import TermsChef from "./screens/termsChef/TermsChef";
 import ChefProfileUser from "./screens/chefProfileUser/ChefProfileUser";
 import UserFollowedChefs from "./screens/userFollowedChefs/UserFollowedChefs";
+import SettingsProfileUser from "./screens/settingsProfileUser/SettingsProfileUser";
 
 
 
@@ -152,6 +153,7 @@ function App() {
         <Route path="/chef/rate/review/saved/food-service" exact component={ChefRateReviewFoodService} />
         <Route path="/chef/rate/review/saved/chefs" exact component={ChefRateReviewSavedChefs} />
         <Route path="/chef/settings/profile" exact component={SettingsProfile} />
+        <Route path="/user/settings/profile" exact component={SettingsProfileUser} />
         <Route path="/chef/chats" exact component={MyChatScreen} />
         <Route path="/chef/order-details" exact component={OrderDetails} />
         <Route path="/chef/order-history" exact component={OrderHistory} />

@@ -1,12 +1,19 @@
 import { Avatar } from '@material-ui/core'
 import React from 'react'
 import './MainOrderDetails.css'
+import LeftIcon from '../../assets/svg/left-green-arrow.svg'
+import { useHistory } from 'react-router-dom'
 
 const MainOrderDetails = () => {
+
+    const history = useHistory()
+
     return (
         <div className='mainOrderDetails'>
             <div className='mainOrderDetails__top'>
-                <h5></h5>
+                <img onClick={() => {
+                    history.push('/chef/order-history/my-purchases')
+                }} src={LeftIcon} />
                 <p>13 October,2020</p>
             </div>
             <div className='mainOrderDetails__user'>

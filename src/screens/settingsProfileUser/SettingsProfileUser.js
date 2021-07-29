@@ -3,14 +3,15 @@ import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import FeedSettingsProfile from '../../components/feedSettingsProfile/FeedSettingsProfile'
 
-const SettingsProfile = () => {
+const SettingsProfileUser = () => {
     return (
-        <div className='settingsProfile'>
+        <div>
             <Header searchProp={true} />
-            <FeedSettingsProfile feedProfileConditionPRop={true} />
-            <Footer footerProp={true} />
+            <FeedSettingsProfile />
+            <Footer />
+            
         </div>
     )
 }
 
-export default SettingsProfile
+export default SettingsProfileUser

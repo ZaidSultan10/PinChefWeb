@@ -9,14 +9,20 @@ import LocationIcon from '../../assets/svg/Location.svg'
 import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import Following from '../../assets/svg/following.svg'
 import './MainAllChefs.css'
+import { useHistory } from 'react-router-dom'
 
 const MainAllChefs = ({followProp}) => {
+
+    const history = useHistory()
+
     return (
         <div className='mainAllChef'>
             <div className='mainAllChef__container'>
                 <div className='mainAllChef__left'>
                     <Avatar className='avatar' />
-                    <div className='rating'>
+                    <div onClick={() => {
+                        history.push('/rate/area')
+                    }} className='rating'>
                         <img src={FullStar} className='star' />
                         <img src={FullStar} className='star' />
                         <img src={FullStar} className='star' />
@@ -61,7 +67,9 @@ const MainAllChefs = ({followProp}) => {
                     </div>
                     <div className='paragraph'>
                         <p>Come Tto address, Cook live, and ...</p>
-                        <ChevronRight className='right__icon' />
+                        <ChevronRight onClick={() => {
+                            history.push('/user/chef/profile')
+                        }} className='right__icon' />
                     </div>
                     <div className='location'>
                         <img src={LocationIcon} className='location-icon' alt='location' />

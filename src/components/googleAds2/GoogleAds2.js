@@ -52,6 +52,14 @@ const GoogleAds2 = ({adsProp,adsProp2}) => {
                     <RadioButtonUncheckedIcon className='radio' />
                     <p>Most Liked Posts</p>
                 </div>
+                <div className='googleAds__filter__most__liked'>
+                    <RadioButtonUncheckedIcon className='active1 radio' />
+                    <p>Live Streaming</p>
+                </div>
+                <div className='googleAds__filter__most__liked'>
+                    <RadioButtonUncheckedIcon className='radio' />
+                    <p>Pre-recorded</p>
+                </div>
                 </>
               )}
               <div className='googleAds__filter__vip__chef'>

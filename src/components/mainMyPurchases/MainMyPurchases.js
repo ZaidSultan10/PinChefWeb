@@ -4,8 +4,12 @@ import RateIcon from '../../assets/svg/Rate-chef-for-order.svg'
 import RepeatIcon from '../../assets/svg/Repeat-order-icon.svg'
 import DownIcon from '../../assets/svg/Down-button-green.svg'
 import './MainMyPurchases.css'
+import { useHistory } from 'react-router-dom'
 
 const MainMyPurchases = () => {
+
+    const history = useHistory()
+
     return (
         <div className='mainMyPurchases'>
             <div className='mainMyPurchases__container'>
@@ -18,7 +22,9 @@ const MainMyPurchases = () => {
                         <p>Executive Chef</p>
                     </div>
                     <div className='mainMyPurchases__detailIcon'>
-                        <img src={RateIcon} className='rate-icon' />
+                        <img onClick={() => {
+                            history.push('/rate/area')
+                        }} src={RateIcon} className='rate-icon' />
                     </div>
                     <div className='mainMyPurchases__headerRight'>
                         <h4>Food and Services</h4>
@@ -38,7 +44,9 @@ const MainMyPurchases = () => {
                         <p>2 days ago</p>
                         <h5>Pay Now</h5>
                     </div>
-                    <div className='mainMyPurchases__showDetailsRight'>
+                    <div onClick={() => {
+                        history.push('/chef/order-details')
+                    }} className='mainMyPurchases__showDetailsRight'>
                         <p>Details</p>
                         <img src={DownIcon} className='down-icon' />
                     </div>

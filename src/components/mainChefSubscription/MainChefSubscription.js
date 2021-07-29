@@ -5,12 +5,18 @@ import CrownIcon from '../../assets/svg/Crown.svg'
 import './MainChefSubscription.css'
 import VerticalLine from '../../assets/svg/Vertical-spliter-A.svg'
 import LeftIcon from '../../assets/svg/left-green-arrow.svg'
+import { useHistory } from 'react-router-dom'
 
 const MainChefSubscription = () => {
+
+    const history = useHistory()
+
     return (
         <div className='mainChefSubscription'>
-            <div className='mainChefSubscription__headings'>
-                <img src={LeftIcon} />
+            <div onClick={() => {
+                history.push('/chef/settings')
+            }} className='mainChefSubscription__headings'>
+                <img  src={LeftIcon} />
                 <h4>SUBSCRIPTIONS</h4>
             </div>
             <div className='mainChefSubscription__top'>
@@ -107,11 +113,15 @@ const MainChefSubscription = () => {
                         </div>
                     </div>
                     <div className='mainChefSubscription__basicButton'>
-                        <div className='mainChefSubscription__basicMonthly'>
+                        <div onClick={() => {
+                            history.push('/chef/payments')
+                        }} className='mainChefSubscription__basicMonthly'>
                             <h5>Monthly $9.99</h5>
                             <h4>SIGN UP</h4>
                         </div>
-                        <div className='mainChefSubscription__basicYearly'>
+                        <div onClick={() => {
+                            history.push('/chef/payments')
+                        }} className='mainChefSubscription__basicYearly'>
                             <h5>Monthly $99.99</h5>
                             <h4>SIGN UP</h4>
                         </div>
@@ -166,11 +176,15 @@ const MainChefSubscription = () => {
                         </div>
                     </div>
                     <div className='mainChefSubscription__vipButton'>
-                        <div className='mainChefSubscription__vipMonthly'>
+                        <div onClick={() => {
+                            history.push('/chef/payments')
+                        }} className='mainChefSubscription__vipMonthly'>
                             <h5>Monthly $14.99</h5>
                             <h4>SIGN UP</h4>
                         </div>
-                        <div className='mainChefSubscription__vipYearly'>
+                        <div onClick={() => {
+                            history.push('/chef/payments')
+                        }} className='mainChefSubscription__vipYearly'>
                             <h5>Monthly $149.99</h5>
                             <h4>SIGN UP</h4>
                         </div>

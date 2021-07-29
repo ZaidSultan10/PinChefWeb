@@ -6,7 +6,8 @@ import ChefUnselectedIcon from '../../assets/svg/chef-un-selected.svg'
 import ShopUnselectedIcon from '../../assets/svg/Shop-un-selected.svg'
 import SettingsUnselectedIcon from '../../assets/svg/settings-un-selected.svg'
 import StarUnselectedIcon from '../../assets/svg/Star-un-selected.svg'
-import { useHistory } from 'react-router-dom'
+import { NavLink, useHistory } from 'react-router-dom'
+
 
 
 const Footer = ({footerProp}) => {
@@ -58,6 +59,7 @@ const Footer = ({footerProp}) => {
                     </>
                 )
             }
+            
             
         </div>
     )

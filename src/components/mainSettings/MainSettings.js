@@ -30,9 +30,18 @@ const MainSettings = ({settingsProp}) => {
                         </div>
                     </div>
                     <div className='mainSettings__profileDetail'>
-                        <ChevronRight onClick={() => {
-                            history.push('/chef/settings/profile')
-                        }} className='mainSettings__rightIcon' />
+                        {
+                            settingsProp ? (
+                                <ChevronRight onClick={() => {
+                                    history.push('/chef/settings/profile')
+                                }} className='mainSettings__rightIcon' />
+                            ):(
+                                <ChevronRight onClick={() => {
+                                    history.push('/user/settings/profile')
+                                }} className='mainSettings__rightIcon' />
+                            )
+                        }
+                        
                     </div>
                 </div>
                 <div className='mainSettings__notification'>
@@ -52,14 +61,18 @@ const MainSettings = ({settingsProp}) => {
                 {
                     settingsProp && (
                         <>
-                            <div className='mainSettings__notifications'>
-                                <img src={PaymentIcon} className='help__icon' />
+                            <div onClick={() => {
+                                history.push('/chef/payment/methods')
+                            }} className='mainSettings__notifications'>
+                                <img  src={PaymentIcon} className='help__icon' />
                                 <h4>PAYMENT METHODS</h4>
                             </div>
                             <div className='mainSettings__divider'>
                                 <img src={HorizontalLine} alt='line' />
                             </div>
-                            <div className='mainSettings__notifications'>
+                            <div onClick={() => {
+                                history.push('/chef/settings/subscription')
+                            }} className='mainSettings__notifications'>
                                 <img src={CardMembershipIcon} className='help__icon' />
                                 <h4>SUBSCRIPTIONS</h4>
                             </div>

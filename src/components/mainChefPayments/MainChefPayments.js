@@ -11,13 +11,19 @@ import PaypalIcon from '../../assets/svg/paypal.svg'
 import ApplePayICon from '../../assets/svg/apple-pay.svg'
 import './MainChefPayments.css'
 import LeftIcon from '../../assets/svg/left-green-arrow.svg'
+import { useHistory } from 'react-router-dom'
 
 
 const MainChefPayments = () => {
+
+    const history = useHistory()
+
     return (
         <div className='mainChefPayments'>
             <div className='mainChefPayments__header'>
-                <img src={LeftIcon} />
+                <img onClick={() => {
+                    history.push('/chef/settings/subscription')
+                }} src={LeftIcon} />
                 <h5>PAYMENTS</h5>
             </div>
             <div className='mainChefPayments__state'>

@@ -4,7 +4,7 @@ import Ads from '../ads/Ads'
 import ChefAds from '../chefAds/ChefAds'
 import MainSettingsProfile from '../mainSettingsProfile/MainSettingsProfile'
 
-const FeedSettingsProfile = () => {
+const FeedSettingsProfile = ({feedProfileConditionPRop}) => {
     return (
         <div className='feedSettingsProfile'>
             <div className='feedSettingsProfile__container'>
@@ -15,7 +15,14 @@ const FeedSettingsProfile = () => {
                     <Ads />
                 </div>
                 <div className='feedSettingsProfile__center'>
-                    <MainSettingsProfile />
+                    {
+                        feedProfileConditionPRop ? (
+                            <MainSettingsProfile chefProfileCondiitonProp={true} />
+                        ):(
+                            <MainSettingsProfile />
+                        )
+                    }
+                    
                 </div>
                 <div className='feedSettingsProfile__right'>
                     <ChefAds />

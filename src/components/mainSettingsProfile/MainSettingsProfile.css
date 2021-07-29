@@ -14,7 +14,36 @@
 .mainSettingsProfile__picture{
     margin-top: 4%;
 }
-.mainSettingsProfile__picture > .mainSettingsProfile__avatar{
+.mainSettingsProfile__picture >img{
+    height: 250px;
+    width: 100%;
+    position: relative;
+    
+}
+.mainSettingsProfile__bannerIcons{
+    display: flex;
+    align-items:center ;
+}
+.mainSettingsProfile__bannerIcons > .mainSettingsProfile__avatar{
+    width: 80px;
+    height: 80px;
+    margin-left: 4%;
+    position: absolute;
+    top: 300px;
+}
+.mainSettingsProfile__bannerIcons > img{
+    width: 30px;
+    height: 30px;
+    right:18rem;
+    margin-right: 4%;
+    position: absolute;
+    top: 350px;
+    
+}
+.mainSettingsProfile__picture1{
+    margin-top: 4%;
+}
+.mainSettingsProfile__picture1 > .mainSettingsProfile__avatar{
     width: 80px;
     height: 80px;
     margin-left: 4%;

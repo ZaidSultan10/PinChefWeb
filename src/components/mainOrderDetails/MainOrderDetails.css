@@ -6,10 +6,16 @@
 .mainOrderDetails__top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.mainOrderDetails__top > img {
+    width: 25px;
+    height: 25px;
 }
 .mainOrderDetails__user{
     display: flex;
     align-items: center;
+    margin-top: 3%;
 }
 .mainOrderDetails__user > .user-avatar-order{
     width: 50px;
