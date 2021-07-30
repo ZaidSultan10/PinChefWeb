@@ -6,7 +6,7 @@ import FeedSettingsProfile from '../../components/feedSettingsProfile/FeedSettin
 const SettingsProfile = () => {
     return (
         <div className='settingsProfile'>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <FeedSettingsProfile feedProfileConditionPRop={true} />
             <Footer footerProp={true} />
         </div>

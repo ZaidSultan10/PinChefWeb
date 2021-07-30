@@ -6,7 +6,7 @@ import ChefCookLive from '../../components/chefCookLive/ChefCookLive'
 const ServiceCookLiveCheckout = () => {
     return (
         <div className='serviceCookLiveCheckout'>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <ChefCookLive />
             <Footer footerProp={true} />
         </div>

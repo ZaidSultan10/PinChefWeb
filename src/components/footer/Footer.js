@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Footer.css'
 import HomeUnselectedIcon from '../../assets/svg/Home-un-selected.svg'
 import HomeSelectedIcon from '../../assets/svg/Home-selected.svg'
@@ -12,7 +12,11 @@ import { NavLink, useHistory } from 'react-router-dom'
 
 const Footer = ({footerProp}) => {
 
+    const [activeImage,setActiveImage] = useState(1)
+
     const history=useHistory()
+
+
 
     return (
         <div className='footer'>
@@ -21,6 +25,7 @@ const Footer = ({footerProp}) => {
                     <>
                         <img onClick={ () =>{
                         history.push('/chef/home/feed')
+                        
                             }
                         } src={HomeSelectedIcon} className='cheficon1' alt='home' />
                         <img onClick={ () =>{

@@ -21,16 +21,16 @@ const MainFeed = () => {
 
   const customStyles={
     content : {
-      top                   : '42%',
-      left                  : '65%',
+      top                   : '300px',
+      left                  : '63%',
       right                 : 'auto',
       bottom                : 'auto',
       marginRight           : '-50%',
       transform             : 'translate(-50%, -50%)',
       borderRadius          : '16px',
       padding:'0',
-      width : '20%',
-      height:'20%',
+      width : '300px',
+      height:'150px',
       cursor:'pointer'
     }
   }
@@ -45,7 +45,7 @@ const MainFeed = () => {
       borderRadius          : '16px',
       padding:'0px',
       margin:'0px',
-      width : '35%',
+      width : '55%',
       height:'35%',
       cursor:'pointer'
       
@@ -84,7 +84,8 @@ const closeModal2 = () => {
     <Modal 
     isOpen={modalIsOpen}
     onRequestClose={closeModal}
-    style={customStyles}
+    
+    className='myModal1HomePage'
     contentLabel="Example Modal">
           <div className='modal-options'>
             <h5>Follow Chef</h5>

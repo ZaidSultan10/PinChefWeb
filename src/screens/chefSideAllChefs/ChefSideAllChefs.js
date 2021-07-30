@@ -6,7 +6,7 @@ import FeedAllChefsChefSide from '../../components/feedAllChefsChefside/FeedAllC
 const ChefSideAllChefs = () => {
     return (
         <div>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <FeedAllChefsChefSide allChefProp={true} />
             <Footer footerProp={true} />
         </div>

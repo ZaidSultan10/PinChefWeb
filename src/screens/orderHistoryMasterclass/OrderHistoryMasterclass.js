@@ -7,7 +7,7 @@ import FeedOrderHistory from '../../components/feedOrderHistory/FeedOrderHistory
 const OrderHistoryMasterclass = () => {
     return (
         <div>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <FeedOrderHistory />
             <Footer footerProp={true} />
         </div>

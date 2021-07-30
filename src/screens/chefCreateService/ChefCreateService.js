@@ -7,7 +7,7 @@ import ChefFeedService from '../chefFeedService/ChefFeedService'
 const ChefCreateService = () => {
     return (
         <div className='chefCreateService'>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <ChefCreateFeedService />
             <Footer footerProp={true} />
         </div>

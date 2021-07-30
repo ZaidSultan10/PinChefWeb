@@ -7,7 +7,7 @@ import ChefOrderNotifications from '../../components/chefOrderNotifications/Chef
 const OrderNotifications = () => {
     return (
         <div className='orderNotification'>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <ChefOrderNotifications />
             <Footer footerProp={true}/>
         </div>

@@ -7,7 +7,7 @@ import FeedFaqChef from '../../components/feedFaqChef/FeedFaqChef'
 const ChefFaq = () => {
     return (
         <div >
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <FeedFaqChef />
             <Footer footerProp={true} />
         </div>

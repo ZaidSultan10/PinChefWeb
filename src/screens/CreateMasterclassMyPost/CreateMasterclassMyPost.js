@@ -6,7 +6,7 @@ import ChefMasterClassFeedAllMyPost from '../../components/chefMasterClassFeedAl
 const CreateMasterclassMyPost = () => {
     return (
         <div>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <ChefMasterClassFeedAllMyPost />
             <Footer footerProp={true} />
         </div>

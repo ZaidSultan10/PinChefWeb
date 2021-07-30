@@ -6,7 +6,7 @@ import Header from '../../components/header/Header'
 const ChefCreateFoodPost = () => {
     return (
         <div className='chefCreateFoodPost'>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <ChefCreateFeedFood />
             <Footer footerProp={true} />
         </div>

@@ -6,7 +6,7 @@ import Header from '../../components/header/Header'
 const chefCookOnLocation = () => {
     return (
         <div className='chefCookLocation'>
-            <Header searchProp={true } />
+            <Header searchProp={true } notificationProp={true} />
             <ChefCookGuestLive />
             <Footer footerProp={true} />
         </div>

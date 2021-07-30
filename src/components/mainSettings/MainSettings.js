@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './MainSettings.css'
 import {Avatar } from '@material-ui/core'
 import { ChevronRight } from '@material-ui/icons'
@@ -12,13 +12,60 @@ import StarIcon from '../../assets/svg/Star.svg';
 import CardMembershipIcon from '../../assets/svg/subscription-icon.svg';
 import PaymentIcon from '../../assets/svg/Payment-methods-icon.svg';
 import { useHistory } from 'react-router-dom'
+import Modal from 'react-modal'
+import NotificationIcon from '../../assets/svg/Notifications-icon.svg'
 
 
 const MainSettings = ({settingsProp}) => {
    
     const history=useHistory()
-   
+
+    const [modalIsOpen,setIsOpen]=useState(false)
+    const [modalIsOpen1,setIsOpen1]=useState(false)
+    const [modalIsOpen2,setIsOpen2]=useState(false)
+    const [modalIsOpen3,setIsOpen3]=useState(false)
+
+    const openModal = () => {
+        setIsOpen(true)
+    }
+    
+    const closeModal = () => {
+      setIsOpen(false);
+    }
+    const openModal1 = () => {
+      setIsOpen1(true)
+    }
+    
+    const closeModal1 = () => {
+        setIsOpen1(false);
+    }
+    const closeModal2 = () => {
+      setIsOpen2(true);
+      }
+
+      const openModal3 = () => {
+          setIsOpen3(true)
+      }
+    
+      const closeModal3 = () => {
+        setIsOpen3(false)
+        
+        }
+
     return (
+        <>
+        <Modal 
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        
+        className='notificationModal1'
+        contentLabel="Notification Modal">
+            <div className='notification-modal-options'>
+                <img src={NotificationIcon} />
+                <h5>App Notifications</h5>
+                <input type='checkbox' />
+            </div>
+        </Modal>
         <div className='mainSettings'>
             <div className='mainSettings__container'>
                 <div className='mainSettings__profile'>
@@ -44,7 +91,7 @@ const MainSettings = ({settingsProp}) => {
                         
                     </div>
                 </div>
-                <div className='mainSettings__notification'>
+                <div onClick={openModal} className='mainSettings__notification'>
                     <img src={NotificationsIcon} className='notify__icon' />
                     <h4>NOTIFICATIONS</h4>
                 </div>
@@ -112,6 +159,7 @@ const MainSettings = ({settingsProp}) => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

@@ -1,0 +1,30 @@
+.mainNotificationsUser__header{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+}
+.mainNotificationsUser__header >img {
+    width: 20px;
+    height: 20px;
+}
+.mainNotificationsUser__container{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+    margin-top: 2%;
+}
+.mainNotificationsUser__user{
+    display: flex;
+    justify-content: space-between;
+}
+.mainNotificationsUser__userLeft > p{
+    margin-top: 3%;
+    color: gray;
+    font-weight: 600;
+}
+
+.mainNotificationsUser__userRight >img {
+    width: 20px;
+    height: 20px;
+    float: right;
+}

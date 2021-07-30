@@ -15,8 +15,10 @@ const MainFeedFilter3 = () => {
                <NavLink exact to='/shop/food' activeClassName='activefilter32' className='mainFeedFilter3__food'>Food</NavLink>
                <NavLink to='/shop/service' activeClassName='activefilter32' className='mainFeedFilter3__service'>Services</NavLink>
             </div>
-            <div className='mainFeedFilters3__image'>
-                <img src={CartIcon} className='cart' />
+            <div onClick={() => {
+                    history.push('/cart')
+                }} className='mainFeedFilters3__image'>
+                <img  src={CartIcon} className='cart' />
                 <span>0</span>
             </div>
         </div>

@@ -7,7 +7,7 @@ import FeedTermsUser from '../../components/feedTermsUser/FeedTermsUser'
 const TermsChef = () => {
     return (
         <div>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <FeedTermsUser />
             <Footer footerProp={true} />
         </div>

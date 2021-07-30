@@ -9,7 +9,7 @@ import ChefFeedMainProfileDetails from '../../components/chefFeedMainProfileDeta
 const ChefProfileDetails = () => {
     return (
         <div>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <ChefFeedMainProfileDetails />
             <Footer footerProp={true} />
         

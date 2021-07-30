@@ -8,8 +8,12 @@ import AvatarIcon from "../../assets/svg/user-icon.svg";
 //import FilterIcon from "../../assets/svg/Filter-button.svg";
 import NotificationIcon from '../../assets/svg/notification-none.svg'
 import FilterIconGrey from '../../assets/svg/Filters.png'
+import { useHistory } from "react-router-dom";
 
-const Header = ({ searchProp }) => {
+const Header = ({ searchProp,notificationProp }) => {
+
+  const history = useHistory()
+
   return (
     <div className="header">
       <div className="header__logo">
@@ -28,7 +32,18 @@ const Header = ({ searchProp }) => {
       </div>
       <div className="header__right">
         <img src={FilterIconGrey} className="filter__icon" alt="filter" />
-        <img src={NotificationIcon} className='notification__icon' />
+        {
+          notificationProp ? (
+            <img onClick={() => {
+              history.push('/chef/notifications')
+            }} src={NotificationIcon} className='notification__icon' />
+          ):(
+            <img onClick={() => {
+              history.push('/user/notifications')
+            }} src={NotificationIcon} className='notification__icon' />
+          )
+        }
+        
         <img src={AvatarIcon} className="header__avatar" alt="User Profile" />
       </div>
     </div>

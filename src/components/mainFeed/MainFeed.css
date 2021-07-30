@@ -9,6 +9,17 @@
     margin-top: 1.5%;
     cursor: pointer;
 }
+.myModal1HomePage{
+    width: 25%;
+    height: 25%;
+    display: grid;
+    place-items: center;
+    margin-left: 50%;
+    margin-top: 13rem;
+    border-radius: 16px;
+    border: 1px solid;
+    background-color: white;
+}
 .modal-options{
     display: flex;
     flex-direction: column;
@@ -282,6 +293,21 @@ p{
     margin-bottom: 4%;
 }
 
+@media only screen and (max-width:1000px){
+    .myModal1HomePage{
+        width: 30%;
+        height: 25%;
+        display: grid;
+        place-items: center;
+        margin-left: 62%;
+        margin-right: auto;
+        margin-top: 13rem;
+        border-radius: 16px;
+        border: 1px solid;
+        background-color: white;
+    }
+}
+
 @media only screen and (max-width:800px){
     .mainFeed__userName > h3{
         font-size: 12px !important;
@@ -318,6 +344,18 @@ p{
 }
 
 @media only screen and (max-width:700px){
+    .myModal1HomePage{
+        width: 40%;
+        height: 25%;
+        display: grid;
+        place-items: center;
+        margin-left: 53%;
+        margin-right: auto;
+        margin-top: 13rem;
+        border-radius: 16px;
+        border: 1px solid;
+        background-color: white;
+    }
     .mainFeed__userName {
         margin-top: 0.7px;
     }
@@ -353,6 +391,70 @@ p{
         font-size: 16px;
     }
 }
+
+@media only screen and (max-width:605px){
+    .myModal1HomePage{
+        width: 42%;
+        height: 25%;
+        display: grid;
+        place-items: center;
+        margin-left: 54%;
+        margin-right: auto;
+        margin-top: 11rem;
+        border-radius: 16px;
+        border: 1px solid;
+        background-color: white;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .myModal1HomePage{
+        width: 46%;
+        height: 22%;
+        display: grid;
+        place-items: center;
+        margin-left: 51%;
+        margin-right: auto;
+        margin-top: 10.5rem;
+        border-radius: 16px;
+        border: 1px solid;
+        background-color: white;
+    }
+    .modal-options >h5{
+        font-size: 16px !important;
+    }
+}
+@media only screen and (max-width:451px){
+    .myModal1HomePage{
+        width: 50%;
+        height: 21%;
+        display: grid;
+        place-items: center;
+        margin-left: 48%;
+        margin-right: auto;
+        margin-top: 10.5rem;
+        border-radius: 16px;
+        border: 1px solid;
+        background-color: white;
+    }
+}
+@media only screen and (max-width:451px){
+    .myModal1HomePage{
+        width: 58%;
+        height: 21%;
+        display: grid;
+        place-items: center;
+        margin-left: 40%;
+        margin-right: auto;
+        margin-top: 10.5rem;
+        border-radius: 16px;
+        border: 1px solid;
+        background-color: white;
+    }
+    .modal-options >h5{
+        font-size: 14px !important;
+    }
+}
 @media only screen and (max-width:376px){
     .mainFeed__paragraph > p {
         font-size: 12px !important;
@@ -360,6 +462,17 @@ p{
     .heart__icon{
         width: 25px;
         height: 25px;
+    }.myModal1HomePage{
+        width: 64%;
+        height: 20%;
+        display: grid;
+        place-items: center;
+        margin-left: 32%;
+        margin-right: auto;
+        margin-top: 10.5rem;
+        border-radius: 16px;
+        border: 1px solid;
+        background-color: white;
     }
 }
 @media only screen and (max-width:325px){

@@ -6,7 +6,7 @@ import FeedOrderDetails from '../../components/feedOrderDetails/FeedOrderDetails
 const OrderDetails = () => {
     return (
         <div>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <FeedOrderDetails />
             <Footer footerProp={true} />
         </div>

@@ -8,7 +8,7 @@ import ChefFeedFoodAllService from '../../components/chefFeedFoodAllService/Chef
 const ChefFeedService = () => {
     return (
         <div className='chefFeedService'>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <ChefFeedFoodAllService cart1Prop={true} />
             <Footer footerProp={true}/>
         </div>

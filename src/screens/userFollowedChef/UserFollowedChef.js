@@ -8,9 +8,9 @@ import FeedAllChefsChefSide from '../../components/feedAllChefsChefside/FeedAllC
 const UserFollowedChef = () => {
     return (
         <div className='userFollowedChef'>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <FeedAllChefsChefSide />
-            <Footer />
+            <Footer footerProp={true} />
         </div>
     )
 }

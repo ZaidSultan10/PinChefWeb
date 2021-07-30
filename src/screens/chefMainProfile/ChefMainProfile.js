@@ -6,7 +6,7 @@ import Header from '../../components/header/Header'
 const ChefMainProfile = () => {
     return (
         <div className='chefMainProfile'>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <ChefFeedMainProfile />
             <Footer footerProp={true} />
         </div>

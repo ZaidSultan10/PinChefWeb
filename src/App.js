@@ -92,6 +92,9 @@ import UserFollowedChefs from "./screens/userFollowedChefs/UserFollowedChefs";
 import SettingsProfileUser from "./screens/settingsProfileUser/SettingsProfileUser";
 import ChefProfileDetails from "./screens/chefProfileDetails/ChefProfileDetails";
 import UserOtpChef from "./screens/userOtpChef/UserOtpChef";
+import Notifications from "./screens/notifications/Notifications";
+import NotificationsUser from "./screens/notificationsUser/NotificationsUser";
+import Cart from "./screens/cart/Cart";
 
 
 
@@ -184,6 +187,9 @@ function App() {
         <Route path="/chef/faq" exact component={ChefFaq} />
         <Route path="/user/terms" exact component={TermsUser} />
         <Route path="/chef/terms" exact component={TermsChef} />
+        <Route path="/chef/notifications" exact component={Notifications} />
+        <Route path="/user/notifications" exact component={NotificationsUser} />
+        <Route path="/cart" exact component={Cart} />
         <Route path="/usersignin" exact>
           <Signin>
             <UserSignIn />

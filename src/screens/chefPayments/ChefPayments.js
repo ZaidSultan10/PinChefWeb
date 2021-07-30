@@ -6,7 +6,7 @@ import CreateChefPayments from '../../components/createChefPayments/CreateChefPa
 const ChefPayments = () => {
     return (
         <div>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <CreateChefPayments />
             <Footer footerProp={true} />
         </div>

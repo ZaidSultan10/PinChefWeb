@@ -7,7 +7,7 @@ import ChefCookShipping from '../../components/chefCookShipping/ChefCookShipping
 const ChefCookShip = () => {
     return (
         <div className='chefCookShip'>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <ChefCookShipping/>
             <Footer footerProp={true} />
         </div>

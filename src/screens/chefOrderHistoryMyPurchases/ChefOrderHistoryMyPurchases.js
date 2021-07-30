@@ -6,7 +6,7 @@ import FeedMyPurchases from '../../components/feedMyPurchases/FeedMyPurchases'
 const ChefOrderHistoryMyPurchases = () => {
     return (
         <div>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <FeedMyPurchases myPurchasesProp={true} />
             <Footer footerProp={true} />
         </div>

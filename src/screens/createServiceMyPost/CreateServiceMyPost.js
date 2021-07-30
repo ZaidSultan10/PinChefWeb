@@ -7,7 +7,7 @@ import ChefFeedFoodAllServiceMyPost from '../../components/chefFeedFoodAllServic
 const CreateServiceMyPost = () => {
     return (
         <div>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <ChefFeedFoodAllServiceMyPost />
             <Footer footerProp={true} />
         </div>

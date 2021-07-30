@@ -7,7 +7,7 @@ import ChefCookDeliveryCheckout from '../../components/chefCookDeliveryCehckout/
 const ChefCookDelivery = () => {
     return (
         <div className='chefCookDelivery'>
-            <Header searchProp={true} />
+            <Header searchProp={true}  notificationProp={true}/>
             <ChefCookDeliveryCheckout />
             <Footer footerProp={true} />
         </div>

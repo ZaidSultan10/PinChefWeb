@@ -7,7 +7,7 @@ import ChefRecipeFeedAllMyPost from '../../components/chefRecipeFeedAllMyPost/Ch
 const CreateRecipeMyPost = () => {
     return (
         <div>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <ChefRecipeFeedAllMyPost />
             <Footer footerProp={true} />
         </div>

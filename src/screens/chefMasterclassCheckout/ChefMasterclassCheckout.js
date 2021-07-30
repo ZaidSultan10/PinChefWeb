@@ -6,7 +6,7 @@ import ChefCreateMasterclassCheckout from '../../components/chefCreateMasterclas
 const ChefMasterclassCheckout = () => {
     return (
         <div className='chefMasterclassCheckout'>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <ChefCreateMasterclassCheckout />
             <Footer footerProp={true} />
         </div>

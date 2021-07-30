@@ -7,7 +7,7 @@ import Footer from '../../components/footer/Footer'
 const ChefPaymentMethods = () => {
     return (
         <div>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <CreateChefPaymentMethods />
             <Footer footerProp={true} />
         </div>

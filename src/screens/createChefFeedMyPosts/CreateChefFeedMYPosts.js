@@ -8,7 +8,7 @@ import './CreateChefFeedMyPosts.css'
 const CreateChefFeedMYPosts = () => {
     return (
         <div>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <ChefHomeFeedAllMyPost />
             <Footer footerProp={true} />
             

@@ -6,7 +6,7 @@ import ChefCookGuestLive from '../../components/chefCookGuestLive/ChefCookGuestL
 const ChefCookGuest = () => {
     return (
         <div className='chefCookGuest'>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <ChefCookGuestLive />
             <Footer footerProp={true} />
         </div>

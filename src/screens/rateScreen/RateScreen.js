@@ -6,7 +6,7 @@ import RateArea from '../../components/rateArea/RateArea'
 const RateScreen = () => {
     return (
         <div className='rateScreen'>
-            <Header searchProp={true} />
+            <Header searchProp={true} notificationProp={true} />
             <RateArea />
             <Footer footerProp={true} />
         </div>

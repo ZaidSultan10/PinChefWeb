@@ -6,7 +6,7 @@ import FeedPaymentPolicy from '../../components/feedPaymentPolicy/FeedPaymentPol
 const PaymentPolicy = () => {
     return (
         <div>
-            <Header searchProp={true } />
+            <Header searchProp={true } notificationProp={true} />
             <FeedPaymentPolicy />
             <Footer footerProp={true} />
             
