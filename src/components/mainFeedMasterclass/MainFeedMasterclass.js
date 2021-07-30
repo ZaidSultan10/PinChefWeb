@@ -7,16 +7,26 @@ import BookIcon from '../../assets/svg/English-Buy-ticket.svg'
 import HourglassEmptyIcon from '@material-ui/icons/HourglassEmpty';
 import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import TicketIcon from '../../assets/svg/ticket-icon.svg'
+import { useHistory } from 'react-router-dom';
 
 const MainFeedMasterclass = () => {
+
+    const history = useHistory()
+
     return (
         <div className='feedMaster'>
             <div className='feedMaster__container'>
                 <div className='feedMaster__header'>
                     <h3 className='pizza'>PIZZA</h3>
-                    <img src={BookIcon} className='book' />
-                    <h3 className='feedMaster__name'>Jenah Stephanson</h3>
-                    <Avatar className='avatar' />
+                    <img onClick={() => {
+                        history.push('/chef/masterclass/checkout')
+                    }} src={BookIcon} className='book' />
+                    <h3 onClick={() => {
+                        history.push('/user/chef/profile')
+                    }} className='feedMaster__name'>Jenah Stephanson</h3>
+                    <Avatar onClick={() => {
+                        history.push('/user/chef/profile')
+                    }} className='avatar' />
                 </div>
                 <div className='class__details'>
                     <div className='class__details__left'>

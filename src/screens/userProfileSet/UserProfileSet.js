@@ -3,13 +3,19 @@ import './UserProfileSet.css'
 import LeftIcon from '../../assets/svg/left-green-arrow.svg'
 import { Button } from '@material-ui/core'
 import ProfileImage from '../../assets/svg/Profile-image.svg'
+import { useHistory } from 'react-router-dom'
+
+
 
 const UserProfileSet = () => {
+
+    const history = useHistory()
+
     return (
         <div className='userProfileSet'>
             <div className='userProfileSet__container'>
                 <div className='userProfileSet__header'>
-                    <img src={LeftIcon} />
+                    
                     <h4>Create Profile</h4>
                 </div>
                 <div className='userProfileSet__picture'>
@@ -28,7 +34,9 @@ const UserProfileSet = () => {
                     <input type='number' placeholder='+1 xxx xxx xxxx' />
                 </div>
                 <div className='userProfileSet__button'>
-                    <Button>Continue</Button>
+                    <Button onClick={() => {
+                        history.push('/homepage')
+                    }}>Continue</Button>
                 </div>
             </div>
         </div>

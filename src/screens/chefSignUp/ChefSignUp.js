@@ -78,7 +78,7 @@ const ChefSignUp = () => {
             </span>
           </div>
           <button onClick={ () =>{
-                    history.push('/chef/main/profile')
+                    history.push('/chef/verification')
                 }
             } className="continue"
           >Continue</button>

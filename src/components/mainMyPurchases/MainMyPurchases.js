@@ -14,8 +14,12 @@ const MainMyPurchases = () => {
         <div className='mainMyPurchases'>
             <div className='mainMyPurchases__container'>
                 <div className='mainMyPurchases__header'>
-                    <Avatar className='mainMyPurchases__avatar'/>
-                    <div className='mainMyPurchases__name'>
+                    <Avatar onClick={() => {
+                        history.push('/chef/profile')
+                    }} className='mainMyPurchases__avatar'/>
+                    <div onClick={() => {
+                        history.push('/chef/profile')
+                    }} className='mainMyPurchases__name'>
                         <h4>
                             Matt Wilson
                         </h4>

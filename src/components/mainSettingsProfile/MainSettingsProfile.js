@@ -96,7 +96,7 @@ const MainSettingsProfile = ({chefProfileCondiitonProp}) => {
                 chefProfileCondiitonProp && (
                     <>
                         <div onClick={() => {
-                            history.push('/chef/main/profile')
+                            history.push('/chef/profile/details')
                         }} className='mainSettingsProfile__name'>
                             <img src={DetailedInfo} />
                             <h4>Detailed Info</h4>

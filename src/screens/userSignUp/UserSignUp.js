@@ -80,7 +80,7 @@ const UserSignUp = () => {
             </span>
           </div>
           <button onClick={ () =>{
-                    history.push('/user/set-profile')
+                    history.push('/user/verification')
                 }
             } className="continue"
           >Continue</button>

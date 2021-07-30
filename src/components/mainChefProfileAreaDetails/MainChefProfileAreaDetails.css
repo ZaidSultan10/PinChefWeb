@@ -1,11 +1,11 @@
-.mainChefProfileArea{
+.mainChefProfileAreaDetails{
     padding-bottom: 8rem;
 }
-.mainChefProfileArea__heading{
+.mainChefProfileAreaDetails__heading{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1.5fr;
     margin-bottom: 3%;
-    text-align: center;
+    
     padding-left: 3%;
     padding-right: 3%;
     align-items: center;
@@ -15,69 +15,73 @@
     height: 7vh;
     border-radius: 999px 999px 999px 0px;
 }
-.mainChefProfileArea__top{
+.mainChefProfileAreaDetails__heading>img{
+    width: 25px;
+    height: 25px;
+}
+.mainChefProfileAreaDetails__top{
     display: flex;
     align-items: center;
 }
-.mainChefProfileArea__top > img{
+.mainChefProfileAreaDetails__top > img{
     width: 100px;
     height: 100px;
 }
-.mainChefProfileArea__topLeft{
+.mainChefProfileAreaDetails__topLeft{
     display: grid;
     grid-template-columns: 1fr;
     margin-left: 2%;
     width: 80%;
 }
-.mainChefProfileArea__topLeft > h5,
-.mainChefProfileArea__user > h5,
-.mainChefProfileArea__phone >h5,
-.mainChefProfileArea__date>h5,
-.mainChefProfileArea__gender>h5,
-.mainChefProfileArea__position>h5,
-.mainChefProfileArea__language>h5,
-.mainChefProfileArea__cuisine>h5,
-.mainChefProfileArea__ad>h5,
-.mainChefProfileArea__info>h5,
-.mainChefProfileArea__location>h5,
-.mainChefProfileArea__hours>h5,
-.mainChefProfileArea__serve>h5,
-.mainChefProfileArea__min>h5,
-.mainChefProfileArea__range>h5,
-.mainChefProfileArea__hourly>h5,
-.mainChefProfileArea__access>h5{
+.mainChefProfileAreaDetails__topLeft > h5,
+.mainChefProfileAreaDetails__user > h5,
+.mainChefProfileAreaDetails__phone >h5,
+.mainChefProfileAreaDetails__date>h5,
+.mainChefProfileAreaDetails__gender>h5,
+.mainChefProfileAreaDetails__position>h5,
+.mainChefProfileAreaDetails__language>h5,
+.mainChefProfileAreaDetails__cuisine>h5,
+.mainChefProfileAreaDetails__ad>h5,
+.mainChefProfileAreaDetails__info>h5,
+.mainChefProfileAreaDetails__location>h5,
+.mainChefProfileAreaDetails__hours>h5,
+.mainChefProfileAreaDetails__serve>h5,
+.mainChefProfileAreaDetails__min>h5,
+.mainChefProfileAreaDetails__range>h5,
+.mainChefProfileAreaDetails__hourly>h5,
+.mainChefProfileAreaDetails__access>h5{
     margin-bottom: 1%;
 }
-.mainChefProfileArea__topLeft > h5>span,
-.mainChefProfileArea__user > h5>span,
-.mainChefProfileArea__phone >h5>span,
-.mainChefProfileArea__date>h5>span,
-.mainChefProfileArea__gender>h5>span,
-.mainChefProfileArea__position>h5>span,
-.mainChefProfileArea__language>h5>span,
-.mainChefProfileArea__cuisine>h5>span,
-.mainChefProfileArea__ad>h5>span,
-.mainChefProfileArea__info>h5>span,
-.mainChefProfileArea__location>h5>span,
-.mainChefProfileArea__hours>h5>span,
-.mainChefProfileArea__serve>h5>span,
-.mainChefProfileArea__min>h5>span,
-.mainChefProfileArea__range>h5>span,
-.mainChefProfileArea__hourly>h5>span,
-.mainChefProfileArea__access>h5>span{
+.mainChefProfileAreaDetails__topLeft > h5>span,
+.mainChefProfileAreaDetails__user > h5>span,
+.mainChefProfileAreaDetails__phone >h5>span,
+.mainChefProfileAreaDetails__date>h5>span,
+.mainChefProfileAreaDetails__gender>h5>span,
+.mainChefProfileAreaDetails__position>h5>span,
+.mainChefProfileAreaDetails__language>h5>span,
+.mainChefProfileAreaDetails__cuisine>h5>span,
+.mainChefProfileAreaDetails__ad>h5>span,
+.mainChefProfileAreaDetails__info>h5>span,
+.mainChefProfileAreaDetails__location>h5>span,
+.mainChefProfileAreaDetails__hours>h5>span,
+.mainChefProfileAreaDetails__serve>h5>span,
+.mainChefProfileAreaDetails__min>h5>span,
+.mainChefProfileAreaDetails__range>h5>span,
+.mainChefProfileAreaDetails__hourly>h5>span,
+.mainChefProfileAreaDetails__access>h5>span{
     margin-left: 1%;
     color: red;
 }
-.mainChefProfileArea__topLeft > input,
-.mainChefProfileArea__user>input,
-.mainChefProfileArea__phone>input,
-.mainChefProfileArea__gender>input,
-.mainChefProfileArea__position>input,
-.mainChefProfileArea__language>input,
-.mainChefProfileArea__location>input,
-.mainChefProfileArea__min>input,
-.mainChefProfileArea__range>input,
-.mainChefProfileArea__hourly>input{
+.mainChefProfileAreaDetails__topLeft > input,
+.mainChefProfileAreaDetails__user>input,
+.mainChefProfileAreaDetails__phone>input,
+.mainChefProfileAreaDetails__gender>input,
+.mainChefProfileAreaDetails__position>input,
+.mainChefProfileAreaDetails__language>input,
+.mainChefProfileAreaDetails__location>input,
+.mainChefProfileAreaDetails__min>input,
+.mainChefProfileAreaDetails__range>input,
+.mainChefProfileAreaDetails__hourly>input{
     border: 3px solid #d9d9d9;
     font-family: 'Montserrat','sans-serif';
     border-radius: 8px;
@@ -87,8 +91,8 @@
     height: 7vh;
     box-shadow: 1px 1px 6px 2px #d9d9d9;
 }
-.mainChefProfileArea__date > select,
-.mainChefProfileArea__cuisine>select{
+.mainChefProfileAreaDetails__date > select,
+.mainChefProfileAreaDetails__cuisine>select{
     border: 3px solid #d9d9d9;
     font-family: 'Montserrat','sans-serif';
     padding-left: 2%;
@@ -102,9 +106,9 @@
     -webkit-appearance: none;
     appearance: none;
 }
-.mainChefProfileArea__ad > textarea,
-.mainChefProfileArea__info>textarea,
-.mainChefProfileArea__access>textarea{
+.mainChefProfileAreaDetails__ad > textarea,
+.mainChefProfileAreaDetails__info>textarea,
+.mainChefProfileAreaDetails__access>textarea{
     outline: none;
     height: auto;
     resize: none;
@@ -128,44 +132,44 @@
 .input__easy__serve > label{
     margin-left: 1%;
 }
-.mainChefProfileArea__user{
+.mainChefProfileAreaDetails__user{
     margin-top: 3%;
 }
-.mainChefProfileArea__phone,
-.mainChefProfileArea__date,
-.mainChefProfileArea__gender,
-.mainChefProfileArea__position,
-.mainChefProfileArea__language,
-.mainChefProfileArea__cuisine,
-.mainChefProfileArea__ad,
-.mainChefProfileArea__info,
-.mainChefProfileArea__location,
-.mainChefProfileArea__hours,
-.mainChefProfileArea__serve,
-.mainChefProfileArea__min,
-.mainChefProfileArea__range,
-.mainChefProfileArea__hourly,
-.mainChefProfileArea__message,
-.mainChefProfileArea__access,
-.mainChefProfileArea__button{
+.mainChefProfileAreaDetails__phone,
+.mainChefProfileAreaDetails__date,
+.mainChefProfileAreaDetails__gender,
+.mainChefProfileAreaDetails__position,
+.mainChefProfileAreaDetails__language,
+.mainChefProfileAreaDetails__cuisine,
+.mainChefProfileAreaDetails__ad,
+.mainChefProfileAreaDetails__info,
+.mainChefProfileAreaDetails__location,
+.mainChefProfileAreaDetails__hours,
+.mainChefProfileAreaDetails__serve,
+.mainChefProfileAreaDetails__min,
+.mainChefProfileAreaDetails__range,
+.mainChefProfileAreaDetails__hourly,
+.mainChefProfileAreaDetails__message,
+.mainChefProfileAreaDetails__access,
+.mainChefProfileAreaDetails__button{
     margin-top: 2%;
 }
-.mainChefProfileArea__message {
+.mainChefProfileAreaDetails__message {
     display: flex;
     align-items: center;
 }
-.mainChefProfileArea__button{
+.mainChefProfileAreaDetails__button{
     display: flex;
     justify-content: center;
 }
-.mainChefProfileArea__button > button{
+.mainChefProfileAreaDetails__button > button{
     background-color: #3f8f22;
     color: white;
     font-weight: 800;
     width: 40%;
     border-radius: 999px 0 999px 999px;
 }
-.mainChefProfileArea__button > button:hover{
+.mainChefProfileAreaDetails__button > button:hover{
     background-color: rgb(7, 211, 7);
 }
 .input__options__service{
@@ -174,8 +178,8 @@
 .input__allTime{
     margin-left: 5%;
 }
-.mainChefProfileArea__phone>input::-webkit-outer-spin-button,
-.mainChefProfileArea__phone>input::-webkit-inner-spin-button,
+.mainChefProfileAreaDetails__phone>input::-webkit-outer-spin-button,
+.mainChefProfileAreaDetails__phone>input::-webkit-inner-spin-button,
 .inputThePrice>input::-webkit-outer-spin-button,
 .inputThePrice>input::-webkit-inner-spin-button,
 .inputThePrice1>input::-webkit-outer-spin-button,
@@ -184,7 +188,7 @@
 .inputThePrice2>input::-webkit-inner-spin-button{
     -webkit-appearance: none;
 }
-.mainChefProfileArea__location >input{
+.mainChefProfileAreaDetails__location >input{
     background: url(../../assets/svg/Find-my-location.svg);
     background-position-x: 98%;
     background-position-y: center;
@@ -257,10 +261,10 @@
     border: none;
     box-shadow: 1px 1px 6px 2px #d9d9d9;
 }
-.mainChefProfileArea__message > img{
+.mainChefProfileAreaDetails__message > img{
     width: 20px;
     height: 20px;
 }
-.mainChefProfileArea__message > p {
+.mainChefProfileAreaDetails__message > p {
     margin-left: 1.5%;
 }

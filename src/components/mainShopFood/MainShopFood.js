@@ -17,10 +17,14 @@ const MainShopFood = ({cartProp,mileProp}) => {
     return (
         <div className='mainShopFood'>
             <div className='mainShopFood__header'>
-                <Avatar className='mainShopFood__avatar' />
+                <Avatar onClick={() => {
+                            history.push('/user/chef/profile')
+                        }} className='mainShopFood__avatar' />
                 <div className='mainShopFood__name'>
                     <div className='name__top'>
-                        <h3>Matt Wilson</h3>
+                        <h3 onClick={() => {
+                            history.push('/user/chef/profile')
+                        }}>Matt Wilson</h3>
                         <MoreHoriz className='more__horiz' />
                     </div>
                     <div className='location__bottom'>

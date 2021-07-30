@@ -1,40 +1,42 @@
 import React from 'react'
-import './MainChefProfileArea.css'
 import ProfileAvatar from '../../assets/svg/Profile-image.svg'
 import { Button } from '@material-ui/core'
 import InfoIcon from '../../assets/svg/info-icon-red.svg'
 import CloseIcon from '@material-ui/icons/Close';
 import { useHistory } from 'react-router-dom'
+import LEftICon from '../../assets/svg/left-green-arrow.svg'
+import './MainChefProfileAreaDetails.css'
 
 
+const MainChefProfileAreaDetails = () => {
 
-
-const MainChefProfileArea = () => {
-
-    const history=useHistory()
+    const history = useHistory()
 
     return (
-        <div className='mainChefProfileArea'>
-            <div className='mainChefProfileArea__heading'>
-                    <h5>Create Profile</h5>
-                
+        <div className='mainChefProfileAreaDetails'>
+            <div className='mainChefProfileAreaDetails__heading'>
+                <img onClick={() =>{
+                    history.push('/chef/settings/profile')
+                }} src={LEftICon} />
+                <h5>Chef Profile Details</h5>
+                    
             </div>
-            <div className='mainChefProfileArea__top'>
+            <div className='mainChefProfileAreaDetails__top'>
                 <img src={ProfileAvatar} />
-                <div className ='mainChefProfileArea__topLeft'>
+                <div className ='mainChefProfileAreaDetails__topLeft'>
                     <h5>Name and Last Name<span>*</span></h5>
                     <input placeholder='Enter name and Last name' />
                 </div>     
             </div>
-            <div className='mainChefProfileArea__user'>
+            <div className='mainChefProfileAreaDetails__user'>
                 <h5>User ID-Nickname<span>*</span></h5>
                 <input placeholder='ex:JohnDoe67' />
             </div>
-            <div className='mainChefProfileArea__phone'>
+            <div className='mainChefProfileAreaDetails__phone'>
                 <h5>Phone Number<span>*</span></h5>
                 <input type='number' placeholder='Number' />
             </div>
-            <div className='mainChefProfileArea__date'>
+            <div className='mainChefProfileAreaDetails__date'>
                 <h5>Date Of Birth<span>*</span></h5>
                 <select id='date__type__option'>
                         <option>1</option>
@@ -42,19 +44,19 @@ const MainChefProfileArea = () => {
                         <option>3</option>
                 </select>
             </div>
-            <div className='mainChefProfileArea__gender'>
+            <div className='mainChefProfileAreaDetails__gender'>
                 <h5>Gender<span>*</span></h5>
                 <input placeholder='Male, Female etc..' />
             </div>
-            <div className='mainChefProfileArea__position'>
+            <div className='mainChefProfileAreaDetails__position'>
                 <h5>Position<span>*</span></h5>
                 <input placeholder='ex. Head chef, Home chef etc..' />
             </div>
-            <div className='mainChefProfileArea__language'>
+            <div className='mainChefProfileAreaDetails__language'>
                 <h5>Language<span>*</span></h5>
                 <input placeholder='ex. English, Spanish etc..' />
             </div>
-            <div className='mainChefProfileArea__cuisine'>
+            <div className='mainChefProfileAreaDetails__cuisine'>
                 <h5>Cuisine Specialist<span>*</span></h5>
                 <select id='diet__type__option'>
                         <option>Vegan</option>
@@ -64,19 +66,19 @@ const MainChefProfileArea = () => {
                         <option>Meat</option>
                 </select>
             </div>
-            <div className='mainChefProfileArea__ad'>
+            <div className='mainChefProfileAreaDetails__ad'>
                 <h5>Short Ad Intro<span>*</span></h5>
                 <textarea rows='7' placeholder='Short intro about you to attract food lovers' />
             </div>
-            <div className='mainChefProfileArea__info'>
+            <div className='mainChefProfileAreaDetails__info'>
                 <h5>Full Background info<span>*</span></h5>
                 <textarea rows='7' placeholder='Full background info you would like to share' />
             </div>
-            <div className='mainChefProfileArea__location'>
+            <div className='mainChefProfileAreaDetails__location'>
                 <h5>Address/Location<span>*</span></h5>
                 <input placeholder='Country, City, State' />
             </div>
-            <div className='mainChefProfileArea__hours'>
+            <div className='mainChefProfileAreaDetails__hours'>
                   <h5>Service Hours<span>*</span></h5>
                   <div className='input__options__service'>
                       <div className='input__selected'>
@@ -89,9 +91,9 @@ const MainChefProfileArea = () => {
                       </div>
                   </div>
             </div>
-            <div className='mainChefProfileArea__serve'>
+            <div className='mainChefProfileAreaDetails__serve'>
             <h5>Services<span>*</span></h5>
-                <div className='mainChefProfileArea__types'>
+                <div className='mainChefProfileAreaDetails__types'>
                     <div className='input__easy__serve'>
                         <input type="radio" id="cook" name="level" value="cook" />
                         <label for="cook">Cook and Deliver</label>
@@ -118,7 +120,7 @@ const MainChefProfileArea = () => {
                     </div>
                 </div>
             </div>
-            <div className='mainChefProfileArea__min'>
+            <div className='mainChefProfileAreaDetails__min'>
                 <h5>Minimum Purchase Services total amount<span>*</span></h5>
                 <div className='sampleTestDiv'>
                     <div className='headingsss'>
@@ -129,7 +131,7 @@ const MainChefProfileArea = () => {
                     </div>
                 </div>
             </div>
-            <div className='mainChefProfileArea__range'>
+            <div className='mainChefProfileAreaDetails__range'>
                 <h5>Service Price Range<span>*</span></h5>
                 <div className='sampleTestDiv1'>
                     <div className='headingsss1'>
@@ -143,7 +145,7 @@ const MainChefProfileArea = () => {
                     </div>
                 </div>
             </div>
-            <div className='mainChefProfileArea__hourly'>
+            <div className='mainChefProfileAreaDetails__hourly'>
                 <h5>Hourly Rate<span>*</span></h5>
                 <div className='sampleTestDiv'>
                     <div className='headingsss'>
@@ -154,11 +156,11 @@ const MainChefProfileArea = () => {
                     </div>
                 </div>
             </div>
-            <div className='mainChefProfileArea__message'>
+            <div className='mainChefProfileAreaDetails__message'>
                 <img src={InfoIcon} />
                 <p>The message for acceptance</p>
             </div>
-            <div className='mainChefProfileArea__payment'>
+            <div className='mainChefProfileAreaDetails__payment'>
                     <div className='input__easy__serve'>
                         <input type="radio" id="stripe" name="level" value="stripe" />
                         <label for="stripe">Stripe</label>
@@ -176,17 +178,17 @@ const MainChefProfileArea = () => {
                         <label for="card">Credit card on delivery</label>
                     </div>
             </div>
-            <div className='mainChefProfileArea__access'>
+            <div className='mainChefProfileAreaDetails__access'>
                 <h5>Location you give services to<span>*</span></h5>
                 <textarea rows='7' placeholder='Service areas you deliver to' />
             </div>
-            <div className='mainChefProfileArea__button'>
+            <div className='mainChefProfileAreaDetails__button'>
                 <Button onClick={() =>{
-                    history.push('/chef/home/feed')
+                    history.push('/chef/settings/profile')
                 }}>Save</Button>
             </div>
         </div>
     )
 }
 
-export default MainChefProfileArea
+export default MainChefProfileAreaDetails

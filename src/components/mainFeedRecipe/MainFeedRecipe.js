@@ -22,10 +22,14 @@ const MainFeedRecipe = () => {
       <div className='mainFeedRecipe__container'>
         <div className="mainFeedRecipe__header">
             <div className='avatarRecipe__container'>
-                <Avatar className="avatar" />
+                <Avatar onClick={()=>{
+                    history.push('/user/chef/profile')
+                }} className="avatar" />
             </div>
             <div className="mainFeedRecipe__userName">
-            <h3>Matt Wilson</h3>
+            <h3 onClick={()=>{
+                    history.push('/user/chef/profile')
+                }}>Matt Wilson</h3>
             <MoreHorizOutlinedIcon className="moreHoriz" />
             </div>
         </div>

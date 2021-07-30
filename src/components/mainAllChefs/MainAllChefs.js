@@ -19,7 +19,9 @@ const MainAllChefs = ({followProp}) => {
         <div className='mainAllChef'>
             <div className='mainAllChef__container'>
                 <div className='mainAllChef__left'>
-                    <Avatar className='avatar' />
+                    <Avatar onClick={() => {
+                            history.push('/user/chef/profile')
+                        }} className='avatar' />
                     <div onClick={() => {
                         history.push('/rate/area')
                     }} className='rating'>

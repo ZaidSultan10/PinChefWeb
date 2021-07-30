@@ -1,8 +1,12 @@
 import React from 'react'
 import './MainOrderHistory.css'
 import DownIcon from '../../assets/svg/Down-button-green.svg'
+import { useHistory } from 'react-router-dom'
 
 const MainOrderHistory = () => {
+
+    const history=useHistory()
+
     return (
         <div className='mainOrderHistory'>
             {[...Array(6)].map(()=>(
@@ -37,12 +41,15 @@ const MainOrderHistory = () => {
                             <p className='history-amount'>$39.84</p>
                         </div>
                     </div>
+                    
                     <div className='mainOrderHistory__bottom'>
                         <div className='mainOrderHistory__days'>
                             <p>2 days ago</p>
                             <h5>Approved</h5>
                         </div>
-                        <div className='mainOrderHistory__details'>
+                        <div onClick={()=>{
+                            history.push('/chef/order-details')
+                        }} className='mainOrderHistory__details'>
                             <h5>Details</h5>
                             <img src={DownIcon} />
                         </div>

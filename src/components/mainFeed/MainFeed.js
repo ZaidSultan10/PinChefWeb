@@ -140,12 +140,12 @@ const closeModal2 = () => {
       <div className="mainFeed__header">
           <div className='avatar__container'>
             <Avatar className="avatar" onClick={() => {
-              history.push('/chef/profile')
+              history.push('/user/chef/profile')
             }} />
           </div>
         <div className="mainFeed__userName">
           <h3 onClick={() => {
-              history.push('/chef/profile')
+              history.push('/user/chef/profile')
             }} >Matt Wilson</h3>
           <MoreHorizOutlinedIcon onClick={openModal} className="moreHoriz" />
         </div>

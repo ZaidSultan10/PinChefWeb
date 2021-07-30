@@ -62,7 +62,7 @@ const MainFeedMasterclassMyPost = () => {
             <div className='mainFeedMasterclassMyPost__bottom'>
                 <div className='mainFeedMasterclassMyPost__link'>
                     <img src={LinkIcon} />
-                    <a href='#'>pinchef/io/cookingplov.io</a>
+                    <input placeholder='Enter e-Masterclass Link' />
                 </div>
                 <div className='mainFeedMasterclassMyPost__ticket'>
                     <p>Bought Tickets:</p>

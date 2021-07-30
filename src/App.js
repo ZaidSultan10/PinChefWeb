@@ -90,6 +90,8 @@ import TermsChef from "./screens/termsChef/TermsChef";
 import ChefProfileUser from "./screens/chefProfileUser/ChefProfileUser";
 import UserFollowedChefs from "./screens/userFollowedChefs/UserFollowedChefs";
 import SettingsProfileUser from "./screens/settingsProfileUser/SettingsProfileUser";
+import ChefProfileDetails from "./screens/chefProfileDetails/ChefProfileDetails";
+import UserOtpChef from "./screens/userOtpChef/UserOtpChef";
 
 
 
@@ -130,6 +132,7 @@ function App() {
         <Route path="/chef/home/feed/create-masterclass" exact component={ChefCreateMasterclass} />
         <Route path="/chef/settings" exact component={ChefSettings} />
         <Route path="/chef/main/profile" exact component={ChefMainProfile} />
+        <Route path="/chef/profile/details" exact component={ChefProfileDetails} />
         <Route path="/chef/settings/subscription" exact component={ChefAccountSubscription} />
         <Route path="/chef/masterclass/checkout" exact component={ChefMasterclassCheckout} />
         <Route path="/chef/service/cook-live" exact component={ServiceCookLiveCheckout} />
@@ -139,6 +142,7 @@ function App() {
         <Route path="/chef/service/cook-ship" exact component={ChefCookShip} />
         <Route path="/chef/service/cook-delivery" exact component={ChefCookDelivery} />
         <Route path="/user/verification" exact component={UserOtp} />
+        <Route path="/chef/verification" exact component={UserOtpChef} />
         <Route path="/user/forgot-password" exact component={UserForgotPassword} />
         <Route path="/user/reset-password" exact component={UserResetPassword} />
         <Route path="/user/set-profile" exact component={UserProfileSet} />
