@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './MainSettings.css'
+import './MainSettingsModal.css'
 import {Avatar } from '@material-ui/core'
 import { ChevronRight } from '@material-ui/icons'
 import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
@@ -14,6 +15,15 @@ import PaymentIcon from '../../assets/svg/Payment-methods-icon.svg';
 import { useHistory } from 'react-router-dom'
 import Modal from 'react-modal'
 import NotificationIcon from '../../assets/svg/Notifications-icon.svg'
+import FaqIcon from '../../assets/svg/Faq-icon.svg'
+import AboutIcon from '../../assets/svg-for-user-profile/About-app-info-icon.svg'
+import ContactIcon from '../../assets/svg-for-user-profile/Contact-us-icon.svg'
+import TermsIcon from '../../assets/svg/Path-28624.svg'
+import LightModeIcon from '../../assets/svg-for-user-profile/Light-mode.svg'
+import DarkModeIcon from '../../assets/svg-for-user-profile/Dark-mode.svg'
+import SystemModeIcon from '../../assets/svg-for-user-profile/System-mode.svg' 
+
+
 
 
 const MainSettings = ({settingsProp}) => {
@@ -39,8 +49,11 @@ const MainSettings = ({settingsProp}) => {
     const closeModal1 = () => {
         setIsOpen1(false);
     }
+    const openModal2 = () => {
+        setIsOpen2(true)
+      }
     const closeModal2 = () => {
-      setIsOpen2(true);
+      setIsOpen2(false);
       }
 
       const openModal3 = () => {
@@ -63,7 +76,137 @@ const MainSettings = ({settingsProp}) => {
             <div className='notification-modal-options'>
                 <img src={NotificationIcon} />
                 <h5>App Notifications</h5>
-                <input type='checkbox' />
+                <label className='switch' >
+                    <input type='checked' checked className='input1' />
+                    <span className='slider'></span>
+                </label>
+                
+            </div>
+        </Modal>
+        <Modal 
+        isOpen={modalIsOpen1}
+        onRequestClose={closeModal1}
+        
+        className='helpModal1'
+        contentLabel="Notification Modal">
+            <div className='help-modal-options'>
+                <div className='help-modal-faq'>
+                    <div className='help-modal-faq1'>
+                        <img src={FaqIcon} />
+                        <h5>Faq</h5>
+                        <ChevronRight className='help-chevron' />
+                    </div>
+                    
+                    <img className='help-line' src={HorizontalLine} />
+                </div>
+                <div className='help-modal-faq'>
+                    <div className='help-modal-faq2'>
+                        <img src={TermsIcon} />
+                        <h5>Terms & Privacy Policy</h5>
+                        <ChevronRight className='help-chevron' />
+                    </div>
+                    <div className='help-line'>
+                        <img src={HorizontalLine} />
+                    </div>
+                </div>
+                <div className='help-modal-faq'>
+                    <div className='help-modal-faq2'>
+                        <img src={ContactIcon} />
+                        <h5>Contact Us</h5>
+                        <ChevronRight className='help-chevron' />
+                    </div>
+                    <div className='help-line'>
+                        <img src={HorizontalLine} />
+                    </div>
+                </div>
+                <div className='help-modal-faq'>
+                    <div className='help-modal-faq2'>
+                        <img src={AboutIcon} />
+                        <h5>About</h5>
+                        <ChevronRight className='help-chevron' />
+                    </div>
+                </div>
+            </div>
+        </Modal>
+        <Modal 
+        isOpen={modalIsOpen2}
+        onRequestClose={closeModal2}
+        
+        className='languageModal1'
+        contentLabel="Notification Modal">
+            <div className='language-modal-options'>
+                <div className='language-modal-lang'>
+                    <h4>English</h4>
+                    <img src={HorizontalLine} />
+                </div>
+                <div className='language-modal-lang1'>
+                    <h4>Spanish</h4>
+                    <img src={HorizontalLine} />
+                </div>
+                <div className='language-modal-lang1'>
+                    <h4>French</h4>
+                    <img src={HorizontalLine} />
+                </div>
+                <div className='language-modal-lang1'>
+                    <h4>Turkish</h4>
+                    <img src={HorizontalLine} />
+                </div>
+                <div className='language-modal-lang1'>
+                    <h4>Russian</h4>
+                    <img src={HorizontalLine} />
+                </div>
+                <div className='language-modal-lang1'>
+                    <h4>Arabic</h4>
+                    
+                </div>
+            </div>
+        </Modal>
+        <Modal 
+        isOpen={modalIsOpen3}
+        onRequestClose={closeModal3}
+        
+        className='themeModal1'
+        contentLabel="Notification Modal">
+            <div className='theme-modal-options'>
+                <div className='theme-option1'>
+                    <div className='theme-light'>
+                        <img src={LightModeIcon} />
+                        <h3>Light Mode</h3>
+                        <label className='switch' >
+                            <input type='checked' checked className='input1' />
+                            <span className='slider'></span>
+                        </label>
+                    </div>
+                    <div className='theme-line'>
+                        <img src={HorizontalLine} />
+                    </div>
+                </div>
+                <div className='theme-option2'>
+                    <div className='theme-dark'>
+                        <img src={DarkModeIcon} />
+                        <h3>Dark Mode</h3>
+                        <label className='switch' >
+                            <input type='checked' checked className='input1' />
+                            <span className='slider'></span>
+                        </label>
+                    </div>
+                    <div className='theme-line'>
+                        <img src={HorizontalLine} />
+                    </div>
+                </div>
+                <div className='theme-option3'>
+                    <div className='theme-system'>
+                        <img src={SystemModeIcon} />
+                        <h3>System Mode</h3>
+                        <label className='switch' >
+                            <input type='checked' checked className='input1' />
+                            <span className='slider'></span>
+                        </label>
+                    </div>
+                    <div className='theme-line'>
+                        <img src={HorizontalLine} />
+                    </div>
+                </div>
             </div>
         </Modal>
         <div className='mainSettings'>
@@ -98,7 +241,7 @@ const MainSettings = ({settingsProp}) => {
                 <div className='mainSettings__divider'>
                     <img src={HorizontalLine} alt='line' />
                 </div>
-                <div className='mainSettings__notifications'>
+                <div onClick={openModal1} className='mainSettings__notifications'>
                     <img src={HelpIcon} className='help__icon' />
                     <h4>HELP</h4>
                 </div>
@@ -130,13 +273,13 @@ const MainSettings = ({settingsProp}) => {
                     )
                 }
                 <div className='mainSettings__notifications'>
-                    <img src={LanguageIcon} className='language__icon' />
+                    <img onClick={openModal2} src={LanguageIcon} className='language__icon' />
                     <h4>LANGUAGES</h4>
                 </div>
                 <div className='mainSettings__divider'>
                     <img src={HorizontalLine} alt='line' />
                 </div>
-                <div className='mainSettings__notifications'>
+                <div onClick={openModal3} className='mainSettings__notifications'>
                     <img src={SettingsBrightnessIcon} className='theme__icon' />
                     <h4>THEME</h4>
                 </div>

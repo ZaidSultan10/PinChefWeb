@@ -4,38 +4,6 @@
     padding-left: 3%;
     padding-right: 3%;
 }
-.notificationModal1{
-    width: 25%;
-    height: 25%;
-    display: grid;
-    place-items: center;
-    margin-left: 40%;
-    box-shadow: 1px 1px 6px 0px gray;
-    margin-top: 16rem;
-    border-radius: 32px;
-    outline: none;
-    border: 1px solid white;
-    background-color: white;
-}
-.notification-modal-options{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-}
-.notification-modal-options > h5 {
-    font-size: 20px;
-    margin-right: 3%;
-}
-.notification-modal-options > input{
-    width: 30px;
-    height: 30px;
-}
-.notification-modal-options > img{
-    width: 35px;
-    margin-right: 3%;
-    height: 35px;
-}
 .mainSettings__profile{
     display: grid;
     grid-template-columns: 15fr 1fr;

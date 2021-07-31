@@ -1,0 +1,132 @@
+.notificationModal1{
+    width: 25%;
+    height: 25%;
+    display: grid;
+    place-items: center;
+    margin-left: 40%;
+    box-shadow: 1px 1px 6px 0px gray;
+    margin-top: 16rem;
+    border-radius: 32px;
+    outline: none;
+    border: 1px solid white;
+    background-color: white;
+}
+.helpModal1,.themeModal1{
+    width: 25%;
+    height: 35%;
+    margin-left: 40%;
+    box-shadow: 1px 1px 6px 0px gray;
+    margin-top: 16rem;
+    border-radius: 32px;
+    outline: none;
+    border: 1px solid white;
+    background-color: white;
+}
+.languageModal1{
+    width: 25%;
+    height: 45%;
+    margin-left: 40%;
+    box-shadow: 1px 1px 6px 0px gray;
+    margin-top: 14rem;
+    border-radius: 32px;
+    outline: none;
+    border: 1px solid white;
+    background-color: white;
+}
+.notification-modal-options{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.notification-modal-options > h5 {
+    font-size: 20px;
+    margin-right: 3%;
+}
+.switch{
+    position:relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    margin: 0 10px;
+}
+.input1 {
+    display: none;
+}
+.slider{
+    position:absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+.slider::before{
+    position: absolute;
+    content: "";
+    height: 27px;
+    width: 27px;
+    left: 1px;
+    bottom: 1px;
+    top:1.5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+.input1:checked + .slider{
+    background-color: #469a09;
+}
+.input1:checked + .slider::before{
+    transform: translateX(50px);
+}
+.notification-modal-options > img{
+    width: 35px;
+    margin-right: 3%;
+    height: 35px;
+}
+.help-modal-options,.theme-modal-options{
+    display: grid;
+}
+.help-modal-faq,.theme-option1,.theme-option2,
+.theme-option3{
+   display: flex;
+   flex-direction: column;
+   margin-left: 4%;
+   margin-right: 4%;
+}
+.help-modal-faq1,.theme-light {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    margin-top: 6%;
+    align-items: center;
+}
+.help-modal-faq2,.theme-dark,.theme-system{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    margin-top: 3%;
+    align-items: center;
+}
+
+.help-modal-faq1 > img,
+.theme-dark>img,.theme-system>img,
+.theme-light > img{
+    width: 25px;
+    height: 25px;
+}
+.help-modal-faq2 > img{
+    width: 25px;
+    height: 25px;
+}
+.language-modal-options{
+    margin: 4%;
+}
+.language-modal-lang>h4{
+    text-align: center;
+}
+.language-modal-lang1>h4{
+    text-align: center;
+    margin-top: 2%;
+}

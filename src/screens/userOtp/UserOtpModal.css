@@ -1,0 +1,39 @@
+.userotp1{
+    width: 25%;
+    height: 30%;
+    display: grid;
+    place-items: center;
+    margin-left: 38%;
+    margin-top: 13rem;
+    border-radius: 32px;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 6px 0px grey;
+}
+
+.userotp-resend-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+}
+.userotp-resend-icon{
+    margin-top: 5%;
+}
+
+.userotp-resend-icon >img{
+    widows: 70px;
+    height: 70px;
+}
+.userotp-resend-text{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 8%;
+}
+.userotp-resend-text>p{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+}

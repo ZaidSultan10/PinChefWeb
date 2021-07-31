@@ -1,0 +1,67 @@
+.mypostmodal1{
+    width: 25%;
+    height: 30%;
+    display: grid;
+    place-items: center;
+    margin-left: 38%;
+    margin-top: 13rem;
+    border-radius: 16px;
+    outline: none;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 6px 0px grey;
+}
+
+.my-post-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.my-post-top{
+    border: 1px solid;
+    border-radius: 16px 16px 16px 0px;
+    color: white;
+    background-color: #3d3838;
+    width: 100%;
+    height: 250px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.my-post-center{
+    margin: 2.3rem;
+    text-align: center;
+}
+
+.my-post-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.my-post-bottom >.my-post-recipe-leave{
+    background-color: silver;
+    color: #5b5353;
+    border-radius: 0 999px 999px 900px;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+}
+
+.my-post-bottom >.my-post-recipe-stay{
+    background-color: #5b5353;
+    color: white;
+    border-radius: 999px 0px 900px 999px;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
