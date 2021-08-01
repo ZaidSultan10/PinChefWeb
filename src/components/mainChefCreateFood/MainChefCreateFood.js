@@ -1,23 +1,57 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './MainChefCreateFood.css'
 import AddImageIcon from '../../assets/svg/Add-image-video.svg'
 import CloseIcon from '@material-ui/icons/Close';
 import { Button, FormControl, Input, InputLabel } from '@material-ui/core';
 import DownIcon from '../../assets/svg/Down-button-green.svg'
 import { useHistory } from 'react-router-dom';
+import Modal from 'react-modal'
+
 
 const MainChefCreateFood = () => {
 
     const history=useHistory()
+    const [modalIsOpen1,setModalIsOpen1] = useState(false)
+
+    const openModal1 =() => {
+        setModalIsOpen1(true)
+    }
+
+    const closeModal1 = () => {
+        setModalIsOpen1(false)
+    }
 
     return (
+        <>
+        <Modal isOpen={modalIsOpen1}
+            onRequestClose={closeModal1}
+            
+            className='mypostmodal1'
+            contentLabel="Notification Modal">
+                <div className='my-post-container'>
+                    <div className='my-post-top'>
+                        <h5>ARE YOU SURE?</h5>
+                        
+                    </div>
+                    <div className='my-post-center'>
+                        <p>
+                            The data you entered
+                            will not be saved, are you sure?
+                        </p>
+                    </div>
+                    <div className='my-post-bottom'>
+                        <Button onClick={closeModal1} className='my-post-recipe-stay'>Stay</Button>
+                        <Button onClick={() => {
+                        history.push('/chef/feed/food/my-posts')
+                    }}  className='my-post-recipe-leave'>Leave</Button>
+                    </div>
+                </div>
+            </Modal>
         <div className='mainChefCreateFood'>
             <div className='mainChefCreateFood__container'>
                 <div className='mainChefCreateFood__heading'>
                     <h5>Create Food</h5>
-                    <CloseIcon onClick={() => {
-                        history.push('/chef/feed/food/my-posts')
-                    }} className='post-close-icon' />
+                    <CloseIcon onClick={openModal1} className='post-close-icon' />
                 </div>
                 <div className='mainChefCreateFood__addImage'>
                     <img src={AddImageIcon} />
@@ -108,6 +142,7 @@ const MainChefCreateFood = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

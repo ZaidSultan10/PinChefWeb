@@ -1,22 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './MainChefCreateMasterclass.css'
 import AddImageIcon from '../../assets/svg/Add-image-video.svg'
 import { Button } from '@material-ui/core'
 import CloseIcon from '@material-ui/icons/Close';
 import { useHistory } from 'react-router-dom';
-
+import Modal from 'react-modal'
 
 const MainChefCreateMasterclass = () => {
     
     const history = useHistory()
+    const [modalIsOpen1,setModalIsOpen1] = useState(false)
+
+    const openModal1 =() => {
+        setModalIsOpen1(true)
+    }
+
+    const closeModal1 = () => {
+        setModalIsOpen1(false)
+    }
     
     return (
+        <>
+        <Modal isOpen={modalIsOpen1}
+            onRequestClose={closeModal1}
+            
+            className='mypostmodal1'
+            contentLabel="Notification Modal">
+                <div className='my-post-container'>
+                    <div className='my-post-top'>
+                        <h5>ARE YOU SURE?</h5>
+                        
+                    </div>
+                    <div className='my-post-center'>
+                        <p>
+                            The data you entered
+                            will not be saved, are you sure?
+                        </p>
+                    </div>
+                    <div className='my-post-bottom'>
+                        <Button onClick={closeModal1} className='my-post-recipe-stay'>Stay</Button>
+                        <Button onClick={() => {
+                        history.push('/chef/feed/masterclass/my-posts')
+                    }}  className='my-post-recipe-leave'>Leave</Button>
+                    </div>
+                </div>
+            </Modal>
         <div className='mainChefCreateMasterclass'>
             <div className='mainChefCreateMasterclass__heading'>
                     <h5>Create Masterclass</h5>
-                    <CloseIcon onClick={() => {
-                        history.push('/chef/feed/masterclass/my-posts')
-                    }} className='post-close-icon' />
+                    <CloseIcon onClick={openModal1} className='post-close-icon' />
             </div>
             <div className='mainChefCreateMasterclass__top'>
                 <div className='mainChefCreateMasterclass__topLeft'>
@@ -139,12 +171,11 @@ const MainChefCreateMasterclass = () => {
                   </div>
             </div>
             <div className='mainChefCreateMasterclass__buttons'>
-                <Button onClick={() => {
-                        history.push('/chef/feed/masterclass/my-posts')
-                    }} className='mainChefCreateMasterclass__cancel'>Cancel</Button>
+                <Button onClick={openModal1} className='mainChefCreateMasterclass__cancel'>Cancel</Button>
                 <Button className='mainChefCreateMasterclass__post'>Post</Button>
             </div>
         </div>
+        </>
     )
 }
 
