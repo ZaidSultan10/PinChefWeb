@@ -1,0 +1,225 @@
+.masterclassnoticemodal1{
+    width: 25%;
+    height: 30%;
+    display: grid;
+    place-items: center;
+    margin-left: 38%;
+    outline: none;
+    margin-top: 13rem;
+    border-radius: 16px;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 6px 0px grey;
+}
+.masterclasscancelmodal1{
+    width: 28%;
+    height: 43%;
+    display: grid;
+    place-items: center;
+    margin-left: 38%;
+    outline: none;
+    margin-top: 12rem;
+    border-radius: 16px;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 6px 0px grey;
+}
+
+.notice-master-container,
+.cancel-master-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.notice-master-top{
+    
+        border: 1px solid;
+        border-radius: 999px 999px 999px 0px;
+        color: white;
+        background-color: #3d3838;
+        width: 100%;
+        height: 250px;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 3%;
+        padding-left: 3%;
+ 
+}
+
+.cancel-master-top{
+    border: 1px solid;
+        border-radius: 999px 999px 999px 0px;
+        color: white;
+        background-color: #3d3838;
+        width: 100%;
+        height: 250px;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 3%;
+        padding-left: 3%;
+}
+.notice-master-top > img{
+    width: 20px;
+    height: 20px;
+}
+
+.notice-master-center{
+    margin: 2.3rem;
+    text-align: center;
+}
+.cancel-master-center{
+    display: grid;
+    width: 100%;
+}
+.cancel-master-center > h5{
+    text-align: center;
+    margin-top: 1rem;
+}
+.cancel-master-center > textarea{
+    width: 90%;
+    margin: 2% auto;
+    outline: none;
+    font-family: 'Montserrat','sans-serif';
+    border-radius: 8px;
+    resize: none;
+    box-shadow: 1px 1px 6px 0px grey;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    border: 1px solid white;
+}
+
+.notice-master-bottom,
+.cancel-master-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.notice-master-bottom>.notice-master-no{
+    background-color: silver;
+    color: #5b5353;
+    border-radius: 0 999px 999px 999px;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+}
+.notice-master-bottom>.notice-master-allow{
+    background-color: #5b5353;
+    color: white;
+    border-radius: 999px 0px 999px 999px;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.cancel-master-bottom > .cancel-master-allow{
+    background-color: silver;
+    color: #5b5353;
+    border-radius: 999px 0px 999px 999px;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.masterclassinfomodal1{
+    width: 30%;
+    height: 50%;
+    display: grid;
+    place-items: center;
+    margin-left: 38%;
+    outline: none;
+    margin-top: 10rem;
+    border-radius: 16px;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 6px 0px grey;
+}
+
+.class-info-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.class-info-top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.class-info-top > h3{
+    font-size: 20px;
+}
+
+.class-info-center{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.class-info-centerLeft >img {
+    height: 100%;
+}
+.class-info-centerRight{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.class-info-timings{
+    display: flex;
+    align-items: center;
+}
+.class-info-price{
+    display: flex;
+    align-items: center;
+}
+.class-info-time{
+    display: flex;
+    align-items: center;
+}
+.class-info-duration{
+    display: flex;
+    align-items: center;
+}
+
+.class-info-bottom{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 60%;
+    height: 100%;
+    border: 1px solid;
+}
+.class-info-bottomRight{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid;
+}
+
+.class-info-time >img,
+.class-info-bottomRight,
+.class-info-duration>img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+

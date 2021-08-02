@@ -1,16 +1,67 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './MainMyChat.css'
 import LeftIcon from '../../assets/svg/left-green-arrow.svg'
 import { MoreHorizOutlined } from '@material-ui/icons'
 import { Avatar } from '@material-ui/core'
 import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import { useHistory } from 'react-router-dom'
+import Modal from 'react-modal'
+import PinIcon from '../../assets/svg-for-user-profile/chat_menu_pin_icon.svg'
+import DeleteIcon from '../../assets/svg-for-user-profile/Delete_chat.svg'
+import ClearIcon from '../../assets/svg-for-user-profile/Clear_messages.svg'
+import './MainMyChatModal.css'
+
 
 const MainMyChat = () => {
 
     const history = useHistory()
 
+    const [modalIsOpen,setModalIsOpen] = useState(false)
+    
+    const openModal = () => {
+        setModalIsOpen(true)
+    }
+
+    const closeModal = () => {
+        setModalIsOpen(false)
+    }
+
     return (
+        <>
+        <Modal isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            
+            className='chatspopupmodal1'
+            contentLabel="Notification Modal" >
+
+                <div className='chats-popup-container'>
+                    <div className='chats-popup-top'>
+                        <div className='chats-popup-pin'>
+                            <img src={PinIcon} />
+                            <h4>Pin User</h4>
+                        </div>
+                        <div className='chats-popup-line'>
+                            <img src={HorizontalLine} />
+                        </div>
+                        
+                    </div>
+                    <div className='chats-popup-center'>
+                        <div className='chats-popup-delete'>
+                            <img src={DeleteIcon} />
+                            <h4>Delete</h4>
+                        </div>
+                        <div className='chats-popup-line'>
+                            <img src={HorizontalLine} />
+                        </div>
+                    </div>
+                    <div className='chats-popup-bottom'>
+                        <div className='chats-popup-clear'>
+                            <img src={ClearIcon} />
+                            <h4>Clear Messages</h4>
+                        </div>
+                    </div>
+                </div>
+        </Modal>
         <div className='mainMyChat'>
             <div className='mainMyChat__header'>
                 <img onClick={() => {
@@ -34,7 +85,8 @@ const MainMyChat = () => {
                         </p>
                     </div>
                     <div className='mainMyChat__right'>
-                        <MoreHorizOutlined />
+                        <MoreHorizOutlined onClick={openModal} />
+                        { /*  <svg className='mypinsvg' xmlns='/assets/svg-for-user-profile/chat_menu_pin_icon.svg' width='30' height='30' viewBox=' 0 0 30 30' /> */}
                         <h5>2h</h5>
                     </div>
                 </div>
@@ -44,6 +96,7 @@ const MainMyChat = () => {
             </>
             ))}
         </div>
+        </>
     )
 }
 

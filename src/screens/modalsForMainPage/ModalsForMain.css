@@ -1,4 +1,4 @@
-.mypostmodal1{
+.mypostmodal1,.searchnotfoundmodal1{
     width: 25%;
     height: 30%;
     display: grid;
@@ -62,4 +62,62 @@
     position: absolute;
     bottom: 0;
     right: 0;
+}
+.my-cart-allow{
+    background-color: brown;
+    color: white;
+    border-radius: 999px 0px 999px 999px;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.masterpaymentsentmodal1{
+    width: 25%;
+    height: 30%;
+    display: grid;
+    place-items: center;
+    margin-left: 38%;
+    margin-top: 13rem;
+    border-radius: 16px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 6px 0px grey;
+    background-color: white;
+    outline: none;
+}
+
+.masterpayment-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.masterpayment-top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.masterpayment-top>h4{
+    font-size: 22px;
+}
+.masterpayment-center{
+    display: grid;
+    width: 100%;
+    place-items: center;
+    margin-top: 5%;
+}
+.masterpayment-center > img {
+    width: 40px;
+    height: 40px;
+}
+.masterpayment-bottom{
+    margin-top: 2rem;
+}
+.masterpayment-bottom>h5{
+    text-align: center;
 }

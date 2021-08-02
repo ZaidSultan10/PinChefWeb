@@ -1,0 +1,214 @@
+.deletecartmodal1{
+    width: 25%;
+    height: 30%;
+    display: grid;
+    place-items: center;
+    margin-left: 38%;
+    margin-top: 13rem;
+    border-radius: 16px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 6px 0px grey;
+    background-color: white;
+    outline: none;
+}
+
+.my-cart-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.my-cart-top{
+    border: 1px solid;
+    border-radius: 24px 24px 24px 0px;
+    color: white;
+    background-color: #3d3838;
+    width: 100%;
+    height: 250px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.my-cart-center{
+    margin: 2.3rem;
+    text-align: center;
+}
+
+.my-cart-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.my-cart-bottom>.my-post-no{
+    background-color: silver;
+    color: #5b5353;
+    border-radius: 0 999px 999px 999px;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+}
+
+.my-cart-bottom>.my-cart-allow{
+    background-color: brown;
+    color: white;
+    border-radius: 999px 0px 999px 999px;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.payforcartmodal1{
+    width: 35%;
+    height: 72%;
+    display: grid;
+    place-items: center;
+    margin-left: 38%;
+    margin-top: 5rem;
+    border-radius: 16px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 6px 0px grey;
+    background-color: white;
+    outline: none;
+}
+
+.mainChefPayments1__state{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+    width: 100%;
+}
+.mainChefPayments1__state> h5{
+    font-size: 16px;
+}
+.mainChefPayments1__paymentMethods{
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.mainChefPayments1__paymentMethods > img{
+    width: 25px;
+    height: 25px;
+    margin-left: 3%;
+}
+.mainChefPayments1__cardInfoHeading{
+    margin-top: 2%;
+    display: flex;
+    border: 1px solid;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    background-color: #3d3838;
+}
+.mainChefPayments1__cardInfoHeading > h5{
+    margin-left: 2%;
+}
+.mainChefPayments1__cardInfo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainChefPayments1__cardInfo > input{
+    height: 5vh;
+    border-radius: 999px;
+    padding-left: 4%;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    margin-top: 2%;
+    font-family: 'Montserrat','sans-serif';
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.mainChefPayments1__cardInfo >input::-webkit-outer-spin-button,
+.mainChefPayments1__cardInfo >input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.year-cvc1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.year-cvc1 > input{
+    font-family: 'Montserrat','sans-serif';
+    height: 5vh;
+    border-radius: 999px;
+    padding-left: 4%;
+    border: 3px solid #d9d9d9;
+    outline: none;
+    margin-top: 2%;
+    box-shadow: 1px 1px 6px 2px #d9d9d9;
+}
+.class-month1{
+    width: 60%;
+}
+.class-cvc1{
+    width: 38%;
+}
+.mainChefPayments__warning11,
+.mainChefPayments__warning21{
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainChefPayments__warning11 >p
+,.mainChefPayments__warning21>p{
+    margin-left: 1%;
+}
+.mainChefPayments__warning11 > img,
+.mainChefPayments__warning21>img{
+    width: 25px;
+    height: 25px;
+}
+
+.mainChefPayments__option21>img{
+    width: 35px;
+    height: 35px;
+}
+.mainChefPayments__payButton1{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.mainChefPayments__payButton1 > button{
+    background-color: #4da302;
+    color: white;
+    font-weight: 800;
+    width: 25%;
+    font-size: 16px;
+    border-radius: 999px 0 999px 999px;
+    box-shadow: 0 2px 6px 0 grey;
+}
+.mainChefPayments__payButton1 > p{
+    margin-top: 2%;
+    font-weight: 600;
+}
+.mainChefPayments__option21{
+    display: flex;
+    padding-bottom: 3%;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
