@@ -1,0 +1,157 @@
+.mycuisinemodal1{
+    width: 25%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-left: 38%;
+    outline: none;
+    margin-top: 5rem;
+    border-radius: 16px;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 6px 0px gray;
+}
+.my-cuisine-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.my-cuisine-search{
+    border: 1px solid white;
+    border-radius: 999px;
+    position: relative;
+    width: 95%;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-shadow: 1px 1px 6px 0 grey;
+    height: 5vh;
+    margin: 3%;
+}
+.my-cuisine-search > input{
+    outline: none;
+    border: none;
+    padding-left: 2%;
+}
+.my-cuisine-search>.my-cuisine-icon{
+    position: absolute;
+    right: 3%;
+    color: gray;
+}
+
+.my-cuisine-list{
+    overflow: scroll;
+    margin-top: 0%;
+    width: 95%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+.my-cuisine-list::-webkit-scrollbar{
+    display: none;
+}
+.my-cuisine-list > h4{
+    margin-top: 4%;
+    color: gray;
+    font-weight: 500;
+}
+
+.servicedaymodal1{
+    width: 35%;
+    height: 70%;
+    display: grid;
+    place-items: center;
+    margin-left: 38%;
+    outline: none;
+    margin-top: 5rem;
+    border-radius: 16px;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 6px 0px gray;
+}
+
+.service-day-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.service-day-heading{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.service-monday{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin-top:5% ;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service-monday-toggle{
+    display: grid;
+}
+.switch1{
+    position:relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    margin: 0 10px;
+}
+.input1 {
+    display: none;
+}
+.slider1{
+    position:absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+.slider1::before{
+    position: absolute;
+    content: "";
+    height: 27px;
+    width: 27px;
+    left: 1px;
+    bottom: 1px;
+    top:1.5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+.input1:checked + .slider1{
+    background-color: #469a09;
+}
+.input1:checked + .slider1::before{
+    transform: translateX(21px);
+}
+
+.service-monday-time{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+.st,.et{
+    border: 1px solid #469a09;
+    width: 80%;
+    text-align: center;
+    border-radius: 4px;
+}
+.st{
+    margin-right: 2%;
+}
+.et{
+    margin-left: 2%;
+}

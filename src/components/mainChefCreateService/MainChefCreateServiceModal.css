@@ -1,0 +1,26 @@
+.myservicetypemodal1{
+    width: 25%;
+    height: 35%;
+    display: grid;
+    place-items: center;
+    margin-left: 38%;
+    margin-top: 13rem;
+    border-radius: 16px;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 6px 0px gray;
+}
+
+.my-service-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.my-service-container > h3{
+    font-size: 14px;
+    margin-left: 5%;
+    margin-top: 5%;
+    color: grey;
+}

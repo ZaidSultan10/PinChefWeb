@@ -174,48 +174,86 @@
 
 .class-info-centerLeft >img {
     height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.class-info-centerLeft > h4{
+    text-align: center;
+    margin-bottom: 1%;
 }
 .class-info-centerRight{
     margin-left: 3%;
-    margin-top: 3%;
+    margin-top: 5%;
+
+}
+.class-info-centerRight>h5{
+    margin-top: 1rem;
 }
 .class-info-timings{
     display: flex;
     align-items: center;
+    margin-top: 2rem;
+    width: 100%;
 }
 .class-info-price{
     display: flex;
     align-items: center;
+    width: 30%;
 }
 .class-info-time{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 .class-info-duration{
     display: flex;
     align-items: center;
+    width: 30%;
+}
+.class-info-space{
+    width: 20%;
 }
 
 .class-info-bottom{
-    margin-top: 2rem;
+    margin-top: -1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-left: 2%;
     margin-right: 2%;
-    width: 60%;
+    width: 95%;
     height: 100%;
-    border: 1px solid;
+}
+.class-info-bottomLeft{
+    width: 100%;
+    padding-left: 2rem;
 }
 .class-info-bottomRight{
     display: flex;
     align-items: center;
     width: 100%;
-    border: 1px solid;
+    justify-content: flex-end;
+}
+.class-info-bottomRight >p {
+    padding-right: 3%;
+
+}
+.class-info-bottomRight>h4{
+    padding-left: 2%;
+}
+.class-info-bottomRight >img{
+    margin-top: 1%;
 }
 
-.class-info-time >img,
-.class-info-bottomRight,
-.class-info-duration>img{
+
+
+.class-info-duration>img,
+.class-info-time>img{
+    width: 16px;
+    height: 16px;
+    padding-right: 2%;
+}
+.class-info-bottomRight > img{
     width: 20px;
     height: 20px;
 }

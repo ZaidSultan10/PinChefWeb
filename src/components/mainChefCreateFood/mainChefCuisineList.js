@@ -1,0 +1,49 @@
+const cuisineDatas = [
+    {
+        cuisine:'African'
+    },
+    {
+        cuisine:'Arabic'
+    },
+    {
+        cuisine:'Asian'
+    },
+    {
+        cuisine:'Bulgarian'
+    },
+    {
+        cuisine:'Cajun'
+    },
+    {
+        cuisine:'Caribbean'
+    },
+    {
+        cuisine:'Chinese'
+    },
+    {
+        cuisine:'European'
+    },
+    {
+        cuisine:'French'
+    },
+    {
+        cuisine:'German'
+    },
+    {
+        cuisine:'Greek'
+    },
+    {
+        cuisine:'Hungarian'
+    },
+    {
+        cuisine:'Indian'
+    },
+    {
+        cuisine:'Korean'
+    },
+    {
+        cuisine:'Lebenese'
+    }
+]
+
+export default cuisineDatas

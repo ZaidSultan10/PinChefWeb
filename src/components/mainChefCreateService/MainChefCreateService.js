@@ -5,13 +5,23 @@ import CloseIcon from '@material-ui/icons/Close';
 import { Button } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import Modal from 'react-modal'
+import './MainChefCreateServiceModal.css'
 
 
 const MainChefCreateService = () => {
 
     const history=useHistory()
 
+    const [modalIsOpen,setModalIsOpen] = useState(false)
     const [modalIsOpen1,setModalIsOpen1] = useState(false)
+
+    const openModal =() => {
+        setModalIsOpen(true)
+    }
+
+    const closeModal = () => {
+        setModalIsOpen(false)
+    }
 
     const openModal1 =() => {
         setModalIsOpen1(true)
@@ -47,6 +57,20 @@ const MainChefCreateService = () => {
                     </div>
                 </div>
             </Modal>
+            <Modal isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            
+            className='myservicetypemodal1'
+            contentLabel="Notification Modal">
+                <div className='my-service-container'>
+                    <h3>Cook and Deliver</h3>
+                    <h3>Cook and Ship</h3>
+                    <h3>Cook for Takeout/Away</h3>
+                    <h3>Host guests and cook</h3>
+                    <h3>Go to customers address to cook</h3>
+                    <h3>Cook Online with Chef</h3>
+                </div>
+            </Modal>
         <div className='mainChefCreateService'>
             <div className='mainChefCreateService__container'>
                 <div className='mainChefCreateService__heading'>
@@ -56,12 +80,11 @@ const MainChefCreateService = () => {
                 <div className='mainChefCreateService__addImage'>
                     <img src={AddImageIcon} />
                 </div>
-                <div className='mainChefCreateService__cuisine'>
+                <div onClick={openModal} className='mainChefCreateService__cuisine'>
                     <h5>Service Type</h5>
-                    <select id='service__type__option'>
-                        <option>Delivery</option>
-                        <option>Take away</option>
-                        <option>Shipping</option>
+                    <select disabled id='service__type__option'>
+                        <option>Choose Service Type</option>
+                        
                     </select>
                 </div>
                 

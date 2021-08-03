@@ -105,7 +105,7 @@ const MainFeedMasterclassMyPost = () => {
                 <div className='class-info-container'>
                     <div className='class-info-top'>
                         <h5></h5>
-                        <h3>x</h3>
+                        <h3 onClick={closeModal2}>x</h3>
                     </div>
                     <div className='class-info-center'>
                         <div className='class-info-centerLeft'>
@@ -115,7 +115,7 @@ const MainFeedMasterclassMyPost = () => {
                         </div>
                         <div className='class-info-centerRight'>
                             <p>Lorem Ipsum</p>
-                            <span>Ingredients:<p>peppers,flour,orange juice</p></span>
+                            <h5>Ingredients:<span>peppers,flour,orange juice</span></h5>
                             <div className='class-info-timings'>
                                 <div className='class-info-price'>
                                     <h5>$</h5>
@@ -141,7 +141,7 @@ const MainFeedMasterclassMyPost = () => {
                     <div className='class-info-bottom'>
                         <div className='class-info-bottomLeft'>
                             <h5>Italian</h5>
-                            <p>______</p>
+                            <p>----------</p>
                             <h5>Vegan</h5>
                         </div>
                         <div className='class-info-bottomRight'>

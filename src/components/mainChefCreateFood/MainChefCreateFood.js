@@ -6,12 +6,28 @@ import { Button, FormControl, Input, InputLabel } from '@material-ui/core';
 import DownIcon from '../../assets/svg/Down-button-green.svg'
 import { useHistory } from 'react-router-dom';
 import Modal from 'react-modal'
+import { SearchOutlined } from '@material-ui/icons';
+import cuisineDatas from './mainChefCuisineList';
+import './MainChefCreateFoodModal.css'
+
 
 
 const MainChefCreateFood = () => {
 
     const history=useHistory()
+
+    const [modalIsOpen,setModalIsOpen] = useState(false)
     const [modalIsOpen1,setModalIsOpen1] = useState(false)
+    const [modalIsOpen2,setModalIsOpen2] = useState(false)
+
+
+    const openModal = () => {
+        setModalIsOpen(true)
+    }
+
+    const closeModal = () => {
+        setModalIsOpen(false)
+    }
 
     const openModal1 =() => {
         setModalIsOpen1(true)
@@ -20,6 +36,30 @@ const MainChefCreateFood = () => {
     const closeModal1 = () => {
         setModalIsOpen1(false)
     }
+
+    const openModal2 =() => {
+        setModalIsOpen2(true)
+    }
+
+    const closeModal2 = () => {
+        setModalIsOpen2(false)
+    }
+
+    const serviceDays = [{
+        day:'Monday'
+    },{
+        day:'Tuesday'
+    },{
+        day:'Wednesday'
+    },{
+        day:'Thursday'
+    },{
+        day:'Friday'
+    },{
+        day:'Saturday'
+    },{
+        day:'Sunday'
+    }]
 
     return (
         <>
@@ -47,6 +87,62 @@ const MainChefCreateFood = () => {
                     </div>
                 </div>
             </Modal>
+            <Modal isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            
+            className='mycuisinemodal1'
+            contentLabel="Notification Modal">
+                <div className='my-cuisine-container'>
+                    <div className='my-cuisine-search'>
+                        <input placeholder='Search' />
+                        <SearchOutlined className='my-cuisine-icon' />
+                    </div>
+                    <div className='my-cuisine-list'>
+                        {
+                            cuisineDatas.map((cuisineData) => (
+                                <h4>{cuisineData.cuisine}</h4>
+                            ))
+                        }
+                    </div>
+                </div>
+            </Modal>
+            <Modal isOpen={modalIsOpen2}
+            onRequestClose={closeModal2}
+            
+            className='servicedaymodal1'
+            contentLabel="Notification Modal">
+                <div className='service-day-container'>
+                    <div className='service-day-heading'>
+                        <h3>Service Days & Hours</h3>
+                    </div>
+                    <div>
+                        {
+                            serviceDays.map((serviceDay) => (
+                                    <div className='service-monday'>
+                                        <div className='service-monday-heading'>
+                                            <h4>{serviceDay.day}</h4>
+                                        </div>
+                                        <div className='service-monday-toggle'>
+                                            <label class="switch1">
+                                                <input type="checkbox" className='input1' />
+                                                <span class="slider1"></span>
+                                            </label>
+                                        </div>
+                                        <div className='service-monday-time'>
+                                            <p className='st'>9:00 AM</p>
+                                            <p>-</p>
+                                            <p className='et'>20:00 PM</p>
+                                        </div>
+                                        <div className='service-add-time'>
+                                            <h4>+</h4>
+                                        </div>
+                                    </div>
+                            ))
+                        }
+                        
+                    </div>
+                </div>
+            </Modal>
         <div className='mainChefCreateFood'>
             <div className='mainChefCreateFood__container'>
                 <div className='mainChefCreateFood__heading'>
@@ -60,14 +156,11 @@ const MainChefCreateFood = () => {
                     <h5>Food Item Name</h5>
                     <input placeholder='Enter Food Title' />
                 </div>
-                <div className='mainChefCreateFood__cuisine'>
+                <div onClick={openModal} className='mainChefCreateFood__cuisine'>
                     <h5>Cuisine Type</h5>
-                    <select id='cuisine__type__option'>
-                        <option>European</option>
-                        <option>Turkish</option>
-                        <option>Russian</option>
-                        <option>Arabic</option>
-                        <option>Indian</option>
+                    <select disabled id='cuisine__type__option'>
+                        <option>Cuisine Specialities</option>
+                        
                     </select>
                 </div>
                 <div className='mainChefCreateFood__diet'>
@@ -88,14 +181,11 @@ const MainChefCreateFood = () => {
                     <h5>Calories</h5>
                     <input placeholder='363' />
                 </div>
-                <div className='mainChefCreateFood__cuisine'>
+                <div onClick={openModal2} className='mainChefCreateFood__cuisine'>
                     <h5>Service Days and Hours<span>*</span></h5>
                     <select id='service__type__option'>
-                        <option>Monday</option>
-                        <option>tuesday</option>
-                        <option>Wednesday</option>
-                        <option>Thursday</option>
-                        <option>Friday</option>
+                        <option>Select an Option</option>
+                        
                     </select>
                 </div>
                 <div className='mainChefCreateFood__name'>
