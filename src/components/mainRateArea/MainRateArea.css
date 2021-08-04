@@ -40,6 +40,12 @@
     margin-left: 5%;
     margin-right: 5%;
 }
+.mainRateArea__service1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 4%;
+}
 .rate-total-num{
     margin-right: -1.5%;
 }
@@ -47,7 +53,8 @@
 .mainRateArea__food>h5,
 .mainRateArea__personality>h5,
 .mainRateArea__presentation>h5,
-.mainRateArea__score>h5{
+.mainRateArea__score>h5,
+.mainRateArea__service1>h5{
     font-size: 16px;
     color: #464040;
 }
@@ -60,7 +67,7 @@
 .mainRateArea__stars{
     color: rgb(212, 212, 0) !important;
 }
-.mainRateArea__commentsArea{
+.mainRateArea__rateArea{
     margin-top: 4%;
     display: grid;
     align-items: center;
@@ -69,9 +76,11 @@
     margin-right: 5%;
 }
 .mainRateArea__text{
-    margin-top: 4%;
+    margin-top: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
 }
-.mainRateArea__commentLikes{
+.mainRateArea__rateLikes{
     margin-bottom: 3%; 
     width: 100%;  
 }
@@ -91,10 +100,10 @@
     padding-top: 10px;
     font-size: 10px;
 }
-.reply-icon{
+.reply-icon-rate{
     margin-bottom: 1rem;
 }
-.reply-icon > img {
+.reply-icon-rate > img {
     width: 18px;
     height: 18px;
 
@@ -122,5 +131,78 @@
 .mainRateArea__star1{
     font-size: 20px !important;
     color: white;
+}
+
+.mainRateArea__rateName>h5{
+    padding-bottom: 0.8rem;
+}
+
+.heart-container-rate{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 6px 0px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+.heart-container-rate > img{
+    width: 22px;
+    height: 22px;
+}
+
+.mainRateArea__rateLikes >p{
+    font-size: 10px;
+}
+
+@media only screen and (max-width:440px){
+    .mainRateArea__text{
+        margin-top: 3rem;
+    }
+    .mainRateArea__text >p{
+        font-size: 10px;
+    }
+    .heart-container-rate{
+        margin: 0.5rem 0;
+    }
+    .mainRateArea__rateLikes{
+        margin-top: 1rem;
+    }
+    .mainRateArea__rateLikes >p{
+        width: 100%;
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .mainRateArea__service
+    ,.mainRateArea__food,
+    .mainRateArea__personality,
+    .mainRateArea__presentation{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+}
+.mainRateArea__star{
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #469a09;
+    color: white;
+}
+.mainRateArea__star1{
+    font-size: 17px !important;
+    color: white;
+}
+
+.mainRateArea__text{
+    padding-top: 0.5rem;
+
+}
+
 }
 

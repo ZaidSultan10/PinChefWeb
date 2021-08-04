@@ -63,3 +63,33 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media only screen and (max-width:750px){
+    .mainMyChat__chats{
+        display: grid;
+        grid-template-columns: 1.5fr 8fr 1fr;
+    }
+    .mainMyChat__message >p{
+        margin-right: 2%;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .mainMyChat__chats{
+        display: grid;
+        grid-template-columns: 2fr 8fr 1fr;
+    }
+    .mainMyChat__message >p{
+        margin-right: 2%;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .mainMyChat__chats{
+        display: grid;
+        grid-template-columns: 2.5fr 8fr 1fr;
+    }
+    .mainMyChat__message >p{
+        margin-right: 2%;
+    }
+}

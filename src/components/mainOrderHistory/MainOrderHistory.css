@@ -99,6 +99,7 @@
 .mainOrderHistory__days{
     display: flex;
     width: 50%;
+    align-items: center;
 }
 .mainOrderHistory__days > h5{
     margin-left: 2rem;
@@ -119,4 +120,43 @@
 .mainOrderHistory__details >img{
     width: 15px;
     height: 15px;
+}
+
+@media only screen and (max-width:500px){
+    .mainOrderHistory__bill{
+        margin-right: 5rem;
+    }
+
+    .mainOrderHistory__itemBill{
+        margin-right: 6rem;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .mainOrderHistory__item{
+        margin-right: 7%;
+    }
+
+    .mainOrderHistory__itemTitle{
+        margin-right: 6%;
+        margin-top: 10px;
+    }
+    .mainOrderHistory__sub{
+        margin-left: 18%;
+    }
+    .mainOrderHistory__days >p{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:300px){
+    .mainOrderHistory__days >h5{
+        font-size: 12px;
+    }
+    .mainOrderHistory__days {
+        width: 60%;
+    }
+    .mainOrderHistory__days >p{
+        font-size: 8px;
+        width: 100%;
+    }
 }

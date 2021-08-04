@@ -68,3 +68,35 @@
     font-size: 16px;
     padding-bottom: 3%;
 }
+
+@media only screen and (max-width:500px){
+    .mainChefPaymentMethods__warning1,
+    .mainChefPaymentMethods__warning2{
+        width: 92%;
+        
+    }
+    .mainChefPaymentMethods__warning1{
+        margin-top: 7%;
+    }
+
+    .mainChefPaymentMethods__stripe>button,
+    .mainChefPaymentMethods__paypal>button{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:360px){
+
+    .mainChefPaymentMethods__stripe>button,
+    .mainChefPaymentMethods__paypal>button{
+        width: 38%;
+    }
+}
+
+@media only screen and (max-width:300px){
+
+    .mainChefPaymentMethods__stripe>button,
+    .mainChefPaymentMethods__paypal>button{
+        width: 45%;
+    }
+}

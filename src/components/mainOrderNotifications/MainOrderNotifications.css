@@ -136,3 +136,78 @@
     color: white !important;
     background-color: red !important;
 }
+
+@media only screen and (max-width:500px){
+    .mainOrderNotifications__bill{
+        margin-right: 5rem;
+    }
+
+    .mainOrderNotifications__itemBill{
+        margin-right: 6rem;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .mainOrderNotifications__username > h4{
+        font-size: 14px;
+    }
+    .mainOrderNotifications__username > h5{
+        font-size: 10px;
+    }
+    .mainOrderNotifications__food > h4{
+        font-size: 14px;
+    }
+
+    .mainOrderNotifications__buttons > button{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .mainOrderNotifications__item{
+        margin-right: 7%;
+    }
+
+    .mainOrderNotifications__itemTitle{
+        margin-right: 6%;
+        margin-top: 10px;
+    }
+    .mainOrderNotifications__sub{
+        margin-left: 18%;
+    }
+    .mainOrderNotifications__days >p{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:330px){
+    .mainOrderNotifications__username > h4{
+        font-size: 12px;
+    }
+    .mainOrderNotifications__username > h5{
+        font-size: 9px;
+    }
+    .mainOrderNotifications__food > h4{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:300px){
+    .mainOrderNotifications__days >h5{
+        font-size: 12px;
+    }
+    .mainOrderNotifications__days {
+        width: 60%;
+    }
+    .mainOrderNotifications__days >p{
+        font-size: 8px;
+        width: 100%;
+    }
+    .mainOrderNotifications__buttons > button{
+        font-size: 8px;
+        
+    }
+    .button-n1,.button-n2,.button-n3{
+       border-radius: 8px !important;
+    }
+}

@@ -138,3 +138,27 @@
     padding-top: 1%;
     box-shadow: 1px 1px 6px 2px #d9d9d9;
 }
+
+@media only screen and (max-width:500px){
+    .mainOrderDetails__bill{
+        margin-right: 5rem;
+    }
+
+    .mainOrderDetails__itemBill{
+        margin-right: 6rem;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .mainOrderDetails__item{
+        margin-right: 7%;
+    }
+
+    .mainOrderDetails__itemTitle{
+        margin-right: 6%;
+        margin-top: 10px;
+    }
+    .mainOrderDetails__sub{
+        margin-left: 18%;
+    }
+}

@@ -18,7 +18,7 @@ const MainFeedFilter7 = () => {
     return (
         <div className='mainFeedFilter7'>
             <Button onClick={chefRateButton} className='rating-button'>Ratings/Reviews</Button>
-            <Button onClick={chefRateReviewSavedButton} className='filterchef-active2'>Saved</Button>
+            <Button onClick={chefRateReviewSavedButton} className='filterchef-active2 save-button-7'>Saved</Button>
         </div>
     )
 }

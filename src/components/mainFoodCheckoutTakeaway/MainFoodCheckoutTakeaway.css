@@ -270,3 +270,38 @@
 .mainFoodCheckoutTakeaway__type >h5{
     padding-bottom: 1%;
 }
+
+@media only screen and (max-width:500px){
+    .mainFoodCheckoutTakeaway__bill{
+        margin-right: 5rem;
+    }
+
+    .mainFoodCheckoutTakeaway__itemBill{
+        margin-right: 6rem;
+    }
+    .mainFoodCheckoutTakeaway__button >button{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .mainFoodCheckoutTakeaway__item{
+        margin-right: 7%;
+    }
+
+    .mainFoodCheckoutTakeaway__itemTitle{
+        margin-right: 6%;
+        margin-top: 10px;
+    }
+    .mainFoodCheckoutTakeaway__sub{
+        margin-left: 18%;
+    }
+    .mainFoodCheckoutTakeaway__button >button{
+        width: 53%;
+    }
+
+    .mainFoodCheckoutTakeaway__pick{
+        margin-left: -1rem;
+    }
+}
+

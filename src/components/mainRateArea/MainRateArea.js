@@ -139,13 +139,13 @@ const MainRateArea = ({rateReplyProp}) => {
                         </div>
                     </div>
                 </div>
-                <div className='mainRateArea__service'>
+                <div className='mainRateArea__service1'>
                     <h5>Average Rating</h5>
                     <h5 className='rate-total-num'>3.5</h5>
                 </div>
             </div>
-            <div className='mainRateArea__commentsArea'>
-                <div className='mainRateArea__commentName'>
+            <div className='mainRateArea__rateArea'>
+                <div className='mainRateArea__rateName'>
                     <h5>Jennah</h5>
                     <Avatar className='mainRateArea__avatar' />
                 </div>
@@ -156,16 +156,16 @@ const MainRateArea = ({rateReplyProp}) => {
                     i wanted to share how i like eating my burgers
                     </p>
                 </div>
-                <div className='mainRateArea__commentLikes'>
+                <div className='mainRateArea__rateLikes'>
                     <p >19 hrs ago</p>
                     {
                         rateReplyProp && (
-                            <div className='reply-icon'>
+                            <div className='reply-icon-rate'>
                                 <img src={ReplyIcon} />
                             </div>
                         )
                     }
-                    <div className='heart-container'>
+                    <div className='heart-container-rate'>
                         <img src={HeartIcon} />
                    </div>
                    <p>19 Likes</p>

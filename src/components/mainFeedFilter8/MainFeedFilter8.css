@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     grid-gap:1%;
-    margin-top: 1%;
+    margin-top: 2%;
 }
 .activefilter82{
     border-bottom: 3.5px solid #3f8f22 !important;
@@ -18,8 +18,10 @@
 }
 
 @media only screen and (max-width:424px){
-    .mainFeedFilter8 > h3{
-        font-size: 16px !important;
+    .mainFeedFilter8__feed,
+    .mainFeedfilter8__recipe,
+    .mainFeedFilter8__foodservice{
+        font-size: 14px !important;
     }
 }
 @media only screen and (max-width:361px){

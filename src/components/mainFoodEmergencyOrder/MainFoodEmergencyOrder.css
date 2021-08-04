@@ -128,3 +128,9 @@
 .mainFoodEmergencyOrder__pick{
     padding-left: 5rem;
 }
+
+@media only screen and (max-width:350px){
+    .mainFoodEmergencyOrder__header > h5{
+        font-size: 16px;
+    }
+}
