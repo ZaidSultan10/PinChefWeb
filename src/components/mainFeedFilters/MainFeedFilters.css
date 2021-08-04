@@ -53,6 +53,13 @@
         font-size: 12px !important;
     }
 }
+@media only screen and (max-width:300px){
+    .mainFeedFilters > .feedss,
+    .mainFeedFilters>.recipess,
+    .mainFeedFilters>.masterclass{
+        font-size: 14px !important;
+    }
+}
 @media only screen 
 and (min-width: 768px) 
   and (max-height: 1024px) 

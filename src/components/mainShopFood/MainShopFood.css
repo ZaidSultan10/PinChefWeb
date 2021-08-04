@@ -90,3 +90,38 @@
 .bottom__line{
     margin-bottom: 3%;
 }
+
+@media only screen and (max-width:510px){
+    .location{
+        margin-top: 3%;
+    }
+}
+@media only screen and (max-width:350px){
+    .recipe__data > h4{
+        font-size: 14px;
+    }
+    .likeIcon{
+        width: 20px;
+        height: 20px;
+    }
+    .commentIcon{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media only screen and (max-width:300px){
+    .recipe__data > h4{
+        font-size: 12px;
+    }
+    .likeIcon{
+        width: 16px;
+        height: 16px;
+    }
+    .commentIcon{
+        width: 16px;
+        height: 16px;
+    }
+    .like__post > p,.comment__post>p{
+        font-size: 10px;
+    }
+}

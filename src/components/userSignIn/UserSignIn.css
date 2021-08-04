@@ -4,9 +4,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  height: 80%;
+  height: 100%;
   width: 30%;
+  margin: 0 auto;
   border-radius: 60px;
   display: grid;
   flex-direction: column;
@@ -423,7 +423,47 @@ margin-top: 3%;
   .userSignin {
      width: 100%;
   }
+  .chef__button{
+    margin-right: 3%;
+    margin-top: 2%;
+  }
+  .chef__button > button{
+    font-size: 10px !important;
+    margin-left: 2%;
+  }
+  .right__icon {
+    font-size: 18px !important;
+    margin-top: -0.5px;
+  }
+  
+  .continue__button > button{
+    margin-top: 3%;
+  }
+  .sign-in-up h2{
+    font-size: 12px;
+  }
+  .user__email {
+    width: 30px !important;
+    height: 30px !important;
+    margin-top: 1%;
+  }
+  .email-div{
+    font-size: 12px;
+  }
+  .email-div input {
+    background-size: 18px;
+  }
+  .password-div{
+    font-size: 12px;
+  }
+  .password-div input {
+    background-size: 12px;
+  }
+  .terms__conditions > p{
+    font-size: 12px;
+  }
 }
+
 @media only screen 
   and (min-width: 768px) 
   and (max-height: 1024px) 

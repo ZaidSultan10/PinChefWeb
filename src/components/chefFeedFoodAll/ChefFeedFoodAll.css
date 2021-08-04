@@ -43,6 +43,7 @@
 @media screen and (max-width:1000px){
     .chefFoodFeedAll__container{
         display: grid;
+        padding-top: 55px;
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
     .chefFoodFeedAll__left,.chefFoodFeedAll__right{
@@ -54,6 +55,7 @@
         width: 100%;
         height: 100%;
         margin: 0 auto;
+        padding-top: 12%;
     }
     .chefFoodFeedAll__container{
         display: grid;

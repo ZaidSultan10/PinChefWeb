@@ -39,6 +39,7 @@
     .chefHomeFeedAll__container{
         display: grid;
         grid-template-columns: repeat(1,minmax(0,1fr));
+        padding-top: 40px;
     }
     .chefHomeFeedAll__left,.chefHomeFeedAll__right{
         display: none;
@@ -52,6 +53,7 @@
     }
     .chefHomeFeedAll__container{
         display: grid;
+        padding-top: 12%;
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
 }

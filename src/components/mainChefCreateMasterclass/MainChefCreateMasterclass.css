@@ -194,3 +194,21 @@
     font-weight: 700;
     border-radius: 16px 0px 16px 16px;
 }
+
+@media only screen and (max-width:604px){
+    .mainChefCreateMasterclass__top{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .mainChefCreateMasterclass__topRight{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .input__pre >label,.input__live>label
+    ,.input__select>label,.input__request>label{
+        font-size: 12px;
+    }
+}

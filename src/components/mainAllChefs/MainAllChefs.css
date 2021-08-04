@@ -85,5 +85,44 @@
     margin-bottom: 2%;
 }
 
+@media only screen and (max-width:500px){
+    .mainAllChef__left{
+        margin-left: 3px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .mainAllchef__name > h3{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .mainAllchef__name > h3{
+        font-size: 13px;
+    }
+    .mainAllchef__follower>h4{
+        font-size: 12px;
+    }
+    .follow{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:285px){
+    .mainAllchef__name > h3{
+        font-size: 11px;
+    }
+    .mainAllchef__follower>h4{
+        font-size: 11px;
+    }
+    .mainAllchef__follower>img{
+        width: 16px;
+        height: 16px;
+    }
+    .follow{
+        font-size: 11px;
+    }
+}
+
 
 

@@ -238,3 +238,44 @@
     color: #b76352;
     margin-top: 2%;
 }
+
+@media only screen and (max-width:500px){
+    .mainChefSubscription__basicPerk>img,
+    .mainChefSubscription__vipPerk>img{
+        width: 20px;
+        height: 20px;
+    }
+    .mainChefSubscription__basicPerk >h5,
+    .mainChefSubscription__vipPerk>h5{
+        font-size: 14px;
+    }
+    .mainChefSubscription__basicMonthly>h5,
+    .mainChefSubscription__vipMonthly>h5,
+    .mainChefSubscription__vipYearly>h5,
+    .mainChefSubscription__basicYearly>h5{
+        margin-top: 7%;
+        font-size: 12px;
+        margin-left: 3%;
+    }
+}
+
+@media only screen and (max-width:350px){
+    
+    .mainChefSubscription__basicPerk>img,
+    .mainChefSubscription__vipPerk>img{
+        width: 18px;
+        height: 18px;
+    }
+    .mainChefSubscription__basicPerk >h5,
+    .mainChefSubscription__vipPerk>h5{
+        font-size: 12px;
+    }
+    .mainChefSubscription__basicMonthly>h5,
+    .mainChefSubscription__vipMonthly>h5,
+    .mainChefSubscription__vipYearly>h5,
+    .mainChefSubscription__basicYearly>h5{
+        margin-top: 10%;
+        font-size: 12px;
+        margin-left: 5%;
+    }
+}

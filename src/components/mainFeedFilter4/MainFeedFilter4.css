@@ -17,14 +17,45 @@
     justify-content: center;
 }
 
-@media only screen and (max-width:424px){
-    .mainFeedFilter4 > h3{
-        font-size: 16px !important;
+@media only screen and (max-width:520px){
+    .mainFeedFilter4{
+        display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1.5fr;
+    }
+    .mainFeedFilter4__feed,
+    .mainFeedFilter4__recipe,
+    .mainFeedFilter4__foodservice,
+    .mainFeedFilter4__purchases{
+        font-size: 14px !important;
     }
 }
-@media only screen and (max-width:361px){
-    .mainFeedFilter4 > h3{
+
+@media only screen and (max-width:424px){
+    .mainFeedFilter4__feed,
+    .mainFeedFilter4__recipe,
+    .mainFeedFilter4__foodservice,
+    .mainFeedFilter4__purchases{
+        font-size: 14px !important;
+    }
+}
+@media only screen and (max-width:390px){
+    .mainFeedFilter4__feed,
+    .mainFeedFilter4__recipe,
+    .mainFeedFilter4__foodservice,
+    .mainFeedFilter4__purchases{
         font-size: 12px !important;
+    }
+}
+@media only screen and (max-width:320px){
+    .mainFeedFilter4{
+        display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    }
+    .mainFeedFilter4__feed,
+    .mainFeedFilter4__recipe,
+    .mainFeedFilter4__foodservice,
+    .mainFeedFilter4__purchases{
+        font-size: 11px !important;
     }
 }
 @media only screen 

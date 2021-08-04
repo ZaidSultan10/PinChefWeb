@@ -98,3 +98,117 @@
     color: #707070;
     font-weight: 700;
 }
+
+@media only screen and (max-width:480px){
+    .mainMyPurchases__name{
+        margin-left: 3%;
+    }
+    .mainMyPurchases__name >h4{
+        font-size: 14px;
+    }
+    .mainMyPurchases__showDetailsLeft >h5{
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width:440px){
+    .mainMyPurchases__name{
+        margin-left: 3%;
+    }
+    .mainMyPurchases__name >h4{
+        font-size: 14px !important;
+    }
+    .mainMyPurchases__showDetailsLeft >h5{
+        width: 40%;
+    }
+    .mainMyPurchases__headerRight>h4{
+        font-size: 14px;
+    }
+    .rate-icon{
+        margin-left: 3%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .mainMyPurchases__name{
+        margin-left: 5%;
+    }
+    .mainMyPurchases__name >h4{
+        font-size: 13px !important;
+    }
+    .mainMyPurchases__name >p{
+        font-size: 10px;
+    }
+    .mainMyPurchases__showDetailsLeft >h5{
+        width: 44%;
+    }
+    .mainMyPurchases__headerRight>h4{
+        font-size: 12px;
+    }
+    .rate-icon{
+        margin-left: 3%;
+        width: 40px;
+        height: 40px;
+    }
+    .mainMyPurchases__total >h4{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:345px){
+    
+    .mainMyPurchases__name >h4{
+        font-size: 12px !important;
+    }
+    .mainMyPurchases__name >p{
+        font-size: 9px;
+    }
+    .mainMyPurchases__showDetailsLeft >h5{
+        width: 50%;
+    }
+    .mainMyPurchases__showDetailsLeft >p{
+        font-size: 10px;
+    }
+    .mainMyPurchases__headerRight>h4{
+        font-size: 11px;
+    }
+    .rate-icon{
+        margin-left: 15%;
+        width: 38px;
+        height: 38px;
+    }
+    .mainMyPurchases__total >h4{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:285px){
+    
+    .mainMyPurchases__name {
+        width: 100%;
+    }
+    .mainMyPurchases__name >h4{
+        font-size: 10px !important;
+    }
+    .mainMyPurchases__name >p{
+        font-size: 9px;
+    }
+    .mainMyPurchases__showDetailsLeft >h5{
+        width: 50%;
+    }
+    .mainMyPurchases__showDetailsLeft >h5{
+        font-size: 12px;
+    }
+    .mainMyPurchases__showDetailsLeft >p{
+        font-size: 10px;
+    }
+    .mainMyPurchases__headerRight>h4{
+        font-size: 9px;
+    }
+    .rate-icon{
+        margin-left: 10%;
+        width: 35px;
+        height: 35px;
+    }
+    .mainMyPurchases__total >h4{
+        font-size: 12px;
+    }
+}

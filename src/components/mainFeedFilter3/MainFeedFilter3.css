@@ -1,13 +1,16 @@
 .mainFeedFilters3{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
 }
 .mainFeedFilters3__container{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 .mainFeedFilters3__image{
     margin-right: 2%;
+
+    display: flex;
+    justify-content: flex-end;
 }
 .mainFeedFilters3__image>.cart{
     width: 30px;
@@ -16,7 +19,7 @@
 }
 .mainFeedFilters3__image>span{
     position: absolute;
-    margin-left: -1.15rem !important;
+    margin-right: 8px;
     margin-top: 5px;
     color: white;
     font-weight: 700;
@@ -37,10 +40,18 @@
     .mainFeedFilters3 > h3{
         font-size: 16px !important;
     }
+    .mainFeedFilters3{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+    }
 }
 @media only screen and (max-width:361px){
     .mainFeedFilters3 > h3{
         font-size: 12px !important;
+    }
+    .mainFeedFilters3{
+        display: grid;
+        grid-template-columns: 4fr 2fr;
     }
 }
 @media only screen 
