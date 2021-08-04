@@ -10,7 +10,8 @@ const MainPaymentPolicy = () => {
             {paymentDatas.map((paymentData) => (
                 <div className='mainPaymentPolicy__container'>
                     <div className='mainPaymentPolicy__heading'>
-                        <ChevronLeft />
+                        <div className='chev-cotainer'><ChevronLeft className='ppchev' /></div>
+                        
                         <h5>{paymentData.heading}</h5>
                     </div>
                     <div className='mainPaymentPolicy__description'>

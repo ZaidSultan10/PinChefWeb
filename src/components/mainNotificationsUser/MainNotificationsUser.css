@@ -28,3 +28,54 @@
     height: 20px;
     float: right;
 }
+
+@media only screen and (max-width:412px){
+    .mainNotificationsUser__userLeft>h3{
+        font-size: 16px;
+    }
+    .mainNotificationsUser__userRight>h3{
+        font-size: 16px;
+
+    }
+    .mainNotificationsUser__userRight>img{
+        width: 18px;
+        height: 18px;
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .mainNotificationsUser__userLeft>h3{
+        font-size: 14px;
+    }
+    .mainNotificationsUser__userLeft>p{
+        font-size: 10px;
+    }
+    .mainNotificationsUser__userRight>h3{
+        font-size: 14px;
+
+    }
+    .mainNotificationsUser__userRight>img{
+        width: 17px;
+        height: 17px;
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width:300px){
+    .mainNotificationsUser__userLeft>h3{
+        font-size: 12px;
+    }
+    .mainNotificationsUser__userLeft.p{
+        font-size: 9px;
+    }
+    .mainNotificationsUser__userRight>h3{
+        font-size: 12px;
+
+    }
+    .mainNotificationsUser__userRight>img{
+        width: 16px;
+        height: 16px;
+        margin-top: 2%;
+    }
+}
