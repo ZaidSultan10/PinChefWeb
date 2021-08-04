@@ -71,3 +71,14 @@
 .mainRateReviewForm__button > button:hover{
     background-color: rgb(165, 164, 164);
 }
+
+@media only screen and (max-width:604px){
+    .mainRateReviewForm__container{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:350px){
+    .mainRateReviewForm__container{
+        width: 100%;
+    }
+}

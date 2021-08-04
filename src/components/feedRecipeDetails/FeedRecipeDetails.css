@@ -27,6 +27,7 @@
     .feedRecipeDetails__container{
         display: grid;
         grid-template-columns: repeat(1,minmax(0,1fr));
+        padding-bottom: 80px;
     }
     .feedRecipeDetails__left,.feedRecipeDetails__right{
         display: none;
@@ -37,6 +38,7 @@
         width: 100%;
         height: 100%;
         margin: 0 auto;
+        padding-top: 90px;
     }
     .feedRecipeDetails__container{
         display: grid;

@@ -118,3 +118,17 @@
     bottom: 69px;
     width: 100%;
 }
+
+@media only screen and (max-width:441px){
+    .mainCommentArea__commentsArea{
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+    }
+    
+    .mainCommentArea__reply > p{
+        font-size: 10px !important;
+    }
+    .mainCommentArea__commentLikes >p{
+        font-size: 8px !important;
+    }
+}
