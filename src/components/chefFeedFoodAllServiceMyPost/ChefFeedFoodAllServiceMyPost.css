@@ -42,6 +42,7 @@
 @media screen and (max-width:1000px){
     .chefFeedFoodAllServiceMyPost__container{
         display: grid;
+        padding-top: 40px;
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
     .chefFeedFoodAllServiceMyPost__left,.chefFeedFoodAllServiceMyPost__right{
@@ -53,6 +54,7 @@
         width: 100%;
         height: 100%;
         margin: 0 auto;
+        padding-top: 73px;
     }
     .chefFeedFoodAllServiceMyPost__container{
         display: grid;

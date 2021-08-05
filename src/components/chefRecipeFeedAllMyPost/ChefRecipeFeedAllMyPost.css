@@ -38,6 +38,7 @@
 @media screen and (max-width:1000px){
     .chefRecipeFeedAllMyPost__container{
         display: grid;
+        padding-top: 40px;
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
     .chefRecipeFeedAllMyPost__left,.chefRecipeFeedAllMyPost__right{
@@ -49,6 +50,7 @@
         width: 100%;
         height: 100%;
         margin: 0 auto;
+        padding-top: 88px;
     }
     .chefRecipeFeedAllMyPost__container{
         display: grid;

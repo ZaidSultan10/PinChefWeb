@@ -18,14 +18,26 @@
     justify-content: center;
 }
 
-@media only screen and (max-width:424px){
-    .mainFeedFilter6 > h3{
-        font-size: 16px !important;
+@media only screen and (max-width:450px){
+    .mainFeedFilter6__feed,
+    .mainFeedFilter6__food,
+    .mainFeedFilter6__recipe,
+    .mainFeedFilter6__service,
+    .mainFeedFilter6__master{
+        font-size: 14px !important;
     }
 }
 @media only screen and (max-width:361px){
-    .mainFeedFilter6 > h3{
+    .mainFeedFilter6__feed,
+    .mainFeedFilter6__food,
+    .mainFeedFilter6__recipe,
+    .mainFeedFilter6__service,
+    .mainFeedFilter6__master{
         font-size: 12px !important;
+    }
+    .mainFeedFilter6{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr 5fr;
     }
 }
 @media only screen 
