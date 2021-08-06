@@ -1,9 +1,7 @@
 import React from "react";
 import "./VipChefHome.css";
 import FoodImage from "../../assets/chef-images/chef-image1.jpg";
-import LocationIcon from '../../assets/svg/Location.svg'
-
-
+import LocationIcon from "../../assets/svg/Location.svg";
 
 const VipChefHome = () => {
   return (
@@ -14,13 +12,13 @@ const VipChefHome = () => {
             <p className="text">Jhon Doe</p>
           </div>
           <div className="vipChefHome__container__location">
-            <img src={LocationIcon} className="icon" alt='star' />
+            <img src={LocationIcon} className="icon" alt="star" />
             <p className="location__city">Miami,</p>
             <p className="location__country">FL</p>
           </div>
         </div>
         <div className="vipChefHome__profile">
-          <img src={FoodImage} alt="Foods Img" alt='star' />
+          <img src={FoodImage} alt="Foods Img" />
         </div>
         <div className="vipChefHome__quotes">
           <p className="quote">

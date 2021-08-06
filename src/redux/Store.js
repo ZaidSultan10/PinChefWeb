@@ -7,5 +7,8 @@ const middlewares = [];
 if (process.env.NODE_ENV === "development") {
   middlewares.push(logger);
 }
-const Store = createStore(rootReducer, composeWithDevTools());
+const Store = createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(logger))
+);
 export default Store;

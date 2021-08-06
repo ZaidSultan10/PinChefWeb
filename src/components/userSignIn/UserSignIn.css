@@ -11,8 +11,9 @@
   display: grid;
   flex-direction: column;
 }
-.active2{
+.active2 {
   border-bottom: 2px solid #3f8f22;
+  cursor: pointer;
 }
 
 .flex {
@@ -24,7 +25,7 @@
   flex-direction: column;
 }
 
-.chef__button > button{
+.chef__button > button {
   background-color: #3f8f22 !important;
   margin-top: 5%;
   margin-right: 5%;
@@ -35,7 +36,7 @@
   font-size: 14px !important;
   font-weight: 700 !important;
 }
-.right__icon{
+.right__icon {
   color: #ffcf54 !important;
   margin-top: 1px;
 }
@@ -44,12 +45,13 @@
   padding: 2%;
   margin-left: 7%;
 }
-.sign-in-up>h2{
-font-size: 14px;
-margin-top: 3%;
+.sign-in-up > h2 {
+  font-size: 14px;
+  margin-top: 3%;
 }
-.sign-in-h2{
+.sign-in-h2 {
   margin-left: 3%;
+  cursor: pointer;
 }
 .i-am-a-chef-div {
   width: 100%;
@@ -69,14 +71,13 @@ margin-top: 3%;
   margin-top: 2em;
   cursor: pointer;
 }
-.user__email{
+.user__email {
   width: 40px !important;
   height: 40px !important;
   margin-right: 3%;
 }
 
 .form {
-
   margin-top: 0;
 
   margin-top: 1em;
@@ -85,7 +86,6 @@ margin-top: 3%;
 }
 
 .email-div > label > strong {
-  
   font-size: 16px;
 }
 
@@ -98,7 +98,7 @@ margin-top: 3%;
   outline: none;
   font-size: 1em;
   margin-right: 1px;
-  box-shadow:  0 2px 6px 0 gray;
+  box-shadow: 0 2px 6px 0 gray;
   border: 1px solid silver;
 }
 
@@ -112,7 +112,6 @@ margin-top: 3%;
   margin-left: 2.5em;
 }
 .email-div input {
-
   background-image: url("../../assets/svg/at-sign.png");
 
   background-image: url("../../assets//svg//Email-icon.svg");
@@ -160,35 +159,35 @@ margin-top: 3%;
   margin-top: 0.55rem !important;
 }
 
-.signIn__confirm{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
+.signIn__confirm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.keep__signed{
+.keep__signed {
   display: flex;
   align-items: center;
 }
-.keep__signed > p{
+.keep__signed > p {
   margin-left: 3px;
 }
-.signin__options{
+.signin__options {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-top: 3%;
 }
-.terms__conditions{
+.terms__conditions {
   text-align: center;
   margin-top: 3%;
   margin-bottom: 2%;
 }
-.terms__conditions > p > a{
+.terms__conditions > p > a {
   text-decoration: none;
   font-weight: bold;
   color: black;
 }
-.continue__button > button{
+.continue__button > button {
   background-color: #b62414 !important;
   color: white !important;
   font-weight: 700 !important;
@@ -265,7 +264,7 @@ margin-top: 3%;
   color: #ffcf54;
   cursor: pointer;
 }
-.forgot-password > p{
+.forgot-password > p {
   font-size: 14px !important;
   font-weight: 700;
 }
@@ -286,59 +285,58 @@ margin-top: 3%;
   text-decoration: underline;
   cursor: pointer;
 }
-.forgot__password{
+.forgot__password {
   color: #ffcf54 !important;
   font-weight: 700 !important;
 }
 
-
-@media only screen and (max-width:1030px){
+@media only screen and (max-width: 1030px) {
   .userSignin {
-     width: 36%;
+    width: 36%;
   }
 }
-@media only screen and (max-width:950px){
+@media only screen and (max-width: 950px) {
   .userSignin {
-     width: 39%;
+    width: 39%;
   }
 }
-@media only screen and (max-width:875px){
+@media only screen and (max-width: 875px) {
   .userSignin {
-     width: 42%;
+    width: 42%;
   }
 }
-@media only screen and (max-width:780px){
+@media only screen and (max-width: 780px) {
   .userSignin {
-     width: 45%;
+    width: 45%;
   }
 }
-@media only screen and (max-width:720px){
+@media only screen and (max-width: 720px) {
   .userSignin {
-     width: 49%;
+    width: 49%;
   }
 }
-@media only screen and (max-width:660px){
+@media only screen and (max-width: 660px) {
   .userSignin {
-     width: 53%;
+    width: 53%;
   }
 }
-@media only screen and (max-width:620px){
+@media only screen and (max-width: 620px) {
   .userSignin {
-     width: 60%;
+    width: 60%;
   }
 }
-@media only screen and (max-width:575px){
+@media only screen and (max-width: 575px) {
   .userSignin {
-     width: 63%;
+    width: 63%;
   }
-  .chef__button > button{
+  .chef__button > button {
     font-size: 12px !important;
   }
   .right__icon {
     font-size: 20px !important;
     margin-top: -0.5px;
   }
-  .sign-in-up h2{
+  .sign-in-up h2 {
     font-size: 16px;
   }
   .user__email {
@@ -346,33 +344,33 @@ margin-top: 3%;
     height: 36px !important;
     margin-top: 1%;
   }
-  .email-div{
+  .email-div {
     font-size: 14px;
   }
   .email-div input {
     background-size: 22px;
   }
-  .password-div{
+  .password-div {
     font-size: 14px;
   }
   .password-div input {
     background-size: 16px;
   }
 }
-@media only screen and (max-width:541px){
+@media only screen and (max-width: 541px) {
   .userSignin {
-     width: 70%;
+    width: 70%;
   }
 }
-@media only screen and (max-width:465px){
+@media only screen and (max-width: 465px) {
   .userSignin {
-     width: 78%;
+    width: 78%;
   }
-  .chef__button{
+  .chef__button {
     margin-right: 2%;
     margin-top: 1%;
   }
-  .chef__button > button{
+  .chef__button > button {
     font-size: 11px !important;
     margin-left: 2%;
   }
@@ -380,11 +378,11 @@ margin-top: 3%;
     font-size: 18px !important;
     margin-top: -0.5px;
   }
-  
-  .continue__button > button{
+
+  .continue__button > button {
     margin-top: 3%;
   }
-  .sign-in-up h2{
+  .sign-in-up h2 {
     font-size: 14px;
   }
   .user__email {
@@ -392,42 +390,42 @@ margin-top: 3%;
     height: 33px !important;
     margin-top: 1%;
   }
-  .email-div{
+  .email-div {
     font-size: 13px;
   }
   .email-div input {
     background-size: 20px;
   }
-  .password-div{
+  .password-div {
     font-size: 13px;
   }
   .password-div input {
     background-size: 14px;
   }
-  .terms__conditions > p{
+  .terms__conditions > p {
     font-size: 12px;
   }
 }
 
-@media only screen and (max-width:415px){
+@media only screen and (max-width: 415px) {
   .userSignin {
-     width: 85%;
+    width: 85%;
   }
 }
-@media only screen and (max-width:376px){
+@media only screen and (max-width: 376px) {
   .userSignin {
-     width: 90%;
+    width: 90%;
   }
 }
-@media only screen and (max-width:322px){
+@media only screen and (max-width: 322px) {
   .userSignin {
-     width: 100%;
+    width: 100%;
   }
-  .chef__button{
+  .chef__button {
     margin-right: 3%;
     margin-top: 2%;
   }
-  .chef__button > button{
+  .chef__button > button {
     font-size: 10px !important;
     margin-left: 2%;
   }
@@ -435,11 +433,11 @@ margin-top: 3%;
     font-size: 18px !important;
     margin-top: -0.5px;
   }
-  
-  .continue__button > button{
+
+  .continue__button > button {
     margin-top: 3%;
   }
-  .sign-in-up h2{
+  .sign-in-up h2 {
     font-size: 12px;
   }
   .user__email {
@@ -447,148 +445,130 @@ margin-top: 3%;
     height: 30px !important;
     margin-top: 1%;
   }
-  .email-div{
+  .email-div {
     font-size: 12px;
   }
   .email-div input {
     background-size: 18px;
   }
-  .password-div{
+  .password-div {
     font-size: 12px;
   }
   .password-div input {
     background-size: 12px;
   }
-  .terms__conditions > p{
+  .terms__conditions > p {
     font-size: 12px;
   }
 }
 
-@media only screen 
-  and (min-width: 768px) 
-  and (max-height: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1.5)
-  and (orientation:portrait){
-    .userSignin {
-      width: 70%;
-   }
-   .chef__button > button{
+@media only screen and (min-width: 768px) and (max-height: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+  .userSignin {
+    width: 70%;
+  }
+  .chef__button > button {
     font-size: 20px !important;
   }
   .right__icon {
     font-size: 32px !important;
     margin-top: -0.5px;
   }
-  .sign-in-up h2{
+  .sign-in-up h2 {
     font-size: 28px;
     height: 40px;
   }
   .user__email {
     width: 57px !important;
     height: 57px !important;
-    
   }
-  .email-div{
+  .email-div {
     font-size: 24px;
   }
   .email-div input {
     background-size: 32px !important;
   }
-  .password-div{
+  .password-div {
     font-size: 24px;
   }
   .password-div input {
-    background-size: 32px !important; 
+    background-size: 32px !important;
   }
   .signin__icons > .facebook {
-     font-size: 68px !important;
+    font-size: 68px !important;
   }
-  .forgot__password > p{
+  .forgot__password > p {
     font-size: 20px !important;
   }
-  .continue__button > button{
-    font-size: 22px !important;
-    
-  }
-  .keep__signed >p{
+  .continue__button > button {
     font-size: 22px !important;
   }
-  .radio{
+  .keep__signed > p {
+    font-size: 22px !important;
+  }
+  .radio {
     font-size: 30px !important;
   }
-  .terms__conditions > p{
+  .terms__conditions > p {
     font-size: 18px;
   }
 }
 
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 1.5)
-  and (orientation:portrait){
-    .userSignin {
-      width: 70%;
-   }
-   .chef__button > button{
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+  .userSignin {
+    width: 70%;
+  }
+  .chef__button > button {
     font-size: 30px !important;
   }
   .right__icon {
     font-size: 42px !important;
     margin-top: -0.5px;
   }
-  .sign-in-up h2{
+  .sign-in-up h2 {
     font-size: 38px;
     height: 60px;
   }
   .user__email {
     width: 77px !important;
     height: 77px !important;
-    
   }
-  .email-div{
+  .email-div {
     font-size: 32px;
   }
   .email-div input {
     background-size: 36px !important;
     border-radius: 60px 0 0 60px;
   }
-  .password-div{
+  .password-div {
     font-size: 32px;
   }
   .password-div input {
-    background-size: 36px !important; 
+    background-size: 36px !important;
     border-radius: 0px 60px 60px 0px;
   }
   .signin__icons > .facebook {
-     font-size: 80px !important;
+    font-size: 80px !important;
   }
-  .forgot__password > p{
+  .forgot__password > p {
     font-size: 26px !important;
   }
-  .continue__button > button{
-    font-size: 26px !important;
-    
-  }
-  .keep__signed >p{
+  .continue__button > button {
     font-size: 26px !important;
   }
-  .radio{
+  .keep__signed > p {
+    font-size: 26px !important;
+  }
+  .radio {
     font-size: 36px !important;
   }
-  .terms__conditions > p{
+  .terms__conditions > p {
     font-size: 22px;
   }
-  .show{
+  .show {
     background-size: 40px !important;
   }
-  .hide{
+  .hide {
     background-size: 40px !important;
     margin-top: 2.3rem !important;
   }
 }
-
-
-
-
-
-
