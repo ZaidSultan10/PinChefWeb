@@ -70,12 +70,12 @@ const MainChefCookShip = ({shipProp}) => {
                 shipProp && (
                     <>
                         <div className='mainChefCookShip__paymentMethods'>
-                            <img src={VisaIcon} />
-                            <img src={MasterCardIcon} />
-                            <img src={AmericanExpressIcon} />
-                            <img src={DiscoverIcon} />
-                            <img src={JcbIcon} />
-                            <img src={UnionPayIcon} />
+                            <img src={VisaIcon} alt='star' />
+                            <img src={MasterCardIcon} alt='star' />
+                            <img src={AmericanExpressIcon} alt='star' />
+                            <img src={DiscoverIcon} alt='star' />
+                            <img src={JcbIcon} alt='star' />
+                            <img src={UnionPayIcon} alt='star' />
                         </div>
                         <div className='mainChefCookShip__cardInfoHeading'>
                             <h5>Card Information</h5>
@@ -89,11 +89,11 @@ const MainChefCookShip = ({shipProp}) => {
                             </div>
                         </div>
                         <div className='mainChefCookShip__warning1'>
-                            <img src={InfoIcon} />
+                            <img src={InfoIcon} alt='star' />
                             <p>All Card payments are processed through Stripe</p>
                         </div>
                         <div className='mainChefCookShip__warning2'>
-                            <img src={InfoIcon} />
+                            <img src={InfoIcon} alt='star' />
                             <p>By paying you accept the <a>payment policy</a></p>
                         </div>
                         <div className='mainChefCookShip__payButton'>
@@ -101,8 +101,8 @@ const MainChefCookShip = ({shipProp}) => {
                             <p>OR PAY WITH</p>
                         </div>
                         <div className='mainChefCookShip__option2'>
-                            <img src={PaypalIcon} />
-                            <img src={ApplePayICon} />
+                            <img src={PaypalIcon} alt='star' />
+                            <img src={ApplePayICon} alt='star' />
                         </div>
                     </>
                 )

@@ -10,7 +10,7 @@ const MainNotificationsUser = () => {
     return (
         <div className='mainNotificationsUser'>
             <div className='mainNotificationsUser__header'>
-                <img src={LeftIcon} />
+                <img src={LeftIcon} alt='star' />
                 <h3>NOTIFICATIONS</h3>
             </div>
             {
@@ -25,12 +25,12 @@ const MainNotificationsUser = () => {
                             </div>
                             <div className='mainNotificationsUser__userRight'>
                                 <h3>New Food Order</h3>
-                                <img src={DownIcon} />
+                                <img src={DownIcon} alt='star' />
                             </div>
                         </div>
                     </div>
                     <div className='mainNotificationsUser__bottom'>
-                        <img src={HorizontalLine} />
+                        <img src={HorizontalLine} alt='star' />
                     </div>
                     </>
                 ))

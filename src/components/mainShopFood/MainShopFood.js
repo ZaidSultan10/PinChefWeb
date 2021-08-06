@@ -42,7 +42,7 @@ const MainShopFood = ({cartProp,mileProp}) => {
                 <img src={PostImage2} className='postimage2' alt='postImage' />
                 {
                     cartProp && (
-                        <img src={AddToCartIcon} className='addCart' />
+                        <img src={AddToCartIcon} className='addCart' alt='star' />
                     )
                 }
                 
@@ -62,13 +62,13 @@ const MainShopFood = ({cartProp,mileProp}) => {
                 </div>
                 <div className='mainShopfood__actions'>
                     <div className='like__post'>
-                        <img src={HeartIcon} className='likeIcon'/>
+                        <img src={HeartIcon} className='likeIcon' alt='star'/>
                         <p>236</p>
                     </div>
                     <div className='comment__post'>
                         <img onClick={() => {
                             history.push('/user/comments')
-                        }} src={CommentIcon} className='commentIcon' />
+                        }} src={CommentIcon} className='commentIcon' alt='star' />
                         <p>110</p>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ const MainShopFood = ({cartProp,mileProp}) => {
                 </p>
             </div>
             <div className='bottom__line'>
-                <img src={HorizontalLine} />
+                <img src={HorizontalLine} alt='star' />
             </div>
         </div>
     )

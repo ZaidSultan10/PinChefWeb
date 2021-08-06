@@ -12,9 +12,9 @@ const MainFaqChef = () => {
     return (
         <div className='mainFaqChef'>
             <div className='mainFaqChef__header'>
-                <img src={LeftIcon} />
+                <img src={LeftIcon} alt='star' />
                 <div className='mainFaqChef__headerCenter'>
-                    <img src={FaqIcon} />
+                    <img src={FaqIcon} alt='star' />
                     <h4>FAQ</h4>
                 </div>
             </div>

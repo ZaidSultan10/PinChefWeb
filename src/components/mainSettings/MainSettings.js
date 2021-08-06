@@ -74,7 +74,7 @@ const MainSettings = ({settingsProp}) => {
         className='notificationModal1'
         contentLabel="Notification Modal">
             <div className='notification-modal-options'>
-                <img src={NotificationIcon} />
+                <img src={NotificationIcon} alt='star' />
                 <h5>App Notifications</h5>
                 <label className='switch' >
                     <input type='checked' checked className='input1' />
@@ -92,36 +92,36 @@ const MainSettings = ({settingsProp}) => {
             <div className='help-modal-options'>
                 <div className='help-modal-faq'>
                     <div className='help-modal-faq1'>
-                        <img src={FaqIcon} />
+                        <img src={FaqIcon} alt='star' />
                         <h5>Faq</h5>
                         <ChevronRight className='help-chevron' />
                     </div>
                     
-                    <img className='help-line' src={HorizontalLine} />
+                    <img className='help-line' src={HorizontalLine} alt='star' />
                 </div>
                 <div className='help-modal-faq'>
                     <div className='help-modal-faq2'>
-                        <img src={TermsIcon} />
+                        <img src={TermsIcon} alt='star' />
                         <h5>Terms & Privacy Policy</h5>
                         <ChevronRight className='help-chevron' />
                     </div>
                     <div className='help-line'>
-                        <img src={HorizontalLine} />
+                        <img src={HorizontalLine} alt='star' />
                     </div>
                 </div>
                 <div className='help-modal-faq'>
                     <div className='help-modal-faq2'>
-                        <img src={ContactIcon} />
+                        <img src={ContactIcon}alt='star' />
                         <h5>Contact Us</h5>
                         <ChevronRight className='help-chevron' />
                     </div>
                     <div className='help-line'>
-                        <img src={HorizontalLine} />
+                        <img src={HorizontalLine} alt='star' />
                     </div>
                 </div>
                 <div className='help-modal-faq'>
                     <div className='help-modal-faq2'>
-                        <img src={AboutIcon} />
+                        <img src={AboutIcon} alt='star' />
                         <h5>About</h5>
                         <ChevronRight className='help-chevron' />
                     </div>
@@ -137,23 +137,23 @@ const MainSettings = ({settingsProp}) => {
             <div className='language-modal-options'>
                 <div className='language-modal-lang'>
                     <h4>English</h4>
-                    <img src={HorizontalLine} />
+                    <img src={HorizontalLine} alt='star' />
                 </div>
                 <div className='language-modal-lang1'>
                     <h4>Spanish</h4>
-                    <img src={HorizontalLine} />
+                    <img src={HorizontalLine} alt='star' />
                 </div>
                 <div className='language-modal-lang1'>
                     <h4>French</h4>
-                    <img src={HorizontalLine} />
+                    <img src={HorizontalLine} alt='star' />
                 </div>
                 <div className='language-modal-lang1'>
                     <h4>Turkish</h4>
-                    <img src={HorizontalLine} />
+                    <img src={HorizontalLine} alt='star' />
                 </div>
                 <div className='language-modal-lang1'>
                     <h4>Russian</h4>
-                    <img src={HorizontalLine} />
+                    <img src={HorizontalLine} alt='star' />
                 </div>
                 <div className='language-modal-lang1'>
                     <h4>Arabic</h4>
@@ -170,7 +170,7 @@ const MainSettings = ({settingsProp}) => {
             <div className='theme-modal-options'>
                 <div className='theme-option1'>
                     <div className='theme-light'>
-                        <img src={LightModeIcon} />
+                        <img src={LightModeIcon} alt='star' />
                         <h3>Light Mode</h3>
                         <label className='switch' >
                             <input type='checked' checked className='input1' />
@@ -178,12 +178,12 @@ const MainSettings = ({settingsProp}) => {
                         </label>
                     </div>
                     <div className='theme-line'>
-                        <img src={HorizontalLine} />
+                        <img src={HorizontalLine} alt='star' />
                     </div>
                 </div>
                 <div className='theme-option2'>
                     <div className='theme-dark'>
-                        <img src={DarkModeIcon} />
+                        <img src={DarkModeIcon} alt='star' />
                         <h3>Dark Mode</h3>
                         <label className='switch' >
                             <input type='checked' checked className='input1' />
@@ -191,12 +191,12 @@ const MainSettings = ({settingsProp}) => {
                         </label>
                     </div>
                     <div className='theme-line'>
-                        <img src={HorizontalLine} />
+                        <img src={HorizontalLine} alt='star' />
                     </div>
                 </div>
                 <div className='theme-option3'>
                     <div className='theme-system'>
-                        <img src={SystemModeIcon} />
+                        <img src={SystemModeIcon} alt='star' />
                         <h3>System Mode</h3>
                         <label className='switch' >
                             <input type='checked' checked className='input1' />
@@ -204,7 +204,7 @@ const MainSettings = ({settingsProp}) => {
                         </label>
                     </div>
                     <div className='theme-line'>
-                        <img src={HorizontalLine} />
+                        <img src={HorizontalLine} alt='star' />
                     </div>
                 </div>
             </div>
@@ -235,14 +235,14 @@ const MainSettings = ({settingsProp}) => {
                     </div>
                 </div>
                 <div onClick={openModal} className='mainSettings__notification'>
-                    <img src={NotificationsIcon} className='notify__icon' />
+                    <img src={NotificationsIcon} className='notify__icon' alt='star' />
                     <h4>NOTIFICATIONS</h4>
                 </div>
                 <div className='mainSettings__divider'>
-                    <img src={HorizontalLine} alt='line' />
+                    <img src={HorizontalLine} alt='line' alt='star' />
                 </div>
                 <div onClick={openModal1} className='mainSettings__notifications'>
-                    <img src={HelpIcon} className='help__icon' />
+                    <img src={HelpIcon} alt='star' className='help__icon' />
                     <h4>HELP</h4>
                 </div>
                 <div className='mainSettings__divider'>
@@ -254,7 +254,7 @@ const MainSettings = ({settingsProp}) => {
                             <div onClick={() => {
                                 history.push('/chef/payment/methods')
                             }} className='mainSettings__notifications'>
-                                <img  src={PaymentIcon} className='help__icon' />
+                                <img  src={PaymentIcon} alt='star' className='help__icon' />
                                 <h4>PAYMENT METHODS</h4>
                             </div>
                             <div className='mainSettings__divider'>
@@ -263,7 +263,7 @@ const MainSettings = ({settingsProp}) => {
                             <div onClick={() => {
                                 history.push('/chef/settings/subscription')
                             }} className='mainSettings__notifications'>
-                                <img src={CardMembershipIcon} className='help__icon' />
+                                <img src={CardMembershipIcon} className='help__icon' alt='star' />
                                 <h4>SUBSCRIPTIONS</h4>
                             </div>
                             <div className='mainSettings__divider'>
@@ -273,28 +273,28 @@ const MainSettings = ({settingsProp}) => {
                     )
                 }
                 <div className='mainSettings__notifications'>
-                    <img onClick={openModal2} src={LanguageIcon} className='language__icon' />
+                    <img onClick={openModal2} src={LanguageIcon} className='language__icon' alt='star' />
                     <h4>LANGUAGES</h4>
                 </div>
                 <div className='mainSettings__divider'>
                     <img src={HorizontalLine} alt='line' />
                 </div>
                 <div onClick={openModal3} className='mainSettings__notifications'>
-                    <img src={SettingsBrightnessIcon} className='theme__icon' />
+                    <img src={SettingsBrightnessIcon} className='theme__icon' alt='star' />
                     <h4>THEME</h4>
                 </div>
                 <div className='mainSettings__divider'>
                     <img src={HorizontalLine} alt='line' />
                 </div>
                 <div className='mainSettings__notifications'>
-                    <img src={ShareIcon} className='sharing__icon' />
+                    <img src={ShareIcon} className='sharing__icon' alt='star' />
                     <h4>SHARE WITH FRIENDS</h4>
                 </div>
                 <div className='mainSettings__divider'>
                     <img src={HorizontalLine} alt='line' />
                 </div>
                 <div className='mainSettings__notifications'>
-                    <img src={StarIcon} className='rate__icon' />
+                    <img src={StarIcon} className='rate__icon' alt='star' />
                     <h4>RATE US</h4>
                 </div>
                 <div className='mainSettings__divider'>

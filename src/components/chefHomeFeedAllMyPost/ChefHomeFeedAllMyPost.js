@@ -2,9 +2,7 @@ import React from 'react'
 import MainFeedFilter6 from '../mainFeedFilter6/MainFeedFilter6'
 import Ads from '../ads/Ads'
 import ChefAds from '../chefAds/ChefAds'
-import MainFeedFilter5 from '../mainFeedFilter5/MainFeedFilter5'
 import ChefMainFilters from '../chefMainFilters/ChefMainFilters'
-import SamplePage from '../../screens/samplePage/SamplePage'
 import MainFeed from '../mainFeed/MainFeed'
 import AddNewIcon from '../../assets/svg/Creat-new-button.svg'
 import GoogleAds from '../googleAds/GoogleAds'
@@ -32,7 +30,7 @@ const ChefHomeFeedAllMyPost = () => {
                     <div className='createHomeFeedAllMyPost__plus'>
                         <img  onClick={() => {
                             history.push('/chef/home/create-post')
-                        }} src={AddNewIcon} />
+                        }} src={AddNewIcon} alt='image' />
                      </div>                
                 </div>
                 <div className='chefHomeFeedAllMyPost__right'>

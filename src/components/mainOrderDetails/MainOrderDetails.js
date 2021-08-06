@@ -13,7 +13,7 @@ const MainOrderDetails = () => {
             <div className='mainOrderDetails__top'>
                 <img onClick={() => {
                     history.push('/chef/order-history/my-purchases')
-                }} src={LeftIcon} />
+                }} src={LeftIcon} alt='star' />
                 <p>13 October,2020</p>
             </div>
             <div className='mainOrderDetails__user'>

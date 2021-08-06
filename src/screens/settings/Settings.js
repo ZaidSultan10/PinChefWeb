@@ -1,5 +1,4 @@
 import React from 'react'
-import FeedMyPurchases from '../../components/feedMyPurchases/FeedMyPurchases'
 import FeedSettings from '../../components/feedSettings/FeedSettings'
 import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'

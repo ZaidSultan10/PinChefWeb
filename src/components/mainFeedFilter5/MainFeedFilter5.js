@@ -1,31 +1,8 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
 import './MainFeedFilter5.css'
 import { NavLink } from 'react-router-dom'
 
 const MainFeedFilter5 = () => {
-
-    const history=useHistory()
-
-    const chefHomeFeedRoute = () => {
-        history.push('/chef/home/feed')
-    }
-
-    const chefHomeRecipeRoute =() => {
-        history.push('/chef/home/feed/recipe')
-    }
-
-    const chefHomeFoodRoute = () => {
-        history.push('/chef/home/feed/food')
-    }
-
-    const chefHomeServiceRoute = () => {
-        history.push('/chef/home/feed/service')
-    }
-
-    const chefHomeMasterclassRoute = () =>{
-        history.push('/chef/home/feed/masterclass')
-    }
 
     return (
         <div className='mainFeedFilter5'>

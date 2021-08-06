@@ -18,7 +18,7 @@ const MainFeedFilter3 = () => {
             <div onClick={() => {
                     history.push('/cart')
                 }} className='mainFeedFilters3__image'>
-                <img  src={CartIcon} className='cart' />
+                <img  src={CartIcon} className='cart' alt='star' />
                 <span>0</span>
             </div>
         </div>

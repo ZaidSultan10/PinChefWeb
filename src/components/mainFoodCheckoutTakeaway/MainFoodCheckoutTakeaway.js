@@ -83,7 +83,7 @@ const MainFoodCheckoutTakeaway = ({takeawayProp}) => {
                 </div>
             </div>
             {
-                heading != 'SHIPPING' && (
+                heading !== 'SHIPPING' && (
                     <>
                         <div className='mainFoodCheckoutTakeaway__cuisine'>
                             <h5>Delivery Day<span>*</span></h5>

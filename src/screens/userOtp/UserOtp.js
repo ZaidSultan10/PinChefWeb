@@ -30,7 +30,7 @@ const UserOtp = () => {
         contentLabel="Notification Modal">
             <div className='userotp-resend-container'>
                 <div className='userotp-resend-icon'>
-                    <img src={ResendIcon} />
+                    <img src={ResendIcon} alt='star' />
                 </div>
                 <div className='userotp-resend-text'>
                     <p>

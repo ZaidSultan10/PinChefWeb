@@ -78,7 +78,7 @@ const MainChefCreateService = () => {
                     <CloseIcon onClick={openModal1} className='post-close-icon' />
                 </div>
                 <div className='mainChefCreateService__addImage'>
-                    <img src={AddImageIcon} />
+                    <img src={AddImageIcon} alt='star' />
                 </div>
                 <div onClick={openModal} className='mainChefCreateService__cuisine'>
                     <h5>Service Type</h5>

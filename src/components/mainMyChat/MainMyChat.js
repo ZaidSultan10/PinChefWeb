@@ -37,26 +37,26 @@ const MainMyChat = () => {
                 <div className='chats-popup-container'>
                     <div className='chats-popup-top'>
                         <div className='chats-popup-pin'>
-                            <img src={PinIcon} />
+                            <img src={PinIcon} alt='star' />
                             <h4>Pin User</h4>
                         </div>
                         <div className='chats-popup-line'>
-                            <img src={HorizontalLine} />
+                            <img src={HorizontalLine} alt='star' />
                         </div>
                         
                     </div>
                     <div className='chats-popup-center'>
                         <div className='chats-popup-delete'>
-                            <img src={DeleteIcon} />
+                            <img src={DeleteIcon} alt='star' />
                             <h4>Delete</h4>
                         </div>
                         <div className='chats-popup-line'>
-                            <img src={HorizontalLine} />
+                            <img src={HorizontalLine} alt='star' />
                         </div>
                     </div>
                     <div className='chats-popup-bottom'>
                         <div className='chats-popup-clear'>
-                            <img src={ClearIcon} />
+                            <img src={ClearIcon} alt='star' />
                             <h4>Clear Messages</h4>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ const MainMyChat = () => {
             <div className='mainMyChat__header'>
                 <img onClick={() => {
                     history.push('/chef/profile')
-                }} src={LeftIcon} />
+                }} src={LeftIcon} alt='star' />
                 <h4>MY CHATS</h4>
             </div>
             <div className='mainMyChat__search'>
@@ -91,7 +91,7 @@ const MainMyChat = () => {
                     </div>
                 </div>
                 <div className='mainMyChat__line'>
-                    <img src={HorizontalLine} />
+                    <img src={HorizontalLine} alt='star' />
                 </div>
             </>
             ))}

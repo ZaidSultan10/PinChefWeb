@@ -32,11 +32,11 @@ const MainContactUs = () => {
 
                 <div className='message-container'>
                     <div className='message-top'>
-                        <h5></h5>
+                        <h5>.</h5>
                         <h4 onClick={closeModal}>x</h4>
                     </div>
                     <div className='message-center'>
-                        <img src={TickIcon} />
+                        <img src={TickIcon} alt='star' />
                     </div>
                     <div className='message-bottom'>
                         <h5>Message was successfully sent.
@@ -48,9 +48,9 @@ const MainContactUs = () => {
         </Modal>
         <div className='mainContactUs'>
             <div className='mainContactUs__header'>
-                <img src={LeftIcon} />
+                <img src={LeftIcon} alt='star' />
                 <div className='mainContactUs__contact'>
-                    <img src={ContactUsIcon} />
+                    <img src={ContactUsIcon} alt='star' />
                     <h5>CONTACT US</h5>
                 </div>
             </div>

@@ -2,7 +2,6 @@ import React from 'react'
 import ProfileAvatar from '../../assets/svg/Profile-image.svg'
 import { Button } from '@material-ui/core'
 import InfoIcon from '../../assets/svg/info-icon-red.svg'
-import CloseIcon from '@material-ui/icons/Close';
 import { useHistory } from 'react-router-dom'
 import LEftICon from '../../assets/svg/left-green-arrow.svg'
 import './MainChefProfileAreaDetails.css'
@@ -17,12 +16,12 @@ const MainChefProfileAreaDetails = () => {
             <div className='mainChefProfileAreaDetails__heading'>
                 <img onClick={() =>{
                     history.push('/chef/settings/profile')
-                }} src={LEftICon} />
+                }} src={LEftICon} alt='star' />
                 <h5>Chef Profile Details</h5>
                     
             </div>
             <div className='mainChefProfileAreaDetails__top'>
-                <img src={ProfileAvatar} />
+                <img src={ProfileAvatar} alt='star' />
                 <div className ='mainChefProfileAreaDetails__topLeft'>
                     <h5>Name and Last Name<span>*</span></h5>
                     <input placeholder='Enter name and Last name' />
@@ -157,7 +156,7 @@ const MainChefProfileAreaDetails = () => {
                 </div>
             </div>
             <div className='mainChefProfileAreaDetails__message'>
-                <img src={InfoIcon} />
+                <img src={InfoIcon} alt='star' />
                 <p>The message for acceptance</p>
             </div>
             <div className='mainChefProfileAreaDetails__payment'>

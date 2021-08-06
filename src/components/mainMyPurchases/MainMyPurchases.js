@@ -28,11 +28,11 @@ const MainMyPurchases = () => {
                     <div className='mainMyPurchases__detailIcon'>
                         <img onClick={() => {
                             history.push('/rate/area')
-                        }} src={RateIcon} className='rate-icon' />
+                        }} src={RateIcon} className='rate-icon' alt='star' />
                     </div>
                     <div className='mainMyPurchases__headerRight'>
                         <h4>Food and Services</h4>
-                        <img src={RepeatIcon} className='repeat-icon' />
+                        <img src={RepeatIcon} className='repeat-icon' alt='star' />
                     </div>
                 </div>
                 <div className='mainMyPurchases__center'>
@@ -52,7 +52,7 @@ const MainMyPurchases = () => {
                         history.push('/chef/order-details')
                     }} className='mainMyPurchases__showDetailsRight'>
                         <p>Details</p>
-                        <img src={DownIcon} className='down-icon' />
+                        <img src={DownIcon} className='down-icon' alt='star' />
                     </div>
                 </div>
             </div>

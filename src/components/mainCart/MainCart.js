@@ -76,12 +76,12 @@ const MainCart = () => {
                         <h5>Online Payment total: $9.99</h5>
                     </div>
                     <div className='mainChefPayments1__paymentMethods'>
-                        <img src={VisaIcon} />
-                        <img src={MasterCardIcon} />
-                        <img src={AmericanExpressIcon} />
-                        <img src={DiscoverIcon} />
-                        <img src={JcbIcon} />
-                        <img src={UnionPayIcon} />
+                        <img src={VisaIcon} alt='star' />
+                        <img src={MasterCardIcon} alt='star' />
+                        <img src={AmericanExpressIcon} alt='star' />
+                        <img src={DiscoverIcon} alt='star' />
+                        <img src={JcbIcon} alt='star' />
+                        <img src={UnionPayIcon} alt='star' />
                     </div>
                     <div className='mainChefPayments1__cardInfoHeading'>
                         <h5>Card Information</h5>
@@ -95,11 +95,11 @@ const MainCart = () => {
                         </div>
                     </div>
                     <div className='mainChefPayments__warning11'>
-                        <img src={InfoIcon} />
+                        <img src={InfoIcon} alt='star' />
                         <p>All Card payments are processed through Stripe</p>
                     </div>
                     <div className='mainChefPayments__warning21'>
-                        <img src={InfoIcon} />
+                        <img src={InfoIcon} alt='star' />
                         <p>By Paying you accept the <a href='#'>Payment Policy</a>
                         </p>
                     </div>
@@ -108,20 +108,20 @@ const MainCart = () => {
                         <p>OR PAY WITH</p>
                     </div>
                     <div className='mainChefPayments__option21'>
-                        <img src={PaypalIcon} />
-                        <img src={ApplePayICon} />
+                        <img src={PaypalIcon} alt='star' />
+                        <img src={ApplePayICon} alt='star' />
                     </div>
                 </div>    
             </Modal>   
         <div className='mainCart'>
             <div className='mainCartHeader'>
-                <img className='mainCenterHeader__leftIcon' src={LeftIcon} />
+                <img className='mainCenterHeader__leftIcon' src={LeftIcon} alt='star' />
                 <h3>CART</h3>
-                <img onClick={openModal} src={DeleteIcon} />
+                <img onClick={openModal} src={DeleteIcon} alt='star' />
             </div>
             <div className='mainCartCenter'>
                 <div className='mainCartCenter__image'>
-                    <img src={FoodImage} />
+                    <img src={FoodImage} alt='star' />
                 </div>
                 <div className='mainCartCenter__info'>
                     <h3>TAKEOUT/AWAY</h3>
@@ -142,7 +142,7 @@ const MainCart = () => {
                 <div className='mainCart__detailsContainer'>
                     <div className='mainCart__detailsLeft'>
                         <div className='mainCart__detailsCount'>
-                            <img src={CartIcon} />
+                            <img src={CartIcon} alt='star' />
                             <h5>5</h5>
                         </div>
                         <div className='mainCart__detailsTotal'>

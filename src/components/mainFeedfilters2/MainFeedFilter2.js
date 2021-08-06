@@ -15,7 +15,7 @@ const MainFeedFilter2 = ({filter2Prop}) => {
                     <div className='mainFeedFilters21'>
                         <img src={LeftIcon} onClick={() => {
                             history.push('/chef/profile')
-                        }} />
+                        }} alt='star' />
                         <NavLink to='/chef/all-chef' activeClassName='activefilter22' className='mainFeedFilters2__allChef'>All Chefs</NavLink>
                         <NavLink to='/chef/followed-chef' activeClassName='activefilter22' className='mainFeedFilters2__followed'>Following</NavLink>
                     </div>

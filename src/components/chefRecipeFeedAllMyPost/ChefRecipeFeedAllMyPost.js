@@ -2,7 +2,6 @@ import React from 'react'
 import MainFeedRecipe from '../mainFeedRecipe/MainFeedRecipe'
 import Ads from '../ads/Ads'
 import ChefAds from '../chefAds/ChefAds'
-import MainFeedFilter5 from '../mainFeedFilter5/MainFeedFilter5'
 import ChefMainFilters from '../chefMainFilters/ChefMainFilters'
 import GoogleAds from '../googleAds/GoogleAds'
 import MainFeedFilter6 from '../mainFeedFilter6/MainFeedFilter6'
@@ -31,7 +30,7 @@ const ChefRecipeFeedAllMyPost = () => {
                     <div className='chefRecipeFeedAllMyPost__plus'>
                         <img onClick={() => {
                             history.push('/chef/home/feed/create-recipe')
-                        }} src={AddNewIcon} />
+                        }} src={AddNewIcon} alt='image' />
                      </div>
                 </div>
                 <div className='chefRecipeFeedAllMyPost__right'>

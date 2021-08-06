@@ -12,7 +12,7 @@ const MainTermsUser = () => {
     return (
         <div className='mainTermsUser'>
             <div className='mainTermsUser__header'>
-                <img src={LeftIcon} />
+                <img src={LeftIcon} alt='star' />
                 <div className='mainTermsUser__headerCenter'>
                     
                     <h4>TERMS & CONDITIONS</h4>

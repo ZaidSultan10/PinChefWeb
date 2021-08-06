@@ -1,18 +1,15 @@
 import React, { useState } from 'react'
 import './Footer.css'
-import HomeUnselectedIcon from '../../assets/svg/Home-un-selected.svg'
 import HomeSelectedIcon from '../../assets/svg/Home-selected.svg'
 import ChefUnselectedIcon from '../../assets/svg/chef-un-selected.svg'
 import ShopUnselectedIcon from '../../assets/svg/Shop-un-selected.svg'
 import SettingsUnselectedIcon from '../../assets/svg/settings-un-selected.svg'
 import StarUnselectedIcon from '../../assets/svg/Star-un-selected.svg'
-import { NavLink, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 
 
 const Footer = ({footerProp}) => {
-
-    const [activeImage,setActiveImage] = useState(1)
 
     const history=useHistory()
 

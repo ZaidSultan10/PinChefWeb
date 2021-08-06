@@ -1,6 +1,5 @@
 import React from 'react'
 import './ChefMasterClassFeedAllMyPost.css'
-import Ads from '../ads/Ads'
 import ChefAds from '../chefAds/ChefAds'
 import MainFeedFilter6 from '../mainFeedFilter6/MainFeedFilter6'
 import ChefMainFilters from '../chefMainFilters/ChefMainFilters'
@@ -28,7 +27,7 @@ const ChefMasterClassFeedAllMyPost = () => {
                     <div className='add-masterclass'>
                         <img src={AddNewIcon} onClick={ () => {
                             history.push('/chef/home/feed/create-masterclass')
-                        }} />
+                        }} alt='image' />
                     </div>
                 </div>
                 <div className='chefMasterClassFeedAllMyPost__right'>

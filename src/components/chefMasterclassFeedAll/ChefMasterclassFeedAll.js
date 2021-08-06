@@ -1,5 +1,4 @@
 import React from 'react'
-import Ads from '../ads/Ads'
 import ChefAds from '../chefAds/ChefAds'
 import MainFeedFilter5 from '../mainFeedFilter5/MainFeedFilter5'
 import ChefMainFilters from '../chefMainFilters/ChefMainFilters'

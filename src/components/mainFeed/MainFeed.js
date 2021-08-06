@@ -19,21 +19,7 @@ const MainFeed = () => {
   const [modalIsOpen1,setIsOpen1]=useState(false)
   const [modalIsOpen2,setIsOpen2]=useState(false)
 
-  const customStyles={
-    content : {
-      top                   : '300px',
-      left                  : '63%',
-      right                 : 'auto',
-      bottom                : 'auto',
-      marginRight           : '-50%',
-      transform             : 'translate(-50%, -50%)',
-      borderRadius          : '16px',
-      padding:'0',
-      width : '300px',
-      height:'150px',
-      cursor:'pointer'
-    }
-  }
+  
   const customStyles1={
     content : {
       top                   : '50%',
@@ -168,7 +154,7 @@ const closeModal2 = () => {
       <div className="mainFeed__actions">
         <div className="mainFeed__actions__left">
           <div className="like">
-            <img src={HeartIcon} className="heart__icon" />
+            <img src={HeartIcon} className="heart__icon" alt='star' />
             <p>135</p>
           </div>
           <div className="comment">

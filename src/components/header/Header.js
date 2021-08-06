@@ -36,11 +36,11 @@ const Header = ({ searchProp,notificationProp }) => {
           notificationProp ? (
             <img onClick={() => {
               history.push('/chef/notifications')
-            }} src={NotificationIcon} className='notification__icon' />
+            }} src={NotificationIcon} className='notification__icon' alt='notify' />
           ):(
             <img onClick={() => {
               history.push('/user/notifications')
-            }} src={NotificationIcon} className='notification__icon' />
+            }} src={NotificationIcon} className='notification__icon' alt='notify' />
           )
         }
         

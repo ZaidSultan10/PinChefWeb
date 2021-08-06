@@ -1,13 +1,10 @@
 import React from 'react'
 import './MainRateArea.css'
-import StarBorderOutlinedIcon from '@material-ui/icons/StarBorderOutlined';
-import StarHalfOutlinedIcon from '@material-ui/icons/StarHalfOutlined';
 import StarOutlinedIcon from '@material-ui/icons/StarOutlined';
 import { Avatar } from '@material-ui/core';
 import HeartIcon from '../../assets/svg/Heart_Outline.svg'
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import ReplyIcon from '../../assets/svg/reply.svg'
-import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import LeftIcon from '../../assets/svg/left-green-arrow.svg'
 import MainFeedFilter7 from '../mainFeedFilter7/MainFeedFilter7';
 import { useHistory } from 'react-router-dom';
@@ -26,7 +23,7 @@ const MainRateArea = ({rateReplyProp}) => {
                         </div>
                     ):(
                         <div className='mainRateArea__header'>
-                            <img src={LeftIcon} />
+                            <img src={LeftIcon} alt='star' />
                             <h5>Ratings & Reviews</h5>
                         </div>
                     )
@@ -161,12 +158,12 @@ const MainRateArea = ({rateReplyProp}) => {
                     {
                         rateReplyProp && (
                             <div className='reply-icon-rate'>
-                                <img src={ReplyIcon} />
+                                <img src={ReplyIcon} alt='star' />
                             </div>
                         )
                     }
                     <div className='heart-container-rate'>
-                        <img src={HeartIcon} />
+                        <img src={HeartIcon} alt='star' />
                    </div>
                    <p>19 Likes</p>
                 </div>

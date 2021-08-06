@@ -55,7 +55,7 @@ const MainChefCreateRecipe = () => {
                     <CloseIcon onClick={openModal1}  className='post-close-icon' />
                 </div>
                 <div className='mainChefCreateRecipe__addImage'>
-                    <img src={AddImageIcon} />
+                    <img src={AddImageIcon} alt='star' />
                 </div>
                 <div className='mainChefCreateRecipe__name'>
                     <h5>Food Name<span>*</span></h5>

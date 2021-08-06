@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './UserProfileSet.css'
-import LeftIcon from '../../assets/svg/left-green-arrow.svg'
 import { Button } from '@material-ui/core'
 import ProfileImage from '../../assets/svg/Profile-image.svg'
 import { useHistory } from 'react-router-dom'
@@ -31,7 +30,7 @@ const UserProfileSet = () => {
             <div className='user-welcome-container'>
                 <div className='user-welcome-top'>
                     <h5>CONGRATULATIONS</h5>
-                    <img src={LocationIcon} />
+                    <img src={LocationIcon} alt='star' />
                 </div>
                 <div className='user-welcome-center'>
                     <p>Thank you signing up!
@@ -57,7 +56,7 @@ const UserProfileSet = () => {
                     <h4>Create Profile</h4>
                 </div>
                 <div className='userProfileSet__picture'>
-                     <img src={ProfileImage} />
+                     <img src={ProfileImage} alt='star' />
                 </div>
                 <div className='userProfileSet__input'>
                     <h5>Name/Lastname</h5>

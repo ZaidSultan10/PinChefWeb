@@ -9,7 +9,6 @@ import HalfStarIcon from '../../assets/svg/Half-empty-star.svg'
 import EmptyStarIcon from '../../assets/svg/Empty-Star.svg'
 import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import { Button } from '@material-ui/core'
-import DownIcon from '../../assets/svg/Down-button-green.svg'
 import MainShopFood from '../mainShopFood/MainShopFood'
 import { useHistory } from 'react-router-dom'
 import LeftIcon from '../../assets/svg/left-green-arrow.svg'
@@ -36,7 +35,7 @@ const MainChefProfile = ({chefProfileProp}) => {
                     <div className='mainChefProfile__topLeftArea'>
                         {
                             chefProfileProp && (
-                                <img src={LeftIcon} />
+                                <img src={LeftIcon} alt='star' />
                             )
                         }
                         <h5>Profile</h5>
@@ -46,7 +45,7 @@ const MainChefProfile = ({chefProfileProp}) => {
                                 <div></div>
                         ):(
                             <div onClick={allChefChefsSideRoute} className='mainChefProfile__topCenterArea'>
-                                <img src={AllChefsIcon} />
+                                <img src={AllChefsIcon} alt='star' />
                                 <h5>All Chefs</h5>
                             </div>
                         )
@@ -55,25 +54,25 @@ const MainChefProfile = ({chefProfileProp}) => {
                     <div className='mainChefProfile__topRightArea'>
                         <img onClick={() => {
                             history.push('/chef/call')
-                        }} src={CallIcon} />
+                        }} src={CallIcon} alt='star' />
                         {
                             chefProfileProp ? (
                                 <>
                                     <img onClick={() => {
                                         history.push('/chat/newchat')
-                                    }} src={ChatIcon} />
+                                    }} src={ChatIcon} alt='star' />
                                     <img onClick={() => {
                                         history.push('')
-                                    }} src={ShareIcon} />
+                                    }} src={ShareIcon} alt='star' />
                                 </>
                             ):(
                                 <>
                                     <img onClick={() => {
                                         history.push('/chef/chats')
-                                    }} src={ChatIcon} />
+                                    }} src={ChatIcon} alt='star' />
                                     <img onClick={() => {
                                         history.push('')
-                                    }} src={ShareIcon} />
+                                    }} src={ShareIcon} alt='star' />
                                 </>
                             )
                         }
@@ -87,7 +86,7 @@ const MainChefProfile = ({chefProfileProp}) => {
                     <div className='mainChefProfile__profile'>
                         <Avatar className='mainChefProfile__avatar' />
                         <div className='mainChefProfile__location'>
-                            <img src={LocationIcon} />
+                            <img src={LocationIcon} alt='star' />
                             <h5>Miami,</h5>
                             <h5>FL</h5>
                         </div>
@@ -121,13 +120,13 @@ const MainChefProfile = ({chefProfileProp}) => {
                 }} className='mainChefProfile__rating'>
                     <h5>56/4.5</h5>
                     <div className='mainChefProfile__stars'>
-                        <img src={FullStarIcon} />
-                        <img src={FullStarIcon} />
-                        <img src={FullStarIcon} />
-                        <img src={HalfStarIcon} />
-                        <img src={EmptyStarIcon} />
+                        <img src={FullStarIcon} alt='star' />
+                        <img src={FullStarIcon} alt='star' />
+                        <img src={FullStarIcon} alt='star' />
+                        <img src={HalfStarIcon} alt='star' />
+                        <img src={EmptyStarIcon} alt='star' />
                     </div>
-                    <img src={HorizontalLine} />
+                    <img src={HorizontalLine} alt='star' />
                 </div>
                 <p>
                     Do you want to eat better?  Do want time back in your day?  
@@ -142,17 +141,17 @@ const MainChefProfile = ({chefProfileProp}) => {
                     <Button onClick={() => {setMenuState(3)}}>Info</Button>
                 </div>
                 {
-                    menuState==1 ? (
+                    menuState===1 ? (
                         <>
                             <div className='mainChefProfile__allPhotos'>
                                 <MainShopFood />
                             </div>
                         </>
-                    ):menuState==2 ? (
+                    ):menuState===2 ? (
                         <>
                             <div className='mainChefProfile__allPhotos1'>
                                 {[...Array(9)].map(() =>(
-                                    <img src={CoverPhoto} />
+                                    <img src={CoverPhoto} alt='star' />
                                 ))}
                             </div>
                         </>
@@ -182,24 +181,3 @@ const MainChefProfile = ({chefProfileProp}) => {
 
 export default MainChefProfile
 
-{/* 
-{
-                                [...Array(9)].map(() => (
-                                    <>
-                                        <div className='mainChefProfile__allNotifications'>
-                                            <div className='mainChefProfile__notifyAvatar'>
-                                                <Avatar className='notify-avatar' />
-                                            </div>
-                                            <div className='mainChefProfile__notifyUser'>
-                                                <h5>Matt Wilson</h5>
-                                                <p>13 October,2020-1:24 PM</p>
-                                            </div>
-                                            <div className='mainChefProfile__notifyDetail'>
-                                                <h5>New Food Order</h5>
-                                                <img src={DownIcon} />
-                                            </div>
-                                        </div>
-                                        <div className='notify-line'>
-                                                <img src={HorizontalLine} />
-                                        </div>
-*/}

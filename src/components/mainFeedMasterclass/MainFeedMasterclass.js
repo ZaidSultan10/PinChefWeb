@@ -20,7 +20,7 @@ const MainFeedMasterclass = () => {
                     <h3 className='pizza'>PIZZA</h3>
                     <img onClick={() => {
                         history.push('/chef/masterclass/checkout')
-                    }} src={BookIcon} className='book' />
+                    }} src={BookIcon} className='book' alt='star' />
                     <h3 onClick={() => {
                         history.push('/user/chef/profile')
                     }} className='feedMaster__name'>Jenah Stephanson</h3>
@@ -57,7 +57,7 @@ const MainFeedMasterclass = () => {
                         </div>
                         <div className='mainFeedMaster__butTicket'>
                                 <p>Available Tickets</p>
-                                <img src={TicketIcon} />
+                                <img src={TicketIcon} alt='star' />
                                 <p className='ticketCount'>1</p>
                         </div>
                     </div>

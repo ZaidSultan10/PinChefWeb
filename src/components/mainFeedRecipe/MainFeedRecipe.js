@@ -60,7 +60,7 @@ const MainFeedRecipe = () => {
             </div>
             <div className="mainFeedRecipe__actions__left">
                 <div className="like">
-                    <img src={HeartIcon} className="heart__icon" />
+                    <img src={HeartIcon} className="heart__icon" alt='star' />
                     <p>135</p>
                 </div>
                 <div className="comment">

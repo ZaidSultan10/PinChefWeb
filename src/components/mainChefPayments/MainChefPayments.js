@@ -23,19 +23,19 @@ const MainChefPayments = () => {
             <div className='mainChefPayments__header'>
                 <img onClick={() => {
                     history.push('/chef/settings/subscription')
-                }} src={LeftIcon} />
+                }} src={LeftIcon} alt='star' />
                 <h5>PAYMENTS</h5>
             </div>
             <div className='mainChefPayments__state'>
                 <h5>Monthly $9.99</h5>
             </div>
             <div className='mainChefPayments__paymentMethods'>
-                <img src={VisaIcon} />
-                <img src={MasterCardIcon} />
-                <img src={AmericanExpressIcon} />
-                <img src={DiscoverIcon} />
-                <img src={JcbIcon} />
-                <img src={UnionPayIcon} />
+                <img src={VisaIcon} alt='star' />
+                <img src={MasterCardIcon} alt='star' />
+                <img src={AmericanExpressIcon} alt='star' />
+                <img src={DiscoverIcon} alt='star' />
+                <img src={JcbIcon} alt='star' />
+                <img src={UnionPayIcon} alt='star' />
             </div>
             <div className='mainChefPayments__cardInfoHeading'>
                 <h5>Card Information</h5>
@@ -49,11 +49,11 @@ const MainChefPayments = () => {
                 </div>
             </div>
             <div className='mainChefPayments__warning1'>
-                <img src={InfoIcon} />
+                <img src={InfoIcon} alt='star' />
                 <p>All Card payments are processed through Stripe</p>
             </div>
             <div className='mainChefPayments__warning2'>
-                <img src={InfoIcon} />
+                <img src={InfoIcon} alt='star' />
                 <p>Chosen Subscription fee will automatically be
                     processed each period until the Subscription is 
                     cancelled
@@ -70,8 +70,8 @@ const MainChefPayments = () => {
                 <p>OR PAY WITH</p>
             </div>
             <div className='mainChefPayments__option2'>
-                <img src={PaypalIcon} />
-                <img src={ApplePayICon} />
+                <img src={PaypalIcon} alt='star' />
+                <img src={ApplePayICon} alt='star' />
             </div>
         </div>
     )

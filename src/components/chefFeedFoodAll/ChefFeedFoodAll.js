@@ -1,6 +1,5 @@
 import React from 'react'
 import MainShopFood from '../mainShopFood/MainShopFood'
-import Ads from '../ads/Ads'
 import ChefAds from '../chefAds/ChefAds'
 import MainFeedFilter5 from '../mainFeedFilter5/MainFeedFilter5'
 import ChefMainFilters from '../chefMainFilters/ChefMainFilters'
@@ -31,7 +30,7 @@ const ChefFeedFoodAll = ({myfoodProp,cart1Prop}) => {
                     {
                         myfoodProp && (
                             <div className='chefFoodFeedAll__plus'>
-                                <img src={AddNewIcon} />
+                                <img src={AddNewIcon} alt='image' />
                              </div>
                         )
                     }

@@ -16,7 +16,7 @@ const MainChefPaymentMethods = () => {
             <div className='mainChefPaymentMethods__header'>
                 <img onClick={() => {
                     history.push('/chef/settings')
-                }} src={LeftIcon} />
+                }} src={LeftIcon} alt='star' />
                 <h5>PAYMENT METHODS</h5>
             </div>
             <div className='mainChefPaymentMethods__text'>
@@ -38,13 +38,13 @@ const MainChefPaymentMethods = () => {
                 <Button>Signed In</Button>
             </div>
             <div className='mainChefPaymentMethods__warning1'>
-                <img src={InfoIcon} />
+                <img src={InfoIcon} alt='star' />
                 <p>Cash and Credit Card on Delivery is not available
                     for e-Masterclass.
                 </p>
             </div>
             <div className='mainChefPaymentMethods__warning2'>
-                <img src={InfoIcon} />
+                <img src={InfoIcon} alt='star' />
                 <p>To add or delete payment options, go back
                     to the chef's profile details.
                 </p>

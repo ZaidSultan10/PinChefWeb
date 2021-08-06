@@ -1,11 +1,9 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
 import './MainFeedFilter8.css'
 import { NavLink } from 'react-router-dom'
 
 const MainFeedFilter8 = () => {
 
-    const history=useHistory()
 
     return (
         <div className='mainFeedFilter8'>

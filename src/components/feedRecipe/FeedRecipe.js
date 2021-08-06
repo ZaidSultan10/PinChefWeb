@@ -2,7 +2,6 @@ import React from 'react'
 import ChefAds from '../chefAds/ChefAds'
 import ChefMainFilters from '../chefMainFilters/ChefMainFilters';
 import GoogleAds from '../googleAds/GoogleAds'
-import MainFeed from '../mainFeed/MainFeed';
 import MainFeedFilters from '../mainFeedFilters/MainFeedFilters';
 import MainFeedRecipe from '../mainFeedRecipe/MainFeedRecipe';
 import './FeedRecipe.css'

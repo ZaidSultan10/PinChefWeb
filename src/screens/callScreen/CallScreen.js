@@ -19,7 +19,7 @@ const CallScreen = () => {
                 <div className='callScreen__Header'>
                     <img onClick={() => {
                         history.push('/chef/profile')
-                    }} src={LeftIcon} />
+                    }} src={LeftIcon} alt='star' />
                     <h4>Calling</h4>
                 </div>
                 <div className='callScreen__Image'>
@@ -29,14 +29,14 @@ const CallScreen = () => {
                     <h4>Maria Lu</h4>
                 </div>
                 <div className='callScreen__actions'>
-                    <img src={SpeakerIcon} />
-                    <img src={VideoCallIcon} />
-                    <img src={MuteIcon} />
+                    <img src={SpeakerIcon} alt='star' />
+                    <img src={VideoCallIcon} alt='star' />
+                    <img src={MuteIcon} alt='star' />
                 </div>
                 <div className='callScreen__end'>
                     <img onClick={() => {
                         history.push('/chef/profile')
-                    }} src={HangRedIcon} />
+                    }} src={HangRedIcon} alt='star' />
                 </div>
             </div>
             

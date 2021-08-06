@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './MainSettingsProfile.css'
 import LeftIcon from '../../assets/svg/left-green-arrow.svg'
-import AccountBoxOutlinedIcon from '@material-ui/icons/AccountBoxOutlined';
 import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import { Avatar, Button } from '@material-ui/core';
 import NameIcon from '../../assets/svg-for-user-profile/name.svg'
@@ -94,14 +93,14 @@ const MainSettingsProfile = ({chefProfileCondiitonProp}) => {
                     <div className='mainSettingsProfile__heading'>
                         <img onClick={() => {
                             history.push('/chef/settings')
-                        }} src={LeftIcon} />
+                        }} src={LeftIcon} alt='star' />
                         <h4>Profile</h4>
                     </div>
                 ):(
                     <div onClick={() => {
                         history.push('/user/settings')
                     }} className='mainSettingsProfile__heading'>
-                        <img src={LeftIcon} />
+                        <img src={LeftIcon} alt='star' />
                         <h4>Profile</h4>
                     </div>
                 )
@@ -110,10 +109,10 @@ const MainSettingsProfile = ({chefProfileCondiitonProp}) => {
             {
                 chefProfileCondiitonProp ? (
                     <div className='mainSettingsProfile__picture'>
-                        <img src={bannerImage} />
+                        <img src={bannerImage} alt='star' />
                         <div className='mainSettingsProfile__bannerIcons'>
                             <Avatar className='mainSettingsProfile__avatar' />
-                            <img src={EditIcon} />
+                            <img src={EditIcon} alt='star' />
                         </div>
                     </div>
                 ):(
@@ -124,35 +123,35 @@ const MainSettingsProfile = ({chefProfileCondiitonProp}) => {
             }
             
             <div className='mainSettingsProfile__name'>
-                <img src={NameIcon} />
+                <img src={NameIcon} alt='star' />
                 <h4>Full Name</h4>
             </div>
             <div className='mainSettings__divider'>
                 <img src={HorizontalLine} alt='line' />
             </div>
             <div className='mainSettingsProfile__name'>
-                <img src={NameIcon} />
+                <img src={NameIcon} alt='star' />
                 <h4>User-ID/Nickname</h4>
             </div>
             <div className='mainSettings__divider'>
                 <img src={HorizontalLine} alt='line' />
             </div>
             <div className='mainSettingsProfile__name'>
-                <img src={PhoneIcon} />
+                <img src={PhoneIcon} alt='star' />
                 <h4>Number</h4>
             </div>
             <div className='mainSettings__divider'>
                 <img src={HorizontalLine} alt='line' />
             </div>
             <div className='mainSettingsProfile__name'>
-                <img src={EmailIcon} />
+                <img src={EmailIcon} alt='star' />
                 <h4>Email</h4>
             </div>
             <div className='mainSettings__divider'>
                 <img src={HorizontalLine} alt='line' />
             </div>
             <div className='mainSettingsProfile__name'>
-                <img src={LocationIcon} />
+                <img src={LocationIcon} alt='star' />
                 <h4>Address</h4>
             </div>
             <div className='mainSettings__divider'>
@@ -164,7 +163,7 @@ const MainSettingsProfile = ({chefProfileCondiitonProp}) => {
                         <div onClick={() => {
                             history.push('/chef/profile/details')
                         }} className='mainSettingsProfile__name'>
-                            <img src={DetailedInfo} />
+                            <img src={DetailedInfo} alt='star' />
                             <h4>Detailed Info</h4>
                         </div>
                         <div className='mainSettings__divider'>
@@ -174,14 +173,14 @@ const MainSettingsProfile = ({chefProfileCondiitonProp}) => {
                 )
             }
             <div onClick={openModal} className='mainSettingsProfile__name'>
-                <img src={DeleteIcon} />
+                <img src={DeleteIcon} alt='star' />
                 <h4>Delete Account</h4>
             </div>
             <div className='mainSettings__divider'>
                 <img src={HorizontalLine} alt='line' />
             </div>
             <div onClick={openModal1} className='mainSettingsProfile__name'>
-                <img src={LogoutIcon} />
+                <img src={LogoutIcon} alt='star' />
                 <h4>Logout</h4>
             </div>
             <div className='mainSettings__divider'>

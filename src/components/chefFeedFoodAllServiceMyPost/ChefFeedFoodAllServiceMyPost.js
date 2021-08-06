@@ -1,6 +1,5 @@
 import React from 'react'
 import MainShopFood from '../mainShopFood/MainShopFood'
-import Ads from '../ads/Ads'
 import ChefAds from '../chefAds/ChefAds'
 import MainFeedFilter6 from '../mainFeedFilter6/MainFeedFilter6'
 import ChefMainFilters from '../chefMainFilters/ChefMainFilters'
@@ -35,7 +34,7 @@ const ChefFeedFoodAllServiceMyPost = ({cart1Prop}) => {
                     <div className='chefFeedFoodAllServiceMyPost__plus'>
                         <img onClick={() => {
                             history.push('/chef/home/feed/create-service')
-                        }} src={AddNewIcon} />
+                        }} src={AddNewIcon} alt='image' />
                     </div>
                      
                 </div>

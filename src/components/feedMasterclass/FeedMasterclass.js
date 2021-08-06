@@ -3,7 +3,6 @@ import ChefAds from '../chefAds/ChefAds'
 import GoogleAds2 from '../googleAds2/GoogleAds2'
 import MainFeedFilters from '../mainFeedFilters/MainFeedFilters'
 import MainFeedMasterclass from '../mainFeedMasterclass/MainFeedMasterclass'
-import MainFeedRecipe from '../mainFeedRecipe/MainFeedRecipe'
 import './FeedMasterclass.css'
 
 const FeedMasterclass = () => {

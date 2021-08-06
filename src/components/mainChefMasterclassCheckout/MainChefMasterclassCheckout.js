@@ -59,12 +59,12 @@ const MainChefMasterclassCheckout = () => {
                 <textarea rows='7' />
             </div>
             <div className='mainChefMasterclassCheckout__paymentMethods'>
-                <img src={VisaIcon} />
-                <img src={MasterCardIcon} />
-                <img src={AmericanExpressIcon} />
-                <img src={DiscoverIcon} />
-                <img src={JcbIcon} />
-                <img src={UnionPayIcon} />
+                <img src={VisaIcon} alt='star' />
+                <img src={MasterCardIcon} alt='star' />
+                <img src={AmericanExpressIcon} alt='star' />
+                <img src={DiscoverIcon} alt='star' />
+                <img src={JcbIcon} alt='star' />
+                <img src={UnionPayIcon} alt='star' />
             </div>
             <div className='mainChefMasterclassCheckout__cardInfoHeading'>
                 <h5>Card Information</h5>
@@ -78,11 +78,11 @@ const MainChefMasterclassCheckout = () => {
                 </div>
             </div>
             <div className='mainChefMasterclassCheckout__warning1'>
-                <img src={InfoIcon} />
+                <img src={InfoIcon} alt='star' />
                 <p>All Card payments are processed through Stripe</p>
             </div>
             <div className='mainChefMasterclassCheckout__warning2'>
-                <img src={InfoIcon} />
+                <img src={InfoIcon} alt='star' />
                 <p>By paying you accept the <a>payment policy</a></p>
             </div>
             <div className='mainChefMasterclassCheckout__payButton'>
@@ -90,8 +90,8 @@ const MainChefMasterclassCheckout = () => {
                 <p>OR PAY WITH</p>
             </div>
             <div className='mainChefMasterclassCheckout__option2'>
-                <img src={PaypalIcon} />
-                <img src={ApplePayICon} />
+                <img src={PaypalIcon} alt='star' />
+                <img src={ApplePayICon} alt='star' />
             </div>
         </div>
     )

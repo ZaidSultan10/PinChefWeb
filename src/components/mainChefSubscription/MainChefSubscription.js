@@ -16,7 +16,7 @@ const MainChefSubscription = () => {
             <div onClick={() => {
                 history.push('/chef/settings')
             }} className='mainChefSubscription__headings'>
-                <img  src={LeftIcon} />
+                <img  src={LeftIcon} alt='star' />
                 <h4>SUBSCRIPTIONS</h4>
             </div>
             <div className='mainChefSubscription__top'>
@@ -33,44 +33,44 @@ const MainChefSubscription = () => {
             </div>
             <div className='mainChefSubscription__freePerks'>
                 <div className='mainChefSubscription__freePerk'>
-                    <img src={GreenTic} />
+                    <img src={GreenTic} alt='star' />
                     <h5>Chef Posts</h5>
                 </div>
                 <div className='mainChefSubscription__freePerk'>
-                    <img src={GreenTic} />
+                    <img src={GreenTic} alt='star' />
                     <h5>Create Recipes</h5>
                 </div>
                 <div className='mainChefSubscription__freePerk'>
-                    <img src={GreenTic} />
+                    <img src={GreenTic} alt='star' />
                     <h5>Get Rated</h5>
                 </div>
                 <div className='mainChefSubscription__freePerk'>
-                    <img src={GreenTic} />
+                    <img src={GreenTic} alt='star' />
                     <h5>Reply to customer review</h5>
                 </div>
                 <div className='mainChefSubscription__freePerk'>
-                    <img src={GreenTic} />
+                    <img src={GreenTic} alt='star' />
                     <h5>Own an ID</h5>
                 </div>
                 <div className='mainChefSubscription__freePerk'>
-                    <img src={GreenTic} />
+                    <img src={GreenTic} alt='star' />
                     <h5>Own a Chef Profile</h5>
                 </div>
                 <div className='mainChefSubscription__freePerk'>
-                    <img src={GreenTic} />
+                    <img src={GreenTic} alt='star' />
                     <h5>Can recieve the highly rated chef badge</h5>
                 </div>
                 <div className='mainChefSubscription__freePerk'>
-                    <img src={GreenTic} />
+                    <img src={GreenTic} alt='star' />
                     <h5>Can be followed by users</h5>
                 </div>
                 <div className='mainChefSubscription__freePerk'>
-                    <img src={GreenTic} />
+                    <img src={GreenTic} alt='star' />
                     <h5>Upload Images/Videos</h5>
                 </div>
             </div>
             <div className='mainChefSubscription__splitter'>
-                <img src={HorizontalLine} />
+                <img src={HorizontalLine} alt='star' />
             </div>
             <div className='mainChefSubscription__top'>
                 <h3>NO COMMISSIONS!!!</h3>
@@ -88,27 +88,27 @@ const MainChefSubscription = () => {
                     </div>
                     <div className='mainChefSubscription__basicPerks'>
                         <div className='mainChefSubscription__basicPerk'>
-                            <img src={GreenTic} />
+                            <img src={GreenTic} alt='star' />
                             <h5>Free Plan</h5>
                         </div>
                         <div className='mainChefSubscription__basicPerk'>
-                            <img src={GreenTic} />
+                            <img src={GreenTic} alt='star' />
                             <h5>1 masterclass listings per month</h5>
                         </div>
                         <div className='mainChefSubscription__basicPerk'>
-                            <img src={GreenTic} />
+                            <img src={GreenTic} alt='star' />
                             <h5>Food items for sale posts</h5>
                         </div>
                         <div className='mainChefSubscription__basicPerk'>
-                            <img src={GreenTic} />
+                            <img src={GreenTic} alt='star' />
                             <h5>Chef Services for sale posts</h5>
                         </div>
                         <div className='mainChefSubscription__basicPerk'>
-                            <img src={GreenTic} />
+                            <img src={GreenTic} alt='star' />
                             <h5>Chat</h5>
                         </div>
                         <div className='mainChefSubscription__basicPerk'>
-                            <img src={GreenTic} />
+                            <img src={GreenTic} alt='star' />
                             <h5>Direct Payments</h5>
                         </div>
                     </div>
@@ -130,11 +130,11 @@ const MainChefSubscription = () => {
                         <h5>you save $20</h5>
                     </div>
                 </div>
-                <img src={VerticalLine} className='vertical-line' />
+                <img src={VerticalLine} className='vertical-line' alt='star' />
                 <div className='mainChefSubscription__bottomRight'>
                     <div className='mainChefSubscription__vip'>
                         <div className='mainChefSubscription__vipText'>
-                            <img src={CrownIcon} />
+                            <img src={CrownIcon} alt='star' />
                             <h5>VIP</h5>
                         </div>
                         <div className='mainChefSubscription__vipPrice'>
@@ -143,35 +143,35 @@ const MainChefSubscription = () => {
                     </div>
                     <div className='mainChefSubscription__vipPerks'>
                         <div className='mainChefSubscription__vipPerk'>
-                            <img src={GreenTic} />
+                            <img src={GreenTic} alt='star' />
                             <h5>Free Plan</h5>
                         </div>
                         <div className='mainChefSubscription__vipPerk'>
-                            <img src={GreenTic} />
+                            <img src={GreenTic} alt='star' />
                             <h5>Basic Plan</h5>
                         </div>
                         <div className='mainChefSubscription__vipPerk'>
-                            <img src={GreenTic} />
+                            <img src={GreenTic} alt='star' />
                             <h5>Unlimited masterclass listings</h5>
                         </div>
                         <div className='mainChefSubscription__vipPerk'>
-                            <img src={GreenTic} />
+                            <img src={GreenTic} alt='star' />
                             <h5>Be among the firsts on searches</h5>
                         </div>
                         <div className='mainChefSubscription__vipPerk'>
-                            <img src={GreenTic} />
+                            <img src={GreenTic} alt='star' />
                             <h5>Voice/Video Calls</h5>
                         </div>
                         <div className='mainChefSubscription__vipPerk'>
-                            <img src={GreenTic} />
+                            <img src={GreenTic} alt='star' />
                             <h5>Get the Vip (Crown) Badge</h5>
                         </div>
                         <div className='mainChefSubscription__vipPerk'>
-                            <img src={GreenTic} />
+                            <img src={GreenTic} alt='star' />
                             <h5>Daily one time ad</h5>
                         </div>
                         <div className='mainChefSubscription__vipPerk'>
-                            <img src={GreenTic} />
+                            <img src={GreenTic} alt='star' />
                             <h5>Add restaurant name</h5>
                         </div>
                     </div>

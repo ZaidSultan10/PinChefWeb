@@ -11,11 +11,11 @@ const MainFoodEmergencyOrder = () => {
     return (
         <div className='mainFoodEmergencyOrder'>
             <div className='mainFoodEmergencyOrder__header'>
-                <img src={LeftIcon} />
+                <img src={LeftIcon} alt='star' />
                 <h5>FOOD EMERGENCY</h5>
             </div>
             <div className='mainFoodEmergencyOrder__warning2'>
-                <img src={InfoIcon} />
+                <img src={InfoIcon} alt='star' />
                 <p>We will match your needs with the chefs that fit 
 your request and the ones available will contact you.
                 </p>

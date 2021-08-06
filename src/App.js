@@ -3,8 +3,7 @@ import "./App.css";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import HomeFeed from "./screens/homefeedScreen/HomeFeed";
 import UserOnBoarding from "./screens/userOnBoarding/UserOnBoarding";
@@ -30,7 +29,6 @@ import ChefCreateRecipe from "./screens/chefCreateRecipe/ChefCreateRecipe";
 import ChefCreateFood from "./screens/chefCreateFood/ChefCreateFood";
 import ChefCreateFoodPost from "./screens/chefCreateFoodPost/ChefCreateFoodPost";
 import ChefFeedService from "./screens/chefFeedService/ChefFeedService";
-import ChefCreateFeedService from "./components/chefCreateFeedService/ChefCreateFeedService";
 import ChefCreateService from "./screens/chefCreateService/ChefCreateService";
 import ChefFeedMasterclass from "./screens/chefFeedMasterclass/ChefFeedMasterclass";
 import ChefCreateMasterclass from "./screens/chefCreateMasterclass/ChefCreateMasterclass";
@@ -52,7 +50,6 @@ import UserCommentScreen from "./screens/userCommentScreen/UserCommentScreen";
 import CallScreen from "./screens/callScreen/CallScreen";
 import UserRecipeDetails from "./screens/userRecipeDetails/UserRecipeDetails";
 import RateReviewForm from "./screens/rateReviewForm/RateReviewForm";
-import RateArea from "./components/rateArea/RateArea";
 import RateScreen from "./screens/rateScreen/RateScreen";
 import SettingsProfile from "./screens/settingsProfile/SettingsProfile";
 import MyChatScreen from "./screens/myChatsScreen/MyChatScreen";

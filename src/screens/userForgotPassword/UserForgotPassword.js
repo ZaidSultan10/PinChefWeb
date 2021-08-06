@@ -33,7 +33,7 @@ const UserForgotPassword = () => {
 
                 <div className='forgot-container'>
                     <div className='forgot-top'>
-                        <img src={SentEmailIcon} />
+                        <img src={SentEmailIcon} alt='star' />
                     </div>
                     <div className='forgot-center'>
                         <h5>Check your email to reset
@@ -54,7 +54,7 @@ const UserForgotPassword = () => {
         <div className='userForgotPassword'>
             <div className='userForgotPassword__container'>
                 <div className='userForgotPassword__header'>
-                    <img src={LeftIcon} />
+                    <img src={LeftIcon} alt='star' />
                     <h4>Forgot Password</h4>
                 </div>
                 <div className='userForgotPassword__input'>

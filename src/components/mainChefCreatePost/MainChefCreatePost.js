@@ -57,13 +57,13 @@ const MainChefCreatePost = () => {
                     <CloseIcon onClick={openModal1} className='post-close-icon' />
                 </div>
                 <div className='mainChefCreatePost__addImage'>
-                    <img src={AddIcon} />
+                    <img src={AddIcon} alt='star' />
                 </div>
                 <div className='mainChefCreatePost__addDesc'>
                     <textarea rows='10' placeholder='Enter you description' />
                 </div>
                 <div className='mainChefCreatePost__addLocation'>
-                    <img src={AddLocationIcon} />
+                    <img src={AddLocationIcon} alt='star' />
                     <input />
                 </div>
                 <div className='mainChefCreatePost__buttons'>

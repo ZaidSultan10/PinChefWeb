@@ -25,11 +25,11 @@ const MainAllChefs = ({followProp}) => {
                     <div onClick={() => {
                         history.push('/rate/area')
                     }} className='rating'>
-                        <img src={FullStar} className='star' />
-                        <img src={FullStar} className='star' />
-                        <img src={FullStar} className='star' />
-                        <img src={HalfEmptyStar} className='star' />
-                        <img src={EmptyStar} className='star' />
+                        <img src={FullStar} className='star' alt='star' />
+                        <img src={FullStar} className='star' alt='star' />
+                        <img src={FullStar} className='star' alt='star' />
+                        <img src={HalfEmptyStar} className='star' alt='star' />
+                        <img src={EmptyStar} className='star' alt='star' />
                     </div>
                     <h4>56/3.5</h4>
                 </div>

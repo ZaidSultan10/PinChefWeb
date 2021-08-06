@@ -27,7 +27,7 @@ const MainFeedRecipeDetails = () => {
     return (
         <div className='mainFeedRecipeDetails'>
             <div className='mainFeedRecipeDetails__header'>
-                <img onClick={recipeDetailsBackButton} src={LeftIcon} />
+                <img onClick={recipeDetailsBackButton} src={LeftIcon} alt='star' />
                 <h5>BEEF TACO</h5>
             </div>
             <div className='mainFeedRecipeDetails__Profile'>
@@ -38,7 +38,7 @@ const MainFeedRecipeDetails = () => {
                 </div>
             </div>
             <div className='mainFeedRecipeDetails__photo'>
-                <img src={PostImage} />
+                <img src={PostImage} alt='star' />
             </div>
             <div className='mainFeedRecipeDetails__actions'>
                 <div className='mainFeedRecipeDetails__dishName'>
@@ -46,15 +46,15 @@ const MainFeedRecipeDetails = () => {
                 </div>
                 <div className='mainFeedRecipeDetails__icons'>
                     <div className='mainFeedRecipeDetails__heart'>
-                        <img src={HeartIcon} />
+                        <img src={HeartIcon} alt='star' />
                         <p>235</p>
                     </div>
                     <div className='mainFeedRecipeDetails__comment'>
-                        <img onClick={recipeCommentRoute} src={CommentIcon} />
+                        <img onClick={recipeCommentRoute} src={CommentIcon} alt='star' />
                         <p>110</p>
                     </div>
                     <div className='mainFeedRecipeDetails__share'>
-                        <img src={ShareIcon} />
+                        <img src={ShareIcon} alt='star' />
                         
                     </div>
                 </div>

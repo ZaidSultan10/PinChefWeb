@@ -5,12 +5,7 @@ import { ReactComponent as Email } from "../../assets/svg/email-icon-big.svg";
 import { useState } from "react";
 import { Button } from "@material-ui/core";
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
-import { RadioButtonChecked, RadioButtonCheckedOutlined, RadioButtonUnchecked } from "@material-ui/icons";
-import FacebookIcon from '@material-ui/icons/Facebook';
 import { useHistory } from "react-router-dom";
-
-import yellowArrow from "../../assets/svg/Yellow-right-arrow.svg";
 
 import { ReactComponent as Facebook } from "../../assets/svg/Sign-in-with Facebook-icon.svg";
 import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-icon.svg";

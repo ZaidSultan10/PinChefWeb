@@ -52,7 +52,7 @@ const MainChefCreateMasterclass = () => {
             </div>
             <div className='mainChefCreateMasterclass__top'>
                 <div className='mainChefCreateMasterclass__topLeft'>
-                    <img src={AddImageIcon} />
+                    <img src={AddImageIcon} alt='star' />
                 </div>
                 <div className='mainChefCreateMasterclass__topRight'>
                     <div className='mainChefCreateMasterclass__title'>

@@ -65,7 +65,7 @@ const MainRateReviewForm = () => {
                     </div>
                 </div>
                 <div className='mainRateReviewForm__icon'>
-                    <img src={WriteIcon } />
+                    <img src={WriteIcon } alt='star' />
                 </div>
                 <div className='mainRateReviewForm__input'>
                     <textarea rows='6' placeholder='Please leave an honest review to help others decide :)'/>

@@ -3,7 +3,7 @@ import FeedStarRecipe from '../../components/feedStarRecipe/FeedStarRecipe'
 import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
 
-const StarFeedRecipe = ({searchProp}) => {
+const StarFeedRecipe = () => {
     return (
         <div className='homefeed'>
             <Header searchProp={true} />

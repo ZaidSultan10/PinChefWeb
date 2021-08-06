@@ -60,7 +60,7 @@ const MainFeedMasterclassMyPost = () => {
             <div className='notice-master-container'>
                 <div className='notice-master-top'>
                     <h5>EMPTY CART</h5>
-                    <img src={NotificationCancelIcon} />   
+                    <img src={NotificationCancelIcon} alt='star' />   
                 </div>
                 <div className='notice-master-center'>
                     <p>
@@ -104,13 +104,13 @@ const MainFeedMasterclassMyPost = () => {
             contentLabel="Notification Modal">
                 <div className='class-info-container'>
                     <div className='class-info-top'>
-                        <h5></h5>
+                        <h5>.</h5>
                         <h3 onClick={closeModal2}>x</h3>
                     </div>
                     <div className='class-info-center'>
                         <div className='class-info-centerLeft'>
                             <h4>Pizza</h4>
-                            <img src={AnyImage} />
+                            <img src={AnyImage} alt='star' />
                             
                         </div>
                         <div className='class-info-centerRight'>
@@ -125,14 +125,14 @@ const MainFeedMasterclassMyPost = () => {
                                     <h5>|</h5>
                                 </div>
                                 <div className='class-info-time'>
-                                    <img src={LeftTimeIcon} />
+                                    <img src={LeftTimeIcon} alt='star' />
                                     <p>02.20.20 - 12:30</p>
                                 </div>
                                 <div className='class-info-space'>
                                     <h5>|</h5>
                                 </div>
                                 <div className='class-info-duration'>
-                                    <img src={DurationIcon} />
+                                    <img src={DurationIcon} alt='star' />
                                     <p>2:30</p>
                                 </div>
                             </div>
@@ -146,7 +146,7 @@ const MainFeedMasterclassMyPost = () => {
                         </div>
                         <div className='class-info-bottomRight'>
                             <p>Available Tickets</p>
-                            <img src={TicketIcon} />
+                            <img src={TicketIcon} alt='star' />
                             <h4>34</h4>
                         </div>
                     </div>
@@ -155,59 +155,59 @@ const MainFeedMasterclassMyPost = () => {
 
         <div className='mainFeedMasterclassMyPost'>
             <div className='mainFeedMasterclassMyPost__top'>
-                <img src={GreenInfoIcon} />
+                <img src={GreenInfoIcon} alt='star' />
                 <p>Posted on 24/05/2020 23:00</p>
             </div>
             <div className='mainFeedMasterclassMyPost__middle'>
                 <div className='mainFeedMasterclassMyPost__middleLeft'>
                     <div className='mainFeedMasterclassMyPost__leftHeading'>
                         <h4>PIZZA</h4>
-                        <img src={AnyImage} />
+                        <img src={AnyImage} alt='star' />
                     </div>
                 </div>
                 <div className='mainFeedMasterclassMyPost__middleCenter'>
                     <div className='mainFeedMasterclassMyPost__date'>
-                        <img src={TimeLeftIcon} />
+                        <img src={TimeLeftIcon} alt='star' />
                         <p>2 h/ 49 m/ 20 sec left</p>
                     </div>
                     <div className='mainFeedMasterclassMyPost__time'>
-                        <img src={DateTimeIcon} />
+                        <img src={DateTimeIcon} alt='star' />
                         <p>02:20:20 - 12:30</p>
                     </div>
                     <div className='mainFeedMasterclassMyPost__duration'>
-                        <img src={DurationIcon} />
+                        <img src={DurationIcon} alt='star' />
                         <p>2:30</p>
                     </div>
                     <div onClick={openModal1} className='mainFeedMasterclassMyPost__cancel'>
-                        <img src={CancelIcon} />
+                        <img src={CancelIcon} alt='star' />
                         <h5>Cancel Masterclass</h5>
                     </div>
                     <div onClick={openModal2} className='mainFeedMasterclassMyPost__share'>
-                        <img src={ShareIcon} />
+                        <img src={ShareIcon} alt='star' />
                         <h5>Share Post</h5>
                     </div>
                     <div className='mainFeedMasterclassMyPost__price'>
-                        <img src={TicketPriceIcon} />
+                        <img src={TicketPriceIcon} alt='star' />
                         <h5>Ticket Price: $25</h5>
                     </div>
                 </div>
                 <div className='mainFeedMasterclassMyPost__middleRight'>
-                    <img onClick={openModal} src={SetNotificationButton} />
+                    <img onClick={openModal} src={SetNotificationButton} alt='star' />
                 </div>
             </div>
             <div className='mainFeedMasterclassMyPost__bottom'>
                 <div className='mainFeedMasterclassMyPost__link'>
-                    <img src={LinkIcon} />
+                    <img src={LinkIcon} alt='star' />
                     <input placeholder='Enter e-Masterclass Link' />
                 </div>
                 <div className='mainFeedMasterclassMyPost__ticket'>
                     <p>Bought Tickets:</p>
-                    <img src={TicketIcon} />
+                    <img src={TicketIcon} alt='star' />
                     <h5>34</h5>
                 </div>
             </div>
             <div className='mainFeedMasterclassMyPost__bottomLine'>
-                <img src={LineIcon} />
+                <img src={LineIcon} alt='star' />
             </div>
         </div>
         </>

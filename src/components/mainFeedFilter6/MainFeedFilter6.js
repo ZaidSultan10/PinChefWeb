@@ -1,5 +1,4 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
 import './MainFeedFilter6.css'
 import { NavLink } from 'react-router-dom'
 
@@ -7,7 +6,6 @@ import { NavLink } from 'react-router-dom'
 
 const MainFeedFilter6 = () => {
 
-    const history=useHistory()
 
     return (
         <div className='mainFeedFilter6'>

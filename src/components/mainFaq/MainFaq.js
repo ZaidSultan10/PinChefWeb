@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './MainFaq.css'
 import faqDatas from './mainFaqData'
 import { Accordion } from '@material-ui/core'
@@ -13,9 +13,9 @@ const MainFaq = () => {
     return (
         <div className='mainFaq'>
             <div className='mainFaq__header'>
-                <img src={LeftIcon} />
+                <img src={LeftIcon} alt='star' />
                 <div className='mainFaq__headerCenter'>
-                    <img src={FaqIcon} />
+                    <img src={FaqIcon} alt='star' />
                     <h4>FAQ</h4>
                 </div>
             </div>

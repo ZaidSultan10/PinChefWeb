@@ -270,7 +270,7 @@ const ModalsForMainPage = () => {
                         <h4 onClick={closeModal}>x</h4>
                     </div>
                     <div className='masterpayment-center'>
-                        <img src={TickIcon} />
+                        <img src={TickIcon} alt='star' />
                     </div>
                     <div className='masterpayment-bottom'>
                         <h5>Payment was successful
@@ -295,7 +295,7 @@ const ModalsForMainPage = () => {
                         <h4 onClick={closeModal}>x</h4>
                     </div>
                     <div className='masterpayment-center'>
-                        <img src={RejectIcon} />
+                        <img src={RejectIcon} alt='star' />
                     </div>
                     <div className='masterpayment-bottom'>
                         <h5>Unfortunately payment was not

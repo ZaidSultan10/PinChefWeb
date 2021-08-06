@@ -1,7 +1,6 @@
 import React from 'react'
 import Ads from '../ads/Ads'
 import ChefAds from '../chefAds/ChefAds'
-import MainFeedFilter4 from '../mainFeedFilter4/MainFeedFilter4'
 import MainSettings from '../mainSettings/MainSettings'
 import './FeedSettings.css'
 

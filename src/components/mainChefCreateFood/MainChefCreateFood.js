@@ -3,7 +3,6 @@ import './MainChefCreateFood.css'
 import AddImageIcon from '../../assets/svg/Add-image-video.svg'
 import CloseIcon from '@material-ui/icons/Close';
 import { Button, FormControl, Input, InputLabel } from '@material-ui/core';
-import DownIcon from '../../assets/svg/Down-button-green.svg'
 import { useHistory } from 'react-router-dom';
 import Modal from 'react-modal'
 import { SearchOutlined } from '@material-ui/icons';
@@ -150,7 +149,7 @@ const MainChefCreateFood = () => {
                     <CloseIcon onClick={openModal1} className='post-close-icon' />
                 </div>
                 <div className='mainChefCreateFood__addImage'>
-                    <img src={AddImageIcon} />
+                    <img src={AddImageIcon} alt='star' />
                 </div>
                 <div className='mainChefCreateFood__name'>
                     <h5>Food Item Name</h5>

@@ -51,7 +51,7 @@ const MainOrderHistory = () => {
                             history.push('/chef/order-details')
                         }} className='mainOrderHistory__details'>
                             <h5>Details</h5>
-                            <img src={DownIcon} />
+                            <img src={DownIcon} alt='star' />
                         </div>
                     </div>
                 </div>
