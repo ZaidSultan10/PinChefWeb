@@ -1,8 +1,9 @@
 .userotp1{
-    width: 25%;
+    width: 300px;
     height: 30%;
     display: grid;
     place-items: center;
+    outline: none;
     margin-left: 38%;
     margin-top: 13rem;
     border-radius: 32px;
@@ -36,4 +37,167 @@
     font-size: 14px;
     text-align: center;
     font-weight: 600;
+}
+
+@media only screen and (max-width:1040px){
+    .userotp1{
+        margin-left: 36%;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .userotp1{
+        margin-left: 35%;
+    }
+}
+
+@media only screen and (max-width:850px){
+    .userotp1{
+        margin-left: 33%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .userotp1{
+        margin-left: 31%;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .userotp1{
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .userotp1{
+        margin-left: 29%;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .userotp1{
+        margin-left: 27%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .userotp1{
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .userotp1{
+        margin-left: 23%;
+    }
+}
+@media only screen and (max-width:500px){
+    .userotp1{
+        margin-left: 19%;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .userotp1{
+        margin-left: 24%;
+        width: 230px;
+        height: 28%;
+    }
+    .userotp-resend-icon >img{
+        widows: 45px;
+        height: 45px;
+    }
+    .userotp-resend-text > p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:412px){
+    .userotp1{
+        margin-left: 22%;
+        width: 230px;
+        height: 28%;
+    }
+    .userotp-resend-icon >img{
+        widows: 45px;
+        height: 45px;
+    }
+    .userotp-resend-text > p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:380px){
+    .userotp1{
+        margin-left: 20%;
+        width: 230px;
+        height: 28%;
+    }
+    .userotp-resend-icon >img{
+        widows: 45px;
+        height: 45px;
+    }
+    .userotp-resend-text > p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .userotp1{
+        margin-left: 18%;
+        width: 210px;
+        height: 27%;
+    }
+    .userotp-resend-icon >img{
+        widows: 40px;
+        height: 40px;
+    }
+    .userotp-resend-text > p{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:325px){
+    .userotp1{
+        margin-left: 17%;
+        width: 210px;
+        height: 27%;
+    }
+    .userotp-resend-icon >img{
+        widows: 40px;
+        height: 40px;
+    }
+    .userotp-resend-text > p{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:315px){
+    .userotp1{
+        margin-left: 15%;
+        width: 200px;
+        height: 25%;
+    }
+    .userotp-resend-icon >img{
+        widows: 40px;
+        height: 40px;
+    }
+    .userotp-resend-text > p{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:300px){
+    .userotp1{
+        margin-left: 14%;
+        width: 200px;
+        height: 25%;
+    }
+    .userotp-resend-icon >img{
+        widows: 40px;
+        height: 40px;
+    }
+    .userotp-resend-text > p{
+        font-size: 10px;
+    }
 }

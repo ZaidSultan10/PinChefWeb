@@ -1,13 +1,16 @@
 .userwelcomehomemodal1{
-    width: 25%;
+    width: 320px;
     height: 30%;
     display: grid;
     place-items: center;
     margin-left: 38%;
     margin-top: 13rem;
     border-radius: 16px;
-    border: 1px solid;
+    border: 1px solid white;
     background-color: white;
+    outline: none;
+    box-shadow: 1px 1px 6px 0 grey;
+
 }
 .user-welcome-container{
     display: flex;
@@ -24,7 +27,7 @@
 
 .user-welcome-top{
     border: 1px solid;
-    border-radius: 999px 999px 999px 0px;
+    border-radius: 16px 16px 16px 0px;
     color: white;
     background-color: #3d3838;
     width: 100%;
@@ -48,20 +51,189 @@
     position: relative;
     height: 100%;
 }
-.user-welcome-no{
+
+.user-welcome-bottom>.user-welcome-no{
     background-color: silver;
     color: #5b5353;
-    border-radius: 0 999px 999px 999px;
+    border-radius: 0 999px 999px 900px;
     width: 40%;
     position: absolute;
     bottom: 0;
 }
-.user-welcome-allow{
+
+.user-welcome-bottom>.user-welcome-allow{
     background-color: #5b5353;
     color: white;
-    border-radius: 999px 0px 999px 999px;
+    border-radius: 999px 0px 900px 999px;
     width: 40%;
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+@media only screen and (max-width:1040px){
+    .userwelcomehomemodal1{
+        margin-left: 35%;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .userwelcomehomemodal1{
+        margin-left: 33.4%;
+    }
+}
+
+@media only screen and (max-width:850px){
+    .userwelcomehomemodal1{
+        margin-left: 31.5%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .userwelcomehomemodal1{
+        margin-left: 29.5%;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .userwelcomehomemodal1{
+        margin-left: 26%;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .userwelcomehomemodal1{
+        margin-left: 26.5%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .userwelcomehomemodal1{
+        margin-left: 24%;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .userwelcomehomemodal1{
+        margin-left: 26%;
+        width: 270px;
+        height: 29%;
+    }
+    .user-welcome-center{
+        margin: 1.85rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:500px){
+    .userwelcomehomemodal1{
+        margin-left: 25%;
+        width: 265px;
+        height: 29%;
+    }
+    .user-welcome-center{
+        margin: 1.85rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .userwelcomehomemodal1{
+        margin-left: 22.5%;
+        width: 255px;
+        height: 29%;
+    }
+    .user-welcome-center{
+        margin: 1.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:412px){
+    .userwelcomehomemodal1{
+        margin-left: 20%;
+        width: 255px;
+        height: 29%;
+    }
+    .user-welcome-center{
+        margin: 1.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:380px){
+    .userwelcomehomemodal1{
+        margin-left: 17%;
+        width: 245px;
+        height: 28%;
+    }
+    .user-welcome-center{
+        margin: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .userwelcomehomemodal1{
+        margin-left: 14%;
+        width: 245px;
+        height: 28%;
+    }
+
+    .user-welcome-center{
+        margin: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:325px){
+    .userwelcomehomemodal1{
+        margin-left: 13%;
+        width: 240px;
+        height: 28%;
+    }
+    .user-welcome-center{
+        margin: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:315px){
+    .userwelcomehomemodal1{
+        margin-left: 10%;
+        width: 240px;
+        height: 28%;
+    }
+    .user-welcome-center{
+        margin: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:300px){
+    .userwelcomehomemodal1{
+        margin-left: 11%;
+        width: 230px;
+        height: 28%;
+    }
+    .user-welcome-center{
+        margin: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

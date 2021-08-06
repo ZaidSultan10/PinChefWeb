@@ -1,14 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button } from '@material-ui/core'
 import './UserOtpChef.css'
 import { useHistory } from 'react-router-dom'
+import './UserOtpChefModal.css'
+import Modal from 'react-modal'
+import ResendIcon from '../../assets/svg-for-user-profile/EMail_icon.svg'
+
 
 
 const UserOtpChef = () => {
 
     const history = useHistory()
 
+    const [modalIsOpen,setModalIsOpen] = useState(false)
+
+    const openModal = () => {
+        setModalIsOpen(true)
+    }
+
+    const closeModal = () => {
+        setModalIsOpen(false)
+    }
+
     return (
+        <>
+        <Modal isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        
+        className='userotp1'
+        contentLabel="Notification Modal">
+            <div className='userotp-resend-container'>
+                <div className='userotp-resend-icon'>
+                    <img src={ResendIcon} />
+                </div>
+                <div className='userotp-resend-text'>
+                    <p>
+                       An OTP was send to your
+                       registered email address.
+                       Please enter the OTP in the
+                       next page 
+                    </p>
+                </div>
+            </div>
+        </Modal>
         <div className='userOtpChef'>
             <div className='userOtpChef__container'>
                 <h4>Veryify</h4>
@@ -25,9 +59,10 @@ const UserOtpChef = () => {
                         history.push('/chef/main/profile')
                     }}>OK</Button>
                 </div>
-                <Button>Resend email</Button>
+                <Button onClick={openModal}>Resend email</Button>
             </div>
         </div>
+        </>
     )
 }
 
