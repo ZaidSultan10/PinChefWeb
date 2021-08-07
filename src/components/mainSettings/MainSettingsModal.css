@@ -1,5 +1,5 @@
 .notificationModal1{
-    width: 25%;
+    width: 300px;
     height: 25%;
     display: grid;
     place-items: center;
@@ -12,7 +12,7 @@
     background-color: white;
 }
 .helpModal1,.themeModal1{
-    width: 25%;
+    width: 300px;
     height: 35%;
     margin-left: 40%;
     box-shadow: 1px 1px 6px 0px gray;
@@ -23,7 +23,7 @@
     background-color: white;
 }
 .languageModal1{
-    width: 25%;
+    width: 300px;
     height: 45%;
     margin-left: 40%;
     box-shadow: 1px 1px 6px 0px gray;
@@ -40,7 +40,7 @@
     justify-content: center;
 }
 .notification-modal-options > h5 {
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 3%;
 }
 .switch{
@@ -103,6 +103,9 @@
     margin-top: 6%;
     align-items: center;
 }
+.help-modal-faq1{
+    margin-bottom: 3%;
+}
 .help-modal-faq2,.theme-dark,.theme-system{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
@@ -117,16 +120,96 @@
     height: 25px;
 }
 .help-modal-faq2 > img{
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
 }
 .language-modal-options{
     margin: 4%;
 }
 .language-modal-lang>h4{
     text-align: center;
+    margin-top: 2%;
+    cursor: pointer;
 }
 .language-modal-lang1>h4{
     text-align: center;
     margin-top: 2%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:750px){
+    .notificationModal1,
+    .themeModal1,.helpModal1,
+    .languageModal1{
+        margin-left: 37%;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .notificationModal1,
+    .themeModal1,.helpModal1,
+    .languageModal1{
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .notificationModal1,
+    .themeModal1,.helpModal1,
+    .languageModal1{
+        margin-left: 22%;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .notificationModal1,
+    .themeModal1,.helpModal1,
+    .languageModal1{
+        margin-left: 14%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .notificationModal1,
+    .themeModal1,.helpModal1,
+    .languageModal1{
+        margin-left: 14%;
+        width: 260px;
+    }
+    .notification-modal-options >img,
+    .theme-light>img,.theme-dark>img,
+    .theme-system>img{
+        width: 22px;
+        height: 22px;
+    }
+    .notification-modal-options > h5,
+    .theme-light>h3,.theme-dark>h3,
+    .theme-system>h3{
+        font-size: 14px;
+    }
+
+
+}
+
+@media only screen and (max-width:350px){
+    .notificationModal1,
+    .themeModal1,.helpModal1,
+    .languageModal1{
+        margin-left: 8%;
+    }
+}
+@media only screen and (max-width:310px){
+    .notificationModal1,
+    .themeModal1,.helpModal1,
+    .languageModal1{
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width:285px){
+    .notificationModal1,
+    .themeModal1,.helpModal1,
+    .languageModal1{
+        margin-left: 1%;
+    }
 }

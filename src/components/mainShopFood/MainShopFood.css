@@ -91,6 +91,14 @@
     margin-bottom: 3%;
 }
 
+@media only screen and (max-width:604px){
+    .mainShopFood{
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media only screen and (max-width:510px){
     .location{
         margin-top: 3%;

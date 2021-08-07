@@ -7,12 +7,14 @@ const ChefMainFilters = ({ chefFilterProp }) => {
     <div className="chefMainFilters">
       {chefFilterProp ? (
         <>
-          <NavLink to="/chef/order-history" activeClassName="filterchef-active">
+          <NavLink to="/chef/order-history" activeClassName="filterchef-active" 
+          className='chefMainFilters__mySale'>
             My Sales
           </NavLink>
           <NavLink
             to="/chef/order-history/my-purchases"
             activeClassName="filterchef-active"
+            className='chefMainFilters__myPurchases'
           >
             My Purhases
           </NavLink>

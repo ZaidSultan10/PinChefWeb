@@ -109,6 +109,7 @@ const closeModal2 = () => {
     isOpen={modalIsOpen2}
     onRequestClose={closeModal3}
     style={customStyles1}
+    
     contentLabel="Example Modal">
           <div className='modal-options-report'>
             <div className='report-heading'>

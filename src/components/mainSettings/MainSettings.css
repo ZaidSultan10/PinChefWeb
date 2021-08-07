@@ -31,12 +31,14 @@
 .mainSettings__notification{
     display: flex;
     align-items: center;
+    cursor: pointer;
     margin-left: 3%;
     margin-top: 4%;
    margin-bottom: 2%;
    font-family: 'Montserrat','sans-serif';
 }
 .mainSettings__notifications{
+    cursor: pointer;
     display: flex;
     align-items: center;
     margin-left: 3%;

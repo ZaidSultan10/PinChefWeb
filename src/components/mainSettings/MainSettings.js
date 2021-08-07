@@ -72,7 +72,7 @@ const MainSettings = ({ settingsProp }) => {
           <img src={NotificationIcon} alt="star" />
           <h5>App Notifications</h5>
           <label className="switch">
-            <input type="checked" checked className="input1" />
+            <input type="checked"  className="input1" />
             <span className="slider"></span>
           </label>
         </div>

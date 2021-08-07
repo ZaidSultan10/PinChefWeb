@@ -5,7 +5,9 @@
     text-decoration: none;
 }
 .chefMainFilters__allposts,
-.chefMainFilters__myposts{
+.chefMainFilters__myposts,
+.chefMainFilters__mySale,
+.chefMainFilters__myPurchases{
     border: 2px solid #3f8f22;
     padding-left: 5%;
     padding-right: 5%;

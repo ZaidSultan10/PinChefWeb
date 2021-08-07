@@ -405,6 +405,10 @@ p{
         border: 1px solid;
         background-color: white;
     }
+    .modal-options-report > .report-message > p{
+        font-size: 16px !important;
+    }
+
 }
 
 @media only screen and (max-width:500px){
@@ -457,6 +461,9 @@ p{
 }
 @media only screen and (max-width:376px){
     .mainFeed__paragraph > p {
+        font-size: 12px !important;
+    }
+    .report-message{
         font-size: 12px !important;
     }
     .heart__icon{
