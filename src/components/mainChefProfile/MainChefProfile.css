@@ -1,6 +1,8 @@
 .mainChefProfile__container{
     display: grid;
     grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
 }
 .mainChefProfile__topLeftArea > h5{
     margin-left: 0.5rem;
@@ -120,7 +122,11 @@
     color: #3f8f22;
 }
 .mainChefProfile__rating{
-    margin-top: 2%;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .mainChefProfile__rating > h5{
     font-size: 16px;
@@ -132,12 +138,16 @@
 }
 .mainChefProfile__container >p {
     margin-top: 2%;
+    width: 100%;
+    height: 100%;
 }
 .mainChefProfile__picButtons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2%;
     grid-gap:5%;
+    width: 100%;
+    height: 100%;
 }
 .mainChefProfile__picButtons > button {
     color: #707070;
