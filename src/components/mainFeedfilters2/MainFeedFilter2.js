@@ -16,13 +16,13 @@ const MainFeedFilter2 = ({filter2Prop}) => {
                         <img src={LeftIcon} onClick={() => {
                             history.push('/chef/profile')
                         }} alt='star' />
-                        <NavLink to='/chef/all-chef' activeClassName='activefilter22' className='mainFeedFilters2__allChef'>All Chefs</NavLink>
+                        <NavLink to='/chef/all-chef' activeClassName='activefilter22' className='mainFeedFilters2__allChef'>Chefs</NavLink>
                         <NavLink to='/chef/followed-chef' activeClassName='activefilter22' className='mainFeedFilters2__followed'>Following</NavLink>
                     </div>
                 )
                 :(
                     <div className='mainFeedFilters2'>
-                        <NavLink to='/user/all-chef' activeClassName='activefilter22' className='mainFeedFilters2__allChef'>All Chefs</NavLink>
+                        <NavLink to='/user/all-chef' activeClassName='activefilter22' className='mainFeedFilters2__allChef'>Chefs</NavLink>
                         <NavLink to='/user/followed-chef' activeClassName='activefilter22' className='mainFeedFilters2__followed'>Following</NavLink>
                     </div>
                 )
