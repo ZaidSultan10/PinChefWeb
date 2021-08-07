@@ -27,7 +27,7 @@ const UserSignIn = () => {
       </div>
       <div className="flex sign-in-up">
         <Email className='user__email' />
-        <h2 className='active2'>SIGN IN</h2>
+        <h2 className='activesignin sign-in-h2 b'>SIGN IN</h2>
         <h2 className='sign-in-h2'
         onClick={() =>{
           history.push('/user/signup')

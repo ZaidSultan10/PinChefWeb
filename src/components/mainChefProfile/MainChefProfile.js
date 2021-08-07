@@ -100,12 +100,17 @@ const MainChefProfile = ({chefProfileProp}) => {
                     <div className='mainChefProfile__followStatus'>
                         <div className='mainChefProfile__followers'>
                             {
-                                chefProfileProp && (
-                                    <img src={FollowIcon} alt='follow' />                       
+                                chefProfileProp ? (
+                                    <>
+                                    <img src={FollowIcon} alt='follow' />
+                                    <h5 >25 Followers</h5>                       
+                                    </>               
+                                ):(
+                                    <h5 className='k'>25 Followers</h5>
                                 )
                             }
                             
-                            <h5>25 Followers</h5>
+                            
                         </div>
                         {
                             chefProfileProp &&(

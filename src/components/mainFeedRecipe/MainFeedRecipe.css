@@ -468,7 +468,7 @@ p{
         font-size: 50px !important;
     }
   }
-  @media only screen and (min-width:1290px) and (max-width:1921px) {
+  /*@media only screen and (min-width:1290px) and (max-width:1921px) {
     .rightIcon{
         font-size: 52px !important;
     }
@@ -541,7 +541,7 @@ p{
     .mainFeedRecipe__paragraph > p{
         font-size: 26px !important;
     }
-  }
+  }*/
   @media only screen 
   and (min-width: 1366px) 
   and (max-height: 1024px) 

@@ -29,6 +29,23 @@
     float: right;
 }
 
+@media only screen and (max-width:604px){
+    .mainNotifications__header{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .mainNotifications__container{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .mainNotifications__userLeft{
+        margin-left: 2%;
+    }
+}
+
 @media only screen and (max-width:412px){
     .mainNotifications__userLeft>h3{
         font-size: 16px;
@@ -63,6 +80,12 @@
 }
 
 @media only screen and (max-width:300px){
+    
+    .mainNotifications__header{
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+    }
+    
     .mainNotifications__userLeft>h3{
         font-size: 12px;
     }
