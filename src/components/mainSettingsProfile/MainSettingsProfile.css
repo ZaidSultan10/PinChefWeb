@@ -1,6 +1,6 @@
 .mainSettingsProfile__heading{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.5fr;
     align-items: center;
     margin-left: 3%;
 }
@@ -51,6 +51,7 @@
     margin-top: 3%;
     align-items: center;
     margin-left: 4%;
+    cursor: pointer;
 }
 .mainSettingsProfile__name >h4{
     margin-left: 4%;
@@ -70,6 +71,9 @@
     .mainSettingsProfile__bannerIcons{
         width: 100%;
     }
+    .mainSettingsProfile__bannerIcons{
+        top: 40%;
+    }
 }
 
 @media only screen and (max-width:420px){
@@ -77,7 +81,7 @@
         height: 13rem;
     }
     .mainSettingsProfile__bannerIcons{
-        top: 40%;
+        top: 35%;
     }
 }
 
@@ -87,6 +91,6 @@
     }
 
     .mainSettingsProfile__bannerIcons{
-        top: 35%;
+        top: 30%;
     }
 }

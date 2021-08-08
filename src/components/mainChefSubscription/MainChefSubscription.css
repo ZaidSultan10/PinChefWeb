@@ -239,6 +239,13 @@
     margin-top: 2%;
 }
 
+@media only screen and (max-width:590px){
+    .mainChefSubscription__headings{
+        display: grid;
+        grid-template-columns: 1fr 2.3fr;
+    }
+}
+
 @media only screen and (max-width:500px){
     .mainChefSubscription__basicPerk>img,
     .mainChefSubscription__vipPerk>img{
@@ -256,6 +263,11 @@
         margin-top: 7%;
         font-size: 12px;
         margin-left: 3%;
+    }
+
+    .mainChefSubscription__headings{
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
     }
 }
 
@@ -277,5 +289,13 @@
         margin-top: 10%;
         font-size: 12px;
         margin-left: 5%;
+    }
+
+    .mainChefSubscription__headings{
+        display: grid;
+        grid-template-columns: 1fr 2.8fr;
+    }
+    .mainChefSubscription__headings > h4{
+        font-size: 16px;
     }
 }

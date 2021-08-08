@@ -1,6 +1,6 @@
 .mainChefPaymentMethods__header{
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
 }
 .mainChefPaymentMethods__header > img{
@@ -83,6 +83,17 @@
     .mainChefPaymentMethods__paypal>button{
         width: 30%;
     }
+    .mainChefPaymentMethods__header{
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .mainChefPaymentMethods__header{
+        display: grid;
+        grid-template-columns: 1fr 3.5fr;
+    }
 }
 
 @media only screen and (max-width:360px){
@@ -91,6 +102,11 @@
     .mainChefPaymentMethods__paypal>button{
         width: 38%;
     }
+
+    .mainChefPaymentMethods__header{
+        display: grid;
+        grid-template-columns: 1fr 3.8fr;
+    }
 }
 
 @media only screen and (max-width:300px){
@@ -98,5 +114,13 @@
     .mainChefPaymentMethods__stripe>button,
     .mainChefPaymentMethods__paypal>button{
         width: 45%;
+    }
+
+    .mainChefPaymentMethods__header{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+    .mainChefPaymentMethods__header > h5{
+        font-size: 16px;
     }
 }

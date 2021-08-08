@@ -1,5 +1,5 @@
 .delaccountmodal1{
-    width: 25%;
+    width: 300px;
     height: 30%;
     display: grid;
     place-items: center;
@@ -12,7 +12,7 @@
     box-shadow: 1px 1px 6px 0px grey;
 }
 .logoutmodal1{
-    width: 25%;
+    width: 300px;
     height: 30%;
     display: grid;
     place-items: center;
@@ -99,4 +99,63 @@ border: 1px solid;
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+@media only screen and (max-width:750px) {
+    .delaccountmodal1,.logoutmodal1{
+        margin-left: 35%;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .delaccountmodal1,.logoutmodal1{
+        margin-left: 30%;
+    }
+}
+@media only screen and (max-width:550px) {
+    .delaccountmodal1,.logoutmodal1{
+        margin-left: 22%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .delaccountmodal1,.logoutmodal1{
+        margin-left: 14%;
+    }
+}
+@media only screen and (max-width:400px) {
+    .delaccountmodal1,.logoutmodal1{
+        margin-left: 14%;
+        width: 260px;
+    }
+
+    .my-del-top > h5,.my-log-top>h5{
+        font-size: 14px;
+    }
+
+    .my-del-center{
+        margin: 2.01rem;
+    }
+    
+    .my-del-bottom > button,.my-log-bottom>button{
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width:350px) {
+    .delaccountmodal1,.logoutmodal1{
+        margin-left: 8%;
+    }
+}
+
+@media only screen and (max-width:310px) {
+    .delaccountmodal1,.logoutmodal1{
+        margin-left: 2%;
+    }
+}
+@media only screen and (max-width:285px) {
+    .delaccountmodal1,.logoutmodal1{
+        margin-left: 1%;
+    }
 }
