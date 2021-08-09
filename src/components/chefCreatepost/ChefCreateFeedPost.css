@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 2fr 1fr;
     margin-top: 3%;
     padding-top: 35px;
-    padding-bottom: 85px;
+    padding-bottom: 90px;
 }
 
 .chefCreateFeedPost__left,.chefCreateFeedPost__center,.chefCreateFeedPost__right{
@@ -24,7 +24,7 @@
 } 
 @media screen and (max-width:604px){
     .chefCreateFeedPost__container{
-        width: 100%;
+        width: 98%;
         height: 100%;
         margin: 0 auto;
         padding-top: 80px;

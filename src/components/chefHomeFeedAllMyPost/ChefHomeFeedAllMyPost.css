@@ -17,6 +17,7 @@
     position: fixed;
     bottom: 15%;
     right: 28%;
+    cursor: pointer;
 }
 .chefHomeFeedAllMyPost__container{
     display: grid;
@@ -44,6 +45,10 @@
     .chefHomeFeedAllMyPost__left,.chefHomeFeedAllMyPost__right{
         display: none;
     }
+    .createHomeFeedAllMyPost__plus{
+        bottom: 17%;
+        right: 12%;
+    }
 } 
 @media screen and (max-width:604px){
     .chefHomeFeedAllMyPost{
@@ -55,6 +60,10 @@
     .chefHomeFeedAllMyPost__container{
         display: grid;
         grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .createHomeFeedAllMyPost__plus{
+        bottom: 15%;
+        right: 12%;
     }
 }
 @media only screen 

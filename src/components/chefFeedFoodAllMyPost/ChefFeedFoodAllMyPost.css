@@ -48,6 +48,10 @@
     .chefFeedFoodAllMyPost__left,.chefFeedFoodAllMyPost__right{
         display: none;
     }
+    .chefFeedFoodAllMyPost__plus > img{
+        bottom: 17%;
+        right: 12%;
+    }
 } 
 @media screen and (max-width:604px){
     .chefFeedFoodAllMyPost{
@@ -59,6 +63,10 @@
     .chefFeedFoodAllMyPost__container{
         display: grid;
         grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .chefFeedFoodAllMyPost__plus > img{
+        bottom: 15%;
+        right: 12%;
     }
 }
 @media only screen 

@@ -5,7 +5,7 @@ import MainFeedFilters from '../mainFeedFilters/MainFeedFilters'
 import './FeedOrderHistory.css'
 
 
-const FeedOrderHistory = () => {
+const FeedOrderHistory = ({feedMasterclassInfoLink}) => {
     return (
         <div className='feedOrderHistory'>
             <div className='feedOrderHistory__container'>
@@ -18,7 +18,14 @@ const FeedOrderHistory = () => {
                     </div>
                     <ChefMainFilters chefFilterProp={true} />
                     <MainFeedFilters mainFilterProp={true} />
-                    <MainOrderHistory />
+                    {
+                        feedMasterclassInfoLink ? (
+                            <MainOrderHistory masterclassInfoProp={true} />
+                        ):(
+                            <MainOrderHistory />
+                        )
+                    }
+                    
                 </div>
                 <div className='feedOrderHistory__right'>
                     

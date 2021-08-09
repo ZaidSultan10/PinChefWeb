@@ -264,3 +264,11 @@
 .mainChefProfileArea__message > p {
     margin-left: 1.5%;
 }
+
+@media only screen and (max-width:604px){
+    .mainChefProfileArea{
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

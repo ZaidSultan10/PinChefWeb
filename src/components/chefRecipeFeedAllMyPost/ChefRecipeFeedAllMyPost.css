@@ -44,6 +44,10 @@
     .chefRecipeFeedAllMyPost__left,.chefRecipeFeedAllMyPost__right{
         display: none;
     }
+    .chefRecipeFeedAllMyPost__plus{
+        bottom: 17%;
+        right: 12%;
+    }
 } 
 @media screen and (max-width:604px){
     .chefRecipeFeedAllMyPost{
@@ -55,6 +59,10 @@
     .chefRecipeFeedAllMyPost__container{
         display: grid;
         grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .chefRecipeFeedAllMyPost__plus{
+        bottom: 15%;
+        right: 12%;
     }
 }
 @media only screen 

@@ -85,7 +85,8 @@ const MainMyChat = () => {
                         </p>
                     </div>
                     <div className='mainMyChat__right'>
-                        <MoreHorizOutlined onClick={openModal} />
+                        <MoreHorizOutlined onClick={openModal} 
+                        className='mainMyChat__moreHoriz' />
                         { /*  <svg className='mypinsvg' xmlns='/assets/svg-for-user-profile/chat_menu_pin_icon.svg' width='30' height='30' viewBox=' 0 0 30 30' /> */}
                         <h5>2h</h5>
                     </div>

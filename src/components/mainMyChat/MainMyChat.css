@@ -7,6 +7,9 @@
     font-size: 22px;
     color: #3f8f22;
 }
+.mainMyChat__moreHoriz{
+    cursor: pointer;
+}
 .mainMyChat__header >img{
     width: 25px;
     height: 25px;

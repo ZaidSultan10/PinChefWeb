@@ -22,6 +22,17 @@ import TermsIcon from "../../assets/svg/Path-28624.svg";
 import LightModeIcon from "../../assets/svg-for-user-profile/Light-mode.svg";
 import DarkModeIcon from "../../assets/svg-for-user-profile/Dark-mode.svg";
 import SystemModeIcon from "../../assets/svg-for-user-profile/System-mode.svg";
+import FaceBookIcon from '../../assets/svg-for-user-profile/001-facebook.svg'
+import WhatsappIcon from '../../assets/svg-for-user-profile/003-whatsapp.svg'
+import SkypeIcon from '../../assets/svg-for-user-profile/006-skype.svg'
+import MessengerIcon from '../../assets/svg-for-user-profile/Facebook-Messenger-cut-in-circle-shadow.svg'
+import LinkedinIcon from '../../assets/svg-for-user-profile/010-linkedin.svg'
+import InstagramIcon from '../../assets/svg-for-user-profile/011-instagram.svg'
+import TwitterIcon from '../../assets/svg-for-user-profile/013-twitter.svg'
+import EmailIcon from '../../assets/svg-for-user-profile/Emal.svg'
+import { Button } from "@material-ui/core";
+
+
 
 const MainSettings = ({ settingsProp }) => {
   const history = useHistory();
@@ -30,6 +41,7 @@ const MainSettings = ({ settingsProp }) => {
   const [modalIsOpen1, setIsOpen1] = useState(false);
   const [modalIsOpen2, setIsOpen2] = useState(false);
   const [modalIsOpen3, setIsOpen3] = useState(false);
+  const [modalIsOpen4, setIsOpen4] = useState(false);
 
   const openModal = () => {
     setIsOpen(true);
@@ -59,6 +71,29 @@ const MainSettings = ({ settingsProp }) => {
   const closeModal3 = () => {
     setIsOpen3(false);
   };
+  const openModal4 = () => {
+    setIsOpen4(true);
+  };
+
+  const closeModal4 = () => {
+    setIsOpen4(false);
+  };
+
+  const shareIcons = [{
+    icon:FaceBookIcon
+  },{
+    icon:WhatsappIcon
+  },{
+    icon:SkypeIcon
+  },{
+    icon:MessengerIcon
+  },{
+    icon:LinkedinIcon
+  },{
+    icon:InstagramIcon
+  },{
+    icon:TwitterIcon
+  }]
 
   return (
     <>
@@ -202,6 +237,36 @@ const MainSettings = ({ settingsProp }) => {
           </div>
         </div>
       </Modal>
+      <Modal isOpen={modalIsOpen4}
+        onRequestClose={closeModal4}
+        className="sharefriendsModal1"
+        contentLabel="Notification Modal">
+          <div className='share-modal-options'>
+              <div className='share-modal-options-header'>
+                  <h6>TELL ABOUT US</h6>
+              </div>
+              <div className='share-modal-options_icons'>
+                  {shareIcons.map((shareIcon) => (
+                      
+                          <img src={shareIcon.icon} alt='icons' />
+                      
+                  ))}
+              </div>
+              <div className='share-modal-options-email'>
+                  <div className='email-left-icon'>
+                      <img src={EmailIcon} alt='icon' />
+                  </div>
+                  <div className='email-right-input'>
+                      <p>Enter email :</p>
+                      <input />
+                  </div>    
+              </div>
+              <div className='share-modal-options-buttons'>
+                  <Button className='share-cancel'>Cancel</Button>
+                  <Button className='share-share'>Share</Button>
+              </div>
+          </div>
+      </Modal>
       <div className="mainSettings">
         <div className="mainSettings__container">
           <div className="mainSettings__profile">
@@ -299,7 +364,7 @@ const MainSettings = ({ settingsProp }) => {
           <div className="mainSettings__divider">
             <img src={HorizontalLine} alt="line" />
           </div>
-          <div className="mainSettings__notifications">
+          <div onClick={openModal4} className="mainSettings__notifications">
             <img src={ShareIcon} className="sharing__icon" alt="star" />
             <h4>SHARE WITH FRIENDS</h4>
           </div>

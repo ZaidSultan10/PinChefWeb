@@ -12,9 +12,11 @@
 }
 .avatar{
     box-shadow:  0 2px 6px 0 gray;
+    cursor: pointer;
 }
 
 .book{
+    cursor: pointer;
     height: 50%;
     margin-left: 18%;
 }
@@ -132,6 +134,12 @@
 }
 
 @media only screen and (max-width:604px){
+    .feedMaster__container{
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .feedMaster__header {
         margin-left: auto;
         margin-right: auto;
@@ -141,6 +149,21 @@
     }
     .feedMaster__header > h3{
         font-size: 11px !important;
+    }
+    .class__details{
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .class__receipt{
+        display: grid;
+        grid-template-columns: 1fr 1fr 4.5fr 1fr 1fr;
+    }
+    .class__timing > p,.class__duration>p,
+    .class__cost {
+        font-size: 10px;
     }
 }
 
@@ -156,14 +179,34 @@
         height: 40px;
     }
 }
+
+@media only screen and (max-width:475px){
+    .class__duration{
+        
+        margin-right: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:430px){
+    .class__duration{
+        
+        margin-right: 0.1rem;
+    }
+}
+
 @media only screen and (max-width:375px){
-    .feedMaster__header{
+    .feedMaster__container>.feedMaster__header{
         display: grid;
-        grid-template-columns: 1fr 1fr 3fr 1fr;
+        grid-template-columns: 1fr 0fr 1fr 1fr !important;
     }
     .feedMaster__container > h3{
         font-size: 14px !important;
     }
+    .class__details{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
 }
 @media only screen and (max-width:306px){
     .feedMaster__header{

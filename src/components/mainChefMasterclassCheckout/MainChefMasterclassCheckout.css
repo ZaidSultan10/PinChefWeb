@@ -3,6 +3,9 @@
     grid-template-columns: 1fr;
     padding-bottom: 24%;
 }
+.mainChefMasterclassCheckout__top >h5{
+    color: white;
+}
 .mainChefMasterclassCheckout__top{
     display: flex;
     justify-content: space-between;
@@ -237,4 +240,38 @@
     justify-content: space-evenly;
     margin-top: 3%;
 }
+
+@media only screen and (max-width:604px){
+    .mainChefMasterclassCheckout__top{
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+    .mainChefMasterclassCheckout__bill{
+        margin-right: 5rem;
+    }
+
+    .mainChefMasterclassCheckout__itemBill{
+        margin-right: 6rem;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .mainChefMasterclassCheckout__item{
+        margin-right: 7%;
+    }
+
+    .mainChefMasterclassCheckout__itemTitle{
+        margin-right: 6%;
+        margin-top: 10px;
+    }
+    .mainChefMasterclassCheckout__sub{
+        margin-left: 18%;
+    }
+}
+
 

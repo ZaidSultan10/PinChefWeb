@@ -43,6 +43,10 @@
     .chefMasterClassFeedAllMyPost__left,.chefMasterClassFeedAllMyPost__right{
         display: none;
     }
+    .add-masterclass{
+        bottom: 17%;
+        right: 12%;
+    }
 } 
 @media screen and (max-width:604px){
     .chefMasterClassFeedAllMyPost{
@@ -54,6 +58,10 @@
     .chefMasterClassFeedAllMyPost__container{
         display: grid;
         grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .add-masterclass{
+        bottom: 15%;
+        right: 12%;
     }
 }
 @media only screen 

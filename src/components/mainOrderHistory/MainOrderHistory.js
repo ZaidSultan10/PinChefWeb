@@ -3,7 +3,7 @@ import './MainOrderHistory.css'
 import DownIcon from '../../assets/svg/Down-button-green.svg'
 import { useHistory } from 'react-router-dom'
 
-const MainOrderHistory = () => {
+const MainOrderHistory = ({masterclassInfoProp}) => {
 
     const history=useHistory()
 
@@ -31,16 +31,39 @@ const MainOrderHistory = () => {
                             <h5 className='history-price3'>$23.80</h5>
                         </div>
                     </div>
-                    <div className='mainOrderHistory__sub'>
-                        <div className='mainOrderHistory__subTotal'>
-                            
-                            <h5 className='history-text'>Total:</h5>
-                        </div>
-                        <div className='mainOrderHistory__subTotalAmount'>
-                            
-                            <p className='history-amount'>$39.84</p>
-                        </div>
-                    </div>
+                    {
+                        masterclassInfoProp?(
+                            <div className='mainOrderHistory__sub1'>
+                                <div className='mainOrderhistory__classLink'>
+                                    <p>Masterclass Information</p>
+                                </div>
+                                
+                                <div className='mainOrderHistory__subTotal'>
+                                    
+                                    <h5 className='history-text'>Total:</h5>
+                                </div>
+                                <div className='mainOrderHistory__subTotalAmount'>
+                                    
+                                    <p className='history-amount'>$39.84</p>
+                                </div>
+                            </div>
+                        ):
+                        (
+                            <div className='mainOrderHistory__sub'>
+                         
+                                <div className='mainOrderHistory__subTotal'>
+                                    
+                                    <h5 className='history-text'>Total:</h5>
+                                </div>
+                                <div className='mainOrderHistory__subTotalAmount'>
+                                    
+                                    <p className='history-amount'>$39.84</p>
+                                </div>
+                            </div>
+                        )
+                    
+                
+                    }
                     
                     <div className='mainOrderHistory__bottom'>
                         <div className='mainOrderHistory__days'>

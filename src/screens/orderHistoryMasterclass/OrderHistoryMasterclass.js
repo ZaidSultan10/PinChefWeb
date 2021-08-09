@@ -8,7 +8,7 @@ const OrderHistoryMasterclass = () => {
     return (
         <div>
             <Header searchProp={true} notificationProp={true} />
-            <FeedOrderHistory />
+            <FeedOrderHistory feedMasterclassInfoLink={true} />
             <Footer footerProp={true} />
         </div>
     )

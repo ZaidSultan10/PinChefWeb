@@ -11,6 +11,20 @@
     border: 1px solid white;
     background-color: white;
 }
+.sharefriendsModal1{
+    width: 430px;
+    height: 35%;
+    display: grid;
+    place-items: center;
+    margin-left: 30%;
+    box-shadow: 1px 1px 6px 0px gray;
+    margin-top: 16rem;
+    border-radius: 16px;
+    outline: none;
+    overflow: hidden;
+    border: 1px solid white;
+    background-color: white;
+}
 .helpModal1,.themeModal1{
     width: 300px;
     height: 35%;
@@ -137,11 +151,93 @@
     cursor: pointer;
 }
 
+.share-modal-options{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+.share-modal-options_icons{
+    display: flex;
+    align-items: center;
+}
+.share-modal-options-header{
+    border: 1px solid;
+    border-radius: 16px 16px 16px 0px;
+    color: white;
+    background-color: #3d3838;
+    width: 100%;
+    height: 140px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+.share-modal-options_icons{
+    margin-top: 10px;
+}
+.share-modal-options_icons > img{
+    width: 44px;
+    height: 44px;
+}
+.share-modal-options-email{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    align-items: center;
+}
+.email-left-icon > img{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.email-right-input{
+    width: 100%;
+}
+.email-right-input>input{
+    width:98%;
+    border: 1px solid white;
+    height: 5vh;
+    outline: none;
+    box-shadow: 1px 1px 6px 0px grey;
+    border-radius: 6px;
+}
+.share-modal-options-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.share-modal-options-buttons >.share-cancel{
+    background-color: silver;
+    color: #5b5353;
+    border-radius: 0 999px 999px 900px;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+}
+
+.share-modal-options-buttons >.share-share{
+    background-color: #5b5353;
+    color: white;
+    border-radius: 999px 0px 900px 999px;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 @media only screen and (max-width:750px){
     .notificationModal1,
     .themeModal1,.helpModal1,
     .languageModal1{
         margin-left: 37%;
+    }
+    .sharefriendsModal1{
+        margin-left: 25%;
     }
 }
 
@@ -151,6 +247,15 @@
     .languageModal1{
         margin-left: 30%;
     }
+    .sharefriendsModal1{
+        margin-left: 18%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .sharefriendsModal1{
+        margin-left: 12%;
+    }
 }
 
 @media only screen and (max-width:550px){
@@ -159,6 +264,9 @@
     .languageModal1{
         margin-left: 22%;
     }
+    .sharefriendsModal1{
+        width: 370px;
+    }
 }
 
 @media only screen and (max-width:450px){
@@ -166,6 +274,10 @@
     .themeModal1,.helpModal1,
     .languageModal1{
         margin-left: 14%;
+    }
+    .sharefriendsModal1{
+        width: 340px;
+        margin-left: 7%;
     }
 }
 
@@ -187,8 +299,27 @@
     .theme-system>h3{
         font-size: 14px;
     }
-
-
+    .sharefriendsModal1{
+        width: 280px;
+        margin-left: 10%;
+        height: 30%;
+    }
+    .share-modal-options-header{
+        height: 120px;
+    }
+    .share-modal-options-header >h6{
+        font-size: 12px;
+    }
+    .share-modal-options_icons > img{
+        width: 34px;
+        height: 34px;
+    }
+    .share-modal-options-email{
+        margin-top: 8px;
+    }
+    .share-modal-options-buttons > button{
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width:350px){
@@ -197,12 +328,21 @@
     .languageModal1{
         margin-left: 8%;
     }
+    .sharefriendsModal1{
+        
+        margin-left: 2%;
+    }
 }
 @media only screen and (max-width:310px){
     .notificationModal1,
     .themeModal1,.helpModal1,
     .languageModal1{
         margin-left: 2%;
+    }
+    .sharefriendsModal1{
+        width: 240px;
+        margin-left: 7%;
+        height: 29%;
     }
 }
 
@@ -211,5 +351,8 @@
     .themeModal1,.helpModal1,
     .languageModal1{
         margin-left: 1%;
+    }
+    .sharefriendsModal1{
+        margin-left: 3%;
     }
 }

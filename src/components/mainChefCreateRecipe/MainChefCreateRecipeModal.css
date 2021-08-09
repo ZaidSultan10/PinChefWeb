@@ -1,5 +1,5 @@
 .mypostmodal1{
-    width: 25%;
+    width: 300px;
     height: 30%;
     display: grid;
     place-items: center;
@@ -64,4 +64,59 @@
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+@media only screen and (max-width:750px){
+    .mypostmodal1{
+        margin-left: 35%;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .mypostmodal1{
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .mypostmodal1{
+        margin-left: 22%;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .mypostmodal1{
+        margin-left: 14%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .mypostmodal1{
+        margin-left: 14%;
+        width: 260px;
+    }
+    .my-post-top>h5{
+        font-size: 16px;
+    }
+    .my-post-bottom > button{
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width:350px){
+    .mypostmodal1{
+        margin-left: 8%;
+    }
+}
+@media only screen and (max-width:310px){
+    .mypostmodal1{
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width:285px){
+    .mypostmodal1{
+        margin-left: 1%;
+    }
 }
