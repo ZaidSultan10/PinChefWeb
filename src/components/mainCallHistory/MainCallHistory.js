@@ -40,8 +40,12 @@ const MainCallHistory = () => {
                         <p>8:45</p>
 
                     </div>
-                    <img src={IncomingVideoIcon} alt='icon' />
-                    <img src={IncomingCallIcon} alt='icon' />
+                    <img onClick={() => {
+                        history.push('/chef/call')
+                    }} src={IncomingVideoIcon} alt='icon' />
+                    <img onClick={() => {
+                        history.push('/chef/call')
+                    }} src={IncomingCallIcon} alt='icon' />
                 </div>
                 <div className='mainCallHistory__bottom'>
                     <img src={BottomLine} alt='icon' />

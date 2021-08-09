@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  width: 30%;
+  width: 400px !important;
   margin: 0 auto;
   border-radius: 60px;
   display: grid;
@@ -44,6 +44,8 @@
 .sign-in-up {
   margin-top: 20px !important;
   padding: 2%;
+  
+  height: 50px;
   margin-left: 7%;
 }
 .sign-in-up > h2 {
@@ -361,7 +363,7 @@
 }
 @media only screen and (max-width: 541px) {
   .userSignin {
-    width: 70%;
+    width: 370px !important;
   }
 }
 @media only screen and (max-width: 465px) {
@@ -411,17 +413,41 @@
 
 @media only screen and (max-width: 415px) {
   .userSignin {
-    width: 85%;
+    width: 330px !important;
+    height: 80% !important;
   }
 }
 @media only screen and (max-width: 376px) {
   .userSignin {
-    width: 90%;
+    width: 300px !important;
+    height: 75% !important;
+  }
+  .email-div > label > strong {
+    font-size: 13px !important;
+  }
+
+  .keep-me-sign-in > span > strong{
+    font-size: 10px !important;
+  }
+  .keep-me-sign-in input {
+    height: 1em !important;
+    width: 1em !important;
+    border: none;
+  }
+  .keep-me-sign-in-and-submit > button{
+    font-size: 10px !important;
+  }
+  .forgot-password > p{
+    font-size: 10px !important;
+  }
+  .Privicy-instructions,.Privicy-instructions>strong{
+    font-size: 10px !important;
   }
 }
+
 @media only screen and (max-width: 322px) {
   .userSignin {
-    width: 100%;
+    width: 270px !important;
   }
   .chef__button {
     margin-right: 3%;
@@ -435,9 +461,70 @@
     font-size: 18px !important;
     margin-top: -0.5px;
   }
+  .email-div > input{
+    width: 85% !important;
+    margin-right: 1.34em !important;
+  }
+  .chef__button > button{
+    margin-right: 12% !important;
+  }
 
   .continue__button > button {
     margin-top: 3%;
+  }
+  .sign-in-up h2 {
+    font-size: 12px;
+  }
+  .user__email {
+    width: 30px !important;
+    height: 30px !important;
+    margin-top: 1%;
+  }
+  .email-div {
+    font-size: 12px;
+  }
+  .email-div input {
+    background-size: 18px;
+  }
+  .password-div {
+    font-size: 12px;
+  }
+  .password-div input {
+    background-size: 12px;
+  }
+  .terms__conditions > p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .userSignin {
+    width: 260px !important;
+  }
+  .chef__button {
+    margin-right: 3%;
+    margin-top: 2%;
+  }
+  .chef__button > button {
+    font-size: 10px !important;
+    margin-left: 2%;
+  }
+  .right__icon {
+    font-size: 18px !important;
+    margin-top: -0.5px;
+  }
+  .email-div > input{
+    width: 85% !important;
+    margin-right: 2em !important;
+  }
+  .password-div-pass > input {
+    width: 85% !important;
+  }
+  .chef__button > button{
+    margin-right: 15% !important;
+  }
+
+  .keep-me-sign-in-and-submit > button  {
+    margin-right: 4em !important;
   }
   .sign-in-up h2 {
     font-size: 12px;

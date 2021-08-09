@@ -16,11 +16,31 @@ import AllChefsIcon from '../../assets/svg/All-Chefs.svg'
 import CallIcon from '../../assets/svg/Call-chef-vip-only.svg'
 import ShareIcon from '../../assets/svg/Share-chef-profile-icon.svg'
 import ChatIcon from '../../assets/svg/Chat.svg'
+import Modal from 'react-modal'
+import FaceBookIcon from '../../assets/svg-for-user-profile/001-facebook.svg'
+import WhatsappIcon from '../../assets/svg-for-user-profile/003-whatsapp.svg'
+import SkypeIcon from '../../assets/svg-for-user-profile/006-skype.svg'
+import MessengerIcon from '../../assets/svg-for-user-profile/Facebook-Messenger-cut-in-circle-shadow.svg'
+import LinkedinIcon from '../../assets/svg-for-user-profile/010-linkedin.svg'
+import InstagramIcon from '../../assets/svg-for-user-profile/011-instagram.svg'
+import TwitterIcon from '../../assets/svg-for-user-profile/013-twitter.svg'
+import EmailIcon from '../../assets/svg-for-user-profile/Emal.svg'
+import LinkIcon from '../../assets/svg-for-user-profile/copy-link.svg'
+
 
 
 const MainChefProfile = ({chefProfileProp}) => {
 
     const [menuState,setMenuState] = useState(1)
+    const [isModalOpen,setisModalOpen] = useState(false)
+
+    const openModal = () => {
+        setisModalOpen(true)
+    }
+
+    const closeModal = () => {
+        setisModalOpen(false)
+    }
 
     const history=useHistory()
 
@@ -28,7 +48,56 @@ const MainChefProfile = ({chefProfileProp}) => {
         history.push('/chef/all-chef')
     }
 
+    const shareIcons = [{
+        icon:FaceBookIcon
+      },{
+        icon:WhatsappIcon
+      },{
+        icon:SkypeIcon
+      },{
+        icon:MessengerIcon
+      },{
+        icon:LinkedinIcon
+      },{
+        icon:InstagramIcon
+      },{
+        icon:TwitterIcon
+      },{
+        icon:EmailIcon
+      }]
+
     return (
+        <>
+        <Modal isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        className="sharefriendsModal1"
+        contentLabel="Notification Modal">
+          <div className='share-modal-options'>
+              <div className='share-modal-options-header'>
+                  <h6>TELL ABOUT US</h6>
+              </div>
+              <div className='share-modal-options_icons'>
+                  {shareIcons.map((shareIcon) => (
+                      
+                          <img src={shareIcon.icon} alt='icons' />
+                      
+                  ))}
+              </div>
+              <div className='share-modal-options-email'>
+                  <div className='email-left-icon'>
+                      <img src={LinkIcon} alt='icon' />
+                  </div>
+                  <div className='email-right-input'>
+                      <p>Enter email :</p>
+                      <input />
+                  </div>    
+              </div>
+              <div className='share-modal-options-buttons'>
+                  <Button onClick={closeModal} className='share-cancel'>Cancel</Button>
+                  <Button className='share-share'>Share</Button>
+              </div>
+          </div>
+      </Modal>
         <div className='mainChefProfile'>
             <div className='mainChefProfile__container'>
                 <div className='mainChefProfile__topArea'>
@@ -52,27 +121,27 @@ const MainChefProfile = ({chefProfileProp}) => {
                     }
                     
                     <div className='mainChefProfile__topRightArea'>
-                        <img onClick={() => {
-                            history.push('/chef/call')
-                        }} src={CallIcon} alt='star' />
+                        
                         {
                             chefProfileProp ? (
                                 <>
                                     <img onClick={() => {
+                                        history.push('/chef/call')
+                                    }} src={CallIcon} alt='star' />
+                                    <img onClick={() => {
                                         history.push('/chat/newchat')
                                     }} src={ChatIcon} alt='star' />
-                                    <img onClick={() => {
-                                        history.push('')
-                                    }} src={ShareIcon} alt='star' />
+                                    <img onClick={openModal} src={ShareIcon} alt='star' />
                                 </>
                             ):(
                                 <>
                                     <img onClick={() => {
+                                        history.push('/call/history')
+                                    }} src={CallIcon} alt='star' />
+                                    <img onClick={() => {
                                         history.push('/chef/chats')
                                     }} src={ChatIcon} alt='star' />
-                                    <img onClick={() => {
-                                        history.push('')
-                                    }} src={ShareIcon} alt='star' />
+                                    <img onClick={openModal} src={ShareIcon} alt='star' />
                                 </>
                             )
                         }
@@ -181,6 +250,7 @@ const MainChefProfile = ({chefProfileProp}) => {
                     
             </div>
         </div>
+        </>
     )
 }
 

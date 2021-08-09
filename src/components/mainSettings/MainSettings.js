@@ -31,6 +31,7 @@ import InstagramIcon from '../../assets/svg-for-user-profile/011-instagram.svg'
 import TwitterIcon from '../../assets/svg-for-user-profile/013-twitter.svg'
 import EmailIcon from '../../assets/svg-for-user-profile/Emal.svg'
 import { Button } from "@material-ui/core";
+import LinkIcon from '../../assets/svg-for-user-profile/copy-link.svg'
 
 
 
@@ -93,6 +94,8 @@ const MainSettings = ({ settingsProp }) => {
     icon:InstagramIcon
   },{
     icon:TwitterIcon
+  },{
+    icon:EmailIcon
   }]
 
   return (
@@ -254,7 +257,7 @@ const MainSettings = ({ settingsProp }) => {
               </div>
               <div className='share-modal-options-email'>
                   <div className='email-left-icon'>
-                      <img src={EmailIcon} alt='icon' />
+                      <img src={LinkIcon} alt='icon' />
                   </div>
                   <div className='email-right-input'>
                       <p>Enter email :</p>
@@ -262,7 +265,7 @@ const MainSettings = ({ settingsProp }) => {
                   </div>    
               </div>
               <div className='share-modal-options-buttons'>
-                  <Button className='share-cancel'>Cancel</Button>
+                  <Button onClick={closeModal4} className='share-cancel'>Cancel</Button>
                   <Button className='share-share'>Share</Button>
               </div>
           </div>

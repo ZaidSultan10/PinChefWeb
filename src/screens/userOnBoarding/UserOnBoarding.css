@@ -3,15 +3,15 @@
   height: 100vh;
 }
 .UserOnboarding-Body {
-  height: 100%;
+  height: 580px;
   display: flex;
   margin-top: 5%;
   flex-direction: column;
-  
+  width: 100%;
   align-items: center;
 }
 .UserOnboarding-Carousel {
-  height: 89%;
+  height: 100%;
   padding: 30px 20px 10px;
   flex-direction: column;
   font-size: 12px !important;
@@ -57,8 +57,9 @@
 }
 
 @media screen and (max-width:300px){
-  .carousel-div-lg{
-    width: 100% !important;
-    margin-top: 5% !important;
+  .UserOnboarding-Body{
+    width: 300px;
+    
+    margin-left: -1rem;
   }
 }

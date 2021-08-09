@@ -15,6 +15,7 @@
 .mainCallHistory__header > img {
     width:20px;
     height:20px;
+    cursor: pointer;
 }
 
 .mainCallHistory__clear{
@@ -24,6 +25,16 @@
     margin-top: 3%;
     margin-left: 2%;
     margin-right: 2%;
+}
+.mainCallHistory__clear > .clear-call{
+    cursor: pointer;
+    font-weight: bold;
+    color: grey;
+}
+.mainCallHistory__clear > .clear-all{
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
 }
 .mainCallHistory__input{
     display: grid;
@@ -47,6 +58,7 @@
     right: 3%;
     top: 3px;
     z-index: 10px;
+    cursor: pointer;
 }
 .mainCallHistory__main{
     display: grid;
@@ -58,6 +70,7 @@
 .mainCallHistory__main > img{
     width: 25px;
     height: 25px;
+    cursor: pointer;
 }
 .mainCallHistory__username{
     display: grid;
