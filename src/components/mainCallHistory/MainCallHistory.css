@@ -1,0 +1,138 @@
+.mainCallHistory{
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainCallHistory__header{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.mainCallHistory__header > h5{
+    font-size: 20px;
+    color: #469a09;
+}
+
+.mainCallHistory__header > img {
+    width:20px;
+    height:20px;
+}
+
+.mainCallHistory__clear{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.mainCallHistory__input{
+    display: grid;
+    margin-top: 3%;
+    position: relative;
+    padding-bottom: 3%;
+}
+.mainCallHistory__input > input{
+
+    width: 100%;
+    height: 5vh;
+    border-radius: 999px;
+    border: 1px solid;
+    outline: none;
+    padding-left: 3%;
+}
+
+.mainCallHistory__search{
+    position: absolute;
+    color: grey !important;
+    right: 3%;
+    top: 3px;
+    z-index: 10px;
+}
+.mainCallHistory__main{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr;
+    margin-top: 2%;
+    margin-left: 2%;
+    align-items: center;
+}
+.mainCallHistory__main > img{
+    width: 25px;
+    height: 25px;
+}
+.mainCallHistory__username{
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    align-items: center;
+}
+.mainCallHistory__username>img{
+    width: 12px;
+    height: 12px;
+}
+
+.mainCallHistory__bottom{
+    width: 99%;
+    margin: 2% auto;
+}
+
+ @media only screen and (max-width:750px){
+    .mainCallHistory__username{
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        align-items: center;
+    }
+ }
+
+ @media only screen and (max-width:500px){
+    .mainCallHistory__username{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        align-items: center;
+    }
+    .mainCallHistory__main{
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr 1fr;
+    }
+ }
+
+ @media only screen and (max-width:500px){
+    .mainCallHistory__username{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+ }
+
+ @media only screen and (max-width:350px){
+    .mainCallHistory__username > h4{
+        font-size: 14px;
+    }
+    .mainCallHistory__main{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 1fr;
+    }
+    .mainCallHistory__main > img{
+        width: 20px;
+        height: 20px;
+    }
+    .mainCallHistory__clear{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        
+    }
+ }
+
+
+ @media only screen and (max-width:310px){
+    .mainCallHistory__username > h4{
+        font-size: 12px;
+    }
+    .mainCallHistory__main{
+        display: grid;
+        grid-template-columns: 1.5fr 3.5fr 1fr 1fr;
+    }
+    .mainCallHistory__main > img{
+        width: 20px;
+        height: 20px;
+    }
+
+ }

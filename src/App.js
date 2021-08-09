@@ -92,6 +92,7 @@ import UserOtpChef from "./screens/userOtpChef/UserOtpChef";
 import Notifications from "./screens/notifications/Notifications";
 import NotificationsUser from "./screens/notificationsUser/NotificationsUser";
 import Cart from "./screens/cart/Cart";
+import CallHistory from "./screens/callHistory/CallHistory";
 
 
 
@@ -187,6 +188,7 @@ function App() {
         <Route path="/chef/notifications" exact component={Notifications} />
         <Route path="/user/notifications" exact component={NotificationsUser} />
         <Route path="/cart" exact component={Cart} />
+        <Route path="/call/history" exact component={CallHistory} />
         <Route path="/usersignin" exact>
           <Signin>
             <UserSignIn />
