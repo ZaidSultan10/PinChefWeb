@@ -262,6 +262,7 @@ const MainSettings = ({ settingsProp }) => {
                   <div className='email-right-input'>
                       <p>Enter email :</p>
                       <input />
+                      <p className='copying-link'>COPY</p>
                   </div>    
               </div>
               <div className='share-modal-options-buttons'>

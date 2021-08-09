@@ -7,6 +7,8 @@ import IncomingVideoIcon from '../../assets/svg-for-user-profile/Incomming-video
 import BottomLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import { Avatar } from '@material-ui/core'
 import { useHistory } from 'react-router-dom'
+import AudioCall from '../../assets/svg-for-user-profile/Audio-call.svg'
+import VideoCall from '../../assets/svg-for-user-profile/Video-call.svg'
 
 
 
@@ -42,10 +44,10 @@ const MainCallHistory = () => {
                     </div>
                     <img onClick={() => {
                         history.push('/chef/call')
-                    }} src={IncomingVideoIcon} alt='icon' />
+                    }} src={VideoCall} alt='icon' />
                     <img onClick={() => {
                         history.push('/chef/call')
-                    }} src={IncomingCallIcon} alt='icon' />
+                    }} src={AudioCall} alt='icon' />
                 </div>
                 <div className='mainCallHistory__bottom'>
                     <img src={BottomLine} alt='icon' />

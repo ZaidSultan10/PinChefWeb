@@ -194,6 +194,7 @@
 }
 .email-right-input{
     width: 100%;
+    position: relative;
 }
 .email-right-input>input{
     width:98%;
@@ -202,6 +203,15 @@
     outline: none;
     box-shadow: 1px 1px 6px 0px grey;
     border-radius: 6px;
+}
+.email-right-input > .copying-link{
+    position: absolute;
+    z-index: 999px;
+    right: 8%;
+    cursor: pointer;
+    top: 22px;
+    font-weight: bold;
+    color: #469a09;
 }
 .share-modal-options-buttons{
     display: flex;
