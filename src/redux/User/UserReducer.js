@@ -1,4 +1,4 @@
-import { SIGNIN_SUCCESS } from "./UserType";
+import { SIGNIN_FAILURE, SIGNIN_SUCCESS } from "./UserType";
 
 const INITIAL_STATE = {
   currentUser: null,
@@ -12,6 +12,12 @@ const UserReducer = (state = INITIAL_STATE, action) => {
         ...state,
         currentUser: action.payload,
         error: null,
+      };
+    case SIGNIN_FAILURE:
+      return {
+        ...state,
+        currentUser: null,
+        error: action.payload,
       };
     default:
       return state;

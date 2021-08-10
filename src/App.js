@@ -93,7 +93,7 @@ import CallHistory from "./screens/callHistory/CallHistory";
 
 function App() {
   useEffect(() => {
-    fetch("http://localhost:5000/api/")
+    fetch("/api/")
       .then((res) => res.json())
       .then((txt) => console.log(txt))
       .catch((err) => console.log(err));

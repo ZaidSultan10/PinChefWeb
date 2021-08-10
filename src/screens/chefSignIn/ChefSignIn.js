@@ -10,8 +10,9 @@ import { useHistory } from "react-router-dom";
 import { ReactComponent as Facebook } from "../../assets/svg/Sign-in-with Facebook-icon.svg";
 import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-icon.svg";
 import { ReactComponent as Apple } from "../../assets/svg/Sign-in -with-apple-icon.svg";
-
-const ChefSignIn = () => {
+import { signUpSuccess } from "../../redux/User/UserAction";
+import { connect } from "react-redux";
+const ChefSignIn = ({ signUpSuccess }) => {
   const [passwordType, setpasswordType] = useState("password");
   const [bgCng, setBgCng] = useState(true);
 
@@ -21,9 +22,7 @@ const ChefSignIn = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     // emailSignInStart(email, password);
-    console.log("I am hit");
-    console.log(email);
-    console.log(password);
+    signUpSuccess();
   };
   const handleChange = (event) => {
     switch (event.target.name) {
@@ -136,5 +135,7 @@ const ChefSignIn = () => {
     </div>
   );
 };
-
-export default ChefSignIn;
+const mapDispatchToProps = (dispatch) => ({
+  signUpSuccess: () => dispatch(signUpSuccess()),
+});
+export default connect(null, mapDispatchToProps)(ChefSignIn);
