@@ -4,7 +4,7 @@ import { ReactComponent as Email } from "../../assets/svg/email-icon-big.svg";
 
 import { useState } from "react";
 import { Button } from "@material-ui/core";
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { useHistory } from "react-router-dom";
 
 import { ReactComponent as Facebook } from "../../assets/svg/Sign-in-with Facebook-icon.svg";
@@ -15,23 +15,50 @@ const UserSignIn = () => {
   const [passwordType, setpasswordType] = useState("password");
   const [bgCng, setBgCng] = useState(true);
 
-  let history = useHistory()
-
+  let history = useHistory();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    // emailSignInStart(email, password);
+    console.log("I am hit");
+    console.log(email);
+    console.log(password);
+  };
+  const handleChange = (event) => {
+    switch (event.target.name) {
+      case "email":
+        setEmail(event.target.value);
+        break;
+      case "password":
+        setPassword(event.target.value);
+        break;
+      default:
+        break;
+    }
+  };
   return (
     <div className="userSignin">
-      <div className='chef__button'>
-          <Button onClick={ () =>{
-                    history.push('/chef/signin')
-                }
-            }>I AM A CHEF <ChevronRightIcon className='right__icon' /> </Button>
+      <div className="chef__button">
+        <Button
+          onClick={() => {
+            history.push("/chef/signin");
+          }}
+        >
+          I AM A CHEF <ChevronRightIcon className="right__icon" />{" "}
+        </Button>
       </div>
       <div className="flex sign-in-up">
-        <Email className='user__email' />
-        <h2 className='activesignin sign-in-h2 b'>SIGN IN</h2>
-        <h2 className='sign-in-h2'
-        onClick={() =>{
-          history.push('/user/signup')
-      }}>SIGN UP</h2>
+        <Email className="user__email" />
+        <h2 className="activesignin sign-in-h2 b">SIGN IN</h2>
+        <h2
+          className="sign-in-h2"
+          onClick={() => {
+            history.push("/user/signup");
+          }}
+        >
+          SIGN UP
+        </h2>
       </div>
       <div className="flex-column form">
         <div className="email-div">
@@ -39,9 +66,12 @@ const UserSignIn = () => {
             <strong>Email ID</strong>
           </label>
           <input
-            type="text"
+            type="email"
+            name="email"
             autoComplete="true"
             placeholder="ex: Johndoe@pinchif.io"
+            value={email}
+            onChange={handleChange}
           />
         </div>
         <div className="password-div">
@@ -51,8 +81,11 @@ const UserSignIn = () => {
           <div className="password-div-pass flex">
             <input
               type={passwordType}
+              name="password"
               autoComplete="true"
               placeholder="ex: PinChefisthebest!"
+              value={password}
+              onChange={handleChange}
             />
             <span
               className={`tooglePassword ${bgCng ? "show" : "hide"}`}
@@ -75,11 +108,9 @@ const UserSignIn = () => {
               <strong>Keep me Signed in</strong>
             </span>
           </div>
-          <button onClick={ () =>{
-                    history.push('/homepage')
-                }
-            } className="continue"
-          >Continue</button>
+          <button onClick={handleSubmit} className="continue">
+            Continue
+          </button>
         </div>
         <div className="sign-in-with-google-and-forget-password">
           <div className="sign-in-with-social-media">
@@ -87,9 +118,10 @@ const UserSignIn = () => {
             <Facebook className="pd-1 fb-blue" />
             <Google className="pd-1" />
           </div>
-          <div onClick={
-              () => history.push('/user/forgot-password')
-          } className="forgot-password">
+          <div
+            onClick={() => history.push("/user/forgot-password")}
+            className="forgot-password"
+          >
             <p>FORGOT PASSWORD</p>
           </div>
         </div>
