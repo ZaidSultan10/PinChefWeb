@@ -8,18 +8,20 @@ import {NavLink,useHistory } from "react-router-dom";
 import { ReactComponent as Facebook } from "../../assets/svg/Sign-in-with Facebook-icon.svg";
 import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-icon.svg";
 import { ReactComponent as Apple } from "../../assets/svg/Sign-in -with-apple-icon.svg";
-
-const ChefSignUp = () => {
+import { signUpStart } from "../../redux/User/UserAction";
+import { connect } from "react-redux";
+const ChefSignUp = ({ signUpStart }) => {
   const [passwordType, setpasswordType] = useState("password");
   const [bgCng, setBgCng] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const history = useHistory();
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // emailSignInStart(email, password);
-    console.log("I am hit");
-    console.log(email);
-    console.log(password);
+    signUpStart({ email, password, userType: "chef" });
+    setEmail("");
+    setPassword("");
+    history.replace("/chef/verification");
   };
   const handleChange = (event) => {
     switch (event.target.name) {
@@ -33,14 +35,13 @@ const ChefSignUp = () => {
         break;
     }
   };
-  let history = useHistory();
   return (
     <div className="chefSignIn">
       <div className="userSignin">
         <div className="chef__button">
           <Button
             onClick={() => {
-              history.push("/usersignin");
+              history.push("/user/signin");
             }}
           >
             FIND A CHEF <ChevronRightIcon className="right__icon" />{" "}
@@ -129,5 +130,7 @@ const ChefSignUp = () => {
     </div>
   );
 };
-
-export default ChefSignUp;
+const mapDispatchToProps = (dispatch) => ({
+  signUpStart: (user) => dispatch(signUpStart(user)),
+});
+export default connect(null, mapDispatchToProps)(ChefSignUp);

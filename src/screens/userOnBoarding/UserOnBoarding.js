@@ -55,7 +55,7 @@ const UserOnBoarding = () => {
           })}
         </Carousel>
         <div className="UserOnboarding-NavigationBtn">
-          <button type="button" onClick={() => history.push("/usersignin")}>
+          <button type="button" onClick={() => history.push("/user/signin")}>
             Start
           </button>
         </div>

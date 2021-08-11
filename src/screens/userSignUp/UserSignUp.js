@@ -49,6 +49,7 @@ const UserSignUp = () => {
         </div>
         <div className="flex sign-in-up">
           <Email className="user__email" />
+
           <NavLink exact to='/usersignin' activeClassName='activesignup'
           className='signin-button' >SIGN IN</NavLink>
           <NavLink exact to='/user/signup' activeClassName='activesignup'
