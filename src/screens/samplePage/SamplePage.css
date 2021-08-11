@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: repeat(1,minmax(0,1fr));
     width: 85%;
-    height: auto;
     margin: 0 auto;
     max-width: 1400px;
     margin-top: 3.5%;
@@ -14,10 +13,36 @@
     justify-content: center;
     grid-gap:1%;
     padding-bottom: 8%;
+    height: 84.5vh;
 }
 .samplepage__left,.samplepage__right,.samplepage__center{
     width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
+.samplepage__left::-webkit-scrollbar-track,
+.samplepage__center::-webkit-scrollbar-track,
+.samplepage__right::-webkit-scrollbar-track{
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+  }
+  
+  .samplepage__left::-webkit-scrollbar,
+  .samplepage__center::-webkit-scrollbar,
+  .samplepage__right::-webkit-scrollbar{
+    width: 12px;
+      background-color: #F5F5F5;
+  }
+  .samplepage__left::-webkit-scrollbar-thumb,
+.samplepage__center::-webkit-scrollbar-thumb,
+.samplepage__right::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+      box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: #555;
+  }
+  
 .samplepage__right{
     
     display: grid;
@@ -35,6 +60,9 @@
     .samplepage__container{
         display: grid;
         grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .samplepage__center{
+        overflow-y: hidden;
     }
     .samplepage__left,.samplepage__right{
         display: none;

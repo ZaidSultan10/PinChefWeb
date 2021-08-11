@@ -125,62 +125,67 @@ const closeModal2 = () => {
           </div>
     </Modal>
     <div className="mainFeed">
-      <div className="mainFeed__header">
-          <div className='avatar__container'>
-            <Avatar className="avatar" onClick={() => {
-              history.push('/user/chef/profile')
-            }} />
-          </div>
-        <div className="mainFeed__userName">
-          <h3 onClick={() => {
-              history.push('/user/chef/profile')
-            }} >Matt Wilson</h3>
-          <MoreHorizOutlinedIcon onClick={openModal} className="moreHoriz" />
-        </div>
-      </div>
-      <div className="mainFeed__location">
-        <div className="mainFeed__container__location">
-          <img src={LocationIcon} className="icon" alt="Location" />
-          <p className="location__city">Miami,</p>
-          <p className="location__country">FL</p>
-        </div>
-        <div className="mainFeed__time">
-          <QueryBuilderIcon className="time" />
-          <p>45 min ago</p>
-        </div>
-      </div>
-      <div className='post__image__container'>
-        <img className="post__image" src={PostImage} alt="post" />
-      </div>
-      <div className="mainFeed__actions">
-        <div className="mainFeed__actions__left">
-          <div className="like">
-            <img src={HeartIcon} className="heart__icon" alt='star' />
-            <p>135</p>
-          </div>
-          <div className="comment">
-            <img onClick={() => {
-              history.push('/user/comments')
-            }} src={CommentIcon} alt="comment" />
-            <p>120</p>
+      {[...Array(6)].map(() => (
+        <>
+          <div className="mainFeed__header">
+            <div className='avatar__container'>
+              <Avatar className="avatar" onClick={() => {
+                history.push('/user/chef/profile')
+              }} />
+            </div>
+          <div className="mainFeed__userName">
+            <h3 onClick={() => {
+                history.push('/user/chef/profile')
+              }} >Matt Wilson</h3>
+            <MoreHorizOutlinedIcon onClick={openModal} className="moreHoriz" />
           </div>
         </div>
-        <div className="mainFeed__actions__right">
-          <div className="share">
-            <img src={ShareItIcon} className="share__icon" alt="Share" />
+        <div className="mainFeed__location">
+          <div className="mainFeed__container__location">
+            <img src={LocationIcon} className="icon" alt="Location" />
+            <p className="location__city">Miami,</p>
+            <p className="location__country">FL</p>
+          </div>
+          <div className="mainFeed__time">
+            <QueryBuilderIcon className="time" />
+            <p>45 min ago</p>
           </div>
         </div>
-      </div>
-      <div className="mainFeed__paragraph">
-        <p>
-          It was a great night as we were catering for a wedding. Thank you to
-          all the staff that helped to make this event as wonderful as possible.
-          Special thanks to the host
-        </p>
-      </div>
-      <div className='bottom__line'>
-            <img src={HorizontalLine} alt='line' />
-      </div>
+        <div className='post__image__container'>
+          <img className="post__image" src={PostImage} alt="post" />
+        </div>
+        <div className="mainFeed__actions">
+          <div className="mainFeed__actions__left">
+            <div className="like">
+              <img src={HeartIcon} className="heart__icon" alt='star' />
+              <p>135</p>
+            </div>
+            <div className="comment">
+              <img onClick={() => {
+                history.push('/user/comments')
+              }} src={CommentIcon} alt="comment" />
+              <p>120</p>
+            </div>
+          </div>
+          <div className="mainFeed__actions__right">
+            <div className="share">
+              <img src={ShareItIcon} className="share__icon" alt="Share" />
+            </div>
+          </div>
+        </div>
+        <div className="mainFeed__paragraph">
+          <p>
+            It was a great night as we were catering for a wedding. Thank you to
+            all the staff that helped to make this event as wonderful as possible.
+            Special thanks to the host
+          </p>
+        </div>
+        <div className='bottom__line'>
+              <img src={HorizontalLine} alt='line' />
+        </div>
+      </>  
+      ))}
+      
     </div>
     </>
   );

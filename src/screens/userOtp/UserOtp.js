@@ -44,7 +44,7 @@ const UserOtp = () => {
         </Modal>
         <div className='userOtp'>
             <div className='userOtp__container'>
-                <h4>Veryify</h4>
+                <h4>Verify</h4>
                 <h3>mary@yahoo.com</h3>
                 <h4>Enter 4 digit OTP</h4>
                 <div className='userOtp__input'>
