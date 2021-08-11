@@ -1,10 +1,11 @@
 .userOtp{
     display:grid;
     place-items: center;
-    height: 80%;
-    width: 60%;
+    height: 100%;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 3%;
+
+    background: linear-gradient(184deg, white, #464040 92%);
 }
 .userOtp__container{
 background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
@@ -18,6 +19,13 @@ background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
     height: 80%;
   border-radius: 60px;
   
+}
+
+.userOtp__container > button{
+  border-radius: 999px;
+  background-color: brown;
+  color: white;
+  width: 40%;
 }
 .userOtp__input{
     display: flex;
@@ -57,13 +65,10 @@ background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
     border-radius:999px;
     right: 0;
     top: 6px;
+    color: white;
 }
 
-@media only screen and (max-width:700px){
-  .userOtp{
-    width: 80%;
-  }
-}
+
 @media only screen and (max-width:500px){
   .userOtp{
     width: 100%;
@@ -100,6 +105,9 @@ background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
   }
   .userOtp__input > input{
     width: 25px;
+  }
+  .userOtp__container > button{
+    font-size: 12px;
   }
 }
 

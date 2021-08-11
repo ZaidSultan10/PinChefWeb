@@ -4,7 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 80%;
   width: 400px !important;
   margin: 0 auto;
   border-radius: 60px;
@@ -43,18 +43,17 @@
 }
 .sign-in-up {
   margin-top: 20px !important;
-  padding: 2%;
-  
+
   height: 50px;
   margin-left: 7%;
 }
 .sign-in-up > h2 {
   font-size: 14px;
-  margin-top: 3%;
+  
   cursor: pointer;
 }
 .sign-in-h2 {
-  margin-left: 3%;
+  
   cursor: pointer;
   height: 20px;
 }

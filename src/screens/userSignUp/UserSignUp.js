@@ -1,13 +1,14 @@
 import { ReactComponent as Email } from "../../assets/svg/email-icon-big.svg";
-
+import './UserSignup.css'
 import { useState } from "react";
 import { Button } from "@material-ui/core";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import { useHistory } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 
 import { ReactComponent as Facebook } from "../../assets/svg/Sign-in-with Facebook-icon.svg";
 import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-icon.svg";
 import { ReactComponent as Apple } from "../../assets/svg/Sign-in -with-apple-icon.svg";
+
 
 const UserSignUp = () => {
   const [passwordType, setpasswordType] = useState("password");
@@ -48,15 +49,12 @@ const UserSignUp = () => {
         </div>
         <div className="flex sign-in-up">
           <Email className="user__email" />
-          <h2
-            className="active2"
-            onClick={() => {
-              history.push("/user/signin");
-            }}
-          >
-            SIGN IN
-          </h2>
-          <h2 className="sign-in-h2">SIGN UP</h2>
+
+          <NavLink exact to='/usersignin' activeClassName='activesignup'
+          className='signin-button' >SIGN IN</NavLink>
+          <NavLink exact to='/user/signup' activeClassName='activesignup'
+          className='sign-in-h2 signup-button' >SIGNUP</NavLink>
+          
         </div>
         <div className="flex-column form">
           <div className="email-div">

@@ -8,6 +8,9 @@ import {
 } from "react-router-dom";
 import HomeFeed from "./screens/homefeedScreen/HomeFeed";
 import UserOnBoarding from "./screens/userOnBoarding/UserOnBoarding";
+
+import UserSignIn from "./screens/userSignIn/UserSignIn"
+
 import HomeRecipe from "./screens/homeRecipeScreen/HomeRecipe";
 import HomeFeedMasterclass from "./screens/homeFeedMasterclass/HomeFeedMasterclass";
 import UserAllChef from "./screens/userAllChefsScreen/UserAllChef";
@@ -88,7 +91,6 @@ import ChefProfileUser from "./screens/chefProfileUser/ChefProfileUser";
 import UserFollowedChefs from "./screens/userFollowedChefs/UserFollowedChefs";
 import SettingsProfileUser from "./screens/settingsProfileUser/SettingsProfileUser";
 import ChefProfileDetails from "./screens/chefProfileDetails/ChefProfileDetails";
-import UserOtpChef from "./screens/userOtpChef/UserOtpChef";
 import Notifications from "./screens/notifications/Notifications";
 import NotificationsUser from "./screens/notificationsUser/NotificationsUser";
 import Cart from "./screens/cart/Cart";
@@ -230,8 +232,8 @@ function App({ currentUser }) {
             exact
             component={ChefCookDelivery}
           />
-          <Route path="/user/verification" exact component={UserOtp} />
-          <Route path="/chef/verification" exact component={UserOtpChef} />
+          <Route path="/verification" exact component={UserOtp} />
+          
           <Route
             path="/user/forgot-password"
             exact
