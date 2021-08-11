@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomeFeed from "./screens/homefeedScreen/HomeFeed";
 import UserOnBoarding from "./screens/userOnBoarding/UserOnBoarding";
 import Signin from "./screens/signin/Signin";
-import UserSignIn from "./components/userSignIn/UserSignIn";
+import UserSignIn from "./screens/userSignIn/UserSignIn"
 import HomeRecipe from "./screens/homeRecipeScreen/HomeRecipe";
 import HomeFeedMasterclass from "./screens/homeFeedMasterclass/HomeFeedMasterclass";
 import UserAllChef from "./screens/userAllChefsScreen/UserAllChef";
