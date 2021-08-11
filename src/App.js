@@ -8,9 +8,6 @@ import {
 } from "react-router-dom";
 import HomeFeed from "./screens/homefeedScreen/HomeFeed";
 import UserOnBoarding from "./screens/userOnBoarding/UserOnBoarding";
-
-import UserSignIn from "./screens/userSignIn/UserSignIn"
-
 import HomeRecipe from "./screens/homeRecipeScreen/HomeRecipe";
 import HomeFeedMasterclass from "./screens/homeFeedMasterclass/HomeFeedMasterclass";
 import UserAllChef from "./screens/userAllChefsScreen/UserAllChef";
@@ -233,7 +230,7 @@ function App({ currentUser }) {
             component={ChefCookDelivery}
           />
           <Route path="/verification" exact component={UserOtp} />
-          
+
           <Route
             path="/user/forgot-password"
             exact
@@ -360,40 +357,28 @@ function App({ currentUser }) {
             path="/chef/signin"
             exact
             render={() =>
-              currentUser ? (
-                <Redirect to="/chef/verification" />
-              ) : (
-                <ChefSignIn />
-              )
+              currentUser ? <Redirect to="/verification" /> : <ChefSignIn />
             }
           />
           <Route
             path="/user/signup"
             exact
             render={() =>
-              currentUser ? (
-                <Redirect to="/user/verification" />
-              ) : (
-                <UserSignUp />
-              )
+              currentUser ? <Redirect to="/verification" /> : <UserSignUp />
             }
           />
           <Route
             path="/chef/signup"
             exact
             render={() =>
-              currentUser ? <Redirect to="/hef/verification" /> : <ChefSignUp />
+              currentUser ? <Redirect to="/verification" /> : <ChefSignUp />
             }
           />
           <Route
             path="/user/signin"
             exact
             render={() =>
-              currentUser ? (
-                <Redirect to="/user/verification" />
-              ) : (
-                <UserSignIn />
-              )
+              currentUser ? <Redirect to="/verification" /> : <UserSignIn />
             }
           />
           <Route path="/user/faq" exact component={Faq} />
