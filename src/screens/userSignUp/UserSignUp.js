@@ -51,7 +51,7 @@ const UserSignUp = () => {
           <h2
             className="active2"
             onClick={() => {
-              history.push("/usersignin");
+              history.push("/user/signin");
             }}
           >
             SIGN IN

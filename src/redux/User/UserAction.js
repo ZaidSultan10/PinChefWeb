@@ -11,13 +11,9 @@ export const signUpStart = (user) => ({
   payload: user,
 });
 
-// export const signUpSuccess = (user) => ({
-//   type: SIGNUP_SUCCESS,
-//   payload: user,
-// });
-
-export const signUpSuccess = () => ({
+export const signUpSuccess = (user) => ({
   type: SIGNUP_SUCCESS,
+  payload: user,
 });
 
 export const signUpFailure = (error) => ({

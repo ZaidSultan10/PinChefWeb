@@ -10,9 +10,9 @@ import { useHistory } from "react-router-dom";
 import { ReactComponent as Facebook } from "../../assets/svg/Sign-in-with Facebook-icon.svg";
 import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-icon.svg";
 import { ReactComponent as Apple } from "../../assets/svg/Sign-in -with-apple-icon.svg";
-import { signUpSuccess } from "../../redux/User/UserAction";
+import { signUpStart } from "../../redux/User/UserAction";
 import { connect } from "react-redux";
-const ChefSignIn = ({ signUpSuccess }) => {
+const ChefSignIn = ({ signUpStart }) => {
   const [passwordType, setpasswordType] = useState("password");
   const [bgCng, setBgCng] = useState(true);
 
@@ -22,7 +22,6 @@ const ChefSignIn = ({ signUpSuccess }) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     // emailSignInStart(email, password);
-    signUpSuccess();
   };
   const handleChange = (event) => {
     switch (event.target.name) {
@@ -42,7 +41,7 @@ const ChefSignIn = ({ signUpSuccess }) => {
         <div className="chef__button">
           <Button
             onClick={() => {
-              history.push("/usersignin");
+              history.push("/user/signin");
             }}
           >
             FIND A CHEF <ChevronRightIcon className="right__icon" />{" "}
@@ -136,6 +135,6 @@ const ChefSignIn = ({ signUpSuccess }) => {
   );
 };
 const mapDispatchToProps = (dispatch) => ({
-  signUpSuccess: () => dispatch(signUpSuccess()),
+  signUpStart: (user) => dispatch(signUpStart(user)),
 });
 export default connect(null, mapDispatchToProps)(ChefSignIn);

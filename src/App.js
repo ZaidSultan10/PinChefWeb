@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import HomeFeed from "./screens/homefeedScreen/HomeFeed";
 import UserOnBoarding from "./screens/userOnBoarding/UserOnBoarding";
-import Signin from "./screens/signin/Signin";
-import UserSignIn from "./components/userSignIn/UserSignIn";
 import HomeRecipe from "./screens/homeRecipeScreen/HomeRecipe";
 import HomeFeedMasterclass from "./screens/homeFeedMasterclass/HomeFeedMasterclass";
 import UserAllChef from "./screens/userAllChefsScreen/UserAllChef";
@@ -63,6 +66,7 @@ import CreateFoodMyPost from "./screens/createFoodMyPost/CreateFoodMyPost";
 import ChefSignIn from "./screens/chefSignIn/ChefSignIn";
 import UserSignUp from "./screens/userSignUp/UserSignUp";
 import ChefSignUp from "./screens/chefSignUp/ChefSignUp";
+import UserSignIn from "./screens/userSignIn/UserSignIn";
 import OrderHistoryServices from "./screens/orderHistoryServices/OrderHistoryServices";
 import ChefOrderHistoryMyPurchases from "./screens/chefOrderHistoryMyPurchases/ChefOrderHistoryMyPurchases";
 import OrderHistoryMasterclass from "./screens/orderHistoryMasterclass/OrderHistoryMasterclass";
@@ -89,9 +93,9 @@ import Notifications from "./screens/notifications/Notifications";
 import NotificationsUser from "./screens/notificationsUser/NotificationsUser";
 import Cart from "./screens/cart/Cart";
 import CallHistory from "./screens/callHistory/CallHistory";
-// import axios from "axios";
+import { connect } from "react-redux";
 
-function App() {
+function App({ currentUser }) {
   useEffect(() => {
     fetch("/api/")
       .then((res) => res.json())
@@ -349,10 +353,47 @@ function App() {
             exact
             component={CreateMasterclassMyPost}
           />
-          <Route path="/chef/signin" exact component={ChefSignIn} />
           <Route path="/chef/payment-policy" exact component={PaymentPolicy} />
-          <Route path="/user/signup" exact component={UserSignUp} />
-          <Route path="/chef/signup" exact component={ChefSignUp} />
+          <Route
+            path="/chef/signin"
+            exact
+            render={() =>
+              currentUser ? (
+                <Redirect to="/chef/verification" />
+              ) : (
+                <ChefSignIn />
+              )
+            }
+          />
+          <Route
+            path="/user/signup"
+            exact
+            render={() =>
+              currentUser ? (
+                <Redirect to="/user/verification" />
+              ) : (
+                <UserSignUp />
+              )
+            }
+          />
+          <Route
+            path="/chef/signup"
+            exact
+            render={() =>
+              currentUser ? <Redirect to="/hef/verification" /> : <ChefSignUp />
+            }
+          />
+          <Route
+            path="/user/signin"
+            exact
+            render={() =>
+              currentUser ? (
+                <Redirect to="/user/verification" />
+              ) : (
+                <UserSignIn />
+              )
+            }
+          />
           <Route path="/user/faq" exact component={Faq} />
           <Route path="/chef/faq" exact component={ChefFaq} />
           <Route path="/user/terms" exact component={TermsUser} />
@@ -365,15 +406,13 @@ function App() {
           />
           <Route path="/cart" exact component={Cart} />
           <Route path="/call/history" exact component={CallHistory} />
-          <Route path="/usersignin" exact>
-            <Signin>
-              <UserSignIn />
-            </Signin>
-          </Route>
         </Switch>
       </Router>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser,
+});
+export default connect(mapStateToProps)(App);
