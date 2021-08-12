@@ -2,17 +2,16 @@ import "./signup.css";
 
 import { ReactComponent as Email } from "../../assets/svg/email-icon-big.svg";
 
-import { useState } from "react";
-// import { Button } from "@material-ui/core";
+import { useState, useEffect } from "react";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { NavLink, useHistory } from "react-router-dom";
 
 import { ReactComponent as Facebook } from "../../assets/svg/Sign-in-with-Facebook-icon.svg";
 import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-icon.svg";
 import { ReactComponent as Apple } from "../../assets/svg/Sign-in-with-apple-icon.svg";
-// import {}
-
-const SignUp = () => {
+import { connect } from "react-redux";
+import { signUpStart } from "../../redux/User/UserAction";
+const SignUp = ({ signUpStart, currentUser, error }) => {
   const [passwordType, setpasswordType] = useState("password");
   const [bgCng, setBgCng] = useState(true);
 
@@ -20,13 +19,17 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userType, setUserType] = useState("user");
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    // emailSignInStart(email, password);
-    console.log("I am hit");
-    console.log(email);
-    console.log(password);
+  const [errorState, setErrorState] = useState("");
+  const handleSubmit = async () => {
+    signUpStart({ email, password, userType });
+    setEmail("");
+    setPassword("");
+    if (currentUser) history.replace("/verfication");
+    await setErrorState(error);
   };
+  useEffect(() => {
+    return () => setErrorState("");
+  }, [setErrorState]);
   const handleChange = (event) => {
     switch (event.target.name) {
       case "email":
@@ -72,6 +75,7 @@ const SignUp = () => {
             SIGNUP
           </NavLink>
         </div>
+        <h6>{errorState ? errorState : " "}</h6>
         <div className="flex-column-usersignin form-usersignin">
           <div className="email-div-signin">
             <label>
@@ -147,5 +151,11 @@ const SignUp = () => {
     </div>
   );
 };
-
-export default SignUp;
+const mapDispatchToProps = (dispatch) => ({
+  signUpStart: (user) => dispatch(signUpStart(user)),
+});
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser,
+  error: state.user.error,
+});
+export default connect(mapStateToProps, mapDispatchToProps)(SignUp);

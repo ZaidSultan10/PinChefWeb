@@ -1,7 +1,7 @@
 import axios from "axios";
-const AuthSignUp = async ({ email, password, userType }) => {
+const AuthSignIN = async ({ email, password, userType }) => {
   try {
-    const user = await axios.post("/api/user/register", {
+    const user = await axios.post("/api/user/auth", {
       email,
       password,
       userType,
@@ -11,4 +11,4 @@ const AuthSignUp = async ({ email, password, userType }) => {
     return { err: err.response.data, status: err.response.status };
   }
 };
-export default AuthSignUp;
+export default AuthSignIN;
