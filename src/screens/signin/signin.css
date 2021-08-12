@@ -66,12 +66,17 @@
   cursor: pointer;
   height: 20px;
 }
+.signup-button,.signin-button{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
 
 
-.user__email {
-  width: 40px !important;
-  height: 40px !important;
-  margin-right: 3%;
+.user__email__signin {
+  width: 41px !important;
+  height: 41px !important;
+  margin-right: 1%;
 }
 
 .form-usersignin {
@@ -150,42 +155,6 @@
   margin-top: 0.55rem !important;
 }
 
-.signIn__confirm {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.keep__signed {
-  display: flex;
-  align-items: center;
-}
-.keep__signed > p {
-  margin-left: 3px;
-}
-.signin__options {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 3%;
-}
-.terms__conditions {
-  text-align: center;
-  margin-top: 3%;
-  margin-bottom: 2%;
-}
-.terms__conditions > p > a {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-}
-.continue__button > button {
-  background-color: #b62414 !important;
-  color: white !important;
-  font-weight: 700 !important;
-  font-size: 12px !important;
-  border-radius: 999px;
-}
-
 .tooglePassword {
   background-repeat: no-repeat;
   transform: scale(0.7);
@@ -252,11 +221,11 @@
   width: 45px;
   height: 45px;
 }
-.forgot-password {
+.forgot-password-signin {
   color: #ffcf54;
   cursor: pointer;
 }
-.forgot-password > p {
+.forgot-password-signin > p {
   font-size: 14px !important;
   font-weight: 700;
 }
