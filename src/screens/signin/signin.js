@@ -1,27 +1,31 @@
+import "./signin.css";
+
 import { ReactComponent as Email } from "../../assets/svg/email-icon-big.svg";
 
 import { useState } from "react";
-import { Button } from "@material-ui/core";
+// import { Button } from "@material-ui/core";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import {NavLink,useHistory } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 
 import { ReactComponent as Facebook } from "../../assets/svg/Sign-in-with Facebook-icon.svg";
 import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-icon.svg";
 import { ReactComponent as Apple } from "../../assets/svg/Sign-in -with-apple-icon.svg";
-import { signUpStart } from "../../redux/User/UserAction";
-import { connect } from "react-redux";
-const ChefSignUp = ({ signUpStart }) => {
+// import {}
+
+const SignIn = () => {
   const [passwordType, setpasswordType] = useState("password");
   const [bgCng, setBgCng] = useState(true);
+
+  let history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const history = useHistory();
+  const [userType, setUserType] = useState("user");
   const handleSubmit = async (event) => {
     event.preventDefault();
-    signUpStart({ email, password, userType: "chef" });
-    setEmail("");
-    setPassword("");
-    history.replace("/chef/verification");
+    // emailSignInStart(email, password);
+    console.log("I am hit");
+    console.log(email);
+    console.log(password);
   };
   const handleChange = (event) => {
     switch (event.target.name) {
@@ -36,51 +40,64 @@ const ChefSignUp = ({ signUpStart }) => {
     }
   };
   return (
-    <div className="chefSignIn">
-      <div className="userSignin">
-        <div className="chef__button">
-          <Button
+    <div className="userSignIn__main">
+      <div className="userSignin__signin">
+        <div className="i__am__chef__button">
+          <div
+            className="userSignin__top"
             onClick={() => {
-              history.push("/user/signin");
+              userType === "chef" ? setUserType("user") : setUserType("chef");
             }}
           >
-            FIND A CHEF <ChevronRightIcon className="right__icon" />{" "}
-          </Button>
+            <h5>{userType === "user" ? "I AM A CHEF" : "FIND A CHEF"}</h5>
+            <ChevronRightIcon className="right__icon__signin" />{" "}
+          </div>
         </div>
-        <div className="flex sign-in-up">
-          <Email className="user__email" />
-          <NavLink exact to='/chef/signin' activeClassName='activesignup'
-          className='signin-button' >SIGN IN</NavLink>
-          <NavLink exact to='/chef/signup' activeClassName='activesignup'
-          className='sign-in-h2 signup-button' >SIGNUP</NavLink>
-          
+        <div className="sign-in-up-signin">
+          <Email className="user__email__signin" />
+          <NavLink
+            exact
+            to="/signin"
+            activeClassName="activesignin"
+            className="sign-in-h2-signin signin-button"
+          >
+            SIGN IN
+          </NavLink>
+          <NavLink
+            exact
+            to="/signup"
+            activeClassName="activesignup"
+            className="sign-in-h2-signin signup-button"
+          >
+            SIGNUP
+          </NavLink>
         </div>
-        <div className="flex-column form">
-          <div className="email-div">
+        <div className="flex-column-usersignin form-usersignin">
+          <div className="email-div-signin">
             <label>
-              <strong>Email</strong>
+              <strong>Email ID</strong>
             </label>
             <input
               type="email"
+              name="email"
               autoComplete="true"
               placeholder="ex: Johndoe@pinchif.io"
-              name="email"
-              onChange={handleChange}
               value={email}
+              onChange={handleChange}
             />
           </div>
-          <div className="password-div">
+          <div className="password-div-signin">
             <label>
               <strong>Password</strong>
             </label>
-            <div className="password-div-pass flex">
+            <div className="password-div-pass-signin">
               <input
                 type={passwordType}
+                name="password"
                 autoComplete="true"
                 placeholder="ex: PinChefisthebest!"
-                name="password"
-                onChange={handleChange}
                 value={password}
+                onChange={handleChange}
               />
               <span
                 className={`tooglePassword ${bgCng ? "show" : "hide"}`}
@@ -96,41 +113,39 @@ const ChefSignUp = ({ signUpStart }) => {
               ></span>
             </div>
           </div>
-          <div className="keep-me-sign-in-and-submit">
-            <div className="keep-me-sign-in">
+          <div className="keep-me-sign-in-and-submit-signin">
+            <div className="keep-me-sign-in-signin">
               <input type="radio" name="keepMeSignIn" />
               <span>
                 <strong>Keep me Signed in</strong>
               </span>
             </div>
-            <button onClick={handleSubmit} className="continue">
+            <button onClick={handleSubmit} className="continue-signin">
               Continue
             </button>
           </div>
-          <div className="sign-in-with-google-and-forget-password">
-            <div className="sign-in-with-social-media">
-              <Apple className="pd-1" />
-              <Facebook className="pd-1 fb-blue" />
-              <Google className="pd-1" />
+          <div className="sign-in-with-google-and-forget-password-signin">
+            <div className="sign-in-with-social-media-signin">
+              <Apple className="pd-1-signin" />
+              <Facebook className="pd-1-signin fb-blue" />
+              <Google className="pd-1-signin" />
             </div>
             <div
-              className="forgot-password"
               onClick={() => history.push("/user/forgot-password")}
+              className="forgot-password-signin"
             >
               <p>FORGOT PASSWORD</p>
             </div>
           </div>
-          <div className="Privicy-instructions">
+          <div className="Privicy-instructions-signin">
             Signing in or Signing Up means you accept out{" "}
-            <strong className="clickable">Terms/Conditions</strong> &{" "}
-            <strong className="clickable">Privacy Policy.</strong>
+            <strong className="clickable-signin">Terms/Conditions</strong> &{" "}
+            <strong className="clickable-signin">Privacy Policy.</strong>
           </div>
         </div>
       </div>
     </div>
   );
 };
-const mapDispatchToProps = (dispatch) => ({
-  signUpStart: (user) => dispatch(signUpStart(user)),
-});
-export default connect(null, mapDispatchToProps)(ChefSignUp);
+
+export default SignIn;

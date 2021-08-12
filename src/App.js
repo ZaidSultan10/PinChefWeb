@@ -63,10 +63,6 @@ import FoodEmergencyOrder from "./screens/foodEmergencyOrder/FoodEmergencyOrder"
 import FoodCheckoutTakeaway from "./screens/foodCheckoutTakeaway/FoodCheckoutTakeaway";
 import CreateChefFeedMYPosts from "./screens/createChefFeedMyPosts/CreateChefFeedMYPosts";
 import CreateFoodMyPost from "./screens/createFoodMyPost/CreateFoodMyPost";
-import ChefSignIn from "./screens/chefSignIn/ChefSignIn";
-import UserSignUp from "./screens/userSignUp/UserSignUp";
-import ChefSignUp from "./screens/chefSignUp/ChefSignUp";
-import UserSignIn from "./screens/userSignIn/UserSignIn";
 import OrderHistoryServices from "./screens/orderHistoryServices/OrderHistoryServices";
 import ChefOrderHistoryMyPurchases from "./screens/chefOrderHistoryMyPurchases/ChefOrderHistoryMyPurchases";
 import OrderHistoryMasterclass from "./screens/orderHistoryMasterclass/OrderHistoryMasterclass";
@@ -93,6 +89,8 @@ import NotificationsUser from "./screens/notificationsUser/NotificationsUser";
 import Cart from "./screens/cart/Cart";
 import CallHistory from "./screens/callHistory/CallHistory";
 import { connect } from "react-redux";
+import SignIn from "./screens/signin/signin";
+import SignUp from "./screens/signup/signup";
 
 function App({ currentUser }) {
   useEffect(() => {
@@ -230,7 +228,6 @@ function App({ currentUser }) {
             component={ChefCookDelivery}
           />
           <Route path="/verification" exact component={UserOtp} />
-
           <Route
             path="/user/forgot-password"
             exact
@@ -353,34 +350,9 @@ function App({ currentUser }) {
             component={CreateMasterclassMyPost}
           />
           <Route path="/chef/payment-policy" exact component={PaymentPolicy} />
-          <Route
-            path="/chef/signin"
-            exact
-            render={() =>
-              currentUser ? <Redirect to="/verification" /> : <ChefSignIn />
-            }
-          />
-          <Route
-            path="/user/signup"
-            exact
-            render={() =>
-              currentUser ? <Redirect to="/verification" /> : <UserSignUp />
-            }
-          />
-          <Route
-            path="/chef/signup"
-            exact
-            render={() =>
-              currentUser ? <Redirect to="/verification" /> : <ChefSignUp />
-            }
-          />
-          <Route
-            path="/user/signin"
-            exact
-            render={() =>
-              currentUser ? <Redirect to="/verification" /> : <UserSignIn />
-            }
-          />
+          {/* currentUser ? <Redirect to="/verification" /> : <ChefSignUp /> */}
+          <Route path="/signin" exact component={SignIn} />
+          <Route path="/signup" exact component={SignUp} />
           <Route path="/user/faq" exact component={Faq} />
           <Route path="/chef/faq" exact component={ChefFaq} />
           <Route path="/user/terms" exact component={TermsUser} />

@@ -1,0 +1,654 @@
+.userSignIn__main{
+  background: linear-gradient(184deg, white, #464040 92%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userSignin__signin {
+  background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 400px ;
+  margin: 0 auto;
+  border-radius: 60px;
+  
+}
+.activesignin {
+  border-bottom: 2px solid #3f8f22;
+  cursor: pointer;
+}
+
+.flex-column-usersignin {
+  display: flex;
+  flex-direction: column;
+}
+
+.i__am__chef__button {
+  height: 60px;
+}
+
+.i__am__chef__button > .userSignin__top {
+  background-color: #3f8f22 !important;
+  margin-top: 5%;
+  margin-right: 5%;
+  float: right;
+  border-radius: 999px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 40%;
+  height: 30px;
+  color: white !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right__icon__signin {
+  color: #ffcf54 !important;
+  margin-top: 1px;
+  width: 100%;
+}
+.sign-in-up-signin {
+  margin-top: 20px !important;
+  height: 50px;
+  margin-left: 7%;
+  display: flex;
+  align-items: center;
+}
+.sign-in-h2-signin {
+  margin-left: 3%;
+  cursor: pointer;
+  height: 20px;
+}
+
+
+.user__email {
+  width: 40px !important;
+  height: 40px !important;
+  margin-right: 3%;
+}
+
+.form-usersignin {
+  margin-top: 0.7em !important;
+  margin-bottom: 1em;
+}
+
+.email-div-signin > label > strong {
+  font-size: 16px;
+}
+
+.form-usersignin input {
+  width: 94%;
+  padding: 0;
+  margin-top: 1%;
+  border: none;
+  height: 2.6em;
+  outline: none;
+  font-size: 1em;
+  margin-right: 1px;
+  box-shadow: 0 2px 6px 0 gray;
+  border: 1px solid silver;
+}
+
+.email-div-signin {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.email-div-signin label {
+  margin-right: auto;
+  margin-left: 2.5em;
+}
+.email-div-signin input {
+  background-image: url('../../assets/svg/Email-icon.svg');
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position-x: 1em;
+  background-position-y: center;
+  padding-left: 5em;
+  border-radius: 30px 0 0 30px;
+}
+
+.password-div-signin {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.password-div-signin label {
+  margin-right: auto;
+  margin-left: 1em;
+}
+.password-div-signin input {
+  background-image: url('../../assets/svg/Password-icon.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: 1em;
+  background-position-y: center;
+  padding-left: 5em;
+  border-radius: 0 30px 30px 0;
+}
+.password-div-pass-signin {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.show {
+  background-image: url("../../assets/svg/Show-password-icon.svg");
+  background-size: 25px !important;
+}
+.hide {
+  background-image: url("../../assets/svg/hide\ -password-\ icon.svg");
+  background-size: 25px !important;
+  margin-top: 0.55rem !important;
+}
+
+.signIn__confirm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.keep__signed {
+  display: flex;
+  align-items: center;
+}
+.keep__signed > p {
+  margin-left: 3px;
+}
+.signin__options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3%;
+}
+.terms__conditions {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+.terms__conditions > p > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.continue__button > button {
+  background-color: #b62414 !important;
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  border-radius: 999px;
+}
+
+.tooglePassword {
+  background-repeat: no-repeat;
+  transform: scale(0.7);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  margin-top: 3%;
+  margin-left: -24%;
+  cursor: pointer;
+}
+.keep-me-sign-in-and-submit-signin {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1em;
+}
+.keep-me-sign-in-signin {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 1em;
+  margin-right: 5%;
+}
+.keep-me-sign-in-signin > input {
+  height: 1.5em;
+  width: 1.5em;
+  border: 1px solid ;
+}
+.keep-me-sign-in-signin span {
+  width: 100%;
+  padding-left: 1em;
+  font-size: 14px;
+  color: white;
+}
+.continue-signin {
+  background-color: #b62414;
+  color: white;
+  font-size: 0.7em;
+  font-family: "Montserrat";
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-right: 2em;
+  cursor: pointer;
+}
+.sign-in-with-google-and-forget-password-signin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+  padding: 0 2em;
+}
+.sign-in-with-social-media-signin {
+  width: 50%;
+  display: flex;
+}
+.pd-1-signin {
+  padding: 0 5px;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+}
+.forgot-password {
+  color: #ffcf54;
+  cursor: pointer;
+}
+.forgot-password > p {
+  font-size: 14px !important;
+  font-weight: 700;
+}
+
+.Privicy-instructions-signin {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1.7em;
+  font-size: 14px;
+}
+
+.fb-blue {
+  fill: #475993 !important;
+}
+
+.clickable-signin {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.forgot-password-signin > p {
+  color: #ffcf54 !important;
+  font-weight: 700 !important;
+  font-size: 14px;
+}
+
+/*@media only screen and (max-width: 1030px) {
+  .userSignin {
+    width: 36%;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .userSignin {
+    width: 39%;
+  }
+}
+@media only screen and (max-width: 875px) {
+  .userSignin {
+    width: 42%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .userSignin {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .userSignin {
+    width: 49%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .userSignin {
+    width: 53%;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .userSignin {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .userSignin {
+    width: 63%;
+  }
+  .chef__button > button {
+    font-size: 12px !important;
+  }
+  .right__icon {
+    font-size: 20px !important;
+    margin-top: -0.5px;
+  }
+  .sign-in-up h2 {
+    font-size: 16px;
+  }
+  .user__email {
+    width: 36px !important;
+    height: 36px !important;
+    margin-top: 1%;
+  }
+  .email-div {
+    font-size: 14px;
+  }
+  .email-div input {
+    background-size: 22px;
+  }
+  .password-div {
+    font-size: 14px;
+  }
+  .password-div input {
+    background-size: 16px;
+  }
+}
+@media only screen and (max-width: 541px) {
+  .userSignin {
+    width: 370px !important;
+  }
+}
+@media only screen and (max-width: 465px) {
+  .userSignin {
+    width: 78%;
+  }
+  .chef__button {
+    margin-right: 2%;
+    margin-top: 1%;
+  }
+  .chef__button > button {
+    font-size: 11px !important;
+    margin-left: 2%;
+  }
+  .right__icon {
+    font-size: 18px !important;
+    margin-top: -0.5px;
+  }
+
+  .continue__button > button {
+    margin-top: 3%;
+  }
+  .sign-in-up h2 {
+    font-size: 14px;
+  }
+  .user__email {
+    width: 33px !important;
+    height: 33px !important;
+    margin-top: 1%;
+  }
+  .email-div {
+    font-size: 13px;
+  }
+  .email-div input {
+    background-size: 20px;
+  }
+  .password-div {
+    font-size: 13px;
+  }
+  .password-div input {
+    background-size: 14px;
+  }
+  .terms__conditions > p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .userSignin {
+    width: 330px !important;
+    height: 80% !important;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .userSignin {
+    width: 300px !important;
+    height: 75% !important;
+  }
+  .email-div > label > strong {
+    font-size: 13px !important;
+  }
+
+  .keep-me-sign-in > span > strong{
+    font-size: 10px !important;
+  }
+  .keep-me-sign-in input {
+    height: 1em !important;
+    width: 1em !important;
+    border: none;
+  }
+  .keep-me-sign-in-and-submit > button{
+    font-size: 10px !important;
+  }
+  .forgot-password > p{
+    font-size: 10px !important;
+  }
+  .Privicy-instructions,.Privicy-instructions>strong{
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 322px) {
+  .userSignin {
+    width: 270px !important;
+  }
+  .chef__button {
+    margin-right: 3%;
+    margin-top: 2%;
+  }
+  .chef__button > button {
+    font-size: 10px !important;
+    margin-left: 2%;
+  }
+  .right__icon {
+    font-size: 18px !important;
+    margin-top: -0.5px;
+  }
+  .email-div > input{
+    width: 85% !important;
+    margin-right: 0em !important;
+  }
+  .chef__button > button{
+    margin-right: 12% !important;
+  }
+
+  .continue__button > button {
+    margin-top: 3%;
+  }
+  .sign-in-up h2 {
+    font-size: 12px;
+  }
+  .user__email {
+    width: 30px !important;
+    height: 30px !important;
+    margin-top: 1%;
+  }
+  .email-div {
+    font-size: 12px;
+  }
+  .email-div input {
+    background-size: 18px;
+  }
+  .password-div {
+    font-size: 12px;
+  }
+  .password-div input {
+    background-size: 12px;
+  }
+  .terms__conditions > p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .userSignin {
+    width: 260px !important;
+    margin-left: 2%;
+  }
+  .chef__button {
+    margin-right: 3%;
+    margin-top: 2%;
+  }
+  .chef__button > button {
+    font-size: 10px !important;
+    margin-left: 2%;
+  }
+  .right__icon {
+    font-size: 18px !important;
+    margin-top: -0.5px;
+  }
+  .email-div > input{
+    width: 85% !important;
+    margin-right: 0em !important;
+  }
+  .password-div-pass > input {
+    width: 85% !important;
+  }
+  .chef__button > button{
+    margin-right: 15% !important;
+  }
+
+  .keep-me-sign-in-and-submit > button  {
+    margin-right: 4em !important;
+  }
+  .sign-in-up h2 {
+    font-size: 12px;
+  }
+  .user__email {
+    width: 30px !important;
+    height: 30px !important;
+    margin-top: 1%;
+  }
+  .email-div {
+    font-size: 12px;
+  }
+  .email-div input {
+    background-size: 18px;
+  }
+  .password-div {
+    font-size: 12px;
+  }
+  .password-div input {
+    background-size: 12px;
+  }
+  .terms__conditions > p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-height: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+  .userSignin {
+    width: 600px !important;
+  }
+  .chef__button > button {
+    font-size: 20px !important;
+  }
+  .right__icon {
+    font-size: 32px !important;
+    margin-top: -0.5px;
+  }
+  .sign-in-up h2 {
+    font-size: 28px;
+    height: 40px;
+  }
+  .user__email {
+    width: 57px !important;
+    height: 57px !important;
+  }
+  .email-div {
+    font-size: 24px;
+  }
+  .email-div input {
+    background-size: 32px !important;
+  }
+  .password-div {
+    font-size: 24px;
+  }
+  .password-div input {
+    background-size: 32px !important;
+  }
+  .signin__icons > .facebook {
+    font-size: 68px !important;
+  }
+  .forgot__password > p {
+    font-size: 20px !important;
+  }
+  .continue__button > button {
+    font-size: 22px !important;
+  }
+  .keep__signed > p {
+    font-size: 22px !important;
+  }
+  .radio {
+    font-size: 30px !important;
+  }
+  .terms__conditions > p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+  .userSignin {
+    width: 600px !important;
+  }
+  .chef__button > button {
+    font-size: 30px !important;
+  }
+  .right__icon {
+    font-size: 42px !important;
+    margin-top: -0.5px;
+  }
+  .sign-in-up h2 {
+    font-size: 38px;
+    height: 60px;
+  }
+  .user__email {
+    width: 77px !important;
+    height: 77px !important;
+  }
+  .email-div {
+    font-size: 32px;
+  }
+  .email-div input {
+    background-size: 36px !important;
+    border-radius: 60px 0 0 60px;
+  }
+  .password-div {
+    font-size: 32px;
+  }
+  .password-div input {
+    background-size: 36px !important;
+    border-radius: 0px 60px 60px 0px;
+  }
+  .signin__icons > .facebook {
+    font-size: 80px !important;
+  }
+  .forgot__password > p {
+    font-size: 26px !important;
+  }
+  .continue__button > button {
+    font-size: 26px !important;
+  }
+  .keep__signed > p {
+    font-size: 26px !important;
+  }
+  .radio {
+    font-size: 36px !important;
+  }
+  .terms__conditions > p {
+    font-size: 22px;
+  }
+  .show {
+    background-size: 40px !important;
+  }
+  .hide {
+    background-size: 40px !important;
+    margin-top: 2.3rem !important;
+  }
+}
+*/

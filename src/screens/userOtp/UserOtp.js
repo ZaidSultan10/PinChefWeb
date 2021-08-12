@@ -7,7 +7,7 @@ import ResendIcon from "../../assets/svg-for-user-profile/EMail_icon.svg";
 import "./UserOtpModal.css";
 import { connect } from "react-redux";
 
-const UserOtp = ({ currentUser: { email } }) => {
+const UserOtp = ({ currentUser }) => {
   const history = useHistory();
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -42,7 +42,7 @@ const UserOtp = ({ currentUser: { email } }) => {
       <div className="userOtp">
         <div className="userOtp__container">
           <h4>Verify</h4>
-          <h3>{email}</h3>
+          <h3>{currentUser ? currentUser.email : "Test@email.com"}</h3>
           <h4>Enter 4 digit OTP</h4>
           <div className="userOtp__input">
             <input className="input1" type="number" />
