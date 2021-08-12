@@ -3,9 +3,9 @@
   height: 100vh;
 }
 .UserOnboarding-Body {
-  height: 580px;
+  height: 100%;
   display: flex;
-  margin-top: 5%;
+  margin-top: 0px;
   flex-direction: column;
   width: 100%;
   align-items: center;
@@ -44,7 +44,7 @@
 .UserOnboarding-NavigationBtn {
   align-self: flex-end;
   margin-right: 3%;
-  margin-top: -2rem;
+  margin-top: -3rem;
   z-index: 999;
 }
 .UserOnboarding-NavigationBtn button {
@@ -59,7 +59,5 @@
 @media screen and (max-width:300px){
   .UserOnboarding-Body{
     width: 300px;
-    
-    margin-left: -1rem;
   }
 }

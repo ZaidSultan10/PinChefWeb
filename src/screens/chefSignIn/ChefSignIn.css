@@ -1,7 +1,9 @@
 .chefSignIn{
     background: linear-gradient(184deg, white, #464040 92%);
-  height: 100vh;
-  display: flex;
+  height: 100% ;
+  width: 100% ;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
 }
@@ -13,7 +15,7 @@
     background-size: cover;
   
     height: 80%;
-    width: 30%;
+    width: 70% !important;
     border-radius: 60px;
     display: grid;
     flex-direction: column;

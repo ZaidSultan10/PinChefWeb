@@ -39,6 +39,7 @@ const UserSignIn = () => {
     }
   };
   return (
+  <div className='chefSignIn'>
     <div className="userSignin">
       <div className="chef__button">
         <Button
@@ -51,7 +52,7 @@ const UserSignIn = () => {
       </div>
       <div className="flex sign-in-up">
         <Email className="user__email" />
-        <NavLink exact to='/usersignin' activeClassName='activesignup'
+        <NavLink exact to='/user/signin' activeClassName='activesignin'
           className='signin-button' >SIGN IN</NavLink>
           <NavLink exact to='/user/signup' activeClassName='activesignup'
           className='sign-in-h2 signup-button' >SIGNUP</NavLink>
@@ -130,6 +131,7 @@ const UserSignIn = () => {
         </div>
       </div>
     </div>
+  </div>
   );
 };
 
