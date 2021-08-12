@@ -7,9 +7,9 @@ import { useState } from "react";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { NavLink, useHistory } from "react-router-dom";
 
-import { ReactComponent as Facebook } from "../../assets/svg/Sign-in-with Facebook-icon.svg";
+import { ReactComponent as Facebook } from "../../assets/svg/Sign-in-with-Facebook-icon.svg";
 import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-icon.svg";
-import { ReactComponent as Apple } from "../../assets/svg/Sign-in -with-apple-icon.svg";
+import { ReactComponent as Apple } from "../../assets/svg/Sign-in-with-apple-icon.svg";
 // import {}
 
 const SignIn = () => {
@@ -126,9 +126,9 @@ const SignIn = () => {
           </div>
           <div className="sign-in-with-google-and-forget-password-signin">
             <div className="sign-in-with-social-media-signin">
-              <Apple className="pd-1-signin" />
-              <Facebook className="pd-1-signin fb-blue" />
-              <Google className="pd-1-signin" />
+              <Apple className="pd-1" />
+              <Facebook className="pd-1 fb-blue" />
+              <Google className="pd-1" />
             </div>
             <div
               onClick={() => history.push("/user/forgot-password")}
