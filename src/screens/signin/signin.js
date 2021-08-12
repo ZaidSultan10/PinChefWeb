@@ -2,7 +2,7 @@ import "./signin.css";
 
 import { ReactComponent as Email } from "../../assets/svg/email-icon-big.svg";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // import { Button } from "@material-ui/core";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { NavLink, useHistory } from "react-router-dom";
@@ -10,9 +10,11 @@ import { NavLink, useHistory } from "react-router-dom";
 import { ReactComponent as Facebook } from "../../assets/svg/Sign-in-with Facebook-icon.svg";
 import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-icon.svg";
 import { ReactComponent as Apple } from "../../assets/svg/Sign-in -with-apple-icon.svg";
+import { connect } from "react-redux";
+import { signInStart } from "../../redux/User/UserAction";
 // import {}
 
-const SignIn = () => {
+const SignIn = ({ signInStart, currentUser, error }) => {
   const [passwordType, setpasswordType] = useState("password");
   const [bgCng, setBgCng] = useState(true);
 
@@ -20,12 +22,16 @@ const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userType, setUserType] = useState("user");
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    // emailSignInStart(email, password);
-    console.log("I am hit");
-    console.log(email);
-    console.log(password);
+  const [errorState, setErrorState] = useState("");
+  useEffect(() => {
+    return () => setErrorState("");
+  }, [setErrorState]);
+  const handleSubmit = async () => {
+    signInStart({ email, password, userType });
+    setEmail("");
+    setPassword("");
+    if (currentUser) history.replace("/verfication");
+    await setErrorState(error);
   };
   const handleChange = (event) => {
     switch (event.target.name) {
@@ -72,6 +78,7 @@ const SignIn = () => {
             SIGNUP
           </NavLink>
         </div>
+        <h6>{errorState ? errorState : " "}</h6>
         <div className="flex-column-usersignin form-usersignin">
           <div className="email-div-signin">
             <label>
@@ -147,5 +154,11 @@ const SignIn = () => {
     </div>
   );
 };
-
-export default SignIn;
+const mapDispatchToProps = (dispatch) => ({
+  signInStart: (user) => dispatch(signInStart(user)),
+});
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser,
+  error: state.user.error,
+});
+export default connect(mapStateToProps, mapDispatchToProps)(SignIn);
