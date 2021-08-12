@@ -39,28 +39,29 @@ const UserSignIn = () => {
     }
   };
   return (
-  <div className='chefSignIn'>
-    <div className="userSignin">
-      <div className="chef__button">
-        <Button
+  <div className='userSignIn__main'>
+    <div className="userSignin__signin">
+      <div className="i__am__chef__button">
+        <div className='userSignin__top'
           onClick={() => {
             history.push("/chef/signin");
           }}
         >
-          I AM A CHEF <ChevronRightIcon className="right__icon" />{" "}
-        </Button>
+          <h5>I AM A CHEF</h5> 
+          <ChevronRightIcon className="right__icon__signin" />{" "}
+        </div>
       </div>
-      <div className="flex sign-in-up">
-        <Email className="user__email" />
+      <div className="sign-in-up-signin">
+        <Email className="user__email__signin" />
         <NavLink exact to='/user/signin' activeClassName='activesignin'
-          className='signin-button' >SIGN IN</NavLink>
+          className='sign-in-h2-signin signin-button' >SIGN IN</NavLink>
           <NavLink exact to='/user/signup' activeClassName='activesignup'
-          className='sign-in-h2 signup-button' >SIGNUP</NavLink>
+          className='sign-in-h2-signin signup-button' >SIGNUP</NavLink>
           
         
       </div>
-      <div className="flex-column form">
-        <div className="email-div">
+      <div className="flex-column-usersignin form-usersignin">
+        <div className="email-div-signin">
           <label>
             <strong>Email ID</strong>
           </label>
@@ -73,11 +74,11 @@ const UserSignIn = () => {
             onChange={handleChange}
           />
         </div>
-        <div className="password-div">
+        <div className="password-div-signin">
           <label>
             <strong>Password</strong>
           </label>
-          <div className="password-div-pass flex">
+          <div className="password-div-pass-signin">
             <input
               type={passwordType}
               name="password"
@@ -100,34 +101,34 @@ const UserSignIn = () => {
             ></span>
           </div>
         </div>
-        <div className="keep-me-sign-in-and-submit">
-          <div className="keep-me-sign-in">
+        <div className="keep-me-sign-in-and-submit-signin">
+          <div className="keep-me-sign-in-signin">
             <input type="radio" name="keepMeSignIn" />
             <span>
               <strong>Keep me Signed in</strong>
             </span>
           </div>
-          <button onClick={handleSubmit} className="continue">
+          <button onClick={handleSubmit} className="continue-signin">
             Continue
           </button>
         </div>
-        <div className="sign-in-with-google-and-forget-password">
-          <div className="sign-in-with-social-media">
-            <Apple className="pd-1" />
-            <Facebook className="pd-1 fb-blue" />
-            <Google className="pd-1" />
+        <div className="sign-in-with-google-and-forget-password-signin">
+          <div className="sign-in-with-social-media-signin">
+            <Apple className="pd-1-signin" />
+            <Facebook className="pd-1-signin fb-blue" />
+            <Google className="pd-1-signin" />
           </div>
           <div
             onClick={() => history.push("/user/forgot-password")}
-            className="forgot-password"
+            className="forgot-password-signin"
           >
             <p>FORGOT PASSWORD</p>
           </div>
         </div>
-        <div className="Privicy-instructions">
+        <div className="Privicy-instructions-signin">
           Signing in or Signing Up means you accept out{" "}
-          <strong className="clickable">Terms/Conditions</strong> &{" "}
-          <strong className="clickable">Privacy Policy.</strong>
+          <strong className="clickable-signin">Terms/Conditions</strong> &{" "}
+          <strong className="clickable-signin">Privacy Policy.</strong>
         </div>
       </div>
     </div>
