@@ -1,11 +1,19 @@
-.userSignin {
+.userSignIn__main{
+  background: linear-gradient(184deg, white, #464040 92%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userSignin__signin {
   background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80%;
-  width: 400px !important;
+  height: 500px;
+  width: 400px ;
   margin: 0 auto;
   border-radius: 60px;
   
@@ -15,82 +23,67 @@
   cursor: pointer;
 }
 
-
-.flex {
-  display: flex;
-}
-
-.flex-column {
+.flex-column-usersignin {
   display: flex;
   flex-direction: column;
 }
 
-.chef__button > button {
+.i__am__chef__button {
+  height: 60px;
+}
+
+.i__am__chef__button > .userSignin__top {
   background-color: #3f8f22 !important;
   margin-top: 5%;
   margin-right: 5%;
   float: right;
   border-radius: 999px;
   padding-left: 5%;
+  padding-right: 5%;
+  width: 40%;
+  height: 30px;
   color: white !important;
   font-size: 14px !important;
   font-weight: 700 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.right__icon {
+.right__icon__signin {
   color: #ffcf54 !important;
   margin-top: 1px;
+  width: 100%;
 }
-.sign-in-up {
+.sign-in-up-signin {
   margin-top: 20px !important;
-
   height: 50px;
   margin-left: 7%;
+  display: flex;
+  align-items: center;
 }
-.sign-in-up > h2 {
-  font-size: 14px;
-  
-  cursor: pointer;
-}
-.sign-in-h2 {
-  
+.sign-in-h2-signin {
+  margin-left: 3%;
   cursor: pointer;
   height: 20px;
 }
-.i-am-a-chef-div {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  padding-right: 2em;
-}
 
-.i-am-a-chef {
-  background-color: #3f8f22;
-  font-size: 1em;
-  font-weight: bold;
-  color: white;
-  padding: 0.8em 1.2em;
-  border-radius: 30px;
-  text-align: center;
-  margin-top: 2em;
-  cursor: pointer;
-}
+
 .user__email {
   width: 40px !important;
   height: 40px !important;
   margin-right: 3%;
 }
 
-.form {
+.form-usersignin {
   margin-top: 0.7em !important;
-
   margin-bottom: 1em;
 }
 
-.email-div > label > strong {
+.email-div-signin > label > strong {
   font-size: 16px;
 }
 
-.form input {
+.form-usersignin input {
   width: 94%;
   padding: 0;
   margin-top: 1%;
@@ -103,20 +96,17 @@
   border: 1px solid silver;
 }
 
-.email-div {
+.email-div-signin {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.email-div label {
+.email-div-signin label {
   margin-right: auto;
   margin-left: 2.5em;
 }
-.email-div input {
-  background-image: url("../../assets/svg/at-sign.png");
-
-  background-image: url("../../assets//svg//Email-icon.svg");
-
+.email-div-signin input {
+  background-image: url('../../assets/svg/Email-icon.svg');
   background-repeat: no-repeat;
   background-size: 24px;
   background-position-x: 1em;
@@ -125,18 +115,18 @@
   border-radius: 30px 0 0 30px;
 }
 
-.password-div {
+.password-div-signin {
   margin-top: 1em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.password-div label {
+.password-div-signin label {
   margin-right: auto;
   margin-left: 1em;
 }
-.password-div input {
-  background-image: url("../../assets/svg/Password-icon.svg");
+.password-div-signin input {
+  background-image: url('../../assets/svg/Password-icon.svg');
   background-repeat: no-repeat;
   background-size: auto;
   background-position-x: 1em;
@@ -144,7 +134,7 @@
   padding-left: 5em;
   border-radius: 0 30px 30px 0;
 }
-.password-div-pass {
+.password-div-pass-signin {
   width: 100%;
   position: relative;
   display: inline-block;
@@ -207,14 +197,14 @@
   margin-left: -24%;
   cursor: pointer;
 }
-.keep-me-sign-in-and-submit {
+.keep-me-sign-in-and-submit-signin {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 1em;
 }
-.keep-me-sign-in {
+.keep-me-sign-in-signin {
   display: flex;
   width: 60%;
   align-items: center;
@@ -222,18 +212,18 @@
   margin-left: 1em;
   margin-right: 5%;
 }
-.keep-me-sign-in input {
+.keep-me-sign-in-signin > input {
   height: 1.5em;
   width: 1.5em;
-  border: none;
+  border: 1px solid ;
 }
-.keep-me-sign-in span {
+.keep-me-sign-in-signin span {
   width: 100%;
   padding-left: 1em;
   font-size: 14px;
   color: white;
 }
-.continue {
+.continue-signin {
   background-color: #b62414;
   color: white;
   font-size: 0.7em;
@@ -245,18 +235,18 @@
   margin-right: 2em;
   cursor: pointer;
 }
-.sign-in-with-google-and-forget-password {
+.sign-in-with-google-and-forget-password-signin {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 2em;
   padding: 0 2em;
 }
-.sign-in-with-social-media {
+.sign-in-with-social-media-signin {
   width: 50%;
   display: flex;
 }
-.pd-1 {
+.pd-1-signin {
   padding: 0 5px;
   cursor: pointer;
   width: 45px;
@@ -271,7 +261,7 @@
   font-weight: 700;
 }
 
-.Privicy-instructions {
+.Privicy-instructions-signin {
   width: 80%;
   text-align: center;
   margin: 0 auto;
@@ -279,20 +269,21 @@
   font-size: 14px;
 }
 
-.fb-blue .b {
+.fb-blue {
   fill: #475993 !important;
 }
 
-.clickable {
+.clickable-signin {
   text-decoration: underline;
   cursor: pointer;
 }
-.forgot__password {
+.forgot-password-signin > p {
   color: #ffcf54 !important;
   font-weight: 700 !important;
+  font-size: 14px;
 }
 
-@media only screen and (max-width: 1030px) {
+/*@media only screen and (max-width: 1030px) {
   .userSignin {
     width: 36%;
   }
@@ -614,7 +605,7 @@
   }
   .sign-in-up h2 {
     font-size: 38px;
-    /*height: 60px;*/
+    height: 60px;
   }
   .user__email {
     width: 77px !important;
@@ -660,3 +651,4 @@
     margin-top: 2.3rem !important;
   }
 }
+*/
