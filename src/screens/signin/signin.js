@@ -10,9 +10,11 @@ import { NavLink, useHistory } from "react-router-dom";
 import { ReactComponent as Facebook } from "../../assets/svg/Sign-in-with-Facebook-icon.svg";
 import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-icon.svg";
 import { ReactComponent as Apple } from "../../assets/svg/Sign-in-with-apple-icon.svg";
-// import {}
+import { connect } from "react-redux";
+import { signInStart } from "../../redux/User/UserAction";
+// import { setSnackbar } from "../../redux/Sneakbar/SneakbarAction";
 
-const SignIn = () => {
+const SignIn = ({ signInStart, currentUser }) => {
   const [passwordType, setpasswordType] = useState("password");
   const [bgCng, setBgCng] = useState(true);
 
@@ -20,12 +22,11 @@ const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userType, setUserType] = useState("user");
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    // emailSignInStart(email, password);
-    console.log("I am hit");
-    console.log(email);
-    console.log(password);
+  const handleSubmit = () => {
+    signInStart({ email, password, userType });
+    setEmail("");
+    setPassword("");
+    if (currentUser) history.replace("/verfication");
   };
   const handleChange = (event) => {
     switch (event.target.name) {
@@ -147,5 +148,12 @@ const SignIn = () => {
     </div>
   );
 };
-
-export default SignIn;
+const mapDispatchToProps = (dispatch) => ({
+  signInStart: (user) => dispatch(signInStart(user)),
+});
+//  setSnackbar: (snackbarOpen, snackbarType, snackbarMessage) =>
+//     dispatch(setSnackbar(snackbarOpen, snackbarType, snackbarMessage)),
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser,
+});
+export default connect(mapStateToProps, mapDispatchToProps)(SignIn);

@@ -4,6 +4,9 @@ import {
   SIGNOUT_FAILURE,
   SIGNUP_FAILURE,
   SIGNUP_SUCCESS,
+  SIGNIN_START,
+  SIGNUP_START,
+  SIGNOUT_START,
 } from "./UserType";
 
 const INITIAL_STATE = {
@@ -13,6 +16,13 @@ const INITIAL_STATE = {
 
 const UserReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
+    case SIGNIN_START:
+    case SIGNUP_START:
+    case SIGNOUT_START:
+      return {
+        ...state,
+        error: null,
+      };
     case SIGNIN_SUCCESS:
     case SIGNUP_SUCCESS:
       return {

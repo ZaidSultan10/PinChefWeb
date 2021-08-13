@@ -3,16 +3,16 @@ import "./signup.css";
 import { ReactComponent as Email } from "../../assets/svg/email-icon-big.svg";
 
 import { useState } from "react";
-// import { Button } from "@material-ui/core";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { NavLink, useHistory } from "react-router-dom";
 
 import { ReactComponent as Facebook } from "../../assets/svg/Sign-in-with-Facebook-icon.svg";
 import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-icon.svg";
 import { ReactComponent as Apple } from "../../assets/svg/Sign-in-with-apple-icon.svg";
-// import {}
+import { connect } from "react-redux";
+import { signUpStart } from "../../redux/User/UserAction";
 
-const SignUp = () => {
+const SignUp = ({ signUpStart, currentUser }) => {
   const [passwordType, setpasswordType] = useState("password");
   const [bgCng, setBgCng] = useState(true);
 
@@ -20,13 +20,13 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userType, setUserType] = useState("user");
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    // emailSignInStart(email, password);
-    console.log("I am hit");
-    console.log(email);
-    console.log(password);
+  const handleSubmit = () => {
+    signUpStart({ email, password, userType });
+    setEmail("");
+    setPassword("");
+    if (currentUser) history.replace("/verfication");
   };
+
   const handleChange = (event) => {
     switch (event.target.name) {
       case "email":
@@ -127,7 +127,7 @@ const SignUp = () => {
           <div className="sign-in-with-google-and-forget-password-signin">
             <div className="sign-in-with-social-media-signin">
               <Apple className="pd-1" />
-              <Facebook className="pd-1 fb-blue"/>
+              <Facebook className="pd-1 fb-blue" />
               <Google className="pd-1" />
             </div>
             <div
@@ -147,5 +147,10 @@ const SignUp = () => {
     </div>
   );
 };
-
-export default SignUp;
+const mapDispatchToProps = (dispatch) => ({
+  signUpStart: (user) => dispatch(signUpStart(user)),
+});
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser,
+});
+export default connect(mapStateToProps, mapDispatchToProps)(SignUp);
