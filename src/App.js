@@ -107,7 +107,37 @@ function App({ currentUser }) {
       <Router>
         <Switch>
           <Route path="/" exact component={UserOnBoarding} />
-          <Route path="/homepage" exact component={HomeFeed} />
+          <Route
+            path="/signin"
+            exact
+            render={() =>
+              currentUser ? <Redirect to="/verification" /> : <SignIn />
+            }
+          />
+          <Route
+            path="/signup"
+            exact
+            render={() =>
+              currentUser ? <Redirect to="/verification" /> : <SignUp />
+            }
+          />
+          <Route
+            path="/verification"
+            exact
+            render={() =>
+              currentUser && currentUser.status === "pending" ? (
+                <UserOtp />
+              ) : (
+                <Redirect to="/" />
+              )
+            }
+          />
+          {currentUser && currentUser.state === "active" ? (
+            <Route path="/homepage" exact component={HomeFeed} />
+          ) : (
+            <Redirect to="/signup" />
+          )}
+          {/* <Route path="/homepage" exact component={HomeFeed} /> */}
           <Route path="/homerecipe" exact component={HomeRecipe} />
           <Route
             path="/home/masterclass"
@@ -229,17 +259,7 @@ function App({ currentUser }) {
             exact
             component={ChefCookDelivery}
           />
-          <Route
-            path="/verification"
-            exact
-            render={() =>
-              currentUser && currentUser.status === "pending" ? (
-                <UserOtp />
-              ) : (
-                <Redirect to="/" />
-              )
-            }
-          />
+
           <Route
             path="/user/forgot-password"
             exact
@@ -363,20 +383,7 @@ function App({ currentUser }) {
           />
           <Route path="/chef/payment-policy" exact component={PaymentPolicy} />
           {/* currentUser ? <Redirect to="/verification" /> : <ChefSignUp /> */}
-          <Route
-            path="/signin"
-            exact
-            render={() =>
-              currentUser ? <Redirect to="/verification" /> : <SignIn />
-            }
-          />
-          <Route
-            path="/signup"
-            exact
-            render={() =>
-              currentUser ? <Redirect to="/verification" /> : <SignUp />
-            }
-          />
+
           <Route path="/user/faq" exact component={Faq} />
           <Route path="/chef/faq" exact component={ChefFaq} />
           <Route path="/user/terms" exact component={TermsUser} />

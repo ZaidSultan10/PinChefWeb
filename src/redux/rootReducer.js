@@ -6,7 +6,7 @@ import snackbarReducer from "./Sneakbar/SneakbarReducer";
 const persistConfig = {
   key: "root",
   storage,
-  blacklist: ["user"],
+  whitelist: ["user"],
 };
 
 const rootReducer = combineReducers({
