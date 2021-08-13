@@ -6,6 +6,7 @@ import {
   signInSuccess,
   signInFailure,
 } from "./UserAction";
+import { setSnackbar } from "../Sneakbar/SneakbarAction";
 import AuthSignUp from "../../Auth/signup";
 import AuthSignIN from "../../Auth/signin";
 
@@ -16,9 +17,11 @@ export function* signup({ payload: { email, password, userType } }) {
       yield put(signUpSuccess(user.data));
     } else {
       yield put(signUpFailure(user.err));
+      yield put(setSnackbar(true, "error", user.err));
     }
   } catch (err) {
     yield put(signUpFailure({ err }));
+    yield put(setSnackbar(true, "error", err));
   }
 }
 
@@ -29,9 +32,11 @@ export function* signin({ payload: { email, password, userType } }) {
       yield put(signInSuccess(user.data));
     } else {
       yield put(signInFailure(user.err));
+      yield put(setSnackbar(true, "error", user.err));
     }
   } catch (err) {
     yield put(signInFailure({ err }));
+    yield put(setSnackbar(true, "error", err));
   }
 }
 

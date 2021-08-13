@@ -16,7 +16,7 @@ const snackbarReducer = (state = INITIAL_MESSAGE, action) => {
         ...state,
         snackbarOpen: action.payload,
         snackbarMessage: "",
-        snackbarActionTypes: "",
+        snackbarType: "",
       };
 
     default:

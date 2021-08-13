@@ -12,9 +12,9 @@ import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-i
 import { ReactComponent as Apple } from "../../assets/svg/Sign-in-with-apple-icon.svg";
 import { connect } from "react-redux";
 import { signInStart } from "../../redux/User/UserAction";
-import { setSnackbar } from "../../redux/Sneakbar/SneakbarAction";
+// import { setSnackbar } from "../../redux/Sneakbar/SneakbarAction";
 
-const SignIn = ({ signInStart, currentUser, error, setSnackbar }) => {
+const SignIn = ({ signInStart, currentUser }) => {
   const [passwordType, setpasswordType] = useState("password");
   const [bgCng, setBgCng] = useState(true);
 
@@ -22,12 +22,11 @@ const SignIn = ({ signInStart, currentUser, error, setSnackbar }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userType, setUserType] = useState("user");
-  const handleSubmit = async () => {
+  const handleSubmit = () => {
     signInStart({ email, password, userType });
     setEmail("");
     setPassword("");
     if (currentUser) history.replace("/verfication");
-    if (error) await setSnackbar(true, "error", error);
   };
   const handleChange = (event) => {
     switch (event.target.name) {
@@ -151,11 +150,10 @@ const SignIn = ({ signInStart, currentUser, error, setSnackbar }) => {
 };
 const mapDispatchToProps = (dispatch) => ({
   signInStart: (user) => dispatch(signInStart(user)),
-  setSnackbar: (snackbarOpen, snackbarType, snackbarMessage) =>
-    dispatch(setSnackbar(snackbarOpen, snackbarType, snackbarMessage)),
 });
+//  setSnackbar: (snackbarOpen, snackbarType, snackbarMessage) =>
+//     dispatch(setSnackbar(snackbarOpen, snackbarType, snackbarMessage)),
 const mapStateToProps = (state) => ({
   currentUser: state.user.currentUser,
-  error: state.user.error,
 });
 export default connect(mapStateToProps, mapDispatchToProps)(SignIn);
