@@ -49,14 +49,17 @@ background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
 .userOtp__input > input::-webkit-inner-spin-button{
     -webkit-appearance: none;
 }
-.userOtp__input > .input8,
-.userOtp__input > .input2,
-.userOtp__input > .input3,
-.userOtp__input > .input4,
-.userOtp__input > .input5,
-.userOtp__input > .input6{
-    border-bottom: 2px solid;
-    margin: 1%;
+.userOtp__input > .input8{
+  padding-left: 15px;
+  letter-spacing: 32px;
+  border: 0;
+  background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 40px 1px;
+  background-repeat: repeat-x;
+  background-position-x: 30px;
+  width: 240px;
+  outline: none;
 }
 
 
@@ -65,8 +68,9 @@ background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
     background-color: #3f8f22;
     border-radius:999px;
     right: 0;
-    top: 6px;
+    top: 3px;
     color: white;
+    width: 20%;
 }
 
 
@@ -81,8 +85,14 @@ background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
   {
     width: 350px;
   }
-  .userOtp__input > input{
-    width: 25px;
+  .userOtp__input > .input8{
+    background-size: 30px 0.5px;
+    width: 180px;
+    padding-left: 15px;
+    letter-spacing: 23px;
+  }
+  .userOtp__input > button{
+    top: 1px;
   }
 }
 @media only screen and (max-width:370px){
@@ -91,13 +101,22 @@ background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
     width: 320px;
     height: 70%;
   }
-  .userOtp__input > input{
-    width: 22px;
+  .userOtp__input > .input8{
+    padding-left: 15px;
+    letter-spacing: 21px;
+    border: 0;
+    background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 28px 1px;
+    background-repeat: repeat-x;
+    background-position-x: 28px;
+    width: 168px;
+    outline: none;
+  }
+  .userOtp__input > button{
+    top: 0.5px;
   }
 
-  .userOtp__input > button{
-    top: 4px;
-  }
 }
 
 @media only screen and (max-width:340px){
@@ -108,14 +127,26 @@ background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
   }
 
   .userOtp__input > button{
-    top: 3px;
-  }
-  .userOtp__input > input{
-    width: 20px;
+    top: 0px;
+    height: 98%;
+
   }
   .userOtp__container > button{
-    font-size: 12px;
+    width: 60%;
   }
+  .userOtp__input > .input8{
+    padding-left: 13px;
+    letter-spacing: 18px;
+    border: 0;
+    background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 25px 1px;
+    background-repeat: repeat-x;
+    background-position-x: 25px;
+    width: 150px;
+    outline: none;
+  }
+
 }
 
 @media only screen and (max-width:310px){
@@ -126,24 +157,42 @@ background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
   }
 
   .userOtp__input > button{
-    top: 2px;
+    top: 0px;
   }
-  .userOtp__input > input{
-    width: 20px;
+  .userOtp__input > .input8{
+    padding-left: 13px;
+    letter-spacing: 18px;
+    border: 0;
+    background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 22px 1px;
+    background-repeat: repeat-x;
+    background-position-x: 22px;
+    width: 132px;
+    outline: none;
   }
 }
 
-@media only screen and (max-width:310px){
+@media only screen and (max-width:300px){
   .userOtp__container
   {
     width: 250px;
     height: 65%;
   }
-
-  .userOtp__input > button{
-    top: 1px;
+  .userOtp__input{
+    width: 90%;
   }
-  .userOtp__input > input{
-    width: 16px;
+
+  .userOtp__input > .input8{
+    padding-left: 10px;
+    letter-spacing: 15px;
+    border: 0;
+    background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 22px 1px;
+    background-repeat: repeat-x;
+    background-position-x: 22px;
+    width: 132px;
+    outline: none;
   }
 }

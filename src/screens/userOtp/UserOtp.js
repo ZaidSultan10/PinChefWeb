@@ -45,12 +45,9 @@ const UserOtp = ({ currentUser }) => {
           <h3>{currentUser ? currentUser.email : "Test@email.com"}</h3>
           <h4>Enter 6 digit OTP</h4>
           <div className="userOtp__input">
-            <input className="input8" type="number" />
-            <input className="input2" type="number" />
-            <input className="input3" type="number" />
-            <input className="input4" type="number" />
-            <input className="input5" type="number" />
-            <input className="input6" type="number" />
+            <input className="input8" type="text" maxLength={6}
+            required  />
+            
             <Button
               onClick={() => {
                 history.push("/user/set-profile");
