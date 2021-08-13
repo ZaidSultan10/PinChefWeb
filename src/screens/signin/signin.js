@@ -2,7 +2,7 @@ import "./signin.css";
 
 import { ReactComponent as Email } from "../../assets/svg/email-icon-big.svg";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 // import { Button } from "@material-ui/core";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { NavLink, useHistory } from "react-router-dom";
@@ -12,8 +12,9 @@ import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-i
 import { ReactComponent as Apple } from "../../assets/svg/Sign-in-with-apple-icon.svg";
 import { connect } from "react-redux";
 import { signInStart } from "../../redux/User/UserAction";
+import { setSnackbar } from "../../redux/Sneakbar/SneakbarAction";
 
-const SignIn = ({ signInStart, currentUser, error }) => {
+const SignIn = ({ signInStart, currentUser, error, setSnackbar }) => {
   const [passwordType, setpasswordType] = useState("password");
   const [bgCng, setBgCng] = useState(true);
 
@@ -21,16 +22,12 @@ const SignIn = ({ signInStart, currentUser, error }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userType, setUserType] = useState("user");
-  const [errorState, setErrorState] = useState("");
-  useEffect(() => {
-    return () => setErrorState("");
-  }, [setErrorState]);
   const handleSubmit = async () => {
     signInStart({ email, password, userType });
     setEmail("");
     setPassword("");
     if (currentUser) history.replace("/verfication");
-    await setErrorState(error);
+    if (error) await setSnackbar(true, "error", error);
   };
   const handleChange = (event) => {
     switch (event.target.name) {
@@ -77,7 +74,6 @@ const SignIn = ({ signInStart, currentUser, error }) => {
             SIGNUP
           </NavLink>
         </div>
-        <h6>{errorState ? errorState : " "}</h6>
         <div className="flex-column-usersignin form-usersignin">
           <div className="email-div-signin">
             <label>
@@ -155,6 +151,8 @@ const SignIn = ({ signInStart, currentUser, error }) => {
 };
 const mapDispatchToProps = (dispatch) => ({
   signInStart: (user) => dispatch(signInStart(user)),
+  setSnackbar: (snackbarOpen, snackbarType, snackbarMessage) =>
+    dispatch(setSnackbar(snackbarOpen, snackbarType, snackbarMessage)),
 });
 const mapStateToProps = (state) => ({
   currentUser: state.user.currentUser,

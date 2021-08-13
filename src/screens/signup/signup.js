@@ -2,7 +2,7 @@ import "./signup.css";
 
 import { ReactComponent as Email } from "../../assets/svg/email-icon-big.svg";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { NavLink, useHistory } from "react-router-dom";
 
@@ -11,7 +11,8 @@ import { ReactComponent as Google } from "../../assets/svg/Sign-in-with-Google-i
 import { ReactComponent as Apple } from "../../assets/svg/Sign-in-with-apple-icon.svg";
 import { connect } from "react-redux";
 import { signUpStart } from "../../redux/User/UserAction";
-const SignUp = ({ signUpStart, currentUser, error }) => {
+import { setSnackbar } from "../../redux/Sneakbar/SneakbarAction";
+const SignUp = ({ signUpStart, currentUser, error, setSnackbar }) => {
   const [passwordType, setpasswordType] = useState("password");
   const [bgCng, setBgCng] = useState(true);
 
@@ -19,17 +20,14 @@ const SignUp = ({ signUpStart, currentUser, error }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userType, setUserType] = useState("user");
-  const [errorState, setErrorState] = useState("");
   const handleSubmit = async () => {
     signUpStart({ email, password, userType });
     setEmail("");
     setPassword("");
     if (currentUser) history.replace("/verfication");
-    await setErrorState(error);
+    if (error) await setSnackbar(true, "error", error);
   };
-  useEffect(() => {
-    return () => setErrorState("");
-  }, [setErrorState]);
+
   const handleChange = (event) => {
     switch (event.target.name) {
       case "email":
@@ -75,7 +73,6 @@ const SignUp = ({ signUpStart, currentUser, error }) => {
             SIGNUP
           </NavLink>
         </div>
-        <h6>{errorState ? errorState : " "}</h6>
         <div className="flex-column-usersignin form-usersignin">
           <div className="email-div-signin">
             <label>
@@ -131,7 +128,7 @@ const SignUp = ({ signUpStart, currentUser, error }) => {
           <div className="sign-in-with-google-and-forget-password-signin">
             <div className="sign-in-with-social-media-signin">
               <Apple className="pd-1" />
-              <Facebook className="pd-1 fb-blue"/>
+              <Facebook className="pd-1 fb-blue" />
               <Google className="pd-1" />
             </div>
             <div
@@ -153,6 +150,8 @@ const SignUp = ({ signUpStart, currentUser, error }) => {
 };
 const mapDispatchToProps = (dispatch) => ({
   signUpStart: (user) => dispatch(signUpStart(user)),
+  setSnackbar: (snackbarOpen, snackbarType, snackbarMessage) =>
+    dispatch(setSnackbar(snackbarOpen, snackbarType, snackbarMessage)),
 });
 const mapStateToProps = (state) => ({
   currentUser: state.user.currentUser,

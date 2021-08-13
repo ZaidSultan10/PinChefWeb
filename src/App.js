@@ -91,6 +91,7 @@ import CallHistory from "./screens/callHistory/CallHistory";
 import { connect } from "react-redux";
 import SignIn from "./screens/signin/signin";
 import SignUp from "./screens/signup/signup";
+import Sneakbar from "./components/sneakbarComponent/Sneakbar";
 
 function App({ currentUser }) {
   useEffect(() => {
@@ -102,6 +103,7 @@ function App({ currentUser }) {
 
   return (
     <div className="App">
+      <Sneakbar />
       <Router>
         <Switch>
           <Route path="/" exact component={UserOnBoarding} />
