@@ -136,3 +136,14 @@
     margin-top: 1rem;
     border-radius: 999px;
 }
+
+@media only screen and (min-width:1400px){
+    .userProfileSet__button>button{
+        width: 200px;
+        height: 35%;
+    }
+    .userProfileSet__container{
+        height: 50%;
+        width: 500px;
+    }
+}
