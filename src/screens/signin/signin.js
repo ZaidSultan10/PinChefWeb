@@ -41,7 +41,7 @@ const SignIn = ({ signInStart, currentUser }) => {
     }
   };
   return (
-    <div className="userSignIn__main">
+    <div className="userSignin">
       <div className="userSignin__signin">
         <div className="i__am__chef__button">
           <div

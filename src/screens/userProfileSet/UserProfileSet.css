@@ -26,11 +26,7 @@
     margin-top: 4%;
     
 }
-.userProfileSet__header > img {
-    width: 30px;
-    height: 20px;
 
-}
 .userProfileSet__header > h4{
     display: flex;
     justify-content: center;
@@ -145,5 +141,140 @@
     .userProfileSet__container{
         height: 50%;
         width: 500px;
+    }
+    .userProfileSet__header > h4{
+        font-size: 22px;
+    }
+    .userProfileSet__picture > img{
+        width: 80px;
+        height: 80px;
+    }
+    .userProfileSet__input{
+        margin-top: 3%;
+    }
+    .userProfileSet__input > h5,
+    .userProfileSet__input2>h5,
+    .userProfileSet__input3>h5{
+        font-size: 20px;
+    }
+    .userProfileSet__input > input,
+    .userProfileSet__input2>input,
+    .userProfileSet__input3>input{
+        height: 2.8em;
+        font-size: 20px;
+    }
+    .userProfileSet__button{
+        margin-top: 3%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-height: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait){
+    .userProfileSet__button>button{
+        width: 200px;
+        height: 35%;
+    }
+    .userProfileSet__container{
+        height: 60%;
+        width: 450px;
+    }
+    .userProfileSet__header > h4{
+        font-size: 22px;
+    }
+    .userProfileSet__picture > img{
+        width: 80px;
+        height: 80px;
+    }
+    .userProfileSet__input{
+        margin-top: 3%;
+    }
+    .userProfileSet__input > h5,
+    .userProfileSet__input2>h5,
+    .userProfileSet__input3>h5{
+        font-size: 20px;
+    }
+    .userProfileSet__input > input,
+    .userProfileSet__input2>input,
+    .userProfileSet__input3>input{
+        height: 2.8em;
+        font-size: 20px;
+    }
+    .userProfileSet__button{
+        margin-top: 3%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait){
+    .userProfileSet__button>button{
+        width: 200px;
+        height: 35%;
+        font-size: 22px;
+    }
+    .userProfileSet__container{
+        height: 60%;
+        width: 550px;
+    }
+    .userProfileSet__header > h4{
+        font-size: 26px;
+    }
+    .userProfileSet__picture > img{
+        width: 90px;
+        height: 90px;
+    }
+    .userProfileSet__input{
+        margin-top: 3%;
+    }
+    .userProfileSet__input > h5,
+    .userProfileSet__input2>h5,
+    .userProfileSet__input3>h5{
+        font-size: 24px;
+    }
+    .userProfileSet__input > input,
+    .userProfileSet__input2>input,
+    .userProfileSet__input3>input{
+        height: 2.8em;
+        font-size: 24px;
+    }
+    .userProfileSet__button{
+        margin-top: 3%;
+    }
+}
+
+@media only screen 
+  and (min-width: 1668px) 
+  and (max-height: 2388px) 
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation:portrait){
+    .userProfileSet__button>button{
+        width: 300px;
+        height: 35%;
+        font-size: 30px;
+    }
+    .userProfileSet__container{
+        height: 50%;
+        width: 900px;
+    }
+    .userProfileSet__header > h4{
+        font-size: 40px;
+    }
+    .userProfileSet__picture > img{
+        width: 150px;
+        height: 150px;
+    }
+    .userProfileSet__input{
+        margin-top: 3%;
+    }
+    .userProfileSet__input > h5,
+    .userProfileSet__input2>h5,
+    .userProfileSet__input3>h5{
+        font-size: 38px;
+    }
+    .userProfileSet__input > input,
+    .userProfileSet__input2>input,
+    .userProfileSet__input3>input{
+        height: 2.8em;
+        font-size: 38px;
+    }
+    .userProfileSet__button{
+        margin-top: 5%;
     }
 }
