@@ -43,14 +43,11 @@ const UserOtp = ({ currentUser }) => {
         <div className="userOtp__container">
           <h4>Verify</h4>
           <h3>{currentUser ? currentUser.email : "Test@email.com"}</h3>
-          <h4>Enter 4 digit OTP</h4>
+          <h4>Enter 6 digit OTP</h4>
           <div className="userOtp__input">
-            <input className="input1" type="number" />
-            <input className="input2" type="number" />
-            <input className="input3" type="number" />
-            <input className="input4" type="number" />
-            <input className="input5" type="number" />
-            <input className="input6" type="number" />
+            <input className="input8" type="text" maxLength={6}
+            required  />
+            
             <Button
               onClick={() => {
                 history.push("/user/set-profile");
