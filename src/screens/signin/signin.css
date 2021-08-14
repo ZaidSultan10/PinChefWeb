@@ -248,7 +248,7 @@
   cursor: pointer;
 }
 
-/*@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1040px) {
   .userSignin__signin {
     width: 36%;
   }
@@ -331,5 +331,5 @@
     width: 34px;
     height: 34px;
   }
-}*/
+}
 
