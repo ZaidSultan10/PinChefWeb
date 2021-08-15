@@ -1,27 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "@material-ui/core";
 import "./UserOtp.css";
 import { useHistory } from "react-router-dom";
-import Modal from "react-modal";
-import ResendIcon from "../../assets/svg-for-user-profile/EMail_icon.svg";
+//import Modal from "react-modal";
+//import ResendIcon from "../../assets/svg-for-user-profile/EMail_icon.svg";
 import "./UserOtpModal.css";
 import { connect } from "react-redux";
 
 const UserOtp = ({ currentUser }) => {
   const history = useHistory();
 
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
+ 
   return (
     <>
-      <Modal
+     {/* <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         className="userotp1"
@@ -39,7 +31,7 @@ const UserOtp = ({ currentUser }) => {
             </p>
           </div>
         </div>
-      </Modal>
+     </Modal> */}
       <div className="userOtp">
         <div className="userOtp__container">
           <h4>Verify</h4>
@@ -57,7 +49,7 @@ const UserOtp = ({ currentUser }) => {
               OK
             </Button>
           </div>
-          <Button onClick={openModal}>Resend email</Button>
+          <Button >Resend email</Button>
         </div>
       </div>
     </>

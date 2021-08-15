@@ -1,5 +1,5 @@
 import { Avatar } from "@material-ui/core";
-import React, { useState } from "react";
+import React from "react";
 import "./MainFeedRecipe.css";
 import MoreHorizOutlinedIcon from "@material-ui/icons/MoreHorizOutlined";
 import PostImage from "../../assets/chef-images/chef-image1.jpg";

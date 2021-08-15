@@ -10,7 +10,6 @@ import Modal from 'react-modal'
 
 const GoogleAds = ({filterSearchProp}) => {
   
-  const [showSearch, setShowSearch] =useState(false);
   const [isModalOpen,setIsModalOpen] = useState(false)
 
   const openModal = () => {
