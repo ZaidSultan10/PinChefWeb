@@ -32,7 +32,7 @@
   .samplepage__left::-webkit-scrollbar,
   .samplepage__center::-webkit-scrollbar,
   .samplepage__right::-webkit-scrollbar{
-    width: 12px;
+    width: 8px;
       background-color: #F5F5F5;
   }
   .samplepage__left::-webkit-scrollbar-thumb,

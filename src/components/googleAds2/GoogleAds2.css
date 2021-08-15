@@ -106,10 +106,10 @@
   
   @media only screen and (min-width:1290px) and (max-width:1921px){
     .googleAds__filter__header > h3{
-      font-size: 30px !important;
+      font-size: 26px !important;
     }
     .sort__by{
-      font-size: 26px !important;
+      font-size: 24px !important;
     }
     .radio{
       font-size: 28px !important;
