@@ -2,27 +2,41 @@ import React, { useState } from "react";
 import { Button } from "@material-ui/core";
 import "./UserOtp.css";
 import { useHistory } from "react-router-dom";
-import Modal from "react-modal";
-import ResendIcon from "../../assets/svg-for-user-profile/EMail_icon.svg";
+// import Modal from "react-modal";
+// import ResendIcon from "../../assets/svg-for-user-profile/EMail_icon.svg";
 import "./UserOtpModal.css";
 import { connect } from "react-redux";
-import { getVerificationCodeStart } from "../../redux/User/UserAction";
+import {
+  getVerificationCodeStart,
+  verificationStart,
+} from "../../redux/User/UserAction";
 
-const UserOtp = ({ currentUser, getVerificationCodeStart }) => {
+const UserOtp = ({
+  currentUser,
+  getVerificationCodeStart,
+  verificationStart,
+}) => {
   const history = useHistory();
+  const [confirmationCode, setConfirmationCode] = useState("");
+  // const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-
-  const openModal = () => {
+  const handleResendEmail = () => {
     getVerificationCodeStart(currentUser._id);
   };
+  const handleVerify = () => {
+    verificationStart(currentUser._id, confirmationCode);
+    if (currentUser.status && currentUser.status === "active")
+      history.replace("/user/set-profile");
 
-  const closeModal = () => {
-    setModalIsOpen(false);
+    setConfirmationCode("");
   };
+
+  // const closeModal = () => {
+  //   setModalIsOpen(false);
+  // };
   return (
     <>
-      <Modal
+      {/* <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         className="userotp1"
@@ -40,24 +54,25 @@ const UserOtp = ({ currentUser, getVerificationCodeStart }) => {
             </p>
           </div>
         </div>
-      </Modal>
+      </Modal> */}
       <div className="userOtp">
         <div className="userOtp__container">
           <h4>Verify</h4>
           <h3>{currentUser ? currentUser.email : "Test@email.com"}</h3>
           <h4>Enter 6 digit OTP</h4>
           <div className="userOtp__input">
-            <input className="input8" type="text" maxLength={6} required />
+            <input
+              className="input8"
+              type="text"
+              maxLength={6}
+              required
+              onChange={(e) => setConfirmationCode(e.target.value)}
+              value={confirmationCode}
+            />
 
-            <Button
-              onClick={() => {
-                history.push("/user/set-profile");
-              }}
-            >
-              OK
-            </Button>
+            <Button onClick={handleVerify}>OK</Button>
           </div>
-          <Button onClick={openModal}>Resend email</Button>
+          <Button onClick={handleResendEmail}>Resend email</Button>
         </div>
       </div>
     </>
@@ -68,5 +83,7 @@ const mapStateToProps = (state) => ({
 });
 const mapDispatchToProps = (dispatch) => ({
   getVerificationCodeStart: (id) => dispatch(getVerificationCodeStart(id)),
+  verificationStart: (id, confirmationCode) =>
+    dispatch(verificationStart(id, confirmationCode)),
 });
 export default connect(mapStateToProps, mapDispatchToProps)(UserOtp);

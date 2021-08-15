@@ -1,13 +1,19 @@
 import axios from "axios";
-export const verifyUser = async (id) => {
-  const message = await axios.post(`/api/user/confirm/${id}/:confirmationCode`);
-  if (message.status === 200) return { data: message.data, status: 200 };
-  // let error:
-  return { err: "Something went wrong", status: 400 };
+export const verifyUser = async (id, confirmationCode) => {
+  try {
+    const message = await axios.post(
+      `/api/user/confirm/${id}/${confirmationCode}`
+    );
+    if (message.status === 200) return { data: message.data, status: 200 };
+  } catch (err) {
+    return { err: err.response.data, status: err.response.status };
+  }
 };
 export const getVerificationCode = async (id) => {
-  const message = await axios.post(`/api/user/${id}/ConfirmationCode`);
-  if (message.status === 200) return { data: message.data, status: 200 };
-  // let error:
-  return { err: "Something went wrong", status: 400 };
+  try {
+    const message = await axios.post(`/api/user/${id}/confirmationCode`);
+    if (message.status === 200) return { data: message.data, status: 200 };
+  } catch (err) {
+    return { err: err.response.data, status: err.response.status };
+  }
 };

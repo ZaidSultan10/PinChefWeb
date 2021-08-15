@@ -12,13 +12,13 @@ import {
   signInFailure,
   getVerificationCodeFailed,
   getVerificationCodeSuccess,
-  verificationStart,
   verificationFailed,
+  verificationSuccess,
 } from "./UserAction";
 import { setSnackbar } from "../Sneakbar/SneakbarAction";
 import AuthSignUp from "../../Auth/signup";
 import AuthSignIN from "../../Auth/signin";
-import { getVerificationCode } from "../../Auth/verification";
+import { getVerificationCode, verifyUser } from "../../Auth/verification";
 
 export function* signup({ payload: { email, password, userType } }) {
   try {
@@ -66,17 +66,18 @@ export function* getVerificationCodeSaga({ payload }) {
   }
 }
 
-export function* userVerification({ payload }) {
+export function* userVerification({ payload: { id, confirmationCode } }) {
   try {
-    // const message = yield getVerificationCode(payload);
-    console.log(payload);
-    let message = { status: 200, data: "Account Confrimed" };
+    const message = yield verifyUser(id, confirmationCode);
+    // let message = { status: 200, data: {} };
+    console.log(confirmationCode);
     if (message.status === 200) {
-      yield put(verificationStart());
-      yield put(setSnackbar(true, "success", message.data));
+      yield put(verificationSuccess(message.data));
+      yield put(setSnackbar(true, "success", "Account Confrimed Successfully"));
     } else {
       yield put(verificationFailed(message.err));
       yield put(setSnackbar(true, "error", message.err));
+      console.log(message.err);
     }
   } catch (err) {
     yield put(verificationFailed(err));

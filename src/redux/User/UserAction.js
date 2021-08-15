@@ -55,13 +55,14 @@ export const getVerificationCodeFailed = (err) => ({
   payload: err,
 });
 
-export const verificationStart = (userId) => ({
+export const verificationStart = (id, confirmationCode) => ({
   type: USER_VERIFICATION_START,
-  payload: userId,
+  payload: { id, confirmationCode },
 });
 
-export const verificationSuccess = () => ({
+export const verificationSuccess = (user) => ({
   type: USER_VERIFICATION_SUCCESS,
+  payload: user,
 });
 export const verificationFailed = (error) => ({
   type: USER_VERIFICATION_FAILED,
