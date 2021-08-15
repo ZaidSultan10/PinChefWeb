@@ -1,12 +1,35 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './GoogleAds.css'
 import FilterIcon from '../../assets/svg/Filter-button.svg'
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import Ads from '../ads/Ads';
 import RightArrow from '../../assets/svg/right-arrow-brown.svg'
+import DatePicker from '../datePicker/DatePicker';
+import Modal from 'react-modal'
+
 
 const GoogleAds = ({filterSearchProp}) => {
+  
+  const [showSearch, setShowSearch] =useState(false);
+  const [isModalOpen,setIsModalOpen] = useState(false)
+
+  const openModal = () => {
+    setIsModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+  }
+
   return (
+    <>
+    <Modal isOpen={isModalOpen}
+    onRequestClose={closeModal}
+    
+    className='datepickermodal'
+    contentLabel="Example Modal">
+        <DatePicker />
+    </Modal>
     <div className="googleAds">
       <div className="googleAds__filter">
           <div className='googleAds__filter__header'>
@@ -115,8 +138,12 @@ const GoogleAds = ({filterSearchProp}) => {
           </div> </>)}
           {!filterSearchProp && (
             <>
-                <div className='googleAds__filter__dates'>
-                  <h4>Dates</h4>
+            
+                <div onClick={openModal}
+                 className='googleAds__filter__dates'>
+                  <h4 >
+                    Dates
+                  </h4>
                   <img src={RightArrow} alt='arrow'/>
                 </div>
                 <div className='googleAds__filter__date'>
@@ -135,6 +162,7 @@ const GoogleAds = ({filterSearchProp}) => {
           <Ads />
       </div>
     </div>
+    </>
   );
 };
 export default GoogleAds;

@@ -18,7 +18,6 @@ const MainFeed = () => {
   const [modalIsOpen,setIsOpen]=useState(false)
   const [modalIsOpen1,setIsOpen1]=useState(false)
   const [modalIsOpen2,setIsOpen2]=useState(false)
-
   
   const customStyles1={
     content : {
