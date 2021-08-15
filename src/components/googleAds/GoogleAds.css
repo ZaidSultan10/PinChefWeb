@@ -7,6 +7,14 @@
   background-color: #ffcf54 !important;
   border-radius: 50% !important;
 }
+.datepickermodal{
+  width: 50%;
+  height: 50%;
+  margin-top: 8rem;
+  margin-left: 28%;
+
+  outline: none;
+}
 
 .googleAds__filter{
   display: grid;

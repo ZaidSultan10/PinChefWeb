@@ -7,7 +7,7 @@
     margin-left: 1%;
     margin-right: 2%;
     margin-top: 1.5%;
-    cursor: pointer;
+    
 }
 .myModal1HomePage{
     width: 25%;
@@ -17,8 +17,10 @@
     margin-left: 50%;
     margin-top: 13rem;
     border-radius: 16px;
-    border: 1px solid;
+    border: 1px solid white;
     background-color: white;
+    outline: none;
+    box-shadow: 1px 1px 6px 0 grey;
 }
 .modal-options{
     display: flex;
@@ -157,6 +159,7 @@ input[type='radio']:checked::after {
     box-shadow:  0 2px 6px 0 gray;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 .mainFeed__location{
     margin-left: 3.7rem;
@@ -186,7 +189,7 @@ input[type='radio']:checked::after {
     display: flex;
     margin-right: 3%;
 }
-.mainFeed__time  > P {
+.mainFeed__time  > p {
     display: flex;
     align-items: center;
     color: gray !important;
@@ -206,10 +209,14 @@ input[type='radio']:checked::after {
 }
 .mainFeed__userName >h3{
     font-size: 14px !important;
+    cursor: pointer;
 }
 .mainFeed__userName > p{
     font-size: 12px;
     color: gray !important;
+}
+.moreHoriz{
+    cursor: pointer;
 }
 
 .post__image{

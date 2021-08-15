@@ -12,7 +12,7 @@
     grid-template-columns: 1fr 3fr 1fr;
     justify-content: center;
     grid-gap:1%;
-    padding-bottom: 8%;
+    padding-bottom: 4%;
     height: 84.5vh;
 }
 .samplepage__left,.samplepage__right,.samplepage__center{
@@ -60,10 +60,29 @@
     .samplepage__container{
         display: grid;
         grid-template-columns: repeat(1,minmax(0,1fr));
+        padding-bottom: 8%;
     }
     .samplepage__center{
-        overflow-y: hidden;
+        overflow-y:scroll;
     }
+    .samplepage__left::-webkit-scrollbar-track,
+.samplepage__center::-webkit-scrollbar-track,
+.samplepage__right::-webkit-scrollbar-track{
+      display: none;
+  }
+  
+  .samplepage__left::-webkit-scrollbar,
+  .samplepage__center::-webkit-scrollbar,
+  .samplepage__right::-webkit-scrollbar{
+    display: none;
+  }
+  .samplepage__left::-webkit-scrollbar-thumb,
+.samplepage__center::-webkit-scrollbar-thumb,
+.samplepage__right::-webkit-scrollbar-thumb{
+    display: none;
+  }
+
+    
     .samplepage__left,.samplepage__right{
         display: none;
     }
@@ -77,6 +96,9 @@
     }
     .samplepage__container{
         display: grid;
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
 }
