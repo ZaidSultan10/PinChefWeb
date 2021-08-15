@@ -1,5 +1,5 @@
 import { Avatar } from "@material-ui/core";
-import React from "react";
+import React, { useState } from "react";
 import "./MainFeedRecipe.css";
 import MoreHorizOutlinedIcon from "@material-ui/icons/MoreHorizOutlined";
 import PostImage from "../../assets/chef-images/chef-image1.jpg";
@@ -8,6 +8,7 @@ import HeartIcon from '../../assets/svg/Heart_Outline.svg'
 import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 import { ChevronRight } from "@material-ui/icons";
 import { useHistory } from "react-router-dom";
+import TextTruncate from "react-text-truncate";
 
 const MainFeedRecipe = () => {
 
@@ -74,10 +75,14 @@ const MainFeedRecipe = () => {
         <div className="mainFeedRecipe__paragraphs">
             <h4>Ingredients :</h4>
             <div className='mainFeedRecipe__paragraph'>
-                <p>
-                Ground Beef 1Kg, Tortillas 1 Pack, Celery, 1 Onion,
-                Taco Seasoning 
-                </p>
+                
+                <TextTruncate
+                        line={1}
+                        element='p'
+                        truncateText='...'
+                        text='Ground Beef 1Kg, Tortillas 1 Pack, Celery, 1 Onion,
+                        Taco Seasoning'      
+                />
                 <ChevronRight onClick={detailRecipeButton} className='rightIcon' />
             </div>
         </div>

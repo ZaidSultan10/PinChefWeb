@@ -6,6 +6,7 @@
     margin: 0 auto;
     max-width: 1400px;
     margin-top: 3.5%;
+    padding-bottom: 6%;
 }
 .feedRecipe__container{
     display: grid;
@@ -13,11 +14,36 @@
     justify-content: center;
     grid-gap:1%;
     padding-top: 65px;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
+    height: 94vh;
 }
 .feedRecipe__left,.feedRecipe__right,.feedRecipe__center{
     width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+.feedRecipe__left::-webkit-scrollbar-track,
+.feedRecipe__center::-webkit-scrollbar-track,
+.feedRecipe__right::-webkit-scrollbar-track{
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+  }
+  
+  .feedRecipe__left::-webkit-scrollbar,
+  .feedRecipe__center::-webkit-scrollbar,
+  .feedRecipe__right::-webkit-scrollbar{
+    width: 8px;
+      background-color: #F5F5F5;
+  }
+  .feedRecipe__left::-webkit-scrollbar-thumb,
+.feedRecipe__center::-webkit-scrollbar-thumb,
+.feedRecipe__right::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+      box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: #555;
+  }
+
 .feedRecipe__left > p , .feedRecipe__center > p , .feedRecipe__right>p{
     display: flex;
     justify-content: center;
@@ -26,11 +52,32 @@
 @media screen and (max-width:1000px){
     .feedRecipe__container{
         display: grid;
+        padding-bottom: 50px;
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
     .feedRecipe__left,.feedRecipe__right{
         display: none;
     }
+    .feedRecipe__left::-webkit-scrollbar-track,
+.feedRecipe__center::-webkit-scrollbar-track,
+.feedRecipe__right::-webkit-scrollbar-track{
+      display: none;
+  }
+  
+  .feedRecipe__left::-webkit-scrollbar,
+  .feedRecipe__center::-webkit-scrollbar,
+  .feedRecipe__right::-webkit-scrollbar{
+    display: none;
+  }
+  .feedRecipe__left::-webkit-scrollbar-thumb,
+.feedRecipe__center::-webkit-scrollbar-thumb,
+.feedRecipe__right::-webkit-scrollbar-thumb{
+    display: none;
+  }
+  .feedRecipe__center{
+      overflow-y: scroll;
+  }
+
 } 
 @media screen and (max-width:604px){
     .feedRecipe{
