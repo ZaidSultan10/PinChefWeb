@@ -6,14 +6,15 @@ import Modal from "react-modal";
 import ResendIcon from "../../assets/svg-for-user-profile/EMail_icon.svg";
 import "./UserOtpModal.css";
 import { connect } from "react-redux";
+import { getVerificationCodeStart } from "../../redux/User/UserAction";
 
-const UserOtp = ({ currentUser }) => {
+const UserOtp = ({ currentUser, getVerificationCodeStart }) => {
   const history = useHistory();
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
-    setModalIsOpen(true);
+    getVerificationCodeStart(currentUser._id);
   };
 
   const closeModal = () => {
@@ -46,9 +47,8 @@ const UserOtp = ({ currentUser }) => {
           <h3>{currentUser ? currentUser.email : "Test@email.com"}</h3>
           <h4>Enter 6 digit OTP</h4>
           <div className="userOtp__input">
-            <input className="input8" type="text" maxLength={6}
-            required  />
-            
+            <input className="input8" type="text" maxLength={6} required />
+
             <Button
               onClick={() => {
                 history.push("/user/set-profile");
@@ -66,4 +66,7 @@ const UserOtp = ({ currentUser }) => {
 const mapStateToProps = (state) => ({
   currentUser: state.user.currentUser,
 });
-export default connect(mapStateToProps)(UserOtp);
+const mapDispatchToProps = (dispatch) => ({
+  getVerificationCodeStart: (id) => dispatch(getVerificationCodeStart(id)),
+});
+export default connect(mapStateToProps, mapDispatchToProps)(UserOtp);
