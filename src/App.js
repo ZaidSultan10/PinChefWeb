@@ -132,12 +132,12 @@ function App({ currentUser }) {
               )
             }
           />
-          {currentUser && currentUser.state === "active" ? (
+          {/*currentUser && currentUser.state === "active" ? (
             <Route path="/homepage" exact component={HomeFeed} />
           ) : (
             <Redirect to="/signup" />
-          )}
-          {/* <Route path="/homepage" exact component={HomeFeed} /> */}
+          )*/}
+           <Route path="/homepage" exact component={HomeFeed} /> 
           <Route path="/homerecipe" exact component={HomeRecipe} />
           <Route
             path="/home/masterclass"
