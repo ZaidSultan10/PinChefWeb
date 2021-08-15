@@ -12,13 +12,18 @@ import ShareItIcon from "../../assets/svg/Share-yellow.svg";
 import Modal from 'react-modal'
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
+import TextTruncate from 'react-text-truncate'
+
+
 
 const MainFeed = () => {
 
   const [modalIsOpen,setIsOpen]=useState(false)
   const [modalIsOpen1,setIsOpen1]=useState(false)
   const [modalIsOpen2,setIsOpen2]=useState(false)
-  
+  const [toggleTruncate,setToggleTruncate] = useState(false)
+
+
   const customStyles1={
     content : {
       top                   : '50%',
@@ -63,6 +68,7 @@ const closeModal2 = () => {
     }
     
     const history=useHistory()
+
 
   return (
     <>
@@ -173,11 +179,33 @@ const closeModal2 = () => {
           </div>
         </div>
         <div className="mainFeed__paragraph">
-          <p>
-            It was a great night as we were catering for a wedding. Thank you to
+        {
+          !toggleTruncate ? (
+            <TextTruncate
+            line={3}
+            element='p'
+            truncateText='...'
+            text='It was a great night as we were catering for a wedding. Thank you to
             all the staff that helped to make this event as wonderful as possible.
             Special thanks to the host
-          </p>
+            It was a great night as we were catering for a wedding. Thank you to
+            all the staff that helped to make this event as wonderful as possible.
+            Special thanks to the host'
+            textTruncateChild ={<button onClick={() => setToggleTruncate(true)}>Show More</button>}
+            
+          />
+          ) : (
+            <p>
+              It was a great night as we were catering for a wedding. Thank you to
+            all the staff that helped to make this event as wonderful as possible.
+            Special thanks to the host
+            It was a great night as we were catering for a wedding. Thank you to
+            all the staff that helped to make this event as wonderful as possible.
+            Special thanks to the host <button onClick={() => setToggleTruncate(false)} >Show Less</button>
+            </p>
+          )
+        }
+          
         </div>
         <div className='bottom__line'>
               <img src={HorizontalLine} alt='line' />

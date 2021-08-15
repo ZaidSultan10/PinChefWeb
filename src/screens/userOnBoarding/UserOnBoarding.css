@@ -69,6 +69,10 @@
   }
   .UserOnboarding-Carousel{
     font-size: 20px !important;
+    
+  }
+  .carousel-div-content > strong{
+    font-weight: 550 !important;
   }
 
 }

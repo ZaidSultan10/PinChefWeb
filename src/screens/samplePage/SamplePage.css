@@ -32,7 +32,7 @@
   .samplepage__left::-webkit-scrollbar,
   .samplepage__center::-webkit-scrollbar,
   .samplepage__right::-webkit-scrollbar{
-    width: 12px;
+    width: 8px;
       background-color: #F5F5F5;
   }
   .samplepage__left::-webkit-scrollbar-thumb,
@@ -130,5 +130,24 @@
     .samplepage__left,.samplepage__right{
         display: none;
     }
+    .samplepage__center{
+        overflow-y:scroll;
+    }
+    .samplepage__left::-webkit-scrollbar-track,
+.samplepage__center::-webkit-scrollbar-track,
+.samplepage__right::-webkit-scrollbar-track{
+      display: none;
+  }
+  
+  .samplepage__left::-webkit-scrollbar,
+  .samplepage__center::-webkit-scrollbar,
+  .samplepage__right::-webkit-scrollbar{
+    display: none;
+  }
+  .samplepage__left::-webkit-scrollbar-thumb,
+.samplepage__center::-webkit-scrollbar-thumb,
+.samplepage__right::-webkit-scrollbar-thumb{
+    display: none;
+  }
 }
 

@@ -26,8 +26,9 @@ const UserOtp = ({ currentUser }) => {
         onRequestClose={closeModal}
         className="userotp1"
         contentLabel="Notification Modal"
+        ariaHideApp={false}
       >
-        <div className="userotp-resend-container">
+        <div onClick={closeModal} className="userotp-resend-container">
           <div className="userotp-resend-icon">
             <img src={ResendIcon} alt="star" />
           </div>
