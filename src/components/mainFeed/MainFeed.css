@@ -215,6 +215,14 @@ input[type='radio']:checked::after {
     font-size: 12px;
     color: gray !important;
 }
+.spn1{
+    color: brown !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin-top: -1%;
+    margin-bottom: -1%;
+    cursor: pointer;
+}
 .moreHoriz{
     cursor: pointer;
 }
@@ -299,6 +307,7 @@ p{
     margin-top: 4%;
     margin-bottom: 4%;
 }
+
 
 @media only screen and (max-width:1000px){
     .myModal1HomePage{

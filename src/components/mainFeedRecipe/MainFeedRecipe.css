@@ -159,6 +159,7 @@ p{
 }
 .rightIcon{
     color: #3f8f22 !important;
+    cursor: pointer;
 }
 .mainFeedRecipe__paragraph > p{
     font-size: 16px !important;

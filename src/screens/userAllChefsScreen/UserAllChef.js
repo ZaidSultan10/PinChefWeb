@@ -9,7 +9,7 @@ import './UserAllChef.css'
 const UserAllChef = () => {
     return (
         <div className='userAllChef'>
-            <Header />
+            <Header searchProp={true} />
             <FeedAllChefs allChefProp={true} />
             <Footer />
         </div>

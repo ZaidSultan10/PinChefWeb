@@ -42,10 +42,14 @@ const MainFeedMasterclass = () => {
         </div>
         <div className="class__details">
           <div className="class__details__left">
-            <img src={PostImage} alt="icon" />
+            <div className="class__details__test">
+              <img src={PostImage} alt="icon" />
+              <p>LIVE</p>
+            </div>
+            
             <div className="class__status">
               <h4>Italian</h4>
-              <p>LIVE</p>
+              
               <h4 className="vegan">Vegan</h4>
             </div>
           </div>

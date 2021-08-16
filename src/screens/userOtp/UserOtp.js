@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import { Button } from "@material-ui/core";
 import "./UserOtp.css";
 import { useHistory } from "react-router-dom";
-// import Modal from "react-modal";
-// import ResendIcon from "../../assets/svg-for-user-profile/EMail_icon.svg";
+
+//import Modal from "react-modal";
+//import ResendIcon from "../../assets/svg-for-user-profile/EMail_icon.svg";
+
 import "./UserOtpModal.css";
 import { connect } from "react-redux";
 import {
@@ -19,7 +21,7 @@ const UserOtp = ({
   const history = useHistory();
   const [confirmationCode, setConfirmationCode] = useState("");
   // const [modalIsOpen, setModalIsOpen] = useState(false);
-
+    
   const handleResendEmail = () => {
     getVerificationCodeStart(currentUser._id);
   };
@@ -30,13 +32,11 @@ const UserOtp = ({
 
     setConfirmationCode("");
   };
-
-  // const closeModal = () => {
-  //   setModalIsOpen(false);
-  // };
+ 
   return (
     <>
       {/* <Modal
+>>>>>>> 630ab4af8f889e16f778f1799e4db0d1441f6972
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         className="userotp1"
@@ -54,10 +54,12 @@ const UserOtp = ({
             </p>
           </div>
         </div>
-      </Modal> */}
-      <div className="userOtp">
+
+     </Modal> */}
+
+     <div className="userOtp">
         <div className="userOtp__container">
-          <h4>Verify</h4>
+          <h4 className='verify-otp'>Verify</h4>
           <h3>{currentUser ? currentUser.email : "Test@email.com"}</h3>
           <h4>Enter 6 digit OTP</h4>
           <div className="userOtp__input">
@@ -72,7 +74,8 @@ const UserOtp = ({
 
             <Button onClick={handleVerify}>OK</Button>
           </div>
-          <Button onClick={handleResendEmail}>Resend email</Button>
+
+          <Button onClick={handleResendEmail}>Resend Email</Button>
         </div>
       </div>
     </>

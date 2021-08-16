@@ -7,9 +7,12 @@ import RightArrow from "../../assets/svg/right-arrow-brown.svg";
 import DatePicker from "../datePicker/DatePicker";
 import Modal from "react-modal";
 
-const GoogleAds = ({ filterSearchProp }) => {
-  // const [showSearch, setShowSearch] =useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+
+
+const GoogleAds = ({filterSearchProp}) => {
+  
+  const [isModalOpen,setIsModalOpen] = useState(false)
+
 
   const openModal = () => {
     setIsModalOpen(true);

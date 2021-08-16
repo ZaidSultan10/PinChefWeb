@@ -19,9 +19,17 @@ const FeedAllChefs = ({allChefProp}) => {
                             <>
                                 <MainAllChefs followProp={true} />
                                 <MainAllChefs followProp={true} />
+                                <MainAllChefs followProp={true} />
+                                <MainAllChefs followProp={true} />
+                                <MainAllChefs followProp={true} />
+                                <MainAllChefs followProp={true} />
                             </>
                         ):(
                             <>
+                                <MainAllChefs  />
+                                <MainAllChefs  />
+                                <MainAllChefs  />
+                                <MainAllChefs  />
                                 <MainAllChefs  />
                                 <MainAllChefs  />
                             </>

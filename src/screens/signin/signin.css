@@ -41,7 +41,7 @@
   border-radius: 999px;
   padding-left: 5%;
   padding-right: 5%;
-  width: 40%;
+  width: 32%;
   height: 30px;
   color: white !important;
   font-size: 14px !important;
@@ -50,10 +50,16 @@
   align-items: center;
   justify-content: space-between;
 }
+.userSignin__top > h5{
+  font-size: 11px;
+ 
+}
 .right__icon__signin {
   color: #ffcf54 !important;
   margin-top: 1px;
-  width: 100%;
+  margin-right: -17%;
+  width: 70%;
+  
 }
 .sign-in-up-signin {
   margin-top: 20px !important;
@@ -94,7 +100,7 @@
   padding: 0;
   margin-top: 1%;
   border: none;
-  height: 2.6em;
+  height: 3.3em;
   outline: none;
   font-size: 1em;
   margin-right: 1px;
@@ -149,11 +155,12 @@
 .show {
   background-image: url("../../assets/svg/Show-password-icon.svg");
   background-size: 25px !important;
+  margin-top: 1rem !important;
 }
 .hide {
   background-image: url("../../assets/svg/hide\ -password-\ icon.svg");
   background-size: 25px !important;
-  margin-top: 0.55rem !important;
+  margin-top: 0.8rem !important;
 }
 
 .tooglePassword {
@@ -181,10 +188,13 @@
   justify-content: space-around;
   margin-left: 1em;
   margin-right: 5%;
+  
 }
+
 .keep-me-sign-in-signin > input {
   height: 1.5em;
   width: 1.5em;
+  box-shadow: none !important;
   
 }
 .keep-me-sign-in-signin span {
@@ -192,6 +202,7 @@
   padding-left: 1em;
   font-size: 14px;
   color: white;
+  
 }
 .continue-signin {
   background-color: #b62414;
@@ -249,6 +260,9 @@
 }
 
 @media only screen and (max-width: 1040px) {
+  .userSignin__top > h5{
+    font-size: 10px !important;
+  }
   .userSignin__signin {
     width: 36%;
   }
@@ -256,53 +270,53 @@
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 965px) {
   .userSignin__signin {
     width: 40%;
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 867px) {
   .userSignin__signin {
     width: 46%;
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 756px) {
   .userSignin__signin {
     width: 52%;
   }
 
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 685px) {
   .userSignin__signin {
     width: 59%;
   }
 }
-@media only screen and (max-width: 581px) {
+@media only screen and (max-width: 604px) {
   .userSignin__signin {
     width: 67%;
   }
 }
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 536px) {
   .userSignin__signin {
     width: 77%;
   }
 
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 468px) {
   .userSignin__signin {
     width: 90%;
   }
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 402px) {
   .userSignin__signin {
     width: 99%;
   }
 }
-@media only screen and (max-width: 355px) {
+@media only screen and (max-width: 367px) {
   .i__am__chef__button > .userSignin__top{
-      width: 50%;
+      width: 37%;
       margin-right: 8%;
   }
   .sign-in-h2-signin,.email-div-signin > label > strong,
@@ -331,5 +345,9 @@
     width: 34px;
     height: 34px;
   }
+  .i__am__chef__button > .userSignin__top{
+    width: 40%;
+    margin-right: 8%;
+}
 }
 

@@ -1,3 +1,8 @@
+.feedMaster{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
 .feedMaster__header{
     display: grid;
     grid-template-columns: 2fr 2fr 4fr 1fr;
@@ -39,9 +44,11 @@
     justify-content: space-around;
     margin-top: -4%;
 }
-.class__details__left > img{
-    width: 90%;
+.class__details__test{
     position: relative;
+}
+.class__details__test > img{
+    width: 90%;
     height: 250px;
     background-size: cover;
     border-radius: 8px;
@@ -54,11 +61,11 @@
 .class__status>h4{
     text-align: center;
 }
-.class__status > p{
+.class__details__test > p{
     position: absolute;
     font-size: 20px !important;
-    margin-top: -3.5rem;
-    margin-left: 0.8%;
+    bottom: 12px;
+    right: 1.7rem;
     float:right;
     color: red;
     font-weight: 800 !important ;

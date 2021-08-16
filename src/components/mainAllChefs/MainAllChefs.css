@@ -19,6 +19,7 @@
 .mainAllChef__left >.avatar{
     width: 100px;
     height: 100px;
+    cursor: pointer;
 }
 .star,.follow-icon{
     width: 20px;
@@ -56,6 +57,9 @@
 .cuisines{
     margin-top: 1rem;
 }
+.follow{
+    cursor: pointer;
+}
 .paragraph{
     margin-top: 1rem;
     display: flex;
@@ -65,7 +69,8 @@
     margin-right: 3rem;
     margin-top: -2%;
     color: #3f8f22 !important;
-    font-size: 28px !important;
+    font-size: 28px ;
+    cursor: pointer;
 }
 .location{
     display: flex;
@@ -95,7 +100,29 @@
 
 @media only screen and (max-width:400px){
     .mainAllchef__name > h3{
-        font-size: 16px;
+        font-size: 15px;
+    }
+    .mainAllChef__left >.avatar{
+        width: 80px;
+        height: 80px;
+    }
+    .star{
+        width: 14px;
+        height: 14px;
+    }
+    .mainAllchef__follower>h4{
+        font-size: 15px;
+    }
+    .mainAllchef__follower>img{
+        width: 16px;
+        height: 16px;
+    }
+    .follow{
+        font-size: 15px;
+    }
+    .executiveChef > p, .cuisines >p,
+    .paragraph > p{
+        font-size: 10px;
     }
 }
 
@@ -123,6 +150,128 @@
     }
     .follow{
         font-size: 11px;
+    }
+}
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation:portrait){
+    .mainAllChef__left >.avatar{
+        width: 130px;
+        height: 130px;
+        cursor: pointer;
+    }
+    .mainAllChef__left > h4{
+        font-size: 22px;
+    }
+    .mainAllchef__name > h3{
+        font-size: 24px;
+    }
+    .paragraph>.right__icon{
+        font-size: 34px !important;
+    }
+    .star,.follow-icon{
+        width: 26px;
+        height: 26px;
+    }
+    .location-icon{
+        width: 18px;
+        height: 18px;
+        margin-top: -3px;
+    }
+    
+    .mainAllchef__follow > h4{
+        text-align: right;
+        color: #3f8f22;
+        font-size: 22px;
+    }
+    
+    .mainAllchef__follower >h4{
+        padding-left: 3px;
+        font-size: 24px;
+    }
+    
+    .paragraph{
+        margin-top: 1rem;
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    .paragraph > p,.cuisines>p,.executiveChef>p{
+        font-size: 20px;
+    }
+    .right__icon{
+        margin-right: 3rem;
+        margin-top: -2%;
+        color: #3f8f22 !important;
+        font-size: 28px !important;
+        cursor: pointer;
+    }
+    
+    
+    .area{
+        display: flex;
+        color: #3f8f22;
+        font-size: 20px !important;
+        margin-top: -5px;
+        margin-left: 1%;
+    }
+    
+}
+@media only screen 
+  and (min-width: 1668px) 
+  and (max-height: 2388px) 
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation:portrait){
+    .mainAllChef__left >.avatar{
+        width: 180px;
+        height: 180px;
+        cursor: pointer;
+    }
+    .mainAllChef__left > h4{
+        font-size: 36px;
+    }
+    .mainAllchef__name > h3{
+        font-size: 38px;
+    }
+    .paragraph>.right__icon{
+        font-size: 44px !important;
+    }
+    .star,.follow-icon{
+        width: 32px;
+        height: 32px;
+    }
+    .location-icon{
+        width: 22px;
+        height: 22px;
+       
+    }
+    
+    .mainAllchef__follow > h4{
+        
+        font-size: 36px;
+    }
+    
+    .mainAllchef__follower >h4{
+        padding-left: 3px;
+        font-size: 38px;
+    }
+    
+    .paragraph > p,.cuisines>p,.executiveChef>p{
+        font-size: 30px;
+    }
+    .right__icon{
+        
+        font-size: 34px !important;
+       
+    }
+    .bottom__line1{
+        margin-top: 2%;
+    }
+    .area{
+        font-size: 30px !important;
     }
 }
 
