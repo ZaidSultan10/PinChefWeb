@@ -1,97 +1,84 @@
 import "./Footer.css";
-import HomeSelectedIcon from "../../assets/svg/Home-selected.svg";
-import ChefUnselectedIcon from "../../assets/svg/chef-un-selected.svg";
-import ShopUnselectedIcon from "../../assets/svg/Shop-un-selected.svg";
-import SettingsUnselectedIcon from "../../assets/svg/settings-un-selected.svg";
-import StarUnselectedIcon from "../../assets/svg/Star-un-selected.svg";
-import { useHistory } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import {ReactComponent as HomeSelectedIcon} from "../../assets/svg/Home-selected.svg"
+import {ReactComponent as ChefUnselectedIcon} from "../../assets/svg/chef-un-selected.svg"
+import {ReactComponent as ShopUnselectedIcon} from "../../assets/svg/Shop-un-selected.svg"
+import {ReactComponent as SettingsUnselectedIcon} from "../../assets/svg/settings-un-selected.svg"
+import {ReactComponent as StarUnselectedIcon} from "../../assets/svg/Star-un-selected.svg"
+
 
 const Footer = ({ footerProp }) => {
-  const history = useHistory();
+  
 
   return (
     <div className="footer">
       {footerProp ? (
         <>
-          <img
-            onClick={() => {
-              history.push("/chef/home/feed");
-            }}
-            src={HomeSelectedIcon}
-            className="cheficon1"
-            alt="home"
-          />
-          <img
-            onClick={() => {
-              history.push("/chef/profile");
-            }}
-            src={ChefUnselectedIcon}
-            className="cheficon"
-            alt="chef"
-          />
-          <img
-            onClick={() => {
-              history.push("/chef/order-history");
-            }}
-            src={ShopUnselectedIcon}
-            alt="shop"
-          />
-          <img
-            onClick={() => {
-              history.push("/chef/rate/area");
-            }}
-            src={StarUnselectedIcon}
-            alt="star"
-          />
-          <img
-            onClick={() => {
-              history.push("/chef/settings");
-            }}
-            src={SettingsUnselectedIcon}
-            className="cheficon"
-            alt="settings"
-          />
+          <NavLink exact to='/chef/home/feed' className='footer-chef-home'
+          activeClassName='footer-chef-home-active'>
+            <HomeSelectedIcon
+              className="cheficon1"
+            />
+          </NavLink>
+          <NavLink exact to='/chef/profile' className='footer-chef-home'
+          activeClassName='footer-chef-home-active'>
+            <ChefUnselectedIcon
+              className="cheficon"
+            />
+          </NavLink>
+          <NavLink exact to='/chef/order-history' className='footer-chef-home'
+          activeClassName='footer-chef-home-active'>
+            <ShopUnselectedIcon
+              className="cheficon2"
+            />
+          </NavLink>
+          <NavLink exact to='/chef/rate/area' className='footer-chef-home'
+          activeClassName='footer-chef-home-active'>
+            <StarUnselectedIcon
+              className="cheficon2"
+            />
+          </NavLink>
+          <NavLink exact to='/chef/settings' className='footer-chef-home'
+          activeClassName='footer-chef-home-active'>
+            <SettingsUnselectedIcon
+              className="cheficon3"
+            />
+          </NavLink>
+          
         </>
       ) : (
         <>
-          <img
-            onClick={() => {
-              history.push("/homepage");
-            }}
-            src={HomeSelectedIcon}
-            className="cheficon1"
-            alt="home"
-          />
-          <img
-            onClick={() => {
-              history.push("/chef/all-chef");
-            }}
-            src={ChefUnselectedIcon}
-            className="cheficon"
-            alt="chef"
-          />
-          <img
-            onClick={() => {
-              history.push("/shop/food");
-            }}
-            src={ShopUnselectedIcon}
-            alt="shop"
-          />
-          <img
-            onClick={() => {
-              history.push("/star/feed");
-            }}
-            src={StarUnselectedIcon}
-            alt="star"
-          />
-          <img
-            onClick={() => {
-              history.push("/user/settings");
-            }}
-            src={SettingsUnselectedIcon}
-            className="cheficon"
-            alt="settings"
-          />
+        <NavLink exact to='/homepage' className='footer-chef-home'
+          activeClassName='footer-chef-home-active'>
+            <HomeSelectedIcon
+              className="cheficon1"
+            />
+        </NavLink>
+        <NavLink exact to='/user/all-chef' className='footer-chef-home'
+          activeClassName='footer-chef-home-active'>
+            <ChefUnselectedIcon
+              className="cheficon"
+            />
+        </NavLink>
+        <NavLink exact to='/shop/food' className='footer-chef-home'
+          activeClassName='footer-chef-home-active'>
+            <ShopUnselectedIcon
+              className="cheficon2"
+            />
+        </NavLink>
+        <NavLink exact to='/star/feed' className='footer-chef-home'
+          activeClassName='footer-chef-home-active'>
+            <StarUnselectedIcon
+              className="cheficon2"
+            />
+        </NavLink>
+        <NavLink exact to='/user/settings' className='footer-chef-home'
+          activeClassName='footer-chef-home-active'>
+            <SettingsUnselectedIcon
+              className="cheficon3"
+            />
+        </NavLink>
+          
         </>
       )}
     </div>

@@ -34,7 +34,7 @@ const MainFeedRecipeDetails = () => {
                 <Avatar className='mainFeedRecipeDetails__avatar' />
                 <div className='mainFeedRecipeDetails__username'>
                     <h5>Jenah Stephen</h5>
-                    <MoreHorizOutlined />
+                    <MoreHorizOutlined className='more-horiz-details' />
                 </div>
             </div>
             <div className='mainFeedRecipeDetails__photo'>
