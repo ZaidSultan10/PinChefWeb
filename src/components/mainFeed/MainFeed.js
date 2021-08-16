@@ -14,6 +14,7 @@ import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 import TextTruncate from 'react-text-truncate'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
 
 const MainFeed = () => {
@@ -191,7 +192,7 @@ const closeModal2 = () => {
             It was a great night as we were catering for a weddingggggggggg. Thank you to
             all the staff that helped to make this event as wonderful as possible.
             Special thanks to the host'
-            textTruncateChild ={<button className='spn' onClick={() => setToggleTruncate(true)}>More</button>}
+            textTruncateChild ={<span className='spn-2'><KeyboardArrowDownIcon className='spn1' onClick={() => setToggleTruncate(true)} /></span>}
             
           />
           ) : (
@@ -201,7 +202,7 @@ const closeModal2 = () => {
             Special thanks to the host
             It was a great night as we were catering for a wedding. Thank you to
             all the staff that helped to make this event as wonderful as possible.
-            Special thanks to the host <button className='spn' onClick={() => setToggleTruncate(false)} >Show Less</button>
+            Special thanks to the host <span className='spn-2'><ExpandLessIcon className='spn1' onClick={() => setToggleTruncate(false)} /></span>
             </p>
           )
         }
