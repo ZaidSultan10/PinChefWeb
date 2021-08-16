@@ -1,19 +1,42 @@
-import React from "react";
+import React, {useState} from "react";
 import { Button } from "@material-ui/core";
 import "./UserOtp.css";
 import { useHistory } from "react-router-dom";
+
 //import Modal from "react-modal";
 //import ResendIcon from "../../assets/svg-for-user-profile/EMail_icon.svg";
+
 import "./UserOtpModal.css";
 import { connect } from "react-redux";
+import {
+  getVerificationCodeStart,
+  verificationStart,
+} from "../../redux/User/UserAction";
 
-const UserOtp = ({ currentUser }) => {
+const UserOtp = ({
+  currentUser,
+  getVerificationCodeStart,
+  verificationStart,
+}) => {
   const history = useHistory();
+  const [confirmationCode, setConfirmationCode] = useState("");
+  // const [modalIsOpen, setModalIsOpen] = useState(false);
+    
+  const handleResendEmail = () => {
+    getVerificationCodeStart(currentUser._id);
+  };
+  const handleVerify = () => {
+    verificationStart(currentUser._id, confirmationCode);
+    if (currentUser.status && currentUser.status === "active")
+      history.replace("/user/set-profile");
 
+    setConfirmationCode("");
+  };
  
   return (
     <>
-     {/* <Modal
+      {/* <Modal
+>>>>>>> 630ab4af8f889e16f778f1799e4db0d1441f6972
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         className="userotp1"
@@ -31,25 +54,28 @@ const UserOtp = ({ currentUser }) => {
             </p>
           </div>
         </div>
+
      </Modal> */}
-      <div className="userOtp">
+
+     <div className="userOtp">
         <div className="userOtp__container">
           <h4>Verify</h4>
           <h3>{currentUser ? currentUser.email : "Test@email.com"}</h3>
           <h4>Enter 6 digit OTP</h4>
           <div className="userOtp__input">
-            <input className="input8" type="text" maxLength={6}
-            required  />
-            
-            <Button
-              onClick={() => {
-                history.push("/user/set-profile");
-              }}
-            >
-              OK
-            </Button>
+            <input
+              className="input8"
+              type="text"
+              maxLength={6}
+              required
+              onChange={(e) => setConfirmationCode(e.target.value)}
+              value={confirmationCode}
+            />
+
+            <Button onClick={handleVerify}>OK</Button>
           </div>
-          <Button >Resend email</Button>
+
+          <Button onClick={handleResendEmail}>Resend email</Button>
         </div>
       </div>
     </>
@@ -58,4 +84,9 @@ const UserOtp = ({ currentUser }) => {
 const mapStateToProps = (state) => ({
   currentUser: state.user.currentUser,
 });
-export default connect(mapStateToProps)(UserOtp);
+const mapDispatchToProps = (dispatch) => ({
+  getVerificationCodeStart: (id) => dispatch(getVerificationCodeStart(id)),
+  verificationStart: (id, confirmationCode) =>
+    dispatch(verificationStart(id, confirmationCode)),
+});
+export default connect(mapStateToProps, mapDispatchToProps)(UserOtp);

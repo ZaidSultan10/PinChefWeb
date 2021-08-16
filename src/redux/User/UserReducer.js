@@ -7,6 +7,9 @@ import {
   SIGNIN_START,
   SIGNUP_START,
   SIGNOUT_START,
+  GET_VERIFICATION_CODE_FAILED,
+  USER_VERIFICATION_FAILED,
+  USER_VERIFICATION_SUCCESS,
 } from "./UserType";
 
 const INITIAL_STATE = {
@@ -36,6 +39,18 @@ const UserReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         currentUser: null,
+        error: action.payload,
+      };
+    case USER_VERIFICATION_SUCCESS:
+      return {
+        ...state,
+        currentUser: action.payload,
+        error: null,
+      };
+    case GET_VERIFICATION_CODE_FAILED:
+    case USER_VERIFICATION_FAILED:
+      return {
+        ...state,
         error: action.payload,
       };
     default:

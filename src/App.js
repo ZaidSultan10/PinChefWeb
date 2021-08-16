@@ -132,7 +132,7 @@ function App({ currentUser }) {
               )
             }
           />
-          {currentUser && currentUser.state === "active" ? (
+          {currentUser && currentUser.status === "active" ? (
             <Route path="/homepage" exact component={HomeFeed} />
           ) : (
             <Redirect to="/signup" />

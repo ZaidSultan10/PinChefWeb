@@ -5,7 +5,8 @@ import Users from "./UserData";
 import CarouselDiv from "../../components/carouselDiv/carouselDiv";
 import Chefs from "./ChefData";
 import { useHistory } from "react-router-dom";
-const UserOnBoarding = () => {
+import { connect } from "react-redux";
+const UserOnBoarding = ({ currentUser }) => {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 500, itemsToShow: 2, itemsToScroll: 2 },
@@ -55,7 +56,18 @@ const UserOnBoarding = () => {
           })}
         </Carousel>
         <div className="UserOnboarding-NavigationBtn">
-          <button type="button" onClick={() => history.push("/signin")}>
+          <button
+            type="button"
+            onClick={() => {
+              if (currentUser && currentUser.status === "active") {
+                history.push("/homepage");
+              } else if (currentUser && currentUser.status === "pending") {
+                history.push("/verification");
+              } else {
+                history.push("/sigin");
+              }
+            }}
+          >
             Start
           </button>
         </div>
@@ -63,4 +75,9 @@ const UserOnBoarding = () => {
     </div>
   );
 };
-export default UserOnBoarding;
+
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser,
+});
+
+export default connect(mapStateToProps)(UserOnBoarding);
