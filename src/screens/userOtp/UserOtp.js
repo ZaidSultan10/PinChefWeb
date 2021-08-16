@@ -59,7 +59,7 @@ const UserOtp = ({
 
      <div className="userOtp">
         <div className="userOtp__container">
-          <h4>Verify</h4>
+          <h4 className='verify-otp'>Verify</h4>
           <h3>{currentUser ? currentUser.email : "Test@email.com"}</h3>
           <h4>Enter 6 digit OTP</h4>
           <div className="userOtp__input">
@@ -75,7 +75,7 @@ const UserOtp = ({
             <Button onClick={handleVerify}>OK</Button>
           </div>
 
-          <Button onClick={handleResendEmail}>Resend email</Button>
+          <Button onClick={handleResendEmail}>Resend Email</Button>
         </div>
       </div>
     </>

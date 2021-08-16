@@ -1,0 +1,18 @@
+.rdrDays > button >.rdrStartEdge {
+    background-color: #f8d13b !important;
+    
+}
+.rdrInRange{
+    background-color: #f8d13b !important;
+}
+span.rdrEndEdge{
+    background-color: #f8d13b !important;
+}
+
+
+.rdrDayNumber > span {
+    color: black !important;
+}
+.rdrDayNumber >span::after{
+    background: black !important;
+}
