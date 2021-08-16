@@ -37,12 +37,12 @@
 }
 @media only screen and (max-width:424px){
     .mainFeedFilters2 > h3{
-        font-size: 16px !important;
+        font-size: 16px ;
     }
 }
 @media only screen and (max-width:361px){
     .mainFeedFilters2 > h3{
-        font-size: 12px !important;
+        font-size: 12px ;
     }
 }
 @media only screen 
@@ -50,8 +50,9 @@ and (min-width: 768px)
   and (max-height: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:portrait){
-    .mainFeedFilters2 > h3{
-        font-size: 28px !important;
+    .mainFeedFilters2__allChef,
+    .mainFeedFilters2__followed{
+        font-size: 22px ;
     }
 }
 @media only screen 
@@ -59,8 +60,9 @@ and (min-width: 768px)
   and (max-height: 1366px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:portrait){
-    .mainFeedFilters2 > h3{
-        font-size:30px !important;
+    .mainFeedFilters2__allChef,
+    .mainFeedFilters2__followed{
+        font-size:30px ;
     }
   }
   @media only screen 
@@ -68,8 +70,9 @@ and (min-width: 768px)
   and (max-height: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:landscape){
-    .mainFeedFilters2 > h3{
-        font-size:17px !important;
+    .mainFeedFilters2__allChef,
+    .mainFeedFilters2__followed{
+        font-size:17px ;
     }
 }
 @media only screen 
@@ -77,12 +80,16 @@ and (min-width: 768px)
   and (max-height: 2388px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:portrait){
-    .mainFeedFilters2 > h3{
-        font-size:32px !important;
+    .mainFeedFilters2__allChef,
+    .mainFeedFilters2__followed{
+       
+        font-size: 44px !important;
+        margin-top: 3%;
     }
   }
-@media only screen and (min-width:1290px) and (max-width:1921px){
-    .mainFeedFilters2 > h3{
-        font-size: 34px !important;
+@media only screen and (min-width:1400px) and (max-width:1921px){
+    .mainFeedFilters2__allChef,
+    .mainFeedFilters2__followed{
+        font-size: 24px ;
     }
 }

@@ -32,7 +32,7 @@
   .feedChef__left::-webkit-scrollbar,
   .feedChef__center::-webkit-scrollbar,
   .feedChef__right::-webkit-scrollbar{
-    width: 8px;
+    width: 6px;
       background-color: #F5F5F5;
   }
   .feedChef__left::-webkit-scrollbar-thumb,
@@ -40,7 +40,7 @@
 .feedChef__right::-webkit-scrollbar-thumb{
     border-radius: 10px;
       box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-      background-color: #555;
+      background-color: rgba(105, 105, 105, 0.109);
   }
 
 .feedChef__left > p , .feedChef__center > p , .feedChef__right>p{
