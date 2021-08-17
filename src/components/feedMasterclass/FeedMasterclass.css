@@ -56,6 +56,22 @@
     .feedClass__left,.feedClass__right{
         display: none;
     }
+    .feedClass__left::-webkit-scrollbar-track,
+.feedClass__center::-webkit-scrollbar-track,
+.feedClass__right::-webkit-scrollbar-track{
+      display: none;
+  }
+  
+  .feedClass__left::-webkit-scrollbar,
+  .feedClass__center::-webkit-scrollbar,
+  .feedClass__right::-webkit-scrollbar{
+    display: none;
+  }
+.feedClass__left::-webkit-scrollbar-thumb,
+.feedClass__center::-webkit-scrollbar-thumb,
+.feedClass__right::-webkit-scrollbar-thumb{
+    display: none;
+  }
 } 
 @media screen and (max-width:604px){
     .feedClass{
@@ -80,6 +96,22 @@
     .feedClass__left,.feedClass__right{
         display: none;
     }
+    .feedClass__left::-webkit-scrollbar-track,
+.feedClass__center::-webkit-scrollbar-track,
+.feedClass__right::-webkit-scrollbar-track{
+      display: none;
+  }
+  
+  .feedClass__left::-webkit-scrollbar,
+  .feedClass__center::-webkit-scrollbar,
+  .feedClass__right::-webkit-scrollbar{
+    display: none;
+  }
+.feedClass__left::-webkit-scrollbar-thumb,
+.feedClass__center::-webkit-scrollbar-thumb,
+.feedClass__right::-webkit-scrollbar-thumb{
+    display: none;
+  }
 }
 @media only screen 
   and (min-width: 1668px) 
@@ -93,4 +125,20 @@
     .feedClass__left,.feedClass__right{
         display: none;
     }
+    .feedClass__left::-webkit-scrollbar-track,
+.feedClass__center::-webkit-scrollbar-track,
+.feedClass__right::-webkit-scrollbar-track{
+      display: none;
+  }
+  
+  .feedClass__left::-webkit-scrollbar,
+  .feedClass__center::-webkit-scrollbar,
+  .feedClass__right::-webkit-scrollbar{
+    display: none;
+  }
+.feedClass__left::-webkit-scrollbar-thumb,
+.feedClass__center::-webkit-scrollbar-thumb,
+.feedClass__right::-webkit-scrollbar-thumb{
+    display: none;
+  }
 }

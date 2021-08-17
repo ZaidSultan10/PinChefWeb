@@ -8,7 +8,7 @@ import './FeedShopFood.css'
 const FeedShopFood = ({shopFoodProp}) => {
     return (
         <div className='feedClass'>
-            <div className='feedClass__container'>
+            <div className='feedshop__container'>
                 <div className='feedClass__left'>
                     <GoogleAds2 adsProp2={true}/>
                 </div>

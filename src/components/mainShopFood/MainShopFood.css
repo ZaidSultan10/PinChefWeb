@@ -1,3 +1,6 @@
+.mainShopFood{
+    margin-right: 1%;
+}
 .mainShopFood__header{
     display: grid;
     grid-template-columns: 1fr 12fr;
@@ -17,11 +20,15 @@
 .mainShopFood__avatar{
     width: 50px !important;
     height: 50px !important;
+    cursor: pointer;
 }
 .name__top{
     display: flex;
     justify-content: space-between;
     margin-top: 1%;
+}
+.more__horiz{
+    cursor: pointer;
 }
 .name__top >h3{
     font-size: 16px;
@@ -47,10 +54,12 @@
 .likeIcon{
     width: 22px;
     height: 22px;
+    cursor: pointer;
 }
 .commentIcon{
     width: 22px;
     height: 22px;
+    cursor: pointer;
 }
 .mainShopFood__post > .addCart{
     position: absolute;
@@ -58,6 +67,7 @@
     height: 35px;
     bottom:2%;
     margin-left: -2.7rem;
+    cursor: pointer;
     
 }
 .mainShopFood__Bottom{
