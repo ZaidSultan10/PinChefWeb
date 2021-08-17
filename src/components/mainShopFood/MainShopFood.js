@@ -25,7 +25,7 @@ const MainShopFood = ({cartProp,mileProp}) => {
                         <h3 onClick={() => {
                             history.push('/user/chef/profile')
                         }}>Matt Wilson</h3>
-                        <MoreHoriz className='more__horiz' />
+                        <MoreHoriz className='more__horiz__food' />
                     </div>
                     <div className='location__bottom'>
                         <div className='location'>
