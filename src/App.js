@@ -133,12 +133,12 @@ function App({ currentUser }) {
             }
           />
           {currentUser && currentUser.status === "active" ? (
-            <Route path="/homepage" exact component={HomeFeed} />
+            <Route path="/home" exact component={HomeFeed} />
           ) : (
             <Redirect to="/signup" />
           )}
           {/* <Route path="/homepage" exact component={HomeFeed} /> */}
-          <Route path="/homerecipe" exact component={HomeRecipe} />
+          <Route path="/home/recipe" exact component={HomeRecipe} />
           <Route
             path="/home/masterclass"
             exact
@@ -159,14 +159,14 @@ function App({ currentUser }) {
           <Route path="/shop/food" exact component={UserShopFood} />
           <Route path="/shop/service" exact component={UserShopService} />
           <Route path="/star/feed" exact component={StarHomeFeed} />
-          <Route path="/star/feed/recipe" exact component={StarFeedRecipe} />
+          <Route path="/star/recipe" exact component={StarFeedRecipe} />
           <Route
-            path="/star/feed/food-service"
+            path="/star/food-service"
             exact
             component={StarFoodService}
           />
           <Route path="/star/my-purchases" exact component={UserMyPurchases} />
-          <Route path="/user/settings" exact component={Settings} />
+          <Route path="/settings" exact component={Settings} />
           <Route path="/chef/profile" exact component={ChefProfile} />
           <Route path="/user/chef/profile" exact component={ChefProfileUser} />
           <Route path="/chat/newchat" exact component={UserChatScreen} />
@@ -177,45 +177,45 @@ function App({ currentUser }) {
             component={ChefCreatePost}
           />
           <Route
-            path="/chef/home/feed/recipe"
+            path="/chef/home/recipe"
             exact
             component={ChefFeedRecipe}
           />
           <Route
-            path="/chef/home/feed/create-recipe"
+            path="/chef/home/create-recipe"
             exact
             component={ChefCreateRecipe}
           />
-          <Route path="/chef/home/feed/food" exact component={ChefCreateFood} />
+          <Route path="/chef/home/food" exact component={ChefCreateFood} />
           <Route
-            path="/chef/home/feed/create-food"
+            path="/chef/home/create-food"
             exact
             component={ChefCreateFoodPost}
           />
           <Route
-            path="/chef/home/feed/service"
+            path="/chef/home/service"
             exact
             component={ChefFeedService}
           />
           <Route
-            path="/chef/home/feed/create-service"
+            path="/chef/home/create-service"
             exact
             component={ChefCreateService}
           />
           <Route
-            path="/chef/home/feed/masterclass"
+            path="/chef/home/masterclass"
             exact
             component={ChefFeedMasterclass}
           />
           <Route
-            path="/chef/home/feed/create-masterclass"
+            path="/chef/home/create-masterclass"
             exact
             component={ChefCreateMasterclass}
           />
           <Route path="/chef/settings" exact component={ChefSettings} />
-          <Route path="/chef/main/profile" exact component={ChefMainProfile} />
+          <Route path="/chef/create-profile" exact component={ChefMainProfile} />
           <Route
-            path="/chef/profile/details"
+            path="/chef/profile-details"
             exact
             component={ChefProfileDetails}
           />
@@ -230,32 +230,32 @@ function App({ currentUser }) {
             component={ChefMasterclassCheckout}
           />
           <Route
-            path="/chef/service/cook-live"
+            path="/chef/service/live"
             exact
             component={ServiceCookLiveCheckout}
           />
           <Route
-            path="/chef/service/cook-guest"
+            path="/chef/service/guest"
             exact
             component={ChefCookGuest}
           />
           <Route
-            path="/chef/service/cook-on-location"
+            path="/chef/service/location"
             exact
             component={ChefCookOnLocation}
           />
           <Route
-            path="/chef/service/cook-takeout"
+            path="/chef/service/takeout"
             exact
             component={ChefCookTakeout}
           />
           <Route
-            path="/chef/service/cook-ship"
+            path="/chef/service/shipping"
             exact
             component={ChefCookShip}
           />
           <Route
-            path="/chef/service/cook-delivery"
+            path="/chef/service/delivery"
             exact
             component={ChefCookDelivery}
           />
@@ -272,32 +272,32 @@ function App({ currentUser }) {
           />
           <Route path="/user/set-profile" exact component={UserProfileSet} />
           <Route path="/user/comments" exact component={UserCommentScreen} />
-          <Route path="/chef/call" exact component={CallScreen} />
+          <Route path="/call" exact component={CallScreen} />
           <Route
             path="/user/recipe/details"
             exact
             component={UserRecipeDetails}
           />
-          <Route path="/rate/review/form" exact component={RateReviewForm} />
-          <Route path="/rate/area" exact component={RateScreen} />
-          <Route path="/chef/rate/area" exact component={ChefRateArea} />
+          <Route path="/review/form" exact component={RateReviewForm} />
+          <Route path="/rate" exact component={RateScreen} />
+          <Route path="/chef/rate" exact component={ChefRateArea} />
           <Route
-            path="/chef/rate/review/saved"
+            path="/chef/review/saved"
             exact
             component={ChefRateReviewSaved}
           />
           <Route
-            path="/chef/rate/review/saved/recipe"
+            path="/chef/review/saved/recipe"
             exact
             component={ChefRateReviewSavedRecipe}
           />
           <Route
-            path="/chef/rate/review/saved/food-service"
+            path="/chef/review/saved/food-service"
             exact
             component={ChefRateReviewFoodService}
           />
           <Route
-            path="/chef/rate/review/saved/chefs"
+            path="/chef/review/saved/chefs"
             exact
             component={ChefRateReviewSavedChefs}
           />
@@ -335,19 +335,19 @@ function App({ currentUser }) {
             component={OrderNotifications}
           />
           <Route path="/contact" exact component={ContactUs} />
-          <Route path="/chef/payments" exact component={ChefPayments} />
+          <Route path="/payments" exact component={ChefPayments} />
           <Route
-            path="/chef/payment/methods"
+            path="/payment/methods"
             exact
             component={ChefPaymentMethods}
           />
           <Route
-            path="/food/emergency/help"
+            path="/food-emergency/help"
             exact
             component={FoodEmergencyHelp}
           />
           <Route
-            path="/food/emergency/order"
+            path="/food-emergency/order"
             exact
             component={FoodEmergencyOrder}
           />
@@ -357,31 +357,31 @@ function App({ currentUser }) {
             component={FoodCheckoutTakeaway}
           />
           <Route
-            path="/chef/feed/my-posts"
+            path="/chef/home/my-posts"
             exact
             component={CreateChefFeedMYPosts}
           />
           <Route
-            path="/chef/feed/food/my-posts"
+            path="/chef/food/my-posts"
             exact
             component={CreateFoodMyPost}
           />
           <Route
-            path="/chef/feed/recipe/my-posts"
+            path="/chef/recipe/my-posts"
             exact
             component={CreateRecipeMyPost}
           />
           <Route
-            path="/chef/feed/service/my-posts"
+            path="/chef/service/my-posts"
             exact
             component={CreateServiceMyPost}
           />
           <Route
-            path="/chef/feed/masterclass/my-posts"
+            path="/chef/masterclass/my-posts"
             exact
             component={CreateMasterclassMyPost}
           />
-          <Route path="/chef/payment-policy" exact component={PaymentPolicy} />
+          <Route path="/payment-policy" exact component={PaymentPolicy} />
           {/* currentUser ? <Redirect to="/verification" /> : <ChefSignUp /> */}
 
           <Route path="/user/faq" exact component={Faq} />
