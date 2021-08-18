@@ -31,6 +31,9 @@ const MainChefProfileArea = () => {
         },
         {
             job:'Internship'
+        },
+        {
+            job:'Use as Social Media'
         }
     ]
 
