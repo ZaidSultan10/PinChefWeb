@@ -27,13 +27,14 @@
       box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
       border-radius: 10px;
       background-color: #F5F5F5;
+      margin-top: 18px;
   }
   
   .feedChef__left::-webkit-scrollbar,
   .feedChef__center::-webkit-scrollbar,
   .feedChef__right::-webkit-scrollbar{
     width: 6px;
-      background-color: #F5F5F5;
+      background-color: #fff;
   }
   .feedChef__left::-webkit-scrollbar-thumb,
 .feedChef__center::-webkit-scrollbar-thumb,

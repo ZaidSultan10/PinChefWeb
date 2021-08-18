@@ -28,13 +28,14 @@
       box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
       border-radius: 10px;
       background-color: #F5F5F5;
+      margin-top: 18px;
   }
   
   .feedRecipe__left::-webkit-scrollbar,
   .feedRecipe__center::-webkit-scrollbar,
   .feedRecipe__right::-webkit-scrollbar{
     width: 6px;
-      background-color: #F5F5F5;
+      background-color: #fff;
   }
   .feedRecipe__left::-webkit-scrollbar-thumb,
 .feedRecipe__center::-webkit-scrollbar-thumb,

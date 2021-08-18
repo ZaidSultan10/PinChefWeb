@@ -1,3 +1,6 @@
+.mainShopFood{
+    margin-right: 1%;
+}
 .mainShopFood__header{
     display: grid;
     grid-template-columns: 1fr 12fr;
@@ -17,11 +20,15 @@
 .mainShopFood__avatar{
     width: 50px !important;
     height: 50px !important;
+    cursor: pointer;
 }
 .name__top{
     display: flex;
     justify-content: space-between;
     margin-top: 1%;
+}
+.more__horiz__food{
+    cursor: pointer;
 }
 .name__top >h3{
     font-size: 16px;
@@ -47,10 +54,12 @@
 .likeIcon{
     width: 22px;
     height: 22px;
+    cursor: pointer;
 }
 .commentIcon{
     width: 22px;
     height: 22px;
+    cursor: pointer;
 }
 .mainShopFood__post > .addCart{
     position: absolute;
@@ -58,6 +67,7 @@
     height: 35px;
     bottom:2%;
     margin-left: -2.7rem;
+    cursor: pointer;
     
 }
 .mainShopFood__Bottom{
@@ -133,3 +143,94 @@
         font-size: 10px;
     }
 }
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation:portrait){
+    .mainShopFood__avatar{
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .name__top > h3{
+        font-size: 24px;
+    }
+    .name__top>.more__horiz__food{
+        font-size: 38px !important;
+    }
+    .location > h4{
+        margin-top: 3%;
+    }
+    .location > h4,.delivery >p{
+        font-size: 20px ;
+    }
+    .recipe__data>h4{
+        font-size: 22px;
+    }
+    .recipe__name > p{
+        font-size: 18px;
+    }
+    .mainShopFood__post>.addCart{
+        width: 54px !important;
+        height: 54px !important;
+        margin-left: -4rem;
+    }
+    .like__post > p,.comment__post>p{
+        font-size: 18px;
+    }
+    .likeIcon,.commentIcon{
+        width: 30px !important; 
+        height: 30px !important;
+    }
+    .mainShopFood__para > p{
+        font-size: 18px;
+    }
+}
+
+@media only screen
+and (min-width: 1668px) 
+  and (max-height: 2388px) 
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation:portrait){
+    .mainShopFood__avatar{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .name__top > h3{
+        font-size: 36px;
+    }
+    .name__top>.more__horiz__food{
+        font-size: 56px !important;
+    }
+    .location > h4{
+        margin-top: 6%;
+    }
+    .location > h4,.delivery >p{
+        font-size: 30px ;
+    }
+    .recipe__data>h4{
+        font-size: 32px;
+    }
+    .recipe__name > p{
+        font-size: 28px;
+    }
+    .mainShopFood__post>.addCart{
+        width: 78px !important;
+        height: 78px !important;
+        margin-left: -6rem;
+    }
+    .like__post{
+        margin-right: 2rem;
+    }
+    .like__post > p,.comment__post>p{
+        font-size: 28px;
+    }
+    .likeIcon,.commentIcon{
+        width: 50px !important; 
+        height: 50px !important;
+    }
+    .mainShopFood__para > p{
+        font-size: 28px;
+    }
+  }

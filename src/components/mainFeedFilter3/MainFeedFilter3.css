@@ -20,8 +20,9 @@
 .mainFeedFilters3__image>span{
     position: absolute;
     margin-right: 8px;
-    margin-top: 5px;
+    margin-top: 6px;
     color: white;
+    font-size: 14px;
     font-weight: 700;
 }
 .activefilter32{
@@ -37,8 +38,9 @@
 }
 
 @media only screen and (max-width:424px){
-    .mainFeedFilters3 > h3{
-        font-size: 16px !important;
+    .mainFeedFilter3__food,
+    .mainFeedFilter3__service{
+        font-size: 16px ;
     }
     .mainFeedFilters3{
         display: grid;
@@ -46,8 +48,9 @@
     }
 }
 @media only screen and (max-width:361px){
-    .mainFeedFilters3 > h3{
-        font-size: 12px !important;
+    .mainFeedFilter3__food,
+    .mainFeedFilter3__service{
+        font-size: 12px ;
     }
     .mainFeedFilters3{
         display: grid;
@@ -59,8 +62,17 @@ and (min-width: 768px)
   and (max-height: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:portrait){
-    .mainFeedFilters3 > h3{
-        font-size: 28px !important;
+    .mainFeedFilter3__food,
+    .mainFeedFilter3__service{
+        font-size: 24px ;
+    }
+    .mainFeedFilters3__image > img{
+        width: 36px !important;
+        height: 36px !important;
+    }
+    .mainFeedFilters3__image > span{
+        font-size: 16px;
+        margin-right: 10px;
     }
 }
 @media only screen 
@@ -68,30 +80,43 @@ and (min-width: 768px)
   and (max-height: 1366px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:portrait){
-    .mainFeedFilters3 > h3{
-        font-size:30px !important;
+    .mainFeedFilter3__food,
+    .mainFeedFilter3__service{
+        font-size:30px ;
+    }
+    .mainFeedFilters3__image > img{
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .mainFeedFilters3__image > span{
+        font-size: 18px;
+        margin-right: 10px;
+        margin-top: 10px;
     }
   }
-  @media only screen 
-  and (min-width: 1366px) 
-  and (max-height: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1.5)
-  and (orientation:landscape){
-    .mainFeedFilters3 > h3{
-        font-size:17px !important;
-    }
-}
+  
 @media only screen 
   and (min-width: 1668px) 
   and (max-height: 2388px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:portrait){
-    .mainFeedFilters3 > h3{
-        font-size:32px !important;
+    .mainFeedFilter3__food,
+    .mainFeedFilter3__service{
+        font-size:46px !important;
+    }
+    .mainFeedFilters3__image > img{
+        width: 62px !important;
+        height: 62px !important;
+    }
+    .mainFeedFilters3__image > span{
+        font-size: 28px;
+        margin-right: 17px;
+        margin-top: 10px;
     }
   }
-@media only screen and (min-width:1290px) and (max-width:1921px){
-    .mainFeedFilters3 > h3{
-        font-size: 34px !important;
+@media only screen and (min-width:1400px) and (max-width:1921px){
+    .mainFeedFilter3__food,
+    .mainFeedFilter3__service{
+        font-size: 28px;
     }
 }

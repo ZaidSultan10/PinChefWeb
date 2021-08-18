@@ -68,7 +68,7 @@
     height: 99%;
   }
   .UserOnboarding-Carousel{
-    font-size: 20px !important;
+    font-size: 18px !important;
     
   }
   .carousel-div-content > strong{
@@ -81,5 +81,36 @@
   .UserOnboarding-Page {
     display: grid;
     grid-template-rows: minmax(280px,1400px);
+  }
+}
+@media only screen and (min-width:1700px){
+  .UserOnboarding-Carousel{
+    font-size: 20px !important;
+    
+  }
+}
+
+@media only screen 
+and (min-width: 1668px) 
+and (max-height: 2388px) 
+and (-webkit-min-device-pixel-ratio: 1.5)
+and (orientation:portrait){
+  .UserOnboarding-Body{
+    width: 100%;
+    height: 99%;
+  }
+  .carousel-div {
+    height: 1400px !important;
+  }
+  .UserOnboarding-Carousel{
+    font-size: 28px !important;
+    
+  }
+  .carousel-div-img > img{
+    height: 600px;
+    width: 220px;
+  }
+  .carousel-div-content > strong{
+    font-weight: 550 !important;
   }
 }
