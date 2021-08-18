@@ -4,6 +4,7 @@ import {
   SIGNIN_START,
   GET_VERIFICATION_CODE_START,
   USER_VERIFICATION_START,
+  CREATE_PROFILE_START,
 } from "./UserType";
 import {
   signUpFailure,
@@ -85,6 +86,15 @@ export function* userVerification({ payload: { id, confirmationCode } }) {
   }
 }
 
+export function* createUserProfile() {
+  try {
+    //abc
+    yield console.log("help");
+  } catch (err) {
+    console.log(err);
+  }
+}
+
 export function* onSignUpStart() {
   yield takeLatest(SIGNUP_START, signup);
 }
@@ -99,6 +109,9 @@ export function* onUserVerification() {
   yield takeLatest(USER_VERIFICATION_START, userVerification);
 }
 
+export function* onCreateProfile() {
+  yield takeLatest(CREATE_PROFILE_START, createUserProfile);
+}
 export function* userSaga() {
   yield all([
     call(onSignUpStart),

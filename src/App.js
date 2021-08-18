@@ -127,13 +127,17 @@ function App({ currentUser }) {
             render={() =>
               currentUser && currentUser.status === "pending" ? (
                 <UserOtp />
+              ) : currentUser && currentUser.status === "active" ? (
+                <Redirect to="/homepage" />
               ) : (
-                <Redirect to="/" />
+                <Redirect to="/signup" />
               )
             }
           />
           {currentUser && currentUser.status === "active" ? (
             <Route path="/homepage" exact component={HomeFeed} />
+          ) : currentUser && currentUser.status === "pending" ? (
+            <Redirect to="/verification" />
           ) : (
             <Redirect to="/signup" />
           )}

@@ -11,6 +11,9 @@ import {
   GET_VERIFICATION_CODE_START,
   GET_VERIFICATION_CODE_SUCCESS,
   GET_VERIFICATION_CODE_FAILED,
+  CREATE_PROFILE_SUCCESS,
+  CREATE_PROFILE_START,
+  CREATE_PROFILE_FAILED,
 } from "./UserType";
 
 export const signUpStart = (user) => ({
@@ -67,4 +70,19 @@ export const verificationSuccess = (user) => ({
 export const verificationFailed = (error) => ({
   type: USER_VERIFICATION_FAILED,
   payload: error,
+});
+
+export const createUserProfileStart = (profile) => ({
+  type: CREATE_PROFILE_START,
+  payload: profile,
+});
+
+export const createUserProfileSuccess = (profile, userType) => ({
+  type: CREATE_PROFILE_SUCCESS,
+  payload: { user: profile, userType: userType },
+});
+
+export const createUserProfilefailed = (err) => ({
+  type: CREATE_PROFILE_FAILED,
+  payload: err,
 });
