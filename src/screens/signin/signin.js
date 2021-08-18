@@ -22,8 +22,8 @@ const SignIn = ({ signInStart, currentUser }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userType, setUserType] = useState("user");
-  const handleSubmit = () => {
-    signInStart({ email, password, userType });
+  const handleSubmit = async () => {
+    await signInStart({ email, password, userType });
     setEmail("");
     setPassword("");
     if (currentUser) history.replace("/verfication");

@@ -127,13 +127,17 @@ function App({ currentUser }) {
             render={() =>
               currentUser && currentUser.status === "pending" ? (
                 <UserOtp />
+              ) : currentUser && currentUser.status === "active" ? (
+                <Redirect to="/homepage" />
               ) : (
-                <Redirect to="/" />
+                <Redirect to="/signup" />
               )
             }
           />
           {currentUser && currentUser.status === "active" ? (
             <Route path="/home" exact component={HomeFeed} />
+          ) : currentUser && currentUser.status === "pending" ? (
+            <Redirect to="/verification" />
           ) : (
             <Redirect to="/signup" />
           )}
@@ -160,11 +164,7 @@ function App({ currentUser }) {
           <Route path="/shop/service" exact component={UserShopService} />
           <Route path="/star/feed" exact component={StarHomeFeed} />
           <Route path="/star/recipe" exact component={StarFeedRecipe} />
-          <Route
-            path="/star/food-service"
-            exact
-            component={StarFoodService}
-          />
+          <Route path="/star/food-service" exact component={StarFoodService} />
           <Route path="/star/my-purchases" exact component={UserMyPurchases} />
           <Route path="/settings" exact component={Settings} />
           <Route path="/chef/profile" exact component={ChefProfile} />
@@ -176,11 +176,7 @@ function App({ currentUser }) {
             exact
             component={ChefCreatePost}
           />
-          <Route
-            path="/chef/home/recipe"
-            exact
-            component={ChefFeedRecipe}
-          />
+          <Route path="/chef/home/recipe" exact component={ChefFeedRecipe} />
           <Route
             path="/chef/home/create-recipe"
             exact
@@ -192,11 +188,7 @@ function App({ currentUser }) {
             exact
             component={ChefCreateFoodPost}
           />
-          <Route
-            path="/chef/home/service"
-            exact
-            component={ChefFeedService}
-          />
+          <Route path="/chef/home/service" exact component={ChefFeedService} />
           <Route
             path="/chef/home/create-service"
             exact
@@ -213,7 +205,11 @@ function App({ currentUser }) {
             component={ChefCreateMasterclass}
           />
           <Route path="/chef/settings" exact component={ChefSettings} />
-          <Route path="/chef/create-profile" exact component={ChefMainProfile} />
+          <Route
+            path="/chef/create-profile"
+            exact
+            component={ChefMainProfile}
+          />
           <Route
             path="/chef/profile-details"
             exact
@@ -234,11 +230,7 @@ function App({ currentUser }) {
             exact
             component={ServiceCookLiveCheckout}
           />
-          <Route
-            path="/chef/service/guest"
-            exact
-            component={ChefCookGuest}
-          />
+          <Route path="/chef/service/guest" exact component={ChefCookGuest} />
           <Route
             path="/chef/service/location"
             exact
@@ -249,11 +241,7 @@ function App({ currentUser }) {
             exact
             component={ChefCookTakeout}
           />
-          <Route
-            path="/chef/service/shipping"
-            exact
-            component={ChefCookShip}
-          />
+          <Route path="/chef/service/shipping" exact component={ChefCookShip} />
           <Route
             path="/chef/service/delivery"
             exact
@@ -336,11 +324,7 @@ function App({ currentUser }) {
           />
           <Route path="/contact" exact component={ContactUs} />
           <Route path="/payments" exact component={ChefPayments} />
-          <Route
-            path="/payment/methods"
-            exact
-            component={ChefPaymentMethods}
-          />
+          <Route path="/payment/methods" exact component={ChefPaymentMethods} />
           <Route
             path="/food-emergency/help"
             exact

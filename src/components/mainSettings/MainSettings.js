@@ -22,20 +22,19 @@ import TermsIcon from "../../assets/svg/Path-28624.svg";
 import LightModeIcon from "../../assets/svg-for-user-profile/Light-mode.svg";
 import DarkModeIcon from "../../assets/svg-for-user-profile/Dark-mode.svg";
 import SystemModeIcon from "../../assets/svg-for-user-profile/System-mode.svg";
-import FaceBookIcon from '../../assets/svg-for-user-profile/001-facebook.svg'
-import WhatsappIcon from '../../assets/svg-for-user-profile/003-whatsapp.svg'
-import SkypeIcon from '../../assets/svg-for-user-profile/006-skype.svg'
-import MessengerIcon from '../../assets/svg-for-user-profile/Facebook-Messenger-cut-in-circle-shadow.svg'
-import LinkedinIcon from '../../assets/svg-for-user-profile/010-linkedin.svg'
-import InstagramIcon from '../../assets/svg-for-user-profile/011-instagram.svg'
-import TwitterIcon from '../../assets/svg-for-user-profile/013-twitter.svg'
-import EmailIcon from '../../assets/svg-for-user-profile/Emal.svg'
+import FaceBookIcon from "../../assets/svg-for-user-profile/001-facebook.svg";
+import WhatsappIcon from "../../assets/svg-for-user-profile/003-whatsapp.svg";
+import SkypeIcon from "../../assets/svg-for-user-profile/006-skype.svg";
+import MessengerIcon from "../../assets/svg-for-user-profile/Facebook-Messenger-cut-in-circle-shadow.svg";
+import LinkedinIcon from "../../assets/svg-for-user-profile/010-linkedin.svg";
+import InstagramIcon from "../../assets/svg-for-user-profile/011-instagram.svg";
+import TwitterIcon from "../../assets/svg-for-user-profile/013-twitter.svg";
+import EmailIcon from "../../assets/svg-for-user-profile/Emal.svg";
 import { Button } from "@material-ui/core";
-import LinkIcon from '../../assets/svg-for-user-profile/copy-link.svg'
+import LinkIcon from "../../assets/svg-for-user-profile/copy-link.svg";
+import { connect } from "react-redux";
 
-
-
-const MainSettings = ({ settingsProp }) => {
+const MainSettings = ({ settingsProp, currentUser }) => {
   const history = useHistory();
 
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -80,23 +79,32 @@ const MainSettings = ({ settingsProp }) => {
     setIsOpen4(false);
   };
 
-  const shareIcons = [{
-    icon:FaceBookIcon
-  },{
-    icon:WhatsappIcon
-  },{
-    icon:SkypeIcon
-  },{
-    icon:MessengerIcon
-  },{
-    icon:LinkedinIcon
-  },{
-    icon:InstagramIcon
-  },{
-    icon:TwitterIcon
-  },{
-    icon:EmailIcon
-  }]
+  const shareIcons = [
+    {
+      icon: FaceBookIcon,
+    },
+    {
+      icon: WhatsappIcon,
+    },
+    {
+      icon: SkypeIcon,
+    },
+    {
+      icon: MessengerIcon,
+    },
+    {
+      icon: LinkedinIcon,
+    },
+    {
+      icon: InstagramIcon,
+    },
+    {
+      icon: TwitterIcon,
+    },
+    {
+      icon: EmailIcon,
+    },
+  ];
 
   return (
     <>
@@ -110,7 +118,7 @@ const MainSettings = ({ settingsProp }) => {
           <img src={NotificationIcon} alt="star" />
           <h5>App Notifications</h5>
           <label className="switch">
-            <input type="checked"  className="input1" />
+            <input type="checked" className="input1" />
             <span className="slider"></span>
           </label>
         </div>
@@ -240,36 +248,38 @@ const MainSettings = ({ settingsProp }) => {
           </div>
         </div>
       </Modal>
-      <Modal isOpen={modalIsOpen4}
+      <Modal
+        isOpen={modalIsOpen4}
         onRequestClose={closeModal4}
         className="sharefriendsModal1"
-        contentLabel="Notification Modal">
-          <div className='share-modal-options'>
-              <div className='share-modal-options-header'>
-                  <h6>TELL ABOUT US</h6>
-              </div>
-              <div className='share-modal-options_icons'>
-                  {shareIcons.map((shareIcon) => (
-                      
-                          <img src={shareIcon.icon} alt='icons' />
-                      
-                  ))}
-              </div>
-              <div className='share-modal-options-email'>
-                  <div className='email-left-icon'>
-                      <img src={LinkIcon} alt='icon' />
-                  </div>
-                  <div className='email-right-input'>
-                      <p>Enter email :</p>
-                      <input />
-                      <p className='copying-link'>COPY</p>
-                  </div>    
-              </div>
-              <div className='share-modal-options-buttons'>
-                  <Button onClick={closeModal4} className='share-cancel'>Cancel</Button>
-                  <Button className='share-share'>Share</Button>
-              </div>
+        contentLabel="Notification Modal"
+      >
+        <div className="share-modal-options">
+          <div className="share-modal-options-header">
+            <h6>TELL ABOUT US</h6>
           </div>
+          <div className="share-modal-options_icons">
+            {shareIcons.map((shareIcon) => (
+              <img src={shareIcon.icon} alt="icons" />
+            ))}
+          </div>
+          <div className="share-modal-options-email">
+            <div className="email-left-icon">
+              <img src={LinkIcon} alt="icon" />
+            </div>
+            <div className="email-right-input">
+              <p>Enter email :</p>
+              <input />
+              <p className="copying-link">COPY</p>
+            </div>
+          </div>
+          <div className="share-modal-options-buttons">
+            <Button onClick={closeModal4} className="share-cancel">
+              Cancel
+            </Button>
+            <Button className="share-share">Share</Button>
+          </div>
+        </div>
       </Modal>
       <div className="mainSettings">
         <div className="mainSettings__container">
@@ -388,4 +398,5 @@ const MainSettings = ({ settingsProp }) => {
   );
 };
 
-export default MainSettings;
+const mapStateToProps = (state) => ({});
+export default connect(mapStateToProps)(MainSettings);
