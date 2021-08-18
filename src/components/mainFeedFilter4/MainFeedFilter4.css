@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     grid-gap:1%;
-    margin-top: 1%;
+    margin-top: 4%;
 }
 .activefilter42{
     border-bottom: 3.5px solid #3f8f22 !important;
@@ -26,7 +26,7 @@
     .mainFeedFilter4__recipe,
     .mainFeedFilter4__foodservice,
     .mainFeedFilter4__purchases{
-        font-size: 14px !important;
+        font-size: 14px ;
     }
 }
 
@@ -35,7 +35,7 @@
     .mainFeedFilter4__recipe,
     .mainFeedFilter4__foodservice,
     .mainFeedFilter4__purchases{
-        font-size: 14px !important;
+        font-size: 14px ;
     }
 }
 @media only screen and (max-width:390px){
@@ -43,7 +43,7 @@
     .mainFeedFilter4__recipe,
     .mainFeedFilter4__foodservice,
     .mainFeedFilter4__purchases{
-        font-size: 12px !important;
+        font-size: 12px ;
     }
 }
 @media only screen and (max-width:320px){
@@ -55,7 +55,7 @@
     .mainFeedFilter4__recipe,
     .mainFeedFilter4__foodservice,
     .mainFeedFilter4__purchases{
-        font-size: 11px !important;
+        font-size: 11px ;
     }
 }
 @media only screen 
@@ -63,8 +63,9 @@ and (min-width: 768px)
   and (max-height: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:portrait){
-    .mainFeedFilter4 > h3{
-        font-size: 28px !important;
+    .mainFeedFilter4__feed,.mainFeedFilter4__recipe,
+.mainFeedFilter4__foodservice,.mainFeedFilter4__purchases{
+        font-size: 16px;
     }
 }
 @media only screen 
@@ -72,8 +73,9 @@ and (min-width: 768px)
   and (max-height: 1366px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:portrait){
-    .mainFeedFilter4 > h3{
-        font-size:30px !important;
+    .mainFeedFilter4__feed,.mainFeedFilter4__recipe,
+.mainFeedFilter4__foodservice,.mainFeedFilter4__purchases{
+        font-size:26px ;
     }
   }
   @media only screen 
@@ -81,8 +83,9 @@ and (min-width: 768px)
   and (max-height: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:landscape){
-    .mainFeedFilter4 > h3{
-        font-size:17px !important;
+    .mainFeedFilter4__feed,.mainFeedFilter4__recipe,
+.mainFeedFilter4__foodservice,.mainFeedFilter4__purchases{
+        font-size:17px ;
     }
 }
 @media only screen 
@@ -90,12 +93,14 @@ and (min-width: 768px)
   and (max-height: 2388px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation:portrait){
-    .mainFeedFilter4 > h3{
+    .mainFeedFilter4__feed,.mainFeedFilter4__recipe,
+.mainFeedFilter4__foodservice,.mainFeedFilter4__purchases{
         font-size:32px !important;
     }
   }
-@media only screen and (min-width:1290px) and (max-width:1921px){
-    .mainFeedFilter4 > h3{
-        font-size: 34px !important;
+@media only screen and (min-width:1450px) and (max-width:1921px){
+    .mainFeedFilter4__feed,.mainFeedFilter4__recipe,
+.mainFeedFilter4__foodservice,.mainFeedFilter4__purchases{
+        font-size: 23px;
     }
 }
