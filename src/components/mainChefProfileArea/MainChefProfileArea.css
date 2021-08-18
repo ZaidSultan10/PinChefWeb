@@ -15,6 +15,36 @@
     height: 7vh;
     border-radius: 999px 999px 999px 0px;
 }
+.mainChefProfileArea__slider{
+    margin-bottom: 5%;
+    position: relative;
+}
+.MuiSlider-thumb{
+    display: none !important;
+}
+.MuiSlider-root{
+    color: #3f8f22 !important;
+}
+.MuiSlider-rail,.MuiSlider-track{
+    height: 5px !important;
+    border-radius: 999px !important;
+}
+.profile-chef-info{
+    position: absolute;
+    left: 45%;
+    top: -1rem;
+}
+.profile-personal-info{
+    position: absolute;
+    left: 1%;
+    top: -1rem;
+}
+.profile-service-info{
+    position: absolute;
+    right: 1%;
+    top: -1rem;
+}
+
 .mainChefProfileArea__top{
     display: flex;
     align-items: center;

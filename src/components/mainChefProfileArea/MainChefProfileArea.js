@@ -7,6 +7,10 @@ import { useHistory } from 'react-router-dom'
 import {ReactComponent as GoodJobIcon} from '../../assets/svg-for-user-profile/Good-job-icon.svg'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import { Slider } from '@material-ui/core'
+import {ReactComponent as ChefInfoIcon} from '../../assets/svg-for-user-profile/Chef-info.svg'
+import {ReactComponent as PersonalInfoIcon} from '../../assets/svg-for-user-profile/Personal-info.svg'
+import {ReactComponent as ServiceIcon} from '../../assets/svg-for-user-profile/Service.svg'
 
 
 const MainChefProfileArea = () => {
@@ -15,6 +19,8 @@ const MainChefProfileArea = () => {
 
     const [heading,setHeading] = useState('Tell us about yourself')
     const [value,setValue] = useState()
+    
+    
 
     const interests = [
         {
@@ -43,9 +49,16 @@ const MainChefProfileArea = () => {
             <div className='mainChefProfileArea__heading'>
                     <h5>{heading}</h5>       
             </div>
+            
             {
                 heading === 'Tell us about yourself' ? (
-                <>    
+                <> 
+                    <div className='mainChefProfileArea__slider'>
+                        <Slider value={[0,25]} />
+                        <ChefInfoIcon className='profile-chef-info' />
+                        <PersonalInfoIcon className='profile-personal-info' />
+                        <ServiceIcon className='profile-service-info' />
+                    </div>   
                     <div className='mainChefProfileArea__top'>
                         <img src={ProfileAvatar} alt='star' /> 
                     </div>
@@ -121,6 +134,12 @@ const MainChefProfileArea = () => {
                 </>    
                 ): heading === 'Tell about your Profession' ? (
                    <> 
+                   <div className='mainChefProfileArea__slider'>
+                        <Slider value={[0,50]}   />
+                        <ChefInfoIcon className='profile-chef-info' />
+                        <PersonalInfoIcon className='profile-personal-info' />
+                        <ServiceIcon className='profile-service-info' />
+                    </div>
                     <div className='mainChefProfileArea__position'>
                         <h5>Position<span>*</span></h5>
                         <input placeholder='ex. Head chef, Home chef etc..' />
@@ -164,6 +183,12 @@ const MainChefProfileArea = () => {
                 ):(
 
                 <> 
+                    <div className='mainChefProfileArea__slider'>
+                        <Slider value={[0,100]} />
+                        <ChefInfoIcon className='profile-chef-info' />
+                        <PersonalInfoIcon className='profile-personal-info' />
+                        <ServiceIcon className='profile-service-info' />
+                    </div>
                     <div className='mainChefProfileArea__location'>
                         <h5>Address/Location<span>*</span></h5>
                         <input placeholder='Country, City, State' />
