@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Button } from "@material-ui/core";
 import "./UserOtp.css";
 import { useHistory } from "react-router-dom";
@@ -21,45 +21,23 @@ const UserOtp = ({
   const history = useHistory();
   const [confirmationCode, setConfirmationCode] = useState("");
   // const [modalIsOpen, setModalIsOpen] = useState(false);
-    
+
   const handleResendEmail = () => {
     getVerificationCodeStart(currentUser._id);
   };
-  const handleVerify = () => {
-    verificationStart(currentUser._id, confirmationCode);
+  const handleVerify = async () => {
+    await verificationStart(currentUser._id, confirmationCode);
     if (currentUser.status && currentUser.status === "active")
-      history.replace("/user/set-profile");
-
-    setConfirmationCode("");
+      if (currentUser.userType === "user") history.replace("/user/set-profile");
+      else history.replace("/user/set-profile");
+    await setConfirmationCode("");
   };
- 
+
   return (
     <>
-      {/* <Modal
->>>>>>> 630ab4af8f889e16f778f1799e4db0d1441f6972
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        className="userotp1"
-        contentLabel="Notification Modal"
-        ariaHideApp={false}
-      >
-        <div onClick={closeModal} className="userotp-resend-container">
-          <div className="userotp-resend-icon">
-            <img src={ResendIcon} alt="star" />
-          </div>
-          <div className="userotp-resend-text">
-            <p>
-              An OTP was send to your registered email address. Please enter the
-              OTP in the next page
-            </p>
-          </div>
-        </div>
-
-     </Modal> */}
-
-     <div className="userOtp">
+      <div className="userOtp">
         <div className="userOtp__container">
-          <h4 className='verify-otp'>Verify</h4>
+          <h4 className="verify-otp">Verify</h4>
           <h3>{currentUser ? currentUser.email : "Test@email.com"}</h3>
           <h4>Enter 6 digit OTP</h4>
           <div className="userOtp__input">
