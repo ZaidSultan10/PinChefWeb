@@ -92,13 +92,15 @@ import { connect } from "react-redux";
 import SignIn from "./screens/signin/signin";
 import SignUp from "./screens/signup/signup";
 import Sneakbar from "./components/sneakbarComponent/Sneakbar";
-
+// This is for test (We will remove it later)
+import { io } from "socket.io-client";
 function App({ currentUser }) {
   useEffect(() => {
     fetch("/api/")
       .then((res) => res.json())
       .then((txt) => console.log(txt))
       .catch((err) => console.log(err));
+    io("ws://localhost:5000");
   });
 
   return (
