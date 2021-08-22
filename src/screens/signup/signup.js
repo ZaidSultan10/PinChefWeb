@@ -20,11 +20,10 @@ const SignUp = ({ signUpStart, currentUser }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userType, setUserType] = useState("user");
-  const handleSubmit = async () => {
-    await signUpStart({ email, password, userType });
+  const handleSubmit = () => {
+    signUpStart({ email, password, userType });
     setEmail("");
     setPassword("");
-    if (currentUser) history.replace("/verfication");
   };
 
   const handleChange = (event) => {

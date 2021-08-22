@@ -60,7 +60,7 @@ const UserOnBoarding = ({ currentUser }) => {
             type="button"
             onClick={() => {
               if (currentUser && currentUser.status === "active") {
-                history.push("/homepage");
+                history.push("/home");
               } else if (currentUser && currentUser.status === "pending") {
                 history.push("/verification");
               } else {

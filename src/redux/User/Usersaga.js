@@ -1,4 +1,5 @@
 import { takeLatest, put, all, call } from "@redux-saga/core/effects";
+
 import {
   SIGNUP_START,
   SIGNIN_START,
@@ -39,6 +40,7 @@ export function* signup({ payload: { email, password, userType } }) {
 export function* signin({ payload: { email, password, userType } }) {
   try {
     const user = yield AuthSignIN({ email, password, userType });
+
     if (user.status === 200) {
       yield put(signInSuccess(user.data));
     } else {
