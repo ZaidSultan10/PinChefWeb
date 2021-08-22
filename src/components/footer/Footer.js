@@ -11,76 +11,78 @@ const Footer = ({ footerProp }) => {
   
 
   return (
-    <div className="footer">
-      {footerProp ? (
-        <>
-          <NavLink exact to='/chef/home/feed' className='footer-chef-home'
-          activeClassName='footer-chef-home-active'>
-            <HomeSelectedIcon
-              className="cheficon1"
-            />
+    <div className='footer-main'>
+      <div className="footer">
+        {footerProp ? (
+          <>
+            <NavLink exact to='/chef/home/feed' className='footer-chef-home'
+            activeClassName='footer-chef-home-active'>
+              <HomeSelectedIcon
+                className="cheficon1"
+              />
+            </NavLink>
+            <NavLink exact to='/chef/profile' className='footer-chef-home'
+            activeClassName='footer-chef-home-active'>
+              <ChefUnselectedIcon
+                className="cheficon"
+              />
+            </NavLink>
+            <NavLink exact to='/chef/order-history' className='footer-chef-home'
+            activeClassName='footer-chef-home-active'>
+              <ShopUnselectedIcon
+                className="cheficon2"
+              />
+            </NavLink>
+            <NavLink exact to='/chef/rate/area' className='footer-chef-home'
+            activeClassName='footer-chef-home-active'>
+              <StarUnselectedIcon
+                className="cheficon2"
+              />
+            </NavLink>
+            <NavLink exact to='/chef/settings' className='footer-chef-home'
+            activeClassName='footer-chef-home-active'>
+              <SettingsUnselectedIcon
+                className="cheficon3"
+              />
+            </NavLink>
+            
+          </>
+        ) : (
+          <>
+          <NavLink exact to='/homepage' className='footer-chef-home'
+            activeClassName='footer-chef-home-active'>
+              <HomeSelectedIcon
+                className="cheficon1"
+              />
           </NavLink>
-          <NavLink exact to='/chef/profile' className='footer-chef-home'
-          activeClassName='footer-chef-home-active'>
-            <ChefUnselectedIcon
-              className="cheficon"
-            />
+          <NavLink exact to='/user/all-chef' className='footer-chef-home'
+            activeClassName='footer-chef-home-active'>
+              <ChefUnselectedIcon
+                className="cheficon"
+              />
           </NavLink>
-          <NavLink exact to='/chef/order-history' className='footer-chef-home'
-          activeClassName='footer-chef-home-active'>
-            <ShopUnselectedIcon
-              className="cheficon2"
-            />
+          <NavLink exact to='/shop/food' className='footer-chef-home'
+            activeClassName='footer-chef-home-active'>
+              <ShopUnselectedIcon
+                className="cheficon2"
+              />
           </NavLink>
-          <NavLink exact to='/chef/rate/area' className='footer-chef-home'
-          activeClassName='footer-chef-home-active'>
-            <StarUnselectedIcon
-              className="cheficon2"
-            />
+          <NavLink exact to='/star/feed' className='footer-chef-home'
+            activeClassName='footer-chef-home-active'>
+              <StarUnselectedIcon
+                className="cheficon2"
+              />
           </NavLink>
-          <NavLink exact to='/chef/settings' className='footer-chef-home'
-          activeClassName='footer-chef-home-active'>
-            <SettingsUnselectedIcon
-              className="cheficon3"
-            />
+          <NavLink exact to='/settings' className='footer-chef-home'
+            activeClassName='footer-chef-home-active'>
+              <SettingsUnselectedIcon
+                className="cheficon3"
+              />
           </NavLink>
-          
-        </>
-      ) : (
-        <>
-        <NavLink exact to='/homepage' className='footer-chef-home'
-          activeClassName='footer-chef-home-active'>
-            <HomeSelectedIcon
-              className="cheficon1"
-            />
-        </NavLink>
-        <NavLink exact to='/user/all-chef' className='footer-chef-home'
-          activeClassName='footer-chef-home-active'>
-            <ChefUnselectedIcon
-              className="cheficon"
-            />
-        </NavLink>
-        <NavLink exact to='/shop/food' className='footer-chef-home'
-          activeClassName='footer-chef-home-active'>
-            <ShopUnselectedIcon
-              className="cheficon2"
-            />
-        </NavLink>
-        <NavLink exact to='/star/feed' className='footer-chef-home'
-          activeClassName='footer-chef-home-active'>
-            <StarUnselectedIcon
-              className="cheficon2"
-            />
-        </NavLink>
-        <NavLink exact to='/user/settings' className='footer-chef-home'
-          activeClassName='footer-chef-home-active'>
-            <SettingsUnselectedIcon
-              className="cheficon3"
-            />
-        </NavLink>
-          
-        </>
-      )}
+            
+          </>
+        )}
+      </div>
     </div>
   );
 };
