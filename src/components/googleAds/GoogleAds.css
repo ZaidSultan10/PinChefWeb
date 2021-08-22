@@ -21,7 +21,7 @@
   grid-template-columns: 1fr ;
   border: 2px solid silver;
   overflow: hidden;
-  border-radius: 0 24px 0 24px;
+  border-radius: 24px 0px 0px 24px;
   box-shadow:  0px 2px 6px 0 gray;
 }
 
@@ -30,6 +30,7 @@
   grid-template-columns: 1fr 1fr;
   margin-top: 2%;
   height: 50px;
+  
 }
 .googleAds__filter__header > img{
   
@@ -38,13 +39,18 @@
   margin-top: 2%;
 }
 .googleAds__filter__header > h3{
-  
+  font-size: 16px;
   color: #3f8f22;
-  margin-left: 20%;
+ margin-right: 10%;
+ display: flex;
+ justify-content: flex-end;
   font-weight: 700 !important;
 }
 .kosher{
   margin-bottom: 3%;
+}
+.googleAds__filter__header>.sort__by{
+  margin-left: 0.9rem;
 }
 .sort__by, .diff__by{
   margin-bottom: 5%;

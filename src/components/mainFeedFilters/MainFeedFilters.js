@@ -18,8 +18,8 @@ const MainFeedFilters = ({mainFilterProp}) => {
                     </>
                 ):(
                     <>
-                        <NavLink to='/homepage' activeClassName='active2' className='feedss'>Feeds</NavLink>
-                        <NavLink to='/homerecipe' activeClassName='active2' className='recipess'>Recipe</NavLink>
+                        <NavLink to='/home' activeClassName='active2' className='feedss'>Feeds</NavLink>
+                        <NavLink to='/home/recipe' activeClassName='active2' className='recipess'>Recipe</NavLink>
                         <NavLink to='/home/masterclass' activeClassName='active2' className='masterclass'>e-Masterclass</NavLink>
                     </>
                 )

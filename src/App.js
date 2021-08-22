@@ -131,7 +131,7 @@ function App({ currentUser }) {
               currentUser && currentUser.status === "pending" ? (
                 <UserOtp />
               ) : currentUser && currentUser.status === "active" ? (
-                <Redirect to={`/${currentUser.userType}/createprofile`} />
+                <Redirect to="/home" />
               ) : (
                 <Redirect to="/signup" />
               )
@@ -156,7 +156,6 @@ function App({ currentUser }) {
           ) : (
             <Redirect to="/signup" />
           )}
-          {/* <Route path="/homepage" exact component={HomeFeed} /> */}
 
           <Route path="/home/recipe" exact component={HomeRecipe} />
           <Route
