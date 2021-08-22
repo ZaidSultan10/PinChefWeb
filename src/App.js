@@ -93,6 +93,7 @@ import SignIn from "./screens/signin/signin";
 import SignUp from "./screens/signup/signup";
 import Sneakbar from "./components/sneakbarComponent/Sneakbar";
 // This is for test (We will remove it later)
+
 import { io } from "socket.io-client";
 function App({ currentUser }) {
   useEffect(() => {
@@ -101,7 +102,7 @@ function App({ currentUser }) {
       .then((txt) => console.log(txt))
       .catch((err) => console.log(err));
     io("ws://localhost:5000");
-  });
+  }, []);
 
   return (
     <div className="App">
@@ -130,20 +131,33 @@ function App({ currentUser }) {
               currentUser && currentUser.status === "pending" ? (
                 <UserOtp />
               ) : currentUser && currentUser.status === "active" ? (
-                <Redirect to="/homepage" />
+                <Redirect to={`/${currentUser.userType}/createprofile`} />
               ) : (
                 <Redirect to="/signup" />
               )
             }
           />
           {currentUser && currentUser.status === "active" ? (
-            <Route path="/home" exact component={HomeFeed} />
+            <>
+              <Route path="/home" exact component={HomeFeed} />
+              <Route
+                path="/chef/createprofile"
+                exact
+                component={ChefMainProfile}
+              />
+              <Route
+                path="/user/createprofile"
+                exact
+                component={UserProfileSet}
+              />
+            </>
           ) : currentUser && currentUser.status === "pending" ? (
             <Redirect to="/verification" />
           ) : (
             <Redirect to="/signup" />
           )}
           {/* <Route path="/homepage" exact component={HomeFeed} /> */}
+
           <Route path="/home/recipe" exact component={HomeRecipe} />
           <Route
             path="/home/masterclass"
@@ -207,11 +221,7 @@ function App({ currentUser }) {
             component={ChefCreateMasterclass}
           />
           <Route path="/chef/settings" exact component={ChefSettings} />
-          <Route
-            path="/chef/create-profile"
-            exact
-            component={ChefMainProfile}
-          />
+
           <Route
             path="/chef/profile-details"
             exact
@@ -249,7 +259,6 @@ function App({ currentUser }) {
             exact
             component={ChefCookDelivery}
           />
-
           <Route
             path="/user/forgot-password"
             exact
@@ -260,7 +269,7 @@ function App({ currentUser }) {
             exact
             component={UserResetPassword}
           />
-          <Route path="/user/set-profile" exact component={UserProfileSet} />
+
           <Route path="/user/comments" exact component={UserCommentScreen} />
           <Route path="/call" exact component={CallScreen} />
           <Route
@@ -369,7 +378,6 @@ function App({ currentUser }) {
           />
           <Route path="/payment-policy" exact component={PaymentPolicy} />
           {/* currentUser ? <Redirect to="/verification" /> : <ChefSignUp /> */}
-
           <Route path="/user/faq" exact component={Faq} />
           <Route path="/chef/faq" exact component={ChefFaq} />
           <Route path="/user/terms" exact component={TermsUser} />

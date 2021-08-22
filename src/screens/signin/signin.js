@@ -26,7 +26,6 @@ const SignIn = ({ signInStart, currentUser }) => {
     await signInStart({ email, password, userType });
     setEmail("");
     setPassword("");
-    if (currentUser) history.replace("/verfication");
   };
   const handleChange = (event) => {
     switch (event.target.name) {
