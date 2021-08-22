@@ -16,11 +16,17 @@ import {
   getVerificationCodeSuccess,
   verificationFailed,
   verificationSuccess,
+  createUserProfileSuccess,
+  createUserProfilefailed,
 } from "./UserAction";
 import { setSnackbar } from "../Sneakbar/SneakbarAction";
-import AuthSignUp from "../../Auth/signup";
-import AuthSignIN from "../../Auth/signin";
-import { getVerificationCode, verifyUser } from "../../Auth/verification";
+import AuthSignUp from "../../BackEndRoutes/signup";
+import AuthSignIN from "../../BackEndRoutes/signin";
+import {
+  getVerificationCode,
+  verifyUser,
+} from "../../BackEndRoutes/verification";
+import { createProfile } from "../../BackEndRoutes/createProfile";
 
 export function* signup({ payload: { email, password, userType } }) {
   try {
@@ -88,12 +94,19 @@ export function* userVerification({ payload: { id, confirmationCode } }) {
   }
 }
 
-export function* createUserProfile() {
+export function* createUserProfile({ payload }) {
   try {
-    //abc
-    yield console.log("help");
+    // const user = yield createProfile(payload)
+    // if (user.status === 200) {
+    //   yield put(signUpSuccess(user.data));
+    // } else {
+    //   yield put(signUpFailure(user.err));
+    //   yield put(setSnackbar(true, "error", user.err));
+    // }
+    console.log(payload);
   } catch (err) {
-    console.log(err);
+    yield put(createUserProfilefailed(err));
+    yield put(setSnackbar(true, "error", err));
   }
 }
 
@@ -120,5 +133,6 @@ export function* userSaga() {
     call(onSignInStart),
     call(onGetVerificationCode),
     call(onUserVerification),
+    call(onCreateProfile),
   ]);
 }
