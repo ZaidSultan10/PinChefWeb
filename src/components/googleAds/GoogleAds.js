@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./GoogleAds.css";
-import FilterIcon from "../../assets/svg/Filter-button.svg";
 import RadioButtonUncheckedIcon from "@material-ui/icons/RadioButtonUnchecked";
 import Ads from "../ads/Ads";
 import RightArrow from "../../assets/svg/right-arrow-brown.svg";
@@ -35,10 +34,10 @@ const GoogleAds = ({filterSearchProp}) => {
       <div className="googleAds">
         <div className="googleAds__filter">
           <div className="googleAds__filter__header">
-            <img src={FilterIcon} alt="filter" />
+            <h4 className="sort__by">Sort by</h4>
             <h3>RESET</h3>
           </div>
-          <h4 className="sort__by">Sort by</h4>
+          
           <div className="googleAds__filter__options">
             <div className="googleAds__filter__most__commented">
               <RadioButtonUncheckedIcon className="active1 radio" />
