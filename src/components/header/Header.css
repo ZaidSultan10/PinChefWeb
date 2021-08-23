@@ -78,7 +78,12 @@
     align-items: center;
     justify-content: space-evenly;
 }
-.header__right > img{
+.header__right > .notification__icon{
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+}
+.header__right > .header__avatar{
     cursor: pointer;
     width: 30px;
     height: 30px;
@@ -86,6 +91,11 @@
 .header__right > .filter__icon{
     width: 32px ;
     height: 32px ;
+}
+.header__right > .filter__icon > .a,
+.header__right > .notification__icon > .a,
+.header__right > .header__avatar > .a{
+    fill: #3d3838;
 }
 .header__avatar{
     margin-left: 4%;

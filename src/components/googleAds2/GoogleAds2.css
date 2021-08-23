@@ -1,12 +1,12 @@
-.googleAds{
+.googleAds2{
     position: sticky;
   }
-  .active1{
+  .active__googleads2{
     background-color: #ffcf54 !important;
     border-radius: 50% !important;
   }
   
-  .googleAds__filter{
+  .googleAds__filter2{
     display: grid;
     grid-template-columns: 1fr ;
     border: 2px solid silver;
@@ -15,18 +15,18 @@
     box-shadow:  0 2px 6px 0 gray;
   }
   
-  .googleAds__filter__header{
+  .googleAds__filter__header2{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 2%;
   }
-  .googleAds__filter__header > img{
+  .googleAds__filter__header2 > img{
     
     width: 50%;
     height: 50%;
     margin-top: 2%;
   }
-  .googleAds__filter__header > h3{
+  .googleAds__filter__header2 > h3{
     
     color: #3f8f22;
     font-weight: 700 !important;
@@ -34,56 +34,56 @@
   .kosher{
     margin-bottom: 3%;
   }
-  .sort__by{
+  .sort__by2{
     margin-left: 10%;
   }
-  .sort__by, .diff__by{
+   .diff__by2{
     margin-bottom: 5%;
     margin-left: 5%;
     font-weight: 700 !important;
   }
-  .diff__by{
+  .diff__by2{
     margin-top: 4%;
   }
-  .googleAds__filter__options{
+  .googleAds__filter__options2{
     display: grid;
     grid-template-columns: 4fr;
   }
   
-  .googleAds__filter__most__commented{
+  .googleAds__filter__most__commented2{
     display: grid;
     grid-template-columns: 1fr 5fr;
     margin-left: 4%;
   
   }
-  .googleAds__filter__most__commented > p{
+  .googleAds__filter__most__commented2 > p{
     display: flex;
     align-items: center;
     margin-left: 5%;
   }
   
-  .googleAds__filter__most__liked,
-  .googleAds__filter__vip__chef,
-  .googleAds__filter__top__rated{
+  .googleAds__filter__most__liked2,
+  .googleAds__filter__vip__chef2,
+  .googleAds__filter__top__rated2{
     display: grid;
     grid-template-columns: 1fr 5fr;
     margin-left: 4%;
     margin-top: 5%;
     align-items: center;
   }
-  .googleAds__filter__most__liked > p,
-  .googleAds__filter__vip__chef > p,
-  .googleAds__filter__top__rated >p{
+  .googleAds__filter__most__liked2 > p,
+  .googleAds__filter__vip__chef2 > p,
+  .googleAds__filter__top__rated2 >p{
     margin-left: 5%;
   }
   
-  .googleAds__filter__dates{
+  .googleAds__filter__dates2{
     display: grid;
     grid-template-columns: 1fr 3fr;
     margin-left: 5%;
     margin-top: 4%;
   }
-  .googleAds__filter__dates > img{
+  .googleAds__filter__dates2 > img{
     
     height: 13px;
     float: left;
@@ -92,44 +92,44 @@
     margin-top: 2%;
     margin-left: -35px !important;
   }
-  .googleAds__filter__dates > h4{
+  .googleAds__filter__dates2 > h4{
     font-size: 16px !important;
   }
-  .googleAds__filter__date{
+  .googleAds__filter__date2{
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 4%;
     margin-left: 5%;
     margin-bottom: 10%;
   }
-  .googleAds__ads{
+  .googleAds__ads2{
     margin-top: 2rem;
     margin-right: -3px;
   }
   
   @media only screen and (min-width:1290px) and (max-width:1921px){
-    .googleAds__filter__header > h3{
+    .googleAds__filter__header2 > h3{
       font-size: 26px !important;
     }
-    .sort__by{
+    .sort__by2{
       font-size: 24px !important;
     }
-    .radio{
+    .radio2{
       font-size: 28px !important;
     }
-    .googleAds__filter__most__commented>p,
-    .googleAds__filter__most__liked>p,
-    .googleAds__filter__top__rated>p,
-    .googleAds__filter__vip__chef>p{
+    .googleAds__filter__most__commented2>p,
+    .googleAds__filter__most__liked2>p,
+    .googleAds__filter__top__rated2>p,
+    .googleAds__filter__vip__chef2>p{
       font-size: 18px !important;
     }
-    .googleAds__filter__dates >h4{
+    .googleAds__filter__dates2 >h4{
       font-size: 24px !important;
     }
-    .googleAds__filter__dates >img{
+    .googleAds__filter__dates2 >img{
       height: 20px;
     }
-    .googleAds__filter__date >p{
+    .googleAds__filter__date2 >p{
       font-size: 18px !important;
     }
   }

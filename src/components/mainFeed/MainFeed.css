@@ -10,8 +10,7 @@
     justify-content: space-between;
     margin-left: 1%;
     margin-right: 2%;
-    margin-top: 1.5%;
-    
+    margin-top: -2%;
 }
 .myModal1HomePage{
     width: 25%;
@@ -156,9 +155,7 @@ input[type='radio']:checked::after {
     width: 28px;
     height: 28px;
 }
-.avatar__container {
-    margin-top: 1rem;
-}
+
 .avatar__container >  .avatar{
     box-shadow:  0 2px 6px 0 gray;
     width: 50px;
@@ -209,7 +206,7 @@ input[type='radio']:checked::after {
     justify-content: space-between;
     align-items: center;
     margin-left: 1.8%;
-    
+    margin-top: -1rem;
 }
 .mainFeed__userName >h3{
     font-size: 14px !important;
@@ -220,7 +217,7 @@ input[type='radio']:checked::after {
     color: gray !important;
 }
 .spn1{
-    color: brown !important;
+    color: #454040 !important;
     width: 20px !important;
     height: 20px !important;
     margin-top: -1%;
@@ -305,11 +302,48 @@ p{
 .mainFeed__paragraph > p{
     font-size: 14px !important;
 }
+.mainFeed__commentsection{
+    
+    width: 96%;
+    display: flex;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    position: relative;
+}
+.mainFeed__commentsection > input{
+    outline: none;
+    height: 5vh;
+    padding-left: 3%;
+    padding-right: 20%;
+    border-radius: 23px;
+    border: 1px solid #f1f0f5;
+    width: 100%;
+    background-color: #f1f0f5;
+}
+.mainFeed__commentsection > p{
+    position: absolute;
+    top: 7px;
+    cursor: pointer;
+    right: 15px;
+    margin-right: 6%;
+    text-decoration: underline;
+}
+.mainFeed__commentsection__stickers{
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 0.5px;
+}
+
 .bottom__line{
     width: 80%;
     margin: 0 auto;
-    margin-top: 4%;
-    margin-bottom: 4%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 

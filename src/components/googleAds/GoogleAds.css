@@ -4,8 +4,9 @@
   margin: 2%;
 }
 .active1{
-  background-color: #ffcf54 !important;
+  background-color: #f5ce59 !important;
   border-radius: 50% !important;
+  
 }
 .datepickermodal{
   width: 50%;
@@ -19,10 +20,10 @@
 .googleAds__filter{
   display: grid;
   grid-template-columns: 1fr ;
-  border: 2px solid silver;
+  border: 2px solid white;
   overflow: hidden;
   border-radius: 24px 0px 0px 24px;
-  box-shadow:  0px 2px 6px 0 gray;
+  box-shadow:  0px 2px 10px 0 rgba(0, 0, 0, 0.274);
 }
 
 .googleAds__filter__header{
@@ -39,7 +40,7 @@
   margin-top: 2%;
 }
 .googleAds__filter__header > h3{
-  font-size: 16px;
+  font-size: 14px;
   color: #3f8f22;
  margin-right: 10%;
  display: flex;
@@ -52,7 +53,7 @@
 .googleAds__filter__header>.sort__by{
   margin-left: 0.9rem;
 }
-.sort__by, .diff__by{
+ .diff__by{
   margin-bottom: 5%;
   margin-left: 5%;
   font-weight: 700 !important;
@@ -63,6 +64,7 @@
 .googleAds__filter__options{
   display: grid;
   grid-template-columns: 4fr;
+  margin-top: -1rem;
 }
 
 .googleAds__filter__most__commented{
@@ -74,7 +76,7 @@
 .googleAds__filter__most__commented > p{
   display: flex;
   align-items: center;
-  margin-left: 5%;
+  margin-left: 1%;
 }
 
 .googleAds__filter__most__liked,
@@ -83,13 +85,13 @@
   display: grid;
   grid-template-columns: 1fr 5fr;
   margin-left: 4%;
-  margin-top: 5%;
+  margin-top: 3%;
   align-items: center;
 }
 .googleAds__filter__most__liked > p,
 .googleAds__filter__vip__chef > p,
 .googleAds__filter__top__rated >p{
-  margin-left: 5%;
+  margin-left: 1%;
 }
 
 .googleAds__filter__dates{
@@ -121,6 +123,9 @@
   margin-top: 2rem;
   margin-right: -3px;
 }
+.radio{
+  font-size: 18px !important;
+}
 
 @media only screen and (max-width:1040px){
   .googleAds__filter__header > h3{
@@ -128,7 +133,7 @@
   }
 }
 
-@media only screen and (min-width:1290px) and (max-width:1921px){
+/*@media only screen and (min-width:1290px) and (max-width:1921px){
   .googleAds__filter__header > h3{
     font-size: 26px !important;
   }
@@ -153,4 +158,4 @@
   .googleAds__filter__date >p{
     font-size: 18px !important;
   }
-}
+}*/

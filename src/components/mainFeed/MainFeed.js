@@ -2,7 +2,7 @@ import { Avatar } from "@material-ui/core";
 import React, {useState} from "react";
 import "./MainFeed.css";
 import MoreHorizOutlinedIcon from "@material-ui/icons/MoreHorizOutlined";
-import PostImage from "../../assets/chef-images/chef-image1.jpg";
+import PostImage from "../../assets/backgroundImages/main-image.jpeg";
 import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import CommentIcon from "../../assets/svg/Commentwithborder.svg";
 import HeartIcon from '../../assets/svg/Heart_Outline.svg'
@@ -15,6 +15,8 @@ import { useHistory } from "react-router-dom";
 import TextTruncate from 'react-text-truncate'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+//import { ArrowRightAlt } from "@material-ui/icons";
+import {ReactComponent as StickerIcon } from '../../assets/svg/Sticker_btn.svg'
 
 
 const MainFeed = () => {
@@ -207,6 +209,11 @@ const closeModal2 = () => {
           )
         }
           
+        </div>
+        <div className='mainFeed__commentsection'>
+            <input placeholder='Comment' />
+            <p>Send</p>
+            <StickerIcon className='mainFeed__commentsection__stickers' />
         </div>
         <div className='bottom__line'>
               <img src={HorizontalLine} alt='line' />
