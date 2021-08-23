@@ -314,7 +314,7 @@ p{
 }
 .mainFeed__commentsection > input{
     outline: none;
-    height: 5vh;
+    height: 32px;
     padding-left: 3%;
     padding-right: 20%;
     border-radius: 23px;
@@ -410,12 +410,7 @@ p{
         border: 1px solid;
         background-color: white;
     }
-    .mainFeed__userName {
-        margin-top: 0.7px;
-    }
-    .mainFeed__userName > h3{
-        font-size: 16px !important;
-    }
+    
     .mainFeed__container__location >h3{
         width: 17px;
         height: 17px;

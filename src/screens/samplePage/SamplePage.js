@@ -13,8 +13,14 @@ const SamplePage = () => {
                     <GoogleAds />
                 </div>
                 <div className='samplepage__center'>
-                    <MainFeedFilters />
-                    <MainFeed />
+                    <div className='samplepage__center__filter'>
+                        <MainFeedFilters />
+                    </div>
+                    
+                    <div className='samplepage__center__content'>
+                        <MainFeed />
+                    </div>
+                    
                 </div>
                 <div className='samplepage__right'>
                     <ChefAds />
