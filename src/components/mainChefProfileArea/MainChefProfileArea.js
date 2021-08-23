@@ -96,21 +96,21 @@ const MainChefProfileArea = () => {
                     <div className='mainChefProfileArea__namearea'>
                         <div className ='mainChefProfileArea__topLeft'>
                             <h5>Name<span>*</span></h5>
-                            <input name='firstName' onChange={handleChange} placeholder='Name' />
+                            <input name='firstName' value={firstName} onChange={handleChange} placeholder='Name' />
                         </div>
                         <div className ='mainChefProfileArea__topRight'>
                             <h5>Last Name<span>*</span></h5>
-                            <input name='lastName' onChange={handleChange} placeholder='Last Name' />
+                            <input name='lastName' value={lastName} onChange={handleChange} placeholder='Last Name' />
                         </div>
                     </div>
                     <div className='mainChefProfileArea__nickname'>
                         <div className='mainChefProfileArea__user'>
                             <h5>User ID-Nickname<span>*</span></h5>
-                            <input name='nickName' onChange={handleChange} placeholder='ex:JohnDoe67' />
+                            <input name='nickName' value={nickName} onChange={handleChange} placeholder='ex:JohnDoe67' />
                         </div>
                         <div className='mainChefProfileArea__gender'>
                             <h5>Gender<span>*</span></h5>
-                            <input name='gender' onChange={handleChange} placeholder='Male, Female etc..' />
+                            <input name='gender' value={gender} onChange={handleChange} placeholder='Male, Female etc..' />
                         </div>
                     </div>
                     <div className='mainChefProfileArea__dob'>
@@ -155,7 +155,7 @@ const MainChefProfileArea = () => {
                     </div>
                     <div className='mainChefProfileArea__language'>
                         <h5>Language<span>*</span></h5>
-                        <input name='language' onChange={handleChange} placeholder='ex. English, Spanish etc..' />
+                        <input name='language' value={language} onChange={handleChange} placeholder='ex. English, Spanish etc..' />
                     </div>
                     <div className='mainChefProfileArea__ad'>
                         <h5>Short Ad Intro<span>*</span></h5>
@@ -325,9 +325,9 @@ const MainChefProfileArea = () => {
                     <div className='mainChefProfileArea__button'>
                         
                         <Button onClick={() => setHeading('Tell about your Profession')} className='button-back2'>Back</Button>
-                        <Button onClick={() =>{
+                        <Button onClick={ handleSubmit /*() =>{
                             history.push('/chef/home/feed')
-                        }} className='button-next3'>Finish</Button>
+                        }*/} className='button-next3'>Finish</Button>
                     
                     </div>
                 </>

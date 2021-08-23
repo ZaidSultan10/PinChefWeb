@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./UserProfileSet.css";
 import { Button } from "@material-ui/core";
 import ProfileImage from "../../assets/svg/Profile-image.svg";
-import { useHistory } from "react-router-dom";
+//import { useHistory } from "react-router-dom";
 // import Modal from "react-modal";
 // import LocationIcon from "../../assets/svg-for-user-profile/Location.svg";
 import "./UserProfileSetModal.css";
@@ -12,7 +12,7 @@ import { createUserProfileStart } from "../../redux/User/UserAction";
 const UserProfileSet = ({ createUserProfileStart, currentUser }) => {
   //   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const history = useHistory();
+  //const history = useHistory();
 
   //   const openModal = () => {
   //     setModalIsOpen(true);
