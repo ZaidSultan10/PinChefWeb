@@ -11,7 +11,7 @@ import { Slider } from '@material-ui/core'
 import {ReactComponent as ChefInfoIcon} from '../../assets/svg-for-user-profile/Chef-info.svg'
 import {ReactComponent as PersonalInfoIcon} from '../../assets/svg-for-user-profile/Personal-info.svg'
 import {ReactComponent as ServiceIcon} from '../../assets/svg-for-user-profile/Service.svg'
-import {cuisineList, dateOfBirth, monthOfBirth} from './mainChefProfileAreaData'
+import {cuisineList, dateOfBirth, monthOfBirth, positionsList} from './mainChefProfileAreaData'
 
 
 
@@ -20,7 +20,7 @@ const MainChefProfileArea = () => {
     //const history=useHistory()
 
     const [heading,setHeading] = useState('Tell us about yourself')
-    const [value,setValue] = useState()
+    const [value,setValue] = useState('')
     
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
@@ -39,7 +39,10 @@ const MainChefProfileArea = () => {
     const [min,setMin] = useState("")
     const [max,setMax] = useState("")
     const [hourlyRate,setHourlyRate] = useState("")
-
+    const [dobDate,setDobDate] = useState("")
+    const [dobMonth,setDobMonth] = useState("")
+    const [dobYear,setDobYear] = useState("")
+    const [addCuisines , setAddCuisines] = useState("")
 
 
     const handleChange = (event) => {
@@ -95,6 +98,21 @@ const MainChefProfileArea = () => {
         case "hourlyRate":
             setHourlyRate(event.target.value);
             break;
+        case "dobDate":
+            setDobDate(event.target.value);
+            break;
+        case "dobMonth":
+            setDobMonth(event.target.value);
+            break;
+        case "dobYear":
+            setDobYear(event.target.value);
+            break;
+        case "phoneNumber":
+            setValue(event.target.value);
+            break;
+        case "cuisines":
+            setAddCuisines(event.target.value);
+            break;
         default:
             break;
         }
@@ -147,21 +165,21 @@ const MainChefProfileArea = () => {
                     <div className='mainChefProfileArea__namearea'>
                         <div className ='mainChefProfileArea__topLeft'>
                             <h5>Name<span>*</span></h5>
-                            <input name='firstName' value={firstName} onChange={handleChange} placeholder='Name' />
+                            <input required name='firstName' value={firstName} onChange={handleChange} placeholder='Name' />
                         </div>
                         <div className ='mainChefProfileArea__topRight'>
                             <h5>Last Name<span>*</span></h5>
-                            <input name='lastName' value={lastName} onChange={handleChange} placeholder='Last Name' />
+                            <input required name='lastName' value={lastName} onChange={handleChange} placeholder='Last Name' />
                         </div>
                     </div>
                     <div className='mainChefProfileArea__nickname'>
                         <div className='mainChefProfileArea__user'>
                             <h5>User ID-Nickname<span>*</span></h5>
-                            <input name='nickName' value={nickName} onChange={handleChange} placeholder='ex:JohnDoe67' />
+                            <input required name='nickName' value={nickName} onChange={handleChange} placeholder='ex:JohnDoe67' />
                         </div>
                         <div className='mainChefProfileArea__gender'>
                             <h5>Gender<span>*</span></h5>
-                            <input name='gender' value={gender} onChange={handleChange} placeholder='Male, Female etc..' />
+                            <input required name='gender' value={gender} onChange={handleChange} placeholder='Male, Female etc..' />
                         </div>
                     </div>
                     <div className='mainChefProfileArea__dob'>
@@ -169,7 +187,7 @@ const MainChefProfileArea = () => {
                         <div className='mainChefProfileArea__dobinput'>
                             <div className='mainChefProfileArea__date'>
                                 
-                                <select id='date__type__option'>
+                                <select required name='dobDate' value={dobDate} onChange={handleChange} id='date__type__option'>
                                     {
                                         dateOfBirth.map((date) => (
                                             <option>{date.days}</option>
@@ -179,7 +197,7 @@ const MainChefProfileArea = () => {
                             </div>
                             <div className='mainChefProfileArea__month'>
                             
-                                <select id='date__type__option'>
+                                <select required name='dobMonth' value={dobMonth} onChange={handleChange} id='date__type__option'>
                                     {
                                         monthOfBirth.map((month) => (
                                             <option>{month.month}</option>
@@ -188,12 +206,7 @@ const MainChefProfileArea = () => {
                                 </select>
                             </div>
                             <div className='mainChefProfileArea__year'>
-                            
-                                <select id='date__type__option'>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                </select>
+                                <input required minLength={4} maxLength={4} name='dobYear' value={dobYear} onChange={handleChange} />
                             </div>
                         </div>
                     </div>
@@ -202,7 +215,8 @@ const MainChefProfileArea = () => {
                             <h5>Phone Number<span>*</span></h5>
                             <PhoneInput placeholder='XXX XXX XXXX'
                             value={value}
-                            onChange={setValue} />
+                            name='phoneNumber'
+                            onChange={handleChange} required />
                         </div>
                         <div className='mainChefProfileArea__thumbsUp'>
                             <GoodJobIcon className='good__job__hand' />
@@ -210,11 +224,11 @@ const MainChefProfileArea = () => {
                     </div>
                     <div className='mainChefProfileArea__language'>
                         <h5>Language<span>*</span></h5>
-                        <input name='language' value={language} onChange={handleChange} placeholder='ex. English, Spanish etc..' />
+                        <input required name='language' value={language} onChange={handleChange} placeholder='ex. English, Spanish etc..' />
                     </div>
                     <div className='mainChefProfileArea__ad'>
                         <h5>Short Ad Intro<span>*</span></h5>
-                        <textarea rows='7' name='shortAd' value={shortAd} onChange={handleChange} placeholder='Short intro about you to attract food lovers' />
+                        <textarea required rows='7' name='shortAd' value={shortAd} onChange={handleChange} placeholder='Short intro about you to attract food lovers' />
                     </div>
                     <Button className='Next__1' onClick={() => setHeading('Tell about your Profession')}>Next</Button>
                 </>    
@@ -228,11 +242,17 @@ const MainChefProfileArea = () => {
                     </div>
                     <div className='mainChefProfileArea__position'>
                         <h5>Position<span>*</span></h5>
-                        <input name='position' value={position} onChange={handleChange} placeholder='ex. Head chef, Home chef etc..' />
+                        <select name='position' value={position} onChange={handleChange} >
+                            {
+                                positionsList.map((position) => (
+                                    <option>{position.position}</option>
+                                ))
+                            }
+                        </select>
                     </div>
                     <div className='mainChefProfileArea__cuisine'>
                         <h5>Cuisine Specialist<span>*</span></h5>
-                        <select id='diet__type__option'>
+                        <select required name='cuisines' value={addCuisines} onChange={handleChange} id='diet__type__option'>
                                 {
                                     cuisineList.map((cuisine) => (
                                         <option>{cuisine.cuisine}</option>
@@ -243,7 +263,7 @@ const MainChefProfileArea = () => {
                 
                     <div className='mainChefProfileArea__info'>
                         <h5>Full Background info<span>*</span></h5>
-                        <textarea rows='7' name='backgroundInfo' value={backgroundInfo} onChange={handleChange} placeholder='Full background info you would like to share' />
+                        <textarea required rows='7' name='backgroundInfo' value={backgroundInfo} onChange={handleChange} placeholder='Full background info you would like to share' />
                     </div>
                     
                     <div className='mainChefProfileArea__hours'>
@@ -277,7 +297,7 @@ const MainChefProfileArea = () => {
                     </div>
                     <div className='mainChefProfileArea__location'>
                         <h5>Address/Location<span>*</span></h5>
-                        <input name='address' value={address} onChange={handleChange} placeholder='Country, City, State' />
+                        <input required name='address' value={address} onChange={handleChange} placeholder='Country, City, State' />
                     </div>   
                     <div className='mainChefProfileArea__serve'>
                     <h5>Providing Services<span>*</span></h5>
@@ -310,7 +330,7 @@ const MainChefProfileArea = () => {
                     </div>
                     <div className ='mainChefProfileArea__areas'>
                         <h5>Service Deliveries</h5>
-                        <input name='serviceDelivery' value={serviceDelivery} onChange={handleChange} placeholder='Areas' />
+                        <input required name='serviceDelivery' value={serviceDelivery} onChange={handleChange} placeholder='Areas' />
                     </div>
                     <div className='message__heading'>
                         <h5>Accepting Payment Methods</h5>
@@ -347,7 +367,7 @@ const MainChefProfileArea = () => {
                                 <h5>$</h5>
                             </div>
                             <div className='inputThePrice'>
-                                <input type='number' name='minimumPurchase' value={minimumPurchase} onChange={handleChange} placeholder='Enter Price' />
+                                <input required type='number' name='minimumPurchase' value={minimumPurchase} onChange={handleChange} placeholder='Enter Price' />
                             </div>
                         </div>
                     </div>
@@ -358,10 +378,10 @@ const MainChefProfileArea = () => {
                                 <h5>$</h5>
                             </div>
                             <div className='inputThePrice1'>
-                                <input type='number' name='min' value={min} onChange={handleChange} placeholder='Min' />
+                                <input required type='number' name='min' value={min} onChange={handleChange} placeholder='Min' />
                             </div>
                             <div className='inputThePrice2'>
-                                <input type='number' name='max' value={max} onChange={handleChange} placeholder='Max' />
+                                <input required type='number' name='max' value={max} onChange={handleChange} placeholder='Max' />
                             </div>
                         </div>
                     </div>
@@ -372,7 +392,7 @@ const MainChefProfileArea = () => {
                                 <h5>$</h5>
                             </div>
                             <div className='inputThePrice'>
-                                <input type='number' name='hourlyRate' value={hourlyRate} onChange={handleChange} placeholder='Enter Price' />
+                                <input required type='number' name='hourlyRate' value={hourlyRate} onChange={handleChange} placeholder='Enter Price' />
                             </div>
                         </div>
                     </div>

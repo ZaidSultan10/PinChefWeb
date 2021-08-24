@@ -15,7 +15,25 @@ const MainChefCreatePost = () => {
     const history=useHistory()
 
     const [modalIsOpen1,setModalIsOpen1] = useState(false)
-
+   // const [postImage, setPostImage] = useState("");
+    const [description, setDescription] = useState("");
+    const [addLocation, setAddLocation] = useState("");
+  const handleChange = (event) => {
+    switch (event.target.name) {
+      case "description":
+        setDescription(event.target.value);
+        break;
+      case "addLocation":
+        setAddLocation(event.target.value);
+        break;
+      default:
+        break;
+    }
+  };
+  const handleSubmit = (event) => {
+     console.log(event);
+  };
+  
     const openModal1 =() => {
         setModalIsOpen1(true)
     }
@@ -60,15 +78,15 @@ const MainChefCreatePost = () => {
                     <img src={AddIcon} alt='star' />
                 </div>
                 <div className='mainChefCreatePost__addDesc'>
-                    <textarea rows='10' placeholder='Enter you description' />
+                    <textarea required rows='10' name='description' value={description} onChange={handleChange} placeholder='Enter you description' />
                 </div>
                 <div className='mainChefCreatePost__addLocation'>
                     <img src={AddLocationIcon} alt='star' />
-                    <input />
+                    <input required name='addLocation' value={addLocation} onChange={handleChange} />
                 </div>
                 <div className='mainChefCreatePost__buttons'>
                     <Button onClick={openModal1} className='mainChefCreatePost__cancel'>Cancel</Button>
-                    <Button className='mainChefCreatePost__post'>Post</Button>
+                    <Button onClick={handleSubmit} className='mainChefCreatePost__post'>Post</Button>
                 </div>
             </div>
         </div>

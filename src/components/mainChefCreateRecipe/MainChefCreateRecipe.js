@@ -6,12 +6,69 @@ import { Button } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import Modal from 'react-modal'
 import './MainChefCreateRecipeModal.css'
+import { cuisines, dietsList } from './mainChefCreateRecipeData';
+
 
 
 const MainChefCreateRecipe = () => {
 
     const [modalIsOpen1,setModalIsOpen1] = useState(false)
+    const [foodName, setFoodName] = useState("");
+    const [numberOfServing, setNumberOfServing] = useState("");
+    const [prepTime,setPrepTime] = useState("")
+    const [cookTime, setCookTime] = useState("");
+    const [calories, setCalories] = useState("");
+    const [ingredients, setIngredients] = useState("");
+    const [instructions, setInstructions] = useState("");
+    const [requiredTools, setRequiredTools] = useState("")
+    const [difficultyLevel, setDifficultyLevel] = useState("");
+    const [cuisines , setCuisines] = useState("")
+    const [dietType, setDietType] = useState("")
 
+
+    
+    const handleChange = (event) => {
+        switch (event.target.name) {
+        case "foodName":
+            setFoodName(event.target.value);
+            break;
+        case "numberOfServing":
+            setNumberOfServing(event.target.value);
+            break;
+        case "prepTime":
+            setPrepTime(event.target.value);
+            break;
+        case "cookTime":
+            setCookTime(event.target.value);
+            break;
+        case "calories":
+            setCalories(event.target.value);
+            break;
+        case "ingredients":
+            setIngredients(event.target.value);
+            break;
+        case "instructions":
+            setInstructions(event.target.value);
+            break;
+        case "requiredTools":
+            setRequiredTools(event.target.value);
+            break;
+        case "difficultyLevel":
+            setDifficultyLevel(event.target.value);
+            break;
+        case "cuisines":
+            setCuisines(event.target.value);
+            break;
+        case "dietType":
+            setDietType(event.target.value);
+            break;
+        default:
+            break;
+        }
+    };
+    const handleSubmit = (event) => {
+        console.log(event);
+    };
     const openModal1 =() => {
         setModalIsOpen1(true)
     }
@@ -59,69 +116,69 @@ const MainChefCreateRecipe = () => {
                 </div>
                 <div className='mainChefCreateRecipe__name'>
                     <h5>Food Name<span>*</span></h5>
-                    <input placeholder='Enter Food Title' />
+                    <input required name='foodName' value={foodName} onChange={handleChange} placeholder='Enter Food Title' />
                 </div>
                 <div className='mainChefCreateRecipe__cuisine'>
                     <h5>Cuisine Type<span>*</span></h5>
-                    <select id='cuisine__type__option'>
-                        <option>European</option>
-                        <option>Turkish</option>
-                        <option>Russian</option>
-                        <option>Arabic</option>
-                        <option>Indian</option>
+                    <select required name='cuisines' value={cuisines} onChange={handleChange} id='cuisine__type__option'>
+                        {
+                            cuisines.map((cuisine) => (
+                                <option>{cuisine.cuisine}</option>
+                            ))
+                        }
                     </select>
                 </div>
                 <div className='mainChefCreateRecipe__diet'>
                     <h5>Diet Type<span>*</span></h5>
-                    <select id='diet__type__option'>
-                        <option>Vegan</option>
-                        <option>Vegetarian</option>
-                        <option>Halal</option>
-                        <option>Kashar</option>
-                        <option>Meat</option>
+                    <select required name='dietType' value={dietType} onChange={handleChange} id='diet__type__option'>
+                        {
+                            dietsList.map((diet) => (
+                                <option>{diet.diet}</option>
+                            ))
+                        }
                     </select>
                 </div>
                 <div className='mainChefCreateRecipe__serving'>
                     <h5>Number of Servings<span>*</span></h5>
-                    <input placeholder='2' />
+                    <input required name='numberOfServing' value={numberOfServing} onChange={handleChange} placeholder='2' />
                 </div>
                 <div className='mainChefCreateRecipe__time'>
                     <h5>Prep Time<span>*</span></h5>
-                    <input placeholder='10 min' />
+                    <input required name='prepTime' value={prepTime} onChange={handleChange} placeholder='10 min' />
                 </div>
                 <div className='mainChefCreateRecipe__cook'>
                     <h5>Cook Time<span>*</span></h5>
-                    <input placeholder='40 min' />
+                    <input required name='cookTime' value={cookTime} onChange={handleChange} placeholder='40 min' />
                 </div>
                 <div className='mainChefCreateRecipe__calory'>
                     <h5>Calories</h5>
-                    <input placeholder='363' />
+                    <input required name='calories' value={calories} onChange={handleChange} placeholder='363' />
                 </div>
                 <div className='mainChefCreateRecipe__ingredients'>
                     <h5>Ingredients<span>*</span></h5>
-                    <textarea rows='7' placeholder='Write all the ingredients' />
+                    <textarea required name='ingredients' value={ingredients} onChange={handleChange} rows='7' placeholder='Write all the ingredients' />
                 </div>
                 <div className='mainChefCreateRecipe__instruction'>
                     <h5>Instructions<span>*</span></h5>
-                    <textarea rows='7' placeholder='Write cooking instructions' />
+                    <textarea required name='instructions' value={instructions} onChange={handleChange} rows='7' placeholder='Write cooking instructions' />
                 </div>
                 <div className='mainChefCreateRecipe__tools'>
                     <h5>Required tools<span className='optional'>(optional)</span></h5>
-                    <textarea rows='7' placeholder='Write tools needed to cook this' />
+                    <textarea name='requiredTools' value={requiredTools} onChange={handleChange} rows='7' placeholder='Write tools needed to cook this' />
                 </div>
                 <div className='mainChefCreateReipe__level'>
                   <h5>Difficulty Level<span>*</span></h5>
                   <div className='input__options'>
                       <div className='input__easy'>
-                          <input type="radio" id="easy" name="level" value="easy" />
+                          <input type="radio" id="easy" name="difficultyLevel" value={difficultyLevel} onChange={handleChange} />
                           <label for="easy">Easy</label>
                       </div>
                       <div className='input__medium'>
-                          <input type="radio" id="medium" name="level" value="medium"/>
+                          <input type="radio" id="medium" name="difficultyLevel" value={difficultyLevel} onChange={handleChange}/>
                           <label for="medium">Medium</label>
                       </div>
                       <div className='input__hard'>
-                          <input type="radio" id="hard" name="level" value="hard"/>
+                          <input type="radio" id="hard" name="difficultyLevel" value={difficultyLevel} onChange={handleChange}/>
                           <label for="hard">Hard</label>
                       </div>
                   </div>
@@ -129,7 +186,7 @@ const MainChefCreateRecipe = () => {
                 </div>
                 <div className='mainChefCreateRecipe__buttons'>
                     <Button onClick={openModal1} className='the-cancel-button'>Cancel</Button>
-                    <Button className='the-post-button'>Post</Button>
+                    <Button onClick={handleSubmit} className='the-post-button'>Post</Button>
                 </div>
             </div>
         </div>
