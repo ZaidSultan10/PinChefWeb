@@ -5,7 +5,7 @@ import MoreHorizOutlinedIcon from "@material-ui/icons/MoreHorizOutlined";
 import PostImage from "../../assets/backgroundImages/main-image.jpeg";
 import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import CommentIcon from "../../assets/svg/Commentwithborder.svg";
-import HeartIcon from '../../assets/svg/Heart_Outline.svg'
+//import HeartIcon from '../../assets/svg/Heart_Outline.svg'
 import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 import LocationIcon from "../../assets/svg/Location.svg";
 import ShareItIcon from "../../assets/svg/Share-yellow.svg";
@@ -17,6 +17,8 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 //import { ArrowRightAlt } from "@material-ui/icons";
 import {ReactComponent as StickerIcon } from '../../assets/svg/Sticker_btn.svg'
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
 
 
 const MainFeed = () => {
@@ -25,6 +27,23 @@ const MainFeed = () => {
   const [modalIsOpen1,setIsOpen1]=useState(false)
   const [modalIsOpen2,setIsOpen2]=useState(false)
   const [toggleTruncate,setToggleTruncate] = useState(false)
+  const [postComment,setPostComment] = useState("")
+  const [likePost, setLikePost] = useState(1)
+
+
+  const handleChange = (event) => {
+    switch (event.target.name) {
+      case "postComment":
+        setPostComment(event.target.value);
+        break;
+      default:
+        break;
+    }
+  };
+  const handleSubmit = (event) => {
+    
+     console.log(event);
+  };
 
 
   const customStyles1={
@@ -165,8 +184,20 @@ const closeModal2 = () => {
         <div className="mainFeed__actions">
           <div className="mainFeed__actions__left">
             <div className="like">
-              <img src={HeartIcon} className="heart__icon" alt='star' />
-              <p>135</p>
+            {
+              likePost === 1 ? (
+                <>
+                  <FavoriteBorderOutlinedIcon onClick={() => setLikePost(2)} className="heart__icon" alt='star' />
+                  <p>135</p>
+                </>
+              ):(
+                <>
+                  <FavoriteIcon onClick={() => setLikePost(1) } className="heart__icon" alt='star' />
+                  <p>136</p>
+                </>
+              )
+            }
+              
             </div>
             <div className="comment">
               <img onClick={() => {
@@ -211,8 +242,8 @@ const closeModal2 = () => {
           
         </div>
         <div className='mainFeed__commentsection'>
-            <input placeholder='Comment' />
-            <p>Send</p>
+            <input name='postComment' value={postComment} onChange={handleChange} placeholder='Comment' />
+            <p onClick={handleSubmit}>Send</p>
             <StickerIcon className='mainFeed__commentsection__stickers' />
         </div>
         <div className='bottom__line'>

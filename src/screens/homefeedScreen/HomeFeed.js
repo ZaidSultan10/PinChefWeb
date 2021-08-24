@@ -4,7 +4,7 @@ import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
 import SamplePage from '../samplePage/SamplePage'
 import './HomeFeed.css'
-import MainFeedFilters from '../../components/mainFeedFilters/MainFeedFilters'
+
 
 const HomeFeed = () => {
     return (

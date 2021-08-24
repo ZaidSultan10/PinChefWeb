@@ -25,6 +25,20 @@
     padding-top: 20px;
 }
 
+.samplepage__center__filter{
+    position: fixed;
+    z-index: 999;
+    width: 533px;
+    margin-top: 0.2px;
+    
+    box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.794);
+    background-color: #fffefe;
+    height: 60px;
+}
+.samplepage__center__content{
+    margin-top: 90px;
+}
+
 .samplepage__left::-webkit-scrollbar-track,
 .samplepage__center::-webkit-scrollbar-track,
 .samplepage__right::-webkit-scrollbar-track{
@@ -71,6 +85,10 @@
         grid-template-columns: repeat(1,minmax(0,1fr));
         height: calc(100vh - 107px);
     }
+    .samplepage__center__filter{
+        width: 574px;
+        
+    }
     .samplepage__center{
         overflow-y:scroll;
     }
@@ -106,10 +124,21 @@
     .samplepage__container{
         display: grid;
         
-        width: 99%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .samplepage__center__content{
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .samplepage__center__filter{
+        width: 100%;
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.794);
+        
     }
 }
 
@@ -143,6 +172,20 @@
     }
     .samplepage__center{
         overflow-y:scroll;
+    }
+    .samplepage__center__content{
+        margin-top: 170px;
+    }
+    .samplepage__center__filter{
+        position: fixed;
+    z-index: 999;
+    width: 1050px;
+    margin-top: 0.2px;
+    
+    box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.794);
+    background-color: #fffefe;
+    height: 120px;
+        
     }
     .samplepage__left::-webkit-scrollbar-track,
 .samplepage__center::-webkit-scrollbar-track,

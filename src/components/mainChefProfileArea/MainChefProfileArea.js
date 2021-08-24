@@ -3,7 +3,7 @@ import './MainChefProfileArea.css'
 import ProfileAvatar from '../../assets/svg/Profile-image.svg'
 import { Button } from '@material-ui/core'
 import InfoIcon from '../../assets/svg/info-icon-red.svg'
-import { useHistory } from 'react-router-dom'
+//import { useHistory } from 'react-router-dom'
 import {ReactComponent as GoodJobIcon} from '../../assets/svg-for-user-profile/Good-job-icon.svg'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
@@ -11,11 +11,13 @@ import { Slider } from '@material-ui/core'
 import {ReactComponent as ChefInfoIcon} from '../../assets/svg-for-user-profile/Chef-info.svg'
 import {ReactComponent as PersonalInfoIcon} from '../../assets/svg-for-user-profile/Personal-info.svg'
 import {ReactComponent as ServiceIcon} from '../../assets/svg-for-user-profile/Service.svg'
+import {cuisineList, dateOfBirth, monthOfBirth} from './mainChefProfileAreaData'
+
 
 
 const MainChefProfileArea = () => {
 
-    const history=useHistory()
+    //const history=useHistory()
 
     const [heading,setHeading] = useState('Tell us about yourself')
     const [value,setValue] = useState()
@@ -25,6 +27,19 @@ const MainChefProfileArea = () => {
     const [nickName, setNickName] = useState("");
     const [gender, setGender] = useState("");
     const [language, setLanguage] = useState("");
+    const [shortAd, setShortAd] = useState("")
+    const [position,setPosition] = useState("")
+    const [backgroundInfo,setBackgroundInfo] = useState("")
+    const [interested,setInterested] = useState("")
+    const [address,setAddress] = useState("")
+    const [provideService,setProvideService] = useState("")
+    const [serviceDelivery,setServiceDelivery] = useState("")
+    const [acceptPayment,setAcceptPayment] = useState("")
+    const [minimumPurchase,setMinimumPurchase] = useState("")
+    const [min,setMin] = useState("")
+    const [max,setMax] = useState("")
+    const [hourlyRate,setHourlyRate] = useState("")
+
 
 
     const handleChange = (event) => {
@@ -43,6 +58,42 @@ const MainChefProfileArea = () => {
             break;
         case "language":
             setLanguage(event.target.value);
+            break;
+        case "shortAd":
+            setShortAd(event.target.value);
+            break;
+        case "position":
+            setPosition(event.target.value);
+            break;
+        case "backgroundInfo":
+            setBackgroundInfo(event.target.value);
+            break;
+        case "interested":
+            setInterested(event.target.value);
+            break;
+        case "address":
+            setAddress(event.target.value);
+            break;
+        case "provideServices":
+            setProvideService(event.target.value);
+            break;
+        case "serviceDelivery":
+            setServiceDelivery(event.target.value);
+            break;
+        case "acceptPayment":
+            setAcceptPayment(event.target.value);
+            break;
+        case "minimumPurchase":
+            setMinimumPurchase(event.target.value);
+            break;
+        case "min":
+            setMin(event.target.value);
+            break;
+        case "max":
+            setMax(event.target.value);
+            break;
+        case "hourlyRate":
+            setHourlyRate(event.target.value);
             break;
         default:
             break;
@@ -119,17 +170,21 @@ const MainChefProfileArea = () => {
                             <div className='mainChefProfileArea__date'>
                                 
                                 <select id='date__type__option'>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
+                                    {
+                                        dateOfBirth.map((date) => (
+                                            <option>{date.days}</option>
+                                        ))
+                                    }
                                 </select>
                             </div>
                             <div className='mainChefProfileArea__month'>
                             
                                 <select id='date__type__option'>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
+                                    {
+                                        monthOfBirth.map((month) => (
+                                            <option>{month.month}</option>
+                                        ))
+                                    }
                                 </select>
                             </div>
                             <div className='mainChefProfileArea__year'>
@@ -159,7 +214,7 @@ const MainChefProfileArea = () => {
                     </div>
                     <div className='mainChefProfileArea__ad'>
                         <h5>Short Ad Intro<span>*</span></h5>
-                        <textarea rows='7' placeholder='Short intro about you to attract food lovers' />
+                        <textarea rows='7' name='shortAd' value={shortAd} onChange={handleChange} placeholder='Short intro about you to attract food lovers' />
                     </div>
                     <Button className='Next__1' onClick={() => setHeading('Tell about your Profession')}>Next</Button>
                 </>    
@@ -173,22 +228,22 @@ const MainChefProfileArea = () => {
                     </div>
                     <div className='mainChefProfileArea__position'>
                         <h5>Position<span>*</span></h5>
-                        <input placeholder='ex. Head chef, Home chef etc..' />
+                        <input name='position' value={position} onChange={handleChange} placeholder='ex. Head chef, Home chef etc..' />
                     </div>
                     <div className='mainChefProfileArea__cuisine'>
                         <h5>Cuisine Specialist<span>*</span></h5>
                         <select id='diet__type__option'>
-                                <option>Vegan</option>
-                                <option>Vegetarian</option>
-                                <option>Halal</option>
-                                <option>Kashar</option>
-                                <option>Meat</option>
+                                {
+                                    cuisineList.map((cuisine) => (
+                                        <option>{cuisine.cuisine}</option>
+                                    ))
+                                }
                         </select>
                     </div>
                 
                     <div className='mainChefProfileArea__info'>
                         <h5>Full Background info<span>*</span></h5>
-                        <textarea rows='7' placeholder='Full background info you would like to share' />
+                        <textarea rows='7' name='backgroundInfo' value={backgroundInfo} onChange={handleChange} placeholder='Full background info you would like to share' />
                     </div>
                     
                     <div className='mainChefProfileArea__hours'>
@@ -198,7 +253,7 @@ const MainChefProfileArea = () => {
                             interests.map((interest) => (
                             <div className='input__interest'>
                                
-                                <input type="radio" id="selected" name="level" value="selected" />
+                                <input type="radio" id="selected" name="interested" value={interested} onChange={handleChange} />
                                 <label for="selected">{interest.job}</label> 
                                    
                             </div>
@@ -222,40 +277,40 @@ const MainChefProfileArea = () => {
                     </div>
                     <div className='mainChefProfileArea__location'>
                         <h5>Address/Location<span>*</span></h5>
-                        <input placeholder='Country, City, State' />
+                        <input name='address' value={address} onChange={handleChange} placeholder='Country, City, State' />
                     </div>   
                     <div className='mainChefProfileArea__serve'>
                     <h5>Providing Services<span>*</span></h5>
                         <div className='mainChefProfileArea__types'>
                             <div className='input__easy__serve'>
-                                <input type="radio" id="cook" name="level" value="cook" />
+                                <input type="radio" id="cook" name="provideServices" value={provideService} onChange={handleChange} />
                                 <label for="cook">Cook and Deliver</label>
                             </div>
                             <div className='input__easy__serve'>
-                                <input type="radio" id="ship" name="level" value="ship" />
+                                <input type="radio" id="ship" name="provideServices" value={provideService} onChange={handleChange} />
                                 <label for="ship">Cook and Ship</label>
                             </div>
                             <div className='input__easy__serve'>
-                                <input type="radio" id="pick" name="level" value="pick" />
+                                <input type="radio" id="pick" name="provideServices" value={provideService} onChange={handleChange} />
                                 <label for="pick">Cook and pick up/Takeaway</label>
                             </div>
                             <div className='input__easy__serve'>
-                                <input type="radio" id="go" name="level" value="go" />
+                                <input type="radio" id="go" name="provideServices" value={provideService} onChange={handleChange} />
                                 <label for="go">Go to guest address and cook</label>
                             </div>
                             <div className='input__easy__serve'>
-                                <input type="radio" id="host" name="level" value="host" />
+                                <input type="radio" id="host" name="provideServices" value={provideService} onChange={handleChange} />
                                 <label for="host">Host guests and cook</label>
                             </div>
                             <div className='input__easy__serve'>
-                                <input type="radio" id="live" name="level" value="live" />
+                                <input type="radio" id="live" name="provideServices" value={provideService} onChange={handleChange} />
                                 <label for="live">Cook live with chef</label>
                             </div>
                         </div>
                     </div>
                     <div className ='mainChefProfileArea__areas'>
                         <h5>Service Deliveries</h5>
-                        <input placeholder='Areas' />
+                        <input name='serviceDelivery' value={serviceDelivery} onChange={handleChange} placeholder='Areas' />
                     </div>
                     <div className='message__heading'>
                         <h5>Accepting Payment Methods</h5>
@@ -269,19 +324,19 @@ const MainChefProfileArea = () => {
                     </div>
                     <div className='mainChefProfileArea__payment'>
                             <div className='input__easy__serve'>
-                                <input type="radio" id="stripe" name="level" value="stripe" />
+                                <input type="radio" id="stripe" name="acceptPayment" value={acceptPayment} onChange={handleChange} />
                                 <label for="stripe">Stripe</label>
                             </div>
                             <div className='input__easy__serve'>
-                                <input type="radio" id="paypal" name="level" value="paypal" />
+                                <input type="radio" id="paypal" name="acceptPayment" value={acceptPayment} onChange={handleChange} />
                                 <label for="paypal">Paypal</label>
                             </div>
                             <div className='input__easy__serve'>
-                                <input type="radio" id="cod" name="level" value="cod" />
+                                <input type="radio" id="cod" name="acceptPayment" value={acceptPayment} onChange={handleChange} />
                                 <label for="cod">Cash on delivery</label>
                             </div>
                             <div className='input__easy__serve'>
-                                <input type="radio" id="card" name="level" value="card" />
+                                <input type="radio" id="card" name="acceptPayment" value={acceptPayment} onChange={handleChange} />
                                 <label for="card">Credit card on delivery</label>
                             </div>
                     </div>
@@ -292,7 +347,7 @@ const MainChefProfileArea = () => {
                                 <h5>$</h5>
                             </div>
                             <div className='inputThePrice'>
-                                <input type='number' placeholder='Enter Price' />
+                                <input type='number' name='minimumPurchase' value={minimumPurchase} onChange={handleChange} placeholder='Enter Price' />
                             </div>
                         </div>
                     </div>
@@ -303,10 +358,10 @@ const MainChefProfileArea = () => {
                                 <h5>$</h5>
                             </div>
                             <div className='inputThePrice1'>
-                                <input type='number' placeholder='Min' />
+                                <input type='number' name='min' value={min} onChange={handleChange} placeholder='Min' />
                             </div>
                             <div className='inputThePrice2'>
-                                <input type='number' placeholder='Max' />
+                                <input type='number' name='max' value={max} onChange={handleChange} placeholder='Max' />
                             </div>
                         </div>
                     </div>
@@ -317,7 +372,7 @@ const MainChefProfileArea = () => {
                                 <h5>$</h5>
                             </div>
                             <div className='inputThePrice'>
-                                <input type='number' placeholder='Enter Price' />
+                                <input type='number' name='hourlyRate' value={hourlyRate} onChange={handleChange} placeholder='Enter Price' />
                             </div>
                         </div>
                     </div>
