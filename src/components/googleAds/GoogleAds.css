@@ -8,6 +8,13 @@
   border-radius: 50% !important;
   
 }
+.filled-circle {
+  color: #f5ce59;
+  height: 14px !important;
+  width: 15px !important;
+  border: 1.5px solid rgba(0, 0, 0, 0.753);
+  border-radius: 50%;
+}
 .datepickermodal{
   width: 50%;
   height: 50%;
@@ -51,13 +58,14 @@
   margin-bottom: 3%;
 }
 .googleAds__filter__header>.sort__by{
-  margin-left: 0.9rem;
+  margin-left: 0.7rem;
 }
  .diff__by{
   margin-bottom: 5%;
   margin-left: 5%;
   font-weight: 700 !important;
 }
+
 .diff__by{
   margin-top: 4%;
 }
@@ -123,9 +131,7 @@
   margin-top: 2rem;
   margin-right: -3px;
 }
-.radio{
-  font-size: 18px !important;
-}
+
 
 @media only screen and (max-width:1040px){
   .googleAds__filter__header > h3{

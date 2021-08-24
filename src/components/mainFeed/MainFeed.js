@@ -5,7 +5,7 @@ import MoreHorizOutlinedIcon from "@material-ui/icons/MoreHorizOutlined";
 import PostImage from "../../assets/backgroundImages/main-image.jpeg";
 import HorizontalLine from '../../assets/svg/Horizontal-spliter-1.svg'
 import CommentIcon from "../../assets/svg/Commentwithborder.svg";
-//import HeartIcon from '../../assets/svg/Heart_Outline.svg'
+import {ReactComponent as HeartIcon} from '../../assets/svg/Heart_Outline.svg'
 import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 import LocationIcon from "../../assets/svg/Location.svg";
 import ShareItIcon from "../../assets/svg/Share-yellow.svg";
@@ -17,8 +17,9 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 //import { ArrowRightAlt } from "@material-ui/icons";
 import {ReactComponent as StickerIcon } from '../../assets/svg/Sticker_btn.svg'
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
+//import FavoriteIcon from '@material-ui/icons/Favorite';
+//import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
+import {ReactComponent as HeartFill} from '../../assets/svg/filled.svg'
 
 
 const MainFeed = () => {
@@ -152,11 +153,12 @@ const closeModal2 = () => {
           </div>
     </Modal>
     <div className="mainFeed">
+      <button className='mainFeed__newPost__button'>New Posts</button>
       {[...Array(6)].map(() => (
         <>
           <div className="mainFeed__header">
             <div className='avatar__container'>
-              <Avatar className="avatar" onClick={() => {
+              <Avatar src={PostImage} className="avatar" onClick={() => {
                 history.push('/user/chef/profile')
               }} />
             </div>
@@ -179,7 +181,14 @@ const closeModal2 = () => {
           </div>
         </div>
         <div className='post__image__container'>
-          <img className="post__image" src={PostImage} alt="post" />
+          {
+            likePost === 1 ? (
+              <img onDoubleClick = {() => setLikePost(2)} className="post__image" src={PostImage} alt="post" />
+            ):(
+              <img onDoubleClick = {() => setLikePost(1)} className="post__image" src={PostImage} alt="post" />
+            )
+          }
+          
         </div>
         <div className="mainFeed__actions">
           <div className="mainFeed__actions__left">
@@ -187,12 +196,12 @@ const closeModal2 = () => {
             {
               likePost === 1 ? (
                 <>
-                  <FavoriteBorderOutlinedIcon onClick={() => setLikePost(2)} className="heart__icon" alt='star' />
+                  <HeartIcon onClick={() => setLikePost(2)} className="heart__icon"  />
                   <p>135</p>
                 </>
               ):(
                 <>
-                  <FavoriteIcon onClick={() => setLikePost(1) } className="heart__icon" alt='star' />
+                  <HeartFill onClick={() => setLikePost(1) } className="heart__icon"  />
                   <p>136</p>
                 </>
               )
