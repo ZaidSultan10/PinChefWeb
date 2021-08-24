@@ -11,11 +11,11 @@
 }
 .active2{
     border-bottom: 3.5px solid #3f8f22 !important;
-    border-radius: 8px;
+    box-shadow: -2px 10px 8px -10px rgba(0, 0, 0, 0.794);
 }
 .activess3{
     border-bottom: 3.5px solid #3f8f22 !important;
-    border-radius: 8px;
+    box-shadow: -2px 10px 8px -10px rgba(0, 0, 0, 0.794);
 }
 .recipess{
     margin-left: -1rem;

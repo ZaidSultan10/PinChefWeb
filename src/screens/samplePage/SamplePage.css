@@ -30,13 +30,12 @@
     z-index: 999;
     width: 533px;
     margin-top: 0.2px;
-    
     box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.794);
     background-color: #fffefe;
-    height: 60px;
+    height: 40px;
 }
 .samplepage__center__content{
-    margin-top: 90px;
+    margin-top: 63px;
 }
 
 .samplepage__left::-webkit-scrollbar-track,

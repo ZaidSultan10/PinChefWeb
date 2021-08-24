@@ -5,6 +5,20 @@
 .mainFeed{
     margin-right: 1%;
 }
+.mainFeed__newPost__button{
+    position: fixed;
+    top: 100px;
+    left: 45%;
+    display: none;
+    z-index: 999;
+    width: 100px;
+    height: 30px;
+    border: 1px solid;
+    font-family: 'Montserrat' , 'sans-serif';
+    border-radius: 999px;
+    background-color: white;
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.472);
+}
 .mainFeed__header{
     display: flex;
     justify-content: space-between;
@@ -268,6 +282,9 @@ input[type='radio']:checked::after {
     height: 26px;
     transform: translateZ(5%);
     transition: 250ms;
+}
+.heart__icon > .a{
+    fill: red;
 }
 .comment{
     margin-left: 1.7rem;
