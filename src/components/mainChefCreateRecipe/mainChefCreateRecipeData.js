@@ -1,4 +1,4 @@
-const cuisines =  [
+const cuisinesList =  [
     {
         cuisine:'Afghani'
     },
@@ -411,5 +411,5 @@ const dietsList = [
 
 ]
 
-export {cuisines}
+export {cuisinesList}
 export {dietsList}

@@ -6,7 +6,7 @@ import { Button } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import Modal from 'react-modal'
 import './MainChefCreateRecipeModal.css'
-import { cuisines, dietsList } from './mainChefCreateRecipeData';
+import { cuisinesList, dietsList } from './mainChefCreateRecipeData';
 
 
 
@@ -24,6 +24,7 @@ const MainChefCreateRecipe = () => {
     const [difficultyLevel, setDifficultyLevel] = useState("");
     const [cuisines , setCuisines] = useState("")
     const [dietType, setDietType] = useState("")
+    const [imageUpload, setImageUpload ] = useState("")
 
 
     
@@ -62,12 +63,29 @@ const MainChefCreateRecipe = () => {
         case "dietType":
             setDietType(event.target.value);
             break;
+        case "imageUpload":
+            setImageUpload(event.target.value);
+            break;
         default:
             break;
         }
     };
     const handleSubmit = (event) => {
-        console.log(event);
+        const obj = {
+            foodName,
+            numberOfServing,
+            prepTime,
+            cookTime,
+            calories,
+            ingredients,
+            instructions,
+            requiredTools,
+            difficultyLevel,
+            cuisines,
+            dietType,
+            imageUpload
+          };
+        console.log(obj);
     };
     const openModal1 =() => {
         setModalIsOpen1(true)
@@ -112,7 +130,7 @@ const MainChefCreateRecipe = () => {
                     <CloseIcon onClick={openModal1}  className='post-close-icon' />
                 </div>
                 <div className='mainChefCreateRecipe__addImage'>
-                    <img src={AddImageIcon} alt='star' />
+                    <input type='file' multiple required name='imageUpload' value={imageUpload} onChange={handleChange} />
                 </div>
                 <div className='mainChefCreateRecipe__name'>
                     <h5>Food Name<span>*</span></h5>
@@ -122,7 +140,7 @@ const MainChefCreateRecipe = () => {
                     <h5>Cuisine Type<span>*</span></h5>
                     <select required name='cuisines' value={cuisines} onChange={handleChange} id='cuisine__type__option'>
                         {
-                            cuisines.map((cuisine) => (
+                            cuisinesList.map((cuisine) => (
                                 <option>{cuisine.cuisine}</option>
                             ))
                         }
