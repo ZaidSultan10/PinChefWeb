@@ -189,15 +189,15 @@ const MainChefCreateRecipe = () => {
                   <div className='input__options'>
                       <div className='input__easy'>
                           <input type="radio" id="easy" name="difficultyLevel" value={difficultyLevel} onChange={handleChange} />
-                          <label for="easy">Easy</label>
+                          <label htmlFor="easy">Easy</label>
                       </div>
                       <div className='input__medium'>
                           <input type="radio" id="medium" name="difficultyLevel" value={difficultyLevel} onChange={handleChange}/>
-                          <label for="medium">Medium</label>
+                          <label htmlFor="medium">Medium</label>
                       </div>
                       <div className='input__hard'>
                           <input type="radio" id="hard" name="difficultyLevel" value={difficultyLevel} onChange={handleChange}/>
-                          <label for="hard">Hard</label>
+                          <label htmlFor="hard">Hard</label>
                       </div>
                   </div>
                   
