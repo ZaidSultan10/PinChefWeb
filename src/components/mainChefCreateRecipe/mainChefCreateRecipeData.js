@@ -1,106 +1,4 @@
-const dateOfBirth = [ 
-    {
-    days : '1'
-},
-{
-    days : '2'
-},{
-    days : '3'
-},{
-    days : '4'
-},{
-    days : '5'
-},
-{
-    days : '6'
-},
-{
-    days : '7'
-},{
-    days : '8'
-},{
-    days : '9'
-},{
-    days : '10'
-},{
-    days : '11'
-},
-{
-    days : '12'
-},{
-    days : '13'
-},{
-    days : '14'
-},{
-    days : '15'
-},
-{
-    days : '16'
-},
-{
-    days : '17'
-},{
-    days : '18'
-},{
-    days : '19'
-},{
-    days : '20'
-},{
-    days : '21'
-},
-{
-    days : '22'
-},{
-    days : '23'
-},{
-    days : '24'
-},{
-    days : '25'
-},
-{
-    days : '26'
-},
-{
-    days : '27'
-},{
-    days : '28'
-},{
-    days : '29'
-},{
-    days : '30'
-},{
-    days : '31'
-}]
-
-const monthOfBirth = [
-    {
-        month:'January'
-    },{
-        month:'Feburary'
-    },{
-        month:'March'
-    },{
-        month:'April'
-    },{
-        month:'May'
-    },{
-        month:'June'
-    },{
-        month:'July'
-    },{
-        month:'August'
-    },{
-        month:'September'
-    },{
-        month:'October'
-    },{
-        month:'November'
-    },{
-        month:'December'
-    }
-]
-
-const cuisineList = [
+const cuisines =  [
     {
         cuisine:'Afghani'
     },
@@ -482,158 +380,36 @@ const cuisineList = [
 
 ]
 
-const positionsList = [
+const dietsList = [
     {
-        position : 'Boucher'
+        diet: 'Dairy Free'
     },
     {
-        position : 'Butcher Chef'
+        diet: 'Gluten Free'
     },
     {
-        position : 'Chef de Cuisine'
+        diet: 'Halal'
     },
     {
-        position : 'Chef de Partie'
+        diet: 'Kosher'
     },
     {
-        position : 'Chef de Tourant'
+        diet: 'Nut Free'
     },
     {
-        position : 'Chef de Tournant'
+        diet: 'Organic'
     },
     {
-        position : 'Chef-Owner'
+        diet: 'Shellfish Free'
     },
     {
-        position : 'Commis'
+        diet: 'Vegan'
     },
     {
-        position : 'Commis Chef'
-    },
-    {
-        position : 'Deputy Chef'
-    },
-    {
-        position : 'Entremetier'
-    },
-    {
-        position : 'Executive Chef'
-    },
-    {
-        position : 'Fish Chef'
-    },
-    {
-        position : 'Friturier'
-    },
-    {
-        position : 'Fry Chef'
-    },
-    {
-        position : 'Garde Manger'
-    },
-    {
-        position : 'Grill Chef'
-    },
-    {
-        position : 'Grillardin'
-    },
-    {
-        position : 'Group Chef'
-    },
-    {
-        position : 'Head Chef'
-    },
-    {
-        position : 'Junior Chef'
-    },
-    {
-        position : 'Kitchen Assistant'
-    },
-    {
-        position : 'Kitchen Hand'
-    },
-    {
-        position : 'Kitchen Porter'
-    },
-    {
-        position : 'Kithchen Porter'
-    },
-    {
-        position : 'Legumier'
-    },
-    {
-        position : 'Line Cook'
-    },
-    {
-        position : 'Meat Chef'
-    },
-    {
-        position : 'Pantry Chef'
-    },
-    {
-        position : 'Pastry Chef'
-    },
-    {
-        position : 'Pattisier'
-    },
-    {
-        position : 'Poissonnier'
-    },
-    {
-        position : 'Potager'
-    },
-    {
-        position : 'Prep Cook'
-    },
-    {
-        position : 'Relief Cook'
-    },
-    {
-        position : 'Roast Chef'
-    },
-    {
-        position : 'Rotisseur'
-    },
-    {
-        position : 'Roundsman'
-    },
-    {
-        position : 'Sauce chef'
-    },
-    {
-        position : 'Saucier'
-    },
-    {
-        position : 'Sauté Chef'
-    },
-    {
-        position : 'Second Chef'
-    },
-    {
-        position : 'Senior Chef'
-    },
-    {
-        position : 'Short Order Cook'
-    },
-    {
-        position : 'Sous Chef'
-    },
-    {
-        position : 'Station Chef'
-    },
-    {
-        position : 'Swing Cook'
-    },
-    {
-        position : 'Under Chef'
-    },
-    {
-        position : 'Vegetable Chef'
+        diet: 'Vegetarian'
     }
+
 ]
 
-
-export {dateOfBirth}
-export {monthOfBirth}
-export {cuisineList}
-export {positionsList}
+export {cuisines}
+export {dietsList}

@@ -209,7 +209,8 @@
 .mainChefProfileArea__min>input,
 .mainChefProfileArea__range>input,
 .mainChefProfileArea__hourly>input,
-.mainChefProfileArea__areas > input{
+.mainChefProfileArea__areas > input,
+.mainChefProfileArea__year > input{
     border: 3px solid #d9d9d9;
     font-family: 'Montserrat','sans-serif';
     border-radius: 8px;
@@ -221,7 +222,7 @@
 }
 .mainChefProfileArea__date > select,
 .mainChefProfileArea__month > select,
-.mainChefProfileArea__year > select,
+.mainChefProfileArea__position > select,
 .mainChefProfileArea__cuisine>select{
     border: 3px solid #d9d9d9;
     font-family: 'Montserrat','sans-serif';

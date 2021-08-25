@@ -128,7 +128,7 @@ const MainChefCreateMasterclass = () => {
                 </select>
             </div>
             <div className='mainChefCreateMasterclass__duration'>
-                <h5>Class Duation<span>*</span></h5>
+                <h5>Class Duration<span>*</span></h5>
                 <select id='diet__type__option'>
                     <option>30min</option>
                     <option>60min</option>
