@@ -60,8 +60,8 @@ const MainFeed = () => {
       margin:'0px',
       width : '55%',
       height:'35%',
-      cursor:'pointer'
-      
+      cursor:'pointer',
+
     }
   }
 
@@ -95,23 +95,13 @@ const closeModal2 = () => {
 
   return (
     <>
-    <Modal 
-    isOpen={modalIsOpen}
-    onRequestClose={closeModal}
     
-    className='myModal1HomePage'
-    contentLabel="Example Modal">
-          <div className='modal-options'>
-            <h5>Follow Chef</h5>
-            <h5>Add To Favorites</h5>
-            <h5 onClick={openModal1}>Report</h5>
-          </div>
-    </Modal>
     <Modal 
     isOpen={modalIsOpen1}
     onRequestClose={closeModal1}
     style={customStyles1}
-    contentLabel="Example Modal">
+    contentLabel="Example Modal"
+    >
           <div className='modal-options-report'>
             <div className='report-heading'>
                 <h5>Report</h5>
@@ -168,6 +158,18 @@ const closeModal2 = () => {
               }} >Matt Wilson</h3>
             <MoreHorizOutlinedIcon onClick={openModal} className="moreHoriz" />
           </div>
+            <Modal 
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            
+            className='myModal1HomePage'
+            contentLabel="Example Modal">
+                  <div className='modal-options'>
+                    <h5>Follow Chef</h5>
+                    <h5>Add To Favorites</h5>
+                    <h5 onClick={openModal1}>Report</h5>
+                  </div>
+            </Modal>
         </div>
         <div className="mainFeed__location">
           <div className="mainFeed__container__location">

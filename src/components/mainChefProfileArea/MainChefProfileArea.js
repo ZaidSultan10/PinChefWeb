@@ -1,24 +1,26 @@
-import React, { useState } from 'react'
-import './MainChefProfileArea.css'
-import ProfileAvatar from '../../assets/svg/Profile-image.svg'
-import { Button } from '@material-ui/core'
-import InfoIcon from '../../assets/svg/info-icon-red.svg'
+import React, { useState } from "react";
+import "./MainChefProfileArea.css";
+import ProfileAvatar from "../../assets/svg/Profile-image.svg";
+import { Button } from "@material-ui/core";
+import InfoIcon from "../../assets/svg/info-icon-red.svg";
 //import { useHistory } from 'react-router-dom'
-import {ReactComponent as GoodJobIcon} from '../../assets/svg-for-user-profile/Good-job-icon.svg'
-import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input'
-import { Slider } from '@material-ui/core'
-import {ReactComponent as ChefInfoIcon} from '../../assets/svg-for-user-profile/Chef-info.svg'
-import {ReactComponent as PersonalInfoIcon} from '../../assets/svg-for-user-profile/Personal-info.svg'
-import {ReactComponent as ServiceIcon} from '../../assets/svg-for-user-profile/Service.svg'
-import {cuisineList, dateOfBirth, monthOfBirth, positionsList} from './mainChefProfileAreaData'
 
-
+import { ReactComponent as GoodJobIcon } from "../../assets/svg-for-user-profile/Good-job-icon.svg";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
+import { Slider } from "@material-ui/core";
+import { ReactComponent as ChefInfoIcon } from "../../assets/svg-for-user-profile/Chef-info.svg";
+import { ReactComponent as PersonalInfoIcon } from "../../assets/svg-for-user-profile/Personal-info.svg";
+import { ReactComponent as ServiceIcon } from "../../assets/svg-for-user-profile/Service.svg";
+import {
+  cuisineList,
+  dateOfBirth,
+  monthOfBirth,
+  positionsList
+} from "./mainChefProfileAreaData";
 
 const MainChefProfileArea = () => {
-
-    //const history=useHistory()
-
+  //const history=useHistory()
     const [heading,setHeading] = useState('Tell us about yourself')
     const [value,setValue] = useState('')
     
@@ -43,7 +45,6 @@ const MainChefProfileArea = () => {
     const [dobMonth,setDobMonth] = useState("")
     const [dobYear,setDobYear] = useState("")
     const [addCuisines , setAddCuisines] = useState("")
-
 
     const handleChange = (event) => {
         switch (event.target.name) {
@@ -117,39 +118,61 @@ const MainChefProfileArea = () => {
             break;
         }
     };
-    const handleSubmit = (event) => {
-        
-         console.log(event);
+
+  const handleSubmit = (event) => {
+    const obj = {
+      firstName,
+      lastName,
+      nickName,
+      gender,
+      language,
+      shortAd,
+      position,
+      backgroundInfo,
+      interested,
+      address,
+      provideService,
+      serviceDelivery,
+      acceptPayment,
+      minimumPurchase,
+      min,
+      max,
+      hourlyRate,
+      dobDate,
+      dobMonth,
+      dobYear,
+      addCuisines
     };
+    console.log(obj);
+  };
 
-    const interests = [
-        {
-            job:'Full time Job'
-        },
-        {
-            job:'Part time Job'
-        },
-        {
-            job:'Temporary'
-        },
-        {
-            job:'Freelance'
-        },
-        {
-            job:'Internship'
-        },
-        {
-            job:'Use as Social Media'
-        }
-    ]
+  const interests = [
+    {
+      job: "Full time Job",
+    },
+    {
+      job: "Part time Job",
+    },
+    {
+      job: "Temporary",
+    },
+    {
+      job: "Freelance",
+    },
+    {
+      job: "Internship",
+    },
+    {
+      job: "Use as Social Media",
+    },
+  ];
 
 
-    return (
-        <div className='mainChefProfileArea'>
-            <div className='mainChefProfileArea__heading'>
-                    <h5>{heading}</h5>       
-            </div>
-            
+  return (
+    <div className="mainChefProfileArea">
+      <div className="mainChefProfileArea__heading">
+        <h5>{heading}</h5>
+      </div>
             {
                 heading === 'Tell us about yourself' ? (
                 <> 
@@ -400,17 +423,17 @@ const MainChefProfileArea = () => {
                     <div className='mainChefProfileArea__button'>
                         
                         <Button onClick={() => setHeading('Tell about your Profession')} className='button-back2'>Back</Button>
-                        <Button onClick={ handleSubmit /*() =>{
-                            history.push('/chef/home/feed')
-                        }*/} className='button-next3'>Finish</Button>
-                    
+                        <Button onClick={ handleSubmit}
+                        className="button-next3"
+                        /*() =>{
+                        history.push('/chef/home/feed')*/>
+                            Finish
+                        </Button> 
                     </div>
                 </>
-                )
-            }
-            
-        </div>
-    )
-}
+      )}
+    </div>
+  );
+};
 
-export default MainChefProfileArea
+export default MainChefProfileArea;

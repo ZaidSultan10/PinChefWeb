@@ -138,25 +138,35 @@ function App({ currentUser }) {
             }
           />
           {currentUser && currentUser.status === "active" ? (
-            <>
-              <Route path="/home" exact component={HomeFeed} />
-              <Route
-                path="/chef/createprofile"
-                exact
-                component={ChefMainProfile}
-              />
-              <Route
-                path="/user/createprofile"
-                exact
-                component={UserProfileSet}
-              />
-            </>
+            <Route path="/home" exact component={HomeFeed} />
           ) : currentUser && currentUser.status === "pending" ? (
             <Redirect to="/verification" />
           ) : (
             <Redirect to="/signup" />
           )}
 
+          <Route
+            path="/chef/createprofile"
+            exact
+            render={() =>
+              currentUser && currentUser.userType === "chef" ? (
+                <ChefMainProfile />
+              ) : (
+                <Redirect to="/user/createprofile" />
+              )
+            }
+          />
+          <Route
+            path="/user/createprofile"
+            exact
+            render={() =>
+              currentUser && currentUser.userType === "user" ? (
+                <UserProfileSet />
+              ) : (
+                <Redirect to="/chef/createprofile" />
+              )
+            }
+          />
           <Route path="/home/recipe" exact component={HomeRecipe} />
           <Route
             path="/home/masterclass"
