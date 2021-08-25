@@ -18,7 +18,9 @@ const MainChefCreatePost = () => {
    // const [postImage, setPostImage] = useState("");
     const [description, setDescription] = useState("");
     const [addLocation, setAddLocation] = useState("");
-  const handleChange = (event) => {
+    const [imageUpload, setImageUpload] = useState('')
+
+    const handleChange = (event) => {
     switch (event.target.name) {
       case "description":
         setDescription(event.target.value);
@@ -26,12 +28,20 @@ const MainChefCreatePost = () => {
       case "addLocation":
         setAddLocation(event.target.value);
         break;
+      case "imageUpload":
+        setImageUpload(event.target.value);
+        break;
       default:
         break;
     }
   };
   const handleSubmit = (event) => {
-     console.log(event);
+      const obj = {
+        description,
+        addLocation,
+        imageUpload
+      };
+     console.log(obj);
   };
   
     const openModal1 =() => {
@@ -75,7 +85,7 @@ const MainChefCreatePost = () => {
                     <CloseIcon onClick={openModal1} className='post-close-icon' />
                 </div>
                 <div className='mainChefCreatePost__addImage'>
-                    <img src={AddIcon} alt='star' />
+                   <input type='file' name='imageUpload' multiple required value={imageUpload} onChange={handleChange} />
                 </div>
                 <div className='mainChefCreatePost__addDesc'>
                     <textarea required rows='10' name='description' value={description} onChange={handleChange} placeholder='Enter you description' />

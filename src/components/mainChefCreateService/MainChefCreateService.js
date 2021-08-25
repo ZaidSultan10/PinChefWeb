@@ -15,6 +15,11 @@ const MainChefCreateService = () => {
     const [modalIsOpen,setModalIsOpen] = useState(false)
     const [modalIsOpen1,setModalIsOpen1] = useState(false)
 
+    const [imageUpload, setImageUpload] = useState('')
+    const [serviceType,setServiceType] = useState('')
+    
+
+
     const openModal =() => {
         setModalIsOpen(true)
     }
@@ -78,7 +83,7 @@ const MainChefCreateService = () => {
                     <CloseIcon onClick={openModal1} className='post-close-icon' />
                 </div>
                 <div className='mainChefCreateService__addImage'>
-                    <img src={AddImageIcon} alt='star' />
+                   <input multiple required name='imageUploader' />
                 </div>
                 <div onClick={openModal} className='mainChefCreateService__cuisine'>
                     <h5>Service Type</h5>

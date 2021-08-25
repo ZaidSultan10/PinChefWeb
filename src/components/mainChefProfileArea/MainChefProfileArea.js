@@ -22,7 +22,7 @@ import {
 const MainChefProfileArea = () => {
   //const history=useHistory()
     const [heading,setHeading] = useState('Tell us about yourself')
-    const [value,setValue] = useState('')
+    const [phone,setPhone] = useState('')
     
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
@@ -108,9 +108,6 @@ const MainChefProfileArea = () => {
         case "dobYear":
             setDobYear(event.target.value);
             break;
-        case "phoneNumber":
-            setValue(event.target.value);
-            break;
         case "cuisines":
             setAddCuisines(event.target.value);
             break;
@@ -141,6 +138,7 @@ const MainChefProfileArea = () => {
       dobDate,
       dobMonth,
       dobYear,
+      phone,
       addCuisines
     };
     console.log(obj);
@@ -237,7 +235,7 @@ const MainChefProfileArea = () => {
                         <div className='mainChefProfileArea__phone'>
                             <h5>Phone Number<span>*</span></h5>
                             <PhoneInput placeholder='XXX XXX XXXX'
-                            value={value}
+                            value={phone}
                             name='phoneNumber'
                             onChange={handleChange} required />
                         </div>
