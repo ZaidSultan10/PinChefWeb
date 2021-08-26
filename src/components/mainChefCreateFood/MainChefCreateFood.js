@@ -4,10 +4,11 @@ import AddImageIcon from '../../assets/svg/Add-image-video.svg'
 import CloseIcon from '@material-ui/icons/Close';
 import { Button, FormControl, Input, InputLabel } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
-import Modal from 'react-modal'
-import { SearchOutlined } from '@material-ui/icons';
-import cuisineDatas from './mainChefCuisineList';
+//import Modal from 'react-modal'
+//import { SearchOutlined } from '@material-ui/icons';
+//import cuisineDatas from './mainChefCuisineList';
 import './MainChefCreateFoodModal.css'
+import { cuisinesList, dietsList } from '../mainChefCreateRecipe/mainChefCreateRecipeData';
 
 
 
@@ -18,6 +19,74 @@ const MainChefCreateFood = () => {
     const [modalIsOpen,setModalIsOpen] = useState(false)
     const [modalIsOpen1,setModalIsOpen1] = useState(false)
     const [modalIsOpen2,setModalIsOpen2] = useState(false)
+    const [imageUpload, setImageUpload] = useState("")
+    const [foodName, setFoodName] = useState("")
+    const [cuisines, setCuisines] = useState("")
+    const [dietType,setDietType] = useState("")
+    const [description, setDescription] = useState("")
+    const [calories,setCalories] = useState("")
+    const [serviceType, setServiceType] = useState("")
+    const [price,setPrice] = useState("")
+    const [availableDeliveryType,setAvailableDeliveryType] = useState("")
+    const [deliveryFee,setDeliveryFee] = useState("")
+    const [shippingFee,setShippingFee] = useState("")
+
+
+    const handleChange = (event) => {
+        switch (event.target.name) {
+          case "foodName":
+            setFoodName(event.target.value);
+            break;
+          case "cuisine":
+            setCuisines(event.target.value);
+            break;
+          case "imageUpload":
+            setImageUpload(event.target.value);
+            break;
+          case "dietType":
+            setDietType(event.target.value);
+            break;
+          case "description":
+            setDescription(event.target.value);
+            break;
+          case "calories":
+            setCalories(event.target.value);
+            break;
+          case "serviceDays":
+            setServiceType(event.target.value);
+            break;
+          case "price":
+            setPrice(event.target.value);
+            break;
+          case "availableDelivery":
+            setAvailableDeliveryType(event.target.value);
+            break;
+          case "deliveryFee":
+            setDeliveryFee(event.target.value);
+            break;
+          case "shippingFee":
+            setShippingFee(event.target.value);
+            break;
+          default:
+            break;
+        }
+      };
+      const handleSubmit = (event) => {
+          const obj = {
+            foodName,
+            cuisines,
+            imageUpload,
+            dietType,
+            description,
+            calories,
+            serviceType,
+            price,
+            availableDeliveryType,
+            deliveryFee,
+            shippingFee
+          };
+         console.log(obj);
+      };
 
 
     const openModal = () => {
@@ -62,7 +131,7 @@ const MainChefCreateFood = () => {
 
     return (
         <>
-        <Modal isOpen={modalIsOpen1}
+        { /*<Modal isOpen={modalIsOpen1}
             onRequestClose={closeModal1}
             
             className='mypostmodal1'
@@ -141,7 +210,7 @@ const MainChefCreateFood = () => {
                         
                     </div>
                 </div>
-            </Modal>
+                    </Modal> */}
         <div className='mainChefCreateFood'>
             <div className='mainChefCreateFood__container'>
                 <div className='mainChefCreateFood__heading'>
@@ -149,57 +218,63 @@ const MainChefCreateFood = () => {
                     <CloseIcon onClick={openModal1} className='post-close-icon' />
                 </div>
                 <div className='mainChefCreateFood__addImage'>
-                    <img src={AddImageIcon} alt='star' />
+                    <input type='file' required multiple name='imageUpload' value={imageUpload} onChange={handleChange} />
                 </div>
                 <div className='mainChefCreateFood__name'>
                     <h5>Food Item Name</h5>
-                    <input placeholder='Enter Food Title' />
+                    <input placeholder='Enter Food Title' required name='foodName' value={foodName} onChange={handleChange} />
                 </div>
                 <div onClick={openModal} className='mainChefCreateFood__cuisine'>
                     <h5>Cuisine Type</h5>
-                    <select disabled id='cuisine__type__option'>
-                        <option>Cuisine Specialities</option>
-                        
+                    <select required name='cuisine' value={cuisines} onChange={handleChange}  id='cuisine__type__option'>
+                        {
+                            cuisinesList.map((cuisine) => (
+                                <option>{cuisine.cuisine}</option>
+                            ))
+                        }
                     </select>
                 </div>
                 <div className='mainChefCreateFood__diet'>
                     <h5>Diet Type</h5>
-                    <select id='diet__type__option'>
-                        <option>Vegan</option>
-                        <option>Vegetarian</option>
-                        <option>Halal</option>
-                        <option>Kashar</option>
-                        <option>Meat</option>
+                    <select required name='dietType' value={dietType} onChange={handleChange} id='diet__type__option'>
+                        {
+                            dietsList.map((diet) => (
+                                <option>{diet.diet}</option>
+                            ))
+                        }
                     </select>
                 </div>
                 <div className='mainChefCreateFood__ingredients'>
                     <h5>Description & Ingredients</h5>
-                    <textarea rows='7' placeholder='Write all the ingredients' />
+                    <textarea required name='description' value={description} onChange={handleChange} rows='7' placeholder='Write all the ingredients' />
                 </div>
                 <div className='mainChefCreateFood__calory'>
                     <h5>Calories</h5>
-                    <input placeholder='363' />
+                    <input required name='calories' value={calories} onChange={handleChange} placeholder='363' />
                 </div>
                 <div onClick={openModal2} className='mainChefCreateFood__cuisine'>
                     <h5>Service Days and Hours<span>*</span></h5>
-                    <select id='service__type__option'>
-                        <option>Select an Option</option>
-                        
+                    <select required name='serviceDays' value={serviceType} onChange={handleChange} id='service__type__option'>
+                        {
+                            serviceDays.map((service) => (
+                                <option>{service.day}</option>
+                            ))
+                        }
                     </select>
                 </div>
                 <div className='mainChefCreateFood__name'>
                     <h5>Price</h5>
-                    <input placeholder='Price..' />
+                    <input required name='price' value={price} onChange={handleChange} placeholder='Price..' />
                 </div>
                 <div className='mainChefCreateFood__level'>
                   <h5>Available for Service<span>*</span></h5>
                   <div className='input__options__food'>
                       <div className='input__easy__food'>
-                          <input type="radio" id="takeaway" name="level" value="takeaway" />
+                          <input type="radio" id="takeaway" name="availableDelivery" value={availableDeliveryType} onChange={handleChange} />
                           <label for="takeaway">Takeaway</label>
                       </div>
                       <div className='input__medium__food'>
-                          <input type="radio" id="delivery" name="level" value="delivery"/>
+                          <input type="radio" id="delivery" name="availableDelivery" value={availableDeliveryType} onChange={handleChange}/>
                           <label for="delivery">Delivery</label>
                           <div className='delivery-fee'>
                             <h5>Fee:</h5>
@@ -207,13 +282,13 @@ const MainChefCreateFood = () => {
                             <form>
                                 <FormControl>
                                     <InputLabel>Enter Delivery Fee</InputLabel>
-                                    <Input />
+                                    <Input name='deliveryFee' value={deliveryFee} onChange={handleChange} />
                                 </FormControl>
                             </form>
                           </div>
                       </div>
                       <div className='input__hard__food'>
-                          <input type="radio" id="shipping" name="level" value="shipping"/>
+                          <input type="radio" id="shipping" name="availableDelivery" value={availableDeliveryType} onChange={handleChange}/>
                           <label for="shipping">Shipping</label>
                           <div className='shipping-fee'>
                             <h5>Fee:</h5>
@@ -221,13 +296,16 @@ const MainChefCreateFood = () => {
                             <form>
                                 <FormControl>
                                     <InputLabel>Enter Delivery Fee</InputLabel>
-                                    <Input />
+                                    <Input name='shippingFee' value={shippingFee} onChange={handleChange} />
                                 </FormControl>
                             </form>
                           </div>
                       </div>
                   </div>
-                  
+                  <div className='mainChefCreateFood__buttons'>
+                      <button>Back</button>
+                      <button onClick={handleSubmit}>Post</button>
+                  </div>
                 </div>
             </div>
         </div>
