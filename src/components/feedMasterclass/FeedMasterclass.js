@@ -7,17 +7,22 @@ import './FeedMasterclass.css'
 
 const FeedMasterclass = () => {
     return (
-        <div className='feedClass'>
-            <div className='feedClass__container'>
-                <div className='feedClass__left'>
+        <div className='feedmasterClass'>
+            <div className='feedmasterClass__container'>
+                <div className='feedmasterClass__left'>
                     <GoogleAds2 adsProp={true} />
                 </div>
-                <div className='feedClass__center'>
-                    <MainFeedFilters />
-                    <MainFeedMasterclass />
-                    <MainFeedMasterclass />
+                <div className='feedmasterClass__center'>
+                    <div className='feedmasterClass__filter'>
+                        <MainFeedFilters />
+                    </div>
+                    <div className='feedmasterClass__content'>
+                        <MainFeedMasterclass />
+                        <MainFeedMasterclass />
+                    </div>
+                    
                 </div>
-                <div className='feedClass__right'>
+                <div className='feedmasterClass__right'>
                     <ChefAds />
                 </div>
             </div>

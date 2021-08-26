@@ -61,14 +61,13 @@
   margin-left: 0.7rem;
 }
  .diff__by{
-  margin-bottom: 5%;
+  margin-bottom: 14%;
   margin-left: 5%;
+  font-size: 14px !important;
   font-weight: 700 !important;
-}
-
-.diff__by{
   margin-top: 4%;
 }
+
 .googleAds__filter__options{
   display: grid;
   grid-template-columns: 4fr;

@@ -369,7 +369,7 @@ p{
 }
 
 
-@media only screen and (max-width:1000px){
+/*@media only screen and (max-width:1000px){
     /*.myModal1HomePage{
         width: 30%;
         height: 25%;
@@ -381,7 +381,7 @@ p{
         border-radius: 16px;
         border: 1px solid;
         background-color: white;
-    }*/
+    }
 }
 
 @media only screen and (max-width:800px){
@@ -431,7 +431,7 @@ p{
         border-radius: 16px;
         border: 1px solid;
         background-color: white;
-    }*/
+    }
     
     .mainFeed__container__location >h3{
         width: 17px;
@@ -475,7 +475,7 @@ p{
         border-radius: 16px;
         border: 1px solid;
         background-color: white;
-    }*/
+    }
     
     .modal-options-report > .report-message > p{
         font-size: 16px !important;
@@ -495,7 +495,7 @@ p{
         border-radius: 16px;
         border: 1px solid;
         background-color: white;
-    }*/
+    }
     .modal-options >h5{
         font-size: 16px !important;
     }
@@ -512,7 +512,7 @@ p{
         border-radius: 16px;
         border: 1px solid;
         background-color: white;
-    }*/
+    }
 }
 @media only screen and (max-width:451px){
     /*.myModal1HomePage{
@@ -526,7 +526,7 @@ p{
         border-radius: 16px;
         border: 1px solid;
         background-color: white;
-    }*/
+    }
     .modal-options >h5{
         font-size: 14px !important;
     }
@@ -552,7 +552,7 @@ p{
         border-radius: 16px;
         border: 1px solid;
         background-color: white;
-    }*/
+    }
 }
 @media only screen and (max-width:325px){
     .mainFeed__userName > h3{
@@ -904,7 +904,7 @@ p{
         font-size: 22px !important;
     }   
   }
-*/
+
   @media only screen 
   and (min-width: 1668px) 
   and (max-height: 2388px) 
@@ -972,4 +972,4 @@ p{
     .mainFeed__paragraph > p{
         font-size: 36px !important;
     } 
-  }
+  }*/

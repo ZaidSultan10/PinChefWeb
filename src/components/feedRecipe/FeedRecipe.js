@@ -14,16 +14,20 @@ const FeedRecipe = ({chefFilterProp}) => {
                     <GoogleAds filterSearchProp={true} />
                 </div>
                 <div className='feedRecipe__center'>
-                    {
-                        chefFilterProp && (
-                            <>
-                                <ChefMainFilters />
-                            </>
-                        )
-                    }
-                    <MainFeedFilters />
-                    <MainFeedRecipe />
-                    <MainFeedRecipe/>
+                    <div className='feedRecipe__filters'>
+                        {
+                            chefFilterProp && (
+                                <>
+                                    <ChefMainFilters />
+                                </>
+                            )
+                        }
+                        <MainFeedFilters />
+                    </div>
+                    <div className='feedRecipe__content'>
+                        <MainFeedRecipe />
+                        <MainFeedRecipe/>
+                    </div>
                 </div>
                 <div className='feedRecipe__right'>
                     <ChefAds />

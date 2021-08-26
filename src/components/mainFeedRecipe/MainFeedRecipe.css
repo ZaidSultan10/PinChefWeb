@@ -1,3 +1,6 @@
+.mainFeedRecipe{
+    margin-right: 1.4%;
+}
 .mainFeedRecipe__container{
     border: 2px solid white;
     border-radius: 16px;
@@ -166,7 +169,7 @@ p{
 }
 
 
-@media only screen and (max-width:800px){
+/*@media only screen and (max-width:800px){
     .mainFeedRecipe__userName > h3{
         font-size: 12px !important;
         margin-left: 1.5%;
@@ -542,7 +545,7 @@ p{
     .mainFeedRecipe__paragraph > p{
         font-size: 26px !important;
     }
-  }*/
+  }
   @media only screen 
   and (min-width: 1366px) 
   and (max-height: 1024px) 
@@ -681,4 +684,4 @@ p{
     .mainFeedRecipe__paragraph > p{
         font-size: 36px !important;
     } 
-  }
+  }*/

@@ -1,26 +1,37 @@
 .feedRecipe{
     display: grid;
     grid-template-columns: repeat(1,minmax(0,1fr));
-    width: 85%;
-    height: 100%;
+    width: 1000px;
     margin: 0 auto;
-    max-width: 1400px;
-    margin-top: 3.5%;
-    padding-bottom: 6%;
+    max-width: 1200px;
+    padding-top: 50px;
 }
 .feedRecipe__container{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 2.5fr 1fr;
     justify-content: center;
     grid-gap:1%;
-    padding-top: 65px;
-    padding-bottom: 0px;
-    height: 94vh;
+    height: calc(100vh - 97px);
 }
 .feedRecipe__left,.feedRecipe__right,.feedRecipe__center{
     width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+.feedRecipe__left,.feedRecipe__right{
+    padding-top: 20px;
+}
+.feedRecipe__filters{
+    position: fixed;
+    z-index: 999;
+    width: 533px;
+    margin-top: 0.2px;
+    box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.794);
+    background-color: #fffefe;
+    height: 40px;
+}
+.feedRecipe__content{
+    padding-top: 30px;
 }
 .feedRecipe__left::-webkit-scrollbar-track,
 .feedRecipe__center::-webkit-scrollbar-track,
@@ -28,7 +39,7 @@
       box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
       border-radius: 10px;
       background-color: #F5F5F5;
-      margin-top: 18px;
+      margin-top: 28px;
   }
   
   .feedRecipe__left::-webkit-scrollbar,
@@ -51,10 +62,16 @@
     font-size: 16px;
 }
 @media screen and (max-width:1000px){
+    .feedRecipe{
+        width: 580px;
+    }
     .feedRecipe__container{
         display: grid;
-        padding-bottom: 50px;
         grid-template-columns: repeat(1,minmax(0,1fr));
+        height: calc(100vh - 107px);
+    }
+    .feedRecipe__filters{
+        width: 574px;
     }
     .feedRecipe__left,.feedRecipe__right{
         display: none;
@@ -88,10 +105,27 @@
     }
     .feedRecipe__container{
         display: grid;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
+    .feedRecipe__filters{
+        width: 100%;
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.794);
+    }
 }
-@media only screen 
+
+@media only screen and (min-width:1350px){
+    .feedRecipe__filters{
+        height: 50px !important;
+    }
+    .feedRecipe__content{
+        padding-top: 38px;
+    }
+}
+/*@media only screen 
   and (min-width: 1024px) 
   and (max-height: 1366px) 
   and (-webkit-min-device-pixel-ratio: 1.5)
@@ -116,4 +150,4 @@
     .feedRecipe__left,.feedRecipe__right{
         display: none;
     }
-}
+}*/
