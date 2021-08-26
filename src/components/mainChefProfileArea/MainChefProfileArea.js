@@ -18,12 +18,14 @@ import {
   monthOfBirth,
   positionsList,
 } from "./mainChefProfileAreaData";
+import { connect } from "react-redux";
+import { createUserProfileStart } from "../../redux/User/UserAction";
 
-const MainChefProfileArea = () => {
+const MainChefProfileArea = ({ createUserProfileStart }) => {
   //const history=useHistory()
   const [heading, setHeading] = useState("Tell us about yourself");
   const [phone, setPhone] = useState("");
-
+  const [imgg, setImgg] = useState(null);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [nickName, setNickName] = useState("");
@@ -111,6 +113,10 @@ const MainChefProfileArea = () => {
       case "cuisines":
         setAddCuisines(event.target.value);
         break;
+      case "imgg":
+        // console.log(getUrl());
+        setImgg(event.target.files[0]);
+        break;
       default:
         break;
     }
@@ -140,8 +146,10 @@ const MainChefProfileArea = () => {
       dobYear,
       phone,
       addCuisines,
+      imgg,
     };
-    console.log(obj);
+    // console.log(obj);
+    createUserProfileStart(obj);
   };
 
   const interests = [
@@ -181,6 +189,15 @@ const MainChefProfileArea = () => {
           <div className="mainChefProfileArea__top">
             <img src={ProfileAvatar} alt="star" />
           </div>
+
+          <input
+            type="file"
+            name="imgg"
+            id="input_image"
+            alt="submit"
+            accept=".jpg, .jpeg, .png"
+            onChange={handleChange}
+          />
           <div className="mainChefProfileArea__namearea">
             <div className="mainChefProfileArea__topLeft">
               <h5>
@@ -247,7 +264,7 @@ const MainChefProfileArea = () => {
                   id="date__type__option"
                 >
                   {dateOfBirth.map((date) => (
-                    <option>{date.days}</option>
+                    <option key={date}>{date.days}</option>
                   ))}
                 </select>
               </div>
@@ -260,7 +277,7 @@ const MainChefProfileArea = () => {
                   id="date__type__option"
                 >
                   {monthOfBirth.map((month) => (
-                    <option>{month.month}</option>
+                    <option key={month}>{month.month}</option>
                   ))}
                 </select>
               </div>
@@ -283,10 +300,9 @@ const MainChefProfileArea = () => {
               </h5>
               <PhoneInput
                 placeholder="XXX XXX XXXX"
-                // value={phoneNumber}
+                value={phone}
                 name="phoneNumber"
-                // onChange={setPhoneNumber}
-                onChange={handleChange}
+                onChange={setPhone}
                 required
               />
             </div>
@@ -389,7 +405,7 @@ const MainChefProfileArea = () => {
                     value={interested}
                     onChange={handleChange}
                   />
-                  <label for="selected">{interest.job}</label>
+                  <label htmlhtmlFor="selected">{interest.job}</label>
                 </div>
               ))}
             </div>
@@ -442,7 +458,7 @@ const MainChefProfileArea = () => {
                   value={provideService}
                   onChange={handleChange}
                 />
-                <label for="cook">Cook and Deliver</label>
+                <label htmlFor="cook">Cook and Deliver</label>
               </div>
               <div className="input__easy__serve">
                 <input
@@ -452,7 +468,7 @@ const MainChefProfileArea = () => {
                   value={provideService}
                   onChange={handleChange}
                 />
-                <label for="ship">Cook and Ship</label>
+                <label htmlFor="ship">Cook and Ship</label>
               </div>
               <div className="input__easy__serve">
                 <input
@@ -462,7 +478,7 @@ const MainChefProfileArea = () => {
                   value={provideService}
                   onChange={handleChange}
                 />
-                <label for="pick">Cook and pick up/Takeaway</label>
+                <label htmlFor="pick">Cook and pick up/Takeaway</label>
               </div>
               <div className="input__easy__serve">
                 <input
@@ -472,7 +488,7 @@ const MainChefProfileArea = () => {
                   value={provideService}
                   onChange={handleChange}
                 />
-                <label for="go">Go to guest address and cook</label>
+                <label htmlFor="go">Go to guest address and cook</label>
               </div>
               <div className="input__easy__serve">
                 <input
@@ -482,7 +498,7 @@ const MainChefProfileArea = () => {
                   value={provideService}
                   onChange={handleChange}
                 />
-                <label for="host">Host guests and cook</label>
+                <label htmlFor="host">Host guests and cook</label>
               </div>
               <div className="input__easy__serve">
                 <input
@@ -492,7 +508,7 @@ const MainChefProfileArea = () => {
                   value={provideService}
                   onChange={handleChange}
                 />
-                <label for="live">Cook live with chef</label>
+                <label htmlFor="live">Cook live with chef</label>
               </div>
             </div>
           </div>
@@ -526,7 +542,7 @@ const MainChefProfileArea = () => {
                 value={acceptPayment}
                 onChange={handleChange}
               />
-              <label for="stripe">Stripe</label>
+              <label htmlFor="stripe">Stripe</label>
             </div>
             <div className="input__easy__serve">
               <input
@@ -536,7 +552,7 @@ const MainChefProfileArea = () => {
                 value={acceptPayment}
                 onChange={handleChange}
               />
-              <label for="paypal">Paypal</label>
+              <label htmlFor="paypal">Paypal</label>
             </div>
             <div className="input__easy__serve">
               <input
@@ -546,7 +562,7 @@ const MainChefProfileArea = () => {
                 value={acceptPayment}
                 onChange={handleChange}
               />
-              <label for="cod">Cash on delivery</label>
+              <label htmlFor="cod">Cash on delivery</label>
             </div>
             <div className="input__easy__serve">
               <input
@@ -556,7 +572,7 @@ const MainChefProfileArea = () => {
                 value={acceptPayment}
                 onChange={handleChange}
               />
-              <label for="card">Credit card on delivery</label>
+              <label htmlFor="card">Credit card on delivery</label>
             </div>
           </div>
           <div className="mainChefProfileArea__min">
@@ -651,5 +667,8 @@ const MainChefProfileArea = () => {
     </div>
   );
 };
+const mapDispatchToProps = (dispatch) => ({
+  createUserProfileStart: (obj) => dispatch(createUserProfileStart(obj)),
+});
 
-export default MainChefProfileArea;
+export default connect(null, mapDispatchToProps)(MainChefProfileArea);

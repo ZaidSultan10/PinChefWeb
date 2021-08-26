@@ -6,6 +6,7 @@ const AuthSignIN = async ({ email, password, userType }) => {
       password,
       userType,
     });
+    console.log(user);
     if (user && user.status === 200) return { data: user.data, status: 200 };
   } catch (err) {
     return { err: err.response.data, status: err.response.status };

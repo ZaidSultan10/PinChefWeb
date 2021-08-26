@@ -27,6 +27,7 @@ import {
   verifyUser,
 } from "../../BackEndRoutes/verification";
 import { createProfile } from "../../BackEndRoutes/createProfile";
+import getUrl from "../../BackEndRoutes/s3url";
 
 export function* signup({ payload: { email, password, userType } }) {
   try {
@@ -96,13 +97,18 @@ export function* userVerification({ payload: { id, confirmationCode } }) {
 
 export function* createUserProfile({ payload }) {
   try {
-    // const user = yield createProfile(payload)
-    // if (user.status === 200) {
-    //   yield put(signUpSuccess(user.data));
-    // } else {
-    //   yield put(signUpFailure(user.err));
-    //   yield put(setSnackbar(true, "error", user.err));
-    // }
+    if (payload.imgg) {
+      const url = yield getUrl(payload.imgg);
+      payload.imgg = url;
+    }
+
+    const profile = yield createProfile(payload);
+    if (profile.status === 200) {
+      yield put(createUserProfileSuccess());
+    } else {
+      yield put(createUserProfilefailed(profile.err));
+      yield put(setSnackbar(true, "error", profile.err));
+    }
     console.log(payload);
   } catch (err) {
     yield put(createUserProfilefailed(err));

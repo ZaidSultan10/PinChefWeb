@@ -77,9 +77,8 @@ export const createUserProfileStart = (profile) => ({
   payload: profile,
 });
 
-export const createUserProfileSuccess = (profile, userType) => ({
+export const createUserProfileSuccess = () => ({
   type: CREATE_PROFILE_SUCCESS,
-  payload: { user: profile, userType: userType },
 });
 
 export const createUserProfilefailed = (err) => ({
