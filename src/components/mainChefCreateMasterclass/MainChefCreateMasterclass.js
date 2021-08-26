@@ -5,11 +5,98 @@ import { Button } from '@material-ui/core'
 import CloseIcon from '@material-ui/icons/Close';
 import { useHistory } from 'react-router-dom';
 import Modal from 'react-modal'
+import { cuisineList } from '../mainChefCreateRecipe/mainChefCreateRecipeData';
+import { dietsList } from '../mainChefCreateRecipe/mainChefCreateRecipeData';
 
 const MainChefCreateMasterclass = () => {
     
     const history = useHistory()
     const [modalIsOpen1,setModalIsOpen1] = useState(false)
+    const [imageUpload, setImageUpload] = useState('')
+    const [masterclassTitle,setMasterclassTitle] = useState('')
+    const [cuisine,setCuisine] = useState('')
+    const [dietType, setDietType] = useState('')
+    const [description,setDescription] = useState('')
+    const [ingredients, setIngredients] = useState('')
+    const [classVideoType, setClassVideoType] = useState('')
+    const [startDate, setStartDate] = useState('')
+    const [startTime, setStartTime] = useState('')
+    const [classDuration, setClassDuration] = useState('')
+    const [masterclassLocation, setMasterclassLocation] = useState('')
+    const [ticketNumber, setTicketNumber] = useState('')
+    const [ticketPrice, setTicketPrice] = useState('')
+    const [getNotify,setGetNotify] = useState('')
+
+
+
+    const handleChange = (event) => {
+        switch (event.target.name) {
+          case "imageUpload":
+            setImageUpload(event.target.value);
+            break;
+          case "masterclassTitle":
+            setMasterclassTitle(event.target.value);
+            break;
+          case "cuisine":
+            setCuisine(event.target.value);
+            break;
+          case "dietType":
+            setDietType(event.target.value);
+            break;
+          case "description":
+            setDescription(event.target.value);
+            break;
+          case "ingredients":
+            setIngredients(event.target.value);
+            break;
+          case "classVideoType":
+            setClassVideoType(event.target.value);
+            break;
+          case "startDate":
+            setStartDate(event.target.value);
+            break;
+          case "startTime":
+            setStartTime(event.target.value);
+            break;
+          case "classDuration":
+            setClassDuration(event.target.value);
+            break;
+            case "masterclassLocation":
+            setMasterclassLocation(event.target.value);
+            break;
+            case "ticketNumber":
+            setTicketNumber(event.target.value);
+            break;
+            case "ticketPrice":
+            setTicketPrice(event.target.value);
+            break;
+            case "getNotify":
+            setGetNotify(event.target.value);
+            break;
+          default:
+            break;
+        }
+      };
+      const handleSubmit = (event) => {
+        const obj={
+            imageUpload,
+            masterclassTitle,
+            cuisine,
+            dietType,
+            description,
+            ingredients,
+            classVideoType,
+            startDate,
+            startTime,
+            classDuration,
+            masterclassLocation,
+            ticketNumber,
+            ticketPrice,
+            getNotify
+        };
+        console.log(obj);
+      };
+
 
     const openModal1 =() => {
         setModalIsOpen1(true)
@@ -52,54 +139,52 @@ const MainChefCreateMasterclass = () => {
             </div>
             <div className='mainChefCreateMasterclass__top'>
                 <div className='mainChefCreateMasterclass__topLeft'>
-                    <img src={AddImageIcon} alt='star' />
+                    <input type='file' multiple required name='imageUpload' value={imageUpload} onChange={handleChange} />
                 </div>
                 <div className='mainChefCreateMasterclass__topRight'>
                     <div className='mainChefCreateMasterclass__title'>
                         <h5>Masterclass title <span>*</span></h5>
-                        <input placeholder='Enter Class Title' />
+                        <input required name='masterclassTitle' value={masterclassTitle} onChange={handleChange} placeholder='Enter Class Title' />
                     </div>
                     <div className='mainChefCreateMasterclass__cuisine'>
                         <h5>Cuisine<span>*</span></h5>
-                        <select id='cuisine__masterclass'>
-                            <option>European</option>
-                            <option>Turkish</option>
-                            <option>Russian</option>
-                            <option>Arabic</option>
-                            <option>Indian</option>
+                        <select required name='cuisine' value={cuisine} onChange={handleChange} id='cuisine__masterclass'>
+                            {cuisineList.map((cuisine1) => (
+                                <option>{cuisine1.cuisine}</option>
+                            ))}
                         </select>
                     </div>
                     <div className='mainChefCreateMasterclass__diet'>
                         <h5>Dietary<span>*</span></h5>
-                        <select id='diet__type__option'>
-                            <option>Vegan</option>
-                            <option>Vegetarian</option>
-                            <option>Halal</option>
-                            <option>Kashar</option>
-                            <option>Meat</option>
+                        <select required name='dietType' value={dietType} onChange={handleChange} id='diet__type__option'>
+                            {
+                                dietsList.map((diet) => (
+                                    <option>{diet.diet}</option>
+                                ))
+                            }
                         </select>
                     </div>
                 </div>
             </div>
             <div className='mainChefCreateMasterclass__desc'>
                 <h5>Description<span>*</span></h5>
-                <textarea rows='7' placeholder='Short description' />
+                <textarea required name='description' value={description} onChange={handleChange} rows='7' placeholder='Short description' />
             </div>
             <div className='mainChefCreateMasterclass__ingredients'>
                 <h5>Ingredients List<span>*</span></h5>
-                <textarea rows='6' placeholder='Short explanation' />
+                <textarea required name='ingredients' value={ingredients} onChange={handleChange} rows='6' placeholder='Short explanation' />
             </div>
             <div className='mainChefCreateMasterclass__video'>
                 <h5>Class-Video Type<span>*</span></h5>
                   <div className='input__video'>
                       <div className='input__pre'>
-                          <input type="radio" id="pre" name="level" value="pre" />
-                          <label for="pre">Pre-Recorded Video</label>
+                          <input type="radio" id="pre" name="classVideoType" value={classVideoType} onChange={handleChange} />
+                          <label htmlFor="pre">Pre-Recorded Video</label>
                       </div>
                       
                       <div className='input__live'>
-                          <input type="radio" id="live" name="level" value="live"/>
-                          <label for="live">Live Streaming</label>
+                          <input type="radio" id="live" name="classVideoType" value={classVideoType} onChange={handleChange}/>
+                          <label htmlFor="live">Live Streaming</label>
                       </div>
                   </div>
             </div>
@@ -107,19 +192,19 @@ const MainChefCreateMasterclass = () => {
                 <h5>Start Date<span>*</span></h5>
                   <div className='input__date'>
                       <div className='input__select'>
-                          <input type="radio" id="select" name="level" value="select" />
-                          <label for="select">Select Date</label>
+                          <input type="radio" id="select" name="startDate" value={startDate} onChange={handleChange} />
+                          <label htmlFor="select">Select Date</label>
                       </div>
                       
                       <div className='input__request'>
-                          <input type="radio" id="request" name="level" value="request"/>
-                          <label for="request">Upon Request</label>
+                          <input type="radio" id="request" name="startDate" value={startDate} onChange={handleChange}/>
+                          <label htmlFor="request">Upon Request</label>
                       </div>
                   </div>
             </div>
             <div className='mainChefCreateMasterclass__start'>
                 <h5>Start Time<span>*</span></h5>
-                <select id='diet__type__option'>
+                <select required name='startTime' value={startTime} onChange={handleChange} id='diet__type__option'>
                     <option>1:00 pm</option>
                     <option>2:00 pm</option>
                     <option>3:00 pm</option>
@@ -129,7 +214,7 @@ const MainChefCreateMasterclass = () => {
             </div>
             <div className='mainChefCreateMasterclass__duration'>
                 <h5>Class Duration<span>*</span></h5>
-                <select id='diet__type__option'>
+                <select required name='classDuration' value={classDuration} onChange={handleChange} id='diet__type__option'>
                     <option>30min</option>
                     <option>60min</option>
                     <option>90min</option>
@@ -139,40 +224,34 @@ const MainChefCreateMasterclass = () => {
             </div>
             <div className='mainChefCreateMasterclass__location'>
                 <h5>Masterclass Location <span>*</span></h5>
-                <input placeholder='Location' />
+                <input required name='masterclassLocation' value={masterclassLocation} onChange={handleChange} placeholder='Location' />
             </div>
             <div className='mainChefCreateMasterclass__ticket'>
                 <h5>Ticket/Group number<span>*</span></h5>
-                <select id='diet__type__option'>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
+                <input placeholder='Enter ticket number' required name='ticketNumber' value={ticketNumber} onChange={handleChange} />
             </div>
             <div className='mainChefCreateMasterclass__price'>
                 <h5>Price Per Ticket</h5>
-                <input placeholder='Enter Price' />
+                <input required name='ticketPrice' value={ticketPrice} onChange={handleChange}  placeholder='Enter Price' />
                 <p>$</p>
             </div>
             <div className='mainChefCreateMasterclass__notify'>
                 <h5>Get Notified in Advance?</h5>
                   <div className='input__decision'>
                       <div className='input__no'>
-                          <input type="radio" id="no" name="level" value="no" />
-                          <label for="no">No</label>
+                          <input type="radio" id="no" name="getNotify" value={getNotify} onChange={handleChange} />
+                          <label htmlFor="no">No</label>
                       </div>
                       
                       <div className='input__yes'>
-                          <input type="radio" id="yes" name="level" value="yes"/>
-                          <label for="yes">Yes</label>
+                          <input type="radio" id="yes" name="getNotify" value={getNotify} onChange={handleChange}/>
+                          <label htmlFor="yes">Yes</label>
                       </div>
                   </div>
             </div>
             <div className='mainChefCreateMasterclass__buttons'>
                 <Button onClick={openModal1} className='mainChefCreateMasterclass__cancel'>Cancel</Button>
-                <Button className='mainChefCreateMasterclass__post'>Post</Button>
+                <Button onClick={handleSubmit} className='mainChefCreateMasterclass__post'>Post</Button>
             </div>
         </div>
         </>

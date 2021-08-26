@@ -28,12 +28,14 @@
     width: 100%;
     height: 40vh;
     margin-top: 2%;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
     box-shadow: 1px 1px 6px 2px #d9d9d9;
 }
-.mainChefCreateMasterclass__topLeft >img {
-    width: 70px;
-    height: 70px;
+.mainChefCreateMasterclass__topLeft >input {
+    align-items: center;
+    justify-content: center;
     display: flex;
 }
 .mainChefCreateMasterclass__topRight{
@@ -62,7 +64,8 @@
 .mainChefCreateMasterclass__title>input,
 .mainChefCreateMasterclass__cook>input,
 .mainChefCreateMasterclass__location>input,
-.mainChefCreateMasterclass__price>input{
+.mainChefCreateMasterclass__price>input,
+.mainChefCreateMasterclass__ticket>input{
     border: 3px solid #d9d9d9;
     font-family: 'Montserrat','sans-serif';
     border-radius: 8px;
@@ -84,7 +87,8 @@
 .mainChefCreateMasterclass__location>h5>span
 ,.mainChefCreateMasterclass__video>h5>span
 ,.mainChefCreateMasterclass__date>h5>span,
-.mainChefCreateMasterclass__notify>h5>span{
+.mainChefCreateMasterclass__notify>h5>span,
+.mainChefCreateMasterclass__ticket>h5>span{
     color: red;
     margin-left: 1%;
 }
