@@ -35,7 +35,7 @@
     height: 40px;
 }
 .samplepage__center__content{
-    margin-top: 63px;
+    padding-top: 63px;
 }
 
 .samplepage__left::-webkit-scrollbar-track,
@@ -204,6 +204,14 @@
   }
 }
 
+@media only screen and (min-width:1350px){
+    .samplepage__center__filter{
+        height: 50px !important;
+    }
+    .samplepage__center__content{
+        padding-top: 70px;
+    }
+}
 
 
 

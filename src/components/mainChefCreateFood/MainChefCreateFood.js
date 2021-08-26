@@ -221,7 +221,7 @@ const MainChefCreateFood = () => {
         <div className="mainChefCreateFood__container">
           <div className="mainChefCreateFood__heading">
             <h5>Create Food</h5>
-            <CloseIcon onClick={openModal1} className="post-close-icon" />
+            <CloseIcon /*onClick={openModal1}*/ className="post-close-icon" />
           </div>
           <div className="mainChefCreateFood__addImage">
             <input
@@ -243,7 +243,7 @@ const MainChefCreateFood = () => {
               onChange={handleChange}
             />
           </div>
-          <div onClick={openModal} className="mainChefCreateFood__cuisine">
+          <div /*onClick={openModal}*/ className="mainChefCreateFood__cuisine">
             <h5>Cuisine Type</h5>
             <select
               required
@@ -292,7 +292,7 @@ const MainChefCreateFood = () => {
               placeholder="363"
             />
           </div>
-          <div onClick={openModal2} className="mainChefCreateFood__cuisine">
+          <div /*onClick={openModal2}*/ className="mainChefCreateFood__cuisine">
             <h5>
               Service Days and Hours<span>*</span>
             </h5>

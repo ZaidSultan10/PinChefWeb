@@ -156,6 +156,16 @@ function App({ currentUser }) {
               )
             }
           />
+          {/*<Route
+            path="/chef/createprofile"
+            exact
+            component={ChefMainProfile}
+            />
+            <Route
+            path="/home"
+            exact
+            component={HomeFeed}
+          />*/}
           <Route
             path="/user/createprofile"
             exact

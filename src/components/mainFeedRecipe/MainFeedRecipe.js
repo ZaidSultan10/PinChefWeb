@@ -90,7 +90,7 @@ const MainFeedRecipe = () => {
               element="p"
               truncateText="..."
               text="Ground Beef 1Kg, Tortillas 1 Pack, Celery, 1 Onion,
-                        Taco Seasoning"
+                        Taco Seasoning.search"
             />
             <ChevronRight onClick={detailRecipeButton} className="rightIcon" />
           </div>
