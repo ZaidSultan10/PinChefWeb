@@ -62,7 +62,20 @@ const MainChefCreateRecipe = () => {
     }
   };
   const handleSubmit = (event) => {
-    console.log(event);
+    const obj = {
+      foodName,
+      numberOfServing,
+      prepTime,
+      cookTime,
+      calories,
+      ingredients,
+      instructions,
+      requiredTools,
+      difficultyLevel,
+      cuisines,
+      dietType,
+    };
+    console.log(obj);
   };
   const openModal1 = () => {
     setModalIsOpen1(true);

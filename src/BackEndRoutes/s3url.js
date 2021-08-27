@@ -1,6 +1,6 @@
 import axios from "axios";
 const getUrl = async (img) => {
-  let url = await axios("/api/s3url")
+  let url = await axios("http://localhost:5000/api/s3url")
     .then((data) => data)
     .catch((err) => Promise.reject(err));
   // url = url.then((data) => data);
