@@ -1,7 +1,7 @@
 import axios from "axios";
 const AuthSignUp = async ({ email, password, userType }) => {
   try {
-    const user = await axios.post("/api/user/register", {
+    const user = await axios.post("http://localhost:5000/api/user/register", {
       email,
       password,
       userType,

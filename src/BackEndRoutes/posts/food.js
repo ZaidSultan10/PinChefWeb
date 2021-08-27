@@ -13,7 +13,7 @@ export const createFood = async (obj) => {
       deliveryFee,
       shippingFee,
     } = obj;
-    const post = await axios.post("/api/food/", {
+    const post = await axios.post("http://localhost:5000/api/food/", {
       imageUpload,
       foodName,
       cuisines,

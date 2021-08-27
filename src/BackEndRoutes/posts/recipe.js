@@ -14,7 +14,7 @@ export const createRecipe = async (obj) => {
       cuisines,
       dietType,
     } = obj;
-    const post = await axios.post("/api/recipe/", {
+    const post = await axios.post("http://localhost:5000/api/recipe/", {
       //   media,
       foodName,
       cuisineType: cuisines,

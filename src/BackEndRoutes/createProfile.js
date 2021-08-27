@@ -4,14 +4,14 @@ export const createProfile = async (obj) => {
     let Profile;
     if (obj.userType === "user") {
       const { name, phone, image, username } = obj;
-      Profile = await axios.post("/api/profile/user", {
+      Profile = await axios.post("http://localhost:5000/api/profile/user", {
         name: name,
         mobile: phone,
         profile_image: image,
         user_id: username,
       });
     } else {
-      Profile = await axios.post("/api/profile/chef", {
+      Profile = await axios.post("http://localhost:5000/api/profile/chef", {
         firstName: obj.firstName,
         lastName: obj.lastName,
         user_id: obj.nickName,

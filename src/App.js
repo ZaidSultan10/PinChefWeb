@@ -95,9 +95,9 @@ import Sneakbar from "./components/sneakbarComponent/Sneakbar";
 // This is for test (We will remove it later)
 
 // import { io } from "socket.io-client";
-function App({ currentUser }) {
+function App({ currentUser, profileExist }) {
   useEffect(() => {
-    fetch("/api/")
+    fetch("http://localhost:5000/api/")
       .then((res) => res.json())
       .then((txt) => console.log(txt))
       .catch((err) => console.log(err));
@@ -137,6 +137,12 @@ function App({ currentUser }) {
               )
             }
           />
+          {/* (
+            currentUser && profileExist === true ? (
+              <Route path="/home" exact component={HomeFeed} />
+            ) : (
+              <Redirect to={`/${currentUser.userType}/createprofile`} />
+            ) */}
           {currentUser && currentUser.status === "active" ? (
             <Route path="/home" exact component={HomeFeed} />
           ) : currentUser && currentUser.status === "pending" ? (
@@ -417,5 +423,6 @@ function App({ currentUser }) {
 
 const mapStateToProps = (state) => ({
   currentUser: state.user.currentUser,
+  profileExist: state.user.currentUser,
 });
 export default connect(mapStateToProps)(App);

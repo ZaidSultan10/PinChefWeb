@@ -2,7 +2,7 @@ import axios from "axios";
 export const createService = async (obj) => {
   try {
     const { description, serviceType, imageUpload, serviceDays, price } = obj;
-    const post = await axios.post("/api/service/", {
+    const post = await axios.post("http://localhost:5000/api/service/", {
       imageUpload,
       serviceType,
       description,

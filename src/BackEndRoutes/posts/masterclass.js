@@ -17,7 +17,7 @@ export const createMasterclass = async (obj) => {
       ticketPrice,
       getNotify,
     } = obj;
-    const post = await axios.post("/api/masterclass/", {
+    const post = await axios.post("http://localhost:5000/api/masterclass/", {
       media: imageUpload,
       title: masterclassTitle,
       cuisine: cuisine,

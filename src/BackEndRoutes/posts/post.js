@@ -2,7 +2,7 @@ import axios from "axios";
 export const createPost = async (obj) => {
   try {
     const { description, addLocation, imageUpload } = obj;
-    const post = await axios.post("/api/post/", {
+    const post = await axios.post("http://localhost:5000/api/post/", {
       media_link: imageUpload,
       description,
       location: addLocation,
