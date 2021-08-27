@@ -10,7 +10,7 @@
     border-radius: 24px;
     width: 400px;
     background-image: url("../../assets/backgroundImages/Login-in-pop-up.png");
-    height: 70%;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,6 +30,7 @@
 .userProfileSet__header > h4{
     display: flex;
     justify-content: center;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.342);
 }
 .userProfileSet__picture{
     display: grid;
@@ -38,8 +39,8 @@
     margin-top: 2%;
 }
 .userProfileSet__picture > img{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
 .userProfileSet__input{
     display: flex;
@@ -51,13 +52,15 @@
     display: flex;
     align-items: flex-start;
     width: 92%;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.397);
 }
 .userProfileSet__input > input{
     width: 94%;
   padding: 0;
   margin-top: 1%;
+  font-family: 'Montserrat','sans-serif';
   border: none;
-  height: 2.6em;
+  height: 3.3em;
   outline: none;
   font-size: 1em;
   margin-right: 1px;
@@ -78,13 +81,15 @@
     align-items: flex-start;
     width: 92%;
     margin-left: 2%;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.37);
 }
 .userProfileSet__input2 > input{
     width: 94%;
   padding: 0;
   margin-top: 1%;
+  font-family: 'Montserrat','sans-serif';
   border: none;
-  height: 2.6em;
+  height: 3.3em;
   outline: none;
   font-size: 1em;
   margin-right: 1px;
@@ -105,13 +110,20 @@
     display: flex;
     align-items: flex-start;
     width: 92%;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.404);
+}
+.userProfileSet__input3 > h5 > span{
+    color: grey;
+    margin-left: 3%;
+    text-shadow: none;
 }
 .userProfileSet__input3 > input{
     width: 94%;
+    font-family: 'Montserrat','sans-serif';
   padding: 0;
   margin-top: 1%;
   border: none;
-  height: 2.6em;
+  height: 3.3em;
   outline: none;
   font-size: 1em;
   margin-right: 1px;
@@ -124,13 +136,16 @@
 .userProfileSet__button{
     display: grid;
     justify-content: center;
+    margin-top: 10px;
 }
 .userProfileSet__button>button{
     background-color: rgb(187, 9, 9);
     color: white;
-    height: 37%;
+    height: 35px;
     margin-top: 1rem;
+    width: 150px;
     border-radius: 999px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.377);
 }
 
 @media only screen and (min-width:1400px){

@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 1fr 12fr;
     margin-top: 3%;
+    margin-left: 1%;
 }
 .mainShopFood__name{
     margin-left: 1%;
@@ -21,6 +22,7 @@
     width: 50px !important;
     height: 50px !important;
     cursor: pointer;
+    box-shadow: 1px 1px 6px 0px grey;
 }
 .name__top{
     display: flex;

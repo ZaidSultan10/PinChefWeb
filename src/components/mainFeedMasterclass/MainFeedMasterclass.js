@@ -1,5 +1,5 @@
 import { Avatar } from "@material-ui/core";
-import React from "react";
+import React, { useState } from "react";
 import "./MainFeedMasterclass.css";
 import PostImage from "../../assets/chef-images/chef-image1.jpg";
 import { QueryBuilder } from "@material-ui/icons";
@@ -14,6 +14,8 @@ import  {ReactComponent as ShareIconFull} from '../../assets/svg/Share-chef-prof
 
 const MainFeedMasterclass = () => {
   const history = useHistory();
+  
+  //const [ticketChange, setTicketChange] = useState(0)
 
   return (
     <div className="feedMasterclasses">
@@ -84,6 +86,7 @@ const MainFeedMasterclass = () => {
             </div>
             <div className="mainFeedMaster__butTicket">
               <p>Available Tickets:</p>
+              
               <img src={TicketIcon} alt="star" />
               <p className="ticketCount">1</p>
             </div>

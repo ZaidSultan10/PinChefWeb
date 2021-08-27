@@ -13,7 +13,11 @@ const FeedAllChefs = ({allChefProp}) => {
                     <GoogleAds2 />
                 </div>
                 <div className='feedChef__center'>
-                    <MainFeedFilter2 />
+                    
+                    <div className='feedChef__filter'>
+                        <MainFeedFilter2 />
+                    </div>
+                    <div className='feedChef__content'>
                     {
                         allChefProp ? (
                             <>
@@ -35,7 +39,7 @@ const FeedAllChefs = ({allChefProp}) => {
                             </>
                         )
                     }
-                    
+                    </div>
                 </div>
                 <div className='feedChef__right'>
                     <ChefAds />

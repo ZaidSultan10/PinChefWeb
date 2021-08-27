@@ -1,25 +1,34 @@
 .feedChef{
     display: grid;
     grid-template-columns: repeat(1,minmax(0,1fr));
-    width: 85%;
-    height: 100%;
+    width: 1000px;
     margin: 0 auto;
-    max-width: 1400px;
-    margin-top: 3.5%;
-    padding-bottom: 5%;
+    max-width: 1200px;
+    padding-top: 50px;
 }
 .feedChef__container{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 2.5fr 1fr;
     justify-content: center;
     grid-gap:1%;
-    padding-top: 70px;
-   height: 87vh;
+   height: calc(100vh - 97px);
 }
 .feedChef__left,.feedChef__right,.feedChef__center{
     width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+.feedChef__filter{
+    position: fixed;
+    z-index: 999;
+    width: 533px;
+    margin-top: 0.2px;
+    box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.794);
+    background-color: #fffefe;
+    height: 40px;
+}
+.feedChef__content{
+    padding-top: 35px;
 }
 .feedChef__left::-webkit-scrollbar-track,
 .feedChef__center::-webkit-scrollbar-track,
@@ -27,7 +36,7 @@
       box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
       border-radius: 10px;
       background-color: #F5F5F5;
-      margin-top: 18px;
+      margin-top: 28px;
   }
   
   .feedChef__left::-webkit-scrollbar,
@@ -49,10 +58,23 @@
     justify-content: center;
     font-size: 16px;
 }
+.feedChef__left,.feedChef__right{
+    padding-top: 20px;
+}
 @media screen and (max-width:1000px){
+    .feedChef{
+        width: 580px;
+    }
+    .feedChef__filter{
+        width: 574px;
+    }
+    .feedChef__center{
+        overflow-y: scroll;
+    }
     .feedChef__container{
         display: grid;
         grid-template-columns: repeat(1,minmax(0,1fr));
+        height: calc(100vh - 107px);
     }
     .feedChef__left,.feedChef__right{
         display: none;
@@ -81,8 +103,23 @@
         margin: 0 auto;
     }
     .feedChef__container{
-        display: grid;
+        margin-left: auto;
+        margin-right: auto;
         grid-template-columns: repeat(1,minmax(0,1fr));
+
+    }
+    .feedChef__filter{
+        width: 100%;
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.794);
+    }
+}
+@media only screen and (min-width:1350px){
+    .feedChef__filter{
+        height: 50px !important;
+    }
+    .feedChef__content{
+        padding-top: 43px;
     }
 }
 @media only screen 

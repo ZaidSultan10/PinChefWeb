@@ -13,12 +13,21 @@ import { ReactComponent as Apple } from "../../assets/svg/Sign-in-with-apple-ico
 import { connect } from "react-redux";
 import { signInStart } from "../../redux/User/UserAction";
 // import { setSnackbar } from "../../redux/Sneakbar/SneakbarAction";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import TermsUser from "../termsUser/TermsUser";
+import Modal from 'react-modal'
+import MainTermsUser from "../../components/mainTermsUser/MainTermsUser";
+import Footer from "../../components/footer/Footer";
+
+
 
 const SignIn = ({ signInStart, currentUser }) => {
   const [passwordType, setpasswordType] = useState("password");
   const [bgCng, setBgCng] = useState(true);
 
   let history = useHistory();
+  const [buttonPopup, setButtonPopup] = useState(false)
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userType, setUserType] = useState("user");
@@ -39,7 +48,22 @@ const SignIn = ({ signInStart, currentUser }) => {
         break;
     }
   };
+  
+  const closeModal = () => {
+    setButtonPopup(false)
+  }
+
+  const openModal = () => {
+    setButtonPopup(true)
+  }
+
   return (
+    <>
+    <Modal isOpen={buttonPopup}
+    onRequestClose={closeModal}
+    className='termsmodal'>
+        <MainTermsUser />
+    </Modal>
     <div className="userSignin">
       <div className="userSignin__signin">
         <div className="i__am__chef__button">
@@ -69,13 +93,13 @@ const SignIn = ({ signInStart, currentUser }) => {
             activeClassName="activesignup"
             className="sign-in-h2-signin signup-button"
           >
-            SIGNUP
+            SIGN UP
           </NavLink>
         </div>
         <div className="flex-column-usersignin form-usersignin">
           <div className="email-div-signin">
             <label>
-              <strong>Email ID</strong>
+              <strong>Email/ID</strong>
             </label>
             <input
               type="email"
@@ -115,10 +139,10 @@ const SignIn = ({ signInStart, currentUser }) => {
           </div>
           <div className="keep-me-sign-in-and-submit-signin">
             <div className="keep-me-sign-in-signin">
-              <input type="radio" name="keepMeSignIn" />
-              <span>
-                <strong>Keep me Signed in</strong>
-              </span>
+              <input type="radio" id='radiobutton' name="keepMeSignIn" />
+              <div className='label-signin'>
+                <label htmlFor='radiobutton'>Keep me Signed in</label>
+              </div>
             </div>
             <button onClick={handleSubmit} className="continue-signin">
               Continue
@@ -139,12 +163,14 @@ const SignIn = ({ signInStart, currentUser }) => {
           </div>
           <div className="Privicy-instructions-signin">
             Signing in or Signing Up means you accept out{" "}
-            <strong className="clickable-signin">Terms/Conditions</strong> &{" "}
+            <strong onClick={openModal} className="clickable-signin">Terms/Conditions</strong> &{" "}
             <strong className="clickable-signin">Privacy Policy.</strong>
           </div>
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 const mapDispatchToProps = (dispatch) => ({

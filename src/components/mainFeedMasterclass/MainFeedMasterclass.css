@@ -148,7 +148,17 @@
     margin-bottom: -0.7rem;
 }
 
-@media only screen and (max-width:750px){
+@media only screen and (max-width:430px){
+    .feedMasterclasses__header > h3{
+        font-size: 12px;
+    }
+    .masterclass__details{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+    }
+}
+
+/*@media only screen and (max-width:750px){
     .feedMasterclasses__header > h3{
         font-size: 14px !important;
     }
@@ -244,5 +254,5 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
-}
+}*/
 

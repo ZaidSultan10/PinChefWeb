@@ -1,10 +1,7 @@
 .googleAds2{
     position: sticky;
   }
-  .active__googleads2{
-    background-color: #ffcf54 !important;
-    border-radius: 50% !important;
-  }
+
   
   .googleAds__filter2{
     display: grid;
@@ -19,6 +16,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 3%;
   }
   .googleAds__filter__header2 > img{
     
@@ -27,22 +27,24 @@
     margin-top: 2%;
   }
   .googleAds__filter__header2 > h3{
-    
+    font-size: 16px;
     color: #3f8f22;
+    display: flex;
+    justify-content: flex-end;
     font-weight: 700 !important;
   }
   .kosher{
     margin-bottom: 3%;
   }
-  .sort__by2{
-    margin-left: 10%;
-  }
+  
    .diff__by2{
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     margin-left: 5%;
+    margin-top: 4%;
     font-weight: 700 !important;
   }
-  .diff__by2{
+  .sort__by2{
+    margin-left: 5%;
     margin-top: 4%;
   }
   .googleAds__filter__options2{
@@ -52,30 +54,25 @@
   
   .googleAds__filter__most__commented2{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     margin-left: 4%;
-  
+    margin-top: 2%;
   }
   .googleAds__filter__most__commented2 > p{
     display: flex;
     align-items: center;
-    margin-left: 5%;
   }
   
   .googleAds__filter__most__liked2,
   .googleAds__filter__vip__chef2,
   .googleAds__filter__top__rated2{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     margin-left: 4%;
     margin-top: 5%;
     align-items: center;
   }
-  .googleAds__filter__most__liked2 > p,
-  .googleAds__filter__vip__chef2 > p,
-  .googleAds__filter__top__rated2 >p{
-    margin-left: 5%;
-  }
+  
   
   .googleAds__filter__dates2{
     display: grid;
@@ -107,7 +104,7 @@
     margin-right: -3px;
   }
   
-  @media only screen and (min-width:1290px) and (max-width:1921px){
+  /*@media only screen and (min-width:1290px) and (max-width:1921px){
     .googleAds__filter__header2 > h3{
       font-size: 26px !important;
     }
@@ -132,5 +129,5 @@
     .googleAds__filter__date2 >p{
       font-size: 18px !important;
     }
-  }
+  }*/
   

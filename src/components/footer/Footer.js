@@ -1,12 +1,17 @@
 import "./Footer.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { ReactComponent as HomeSelectedIcon } from "../../assets/svg/Home-selected.svg";
 import { ReactComponent as ChefUnselectedIcon } from "../../assets/svg/chef-un-selected.svg";
 import { ReactComponent as ShopUnselectedIcon } from "../../assets/svg/Shop-un-selected.svg";
 import { ReactComponent as SettingsUnselectedIcon } from "../../assets/svg/settings-un-selected.svg";
 import { ReactComponent as StarUnselectedIcon } from "../../assets/svg/Star-un-selected.svg";
 
+
+
 const Footer = ({ footerProp }) => {
+  
+  const pathName = useLocation()
+  
   return (
     <div className="footer-main">
       <div className="footer">
@@ -64,8 +69,10 @@ const Footer = ({ footerProp }) => {
               <HomeSelectedIcon className="cheficon1" />
             </NavLink>
             <NavLink
-              exact
+              
+              
               to="/user/all-chef"
+              exact
               className="footer-chef-home"
               activeClassName="footer-chef-home-active"
             >

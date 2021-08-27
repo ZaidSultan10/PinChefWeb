@@ -1,9 +1,22 @@
 .userSignin{
-  background: linear-gradient(184deg, white, #464040 92%);
+  background: linear-gradient(180deg, #d9d9d9, #464040 90%);
     height: 100% ;
     width: 100% ;
     display: flex;
     align-items: center;
+}
+.termsmodal{
+  background: white;
+  outline: none;
+  width: 500px;
+  height: 100%;
+  
+  margin-left: 30%;
+  padding-top: 10px;
+  border-radius: 8px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 1px solid white;
 }
 
 .userSignin__signin {
@@ -21,6 +34,7 @@
 .activesignin {
   border-bottom: 2px solid #3f8f22;
   cursor: pointer;
+
 }
 
 .flex-column-usersignin {
@@ -62,16 +76,17 @@
   
 }
 .sign-in-up-signin {
-  margin-top: 20px !important;
+ 
   height: 50px;
   margin-left: 7%;
   display: flex;
   align-items: center;
+
 }
 .sign-in-h2-signin {
-  margin-left: 3%;
+  margin-left: 5%;
   cursor: pointer;
-  height: 20px;
+  height: 23px;
 }
 .signup-button,.signin-button{
   text-decoration: none;
@@ -152,7 +167,7 @@
   display: inline-block;
 }
 
-.show {
+/*.show {
   background-image: url("../../assets/svg/Show-password-icon.svg");
   background-size: 25px !important;
   margin-top: 1rem !important;
@@ -161,7 +176,7 @@
   background-image: url("../../assets/svg/hide\ -password-\ icon.svg");
   background-size: 25px !important;
   margin-top: 0.8rem !important;
-}
+}*/
 
 .tooglePassword {
   background-repeat: no-repeat;
@@ -183,27 +198,46 @@
 }
 .keep-me-sign-in-signin {
   display: flex;
-  width: 60%;
   align-items: center;
-  justify-content: space-around;
-  margin-left: 1em;
-  margin-right: 5%;
-  
+  width: 60%;
 }
 
 .keep-me-sign-in-signin > input {
-  height: 1.5em;
-  width: 1.5em;
   box-shadow: none !important;
   
 }
-.keep-me-sign-in-signin span {
-  width: 100%;
-  padding-left: 1em;
-  font-size: 14px;
-  color: white;
-  
+.keep-me-sign-in-signin > input[type='radio']{
+  display: none;
 }
+.keep-me-sign-in-signin > input[type='radio'] + *::before{
+  content: '';
+  display:inline-block;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: grey;
+
+}
+.keep-me-sign-in-signin > input[type='radio']:checked + *::before{
+ background: #ffd54f;
+  border-color: grey;
+
+}
+.keep-me-sign-in-signin > input[type='radio']:checked *{
+  color: white;
+}
+
+.keep-me-sign-in-signin>.label-signin> label {
+  width: 100%;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.301);
+}
+
 .continue-signin {
   background-color: #b62414;
   color: white;
@@ -240,6 +274,7 @@
 .forgot-password-signin > p {
   font-size: 14px;
   font-weight: 700;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.274);
 }
 
 .Privicy-instructions-signin {
@@ -250,8 +285,8 @@
   font-size: 14px;
 }
 
-.fb-blue {
-  fill: #475993 !important;
+.fb-blue > g > .b {
+  fill: #475993 ;
 }
 
 .clickable-signin {

@@ -1,6 +1,8 @@
 .mainFeedFilters3{
     display: grid;
     grid-template-columns: 2fr 2fr;
+    margin-top: 3%;
+    
 }
 .mainFeedFilters3__container{
     display: grid;
@@ -8,14 +10,14 @@
 }
 .mainFeedFilters3__image{
     margin-right: 2%;
-
     display: flex;
     justify-content: flex-end;
+    position: relative;
 }
 .mainFeedFilters3__image>.cart{
     width: 30px;
     height: 30px;
-    position: relative;
+    cursor: pointer;
 }
 .mainFeedFilters3__image>span{
     position: absolute;
@@ -27,6 +29,7 @@
 }
 .activefilter32{
     border-bottom: 3.5px solid #3f8f22 !important;
+    
 }
 .mainFeedFilter3__food,.mainFeedFilter3__service{
     color: gray;
@@ -34,10 +37,19 @@
     text-decoration: none;
     font-size: 18px;
     display: flex;
+    cursor: pointer;
     justify-content: center;
+    margin-top: 3px;
 }
 
-@media only screen and (max-width:424px){
+@media only screen and (max-width:361px){
+    .mainFeedFilters3{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+/*@media only screen and (max-width:424px){
     .mainFeedFilter3__food,
     .mainFeedFilter3__service{
         font-size: 16px ;
@@ -119,4 +131,4 @@ and (min-width: 768px)
     .mainFeedFilter3__service{
         font-size: 28px;
     }
-}
+}*/

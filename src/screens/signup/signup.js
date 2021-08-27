@@ -68,13 +68,13 @@ const SignUp = ({ signUpStart, currentUser }) => {
             activeClassName="activesignup"
             className="sign-in-h2-signin signup-button"
           >
-            SIGNUP
+            SIGN UP
           </NavLink>
         </div>
         <div className="flex-column-usersignin form-usersignin">
           <div className="email-div-signin">
             <label>
-              <strong>Email ID</strong>
+              <strong>Email/ID</strong>
             </label>
             <input
               type="email"
@@ -114,10 +114,10 @@ const SignUp = ({ signUpStart, currentUser }) => {
           </div>
           <div className="keep-me-sign-in-and-submit-signin">
             <div className="keep-me-sign-in-signin">
-              <input type="radio" name="keepMeSignIn" />
-              <span>
-                <strong>Keep me Signed in</strong>
-              </span>
+              <input type="radio" id='radiobutton' name="keepMeSignIn" />
+              
+                <label htmlFor='radiobutton'>Keep me Signed in</label>
+              
             </div>
             <button onClick={handleSubmit} className="continue-signin">
               Continue

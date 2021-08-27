@@ -10,10 +10,20 @@ const FeedShopFood = ({shopFoodProp}) => {
         <div className='feedClass'>
             <div className='feedshop__container'>
                 <div className='feedClass__left'>
-                    <GoogleAds2 adsProp2={true}/>
+                    {
+                        shopFoodProp ? (
+                            <GoogleAds2 adsProp={true}/>
+                        ):(
+                            <GoogleAds2 adsProp2={true}/>
+                        )
+                    }
+                    
                 </div>
                 <div className='feedClass__center'>
-                    <MainFeedFilter3 />
+                   <div className='feedClass__filter'>
+                        <MainFeedFilter3 />
+                   </div>
+                    <div className='feedClass__content'>
                     {
                         shopFoodProp ? (
                             <>
@@ -27,7 +37,7 @@ const FeedShopFood = ({shopFoodProp}) => {
                             </>
                         )
                     }
-            
+                    </div>
                 </div>
                 <div className='feedClass__right'>
                     <ChefAds />
