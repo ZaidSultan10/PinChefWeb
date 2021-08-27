@@ -35,7 +35,7 @@ export const createProfile = async (obj) => {
         profile_image: obj.imgg,
       });
     }
-    if (Profile.status === 200) return { data: Profile.data, status: 200 };
+    if (Profile.status === 200) return { data: Profile.data.user, status: 200 };
   } catch (err) {
     return { err: err.response.data, status: err.response.status };
   }

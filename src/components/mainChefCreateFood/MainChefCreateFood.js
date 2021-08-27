@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./MainChefCreateFood.css";
-import AddImageIcon from "../../assets/svg/Add-image-video.svg";
+// import AddImageIcon from "../../assets/svg/Add-image-video.svg";
 import CloseIcon from "@material-ui/icons/Close";
-import { Button, FormControl, Input, InputLabel } from "@material-ui/core";
-import { useHistory } from "react-router-dom";
+import { FormControl, Input, InputLabel } from "@material-ui/core";
+// import { useHistory } from "react-router-dom";
 //import Modal from 'react-modal'
 //import { SearchOutlined } from '@material-ui/icons';
 //import cuisineDatas from './mainChefCuisineList';
@@ -14,11 +14,11 @@ import {
 } from "../mainChefCreateRecipe/mainChefCreateRecipeData";
 
 const MainChefCreateFood = () => {
-  const history = useHistory();
+  //   const history = useHistory();
 
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [modalIsOpen1, setModalIsOpen1] = useState(false);
-  const [modalIsOpen2, setModalIsOpen2] = useState(false);
+  //   const [modalIsOpen, setModalIsOpen] = useState(false);
+  //   const [modalIsOpen1, setModalIsOpen1] = useState(false);
+  //   const [modalIsOpen2, setModalIsOpen2] = useState(false);
   const [imageUpload, setImageUpload] = useState("");
   const [foodName, setFoodName] = useState("");
   const [cuisines, setCuisines] = useState("");

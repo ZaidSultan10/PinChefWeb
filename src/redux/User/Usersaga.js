@@ -107,12 +107,13 @@ export function* createUserProfile({ payload }) {
       yield put(createUserProfileSuccess());
     } else {
       yield put(createUserProfilefailed(profile.err));
-      yield put(setSnackbar(true, "error", profile.err));
+      // yield put(setSnackbar(true, "error", profile.err));
+      console.log(profile.err);
     }
     console.log(payload);
   } catch (err) {
     yield put(createUserProfilefailed(err));
-    yield put(setSnackbar(true, "error", err));
+    // yield put(setSnackbar(true, "error", err));
   }
 }
 
