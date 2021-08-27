@@ -17,8 +17,13 @@ const FeedStarFoodService = () => {
                     <Ads className='feedStarFoodService__ads' />
                 </div>
                 <div className='feedStarFoodService__center'>
-                    <MainFeedFilter4/>
-                    <MainShopFood />
+                    <div className='feedStarFoodService__filter'>
+                        <MainFeedFilter4/>
+                    </div>   
+                    <div className='feedStarFoodService__content'>
+                        <MainShopFood />
+                    </div>
+                    
                 </div>
                 <div className='feedStarFoodService__right'>
                     <ChefAds />
